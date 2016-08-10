@@ -4,7 +4,8 @@ permalink: /curve_settings_file/
 ---
 
 The curve settings CSV file is used to control curve-wide settings when loading curves into the system.
-It is used by the [curve loader]({{site.baseurl}}/curves_loader).
+It is used by the [curve loader]({{site.baseurl}}/curves_loader) and 
+[curve calibration loader]({{site.baseurl}}/curve_calibration_loader).
 
 
 ## Format
@@ -31,7 +32,7 @@ See [DayCounts]({{site.baseurl}}/day_counts) for valid day count names.
 See [CurveInterpolators]({{site.baseurl}}/apidocs/com/opengamma/strata/market/curve/interpolator/CurveInterpolators.html) for valid interpolator names.
 See [CurveExtrapolators]({{site.baseurl}}/apidocs/com/opengamma/strata/market/curve/interpolator/CurveExtrapolators.html) for valid extrapolator names.
 
-These settings are used when loading individual [curve nodes]({{site.baseurl}}/curves_loader).
+These settings are used when loading individual curve nodes via the ({{site.baseurl}}/curves_loader) or [curve calibration loader]({{site.baseurl}}/curve_calibration_loader).
 
 
 ## Example
