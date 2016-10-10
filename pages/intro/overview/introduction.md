@@ -5,7 +5,7 @@ permalink: /introduction/
 
 ## What is Strata?
 
-**Strata is the open source analytics and market risk library from OpenGamma.**
+**Strata is the award-winning open source analytics and market risk library from OpenGamma.**
 
 Strata allows financial systems developers to build or enhance existing applications with standardized,
 off-the-shelf market risk components. It includes:
@@ -63,3 +63,10 @@ Strata provides the same set of market risk foundations as we use ourselves in o
 [own applications](http://www.opengamma.com/).
 It is in our interest for this standard functionality to be widely-used, to allow it to be validated and
 extended externally, and for it to become the industry standard with its own developer community.
+
+
+## Awards
+
+Strata won the [Duke's Choice Award for Financial Services 2016](https://www.oracle.com/javaone/dukes-choice-award.html):
+
+<img style="max-width:100%;width:30%;height:auto;" alt="Duke's Choice award 2016" src="{{site.baseurl}}/images/dukeschoice.png" />
