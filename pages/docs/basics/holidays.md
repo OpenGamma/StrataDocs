@@ -14,21 +14,29 @@ It is not unusual for individual exchanges or other financial entities to have t
 ## Holiday Calendar
 
 The `strata-basics` module includes a holiday calendar interface and some common implementations.
-The key interface is ``HolidayCalendar`` which defines methods to query the calendar.
+The key interface is `HolidayCalendar` which defines methods to query the calendar.
+The calendar is accessed via an identifier `HolidayCalendarId`.
 
-Each holiday calendar implementation has a unique name.
-This can be used to obtain the holiday calendar via the static method ``HolidayCalendar.of(String)``:
+Each holiday calendar has a unique identifier.
+To obtain the identifier from a string, use `HolidayCalendarId.of(String)`
+
+The actual holiday calendar can then be obtained from [`ReferenceData`](http://strata.opengamma.io/reference_data/).:
 
 ```java
-HolidayCalendar holCal = HolidayCalendar.of("GBLO");
+HolidayCalendarId holCalId = HolidayCalendarId.of("GBLO");
+HolidayCalendar holCal = holCalId.resolve(ReferenceData.standard());
 ```
 
-All available holiday calendars can be listed using the static method  ``HolidayCalendar.extendedEnum()``.
+The `ReferenceData` provided separation between the identifier and the holiday calendar.
+This allows users of Strata to supply their own holiday calendar data.
+To aid evaluation, Strata provides some standard holiday calendars.
 
-Common holiday calendars can also be obtained using static constants on ``HolidayCalendars``:
+All available holiday calendars can be listed using the static method  `HolidayCalendarId.extendedEnum()`.
+
+Common holiday calendars can also be obtained using static constants on `HolidayCalendarIds`:
 
 ```java
-HolidayCalendar holCal = HolidayCalendars.GBLO;
+HolidayCalendarId holCalId = HolidayCalendarIds.GBLO;
 ```
 
 Once a holiday calendar is obtained, various methods are available to query the calendar.
