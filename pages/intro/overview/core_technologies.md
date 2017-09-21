@@ -44,7 +44,7 @@ At runtime the Java Runtime Environment (JRE) 8 or later is required.
 To build Strata from source code, the following dependencies are required:
 
 * Java SE Development Kit (JDK) 8u40 or later
-* Maven 3.2 or later
+* Maven 3.5 or later
 
 Details on obtaining the source along with build instructions can be found at
 [obtaining Strata]({{site.baseurl}}/obtaining_strata).

@@ -6,6 +6,63 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v1.4.0
+
+*21 September 2017*
+
+This release contains [35 fixed issues](https://github.com/OpenGamma/Strata/milestone/14?closed=1).
+This includes the issues fixed in v1.3.1, v1.3.2 and v1.3.3 (see below).
+
+* Standard CSV format for trades and positions
+[#1540](https://github.com/OpenGamma/Strata/pull/1540),
+[#1556](https://github.com/OpenGamma/Strata/pull/1556),
+[#1559](https://github.com/OpenGamma/Strata/pull/1559),
+[#1551](https://github.com/OpenGamma/Strata/pull/1551)
+* Loader for legal entity rates
+[#1516](https://github.com/OpenGamma/Strata/pull/1516)
+* Add `CHF-SARON` overnight index
+[#1557](https://github.com/OpenGamma/Strata/pull/1557)
+* Add `DEFR` Frankfurt holidays
+[#1560](https://github.com/OpenGamma/Strata/pull/1560)
+* Default fixed leg day count from index
+[#1553](https://github.com/OpenGamma/Strata/pull/1553)
+* Allow `FxIndex` to return fixing and maturity days offset, using it to default on `FxResetCalculation`
+[#1536](https://github.com/OpenGamma/Strata/pull/1536)
+* Allow notional exchange to be set separately from FX reset
+[#1542](https://github.com/OpenGamma/Strata/pull/1542)
+* Support fixed initial notional of FX reset swaps
+[#1543](https://github.com/OpenGamma/Strata/pull/1543)
+* Abstraction over swap conventions
+[#1533](https://github.com/OpenGamma/Strata/pull/1533)
+* Enhance `FloatingRateName` parsing to better link with the indices
+[#1549](https://github.com/OpenGamma/Strata/pull/1549)
+* Add `NamedEnum` to mark standard enums and make parsing more lenient
+[#1532](https://github.com/OpenGamma/Strata/pull/1532)
+* Custom logic when resolving a swap trade
+[#1544](https://github.com/OpenGamma/Strata/pull/1544)
+* Code from CERN Clot is now included (shaded) to reduce dependencies
+[#1529](https://github.com/OpenGamma/Strata/pull/1529),
+[#1530](https://github.com/OpenGamma/Strata/pull/1530)
+* Update dependencies. The `strata-parent` project can now be used as a BOM.
+
+#### Compatibility
+
+The classes `RepoGroup` and `LegalEntityGroup` moved packages.
+
+The Joda-Beans dependency was updated to v2.0.
+This is major version upgrade and any beans you have will need to be regenerated.
+
+In the unlikely event that you have a swap convention implementation, you may need
+to change it to extend `SingleCurrencySwapConvention`.
+
+In the unlikely event that you have an `FxIndex` implementation, you will need to
+implement the two new methods.
+
+In the unlikely event that you have a `ScenarioPerturbation` implementation, you will
+need to implement one additional method.
+
+
+
 ## Strata v1.3.3
 
 *31 July 2017*

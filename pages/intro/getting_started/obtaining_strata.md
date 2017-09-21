@@ -14,7 +14,7 @@ Strata is available in [Maven Central](http://search.maven.org/#search%7Cga%7C1%
 <dependency>
   <groupId>com.opengamma.strata</groupId>
   <artifactId>strata-measure</artifactId>
-  <version>1.3.3</version>
+  <version>1.4.0</version>
 </dependency>
 ```
 
@@ -48,7 +48,7 @@ git clone https://github.com/OpenGamma/Strata.git
 To build Strata from source code, the following dependencies are required:
 
 * Java SE Development Kit (JDK) 8u40 or later
-* Maven 3.2 or later
+* Maven 3.5 or later
 
 Note that versions of JDK 8 before update 40 are not able to compile Strata (due to bugs in early JDK 8 versions).
 

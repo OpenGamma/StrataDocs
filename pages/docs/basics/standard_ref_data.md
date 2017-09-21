@@ -24,6 +24,7 @@ Future and past dates are an extrapolations of the known holiday dates.
 | CATO | Toronto (Canada) holidays                        | Saturday/Sunday   |                     |
 | CHZU | Zurich (Switzerland) holidays                    | Saturday/Sunday   |                     |
 | CZPR | Prague (Czech Republic) holidays                 | Saturday/Sunday   |                     |
+| DEFR | Frankfurt (Germany) holidays                     | Saturday/Sunday   |                     |
 | DKCO | Copenhagen (Denmark) holidays                    | Saturday/Sunday   |                     |
 | EUTA | TARGET interbank payment (Europe) holidays       | Saturday/Sunday   | section 1.8 (2006)  |
 | FRPA | Paris (France) holidays                          | Saturday/Sunday   |                     |
@@ -62,6 +63,7 @@ Overnight Indices:
 | BRL-CDI        | CDI index for BRL        | Bus/252 BRBD |
 | CAD-CORRA      | CORRA index for CAD      | Act/365F     |
 | CHF-TOIS       | TOIS index for CHF       | Act/360      |
+| CHF-SARON      | SARON index for CHF      | Act/360      |
 | DKK-TNR        | TNR index for CHF        | Act/360      |
 | EUR-EONIA      | EONIA index for EUR      | Act/360      |
 | GBP-SONIA      | SONIA index for GBP      | Act/365F     |

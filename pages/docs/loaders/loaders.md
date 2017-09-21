@@ -10,6 +10,8 @@ Strata provides a number of loaders that can be used to load data into the syste
 
 The following loaders are defined using CSV as the basic file format:
 
+* [Trades]({{site.baseurl}}/trade_loader) - trades
+* [Positions]({{site.baseurl}}/position_loader) - trades
 * [Quotes]({{site.baseurl}}/quotes_loader) - observable market data
 * [FX rates]({{site.baseurl}}/fx_rates_loader) - market data for FX
 * [Fixings]({{site.baseurl}}/fixings_loader) - historical time-series
