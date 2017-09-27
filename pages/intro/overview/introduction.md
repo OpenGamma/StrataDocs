@@ -59,10 +59,11 @@ we strongly recommend [commercial support]({{site.baseurl}}/support) with servic
 
 ## Why is Strata open source?
 
-Strata provides the same set of market risk foundations as we use ourselves in our
-[own applications](http://www.opengamma.com/).
-It is in our interest for this standard functionality to be widely-used, to allow it to be validated and
-extended externally, and for it to become the industry standard with its own developer community.
+Strata is the foundation layer of OpenGamma's commercial services for the derivative market,
+helping market participants understand the cost of trading and optimise counterparty relationships.
+We take the view that the market risk foundations of our commercial services are standard functionality
+that can be widely-used in the industry. This allows it to be validated and extended externally.
+See the [main website](http://www.opengamma.com) more information on the commercial services of OpenGamma.
 
 
 ## Awards
