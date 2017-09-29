@@ -37,7 +37,7 @@ The meaning of each column is as follows:
 To load a full time-series will require many rows in the file, one for each historic fixing date.
 Each fixing series must be contained within a single CSV file, but a single file may contain multiple series.
 
-See the [standard reference data]({{site.baseurl}}/standard_ref_data) page for Strata's default index names.
+See the [indices]({{site.baseurl}}/indices) page for Strata's default index names.
 
 
 ## Example

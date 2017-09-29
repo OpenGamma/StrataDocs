@@ -20,7 +20,7 @@ The calendar is accessed via an identifier `HolidayCalendarId`.
 Each holiday calendar has a unique identifier.
 To obtain the identifier from a string, use `HolidayCalendarId.of(String)`
 
-The actual holiday calendar can then be obtained from [`ReferenceData`](http://strata.opengamma.io/reference_data/).:
+The actual holiday calendar can then be obtained from [`ReferenceData`](http://strata.opengamma.io/reference_data/):
 
 ```java
 HolidayCalendarId holCalId = HolidayCalendarId.of("GBLO");
@@ -29,7 +29,7 @@ HolidayCalendar holCal = holCalId.resolve(ReferenceData.standard());
 
 The `ReferenceData` provided separation between the identifier and the holiday calendar.
 This allows users of Strata to supply their own holiday calendar data.
-To aid evaluation, Strata provides some standard holiday calendars.
+To aid evaluation, Strata provides some [standard holiday calendars]({{site.baseurl}}/holiday_data).
 
 All available holiday calendars can be listed using the static method  `HolidayCalendarId.extendedEnum()`.
 
@@ -66,5 +66,5 @@ Note that when querying dates, there is no difference between a holiday and a we
 
 ## Standard Holiday Calendars
 
-Strata provides a set of [standard holiday calendars]({{site.baseurl}}/standard_ref_data).
+Strata provides a set of [standard holiday calendars]({{site.baseurl}}/holiday_data).
 

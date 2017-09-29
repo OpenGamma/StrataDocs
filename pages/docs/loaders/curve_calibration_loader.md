@@ -92,14 +92,14 @@ The "P" may be omitted, thus "P2D" and "2D" are equivalent.
 A special node creating an artificial trade based on the value of the Ibor index.
 This is used instead of a term deposit node when calibrating a curve that is not used for discounting.
 The convention column must contain the name of an Ibor index.
-See the [standard reference data]({{site.baseurl}}/standard_ref_data) page for Strata's default index names.
+See the [indices]({{site.baseurl}}/indices) page for Strata's default index names.
 The time column is not used.
 
 ### "FRA"
 
 A Forward Rate Agreement (FRA) node.
 The convention column must contain the name of an Ibor index.
-See the [standard reference data]({{site.baseurl}}/standard_ref_data) page for Strata's default index names.
+See the [indices]({{site.baseurl}}/indices) page for Strata's default index names.
 The time column must contain a description of the FRA.
 For example, "3X6" means a FRA that starts in 3 months and ends in 6 months.
 

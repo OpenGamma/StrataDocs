@@ -38,11 +38,13 @@ LocalDate adjusted = baseDate.with(myBusinessDayAdjustment);
 The business day convention is a simple rule that specifies how to change the date from a holiday or weekend
 to a valid business day. The most commonly used conventions are:
 
-* 'Following', moving to the next valid business day
-* 'Modified Following', moving to the next valid business day unless it is in the next month
-* 'Preceding', moving to the previous valid business day
-
-Other conventions are available, see the Javadoc of `BusinessDayConventions`.
+| Convention name   | Description |
+|-------------------|-------------|
+| NoAdjust          | Make no adjustment |
+| Following         | Move to the next valid business day |
+| ModifiedFollowing | Move to the next valid business day, unless that is in the next month in which case move to the previous valid business day |
+| Preceding         | Move to the previous valid business day |
+| ModifiedPreceding | Move to the previous valid business day, unless that is in the next month in which case move to the next valid business day |
 
 For example, if a `BusinessDayAdjustment` has a business day convention of 'Following' and a holiday
 calendar of 'GBLO' (London holidays) then the following adjustments will occur:

@@ -32,7 +32,7 @@ The meaning of each column is as follows:
 
 A discount curve must have a 3 letter ISO currency code as the reference, such as "USD".
 A forward curve must have an index as the reference, such as "USD-LIBOR-3M".
-See the [standard reference data]({{site.baseurl}}/standard_ref_data) page for Strata's default index names.
+See the [indices]({{site.baseurl}}/indices) page for Strata's default index names.
 
 The groups file refers to curve names that are defined in the [curve settings]({{site.baseurl}}/curve_settings_file) file.
 

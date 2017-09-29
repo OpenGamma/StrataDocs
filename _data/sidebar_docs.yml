@@ -71,9 +71,9 @@
 
     - title: Day Counts
       url: /day_counts/
-      
-    - title: Standard Reference Data
-      url: /standard_ref_data/
+
+    - title: Indices
+      url: /indices/
 
 - title: Extension Points
   items:
