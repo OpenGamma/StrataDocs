@@ -60,6 +60,9 @@
     - title: Holidays
       url: /holidays/
 
+    - title: Holiday data
+      url: /holiday_data/
+
     - title: Date Adjustments
       url: /date_adjustments/
 
