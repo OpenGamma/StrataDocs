@@ -23,12 +23,12 @@ Group Name,Curve Type,Reference,Curve Name
 The columns may be specified in any order, however this is the recommended order.
 The meaning of each column is as follows:
 
-| Field      | Description                                                                                        |
-|------------|----------------------------------------------------------------------------------------------------|
-| Group Name | The name of the curve group.                                                                       |
-| Curve Type | The type of curve, "Discount" for a discounting curve, or "Forward" for a forward curve.           |
-| Reference  | The reference for which the curve is used, such as the currency or index.                          |
-| Curve Name | The name of the curve.                                                                             |
+| Column name | Description                                                                                    |
+|-------------|------------------------------------------------------------------------------------------------|
+| Group Name  | The name of the curve group                                                                    |
+| Curve Type  | The type of curve, "Discount" for a discounting curve, or "Forward" for a forward curve        |
+| Reference   | The reference for which the curve is used, such as the currency or index                       |
+| Curve Name  | The name of the curve                                                                          |
 
 A discount curve must have a 3 letter ISO currency code as the reference, such as "USD".
 A forward curve must have an index as the reference, such as "USD-LIBOR-3M".

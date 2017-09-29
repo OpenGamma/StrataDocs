@@ -28,11 +28,11 @@ Reference,Date,Value
 The columns may be specified in any order, however this is the recommended order.
 The meaning of each column is as follows:
 
-| Field          | Description                                                                          |
+| Column name    | Description                                                                          |
 |----------------|--------------------------------------------------------------------------------------|
-| Reference      | The name of the index that the data is for, such as "USD-LIBOR-3M".                  |
-| Date           | The date of the fixing, in the format `yyyy-MM-dd`.                                  |
-| Value          | The numeric value of the fixing.                                                     |
+| Reference      | The name of the index that the data is for, such as "USD-LIBOR-3M", see [floating indices]({{site.baseurl}}/indices/) |
+| Date           | The date of the fixing, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
+| Value          | The numeric value of the fixing                                                      |
 
 To load a full time-series will require many rows in the file, one for each historic fixing date.
 Each fixing series must be contained within a single CSV file, but a single file may contain multiple series.

@@ -28,11 +28,11 @@ Valuation Date,Currency Pair,Value
 The columns may be specified in any order, however this is the recommended order.
 The meaning of each column is as follows:
 
-| Field          | Description                                                                          |
+| Column name    | Description                                                                          |
 |----------------|--------------------------------------------------------------------------------------|
-| Valuation Date | The valuation date to which the rate corresponds, in the format `yyyy-MM-dd`.        |
-| Currency Pair  | The currency pair, in the format "EUR/USD".                                          |
-| Value          | The numeric FX rate.                                                                 |
+| Valuation Date | The valuation date to which the rate corresponds, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
+| Currency Pair  | The currency pair, in the format "EUR/USD"                                           |
+| Value          | The numeric FX rate                                                                  |
 
 
 ## Example

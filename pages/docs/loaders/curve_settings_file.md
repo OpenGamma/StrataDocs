@@ -19,14 +19,14 @@ Curve Name,Value Type,Day Count,Interpolator,Left Extrapolator,Right Extrapolato
 The columns may be specified in any order, however this is the recommended order.
 The meaning of each column is as follows:
 
-| Field              | Description                                                                                   |
+| Column name        | Description                                                                                   |
 |--------------------|-----------------------------------------------------------------------------------------------|
-| Curve Name         | The name of the curve.                                                                        |
+| Curve Name         | The name of the curve                                                                         |
 | Value Type         | The type of value in the curve, "Zero" for zero rates or "DF" for discount factors            |
-| Day Count          | The day count to use for dates in the curve.                                                  |
-| Interpolator       | The name of the interpolator, used when querying a value between two nodes on the curve.      |
-| Left Extrapolator  | The name of the left extrapolator, used when querying before the earliest point on the curve. |
-| Right Extrapolator | The name of the right extrapolator, used when querying after the latest point on the curve.   |
+| Day Count          | The day count to use for dates in the curve                                                   |
+| Interpolator       | The name of the interpolator, used when querying a value between two nodes on the curve       |
+| Left Extrapolator  | The name of the left extrapolator, used when querying before the earliest point on the curve  |
+| Right Extrapolator | The name of the right extrapolator, used when querying after the latest point on the curve    |
 
 See [DayCounts]({{site.baseurl}}/day_counts) for valid day count names.
 See [CurveInterpolators]({{site.baseurl}}/apidocs/com/opengamma/strata/market/curve/interpolator/CurveInterpolators.html) for valid interpolator names.

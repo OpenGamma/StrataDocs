@@ -37,13 +37,13 @@ Valuation Date,Curve Name,Date,Value,Label
 The columns may be specified in any order, however this is the recommended order.
 The meaning of each column is as follows:
 
-| Field          | Description                                                                          |
+| Column name    | Description                                                                          |
 |----------------|--------------------------------------------------------------------------------------|
-| Valuation Date | The valuation date that the curve was calibrated for, in the format `yyyy-MM-dd`.    |
-| Curve Name     | The name of the curve.                                                               |
-| Date           | The date of the curve node, in the form `yyyy-MM-dd`.                                |
-| Value          | The value associated with the curve node.                                            |
-| Label          | A description of the node, used to identify it in bucketed sensitivity results.      |
+| Valuation Date | The valuation date that the curve was calibrated for, see [accepted formats]({{site.baseurl}}/common_formats/) |
+| Curve Name     | The name of the curve                                                                |
+| Date           | The date of the curve node, see [accepted formats]({{site.baseurl}}/common_formats/) |
+| Value          | The value associated with the curve node                                             |
+| Label          | A description of the node, used to identify it in bucketed sensitivity results       |
 
 A single curve will consist of at least two nodes, and typically many more, with one row required for each node.
 Each curve must be contained within a single CSV file, but a single file may contain multiple curves.

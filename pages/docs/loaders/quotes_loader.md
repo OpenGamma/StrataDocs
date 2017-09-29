@@ -28,13 +28,13 @@ Valuation Date,Symbology,Ticker,Field Name,Value
 The columns may be specified in any order, however this is the recommended order.
 The meaning of each column is as follows:
 
-| Field          | Description                                                                          |
+| Column name    | Description                                                                          |
 |----------------|--------------------------------------------------------------------------------------|
-| Valuation Date | The valuation date to which the quote value corresponds, in the format `yyyy-MM-dd`. |
-| Symbology      | The symbology of the quote identifier.                                               |
-| Ticker         | The ticker of the quote, unique within the symbology.                                |
-| Field Name     | The field name. The most common are "MarketValue" and "SettlementPrice".             |
-| Value          | The numeric quote value.                                                             |
+| Valuation Date | The valuation date to which the quote value corresponds, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
+| Symbology      | The symbology of the quote identifier                                                |
+| Ticker         | The ticker of the quote, unique within the symbology                                 |
+| Field Name     | The field name. The most common are "MarketValue" and "SettlementPrice"              |
+| Value          | The numeric quote value                                                              |
 
 The symbology-ticker pair are used to uniquely identify the market data item, such as a security.
 The symbology will typically be an industry standard such as ISINs, or one defined by a vendor such as Bloomberg or Reuters.

@@ -39,20 +39,20 @@ The last four columns - Date, Min Gap, Clash Action and Spread - are all optiona
 
 The meaning of each column is as follows:
 
-| Field          | Description                                                                          |
+| Column name    | Description                                                                          |
 |----------------|--------------------------------------------------------------------------------------|
-| Curve Name     | The name of the curve.                                                               |
-| Label          | A description of the node, used to identify it in bucketed sensitivity results.      |
-| Symbology      | The symbology of the quote identifier.                                               |
-| Ticker         | The ticker of the quote, unique within the symbology.                                |
-| Field Name     | The field name. The most common are "MarketValue" and "SettlementPrice".             |
-| Type           | The type of the curve node, such as "FRA" or "IRS".                                  |
-| Convention     | The convention to use to create the trade associated with the curve node.            |
-| Time           | The description of the trade time, used to convert the convention into a trade.      |
-| Date           | The date of the curve node, in the form `yyyy-MM-dd`, "LastFixing" or "End".         |
-| Min Gap        | The minimum gap between this curve node and each adjacent node.                      |
-| Clash Action   | The action to perform if the minimum gap is violated, "DropThis" or "DropOther.      |
-| Spread         | The spread to add to the market data value for the node.                             |
+| Curve Name     | The name of the curve                                                                |
+| Label          | A description of the node, used to identify it in bucketed sensitivity results       |
+| Symbology      | The symbology of the quote identifier                                                |
+| Ticker         | The ticker of the quote, unique within the symbology                                 |
+| Field Name     | The field name. The most common are "MarketValue" and "SettlementPrice"              |
+| Type           | The type of the curve node, such as "FRA" or "IRS"                                   |
+| Convention     | The convention to use to create the trade associated with the curve node             |
+| Time           | The description of the trade time, used to convert the convention into a trade       |
+| Date           | The date of the curve node, in the form `yyyy-MM-dd`, "LastFixing" or "End"          |
+| Min Gap        | The minimum gap between this curve node and each adjacent node                       |
+| Clash Action   | The action to perform if the minimum gap is violated, "DropThis" or "DropOther       |
+| Spread         | The spread to add to the market data value for the node                              |
 
 A single curve will consist of at least two nodes, and typically many more, with one row required for each node.
 Each curve must be contained within a single CSV file, but a single file may contain curves.
