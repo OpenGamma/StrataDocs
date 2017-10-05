@@ -17,7 +17,14 @@ ValueWithFailures<List<Trades>> trades = TradeCsvLoader.load(locator);
 ```
 
 
-## Example
+## <a name="Format">Format</a>
+
+The trades file is a CSV-formatted file.
+The columns may be specified in any order.
+The CSV format is flexible, and the input can specify trades in various ways.
+
+
+### Example
 
 This example file specifies one FRA and one Swap.
 
@@ -29,12 +36,6 @@ Swap,              OG,        123411, 2017-06-01, GBP-FIXED-1Y-LIBOR-3M, Buy,   
 
 Note that Microsoft Excel prefers the CSV file to have no spaces after the comma.
 
-
-## Format
-
-The trades file is a CSV-formatted file.
-The columns may be specified in any order.
-The CSV format is flexible, and the input can specify trades in various ways.
 
 ### Columns common to all formats
 
@@ -126,7 +127,7 @@ Valid combinations of conditional fields are as follows (other combinations are 
 #### Swap by full details
 
 A swap is primarily defined by its legs.
-The leg columns are of the form "Leg n xxx" where "n" is the leg number and "xxx" is the leg column name.
+The leg columns are of the form "Leg n xxx" where "n" is the leg number starting at 1 and "xxx" is the leg column name.
 
 | Leg column name                      | Mandatory?  | Description |
 |--------------------------------------|-------------|-------------|

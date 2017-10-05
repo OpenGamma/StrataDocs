@@ -17,7 +17,14 @@ ValueWithFailures<List<Position>> trades = PositionCsvLoader.load(locator);
 ```
 
 
-## Example
+## <a name="Format">Format</a>
+
+The trades file is a CSV-formatted file.
+The columns may be specified in any order.
+The CSV format is flexible, and the input can specify positions in various ways.
+
+
+### Example
 
 This example file specifies three positions, a simple security, an ETD future and an ETD option.
 
@@ -30,12 +37,6 @@ OPT,                  OG,        123431, ,            15,       ECAG,     OGBL, 
 
 Note that Microsoft Excel prefers the CSV file to have no spaces after the comma.
 
-
-## Format
-
-The trades file is a CSV-formatted file.
-The columns may be specified in any order.
-The CSV format is flexible, and the input can specify positions in various ways.
 
 ### Standard securities
 
