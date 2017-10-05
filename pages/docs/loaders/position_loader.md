@@ -17,7 +17,7 @@ ValueWithFailures<List<Position>> trades = PositionCsvLoader.load(locator);
 ```
 
 
-## <a name="Format">Format</a>
+## Format
 
 The trades file is a CSV-formatted file.
 The columns may be specified in any order.
