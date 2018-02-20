@@ -22,12 +22,14 @@ html
     padding: 0 $column-gutter/2 0 3rem
 
   h1
-    @extend %grey-heading
+    @extend %large-heading
     margin: 1.2em 0 1em
+    font-family: $font-family-heading
+    text-transform: uppercase
   h2
-    @extend %green-heading
+    @extend %medium-heading
   h3
-    @extend %blue-heading
+    @extend %small-heading
 
 .sidebar
   position: absolute
@@ -45,8 +47,8 @@ html
   overflow-y: auto
 
   h2
-    @extend %blue-heading
-    @extend %bottom-border-light-blue
+    @extend %medium-heading
+    @extend %bottom-border
     padding-bottom: .2em
 
   &.is-open
@@ -78,7 +80,7 @@ html
 
   ul
     @extend %ul-styles
-    font-size: 13px
+    font-size: $font-size-s
     
   .current
     font-weight: 600

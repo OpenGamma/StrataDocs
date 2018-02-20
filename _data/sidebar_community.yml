@@ -11,7 +11,7 @@
 
 - title: External Resources
   items:
-    - title: Source Code
+    - title: GitHub
       url: https://github.com/OpenGamma/Strata
       external: true
 

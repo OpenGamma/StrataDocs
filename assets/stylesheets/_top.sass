@@ -1,17 +1,16 @@
 .top
-  background-color: $green-light
+  background-color: $omega
 
   a
     display: block
-    color: $white
-    font-size: $font-size-sm
+    color: $eta
+    font-size: $font-size-s
+    font-weight: 400
     cursor: pointer
-    height: $top-height
     padding: 0 1.5rem
-    line-height: $top-height + 2px
     border: none
     text-decoration: none
-
+    letter-spacing: 1px
 
 .primarybar
   font-size: $font-size-m
@@ -19,28 +18,40 @@
   ul
     padding: 0
     margin: 0
-    height: $top-height
     list-style: none
     display: flex
 
-    .tabsel
-      background-color: $grey-dark
+    li
+      line-height: $top-height
 
-    .tabdesel a
+    .tabsel span
+      border-style: solid
+      border-width: 0 0 1px 0
+      border-color: $eta
+      padding: 4px 0
+
+    .tabdesel 
+      &:focus span,
+      &:active span,
+      &:hover span
+        border-style: solid
+        border-width: 0 0 1px 0
+        border-color: $eta
+        padding: 4px 0
+
+    .tabexternal span
+      border-style: solid
+      border-width: 1px
+      border-color: $theta-dark
+      padding: 7px 20px
+      text-transform: uppercase
+      font-family: $font-family-heading 
+
       &:focus,
       &:active,
       &:hover
-        background-color: $blue-light
-
-  .title
-    position: relative
-    margin: -2px 1.5rem 0 $column-gutter/2
-    float: left
-    a
-      font-size: $font-size-l
-      font-weight: 600
-      padding: 0
-
+        background-color: $eta
+        color: $omega
 
   nav
     display: none
@@ -50,48 +61,48 @@
 
     .navigation
       margin-left: 1rem
-      float: left
-
-      li
-        font-weight: 600
-
-  .links
-    display: none
-    float: right
-    margin-right: $column-gutter/2
-
-    @media #{$large-up}
-      display: flex
+      float: right
 
   .logo
-    float: right
+    float: left
     margin: 0
+    line-height: $top-height
+    a
+      padding: 0 $column-gutter/2
     img
       margin-top: -2px
-      width: 118px
-      height: 20px
+
+  .title
+    float: left
+    margin: 2px 0 0 10px
+    line-height: $top-height
+    color: $eta
+    font-size: 28px
+    color: $theta
 
 .secondarybar
   
-  background-color: $grey-light
+  background-color: $theta
   font-size: $font-size-m
 
   a
-    color: $grey-dark
+    color: $omega
     padding: 0 $column-gutter/2
 
   ul
     padding: 0
     margin: 0
-    height: $top-height
     list-style: none
     display: flex
 
-    .tabsel
-      background-color: $grey-dark
+    li
+      line-height: $top-height
 
-      a
-        color: $white
+    .tabsel span
+      border-style: solid
+      border-width: 0 0 1px 0
+      border-color: $omega
+      padding: 4px 0
 
   nav
     float: left

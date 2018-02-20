@@ -2,14 +2,15 @@
   position: relative
   display: inline-block
   margin: 0
-  padding: 5px 10px
+  padding: 4px 10px
   overflow: visible
-  border: none
-  border-radius: 4px
   background-clip: padding-box
-  background-color: $blue-dark
-  color: $white
-  font-family: 'Open Sans', Helvetica, sans-serif
+  color: $omega
+  border-style: solid
+  border-width: 1px
+  border-color: $theta-dark
+  font-family: $font-family-heading
+  text-transform: uppercase
   font-size: $font-size-s
   font-weight: normal
   text-decoration: none
@@ -19,35 +20,35 @@
   outline: none
   &:hover,
   &:active
-    color: $white
+    color: $eta
     background-color: lighten(#696867, 10)
   &:focus
-    color: $white
+    color: $eta
     background-color: #696867
 
 .button--green
   @extend .button
-  background-color: $grey-dark
+  background-color: $eta
   &:focus,
   &:active,
   &:hover
-    background-color: $green-light
+    background-color: $omega
 
 .button--grey
   @extend .button
-  background-color: $grey-dark
+  background-color: $eta
   &:focus,
   &:active,
   &:hover
-    background-color: $grey-dark
+    background-color: $omega
 
 .button--teal
   @extend .button
-  background-color: $blue-dark
+  background-color: $epsilon
   &:focus,
   &:active,
   &:hover
-    background-color: $blue-light
+    background-color: $delta
 
 .list-language
   @extend %ul-styles

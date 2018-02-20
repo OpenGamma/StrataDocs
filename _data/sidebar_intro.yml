@@ -1,5 +1,8 @@
 - title: Introduction
   items:
+    - title: Home
+      url: /
+
     - title: Overview
       url: /introduction/
 
