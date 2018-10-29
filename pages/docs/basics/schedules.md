@@ -133,13 +133,19 @@ This has six possible values:
 
 * 'ShortInitial'
 * 'LongInitial'
+* 'SmartInitial'
 * 'ShortFinal'
 * 'LongFinal'
+* 'SmartFinal'
 * 'None'
 * 'Both'
 
 The initial and final values correspond to the descriptions and diagrams above
 and fully define the stub required.
+The 'SmartInitial' convention will use 'LongInitial' rules when the stub is less than 7 calendar days
+and 'ShortInitial' rule when the stub is 7 days or longer.
+The 'SmartFinal' convention will use 'LongFinal' rules when the stub is less than 7 calendar days
+and 'ShortFinal' rule when the stub is 7 days or longer.
 The 'None' value specifies that there must be no stub, with an exception thrown if a stub is needed.
 The 'Both' value specifies that there are two stubs, for which dates must be specified.
 
@@ -165,9 +171,14 @@ For example, if the first date is a Tuesday, then adding 2 weeks will result in 
 
 A `RollConvention` can be specified to override the standard approach.
 
-The most common override is to specify 'EOM', which causes the dates to be at the end-of-month
-if the first date is at the end-of-month.
+The most common override is to specify 'EOM' which means "end-of-month".
+The full definition of 'EOM' is to prefer end-of-month if there is a choice, otherwise use the numered day-of-month.
+The choice occurs when the first date is something like the 30th June -
+should it roll on the 30th of each month, or the last day of each month?
+Using the 'EOM' convention selects rolling on the last day of the month.
 For example, if the first date is the 30th June, then adding 1 month will result in the 31st July.
+But note that if the first date is the 12th June, then rolling will occur on the 12th of each month
+(as it only prefers end of month if there is a choice, and in this case there is no choice).
 
 The second most common override is to specify 'IMM', which causes the dates to be on the 3rd Wednesday of each month.
 Other similar roll conventions exist for related rolling rules.

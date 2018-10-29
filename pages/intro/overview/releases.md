@@ -6,6 +6,81 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.1.0
+
+* 30 October 2018*
+
+This release contains over 45 [fixed issues](https://github.com/OpenGamma/Strata/milestone/20?closed=1).
+
+* Calculation target for sensitivities - `CurveSensitivities`,
+ [#1806](https://github.com/OpenGamma/Strata/issues/1806),
+ [#1800](https://github.com/OpenGamma/Strata/issues/1800),
+ [#1814](https://github.com/OpenGamma/Strata/issues/1814),
+ [#1818](https://github.com/OpenGamma/Strata/issues/1818),
+ [#1831](https://github.com/OpenGamma/Strata/issues/1831),
+ [#1811](https://github.com/OpenGamma/Strata/issues/1811),
+ [#1816](https://github.com/OpenGamma/Strata/issues/1816),
+ [#1836](https://github.com/OpenGamma/Strata/issues/1836),
+ [#1837](https://github.com/OpenGamma/Strata/issues/1837),
+ [#1805](https://github.com/OpenGamma/Strata/issues/1805)
+* Calculate maret quote sensitivities for bonds,
+ [#1809](https://github.com/OpenGamma/Strata/issues/1809)
+* Trade and stub conventions,
+ [#1829](https://github.com/OpenGamma/Strata/issues/1829),
+ [#1825](https://github.com/OpenGamma/Strata/issues/1825),
+ [#1810](https://github.com/OpenGamma/Strata/issues/1810)
+* Extend legal entity support,
+ [#1791](https://github.com/OpenGamma/Strata/issues/1791)
+* Enhance holiday calendars,
+ [#1801](https://github.com/OpenGamma/Strata/issues/1801),
+ [#1797](https://github.com/OpenGamma/Strata/issues/1797),
+ [#1795](https://github.com/OpenGamma/Strata/issues/1795)
+* Add thread-safe `NumberFormatter`,
+ [#1793](https://github.com/OpenGamma/Strata/issues/1793),
+* Abstract tenor-based parameter metadata instances - `TenoredParameterMetadata`,
+ [#1799](https://github.com/OpenGamma/Strata/issues/1799),
+ [#1826](https://github.com/OpenGamma/Strata/issues/1826)
+* Find curve names in curve definition,
+ [#1817](https://github.com/OpenGamma/Strata/issues/1817)
+* Find curve names in curve definition,
+ [#1817](https://github.com/OpenGamma/Strata/issues/1817)
+* Additional methods on `MapStream`,
+ [#1788](https://github.com/OpenGamma/Strata/issues/1788),
+ [#1798](https://github.com/OpenGamma/Strata/issues/1798),
+ [#1808](https://github.com/OpenGamma/Strata/issues/1808),
+ [#1813](https://github.com/OpenGamma/Strata/issues/1813),
+ [#1824](https://github.com/OpenGamma/Strata/issues/1824),
+ [#1832](https://github.com/OpenGamma/Strata/issues/1832)
+* Enhanced parsing,
+ [#1812](https://github.com/OpenGamma/Strata/issues/1812),
+ [#1819](https://github.com/OpenGamma/Strata/issues/1819),
+ [#1822](https://github.com/OpenGamma/Strata/issues/1822),
+ [#1827](https://github.com/OpenGamma/Strata/issues/1827),
+ [#1802](https://github.com/OpenGamma/Strata/issues/1802)
+* Build reliably on Java 11,
+ [#1830](https://github.com/OpenGamma/Strata/issues/1830),
+ [#1789](https://github.com/OpenGamma/Strata/issues/1789),
+ [#1834](https://github.com/OpenGamma/Strata/issues/1834)
+
+
+#### Compatibility
+
+The default stub convention has been changed from 'ShortInitial' to 'SmartInitial' (except when loading from FpML).
+The new "smart" stub conventions create a long stub when the extra period is less than 7 days.
+We believe this better matches market practice.
+
+All existing trade conventions now use a roll convention of 'EOM', which means that a swap
+with 1 month frequency starting on the 30th November will now roll at the end of the month
+where previously it would have rolled on the 30th of each month.
+We believe this better matches market practice.
+
+The interface `LegalEntity` has two new methods.
+In the unlikely event that you have implemented the interface you will need to implement the new methods.
+
+The interface `IborFutureTemplate` has one new method.
+In the unlikely event that you have implemented the interface you will need to implement the new method.
+
+
 ## Strata v2.0.0
 
 This is a major release with a number of backwards incompatible changes.

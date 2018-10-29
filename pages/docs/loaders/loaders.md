@@ -12,6 +12,7 @@ The following loaders are defined using CSV as the basic file format:
 
 * [Trades]({{site.baseurl}}/trade_loader) - trades (FRA, Swap)
 * [Positions]({{site.baseurl}}/position_loader) - positions (ETD)
+* [Sensitivities]({{site.baseurl}}/sensitivity_loader) - curve sensitivities
 * [Quotes]({{site.baseurl}}/quotes_loader) - observable market data
 * [FX rates]({{site.baseurl}}/fx_rates_loader) - market data for FX
 * [Fixings]({{site.baseurl}}/fixings_loader) - historical time-series
