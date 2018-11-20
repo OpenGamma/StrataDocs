@@ -16,16 +16,89 @@ for new asset classes.
 ## Calculation Functions
 
 Measures are calculated by implementations of
+[`DerivedCalculationFunction`]({{site.baseurl}}/apidocs/com/opengamma/strata/calc/runner/DerivedCalculationFunction.html) or
 [`CalculationFunction`]({{site.baseurl}}/apidocs/com/opengamma/strata/calc/runner/CalculationFunction.html).
+`DerivedCalculationFunction` is used when adding new measures for an asset class already exists in Strata.
+`CalculationFunction` is used when adding an asset class that does not already exist in Strata.
+
 Adding a new measure to Strata requires three steps:
 
-* Create a function to calculate the measure
 * Create a `Measure` instance to identify the measure and 
+* Create a function to calculate the measure
 * Provide pricing rules linking the `Measure` to the function
 
-### The CalculationFunction Interface
+## Integrating the new function
 
-The interface `CalculationFunction` is implemented by all classes that calculate values for measures.
+The new function is normally integrated with the existing ones:
+
+```java
+CalculationFunctions combined = StandardComponents.calculationFunctions().composedWith(myNewFunction);
+```
+
+The combined instance is then passed in via `CalculationRules`.
+
+
+## The DerivedCalculationFunction Interface
+
+The interface `DerivedCalculationFunction` is implemented to calculate one additional measures for an asset class.
+It works by first calculating a base set of measures, then calculating the derived measure.
+In most cases you should extend `AbstractDerivedCalculationFunction` which only has one abstract method - `calculate()`.
+
+`DerivedCalculationFunction` itself has five methods:
+
+```java
+public interface DerivedCalculationFunction<T extends CalculationTarget, R> {
+
+  public abstract Class<T> targetType();
+
+  public abstract Measure measure();
+
+  public abstract Set<Measure> requiredMeasures();
+
+  public abstract FunctionRequirements requirements(T target, CalculationParameters parameters, ReferenceData refData);
+
+  public abstract R calculate(
+      T target,
+      Map<Measure, Object> requiredMeasures,
+      CalculationParameters parameters,
+      ScenarioMarketData marketData,
+      ReferenceData refData);
+}
+```
+
+### Target type
+
+The `targetType()` method specifies the target type, such as `ResolvedSwap.class`.
+Each derived function implementation handles one type of target.
+
+### Measure
+
+The `measure()` method specifies which measure is supported.
+Each derived function implementation handles the calculation of one measure.
+
+### Required measures
+
+The `requiredMeasures()` method specifies which measures the derived function depends on.
+Normally this include the resolved target - `Measures.RESOLVED_TARGET`.
+
+### Requirements
+
+The `requirements()` method provides the ability to determine the market data needed
+for the combination of the trade and measure. This can be used to validate that the
+market data is available before pricing, or to drive the process of creating the market data.
+More details can be found [here]({{site.baseurl}}/market_data/).
+
+### Calculate
+
+The `calculate()` method is where the main calculation is performed.
+It receives the target and the map of measures that the calculation depends on.
+See below for more information about how `calculate()` should be implemented.
+
+
+## The CalculationFunction Interface
+
+The interface `CalculationFunction` is implemented to calculate values for measures,
+but only one can be registered for each asset class.
 It contains four methods:
 
 ```java
@@ -41,24 +114,28 @@ public interface CalculationFunction<T extends CalculationTarget> {
       T target, Set<Measure> measures, CalculationParameters parameters, ReferenceData refData);
 
   Map<Measure, Result<?>> calculate(
-      T target, Set<Measure> measures, CalculationParameters parameters, ScenarioMarketData marketData, ReferenceData refData);
+      T target,
+      Set<Measure> measures,
+      CalculationParameters parameters,
+      ScenarioMarketData marketData,
+      ReferenceData refData);
 
 }
 ```
 
 ### Target type
 
-Each function implementation will handle one type of target.
-The `targetType` method specifies the type, such as `ResolvedSwap.class`.
+The `targetType()` method specifies the target type, such as `ResolvedSwap.class`.
+Each derived function implementation handles one type of target.
 
 ### Supported measures
 
+The `supportedMeasures()` method specifies which measures are supported.
 Each function implementation will handle one or more measures.
-The `supportedMeasures` method specifies which measures are supported.
 
 ### Natural currency
 
-The `naturalCurrency` method provides the "natural" currency of the specified target.
+The `naturalCurrency()` method provides the "natural" currency of the specified target.
 
 For single-currency trades, the "natural" currency is the currency of the trade.
 
@@ -69,7 +146,7 @@ currency in terms of the standard market ordering, or anything other choice that
 
 ### Requirements
 
-The `requirements` method provides the ability to determine the market data needed
+The `requirements()` method provides the ability to determine the market data needed
 for the combination of the trade and measures. This can be used to validate that the
 market data is available before pricing, or to drive the process of creating the market data.
 More details can be found [here]({{site.baseurl}}/market_data/).
@@ -131,7 +208,7 @@ The `requirements` method will delegate most of the implementation to the parame
 
 ### Calculate
 
-The `calculate` method calculates a value for each of the specified measures for the calculation target (normally a trade).
+The `calculate()` method calculates a value for each of the specified measures for the calculation target (normally a trade).
 The method parameters are the calculation target, measures and an instance of `ScenarioMarketData` containing
 the market data required for the calculation.
 
