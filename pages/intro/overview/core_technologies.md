@@ -15,7 +15,7 @@ have benefited the entire codebase in particular for:
 
 ## Joda-Beans
 
-Strata uses [Joda-Beans](http://www.joda.org/joda-beans) for all of its data objects, for example in trade modelling,
+Strata uses [Joda-Beans](https://www.joda.org/joda-beans) for all of its data objects, for example in trade modelling,
 market data representation, calculation inputs, and results. Strata's Joda-Beans are always immutable,
 helping to ensure thread safety at the core in systems built on top of Strata, and providing builder classes
 for these beans to make their programmatic creation clearer.

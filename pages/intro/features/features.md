@@ -32,7 +32,7 @@ The APIs differ primarily in the amount of data they can handle.
 
 The pricer-level API provides the ability to calculate one result (risk measure).
 The inputs consist of one trade and one set of market data.
-Where possible it is recommended to use the measure-level API in preference to the prcer-level API.
+Where possible it is recommended to use the measure-level API in preference to the pricer-level API.
 
 The measure-level API provides the ability to calculate one result (risk measure).
 The inputs consist of one trade, with methods to handle either one set of market data or many sets (scenarios).

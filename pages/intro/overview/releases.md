@@ -6,6 +6,29 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.2.0
+
+* 28 January 2019
+
+This release contains over 25 [fixed issues](https://github.com/OpenGamma/Strata/milestone/21?closed=1).
+
+* Brazilian swaps
+ [#1828](https://github.com/OpenGamma/Strata/issues/1828),
+ [#1878](https://github.com/OpenGamma/Strata/issues/1878)
+* Update indices and conventions,
+ [#1879](https://github.com/OpenGamma/Strata/issues/1879),
+ [#1883](https://github.com/OpenGamma/Strata/issues/1883),
+ [#1876](https://github.com/OpenGamma/Strata/issues/1876),
+ [#1882](https://github.com/OpenGamma/Strata/issues/1882),
+ [#1858](https://github.com/OpenGamma/Strata/issues/1858),
+ [#1857](https://github.com/OpenGamma/Strata/issues/1857)
+* Enhanced schedule building,
+ [#1873](https://github.com/OpenGamma/Strata/issues/1873),
+ [#1861](https://github.com/OpenGamma/Strata/issues/1861)
+* Fix derived calculation functions
+ [#1856](https://github.com/OpenGamma/Strata/issues/1856)
+
+
 ## Strata v2.1.0
 
 * 30 October 2018

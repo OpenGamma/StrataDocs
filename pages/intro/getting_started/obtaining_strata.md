@@ -9,13 +9,13 @@ There are a number of ways to obtain Strata.
 ## From a Maven repository
 
 Strata is available in [Maven Central](https://search.maven.org/search?q=g:com.opengamma.strata)
-and [JCenter](https://bintray.com/bintray/jcenter?filterByPkgName=Strata):
+and [JCenter](https://bintray.com/opengamma/releases/Strata):
 
 ```
 <dependency>
   <groupId>com.opengamma.strata</groupId>
   <artifactId>strata-measure</artifactId>
-  <version>2.1.0</version>
+  <version>2.2.0</version>
 </dependency>
 ```
 
@@ -24,7 +24,8 @@ For a full list of modules please see [Modules]({{site.baseurl}}/docs/#Modules).
 
 ## From GitHub Releases
 
-Strata is also released to GitHub through the standard [repository release pages](https://github.com/OpenGamma/Strata/releases). The downloads include:
+Strata is also released to GitHub through the standard [repository release pages](https://github.com/OpenGamma/Strata/releases).
+The downloads include:
 
  * `strata-dist` -- the full Strata distribution containing the jar files, dependencies and Javadoc.
  * `report-tool` -- the [command-line tool]({{site.baseurl}}/command_line_tool) for easy access to the reporting capabilities.

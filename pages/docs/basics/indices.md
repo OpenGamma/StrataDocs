@@ -21,7 +21,6 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 | BRL-CDI        | CDI index for BRL        | Bus/252 BRBD |
 | CAD-CORRA      | CORRA index for CAD      | Act/365F     |
 | CHF-SARON      | SARON index for CHF      | Act/360      |
-| CHF-TOIS       | TOIS index for CHF       | Act/360      |
 | COP-OIBR       | IBR index for COP        | Act/360      |
 | DKK-TNR        | TNR index for CHF        | Act/360      |
 | EUR-EONIA      | EONIA index for EUR      | Act/360      |
@@ -39,7 +38,7 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 Overnight indices have a constant in `OvernightIndices`.
 The identifier can also be obtained dynamically using `OvernightIndex.of(name)`.
 
-* Indices marked with a star do not have a constant in `OvernightIndices`,
+\* Indices marked with a star do not have a constant in `OvernightIndices`,
 nor do they have holiday calendar data available.
 
 
@@ -81,7 +80,7 @@ For example, "GBP-LIBOR-3M" is a valid index name.
 Ibor indices have a constant in `IborIndices`.
 The identifier can also be obtained dynamically using `IborIndex.of(name)`.
 
-* Indices marked with a star do not have a constant in `IborIndices`,
+\* Indices marked with a star do not have a constant in `IborIndices`,
 nor do they have holiday calendar data available.
 
 

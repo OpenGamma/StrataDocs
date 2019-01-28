@@ -95,6 +95,7 @@ The `strata-pricer` module provides lower-level pricing support for rate swaps:
 ## Product model
 
 The following table summarizes the fields on `Swap` that can be used to control the product.
+Only the most important fields are shown below.
 For more detail on the meaning of each field, see the
 [Javadoc]({{site.baseurl}}/apidocs/com/opengamma/strata/product/swap/Swap.html);
 

@@ -69,6 +69,7 @@ For more information, see the following guides:
 * [FX Vanilla Option]({{site.baseurl}}/fx_vanilla_option) - FX Vanilla Option
 * [Term Deposit]({{site.baseurl}}/term_deposit) - Fixed rate deposits
 * [Bullet Payment]({{site.baseurl}}/bullet_payment) - Unidirectional one-off payments
+* See also the [product coverage]({{site.baseurl}}/product_coverage) page
 
 
 ### Data module

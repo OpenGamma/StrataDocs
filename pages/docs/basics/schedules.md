@@ -129,7 +129,7 @@ Note that it is possible, although rare, to have a stub at the start and end.
 The `PeriodicSchedule` class allows the stub to be controlled in two main ways.
 
 The most convenient approach is to use a `StubConvention`.
-This has six possible values:
+This has eight possible values:
 
 * 'ShortInitial'
 * 'LongInitial'
