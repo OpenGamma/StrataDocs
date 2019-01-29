@@ -31,7 +31,7 @@ The following third party libraries are used in example code by Strata:
 
 | Library name          | Version | License                                                                     |
 |:---------------------:|:-------:|:--------------------------------------------------------------:|
-| [OpenJFK](https://openjdk.java.net/projects/openjfx/) | 11.0.2   | [GNU General Public License with Classpath Exception](http://openjdk.java.net/legal/gplv2+ce.html) |
+| [OpenJFX](https://openjdk.java.net/projects/openjfx/) | 11.0.2   | [GNU General Public License with Classpath Exception](http://openjdk.java.net/legal/gplv2+ce.html) |
 
 Strata itself is released as Open Source Software under the [Apache v2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
 See the [licensing page]({{site.baseurl}}/licensing) for more information.
