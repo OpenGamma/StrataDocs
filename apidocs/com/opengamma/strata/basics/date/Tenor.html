@@ -1473,7 +1473,8 @@ implements java.lang.Comparable&lt;<a href="Tenor.html" title="class in com.open
  If the two tenors are both based on days, then comparison is easy.
  If the two tenors are both based on months/years, then comparison is easy.
  Otherwise, months are converted to days to form an estimated length in days which is compared.
- The conversion from months to days divides by 12 and then multiplies by 365.25.
+ The conversion from months to days divides by 12 and then multiplies by 365.2425.
+ As a result, this method is compatible with <a href="#equals(java.lang.Object)"><code>equals(Object)</code></a> for tenors less than 400 years.
  <p>
  The resulting order places:
  <ul>
@@ -1482,6 +1483,7 @@ implements java.lang.Comparable&lt;<a href="Tenor.html" title="class in com.open
  <li>a 3 month tenor between 91 and 92 days
  <li>a 6 month tenor between 182 and 183 days
  <li>a 1 year tenor between 365 and 366 days
+ <li>a 4 year tenor between 1460 and 1461 days
  </ul></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

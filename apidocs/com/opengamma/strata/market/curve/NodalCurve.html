@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":18,"i7":6,"i8":6};
+var data = {"i0":18,"i1":6,"i2":6,"i3":18,"i4":6,"i5":6,"i6":6,"i7":18,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,13 +188,20 @@ extends <a href="Curve.html" title="interface in com.opengamma.strata.market.cur
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>default <a href="../../collect/MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Converts this instance to a stream of y-values, keyed by the x-values.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withMetadata(com.opengamma.strata.market.curve.CurveMetadata)">withMetadata</a></span>&#8203;(<a href="CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a>&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">Returns a new curve with the specified metadata.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withNode(double,double,com.opengamma.strata.market.param.ParameterMetadata)">withNode</a></span>&#8203;(double&nbsp;x,
         double&nbsp;y,
@@ -203,7 +210,7 @@ extends <a href="Curve.html" title="interface in com.opengamma.strata.market.cur
 <div class="block">Returns a new curve with an additional node, specifying the parameter metadata.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -211,14 +218,14 @@ extends <a href="Curve.html" title="interface in com.opengamma.strata.market.cur
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>default <a href="NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
 <div class="block">Returns a perturbed copy of the data.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValues(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray)">withValues</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;xValues,
           <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;yValues)</code></th>
@@ -226,7 +233,7 @@ extends <a href="Curve.html" title="interface in com.opengamma.strata.market.cur
 <div class="block">Returns a new curve with the specified x-values and y-values.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withYValues(com.opengamma.strata.collect.array.DoubleArray)">withYValues</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;values)</code></th>
 <td class="colLast">
@@ -378,6 +385,22 @@ extends <a href="Curve.html" title="interface in com.opengamma.strata.market.cur
 <dd><code>yValues</code> - the new y-values for the curve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new curve</dd>
+</dl>
+</li>
+</ul>
+<a id="values()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>values</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../collect/MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;&nbsp;values()</pre>
+<div class="block">Converts this instance to a stream of y-values, keyed by the x-values.
+ <p>
+ This returns a <a href="../../collect/MapStream.html" title="class in com.opengamma.strata.collect"><code>MapStream</code></a> keyed by the x-values.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a map stream containing the x-values and the y-values</dd>
 </dl>
 </li>
 </ul>
