@@ -27,9 +27,16 @@ HolidayCalendarId holCalId = HolidayCalendarId.of("GBLO");
 HolidayCalendar holCal = holCalId.resolve(ReferenceData.standard());
 ```
 
+A holiday calendar can also be obtained using a currency:
+
+```java
+HolidayCalendarId holCalId = HolidayCalendarId.defaultByCurrency(Currency.USD);
+```
+
 The `ReferenceData` provided separation between the identifier and the holiday calendar.
 This allows users of Strata to supply their own holiday calendar data.
-To aid evaluation, Strata provides some [standard holiday calendars]({{site.baseurl}}/holiday_data).
+To aid evaluation, Strata provides some [standard holiday calendars]({{site.baseurl}}/holiday_data) 
+and a mapping from [currencies to holiday calendars]({{site.baseurl}}/holiday_data).
 
 All available holiday calendars can be listed using the static method  `HolidayCalendarId.extendedEnum()`.
 
@@ -68,3 +75,6 @@ Note that when querying dates, there is no difference between a holiday and a we
 
 Strata provides a set of [standard holiday calendars]({{site.baseurl}}/holiday_data).
 
+## Default Currency Holiday Calendars
+
+Strata provides a set of [default holiday calendars]({{site.baseurl}}/holiday_data) for each currency.

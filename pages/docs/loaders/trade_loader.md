@@ -138,8 +138,8 @@ The leg columns are of the form "Leg n xxx" where "n" is the leg number starting
 | Leg 1 End Date                       | Fallback    | The unadjusted end date, such as "2022-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Leg 1 Frequency                      | Mandatory   | The accrual frequency, such as "P3M" or "3M" |
 | Leg 1 Date Convention                | Optional    | The accrual [business day convention]({{site.baseurl}}/date_adjustments/), such as "Following", defaults to "ModifiedFollowing" |
-| Leg 1 Date Calendar                  | Optional    | The accrual [holiday calendar]({{site.baseurl}}/holiday_data/) to use, such as "GBLO" |
-| Leg 1 Start Date Convention          | Optional    | The start date business day convention |
+| Leg 1 Date Calendar                  | Optional    | The accrual [holiday calendar]({{site.baseurl}}/holiday_data/) to use, such as "GBLO". Defaults to the holiday calendar of the trade's currency |
+| Leg 1 Start Date Convention          | Optional    | The start date business day convention, defaults to "ModifiedFollowing" |
 | Leg 1 Start Date Calendar            | Optional    | The start date holiday calendar |
 | Leg 1 End Date Convention            | Optional    | The end date business day convention |
 | Leg 1 End Date Calendar              | Optional    | The end date holiday calendar |
@@ -148,24 +148,24 @@ The leg columns are of the form "Leg n xxx" where "n" is the leg number starting
 | Leg 1 First Regular Start Date       | Optional    | The unadjusted start date of the first regular accrual period, such as "2017-09-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Leg 1 Last Regular End Date          | Optional    | The unadjusted end date of the last regular accrual period, such as "2022-03-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Leg 1 Override Start Date            | Optional    | The unadjusted start date override |
-| Leg 1 Override Start Date Convention | Optional    | The start date override business day convention |
-| Leg 1 Override Start Date Calendar   | Optional    | The start date override holiday calendar |
+| Leg 1 Override Start Date Convention | Optional    | The start date override business day convention, defaults to "ModifiedFollowing" |
+| Leg 1 Override Start Date Calendar   | Optional    | The start date override holiday calendar, defaults to [holiday calendar]({{site.baseurl}}/holiday_data/) of trade's currency |
 | Leg 1 Payment Frequency              | Optional    | The payment frequency, such as "P3M" or "3M", defaults to the accrual frequency |
 | Leg 1 Payment Relative To            | Optional    | The date that payments are relative to, defaults to "PeriodEnd" |
 | Leg 1 Compounding Method             | Optional    | The compounding method, defaults to "None" |
 | Leg 1 Payment Offset Days            | Optional    | The payment offset in days, defaults to no offset |
-| Leg 1 Payment Offset Calendar        | Optional    | The payment offset calendar, defaults to "NoHolidays" |
-| Leg 1 Payment Offset Adjustment Convention | Optional | The payment offset adjustment business day convention |
-| Leg 1 Payment Offset Adjustment Calendar | Optional | The payment offset adjustment holiday calendar |
+| Leg 1 Payment Offset Calendar        | Optional    | The payment offset calendar, defaults to [holiday calendar]({{site.baseurl}}/holiday_data/) of trade's currency |
+| Leg 1 Payment Offset Adjustment Convention | Optional | The payment offset adjustment business day convention, defaults to "ModifiedFollowing" |
+| Leg 1 Payment Offset Adjustment Calendar | Optional | The payment offset adjustment holiday calendar, defaults to Leg 1 Payment Offset Calendar |
 | Leg 1 Currency                       | Fallback    | The payment currency, such as "GBP" |
 | Leg 1 Notional                       | Fallback    | The notional amount, in the notional currency |
 | Leg 1 Notional Currency              | Optional    | The currency of the notional, defaults to the payment currency |
 | Leg 1 FX Reset Index                 | Optional    | The FX index used if the swap is FX Reset |
 | Leg 1 FX Reset Relative To           | Optional    | The date that the FX reset is relative to, defaults to "PeriodStart" |
 | Leg 1 FX Reset Offset Days           | Optional    | The FX reset offset in days, defaults to no offset |
-| Leg 1 FX Reset Offset Calendar       | Optional    | The FX reset offset calendar, defaults to "NoHolidays" |
-| Leg 1 FX Reset Offset Adjustment Convention | Optional | The FX reset offset adjustment business day convention |
-| Leg 1 FX Reset Offset Adjustment Calendar | Optional | The FX reset offset adjustment holiday calendar |
+| Leg 1 FX Reset Offset Calendar       | Optional    | The FX reset offset calendar, defaults to [holiday calendar]({{site.baseurl}}/holiday_data/) of trade's currency |
+| Leg 1 FX Reset Offset Adjustment Convention | Optional | The FX reset offset adjustment business day convention, defaults to "ModifiedFollowing" |
+| Leg 1 FX Reset Offset Adjustment Calendar | Optional | The FX reset offset adjustment holiday calendar, defaults to Leg 1 FX Reset Offset Calendar |
 | Leg 1 Notional Initial Exchange      | Optional    | Whether there is an initial exchange of notionals, such as "True" |
 | Leg 1 Notional Intermediate Exchange | Optional    | Whether there is an intermediate exchange of notionals, such as "True" |
 | Leg 1 Notional Final Exchange        | Optional    | Whether there is an final exchange of notionals, such as "True" |
@@ -205,9 +205,9 @@ Ibor rate legs:
 | Leg 1 Day Count                      | Optional    | The day count convention, such as "Act.360", defaults from the index |
 | Leg 1 Fixing Relative To             | Optional    | The date that fixings are relative to, defaults to "PeriodStart" |
 | Leg 1 Fixing Offset Days             | Optional    | The fixing offset in days, defaults to no offset, defaults from the index |
-| Leg 1 Fixing Offset Calendar         | Optional    | The fixing offset calendar, defaults to "NoHolidays", defaults from the index |
-| Leg 1 Fixing Offset Adjustment Convention | Optional | The payment fixing adjustment business day convention, defaults from the index |
-| Leg 1 Fixing Offset Adjustment Calendar | Optional | The payment fixing adjustment holiday calendar, defaults from the index |
+| Leg 1 Fixing Offset Calendar         | Optional    | The fixing offset calendar, defaults to [holiday calendar]({{site.baseurl}}/holiday_data/) of trade's currency, defaults from the index |
+| Leg 1 Fixing Offset Adjustment Convention | Optional | The payment fixing adjustment business day convention, defaults to "ModifiedFollowing", defaults from the index |
+| Leg 1 Fixing Offset Adjustment Calendar | Optional | The payment fixing adjustment holiday calendar, default to Leg 1 Fixing Offset Calendar, defaults from the index |
 | Leg 1 Reset Frequency                | Optional    | The reset frequency, only used if more frequent than the accrual frequency, see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Leg 1 Reset Date Convention          | Optional    | The reset date business day convention |
 | Leg 1 Reset Date Calendar            | Optional    | The reset date holiday calendar |
