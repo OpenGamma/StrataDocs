@@ -68,3 +68,13 @@ Note that when querying dates, there is no difference between a holiday and a we
 
 Strata provides a set of [standard holiday calendars]({{site.baseurl}}/holiday_data).
 
+
+## Default Holiday Calendar for a currency
+
+A holiday calendar can also be obtained from a currency:
+
+```java
+HolidayCalendarId holCalId = HolidayCalendarId.defaultByCurrency(Currency.USD);
+```
+
+See the [default holiday calendar list]({{site.baseurl}}/holiday_data) to find the default for each currency.

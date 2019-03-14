@@ -52,3 +52,27 @@ Future and past dates are an extrapolations of the known holiday dates.
 
 Holiday calendars have a constant in `HolidayCalendarIds`.
 The identifier can also be created dynamically using `HolidayCalendarId.of(name)`.
+
+
+## Default Holiday Calendar for a currency
+
+Strata defines a default holiday calendar for many currencies.
+
+| Currency | Calendar Name | Holidays                                         |
+|----------|---------------| -------------------------------------------------|
+| AUD      | AUSY          | Sydney (Australia) holidays                      |
+| BRL      | BRBD          | Brazil holidays                                  |
+| CAD      | CATO          | Montreal (Canada) holidays                       |
+| CHF      | CHZU          | Zurich (Switzerland) holidays                    |
+| CZK      | CZPR          | Prague (Czech Republic) holidays                 |
+| DKK      | DKCO          | Copenhagen (Denmark) holidays                    |
+| EUR      | EUTA          | TARGET interbank payment (Europe) holidays       |
+| GBP      | GBLO          | London (UK) holidays                             |
+| HUF      | HUBU          | Budapest (Hungary) holidays                      |
+| JPY      | JPTO          | Tokyo (Japan) holidays                           |
+| MXN      | MXMC          | Mexico City (Mexico) holidays                    |
+| NOK      | NOOS          | Oslo (Norway) holidays                           |
+| PLN      | PLWA          | Warsaw (Poland) holidays                         |
+| SEK      | SEST          | Stockholm (Sweden) holidays                      |
+| USD      | USNY          | New York (USA) holidays                          |
+| ZAR      | ZAJO          | Johannesburg (South Africa) holidays             |
