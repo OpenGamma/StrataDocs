@@ -106,7 +106,7 @@ Strata includes the following coverage:
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
-    <td></td>
+    <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
     <td><a href="{{site.baseurl}}/swaption">Swaption</a><br />
