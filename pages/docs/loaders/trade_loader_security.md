@@ -42,8 +42,8 @@ to specify the identifier and counterparty.
 |-----------------------|-------------|-------------|
 | Strata Trade Type     | Mandatory   | The type of the trade, "Security", case insensitive |
 | Security Id Scheme    | Optional    | The scheme (symbology) within which the security identifier is unique, default "OG-Security" |
-| Security Id           | Mandatory   | The security identifier |
 | Buy Sell              | Optional    | Whether the trade is "Buy" or "Sell" |
+| Security Id           | Mandatory   | The security identifier |
 | Quantity              | Mandatory   | The quantity purchased |
 | Price                 | Mandatory   | The price paid for each security |
 

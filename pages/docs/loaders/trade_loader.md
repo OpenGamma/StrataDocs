@@ -44,7 +44,6 @@ They are documented here rather than being repeated on each page:
 
 | Column name           | Mandatory? | Description |
 |-----------------------|------------|-------------|
-| Strata Trade Type     | Mandatory  | The type of the trade, "Fra", "Swap", "TermDeposit", "Security", case insensitive |
 | Id Scheme             | Optional   | The scheme (symbology) within which the trade identifier is unique, default "OG-Trade" |
 | Id                    | Optional   | The trade identifier |
 | Trade Date            | Optional   | The trade date, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |

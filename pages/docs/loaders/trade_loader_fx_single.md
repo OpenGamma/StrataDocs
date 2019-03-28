@@ -1,9 +1,9 @@
 ---
-title: Trade loader for FX single
+title: Trade loader for FX Single
 permalink: /trade_loader_fx_single/
 ---
 
-This page details the Strata CSV format for loading [FX singles]({{site.baseurl}}/fx_single).
+This page details the Strata CSV format for loading [FX Singles]({{site.baseurl}}/fx_single).
 See the [overview page]({{site.baseurl}}/trade_loader) for details of other assets classes.
 
 
@@ -13,7 +13,7 @@ The trades file is a CSV-formatted file.
 The columns may be specified in any order.
 The CSV format is flexible, and the input can specify trades in various ways.
 
-FX singles can be specified using two different column sets - by convention and by full details.
+FX Singles can be specified using two different column sets - by convention and by full details.
 The two column sets can be mixed in the same file.
 In addition, a single file can contain other asset classes, such as Swaps or FRAs.
 Just add the union of the column headers and fill in the necessary data on a row by row basis.
@@ -21,7 +21,7 @@ Just add the union of the column headers and fill in the necessary data on a row
 
 ## Example
 
-This example file specifies a FX single trade by convention.
+This example file specifies a FX Single trade by convention.
 
 ```
 Strata Trade Type, Id Scheme, Id,     Trade Date, Convention, Buy Sell, Currency, Notional, FX Rate, Payment Date
@@ -31,9 +31,9 @@ FxSingle,          OG,        123401, 2017-06-01, USD/CAD,    Buy,      USD,    
 Note that Microsoft Excel prefers the CSV file to have no spaces after the comma.
 
 
-## FX single by convention
+## FX Single by convention
 
-These columns are used when loading a FX single trade by convention.
+These columns are used when loading a FX Single trade by convention.
 See also the [overview page]({{site.baseurl}}/trade_loader) for additional optional columns that can be used
 to specify the identifier and counterparty.
 
@@ -50,9 +50,9 @@ to specify the identifier and counterparty.
 | Payment Date Calendar   | Optional    | The payment [holiday calendar]({{site.baseurl}}/holiday_data/) to use, such as "GBLO" |
 
 
-## FX single by full details
+## FX Single by full details
 
-These columns are used when loading a FX single trade by full details.
+These columns are used when loading a FX Single trade by full details.
 See also the [overview page]({{site.baseurl}}/trade_loader) for additional optional columns that can be used
 to specify the identifier and counterparty.
 
