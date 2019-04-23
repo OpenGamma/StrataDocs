@@ -25,7 +25,7 @@ BulletPayment bp = BulletPayment.builder()
   .build();
 ```
 
-{{tip}}The strata-loader project provides the ability to load a bullet payment from FpML.{{end}}
+{{tip}}The strata-loader project provides the ability to load a bullet payment from FpML and CSV.{{end}}
 
 
 ## Risk measures
