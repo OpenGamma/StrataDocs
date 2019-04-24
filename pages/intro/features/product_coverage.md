@@ -116,7 +116,7 @@ Strata includes the following coverage:
     <td><i class="fa fa-check"></i></td>
     <td></td>
     <td><i class="fa fa-check"></i></td>
-    <td></td>
+    <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
     <td>Bill</td>
@@ -167,7 +167,7 @@ Strata includes the following coverage:
     <td><i class="fa fa-check"></i></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
     <td>FX Single Barrier Option</td>
@@ -198,13 +198,13 @@ Strata includes the following coverage:
     <td></td>
   </tr>
   <tr>
-    <td>CDS<br />
+    <td><a href="{{site.baseurl}}/cds">CDS</a><br />
       <span class="note">Including Single Name and Index</span></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td></td>
     <td><i class="fa fa-check"></i></td>
-    <td></td>
+    <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
     <td>Generic Security</td>
@@ -235,7 +235,7 @@ This also indicates that the command-line tool includes an example portfolio and
 
 <a id="securitycsv-footnote" href="#securitycsv"><sup>4</sup></a>
 CSV loader for securities refers to the security identifier, with the security details
-expected to be available in the reference data.
+expected to be available in reference data.
 
 ## Additional products
 

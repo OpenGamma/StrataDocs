@@ -31,9 +31,13 @@ The follow asset classes are supported:
 
 * [FRAs]({{site.baseurl}}/trade_loader_fra)
 * [Swaps]({{site.baseurl}}/trade_loader_swap)
+* [Swaptions]({{site.baseurl}}/trade_loader_swaption)
+* [Bullet Payments]({{site.baseurl}}/trade_loader_bullet_payment)
 * [Term Deposits]({{site.baseurl}}/trade_loader_term_deposit)
 * [FX Singles]({{site.baseurl}}/trade_loader_fx_single)
 * [FX Swaps]({{site.baseurl}}/trade_loader_fx_swap)
+* [FX Vanilla Options]({{site.baseurl}}/trade_loader_fx_vanilla_option)
+* [CDS]({{site.baseurl}}/trade_loader_cds)
 * [Securities]({{site.baseurl}}/trade_loader_security)
 
 
@@ -68,3 +72,14 @@ TermDeposit,       OG,        123401, 2017-06-01, GBP-Deposit-T0,        Buy,   
 ```
 
 Note that Microsoft Excel prefers the CSV file to have no spaces after the comma.
+
+
+## Writer
+
+Trades can be written to CSV using [`TradeCsvWriter`]({{site.baseurl}}/apidocs/com/opengamma/strata/loader/csv/TradeCsvWriter.html)
+
+```
+StribfBuilder buf = new StringBuilder();
+TradeCsvWriter.write(trades, buf);
+```
+

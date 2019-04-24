@@ -62,16 +62,18 @@ These columns are used when loading a FRA trade by full details.
 See also the [overview page]({{site.baseurl}}/trade_loader) for additional optional columns that can be used
 to specify the identifier and counterparty.
 
-| Column name           | Mandatory?  | Description |
-|-----------------------|-------------|-------------|
-| Strata Trade Type     | Mandatory   | The type of the trade, "Fra", case insensitive |
-| Start Date            | Mandatory   | The unadjusted start date, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
-| End Date              | Mandatory   | The unadjusted end date, such as "2017-09-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
-| Index                 | Mandatory   | The [floating index]({{site.baseurl}}/indices/), such as "GBP-LIBOR-3M" |
-| Interpolated Index    | Optional    | The [floating index]({{site.baseurl}}/indices/) to interpolate with, such as "GBP-LIBOR-6M" |
-| Buy Sell              | Mandatory   | Whether the FRA is "Buy" or "Sell" |
-| Notional              | Mandatory   | The notional amount, currency defined by the index |
-| Fixed Rate            | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |
-| Day Count             | Optional    | The [day count convention]({{site.baseurl}}/day_counts/), such as "Act/360" |
-| Date Convention       | Optional    | The [business day convention]({{site.baseurl}}/date_adjustments/), such as "Following" or "ModifiedFollowing" |
-| Date Calendar         | Optional    | The [holiday calendar]({{site.baseurl}}/holiday_data/) to use, such as "GBLO" |
+| Column name            | Mandatory?  | Description |
+|------------------------|-------------|-------------|
+| Strata Trade Type      | Mandatory   | The type of the trade, "Fra", case insensitive |
+| Start Date             | Mandatory   | The unadjusted start date, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
+| End Date               | Mandatory   | The unadjusted end date, such as "2017-09-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
+| Index                  | Mandatory   | The [floating index]({{site.baseurl}}/indices/), such as "GBP-LIBOR-3M" |
+| Interpolated Index     | Optional    | The [floating index]({{site.baseurl}}/indices/) to interpolate with, such as "GBP-LIBOR-6M" |
+| Buy Sell               | Mandatory   | Whether the FRA is "Buy" or "Sell" |
+| Currency               | Optional    | The currency of the notional amount, defaults to the currency of the index |
+| Notional               | Mandatory   | The notional amount |
+| Fixed Rate             | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |
+| Day Count              | Optional    | The [day count convention]({{site.baseurl}}/day_counts/), such as "Act/360" |
+| Date Convention        | Optional    | The [business day convention]({{site.baseurl}}/date_adjustments/), such as "Following" or "ModifiedFollowing" |
+| Date Calendar          | Optional    | The [holiday calendar]({{site.baseurl}}/holiday_data/) to use, such as "GBLO" |
+| FRA Discounting Method | Mandatory   | The discounting method to use, "ISDA", "AFMA", or "None", defaults to "ISDA" |
