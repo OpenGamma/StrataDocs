@@ -3,7 +3,7 @@ title: Trade loader for FX Vanilla Option
 permalink: /trade_loader_fx_vanilla_option/
 ---
 
-This page details the Strata CSV format for loading [FX singles]({{site.baseurl}}/fx_vanilla_option).
+This page details the Strata CSV format for loading [FX Vanilla Options]({{site.baseurl}}/fx_vanilla_option).
 See the [overview page]({{site.baseurl}}/trade_loader) for details of other assets classes.
 
 
@@ -24,8 +24,8 @@ Just add the union of the column headers and fill in the necessary data on a row
 This example file specifies a FX Vanilla Option trade by convention.
 
 ```
-Strata Trade Type, Convention, Buy Sell, Currency, Notional, FX Rate, Payment Date, Long Short, Premium Direction, Premium Date, Premium Currency, Premium Amount
-FxSingle,          USD/CAD,    Buy,      USD,      1000000,  1.31,    2017-06-03,   Long,       Pay,               2017-03-03,   GBP,              1000
+Strata Trade Type, Convention, Buy Sell, Currency, Notional, FX Rate, Payment Date, Long Short, Expiry Date, Expiry Time, Expiry Zone,  Premium Direction, Premium Date, Premium Currency, Premium Amount
+FxVanillaOption,   USD/CAD,    Buy,      USD,      1000000,  1.31,    2017-06-03,   Long,       2017-06-03,  11:00,       Europe/Paris, Pay,               2017-03-03,   GBP,              1000
 ```
 
 Note that Microsoft Excel prefers the CSV file to have no spaces after the comma.
