@@ -89,7 +89,7 @@ The leg columns are of the form "Leg n xxx" where "n" is the leg number starting
 | Leg 1 End Date Convention            | Optional    | The end date business day convention |
 | Leg 1 End Date Calendar              | Optional    | The end date holiday calendar |
 | Leg 1 Roll Convention                | Optional    | The roll convention, such as "Day21" or "EOM" |
-| Leg 1 Stub Convention                | Optional    | The stub convention, such as "ShortFinal", defaults to "ShortInitial" |
+| Leg 1 Stub Convention                | Optional    | The stub convention, such as "ShortFinal", defaults to "SmartInitial" |
 | Leg 1 First Regular Start Date       | Optional    | The unadjusted start date of the first regular accrual period, such as "2017-09-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Leg 1 Last Regular End Date          | Optional    | The unadjusted end date of the last regular accrual period, such as "2022-03-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Leg 1 Override Start Date            | Optional    | The unadjusted start date override |
@@ -106,6 +106,7 @@ The leg columns are of the form "Leg n xxx" where "n" is the leg number starting
 | Leg 1 Notional                       | Fallback    | The notional amount, in the notional currency |
 | Leg 1 Notional Currency              | Optional    | The currency of the notional, defaults to the payment currency |
 | Leg 1 FX Reset Index                 | Optional    | The FX index used if the swap is FX Reset |
+| Leg 1 FX Reset Initial Notional      | Optional    | The first fixed FX reset notional |
 | Leg 1 FX Reset Relative To           | Optional    | The date that the FX reset is relative to, defaults to "PeriodStart" |
 | Leg 1 FX Reset Offset Days           | Optional    | The FX reset offset in days, defaults to no offset |
 | Leg 1 FX Reset Offset Calendar       | Optional    | The FX reset offset calendar, defaults to "NoHolidays" |
@@ -125,9 +126,12 @@ Fixed rate legs:
 |--------------------------------------|-------------|-------------|
 | Leg 1 Fixed Rate                     | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |
 | Leg 1 Day Count                      | Recommended | The day count convention, such as "Act.360", defaults from floating leg index |
+| Leg 1 Future Value Notional          | Optional    | The future value notional as used in BRL swaps |
 | Leg 1 Initial Stub Rate              | Optional    | The fixed rate of the initial stub |
+| Leg 1 Initial Stub Amount Currency   | Optional    | The currency of the initial stub |
 | Leg 1 Initial Stub Amount            | Optional    | The amount of the initial stub |
 | Leg 1 Final Stub Rate                | Optional    | The fixed rate of the final stub |
+| Leg 1 Final Stub Amount Currency     | Optional    | The currency of the final stub |
 | Leg 1 Final Stub Amount              | Optional    | The amount of the final stub |
 
 Overnight rate legs:
@@ -162,10 +166,12 @@ Ibor rate legs:
 | Leg 1 Gearing                        | Optional    | The gearing multiplier |
 | Leg 1 Spread                         | Optional    | The spread rate, as a percentage, such as "0.1" for 0.1% |
 | Leg 1 Initial Stub Rate              | Optional    | The fixed rate of the initial stub |
+| Leg 1 Initial Stub Amount Currency   | Optional    | The currency of the initial stub |
 | Leg 1 Initial Stub Amount            | Optional    | The amount of the initial stub |
 | Leg 1 Initial Stub Index             | Optional    | The index to use for the initial stub |
-| Leg 1 Initial Stub Interpolated Index | Optional    | The index to use for interpolation in the initial stub |
+| Leg 1 Initial Stub Interpolated Index | Optional   | The index to use for interpolation in the initial stub |
 | Leg 1 Final Stub Rate                | Optional    | The fixed rate of the final stub |
+| Leg 1 Final Stub Amount Currency     | Optional    | The currency of the final stub |
 | Leg 1 Final Stub Amount              | Optional    | The amount of the final stub |
 | Leg 1 Final Stub Index               | Optional    | The index to use for the final stub |
 | Leg 1 Final Stub Interpolated Index  | Optional    | The index to use for interpolation in the final stub |
@@ -192,11 +198,13 @@ The additional rows only need to contain the minimal information for the variabl
 |-----------------------|-------------|-------------|
 | Strata Trade Type     | Mandatory   | The type of the trade, "Variable" |
 | Start Date            | Mandatory   | The unadjusted date when the variable element changes, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
-| Notional              | Optional    | The notional amount that applies from the start date onwards |
-| Fixed Rate            | Optional    | The fixed rate, as a percentage, that applies from the start date onwards |
+| Notional              | Optional    | The notional amount that applies from the start date onwards for all legs |
+| Leg 1 Notional        | Optional    | As above, but only for a specific leg |
+| Fixed Rate            | Optional    | The fixed rate, as a percentage, that applies from the start date onwards for all legs |
+| Leg 1 Fixed Rate      | Optional    | As above, but only for a specific leg |
 
-It is permitted to define a row with neither notional nor fixed rate specified.
-The variable element applies to all legs and cannot be controlled per leg.
+It is permitted to define a row with neither notional nor fixed rate specified, but such a row would simply be ignored.
+For most swaps there is no need to use the leg-specific column names.
 
 This example file has both variable notional and fixed rate:
 

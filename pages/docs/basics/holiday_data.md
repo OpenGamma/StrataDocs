@@ -20,59 +20,59 @@ with data from an external vendor of holiday information.
 The holiday dates are based on original research and typically cover 1950 to 2099.
 Future and past dates are an extrapolations of the known holiday dates.
 
-| Name | Holidays                                         | Weekends          | ISDA reference      |
-|------|--------------------------------------------------|-------------------|---------------------|
-| AUSY | Sydney (Australia) holidays                      | Saturday/Sunday   |                     |
-| BRBD | Brazil holidays                                  | Saturday/Sunday   |                     |
-| CAMO | Montreal (Canada) holidays                       | Saturday/Sunday   |                     |
-| CATO | Toronto (Canada) holidays                        | Saturday/Sunday   |                     |
-| CHZU | Zurich (Switzerland) holidays                    | Saturday/Sunday   |                     |
-| CZPR | Prague (Czech Republic) holidays                 | Saturday/Sunday   |                     |
-| DEFR | Frankfurt (Germany) holidays                     | Saturday/Sunday   |                     |
-| DKCO | Copenhagen (Denmark) holidays                    | Saturday/Sunday   |                     |
-| EUTA | TARGET interbank payment (Europe) holidays       | Saturday/Sunday   | section 1.8 (2006)  |
-| FRPA | Paris (France) holidays                          | Saturday/Sunday   |                     |
-| GBLO | London (UK) holidays                             | Saturday/Sunday   |                     |
-| HUBU | Budapest (Hungary) holidays                      | Saturday/Sunday   |                     |
-| JPTO | Tokyo (Japan) holidays                           | Saturday/Sunday   |                     |
-| MXMC | Mexico City (Mexico) holidays                    | Saturday/Sunday   |                     |
-| NOOS | Oslo (Norway) holidays                           | Saturday/Sunday   |                     |
-| NYFD | Federal Reserve Bank of New York holidays        | Saturday/Sunday   | section 1.9 (2006)  |
-| NYSE | New York Stock Exchange holidays                 | Saturday/Sunday   | section 1.10 (2006) |
-| PLWA | Warsaw (Poland) holidays                         | Saturday/Sunday   |                     |
-| SEST | Stockholm (Sweden) holidays                      | Saturday/Sunday   |                     |
-| USGS | United States Government Securities              | Saturday/Sunday   | section 1.11 (2006) |
-| USNY | New York (USA) holidays                          | Saturday/Sunday   |                     |
-| ZAJO | Johannesburg (South Africa) holidays             | Saturday/Sunday   |                     |
-|------------|----------------------|-------------------|----|
-| NoHolidays | No holiday dates     | No weekends       |    |
-| Sat/Sun    | No holiday dates     | Saturday/Sunday   |    |
-| Fri/Sat    | No holiday dates     | Friday/Saturday   |    |
-| Thu/Fri    | No holiday dates     | Thursday/Friday   |    |
+The default column indicates if that calendar is the default for the currency.
+
+| Name | Holidays                                         | Default | Weekends          | ISDA reference      |
+|------|--------------------------------------------------|---------|-------------------|---------------------|
+| AUSY | Sydney (Australia) holidays                      | AUD     | Saturday/Sunday   |                     |
+| BRBD | Brazil holidays                                  | BRL     | Saturday/Sunday   |                     |
+| CAMO | Montreal (Canada) holidays                       |         | Saturday/Sunday   |                     |
+| CATO | Toronto (Canada) holidays                        | CAD     | Saturday/Sunday   |                     |
+| CHZU | Zurich (Switzerland) holidays                    | CHF     | Saturday/Sunday   |                     |
+| CZPR | Prague (Czech Republic) holidays                 | CZK     | Saturday/Sunday   |                     |
+| DEFR | Frankfurt (Germany) holidays                     |         | Saturday/Sunday   |                     |
+| DKCO | Copenhagen (Denmark) holidays                    |         | Saturday/Sunday   |                     |
+| EUTA | TARGET interbank payment (Europe) holidays       | EUR     | Saturday/Sunday   | section 1.8 (2006)  |
+| FRPA | Paris (France) holidays                          |         | Saturday/Sunday   |                     |
+| GBLO | London (UK) holidays                             | GBP     | Saturday/Sunday   |                     |
+| HUBU | Budapest (Hungary) holidays                      | HUF     | Saturday/Sunday   |                     |
+| JPTO | Tokyo (Japan) holidays                           | JPY     | Saturday/Sunday   |                     |
+| MXMC | Mexico City (Mexico) holidays                    | MXN     | Saturday/Sunday   |                     |
+| NOOS | Oslo (Norway) holidays                           | NOK     | Saturday/Sunday   |                     |
+| NYFD | Federal Reserve Bank of New York holidays        |         | Saturday/Sunday   | section 1.9 (2006)  |
+| NYSE | New York Stock Exchange holidays                 |         | Saturday/Sunday   | section 1.10 (2006) |
+| NZAU | Auckland (New Zealand) holidays                  | NZD     | Saturday/Sunday   |                     |
+| NZWE | Wellington (New Zealand) holidays                |         | Saturday/Sunday   |                     |
+| NZBD | New Zealand holidays                             |         | Saturday/Sunday   |                     |
+| PLWA | Warsaw (Poland) holidays                         | PLN     | Saturday/Sunday   |                     |
+| SEST | Stockholm (Sweden) holidays                      | SEK     | Saturday/Sunday   |                     |
+| USGS | United States Government Securities              |         | Saturday/Sunday   | section 1.11 (2006) |
+| USNY | New York (USA) holidays                          | USD     | Saturday/Sunday   |                     |
+| ZAJO | Johannesburg (South Africa) holidays             | ZAR     | Saturday/Sunday   |                     |
+|------------|----------------------|-|-------------------|----|
+| NoHolidays | No holiday dates     | | No weekends       |    |
+| Sat/Sun    | No holiday dates     | | Saturday/Sunday   |    |
+| Fri/Sat    | No holiday dates     | | Friday/Saturday   |    |
+| Thu/Fri    | No holiday dates     | | Thursday/Friday   |    |
 
 Holiday calendars have a constant in `HolidayCalendarIds`.
 The identifier can also be created dynamically using `HolidayCalendarId.of(name)`.
 
 
-## Default Holiday Calendar for a currency
+### Additional Holiday calendars
 
-Strata defines a default holiday calendar for many currencies.
+Some [indices]({{site.baseurl}}/indices) refer to calendars where example holiday data is not provided.
+These do no have a constant in `HolidayCalendarIds` and cannot be resolved without externally provided holiday data.
+These are listed below for completeness.
 
-| Currency | Calendar Name | Holidays                                         |
-|----------|---------------| -------------------------------------------------|
-| AUD      | AUSY          | Sydney (Australia) holidays                      |
-| BRL      | BRBD          | Brazil holidays                                  |
-| CAD      | CATO          | Montreal (Canada) holidays                       |
-| CHF      | CHZU          | Zurich (Switzerland) holidays                    |
-| CZK      | CZPR          | Prague (Czech Republic) holidays                 |
-| DKK      | DKCO          | Copenhagen (Denmark) holidays                    |
-| EUR      | EUTA          | TARGET interbank payment (Europe) holidays       |
-| GBP      | GBLO          | London (UK) holidays                             |
-| HUF      | HUBU          | Budapest (Hungary) holidays                      |
-| JPY      | JPTO          | Tokyo (Japan) holidays                           |
-| MXN      | MXMC          | Mexico City (Mexico) holidays                    |
-| NOK      | NOOS          | Oslo (Norway) holidays                           |
-| PLN      | PLWA          | Warsaw (Poland) holidays                         |
-| SEK      | SEST          | Stockholm (Sweden) holidays                      |
-| USD      | USNY          | New York (USA) holidays                          |
-| ZAR      | ZAJO          | Johannesburg (South Africa) holidays             |
+| Name | Holidays                                         | Default |
+|------|--------------------------------------------------|---------|
+| CLSA | Santiago (Chile) holidays                        | CLP     |
+| CNBE | Beijing (China) holidays                         | CNY     |
+| COBO | Bogota (Colombia) holidays                       | COP     |
+| HKHK | Hong Kong holidays                               | HKD     |
+| INMU | Mumbai (India) holidays                          | INR     |
+| KRSE | Seoul (Republic of Korea) holidays               | KRW     |
+| SGSI | Singapore holidays                               | SGD     |
+| THBA | Bangkok (Thailand) holidays                      | THB     |
+| TWTA | Taipei (Taiwan) holidays                         | TWD     |

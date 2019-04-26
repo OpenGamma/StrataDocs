@@ -21,7 +21,8 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 | BRL-CDI        | CDI index for BRL        | Bus/252 BRBD |
 | CAD-CORRA      | CORRA index for CAD      | Act/365F     |
 | CHF-SARON      | SARON index for CHF      | Act/360      |
-| COP-OIBR       | IBR index for COP        | Act/360      |
+| CLP-TNA *      | TNA index for CLP        | Act/360      |
+| COP-OIBR *     | IBR index for COP        | Act/360      |
 | DKK-TNR        | TNR index for CHF        | Act/360      |
 | EUR-EONIA      | EONIA index for EUR      | Act/360      |
 | GBP-SONIA      | SONIA index for GBP      | Act/365F     |
@@ -71,6 +72,8 @@ The deposit period is known as the tenor, and a rate is published for a number o
 | SEK-STIBOR-XX        | 1W,1M,2M,3M,6M           | STIBOR index for SEK      | Act/360      |
 | SGD-SIBOR-XX *       | 1M,3M,6M,12M             | SIBOR index for SGD       | Act/365F     |
 | SGD-SOR-XX *         | 1M,3M,6M                 | SOR index for SGD         | Act/365F     |
+| THB-THBFIX-XX *      | 1W,1M,3M,6M,12M          | THBFIX index for THB      | Act/365F     |
+| TWD-TAIBOR-XX *      | 1W,1M,2M,3M,6M,9M,12M    | TAIBOR index for TWD      | Act/365F     |
 | USD-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for USD       | Act/360      |
 | ZAR-JIBAR-XX         | 1M,3M,6M,9M,12M          | JIBAR index for ZAR       | Act/365F     |
 

@@ -6,6 +6,41 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.3.0
+
+* 26 April 2019
+
+This release contains over 40 [fixed issues](https://github.com/OpenGamma/Strata/milestone/22?closed=1).
+
+* Writing trades to CSV
+ [#1952](https://github.com/OpenGamma/Strata/issues/1952)
+* Parsing trades from CSV - support for Swaption, FX Vanilla Option, CDS and Bullet Payment
+ [#1945](https://github.com/OpenGamma/Strata/issues/1945),
+ [#1954](https://github.com/OpenGamma/Strata/issues/1954),
+ [#1956](https://github.com/OpenGamma/Strata/issues/1956),
+ [#1927](https://github.com/OpenGamma/Strata/issues/1927)
+* Enhance parsing trades from CSV - parse more kinds of Swap and FRA
+ [#1951](https://github.com/OpenGamma/Strata/issues/1951),
+ [#1947](https://github.com/OpenGamma/Strata/issues/1947)
+* Add collateralized cash price settlement for swaptions
+ [#1902](https://github.com/OpenGamma/Strata/issues/1902),
+ [#1921](https://github.com/OpenGamma/Strata/issues/1921)
+* Add TWD-TAIBOR, THB-THBFIX and EUR-ESTER
+ [#1931](https://github.com/OpenGamma/Strata/issues/1931),
+ [#1930](https://github.com/OpenGamma/Strata/issues/1930),
+ [#1923](https://github.com/OpenGamma/Strata/issues/1923),
+ [#1893](https://github.com/OpenGamma/Strata/issues/1893)
+* Fix HKD-HIBOR,  AUD-BBSW and COP FX
+ [#1887](https://github.com/OpenGamma/Strata/issues/1887),
+ [#1891](https://github.com/OpenGamma/Strata/issues/1891)
+* Fix bond detachment date logic for accrued year fraction
+ [#1953](https://github.com/OpenGamma/Strata/issues/1953)
+* More lenient schedule generation
+ [#1925](https://github.com/OpenGamma/Strata/issues/1925)
+* Support working on weekends to handle "Golden Week" in China
+ [#1958](https://github.com/OpenGamma/Strata/issues/1958)
+
+
 ## Strata v2.2.0
 
 * 28 January 2019
