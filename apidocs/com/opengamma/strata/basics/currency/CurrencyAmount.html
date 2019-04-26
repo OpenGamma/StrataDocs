@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":9,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":9,"i17":9,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -239,48 +239,69 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNegative()">isNegative</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the amount is negative.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPositive()">isPositive</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the amount is positive.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isZero()">isZero</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the amount is zero.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapAmount(java.util.function.DoubleUnaryOperator)">mapAmount</a></span>&#8203;(java.util.function.DoubleUnaryOperator&nbsp;mapper)</code></th>
 <td class="colLast">
 <div class="block">Applies an operation to the amount.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minus(double)">minus</a></span>&#8203;(double&nbsp;amountToSubtract)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with the specified amount subtracted.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minus(com.opengamma.strata.basics.currency.CurrencyAmount)">minus</a></span>&#8203;(<a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;amountToSubtract)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with the specified amount subtracted.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#multipliedBy(double)">multipliedBy</a></span>&#8203;(double&nbsp;valueToMultiplyBy)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with the amount multiplied.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#negated()">negated</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with the amount negated.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#negative()">negative</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with a negative amount.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount)</code></th>
@@ -288,7 +309,7 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <div class="block">Obtains an instance of <code>CurrencyAmount</code> for the specified currency and amount.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String,double)">of</a></span>&#8203;(java.lang.String&nbsp;currencyCode,
   double&nbsp;amount)</code></th>
@@ -297,49 +318,49 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
  three letter currency code and amount.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(java.lang.String&nbsp;amountStr)</code></th>
 <td class="colLast">
 <div class="block">Parses the string to produce a <code>CurrencyAmount</code>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plus(double)">plus</a></span>&#8203;(double&nbsp;amountToAdd)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with the specified amount added.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plus(com.opengamma.strata.basics.currency.CurrencyAmount)">plus</a></span>&#8203;(<a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;amountToAdd)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with the specified amount added.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#positive()">positive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>CurrencyAmount</code> with a positive amount.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMoney()">toMoney</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts the current instance of <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency"><code>CurrencyAmount</code></a> to the equivalent <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a> instance.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the amount as a string.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zero(com.opengamma.strata.basics.currency.Currency)">zero</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
@@ -394,7 +415,9 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <h4>of</h4>
 <pre class="methodSignature">public static&nbsp;<a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;of&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
                                 double&nbsp;amount)</pre>
-<div class="block">Obtains an instance of <code>CurrencyAmount</code> for the specified currency and amount.</div>
+<div class="block">Obtains an instance of <code>CurrencyAmount</code> for the specified currency and amount.
+ <p>
+ If the negative form of zero is passed in, it will be converted to positive zero.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>currency</code> - the currency the amount is in</dd>
@@ -416,7 +439,9 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
  three letter currency code and amount.
  <p>
  A currency is uniquely identified by ISO-4217 three letter code.
- This method creates the currency if it is not known.</div>
+ This method creates the currency if it is not known.
+ <p>
+ If the negative form of zero is passed in, it will be converted to positive zero.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>currencyCode</code> - the three letter currency code, ASCII and upper case</dd>
@@ -608,6 +633,52 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <dd><code>mapper</code> - the operator to be applied to the amount</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a copy of this amount with the mapping applied to the original amount</dd>
+</dl>
+</li>
+</ul>
+<a id="isZero()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isZero</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isZero()</pre>
+<div class="block">Checks if the amount is zero.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if zero</dd>
+</dl>
+</li>
+</ul>
+<a id="isPositive()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isPositive</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isPositive()</pre>
+<div class="block">Checks if the amount is positive.
+ <p>
+ Zero and negative amounts return false.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if positive</dd>
+</dl>
+</li>
+</ul>
+<a id="isNegative()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isNegative</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isNegative()</pre>
+<div class="block">Checks if the amount is negative.
+ <p>
+ Zero and positive amounts return false.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if negative</dd>
 </dl>
 </li>
 </ul>

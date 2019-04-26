@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../Report.html" title="interface in com.opengamma.strata.report">Report</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
+<dd><code><a href="../Report.html" title="interface in com.opengamma.strata.report">Report</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">CashFlowReport</span>
 extends java.lang.Object
-implements <a href="../Report.html" title="interface in com.opengamma.strata.report">Report</a>, <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></pre>
+implements <a href="../Report.html" title="interface in com.opengamma.strata.report">Report</a>, org.joda.beans.ImmutableBean</pre>
 <div class="block">Represents a cash flow report.
  <p>
  This consists of fields captured as part of a calculation. The rows are generally ordered
@@ -210,21 +210,21 @@ implements <a href="../Report.html" title="interface in com.opengamma.strata.rep
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColumnHeaders()">getColumnHeaders</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the column headers.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;<a href="../../market/explain/ExplainKey.html" title="class in com.opengamma.strata.market.explain">ExplainKey</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../../market/explain/ExplainKey.html" title="class in com.opengamma.strata.market.explain">ExplainKey</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColumnKeys()">getColumnKeys</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the keys corresponding to the columns.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableTable&lt;java.lang.Integer,&#8203;java.lang.Integer,&#8203;java.lang.Object&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableTable.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableTable</a>&lt;java.lang.Integer,&#8203;java.lang.Integer,&#8203;java.lang.Object&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getData()">getData</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the cashflow data table.</div>
@@ -306,8 +306,8 @@ implements <a href="../Report.html" title="interface in com.opengamma.strata.rep
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
-<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
+<code>property, propertyNames</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.report.Report">
@@ -420,7 +420,7 @@ implements <a href="../Report.html" title="interface in com.opengamma.strata.rep
 <pre class="methodSignature">public&nbsp;<a href="CashFlowReport.Meta.html" title="class in com.opengamma.strata.report.cashflow">CashFlowReport.Meta</a>&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>
@@ -462,7 +462,7 @@ implements <a href="../Report.html" title="interface in com.opengamma.strata.rep
 <ul class="blockList">
 <li class="blockList">
 <h4>getColumnKeys</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;<a href="../../market/explain/ExplainKey.html" title="class in com.opengamma.strata.market.explain">ExplainKey</a>&lt;?&gt;&gt;&nbsp;getColumnKeys()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../../market/explain/ExplainKey.html" title="class in com.opengamma.strata.market.explain">ExplainKey</a>&lt;?&gt;&gt;&nbsp;getColumnKeys()</pre>
 <div class="block">Gets the keys corresponding to the columns.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -476,7 +476,7 @@ implements <a href="../Report.html" title="interface in com.opengamma.strata.rep
 <ul class="blockList">
 <li class="blockList">
 <h4>getColumnHeaders</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.lang.String&gt;&nbsp;getColumnHeaders()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;&nbsp;getColumnHeaders()</pre>
 <div class="block">Gets the column headers.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -492,7 +492,7 @@ implements <a href="../Report.html" title="interface in com.opengamma.strata.rep
 <ul class="blockList">
 <li class="blockList">
 <h4>getData</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableTable&lt;java.lang.Integer,&#8203;java.lang.Integer,&#8203;java.lang.Object&gt;&nbsp;getData()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableTable.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableTable</a>&lt;java.lang.Integer,&#8203;java.lang.Integer,&#8203;java.lang.Object&gt;&nbsp;getData()</pre>
 <div class="block">Gets the cashflow data table.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

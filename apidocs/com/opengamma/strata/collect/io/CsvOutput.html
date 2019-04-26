@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -90,7 +90,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -157,6 +157,31 @@ extends java.lang.Object</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io">CsvOutput.CsvRowOutputWithHeaders</a></span></code></th>
+<td class="colLast">
+<div class="block">Class used when outputting CSV with headers.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
 <!-- ========== METHOD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -220,13 +245,22 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io">CsvOutput.CsvRowOutputWithHeaders</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withHeaders(java.util.List,boolean)">withHeaders</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;headers,
+           boolean&nbsp;alwaysQuote)</code></th>
+<td class="colLast">
+<div class="block">Write a header line to the underlying, returning an instance that allows
+ cells to be written by header name.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="CsvOutput.html" title="class in com.opengamma.strata.collect.io">CsvOutput</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeCell(java.lang.String)">writeCell</a></span>&#8203;(java.lang.String&nbsp;cell)</code></th>
 <td class="colLast">
 <div class="block">Writes a single cell to the current line, only quoting if needed.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="CsvOutput.html" title="class in com.opengamma.strata.collect.io">CsvOutput</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeCell(java.lang.String,boolean)">writeCell</a></span>&#8203;(java.lang.String&nbsp;cell,
          boolean&nbsp;alwaysQuote)</code></th>
@@ -234,14 +268,14 @@ extends java.lang.Object</pre>
 <div class="block">Writes a single cell to the current line.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLine(java.util.List)">writeLine</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;line)</code></th>
 <td class="colLast">
 <div class="block">Writes a single CSV line to the underlying, only quoting if needed.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLine(java.util.List,boolean)">writeLine</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;line,
          boolean&nbsp;alwaysQuote)</code></th>
@@ -249,7 +283,7 @@ extends java.lang.Object</pre>
 <div class="block">Writes a single CSV line to the underlying.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.lang.Iterable,boolean)">writeLines</a></span>&#8203;(java.lang.Iterable&lt;? extends java.util.List&lt;java.lang.String&gt;&gt;&nbsp;lines,
           boolean&nbsp;alwaysQuote)</code></th>
@@ -257,7 +291,7 @@ extends java.lang.Object</pre>
 <div class="block">Writes multiple CSV lines to the underlying.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="CsvOutput.html" title="class in com.opengamma.strata.collect.io">CsvOutput</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeNewLine()">writeNewLine</a></span>()</code></th>
 <td class="colLast">
@@ -423,6 +457,32 @@ extends java.lang.Object</pre>
 <dd><code>separator</code> - the separator used to separate each field, typically a comma, but a tab is sometimes used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the CSV outputter</dd>
+</dl>
+</li>
+</ul>
+<a id="withHeaders(java.util.List,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withHeaders</h4>
+<pre class="methodSignature">public&nbsp;<a href="CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io">CsvOutput.CsvRowOutputWithHeaders</a>&nbsp;withHeaders&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;headers,
+                                                     boolean&nbsp;alwaysQuote)</pre>
+<div class="block">Write a header line to the underlying, returning an instance that allows
+ cells to be written by header name.
+ <p>
+ This writes the header line to the underlying.
+ This is normally called once when the <code>CsvOutput</code> instance is created
+ with only the returned instance used to write additional rows.
+ While it is possible to write rows through both instances, this is likely to get confusing.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>headers</code> - the list of headers</dd>
+<dd><code>alwaysQuote</code> - when true, each column will be quoted, when false, quoting is selective</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the writer to use from now on</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
 </dl>
 </li>
 </ul>
@@ -606,7 +666,7 @@ extends java.lang.Object</pre>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

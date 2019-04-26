@@ -255,7 +255,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;<br><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources,
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
      java.lang.Class&lt;T&gt;&nbsp;tradeType)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files with a quiet type filter.</div>
@@ -287,17 +287,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.util.List)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources,
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.util.List)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
      java.util.List&lt;java.lang.Class&lt;? extends <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;&nbsp;tradeTypes)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files with an error-creating type filter.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> with parameters of type <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>default java.util.List&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoSupplier.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoSupplier.html#headers(com.opengamma.strata.product.Trade)">headers</a></span>&#8203;(<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&nbsp;trade)</code></th>
+<td class="colLast">
+<div class="block">Returns the list of additional headers this supplier provides.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoSupplier.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoSupplier.html#values(java.util.List,com.opengamma.strata.product.Trade)">values</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;headers,
+      <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&nbsp;trade)</code></th>
+<td class="colLast">
+<div class="block">Gets the values associated with the headers.</div>
 </td>
 </tr>
 </tbody>
@@ -312,10 +337,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.util.List)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources,
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.util.List)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
      java.util.List&lt;java.lang.Class&lt;? extends <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;&nbsp;tradeTypes)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files with an error-creating type filter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvWriter.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvWriter.html#write(java.util.List,java.lang.Appendable)">write</a></span>&#8203;(java.util.List&lt;? extends <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&nbsp;trades,
+     java.lang.Appendable&nbsp;output)</code></th>
+<td class="colLast">
+<div class="block">Write trades to an appendable in the applicable full details trade format.</div>
 </td>
 </tr>
 </tbody>
@@ -355,7 +388,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FpmlDocumentParser.</span><code><span class="memberNameLink"><a href="../../loader/fpml/FpmlDocumentParser.html#parseTrades(com.google.common.io.ByteSource)">parseTrades</a></span>&#8203;(com.google.common.io.ByteSource&nbsp;source)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FpmlDocumentParser.</span><code><span class="memberNameLink"><a href="../../loader/fpml/FpmlDocumentParser.html#parseTrades(com.google.common.io.ByteSource)">parseTrades</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Parses FpML from the specified source, extracting the trades.</div>
 </td>

@@ -425,21 +425,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BusinessDayAdjustment.Meta.</span><code><span class="memberNameLink"><a href="../BusinessDayAdjustment.Meta.html#calendar()">calendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>calendar</code> property.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.Meta.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.Meta.html#calendar()">calendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>calendar</code> property.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.Meta.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.Meta.html#id()">id</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>id</code> property.</div>
@@ -495,6 +495,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../ImmutableHolidayCalendar.html" title="class in com.opengamma.strata.basics.date">ImmutableHolidayCalendar</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.html#of(com.opengamma.strata.basics.date.HolidayCalendarId,java.lang.Iterable,java.lang.Iterable,java.lang.Iterable)">of</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id,
+  java.lang.Iterable&lt;java.time.LocalDate&gt;&nbsp;holidays,
+  java.lang.Iterable&lt;java.time.DayOfWeek&gt;&nbsp;weekendDays,
+  java.lang.Iterable&lt;java.time.LocalDate&gt;&nbsp;workingDays)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a set of holiday dates and weekend days.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../ImmutableHolidayCalendar.html" title="class in com.opengamma.strata.basics.date">ImmutableHolidayCalendar</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.html#of(com.opengamma.strata.basics.date.HolidayCalendarId,java.lang.Iterable,java.time.DayOfWeek,java.time.DayOfWeek)">of</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id,
   java.lang.Iterable&lt;java.time.LocalDate&gt;&nbsp;holidays,
   java.time.DayOfWeek&nbsp;firstWeekendDay,
@@ -503,14 +513,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from a set of holiday dates and weekend days.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCount.</span><code><span class="memberNameLink"><a href="../DayCount.html#ofBus252(com.opengamma.strata.basics.date.HolidayCalendarId)">ofBus252</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;calendar)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of the 'Bus/252' day count based on a specific calendar.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.html#ofBusinessDays(int,com.opengamma.strata.basics.date.HolidayCalendarId)">ofBusinessDays</a></span>&#8203;(int&nbsp;numberOfDays,
               <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;holidayCalendar)</code></th>
@@ -518,7 +528,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance that can adjust a date by a specific number of business days.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.html#ofBusinessDays(int,com.opengamma.strata.basics.date.HolidayCalendarId,com.opengamma.strata.basics.date.BusinessDayAdjustment)">ofBusinessDays</a></span>&#8203;(int&nbsp;numberOfDays,
               <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;holidayCalendar,
@@ -590,21 +600,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableFxIndex.Meta.</span><code><span class="memberNameLink"><a href="../../index/ImmutableFxIndex.Meta.html#fixingCalendar()">fixingCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>fixingCalendar</code> property.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableIborIndex.Meta.</span><code><span class="memberNameLink"><a href="../../index/ImmutableIborIndex.Meta.html#fixingCalendar()">fixingCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>fixingCalendar</code> property.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableOvernightIndex.Meta.</span><code><span class="memberNameLink"><a href="../../index/ImmutableOvernightIndex.Meta.html#fixingCalendar()">fixingCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>fixingCalendar</code> property.</div>

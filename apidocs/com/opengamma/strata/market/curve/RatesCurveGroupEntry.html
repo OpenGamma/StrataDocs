@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.io.Serializable</code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
+<dd><code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">RatesCurveGroupEntry</span>
 extends java.lang.Object
-implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a>, java.io.Serializable</pre>
+implements org.joda.beans.ImmutableBean, java.io.Serializable</pre>
 <div class="block">A single entry in the curve group definition.
  <p>
  Each entry stores the definition of a single curve and how it is to be used.
@@ -223,21 +223,21 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableSet&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDiscountCurrencies()">getDiscountCurrencies</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currencies for which the curve provides discount rates.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableSet&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndices()">getIndices</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the indices for which the curve provides forward rates.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;<br>com.google.common.collect.ImmutableSet&lt;T&gt;</code></td>
+<td class="colFirst"><code>&lt;T extends <a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;<br><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndices(java.lang.Class)">getIndices</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;indexType)</code></th>
 <td class="colLast">
 <div class="block">Gets the subset of indices matching the specified type for which the curve provides forward rates.</div>
@@ -284,8 +284,8 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
-<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
+<code>property, propertyNames</code></li>
 </ul>
 </li>
 </ul>
@@ -309,7 +309,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getIndices</h4>
-<pre class="methodSignature">public&nbsp;&lt;T extends <a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;com.google.common.collect.ImmutableSet&lt;T&gt;&nbsp;getIndices&#8203;(java.lang.Class&lt;T&gt;&nbsp;indexType)</pre>
+<pre class="methodSignature">public&nbsp;&lt;T extends <a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;T&gt;&nbsp;getIndices&#8203;(java.lang.Class&lt;T&gt;&nbsp;indexType)</pre>
 <div class="block">Gets the subset of indices matching the specified type for which the curve provides forward rates.
  <p>
  The set of indices is filtered and cast using the specified type.
@@ -361,7 +361,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <pre class="methodSignature">public&nbsp;<a href="RatesCurveGroupEntry.Meta.html" title="class in com.opengamma.strata.market.curve">RatesCurveGroupEntry.Meta</a>&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>
@@ -385,7 +385,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getDiscountCurrencies</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableSet&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&nbsp;getDiscountCurrencies()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&nbsp;getDiscountCurrencies()</pre>
 <div class="block">Gets the currencies for which the curve provides discount rates.
  This is empty if the curve is not used for Ibor rates.</div>
 <dl>
@@ -400,7 +400,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getIndices</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableSet&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;getIndices()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;getIndices()</pre>
 <div class="block">Gets the indices for which the curve provides forward rates.
  This is empty if the curve is not used for forward rates.</div>
 <dl>

@@ -182,7 +182,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fields()">fields</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all fields in the row.</div>
@@ -252,7 +252,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#headers()">headers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the header row.</div>
@@ -317,7 +317,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>headers</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.lang.String&gt;&nbsp;headers()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;&nbsp;headers()</pre>
 <div class="block">Gets the header row.
  <p>
  If there is no header row, an empty list is returned.</div>
@@ -347,7 +347,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>fields</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.lang.String&gt;&nbsp;fields()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;&nbsp;fields()</pre>
 <div class="block">Gets all fields in the row.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -404,7 +404,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>header</code> - the column header</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value</dd>
+<dd>the field value, trimmed unless surrounded by quotes</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if the header is not found</dd>
 </dl>
@@ -425,7 +425,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>header</code> - the column header</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value, empty if not found</dd>
+<dd>the field value, trimmed unless surrounded by quotes, empty if not found</dd>
 </dl>
 </li>
 </ul>
@@ -443,7 +443,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>headerPattern</code> - the header pattern to match</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value, empty</dd>
+<dd>the field value, trimmed unless surrounded by quotes</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if the header is not found</dd>
 </dl>
@@ -463,7 +463,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>headerPattern</code> - the header pattern to match</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value, empty if not found</dd>
+<dd>the field value, trimmed unless surrounded by quotes, empty if not found</dd>
 </dl>
 </li>
 </ul>
@@ -482,7 +482,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>header</code> - the column header</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value, empty</dd>
+<dd>the field value, trimmed unless surrounded by quotes</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if the header is not found or if the value in the field is empty.</dd>
 </dl>
@@ -503,7 +503,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>header</code> - the column header</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value, empty</dd>
+<dd>the field value, trimmed unless surrounded by quotes, empty if not found</dd>
 </dl>
 </li>
 </ul>
@@ -522,7 +522,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>headerPattern</code> - the header pattern to match</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value</dd>
+<dd>the field value, trimmed unless surrounded by quotes</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if the header is not found or if the value in the field is empty.</dd>
 </dl>
@@ -543,7 +543,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>headerPattern</code> - the header pattern to match</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the trimmed field value, empty</dd>
+<dd>the field value, trimmed unless surrounded by quotes, empty if not found</dd>
 </dl>
 </li>
 </ul>

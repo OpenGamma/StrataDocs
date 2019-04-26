@@ -108,18 +108,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.loader.csv">com.opengamma.strata.loader.csv</a></th>
+<td class="colLast">
+<div class="block">Loader that reads market data from CSV files.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.credit">com.opengamma.strata.measure.credit</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for credit products.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.credit">com.opengamma.strata.product.credit</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Credit Default Swap (CDS) and CDS index.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.credit.type">com.opengamma.strata.product.credit.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of credit instruments.</div>
@@ -130,6 +136,49 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.loader.csv">
+<!--   -->
+</a>
+<h3>Uses of <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a> in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> that return <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#completeTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.credit.CdsTrade)">completeTrade</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+             <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a>&nbsp;trade)</code></th>
+<td class="colLast">
+<div class="block">Completes the CDS trade, potentially parsing additional columns.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> with parameters of type <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#completeTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.credit.CdsTrade)">completeTrade</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+             <a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a>&nbsp;trade)</code></th>
+<td class="colLast">
+<div class="block">Completes the CDS trade, potentially parsing additional columns.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.measure.credit">
 <!--   -->
@@ -236,7 +285,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaProperty.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaProperty</a>&lt;<a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CdsCalibrationTrade.Meta.</span><code><span class="memberNameLink"><a href="../CdsCalibrationTrade.Meta.html#underlyingTrade()">underlyingTrade</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>underlyingTrade</code> property.</div>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -271,7 +271,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static com.google.common.collect.ImmutableMap&lt;java.lang.String,&#8203;<a href="../../product/etd/EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;java.lang.String,&#8203;<a href="../../product/etd/EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SETTLEMENT_BY_CODE">SETTLEMENT_BY_CODE</a></span></code></th>
 <td class="colLast">
 <div class="block">Lookup settlement by code.</div>
@@ -338,20 +338,34 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#formattedDouble(double)">formattedDouble</a></span>&#8203;(double&nbsp;value)</code></th>
+<td class="colLast">
+<div class="block">Returns a value formatted as a double.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#formattedPercentage(double)">formattedPercentage</a></span>&#8203;(double&nbsp;value)</code></th>
+<td class="colLast">
+<div class="block">Returns a value formatted as a percentage.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../product/etd/EtdOptionType.html" title="enum in com.opengamma.strata.product.etd">EtdOptionType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseEtdOptionType(java.lang.String)">parseEtdOptionType</a></span>&#8203;(java.lang.String&nbsp;str)</code></th>
 <td class="colLast">
 <div class="block">Parses the ETD option type from the short code or full name.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../product/etd/EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseEtdSettlementType(java.lang.String)">parseEtdSettlementType</a></span>&#8203;(java.lang.String&nbsp;str)</code></th>
 <td class="colLast">
 <div class="block">Parses the ETD settlement type from the short code or full name.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../collect/tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.time.YearMonth,&#8203;<a href="../../product/etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseEtdVariant(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.etd.EtdType)">parseEtdVariant</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                <a href="../../product/etd/EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a>&nbsp;type)</code></th>
@@ -359,7 +373,7 @@ extends java.lang.Object</pre>
 <div class="block">Parses the year-month and variant.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseQuantity(com.opengamma.strata.collect.io.CsvRow)">parseQuantity</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
 <td class="colLast">
@@ -704,7 +718,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SETTLEMENT_BY_CODE</h4>
-<pre>public static final&nbsp;com.google.common.collect.ImmutableMap&lt;java.lang.String,&#8203;<a href="../../product/etd/EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt; SETTLEMENT_BY_CODE</pre>
+<pre>public static final&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;java.lang.String,&#8203;<a href="../../product/etd/EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt; SETTLEMENT_BY_CODE</pre>
 <div class="block">Lookup settlement by code.</div>
 </li>
 </ul>
@@ -777,7 +791,7 @@ extends java.lang.Object</pre>
 <a id="parseQuantity(com.opengamma.strata.collect.io.CsvRow)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>parseQuantity</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>&nbsp;parseQuantity&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</pre>
@@ -789,6 +803,42 @@ extends java.lang.Object</pre>
 <dd>the quantity, long first, short second</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if the row cannot be parsed</dd>
+</dl>
+</li>
+</ul>
+<a id="formattedPercentage(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formattedPercentage</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;formattedPercentage&#8203;(double&nbsp;value)</pre>
+<div class="block">Returns a value formatted as a percentage.
+ <p>
+ Using this method avoids nasty effects from floating point arithmetic.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the value in decimal format (to be multiplied by 100)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the formatted percentage value</dd>
+</dl>
+</li>
+</ul>
+<a id="formattedDouble(double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>formattedDouble</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;formattedDouble&#8203;(double&nbsp;value)</pre>
+<div class="block">Returns a value formatted as a double.
+ <p>
+ Using this method avoids nasty effects from floating point arithmetic.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the formatted value</dd>
 </dl>
 </li>
 </ul>

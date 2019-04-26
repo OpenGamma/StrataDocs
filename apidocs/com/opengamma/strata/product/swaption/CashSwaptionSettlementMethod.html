@@ -174,12 +174,18 @@ implements <a href="../../collect/named/NamedEnum.html" title="interface in com.
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#COLLATERALIZED_CASH_PRICE">COLLATERALIZED_CASH_PRICE</a></span></code></th>
+<td class="colLast">
+<div class="block">The Collateralized Cash Price</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#PAR_YIELD">PAR_YIELD</a></span></code></th>
 <td class="colLast">
 <div class="block">The par yield curve method.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ZERO_COUPON_YIELD">ZERO_COUPON_YIELD</a></span></code></th>
 <td class="colLast">
 <div class="block">The zero coupon yield method.</div>
@@ -279,7 +285,8 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="CashSwaptionSettlementMethod.html" title="enum in com.opengamma.strata.product.swaption">CashSwaptionSettlementMethod</a> CASH_PRICE</pre>
 <div class="block">The cash price method
  <p>
- If exercised, the value of the underlying swap is exchanged at the cash settlement date.</div>
+ If exercised, the value of the underlying swap is exchanged at the cash settlement date.
+ Defined by the 2006 ISDA definitions 18.3a and 18.3b.</div>
 </li>
 </ul>
 <a id="PAR_YIELD">
@@ -291,19 +298,35 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="CashSwaptionSettlementMethod.html" title="enum in com.opengamma.strata.product.swaption">CashSwaptionSettlementMethod</a> PAR_YIELD</pre>
 <div class="block">The par yield curve method.
  <p>
- The settlement amount is computed with cash-settled annuity using the pre-agreed strike swap rate.</div>
+ The settlement amount is computed with cash-settled annuity using the pre-agreed strike swap rate.
+ Defined by the 2006 ISDA definitions 18.3c and 18.3e.</div>
 </li>
 </ul>
 <a id="ZERO_COUPON_YIELD">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ZERO_COUPON_YIELD</h4>
 <pre>public static final&nbsp;<a href="CashSwaptionSettlementMethod.html" title="enum in com.opengamma.strata.product.swaption">CashSwaptionSettlementMethod</a> ZERO_COUPON_YIELD</pre>
 <div class="block">The zero coupon yield method.
  <p>
- The settlement amount is computed with the discount factor based on the agreed zero coupon curve.</div>
+ The settlement amount is computed with the discount factor based on the agreed zero coupon curve.
+ Defined by the 2006 ISDA definitions 18.3d.</div>
+</li>
+</ul>
+<a id="COLLATERALIZED_CASH_PRICE">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>COLLATERALIZED_CASH_PRICE</h4>
+<pre>public static final&nbsp;<a href="CashSwaptionSettlementMethod.html" title="enum in com.opengamma.strata.product.swaption">CashSwaptionSettlementMethod</a> COLLATERALIZED_CASH_PRICE</pre>
+<div class="block">The Collateralized Cash Price
+ <p>
+ The settlement amount is computed  with the discount factor based where the parties are deemed to have a 
+ bilateral, zero-threshold ISDA CSA. 
+ Defined by the 2006 ISDA definitions 18.3g.</div>
 </li>
 </ul>
 </li>

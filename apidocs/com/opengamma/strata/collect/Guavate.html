@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 extends java.lang.Object</pre>
 <div class="block">Utilities that help bridge the gap between Java 8 and Google Guava.
  <p>
- Guava has the <code>FluentIterable</code> concept which is similar to streams.
+ Guava has the <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/FluentIterable.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>FluentIterable</code></a> concept which is similar to streams.
  In many ways, fluent iterable is nicer, because it directly binds to the
  immutable collection classes. However, on balance it seems wise to use
  the stream API rather than <code>FluentIterable</code> in Java 8.</div>
@@ -190,28 +190,53 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;com.google.common.collect.ImmutableList&lt;T&gt;</code></td>
+<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combineMaps(java.util.Map,java.util.Map)">combineMaps</a></span>&#8203;(java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;first,
+           java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;second)</code></th>
+<td class="colLast">
+<div class="block">Combines two distinct maps into a single map.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combineMaps(java.util.Map,java.util.Map,java.util.function.BiFunction)">combineMaps</a></span>&#8203;(java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;first,
+           java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;second,
+           java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</code></th>
+<td class="colLast">
+<div class="block">Combines two maps into a single map.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#concatToList(java.lang.Iterable...)">concatToList</a></span>&#8203;(java.lang.Iterable&lt;? extends T&gt;...&nbsp;iterables)</code></th>
 <td class="colLast">
 <div class="block">Concatenates a number of iterables into a single list.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.function.BinaryOperator&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ensureOnlyOne()">ensureOnlyOne</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reducer used in a stream to ensure there is no more than one matching element.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entriesToImmutableMap()">entriesToImmutableMap</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable map
  from a stream containing map entries.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entriesToImmutableMap(java.util.function.BiFunction)">entriesToImmutableMap</a></span>&#8203;(java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</code></th>
+<td class="colLast">
+<div class="block">Collector used at the end of a stream to build an immutable map
+ from a stream containing map entries which could have duplicate keys.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.Map.Entry&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entry(K,V)">entry</a></span>&#8203;(K&nbsp;key,
      V&nbsp;value)</code></th>
@@ -219,64 +244,64 @@ extends java.lang.Object</pre>
 <div class="block">Creates a single <code>Map.Entry</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static &lt;T,&#8203;R extends T&gt;<br>java.util.function.Function&lt;T,&#8203;java.util.stream.Stream&lt;R&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filtering(java.lang.Class)">filtering</a></span>&#8203;(java.lang.Class&lt;R&gt;&nbsp;cls)</code></th>
 <td class="colLast">
 <div class="block">Function used in a stream to filter instances to a particular type.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.function.Function&lt;java.util.Optional&lt;T&gt;,&#8203;java.util.stream.Stream&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filteringOptional()">filteringOptional</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Function used in a stream to filter optionals.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstNonEmpty(java.util.function.Supplier...)">firstNonEmpty</a></span>&#8203;(java.util.function.Supplier&lt;java.util.Optional&lt;? extends T&gt;&gt;...&nbsp;suppliers)</code></th>
 <td class="colLast">
 <div class="block">Uses a number of suppliers to create a single optional result.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstNonEmpty(java.util.Optional...)">firstNonEmpty</a></span>&#8203;(java.util.Optional&lt;? extends T&gt;...&nbsp;optionals)</code></th>
 <td class="colLast">
 <div class="block">Chooses the first optional that is not empty.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>static com.google.common.util.concurrent.ThreadFactoryBuilder</code></td>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>static <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/util/concurrent/ThreadFactoryBuilder.html?is-external=true" title="class or interface in com.google.common.util.concurrent" class="externalLink">ThreadFactoryBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#namedThreadFactory()">namedThreadFactory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates a ThreadFactoryBuilder which names new threads with the name of the calling class plus a unique integer.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>static com.google.common.util.concurrent.ThreadFactoryBuilder</code></td>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/util/concurrent/ThreadFactoryBuilder.html?is-external=true" title="class or interface in com.google.common.util.concurrent" class="externalLink">ThreadFactoryBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#namedThreadFactory(java.lang.String)">namedThreadFactory</a></span>&#8203;(java.lang.String&nbsp;threadNamePrefix)</code></th>
 <td class="colLast">
 <div class="block">Creates a ThreadFactoryBuilder which names new threads with the given name prefix plus a unique integer.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;java.util.function.Predicate&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#not(java.util.function.Predicate)">not</a></span>&#8203;(java.util.function.Predicate&lt;R&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Returns a predicate that negates the original.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;<a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;<a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pairsToImmutableMap()">pairsToImmutableMap</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable map
  from a stream containing pairs.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.concurrent.CompletableFuture&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#poll(java.util.concurrent.ScheduledExecutorService,java.time.Duration,java.time.Duration,java.util.function.Supplier)">poll</a></span>&#8203;(java.util.concurrent.ScheduledExecutorService&nbsp;executorService,
     java.time.Duration&nbsp;initialDelay,
@@ -286,29 +311,29 @@ extends java.lang.Object</pre>
 <div class="block">Polls on a regular frequency until a result is found.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableList&lt;com.google.common.collect.ImmutableList&lt;T&gt;&gt;&gt;</code></td>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;T&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#splittingBySize(int)">splittingBySize</a></span>&#8203;(int&nbsp;size)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable list of
  immutable lists of size equal to or less than size.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Stream&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream(java.lang.Iterable)">stream</a></span>&#8203;(java.lang.Iterable&lt;T&gt;&nbsp;iterable)</code></th>
 <td class="colLast">
 <div class="block">Converts an iterable to a serial stream.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Stream&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream(java.util.Optional)">stream</a></span>&#8203;(java.util.Optional&lt;T&gt;&nbsp;optional)</code></th>
 <td class="colLast">
 <div class="block">Converts an optional to a stream with zero or one elements.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static &lt;T,&#8203;S extends java.util.concurrent.CompletableFuture&lt;? extends T&gt;&gt;<br>java.util.stream.Collector&lt;S,&#8203;?,&#8203;java.util.concurrent.CompletableFuture&lt;java.util.List&lt;T&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCombinedFuture()">toCombinedFuture</a></span>()</code></th>
 <td class="colLast">
@@ -316,7 +341,7 @@ extends java.lang.Object</pre>
  combining the values into a list.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V,&#8203;F extends java.util.concurrent.CompletableFuture&lt;? extends V&gt;&gt;<br>java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends F&gt;,&#8203;?,&#8203;java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;K,&#8203;V&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCombinedFutureMap()">toCombinedFutureMap</a></span>()</code></th>
 <td class="colLast">
@@ -324,45 +349,45 @@ extends java.lang.Object</pre>
  combining the values into a map.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableList.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableList&lt;T&gt;&gt;</code></td>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableList()">toImmutableList</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable list.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableListMultimap&lt;K,&#8203;T&gt;&gt;</code></td>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableListMultimap</a>&lt;K,&#8203;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableListMultimap(java.util.function.Function)">toImmutableListMultimap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable multimap.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableListMultimap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableListMultimap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableListMultimap(java.util.function.Function,java.util.function.Function)">toImmutableListMultimap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
                        java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable multimap.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;T&gt;&gt;</code></td>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableMap(java.util.function.Function)">toImmutableMap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable map.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableMap(java.util.function.Function,java.util.function.Function)">toImmutableMap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
               java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable map.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;java.util.Map&lt;K,&#8203;V&gt;,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;java.util.Map&lt;K,&#8203;V&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableMap(java.util.function.Function,java.util.function.Function,java.util.function.BiFunction)">toImmutableMap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
               java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor,
               java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</code></th>
@@ -370,65 +395,65 @@ extends java.lang.Object</pre>
 <div class="block">Collector used at the end of a stream to build an immutable map.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableMultiset.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableMultiset&lt;T&gt;&gt;</code></td>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMultiset.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMultiset.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMultiset.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMultiset</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableMultiset()">toImmutableMultiset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable multiset.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableSet.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableSet&lt;T&gt;&gt;</code></td>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSet()">toImmutableSet</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable set.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSetMultimap&lt;K,&#8203;T&gt;&gt;</code></td>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSetMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSetMultimap</a>&lt;K,&#8203;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSetMultimap(java.util.function.Function)">toImmutableSetMultimap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable multimap.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSetMultimap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSetMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSetMultimap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSetMultimap(java.util.function.Function,java.util.function.Function)">toImmutableSetMultimap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
                       java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable multimap.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSortedMap&lt;K,&#8203;T&gt;&gt;</code></td>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedMap</a>&lt;K,&#8203;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSortedMap(java.util.function.Function)">toImmutableSortedMap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable sorted map.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>static &lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSortedMap&lt;K,&#8203;V&gt;&gt;</code></td>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>static &lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;,&#8203;V&gt;<br>java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSortedMap(java.util.function.Function,java.util.function.Function)">toImmutableSortedMap</a></span>&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
                     java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable sorted map.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>static &lt;T extends java.lang.Comparable&lt;?&gt;&gt;<br>java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableSortedSet.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableSortedSet&lt;T&gt;&gt;</code></td>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends java.lang.Comparable&lt;?&gt;&gt;<br>java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSortedSet()">toImmutableSortedSet</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable sorted set.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableSortedSet.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableSortedSet&lt;T&gt;&gt;</code></td>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableSortedSet(java.util.Comparator)">toImmutableSortedSet</a></span>&#8203;(java.util.Comparator&lt;? super T&gt;&nbsp;comparator)</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable sorted set.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br>java.util.stream.Stream&lt;<a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zip(java.util.stream.Stream,java.util.stream.Stream)">zip</a></span>&#8203;(java.util.stream.Stream&lt;A&gt;&nbsp;stream1,
    java.util.stream.Stream&lt;B&gt;&nbsp;stream2)</code></th>
@@ -436,7 +461,7 @@ extends java.lang.Object</pre>
 <div class="block">Creates a stream that combines two other streams, continuing until either stream ends.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Stream&lt;<a href="tuple/ObjIntPair.html" title="class in com.opengamma.strata.collect.tuple">ObjIntPair</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zipWithIndex(java.util.stream.Stream)">zipWithIndex</a></span>&#8203;(java.util.stream.Stream&lt;T&gt;&nbsp;stream)</code></th>
 <td class="colLast">
@@ -474,7 +499,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>concatToList</h4>
 <pre class="methodSignature">@SafeVarargs
-public static&nbsp;&lt;T&gt;&nbsp;com.google.common.collect.ImmutableList&lt;T&gt;&nbsp;concatToList&#8203;(java.lang.Iterable&lt;? extends T&gt;...&nbsp;iterables)</pre>
+public static&nbsp;&lt;T&gt;&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;T&gt;&nbsp;concatToList&#8203;(java.lang.Iterable&lt;? extends T&gt;...&nbsp;iterables)</pre>
 <div class="block">Concatenates a number of iterables into a single list.
  <p>
  This is harder than it should be, a method <code>Stream.of(Iterable)</code>
@@ -486,6 +511,55 @@ public static&nbsp;&lt;T&gt;&nbsp;com.google.common.collect.ImmutableList&lt;T&g
 <dd><code>iterables</code> - the iterables to combine</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the list that combines the inputs</dd>
+</dl>
+</li>
+</ul>
+<a id="combineMaps(java.util.Map,java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>combineMaps</h4>
+<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&nbsp;combineMaps&#8203;(java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;first,
+                                                              java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;second)</pre>
+<div class="block">Combines two distinct maps into a single map.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>K</code> - the type of the keys</dd>
+<dd><code>V</code> - the type of the values</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>first</code> - the first map</dd>
+<dd><code>second</code> - the second map</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a combined map</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the same key is encountered in both maps</dd>
+</dl>
+</li>
+</ul>
+<a id="combineMaps(java.util.Map,java.util.Map,java.util.function.BiFunction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>combineMaps</h4>
+<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&nbsp;combineMaps&#8203;(java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;first,
+                                                              java.util.Map&lt;? extends K,&#8203;? extends V&gt;&nbsp;second,
+                                                              java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</pre>
+<div class="block">Combines two maps into a single map.
+ <p>
+ If the maps have shared keys then the merge function is used on the two values
+ and the result is placed in the resulting map.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>K</code> - the type of the keys</dd>
+<dd><code>V</code> - the type of the values</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>first</code> - the first map</dd>
+<dd><code>second</code> - the second map</dd>
+<dd><code>mergeFn</code> - the function used to merge values</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a combined map</dd>
 </dl>
 </li>
 </ul>
@@ -795,12 +869,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableList</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableList.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableList&lt;T&gt;&gt;&nbsp;toImmutableList()</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;T&gt;&gt;&nbsp;toImmutableList()</pre>
 <div class="block">Collector used at the end of a stream to build an immutable list.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableList</code>.</div>
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableList</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of element in the list</dd>
@@ -815,7 +889,7 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>splittingBySize</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableList&lt;com.google.common.collect.ImmutableList&lt;T&gt;&gt;&gt;&nbsp;splittingBySize&#8203;(int&nbsp;size)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;T&gt;&gt;&gt;&nbsp;splittingBySize&#8203;(int&nbsp;size)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable list of
  immutable lists of size equal to or less than size.
  For example, the following list [a, b, c, d, e] with a partition
@@ -823,7 +897,7 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableList</code> of <code>ImmutableList</code>.</div>
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableList</code></a> of <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableList</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of element in the list</dd>
@@ -840,12 +914,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSet</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableSet.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableSet&lt;T&gt;&gt;&nbsp;toImmutableSet()</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;T&gt;&gt;&nbsp;toImmutableSet()</pre>
 <div class="block">Collector used at the end of a stream to build an immutable set.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSet</code>.</div>
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSet</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of element in the set</dd>
@@ -860,12 +934,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSortedSet</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T extends java.lang.Comparable&lt;?&gt;&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableSortedSet.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableSortedSet&lt;T&gt;&gt;&nbsp;toImmutableSortedSet()</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T extends java.lang.Comparable&lt;?&gt;&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet</a>&lt;T&gt;&gt;&nbsp;toImmutableSortedSet()</pre>
 <div class="block">Collector used at the end of a stream to build an immutable sorted set.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSet</code>.</div>
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSet</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of element in the sorted set</dd>
@@ -880,12 +954,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSortedSet</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableSortedSet.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableSortedSet&lt;T&gt;&gt;&nbsp;toImmutableSortedSet&#8203;(java.util.Comparator&lt;? super T&gt;&nbsp;comparator)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedSet</a>&lt;T&gt;&gt;&nbsp;toImmutableSortedSet&#8203;(java.util.Comparator&lt;? super T&gt;&nbsp;comparator)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable sorted set.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSet</code>.</div>
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSet</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of element in the sorted set</dd>
@@ -902,12 +976,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableMultiset</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;com.google.common.collect.ImmutableMultiset.Builder&lt;T&gt;,&#8203;com.google.common.collect.ImmutableMultiset&lt;T&gt;&gt;&nbsp;toImmutableMultiset()</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMultiset.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMultiset.Builder</a>&lt;T&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMultiset.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMultiset</a>&lt;T&gt;&gt;&nbsp;toImmutableMultiset()</pre>
 <div class="block">Collector used at the end of a stream to build an immutable multiset.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableMultiset</code>.</div>
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMultiset.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMultiset</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of element in the multiset</dd>
@@ -922,12 +996,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable map.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableMap</code>, retaining insertion order.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a>, retaining insertion order.
  <p>
  This returns a map by extracting a key from each element.
  The input stream must resolve to unique keys.
@@ -952,13 +1026,13 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
-                                                                                                                                               java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
+                                                                                                                     java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable map.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableMap</code>, retaining insertion order.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a>, retaining insertion order.
  <p>
  This returns a map by converting each stream element to a key and value.
  The input stream must resolve to unique keys.
@@ -984,14 +1058,14 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;java.util.Map&lt;K,&#8203;V&gt;,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
-                                                                                                                                                                      java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor,
-                                                                                                                                                                      java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;java.util.Map&lt;K,&#8203;V&gt;,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
+                                                                                                                                            java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor,
+                                                                                                                                            java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable map.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableMap</code>, retaining insertion order.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a>, retaining insertion order.
  <p>
  This returns a map by converting each stream element to a key and value.
  If the same key is generated more than once the merge function is applied to the
@@ -1016,12 +1090,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSortedMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSortedMap&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableSortedMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedMap</a>&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableSortedMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable sorted map.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSortedMap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSortedMap</code></a>.
  <p>
  This returns a map by extracting a key from each element.
  The input stream must resolve to unique keys.
@@ -1046,13 +1120,13 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSortedMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSortedMap&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableSortedMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
-                                                                                                                                                                                           java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K extends java.lang.Comparable&lt;?&gt;,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSortedMap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableSortedMap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
+                                                                                                                                                                 java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable sorted map.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSortedMap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSortedMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSortedMap</code></a>.
  <p>
  This returns a map by converting each stream element to a key and value.
  The input stream must resolve to unique keys.
@@ -1078,12 +1152,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableListMultimap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableListMultimap&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableListMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableListMultimap</a>&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableListMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable multimap.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableListMultimap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableListMultimap</code></a>.
  <p>
  This returns a multimap by extracting a key from each element.
  The value associated with each key is the stream element.
@@ -1106,13 +1180,13 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableListMultimap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableListMultimap&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableListMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
-                                                                                                                                                                 java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableListMultimap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableListMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
+                                                                                                                                       java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable multimap.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableListMultimap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableListMultimap</code></a>.
  <p>
  This returns a multimap by converting each stream element to a key and value.
  Stream elements may be converted to the same key, with the values forming a multimap list.</div>
@@ -1135,12 +1209,12 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSetMultimap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSetMultimap&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableSetMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSetMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSetMultimap</a>&lt;K,&#8203;T&gt;&gt;&nbsp;toImmutableSetMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable multimap.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSetMultimap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSetMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSetMultimap</code></a>.
  <p>
  This returns a multimap by extracting a key from each element.
  The value associated with each key is the stream element.
@@ -1163,13 +1237,13 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>toImmutableSetMultimap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;com.google.common.collect.ImmutableSetMultimap&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableSetMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
-                                                                                                                                                               java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T,&#8203;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;T,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSetMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSetMultimap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;toImmutableSetMultimap&#8203;(java.util.function.Function&lt;? super T,&#8203;? extends K&gt;&nbsp;keyExtractor,
+                                                                                                                                     java.util.function.Function&lt;? super T,&#8203;? extends V&gt;&nbsp;valueExtractor)</pre>
 <div class="block">Collector used at the end of a stream to build an immutable multimap.
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableSetMultimap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSetMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableSetMultimap</code></a>.
  <p>
  This returns a multimap by converting each stream element to a key and value.
  Stream elements may be converted to the same key, with the values forming a multimap set.</div>
@@ -1192,13 +1266,13 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>entriesToImmutableMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;&nbsp;entriesToImmutableMap()</pre>
+<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;entriesToImmutableMap()</pre>
 <div class="block">Collector used at the end of a stream to build an immutable map
  from a stream containing map entries. This is a common case if a map's
  <code>entrySet</code> has undergone a <code>filter</code> operation. For example:
  <pre>
    <code>
-       Map&lt;String, Integer&gt; input = ImmutableMap.of("a", 1, "b", 2, "c", 3, "d", 4);
+       Map&lt;String, Integer&gt; input = ImmutableMap.of("a", 1, "b", 2, "c", 3, "d", 4, "e", 5);
        ImmutableMap&lt;String, Integer&gt; output =
          input.entrySet()
            .stream()
@@ -1211,7 +1285,7 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableMap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a>.
  <p>
  This returns a map by converting each <code>Map.Entry</code> to a key and value.
  The input stream must resolve to unique keys.</div>
@@ -1226,13 +1300,53 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 </dl>
 </li>
 </ul>
+<a id="entriesToImmutableMap(java.util.function.BiFunction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>entriesToImmutableMap</h4>
+<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;java.util.Map.Entry&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;entriesToImmutableMap&#8203;(java.util.function.BiFunction&lt;? super V,&#8203;? super V,&#8203;? extends V&gt;&nbsp;mergeFn)</pre>
+<div class="block">Collector used at the end of a stream to build an immutable map
+ from a stream containing map entries which could have duplicate keys.
+ <p>
+ This is a common case if a map's <code>entrySet</code> has undergone a <code>map</code> operation. For example:
+ <pre>
+   <code>
+       Map&lt;Integer, String&gt; input = ImmutableMap.of(1, "a", 2, "b", 3, "c", 4, "d", 5, "e");
+       ImmutableMap&lt;String, Integer&gt; output =
+         input.entrySet()
+           .stream()
+           .map(e -&gt; Guavate.entry(e.getKey() % 2, e.getValue()))
+           .collect(entriesToImmutableMap(String::concat));
+
+       // Produces map with 0 -&gt; "bd", 1 -&gt; "ace"
+   </code>
+ </pre>
+ <p>
+ A collector is used to gather data at the end of a stream operation.
+ This method returns a collector allowing streams to be gathered into
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a>.
+ <p>
+ This returns a map by converting each <code>Map.Entry</code> to a key and value.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>K</code> - the type of the keys in the result map</dd>
+<dd><code>V</code> - the type of the values in the result map</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mergeFn</code> - function to merge values with the same key</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the immutable map collector</dd>
+</dl>
+</li>
+</ul>
 <a id="pairsToImmutableMap()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>pairsToImmutableMap</h4>
-<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;<a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;com.google.common.collect.ImmutableMap&lt;K,&#8203;V&gt;&gt;&nbsp;pairsToImmutableMap()</pre>
+<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;java.util.stream.Collector&lt;<a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;&nbsp;pairsToImmutableMap()</pre>
 <div class="block">Collector used at the end of a stream to build an immutable map
  from a stream containing pairs. This is a common case if a map's
  <code>entrySet</code> has undergone a <code>map</code> operation with the
@@ -1252,7 +1366,7 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
  <p>
  A collector is used to gather data at the end of a stream operation.
  This method returns a collector allowing streams to be gathered into
- an <code>ImmutableMap</code>.
+ an <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a>.
  <p>
  This returns a map by converting each stream element to a key and value.
  The input stream must resolve to unique keys.</div>
@@ -1407,7 +1521,7 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>namedThreadFactory</h4>
-<pre class="methodSignature">public static&nbsp;com.google.common.util.concurrent.ThreadFactoryBuilder&nbsp;namedThreadFactory()</pre>
+<pre class="methodSignature">public static&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/util/concurrent/ThreadFactoryBuilder.html?is-external=true" title="class or interface in com.google.common.util.concurrent" class="externalLink">ThreadFactoryBuilder</a>&nbsp;namedThreadFactory()</pre>
 <div class="block">Creates a ThreadFactoryBuilder which names new threads with the name of the calling class plus a unique integer.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1421,7 +1535,7 @@ public static&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;firstNonEmpty
 <ul class="blockList">
 <li class="blockList">
 <h4>namedThreadFactory</h4>
-<pre class="methodSignature">public static&nbsp;com.google.common.util.concurrent.ThreadFactoryBuilder&nbsp;namedThreadFactory&#8203;(java.lang.String&nbsp;threadNamePrefix)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/util/concurrent/ThreadFactoryBuilder.html?is-external=true" title="class or interface in com.google.common.util.concurrent" class="externalLink">ThreadFactoryBuilder</a>&nbsp;namedThreadFactory&#8203;(java.lang.String&nbsp;threadNamePrefix)</pre>
 <div class="block">Creates a ThreadFactoryBuilder which names new threads with the given name prefix plus a unique integer.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
