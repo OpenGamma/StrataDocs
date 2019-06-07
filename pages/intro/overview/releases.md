@@ -6,6 +6,37 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.4.0
+
+* 10 June 2019
+
+This release contains over 35 [fixed issues](https://github.com/OpenGamma/Strata/milestone/23?closed=1).
+
+* Reading/writing CDS Index from/to CSV
+ [#1999](https://github.com/OpenGamma/Strata/issues/1999)
+* Enhance CSV parsing
+ [#1995](https://github.com/OpenGamma/Strata/issues/1995),
+ [#1986](https://github.com/OpenGamma/Strata/issues/1986),
+ [#1981](https://github.com/OpenGamma/Strata/issues/1981),
+ [#1983](https://github.com/OpenGamma/Strata/issues/1983),
+ [#1984](https://github.com/OpenGamma/Strata/issues/1984)
+* Check if document is FpML
+ [#1982](https://github.com/OpenGamma/Strata/issues/1982)
+* Add market quote measure for swaps
+ [#1972](https://github.com/OpenGamma/Strata/issues/1972),
+ [#1976](https://github.com/OpenGamma/Strata/issues/1976)
+* Add aliases for various indices
+ [#1998](https://github.com/OpenGamma/Strata/issues/1998),
+ [#1990](https://github.com/OpenGamma/Strata/issues/1990)
+* Fix SONIA index definition
+ [#1967](https://github.com/OpenGamma/Strata/issues/1967)
+* Update holiday calendars
+ [#1961](https://github.com/OpenGamma/Strata/issues/1961),
+ [#1969](https://github.com/OpenGamma/Strata/issues/1969)
+* Use a singleton XML factory (requires Java 8u20 or later)
+ [#1991](https://github.com/OpenGamma/Strata/issues/1991)
+
+
 ## Strata v2.3.0
 
 * 26 April 2019

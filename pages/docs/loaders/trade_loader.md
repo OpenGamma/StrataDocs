@@ -38,6 +38,7 @@ The follow asset classes are supported:
 * [FX Swaps]({{site.baseurl}}/trade_loader_fx_swap)
 * [FX Vanilla Options]({{site.baseurl}}/trade_loader_fx_vanilla_option)
 * [CDS]({{site.baseurl}}/trade_loader_cds)
+* [CDS Index]({{site.baseurl}}/trade_loader_cds_index)
 * [Securities]({{site.baseurl}}/trade_loader_security)
 
 

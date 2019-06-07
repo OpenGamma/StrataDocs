@@ -12,7 +12,7 @@ The following third party libraries are used by Strata:
 |:---------------------:|:-------:|:--------------------------------------------------------------:|
 | [Commons Math](https://commons.apache.org/math/)      | 3.6.1    | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
 | [Guava](https://github.com/google/guava)              | 26.0-jre | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
-| [Joda-Beans](http://www.joda.org/joda-beans/)         | 2.6.0    | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
+| [Joda-Beans](http://www.joda.org/joda-beans/)         | 2.7.1    | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
 | [Joda-Convert](http://www.joda.org/joda-convert/)     | 2.2.0    | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
 | [SLF4J](https://www.slf4j.org/)                       | 1.7.26   | [MIT](https://opensource.org/licenses/mit-license.php) |
 | [JCommander](http://jcommander.org/)                  | 1.72     | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
