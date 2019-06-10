@@ -125,7 +125,7 @@ Fixed rate legs:
 | Leg column name                      | Mandatory?  | Description |
 |--------------------------------------|-------------|-------------|
 | Leg 1 Fixed Rate                     | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |
-| Leg 1 Day Count                      | Recommended | The day count convention, such as "Act.360", defaults from floating leg index |
+| Leg 1 Day Count                      | Recommended | The day count convention, such as "Act/360", defaults from floating leg index |
 | Leg 1 Future Value Notional          | Optional    | The future value notional as used in BRL swaps |
 | Leg 1 Initial Stub Rate              | Optional    | The fixed rate of the initial stub |
 | Leg 1 Initial Stub Amount Currency   | Optional    | The currency of the initial stub |
@@ -139,7 +139,7 @@ Overnight rate legs:
 | Leg column name                      | Mandatory?  | Description |
 |--------------------------------------|-------------|-------------|
 | Leg 1 Index                          | Mandatory   | The [Overnight index]({{site.baseurl}}/indices/), such as "GBP-SONIA" |
-| Leg 1 Day Count                      | Optional    | The day count convention, such as "Act.360", defaults from the index |
+| Leg 1 Day Count                      | Optional    | The day count convention, such as "Act/360", defaults from the index |
 | Leg 1 Accrual Method                 | Optional    | The accrual method, "Compounded" or "Averaged", defaults to "Compounded" and normally set from the index |
 | Leg 1 Rate Cut Off Days              | Optional    | The number of days before the end of the period that the rate is locked down |
 | Leg 1 Negative Rate Method           | Optional    | The negative rate method, "AllowNegative" or "NotNegative", defaults to "AllowNegative" |
@@ -151,7 +151,7 @@ Ibor rate legs:
 | Leg column name                      | Mandatory?  | Description |
 |--------------------------------------|-------------|-------------|
 | Leg 1 Index                          | Mandatory   | The [Ibor index]({{site.baseurl}}/indices/), such as "GBP-LIBOR-3M" |
-| Leg 1 Day Count                      | Optional    | The day count convention, such as "Act.360", defaults from the index |
+| Leg 1 Day Count                      | Optional    | The day count convention, such as "Act/360", defaults from the index |
 | Leg 1 Fixing Relative To             | Optional    | The date that fixings are relative to, defaults to "PeriodStart" |
 | Leg 1 Fixing Offset Days             | Optional    | The fixing offset in days, defaults to no offset, defaults from the index |
 | Leg 1 Fixing Offset Calendar         | Optional    | The fixing offset calendar, defaults to "NoHolidays", defaults from the index |

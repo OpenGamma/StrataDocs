@@ -28,7 +28,8 @@ FxSingle fx = FxSingle.of(CurrencyAmount.of(Currency.USD, 1000),
                           LocalDate.of(2015, 6, 15));
 ```
 
-{{tip}}The strata-loader project provides the ability to load an FX Single from FpML and CSV.{{end}}
+{{tip}}The strata-loader project provides the ability to load an FX Single
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_fx_single).{{end}}
 
 
 ## Risk measures
