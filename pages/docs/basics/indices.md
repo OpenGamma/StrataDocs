@@ -10,7 +10,7 @@ Strata defines an index as "an agreed mechanism for determining certain financia
 such as exchange rates or interest rates". Most common indices are published each working day.
 
 
-## Overnight Indices:
+## <a name="overnight"></a>Overnight Indices:
 
 An Overnight index is used to represent the rate where money is deposited for one night.
 Usually this is from today to tomorrow, but it can be from tomorrow to the day after, known as "tom/next".
@@ -43,7 +43,7 @@ The identifier can also be obtained dynamically using `OvernightIndex.of(name)`.
 nor do they have holiday calendar data available.
 
 
-## Ibor Indices:
+## <a name="ibor"></a>Ibor Indices:
 
 An Ibor index is used to represent the rate where money is deposited for a period longer than one day.
 The deposit period is known as the tenor, and a rate is published for a number of different tenors.
@@ -87,7 +87,7 @@ The identifier can also be obtained dynamically using `IborIndex.of(name)`.
 nor do they have holiday calendar data available.
 
 
-## Prices Indices (for inflation):
+## <a name="price"></a>Prices Indices (for inflation):
 
 A Price index is used to represent the rate at which prices rise in an economy.
 The difference between two values represents inflation.
@@ -106,3 +106,34 @@ The difference between two values represents inflation.
 
 Price indices have a constant in `PriceIndices`.
 The identifier can also be obtained dynamically using `PriceIndex.of(name)`.
+
+
+## <a name="fx"></a>FX Indices:
+
+An FX index provides a daily snap of the FX rate between two currencies.
+
+| Name                      | Currency pair | Description      | 
+|---------------------------|---------------|------------------|
+| EUR/CHF-ECB               | EUR/CHF       | Daily fixing from the European Central Bank |
+| EUR/GBP-ECB               | EUR/GBP       | Daily fixing from the European Central Bank |
+| EUR/JPY-ECB               | EUR/JPYB      | Daily fixing from the European Central Bank |
+| EUR/USD-ECB               | EUR/USD       | Daily fixing from the European Central Bank |
+| USD/CHF-WM                | USD/CHF       | Daily fixing from the WM company |
+| GBP/USD-WM                | GBP/USD       | Daily fixing from the WM company |
+| EUR/USD-WM                | EUR/USD       | Daily fixing from the WM company |
+| USD/JPY-WM                | USD/JPY       | Daily fixing from the WM company |
+| USD/CLP-DOLAR-OBS-CLP10 * | USD/CLP       | Daily fixing as per industry standards |
+| USD/CNY-SAEC-CNY01 *      | USD/CNY       | Daily fixing as per industry standards |
+| USD/COP-TRM-COP02 *       | USD/COP       | Daily fixing as per industry standards |
+| USD/INR-FBIL-INR01 *      | USD/INR       | Daily fixing as per industry standards |
+| USD/KRW-KFTC18-KRW02 *    | USD/KRW       | Daily fixing as per industry standards |
+| USD/SGD-VWAP-SGD3 *       | USD/SGD       | Daily fixing as per industry standards |
+| USD/THB-VWAP-THB01 *      | USD/THB       | Daily fixing as per industry standards |
+| USD/TWD-TAIFX1-TWD03 *    | USD/TWD       | Daily fixing as per industry standards |
+
+FX indices have a constant in `FxIndices`.
+The identifier can also be obtained dynamically using `FxIndex.of(name)`.
+
+\* Indices marked with a star do not have a constant in `FxIndices`,
+
+
