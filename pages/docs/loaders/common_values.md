@@ -5,7 +5,7 @@ permalink: /common_values/
 
 The CSV loaders have some common values, detailed below:
 
-### Currency
+### <a name="currency"></a>Currency
 
 Currencies are specified using the standard three letter ISO-4217 code.
 The following currencies have been fully defined in Strata:
@@ -19,12 +19,12 @@ ATS, BEF, CYP, DEM, EEK, ESP, FIM, FRF, GRD, IEP, ITL, LTL, LUF, LVL, MTL, NLG, 
 Other currencies can be used, but may not have the correct number of fractional digits.
 
 
-### Day Count
+### <a name="day-count"></a>Day Count
 
 See the [day counts]({{site.baseurl}}/day_counts/) page.
 
 
-### Business Day Convention
+### <a name="business-day-convention"></a>Business Day Convention
 
 The loaders support the following values:
 
@@ -44,7 +44,7 @@ For example, `Modified Following` and `MODIFIED_PRECEDING` are also valid.
 See also the [date adjustments]({{site.baseurl}}/date_adjustments/) page.
 
 
-### Stub Convention
+### <a name="stub-convention"></a>Stub Convention
 
 The loaders support the following values:
 
@@ -62,7 +62,7 @@ The loaders support the following values:
 See also the [schedules]({{site.baseurl}}/schedules/) page.
 
 
-### Roll Convention
+### <a name="roll-convention"></a>Roll Convention
 
 The loaders support the following values:
 
@@ -92,7 +92,7 @@ The loaders support the following values:
 See also the [schedules]({{site.baseurl}}/schedules/) page.
 
 
-### Buy/Sell
+### <a name="buy-sell"></a>Buy/Sell
 
 The loaders support the following values:
 
@@ -102,7 +102,7 @@ The loaders support the following values:
 | `Sell`          | `S`                        | Case insensitive |
 
 
-### Pay/Receive
+### <a name="pay-receive"></a>Pay/Receive
 
 | Standard value  | Valid alternatives         | Notes |
 |-----------------|----------------------------|-------|
@@ -110,7 +110,7 @@ The loaders support the following values:
 | `Receive`       | `Rec`, `R`                 | Case insensitive |
 
 
-### Put/Call
+### <a name="put-call"></a>Put/Call
 
 | Standard value  | Valid alternatives         | Notes |
 |-----------------|----------------------------|-------|
@@ -118,7 +118,7 @@ The loaders support the following values:
 | `Call`          | `C`                        | Case insensitive |
 
 
-### Long/Short
+### <a name="long-short"></a>Long/Short
 
 | Standard value  | Valid alternatives         | Notes |
 |-----------------|----------------------------|-------|

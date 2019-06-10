@@ -37,24 +37,24 @@ These columns are used when loading a Swap trade by convention.
 See also the [overview page]({{site.baseurl}}/trade_loader) for additional optional columns that can be used
 to specify the identifier and counterparty.
 
-| Column name           | Mandatory?  | Example/Format | Description |
-|-----------------------|-------------|----------------|-------------|
-| Strata Trade Type     | Mandatory   | "Swap"         | The type of the trade, case insensitive |
-| Start Date            | Conditional | ["2017-06-01"]({{site.baseurl}}/common_formats/) | The unadjusted start date |
-| End Date              | Conditional | ["2022-06-01"]({{site.baseurl}}/common_formats/) | The unadjusted end date |
-| Period To Start       | Conditional | ["2M"]({{site.baseurl}}/common_formats/) | The period from the trade date to the trade start date |
-| Tenor                 | Conditional | ["5Y"]({{site.baseurl}}/common_formats/) | The period from the start date to the end date |
-| Convention            | Mandatory   | "GBP-FIXED-1Y-LIBOR-3M" | The Swap convention name |
-| Buy Sell              | Mandatory   | ["Buy"]({{site.baseurl}}/common_values/) | Whether the Swap is "Buy" or "Sell" |
-| Notional              | Mandatory   | "1000000"      | The notional amount, currency defined by the convention |
-| Fixed Rate            | Mandatory   | "1.2"          | The fixed rate, as a percentage, such as "1.2" for 1.2% |
-| FX Rate               | Conditional | "1.364"        | The FX rate, mandatory for cross-currency swaps |
-| Roll Convention       | Optional    | ["Day1"]({{site.baseurl}}/common_values/) | The roll convention |
-| Stub Convention       | Optional    | ["ShortInitial"]({{site.baseurl}}/common_values/) | The stub convention |
-| First Regular Start Date | Optional | ["2017-09-01"]({{site.baseurl}}/common_formats/) | The unadjusted start date of the first regular accrual period |
-| Last Regular End Date | Optional    | ["2022-03-01"]({{site.baseurl}}/common_formats/) | The unadjusted end date of the last regular accrual period |
-| Date Convention       | Optional    | ["ModifiedFollowing"]({{site.baseurl}}/common_values/) | The [business day convention]({{site.baseurl}}/date_adjustments/) |
-| Date Calendar         | Optional    | ["GBLO"]({{site.baseurl}}/holiday_data/) | The [holiday calendar]({{site.baseurl}}/holidays/) to use |
+| Column name           | Mandatory?  | Example        | Format | Description |
+|-----------------------|-------------|----------------|--------|-------------|
+| Strata Trade Type     | Mandatory   | "Swap"         |        | The type of the trade, case insensitive |
+| Start Date            | Conditional | "2017-06-01"   | [Formats]({{site.baseurl}}/common_formats/#date) | The unadjusted start date |
+| End Date              | Conditional | "2022-06-01"   | [Formats]({{site.baseurl}}/common_formats/#date) | The unadjusted end date |
+| Period To Start       | Conditional | "2M"           | [Formats]({{site.baseurl}}/common_formats/#period) | The period from the trade date to the trade start date |
+| Tenor                 | Conditional | "5Y"           | [Formats]({{site.baseurl}}/common_formats/#period) | The period from the start date to the end date |
+| Convention            | Mandatory   | "GBP-FIXED-1Y-LIBOR-3M" | | The Swap convention name |
+| Buy Sell              | Mandatory   | "Buy"          | [Values]({{site.baseurl}}/common_values/#buy-sell) | Whether the Swap is "Buy" or "Sell" |
+| Notional              | Mandatory   | "1000000"      |        | The notional amount, currency defined by the convention |
+| Fixed Rate            | Mandatory   | "1.2"          |        | The fixed rate, as a percentage, such as "1.2" for 1.2% |
+| FX Rate               | Conditional | "1.364"        |        | The FX rate, mandatory for cross-currency swaps |
+| Roll Convention       | Optional    | "Day1"         | [Values]({{site.baseurl}}/common_values/#roll-convention) | The roll convention |
+| Stub Convention       | Optional    | "ShortInitial" | [Values]({{site.baseurl}}/common_values/#stub-convention) | The stub convention |
+| First Regular Start Date | Optional | "2017-09-01"   | [Formats]({{site.baseurl}}/common_formats/#date) | The unadjusted start date of the first regular accrual period |
+| Last Regular End Date | Optional    | "2022-03-01"   | [Formats]({{site.baseurl}}/common_formats/#date) | The unadjusted end date of the last regular accrual period |
+| Date Convention       | Optional    | "ModifiedFollowing" | [Values]({{site.baseurl}}/common_values/#business-day-convention) | The [business day convention]({{site.baseurl}}/date_adjustments/) |
+| Date Calendar         | Optional    | "GBLO"         | [Values]({{site.baseurl}}/holiday_data/) | The [holiday calendar]({{site.baseurl}}/holidays/) to use |
 
 Valid combinations of conditional fields are as follows (other combinations are not allowed):
 

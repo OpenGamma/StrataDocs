@@ -5,7 +5,7 @@ permalink: /common_formats/
 
 The CSV loaders have some common formats for values, detailed below:
 
-### Dates
+### <a name="date"></a>Dates
 
 The loaders support the following date formats:
 
@@ -22,7 +22,7 @@ The loaders support the following date formats:
 | `d/M/yy`     | 1/6/17     | 1st June 2017 | |
 
 
-### Year/Month
+### <a name="year-month"></a>Year/Month
 
 The loaders support the following year/month formats:
 
@@ -38,7 +38,7 @@ The loaders support the following year/month formats:
 | `d/M/yyyy`   | 1/6/2017   | June 2017     | Excel format, day must be 1 |
 
 
-### Times
+### <a name="<a name="time"></a>"></a>Times
 
 The loaders support the following time formats:
 
@@ -50,7 +50,7 @@ The loaders support the following time formats:
 | `H:mm:ss.SSS` | `12:30:40.123` | 12:30:40.123 |
 
 
-### Frequency/Tenor
+### <a name="period"></a>Frequency/Tenor
 
 The loaders support the following frequency/tenor formats:
 
