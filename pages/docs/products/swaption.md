@@ -36,7 +36,8 @@ where the expiry date is specified in terms of `AdjustableDate` with a suitable 
 The swaption settlement type is `PhysicalSettlement` or `CashSettlement`, and further detail of cash settled swaptions is defined by `CashSettlementMethod`.
 These correspond to the ISDA 2006 definitions.
 
-{{tip}}The strata-loader project provides the ability to load a swaption from FpML and CSV.{{end}}
+{{tip}}The strata-loader project provides the ability to load a Swaption
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_swaption).{{end}}
 
 
 ## Risk measures

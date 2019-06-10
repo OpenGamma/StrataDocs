@@ -5,7 +5,7 @@ permalink: /cds/
 
 {% include macros.html %}
 
-A CDS (credit default swap) is a financial instrument that provides the ability to manage credit risk.
+A Credit Default Swap (CDS) is a financial instrument that provides the ability to manage credit risk.
 The protection seller agrees to compensate the protection buyer when the specified legal entity suffers a default.
 The protection seller is paid a regular premium until the expiry of the CDS contract or until the defaults.
 As such, CDS can be viewed as a form of insurance against the default of a specific legal entity.
@@ -15,7 +15,7 @@ The Strata CDS instrument follows the ISDA standard.
 
 ## Key classes
 
-A rate swap is represented in Strata using the [`Cds`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/credit/Cds.html) class.
+A CDS is represented in Strata using the [`Cds`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/credit/Cds.html) class.
 The `Cds` class stores details of the product that was agreed.
 The trade details are stored in [`CdsTrade`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/credit/CdsTrade.html) class.
 
@@ -32,7 +32,8 @@ CdsTrade cdsTrade = CdsConventions.USD_STANDARD.toTrade(
     0.012);                                    // fixed rate of 1.2%
 ```
 
-{{tip}}The strata-loader project provides the ability to load a swap from CSV.{{end}}
+{{tip}}The strata-loader project provides the ability to load a CDS
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_cds).{{end}}
 
 
 ## Risk measures

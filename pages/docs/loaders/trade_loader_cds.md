@@ -13,7 +13,7 @@ The trades file is a CSV-formatted file.
 The columns may be specified in any order.
 The CSV format is flexible, and the input can specify trades in various ways.
 
-Swaps can be specified using two different column sets - by convention and by full details.
+CDS trades can be specified using two different column sets - by convention and by full details.
 The two column sets can be mixed in the same file.
 In addition, a single file can contain other asset classes, such as FRAs or FX.
 Just add the union of the column headers and fill in the necessary data on a row by row basis.
@@ -21,7 +21,7 @@ Just add the union of the column headers and fill in the necessary data on a row
 
 ## Example
 
-This example file specifies a Swap trade by convention.
+This example file specifies a CDS trade by convention.
 
 ```
 Strata Trade Type, Id Scheme, Id,     Trade Date, Convention,   Buy Sell, Tenor, Notional, Fixed Rate, Legal Entity Id
@@ -43,8 +43,8 @@ to specify the identifier and counterparty.
 | Start Date             | Conditional | The unadjusted start date, such as "2017-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | End Date               | Conditional | The unadjusted end date, such as "2022-06-01", see [accepted formats]({{site.baseurl}}/common_formats/) |
 | Tenor                  | Conditional | The period from the start date to the end date, such as "P5Y" or "5Y", see [accepted formats]({{site.baseurl}}/common_formats/) |
-| Convention             | Mandatory   | The Swap convention, such as "GBP-STANDARD" |
-| Buy Sell               | Mandatory   | Whether the Swap is "Buy" or "Sell" |
+| Convention             | Mandatory   | The CDS convention, such as "GBP-STANDARD" |
+| Buy Sell               | Mandatory   | Whether the CDS is "Buy" or "Sell" |
 | Notional               | Mandatory   | The notional amount, currency defined by the convention |
 | Fixed Rate             | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |
 | Legal Entity Id Scheme | Optional    | The scheme (symbology) within which the legal entity identifier is unique, default "OG-Entity" |
@@ -65,7 +65,7 @@ to specify the identifier and counterparty.
 | Column name              | Mandatory?  | Description |
 |--------------------------|-------------|-------------|
 | Strata Trade Type        | Mandatory   | The type of the trade, "CDS", case insensitive |
-| Buy Sell                 | Mandatory   | Whether the Swap is "Buy" or "Sell" |
+| Buy Sell                 | Mandatory   | Whether the CDS is "Buy" or "Sell" |
 | Currency                 | Mandatory   | The currency of the notional amount |
 | Notional                 | Mandatory   | The notional amount |
 | Fixed Rate               | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |

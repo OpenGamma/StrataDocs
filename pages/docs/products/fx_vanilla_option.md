@@ -36,7 +36,8 @@ FxVanillaOption fxOpt = FxVanillaOption.builder()
                                        .build();
 ```
 
-{{tip}}The strata-loader project provides the ability to load an FX Vanilla Option from CSV.{{end}}
+{{tip}}The strata-loader project provides the ability to load an FX Vanilla Option
+from [CSV]({{site.baseurl}}/trade_loader_fx_vanilla_option).{{end}}
 
 
 ## Risk measures
