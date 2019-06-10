@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":9};
+var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,7 +219,7 @@ extends java.lang.Object</pre>
  <h4>Resolver</h4>
  The standard resolver will ensure that the sensitivity always has a tenor and
  implements <a href="../../market/param/TenoredParameterMetadata.html" title="interface in com.opengamma.strata.market.param"><code>TenoredParameterMetadata</code></a>.
- The resolver can be adjusted to allow date-only metadata (thereby making the 'Sensitivity Tenor' column optional.
+ The resolver can be adjusted to allow date-only metadata (thereby making the 'Sensitivity Tenor' column optional).
  The resolver can manipulate the tenor and/or curve name that is parsed if desired.</div>
 </li>
 </ul>
@@ -243,13 +243,13 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isKnownFormat(com.google.common.io.CharSource)">isKnownFormat</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;charSource)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isKnownFormat(com.google.common.io.CharSource)">isKnownFormat</a></span>&#8203;(com.google.common.io.CharSource&nbsp;charSource)</code></th>
 <td class="colLast">
 <div class="block">Checks whether the source is a CSV format sensitivities file.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;com.google.common.collect.ListMultimap&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#load(java.util.Collection)">load</a></span>&#8203;(java.util.Collection&lt;<a href="../../collect/io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format sensitivities files.</div>
@@ -270,13 +270,20 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;com.google.common.collect.ListMultimap&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files, returning sensitivities.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseAndMerge(java.util.Collection)">parseAndMerge</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</code></th>
+<td class="colLast">
+<div class="block">Parses one or more CSV format position files, merging the result to a single sensitivities instance.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="SensitivityCsvLoader.html" title="class in com.opengamma.strata.loader.csv">SensitivityCsvLoader</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#standard()">standard</a></span>()</code></th>
 <td class="colLast">
@@ -359,7 +366,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isKnownFormat</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isKnownFormat&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;charSource)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isKnownFormat&#8203;(com.google.common.io.CharSource&nbsp;charSource)</pre>
 <div class="block">Checks whether the source is a CSV format sensitivities file.
  <p>
  This parses the headers as CSV and checks that mandatory headers are present.</div>
@@ -377,7 +384,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>load</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;&nbsp;load&#8203;(java.util.Collection&lt;<a href="../../collect/io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;com.google.common.collect.ListMultimap&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;&nbsp;load&#8203;(java.util.Collection&lt;<a href="../../collect/io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</pre>
 <div class="block">Loads one or more CSV format sensitivities files.
  <p>
  In most cases each file contains one sensitivity instance, however the file format is capable
@@ -397,13 +404,38 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a id="parseAndMerge(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseAndMerge</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&nbsp;parseAndMerge&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</pre>
+<div class="block">Parses one or more CSV format position files, merging the result to a single sensitivities instance.
+ <p>
+ The standard way to write sensitivities files is for each file to contain one sensitivity instance.
+ The file format can handle multiple instances per file, where each instance has a separate identifier.
+ Most files will not have the identifier columns, thus the identifier will be the empty string.
+ This file handles the common case where the identifier is irrelevant by merging the sensitivities
+ using <a href="../../market/sensitivity/CurveSensitivities.html#mergedWith(com.opengamma.strata.market.sensitivity.CurveSensitivities)"><code>CurveSensitivities.mergedWith(CurveSensitivities)</code></a>
+ <p>
+ CSV files sometimes contain a Unicode Byte Order Mark.
+ Callers are responsible for handling this, such as by using <a href="../../collect/io/UnicodeBom.html" title="class in com.opengamma.strata.collect.io"><code>UnicodeBom</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>charSources</code> - the CSV character sources</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the loaded sensitivities, parsing errors are captured in the result</dd>
+</dl>
+</li>
+</ul>
 <a id="parse(java.util.Collection)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>parse</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;&nbsp;parse&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;com.google.common.collect.ListMultimap&lt;java.lang.String,&#8203;<a href="../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;&nbsp;parse&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</pre>
 <div class="block">Parses one or more CSV format position files, returning sensitivities.
  <p>
  The standard way to write sensitivities files is for each file to contain one sensitivity instance.

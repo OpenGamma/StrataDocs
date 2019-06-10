@@ -134,15 +134,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code>, <code>java.lang.AutoCloseable</code>, <code>java.util.Iterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
+<dd><code>com.google.common.collect.PeekingIterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code>, <code>java.lang.AutoCloseable</code>, <code>java.util.Iterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">CsvIterator</span>
 extends java.lang.Object
-implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</pre>
+implements java.lang.AutoCloseable, com.google.common.collect.PeekingIterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</pre>
 <div class="block">Iterator over the rows of a CSV file.
  <p>
- Provides the ability to iterate over a CSV file together with the ability to parse it from a <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a>.
+ Provides the ability to iterate over a CSV file together with the ability to parse it from a <code>CharSource</code>.
  The separator may be specified, allowing TSV files (tab-separated) and other similar formats to be parsed.
  See <a href="CsvFile.html" title="class in com.opengamma.strata.collect.io"><code>CsvFile</code></a> for more details of the CSV format.
  <p>
@@ -225,7 +225,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#headers()">headers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the header row.</div>
@@ -254,7 +254,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source,
   boolean&nbsp;headerRow)</code></th>
 <td class="colLast">
 <div class="block">Parses the specified source as a CSV file, using a comma as the separator.</div>
@@ -262,7 +262,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source,
   boolean&nbsp;headerRow,
   char&nbsp;separator)</code></th>
 <td class="colLast">
@@ -344,15 +344,12 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;of&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<pre class="methodSignature">public static&nbsp;<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;of&#8203;(com.google.common.io.CharSource&nbsp;source,
                              boolean&nbsp;headerRow)</pre>
-<div class="block">Parses the specified source as a CSV file, using a comma as the separator.
- <p>
- This method opens the CSV file for reading.
- The caller is responsible for closing it by calling <a href="#close()"><code>close()</code></a>.</div>
+<div class="block">Parses the specified source as a CSV file, using a comma as the separator.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - the CSV file resource</dd>
+<dd><code>source</code> - the source to read as CSV</dd>
 <dd><code>headerRow</code> - whether the source has a header row, an empty source must still contain the header</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the CSV file</dd>
@@ -368,19 +365,16 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;of&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<pre class="methodSignature">public static&nbsp;<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;of&#8203;(com.google.common.io.CharSource&nbsp;source,
                              boolean&nbsp;headerRow,
                              char&nbsp;separator)</pre>
 <div class="block">Parses the specified source as a CSV file where the separator is specified and might not be a comma.
  <p>
  This overload allows the separator to be controlled.
- For example, a tab-separated file is very similar to a CSV file, the only difference is the separator.
- <p>
- This method opens the CSV file for reading.
- The caller is responsible for closing it by calling <a href="#close()"><code>close()</code></a>.</div>
+ For example, a tab-separated file is very similar to a CSV file, the only difference is the separator.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - the file resource</dd>
+<dd><code>source</code> - the source to read as CSV</dd>
 <dd><code>headerRow</code> - whether the source has a header row, an empty source must still contain the header</dd>
 <dd><code>separator</code> - the separator used to separate each field, typically a comma, but a tab is sometimes used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -400,9 +394,6 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <pre class="methodSignature">public static&nbsp;<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;of&#8203;(java.io.Reader&nbsp;reader,
                              boolean&nbsp;headerRow)</pre>
 <div class="block">Parses the specified reader as a CSV file, using a comma as the separator.
- <p>
- This factory method allows the separator to be controlled.
- For example, a tab-separated file is very similar to a CSV file, the only difference is the separator.
  <p>
  The caller is responsible for closing the reader, such as by calling <a href="#close()"><code>close()</code></a>.</div>
 <dl>
@@ -428,7 +419,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
                              char&nbsp;separator)</pre>
 <div class="block">Parses the specified reader as a CSV file where the separator is specified and might not be a comma.
  <p>
- This factory method allows the separator to be controlled.
+ This overload allows the separator to be controlled.
  For example, a tab-separated file is very similar to a CSV file, the only difference is the separator.
  <p>
  The caller is responsible for closing the reader, such as by calling <a href="#close()"><code>close()</code></a>.</div>
@@ -451,7 +442,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <ul class="blockList">
 <li class="blockList">
 <h4>headers</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;&nbsp;headers()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.lang.String&gt;&nbsp;headers()</pre>
 <div class="block">Gets the header row.
  <p>
  If there is no header row, an empty list is returned.</div>
@@ -543,7 +534,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <div class="block">Peeks the next row from the CSV file without changing the iteration position.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true#peek()" title="class or interface in com.google.common.collect" class="externalLink">peek</a></code>&nbsp;in interface&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
+<dd><code>peek</code>&nbsp;in interface&nbsp;<code>com.google.common.collect.PeekingIterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the peeked row</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -565,7 +556,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>next</code>&nbsp;in interface&nbsp;<code>java.util.Iterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true#next()" title="class or interface in com.google.common.collect" class="externalLink">next</a></code>&nbsp;in interface&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
+<dd><code>next</code>&nbsp;in interface&nbsp;<code>com.google.common.collect.PeekingIterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the next row</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -644,7 +635,7 @@ implements java.lang.AutoCloseable, <a href="https://google.github.io/guava/rele
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>remove</code>&nbsp;in interface&nbsp;<code>java.util.Iterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true#remove()" title="class or interface in com.google.common.collect" class="externalLink">remove</a></code>&nbsp;in interface&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
+<dd><code>remove</code>&nbsp;in interface&nbsp;<code>com.google.common.collect.PeekingIterator&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.UnsupportedOperationException</code> - always</dd>
 </dl>

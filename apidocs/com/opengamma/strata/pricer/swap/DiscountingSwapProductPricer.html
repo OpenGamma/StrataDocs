@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -272,13 +272,29 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#marketQuote(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">marketQuote</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
+           <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">
+<div class="block">Computes the market quote of swaps.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#marketQuoteSensitivity(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">marketQuoteSensitivity</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
+                      <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">
+<div class="block">Computes the market quote curve sensitivity for swaps.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parRate(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">parRate</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
        <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
 <td class="colLast">
 <div class="block">Computes the par rate for swaps with a fixed leg.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parRateSensitivity(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">parRateSensitivity</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                   <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
@@ -286,7 +302,7 @@ extends java.lang.Object</pre>
 <div class="block">Calculates the par rate curve sensitivity for a swap with a fixed leg.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parSpread(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">parSpread</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
          <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
@@ -294,7 +310,7 @@ extends java.lang.Object</pre>
 <div class="block">Computes the par spread for swaps.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parSpreadSensitivity(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">parSpreadSensitivity</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                     <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
@@ -302,7 +318,7 @@ extends java.lang.Object</pre>
 <div class="block">Calculates the par spread curve sensitivity for a swap.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValue(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.pricer.rate.RatesProvider)">presentValue</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
             <a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
@@ -311,7 +327,7 @@ extends java.lang.Object</pre>
 <div class="block">Calculates the present value of the swap product, converted to the specified currency.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValue(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">presentValue</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
@@ -319,7 +335,7 @@ extends java.lang.Object</pre>
 <div class="block">Calculates the present value of the swap product.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivity(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.pricer.rate.RatesProvider)">presentValueSensitivity</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                        <a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
@@ -328,7 +344,7 @@ extends java.lang.Object</pre>
 <div class="block">Calculates the present value sensitivity of the swap product converted in a given currency.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivity(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">presentValueSensitivity</a></span>&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                        <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
@@ -533,6 +549,32 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a id="marketQuote(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>marketQuote</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;marketQuote&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
+                          <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</pre>
+<div class="block">Computes the market quote of swaps.
+ <p>
+ For swaps with a fixed leg, this is equal to the par rate. For swaps without a fixed leg, this is the 
+ constant spread on the first leg required to have a PV of 0.
+ <p>
+ All the payment periods of the first leg must be of the type <a href="../../product/swap/RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap"><code>RatePaymentPeriod</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>swap</code> - the product</dd>
+<dd><code>provider</code> - the rates provider</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the market quote</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if there is no fixed leg and not all the payment periods of the first leg
+   are of the type RatePaymentPeriod</dd>
+</dl>
+</li>
+</ul>
 <a id="parSpread(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">
 <!--   -->
 </a>
@@ -643,6 +685,34 @@ extends java.lang.Object</pre>
 <dd>the par rate curve sensitivity of the swap product</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if there is no fixed leg</dd>
+</dl>
+</li>
+</ul>
+<a id="marketQuoteSensitivity(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>marketQuoteSensitivity</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&nbsp;marketQuoteSensitivity&#8203;(<a href="../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
+                                                      <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</pre>
+<div class="block">Computes the market quote curve sensitivity for swaps.
+ <p>
+ For swaps with a fixed leg, this is equal to the par rate. For swaps without a fixed leg, this is the 
+ constant spread on the first leg required to have a PV of 0.
+ <p>
+ All the payment periods of the first leg must be of the type <a href="../../product/swap/RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap"><code>RatePaymentPeriod</code></a>.
+ <p>
+ The figures are reported in the currency of the first leg, even if in theory they should be dimensionless.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>swap</code> - the product</dd>
+<dd><code>provider</code> - the rates provider</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the par rate curve sensitivity of the swap product</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if there is no fixed leg and not all the payment periods of the first leg
+   are of the type RatePaymentPeriod</dd>
 </dl>
 </li>
 </ul>

@@ -133,7 +133,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CsvIterator.</span><code><span class="memberNameLink"><a href="../CsvIterator.html#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvIterator.</span><code><span class="memberNameLink"><a href="../CsvIterator.html#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source,
   boolean&nbsp;headerRow)</code></th>
 <td class="colLast">
 <div class="block">Parses the specified source as a CSV file, using a comma as the separator.</div>
@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CsvIterator.</span><code><span class="memberNameLink"><a href="../CsvIterator.html#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvIterator.</span><code><span class="memberNameLink"><a href="../CsvIterator.html#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source,
   boolean&nbsp;headerRow,
   char&nbsp;separator)</code></th>
 <td class="colLast">
@@ -163,6 +163,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   char&nbsp;separator)</code></th>
 <td class="colLast">
 <div class="block">Parses the specified reader as a CSV file where the separator is specified and might not be a comma.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../package-summary.html">com.opengamma.strata.collect.io</a> with parameters of type <a href="../CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvOutput.</span><code><span class="memberNameLink"><a href="../CsvOutput.html#writeCsvIterator(com.opengamma.strata.collect.io.CsvIterator,boolean)">writeCsvIterator</a></span>&#8203;(<a href="../CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;iterator,
+                boolean&nbsp;alwaysQuote)</code></th>
+<td class="colLast">
+<div class="block">Writes the output of the provided <code>CsvIterator</code> to the underlying.</div>
 </td>
 </tr>
 </tbody>

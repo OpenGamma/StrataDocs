@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10};
+var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,13 +163,20 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isKnownFormat(com.google.common.io.ByteSource)">isKnownFormat</a></span>&#8203;(com.google.common.io.ByteSource&nbsp;source)</code></th>
+<td class="colLast">
+<div class="block">Basic check to see if the source can probably be parsed as FpML.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.loader.fpml.FpmlPartySelector)">of</a></span>&#8203;(<a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">FpmlPartySelector</a>&nbsp;ourPartySelector)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of the parser, based on the specified selector.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.loader.fpml.FpmlPartySelector,com.opengamma.strata.loader.fpml.FpmlTradeInfoParserPlugin)">of</a></span>&#8203;(<a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">FpmlPartySelector</a>&nbsp;ourPartySelector,
   <a href="FpmlTradeInfoParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">FpmlTradeInfoParserPlugin</a>&nbsp;tradeInfoParser)</code></th>
@@ -177,7 +184,16 @@ extends java.lang.Object</pre>
 <div class="block">Obtains an instance of the parser, based on the specified selector and trade info plugin.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.loader.fpml.FpmlPartySelector,com.opengamma.strata.loader.fpml.FpmlTradeInfoParserPlugin,com.opengamma.strata.basics.ReferenceData)">of</a></span>&#8203;(<a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">FpmlPartySelector</a>&nbsp;ourPartySelector,
+  <a href="FpmlTradeInfoParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">FpmlTradeInfoParserPlugin</a>&nbsp;tradeInfoParser,
+  <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance of the parser, based on the specified selector, trade info plugin and reference data.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.loader.fpml.FpmlPartySelector,com.opengamma.strata.loader.fpml.FpmlTradeInfoParserPlugin,java.util.Map)">of</a></span>&#8203;(<a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">FpmlPartySelector</a>&nbsp;ourPartySelector,
   <a href="FpmlTradeInfoParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">FpmlTradeInfoParserPlugin</a>&nbsp;tradeInfoParser,
@@ -186,7 +202,7 @@ extends java.lang.Object</pre>
 <div class="block">Obtains an instance of the parser, based on the specified selector and plugins.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.loader.fpml.FpmlPartySelector,com.opengamma.strata.loader.fpml.FpmlTradeInfoParserPlugin,java.util.Map,com.opengamma.strata.basics.ReferenceData)">of</a></span>&#8203;(<a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">FpmlPartySelector</a>&nbsp;ourPartySelector,
   <a href="FpmlTradeInfoParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">FpmlTradeInfoParserPlugin</a>&nbsp;tradeInfoParser,
@@ -196,14 +212,14 @@ extends java.lang.Object</pre>
 <div class="block">Obtains an instance of the parser, based on the specified selector and plugins.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseTrades(com.google.common.io.ByteSource)">parseTrades</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;source)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseTrades(com.google.common.io.ByteSource)">parseTrades</a></span>&#8203;(com.google.common.io.ByteSource&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Parses FpML from the specified source, extracting the trades.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseTrades(com.opengamma.strata.collect.io.XmlElement,java.util.Map)">parseTrades</a></span>&#8203;(<a href="../../collect/io/XmlElement.html" title="class in com.opengamma.strata.collect.io">XmlElement</a>&nbsp;fpmlRootEl,
            java.util.Map&lt;java.lang.String,&#8203;<a href="../../collect/io/XmlElement.html" title="class in com.opengamma.strata.collect.io">XmlElement</a>&gt;&nbsp;references)</code></th>
@@ -290,6 +306,35 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a id="of(com.opengamma.strata.loader.fpml.FpmlPartySelector,com.opengamma.strata.loader.fpml.FpmlTradeInfoParserPlugin,com.opengamma.strata.basics.ReferenceData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">public static&nbsp;<a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a>&nbsp;of&#8203;(<a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">FpmlPartySelector</a>&nbsp;ourPartySelector,
+                                    <a href="FpmlTradeInfoParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">FpmlTradeInfoParserPlugin</a>&nbsp;tradeInfoParser,
+                                    <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="block">Obtains an instance of the parser, based on the specified selector, trade info plugin and reference data.
+ <p>
+ The FpML parser has a number of plugin points that can be controlled:
+ <ul>
+ <li>the <a href="FpmlPartySelector.html" title="interface in com.opengamma.strata.loader.fpml">party selector</a>
+ <li>the <a href="FpmlTradeInfoParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">trade info parser</a>
+ <li>the <a href="FpmlParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml">trade parsers</a>
+ <li>the <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">reference data</a>
+ </ul>
+ This method uses the trade parsers registered in <a href="FpmlParserPlugin.html" title="interface in com.opengamma.strata.loader.fpml"><code>FpmlParserPlugin</code></a> configuration.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ourPartySelector</code> - the selector used to find "our" party within the set of parties in the FpML document</dd>
+<dd><code>tradeInfoParser</code> - the trade info parser</dd>
+<dd><code>refData</code> - the reference data to use</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the document parser</dd>
+</dl>
+</li>
+</ul>
 <a id="of(com.opengamma.strata.loader.fpml.FpmlPartySelector,com.opengamma.strata.loader.fpml.FpmlTradeInfoParserPlugin,java.util.Map)">
 <!--   -->
 </a>
@@ -349,20 +394,46 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a id="isKnownFormat(com.google.common.io.ByteSource)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isKnownFormat</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isKnownFormat&#8203;(com.google.common.io.ByteSource&nbsp;source)</pre>
+<div class="block">Basic check to see if the source can probably be parsed as FpML.
+ <p>
+ This checks the first part of the byte source to see if it appears to be FpML.
+ This is determined by looking for "fpml" (case insensitive) within the first 2000 characters.
+ <p>
+ A more thorough check would involve parsing the XML, which is relatively slow.
+ If you want to perform the more thorough check benchmarking indicates you might
+ as well just parse the whole document.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - the source to check</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the source appears to be FpML</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO error occurred</dd>
+</dl>
+</li>
+</ul>
 <a id="parseTrades(com.google.common.io.ByteSource)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseTrades</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;<a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&nbsp;parseTrades&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;source)</pre>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;<a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&nbsp;parseTrades&#8203;(com.google.common.io.ByteSource&nbsp;source)</pre>
 <div class="block">Parses FpML from the specified source, extracting the trades.
  <p>
  This parses the specified byte source which must be an XML document.
  <p>
  Sometimes, the FpML document is embedded in a non-FpML wrapper.
- This method will intelligently find the FpML document at the root or within one or two levels
- of wrapper by searching for an element that contains both <code>&lt;trade&gt;</code> and <code>&lt;party&gt;</code>.</div>
+ This method will intelligently find the FpML document at the root, within any children of
+ the root, or within any grand-children of the root.
+ The FpML root element is the one that contains both <code>&lt;trade&gt;</code> and <code>&lt;party&gt;</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the source of the FpML XML document</dd>

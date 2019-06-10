@@ -158,20 +158,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectCurrencies(com.google.common.collect.ImmutableSet.Builder)">collectCurrencies</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&nbsp;builder)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectCurrencies(com.google.common.collect.ImmutableSet.Builder)">collectCurrencies</a></span>&#8203;(com.google.common.collect.ImmutableSet.Builder&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&nbsp;builder)</code></th>
 <td class="colLast">
 <div class="block">Collects all the currencies referred to by this calculation.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectIndices(com.google.common.collect.ImmutableSet.Builder)">collectIndices</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectIndices(com.google.common.collect.ImmutableSet.Builder)">collectIndices</a></span>&#8203;(com.google.common.collect.ImmutableSet.Builder&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</code></th>
 <td class="colLast">
 <div class="block">Collects all the indices referred to by this calculation.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="RateAccrualPeriod.html" title="class in com.opengamma.strata.product.swap">RateAccrualPeriod</a>&gt;</code></td>
+<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;<a href="RateAccrualPeriod.html" title="class in com.opengamma.strata.product.swap">RateAccrualPeriod</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAccrualPeriods(com.opengamma.strata.basics.schedule.Schedule,com.opengamma.strata.basics.schedule.Schedule,com.opengamma.strata.basics.ReferenceData)">createAccrualPeriods</a></span>&#8203;(<a href="../../basics/schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;accrualSchedule,
                     <a href="../../basics/schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;paymentSchedule,
                     <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
@@ -248,7 +248,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>collectCurrencies</h4>
-<pre class="methodSignature">void&nbsp;collectCurrencies&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&nbsp;builder)</pre>
+<pre class="methodSignature">void&nbsp;collectCurrencies&#8203;(com.google.common.collect.ImmutableSet.Builder&lt;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&nbsp;builder)</pre>
 <div class="block">Collects all the currencies referred to by this calculation.
  <p>
  This collects the complete set of currencies for the calculation, not just the payment currencies.</div>
@@ -264,7 +264,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>collectIndices</h4>
-<pre class="methodSignature">void&nbsp;collectIndices&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</pre>
+<pre class="methodSignature">void&nbsp;collectIndices&#8203;(com.google.common.collect.ImmutableSet.Builder&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</pre>
 <div class="block">Collects all the indices referred to by this calculation.
  <p>
  A calculation will typically refer to at least one index, such as 'GBP-LIBOR-3M'.
@@ -281,9 +281,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createAccrualPeriods</h4>
-<pre class="methodSignature"><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="RateAccrualPeriod.html" title="class in com.opengamma.strata.product.swap">RateAccrualPeriod</a>&gt;&nbsp;createAccrualPeriods&#8203;(<a href="../../basics/schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;accrualSchedule,
-                                                      <a href="../../basics/schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;paymentSchedule,
-                                                      <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<pre class="methodSignature">com.google.common.collect.ImmutableList&lt;<a href="RateAccrualPeriod.html" title="class in com.opengamma.strata.product.swap">RateAccrualPeriod</a>&gt;&nbsp;createAccrualPeriods&#8203;(<a href="../../basics/schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;accrualSchedule,
+                                                                                <a href="../../basics/schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;paymentSchedule,
+                                                                                <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
 <div class="block">Creates accrual periods based on the specified schedule.
  <p>
  The specified accrual schedule defines the period dates to be created.

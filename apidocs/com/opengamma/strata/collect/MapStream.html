@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":9,"i53":9,"i54":9,"i55":9,"i56":9,"i57":9,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":9,"i83":9};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":9,"i53":9,"i54":9,"i55":9,"i56":9,"i57":9,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":9,"i84":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -506,7 +506,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 </tr>
 <tr id="i52" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.collect.Multimap)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">Multimap</a>&lt;K,&#8203;V&gt;&nbsp;multimap)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.collect.Multimap)">of</a></span>&#8203;(com.google.common.collect.Multimap&lt;K,&#8203;V&gt;&nbsp;multimap)</code></th>
 <td class="colLast">
 <div class="block">Returns a stream over all the entries in the multimap.</div>
 </td>
@@ -653,53 +653,60 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i75" class="rowColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableListMultimap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
+<td class="colFirst"><code>com.google.common.collect.ImmutableListMultimap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toListMultimap()">toListMultimap</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns an immutable list multimap built from the entries in the stream.</div>
 </td>
 </tr>
 <tr id="i76" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
+<td class="colFirst"><code>com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMap()">toMap</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns an immutable map built from the entries in the stream.</div>
 </td>
 </tr>
 <tr id="i77" class="rowColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
+<td class="colFirst"><code>com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMap(java.util.function.BiFunction)">toMap</a></span>&#8203;(java.util.function.BiFunction&lt;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;? extends <a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;mergeFn)</code></th>
 <td class="colLast">
 <div class="block">Returns an immutable map built from the entries in the stream.</div>
 </td>
 </tr>
 <tr id="i78" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;java.util.List&lt;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;java.util.List&lt;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMapGrouping()">toMapGrouping</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns an immutable map built from the entries in the stream, grouping by key.</div>
 </td>
 </tr>
 <tr id="i79" class="rowColor">
-<td class="colFirst"><code>&lt;A,&#8203;R&gt;<br><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;R&gt;</code></td>
+<td class="colFirst"><code>&lt;A,&#8203;R&gt;<br>com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMapGrouping(java.util.stream.Collector)">toMapGrouping</a></span>&#8203;(java.util.stream.Collector&lt;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;A,&#8203;R&gt;&nbsp;valueCollector)</code></th>
 <td class="colLast">
 <div class="block">Returns an immutable map built from the entries in the stream, grouping by key.</div>
 </td>
 </tr>
 <tr id="i80" class="altColor">
+<td class="colFirst"><code>com.google.common.collect.ImmutableSetMultimap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toSetMultimap()">toSetMultimap</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns an immutable set multimap built from the entries in the stream.</div>
+</td>
+</tr>
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code><a href="MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unordered()">unordered</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i81" class="rowColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>java.util.stream.Stream&lt;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the values as a stream, dropping the keys.</div>
 </td>
 </tr>
-<tr id="i82" class="altColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zip(java.util.stream.Stream,java.util.stream.Stream)">zip</a></span>&#8203;(java.util.stream.Stream&lt;K&gt;&nbsp;keyStream,
    java.util.stream.Stream&lt;V&gt;&nbsp;valueStream)</code></th>
@@ -707,7 +714,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <div class="block">Returns a map stream that combines two other streams, continuing until either stream ends.</div>
 </td>
 </tr>
-<tr id="i83" class="rowColor">
+<tr id="i84" class="altColor">
 <td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;java.lang.Integer,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zipWithIndex(java.util.stream.Stream)">zipWithIndex</a></span>&#8203;(java.util.stream.Stream&lt;V&gt;&nbsp;stream)</code></th>
 <td class="colLast">
@@ -770,7 +777,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;&nbsp;of&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">Multimap</a>&lt;K,&#8203;V&gt;&nbsp;multimap)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;&nbsp;of&#8203;(com.google.common.collect.Multimap&lt;K,&#8203;V&gt;&nbsp;multimap)</pre>
 <div class="block">Returns a stream over all the entries in the multimap.
  <p>
  This will typically create a stream with duplicate keys.</div>
@@ -1488,7 +1495,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <ul class="blockList">
 <li class="blockList">
 <h4>toMap</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toMap()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toMap()</pre>
 <div class="block">Returns an immutable map built from the entries in the stream.
  <p>
  The keys must be unique or an exception will be thrown.
@@ -1509,7 +1516,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <ul class="blockList">
 <li class="blockList">
 <h4>toMap</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toMap&#8203;(java.util.function.BiFunction&lt;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;? extends <a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;mergeFn)</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toMap&#8203;(java.util.function.BiFunction&lt;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;? extends <a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;mergeFn)</pre>
 <div class="block">Returns an immutable map built from the entries in the stream.
  <p>
  If the same key maps to multiple values the merge function is invoked with both values and the return
@@ -1538,7 +1545,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <ul class="blockList">
 <li class="blockList">
 <h4>toMapGrouping</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;java.util.List&lt;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&gt;&nbsp;toMapGrouping()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;java.util.List&lt;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&gt;&nbsp;toMapGrouping()</pre>
 <div class="block">Returns an immutable map built from the entries in the stream, grouping by key.
  <p>
  Entries are grouped based on the equality of the key.
@@ -1556,7 +1563,7 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <ul class="blockList">
 <li class="blockList">
 <h4>toMapGrouping</h4>
-<pre class="methodSignature">public&nbsp;&lt;A,&#8203;R&gt;&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;R&gt;&nbsp;toMapGrouping&#8203;(java.util.stream.Collector&lt;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;A,&#8203;R&gt;&nbsp;valueCollector)</pre>
+<pre class="methodSignature">public&nbsp;&lt;A,&#8203;R&gt;&nbsp;com.google.common.collect.ImmutableMap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;R&gt;&nbsp;toMapGrouping&#8203;(java.util.stream.Collector&lt;? super <a href="MapStream.html" title="type parameter in MapStream">V</a>,&#8203;A,&#8203;R&gt;&nbsp;valueCollector)</pre>
 <div class="block">Returns an immutable map built from the entries in the stream, grouping by key.
  <p>
  Entries are grouped based on the equality of the key.
@@ -1580,13 +1587,29 @@ implements java.util.stream.Stream&lt;java.util.Map.Entry&lt;K,&#8203;V&gt;&gt;<
 <ul class="blockList">
 <li class="blockList">
 <h4>toListMultimap</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableListMultimap</a>&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toListMultimap()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableListMultimap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toListMultimap()</pre>
 <div class="block">Returns an immutable list multimap built from the entries in the stream.
  <p>
  This is a terminal operation.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an immutable list multimap built from the entries in the stream</dd>
+</dl>
+</li>
+</ul>
+<a id="toSetMultimap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toSetMultimap</h4>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableSetMultimap&lt;<a href="MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;toSetMultimap()</pre>
+<div class="block">Returns an immutable set multimap built from the entries in the stream.
+ <p>
+ This is a terminal operation.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an immutable set multimap built from the entries in the stream</dd>
 </dl>
 </li>
 </ul>

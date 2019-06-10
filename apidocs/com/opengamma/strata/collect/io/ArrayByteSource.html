@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":10,"i5":9,"i6":9,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10,"i14":9,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">com.google.common.io.ByteSource</a></li>
+<li>com.google.common.io.ByteSource</li>
 <li>
 <ul class="inheritance">
 <li>com.opengamma.strata.collect.io.ArrayByteSource</li>
@@ -139,7 +139,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public final class <span class="typeNameLabel">ArrayByteSource</span>
-extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></pre>
+extends com.google.common.io.ByteSource</pre>
 <div class="block">A byte source implementation that explicitly wraps a byte array.
  <p>
  This implementation allows <code>IOException</code> to be avoided in many cases,
@@ -190,20 +190,25 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
+<td class="colFirst"><code>com.google.common.io.CharSource</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCharSourceUtf8UsingBom()">asCharSourceUtf8UsingBom</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a <code>CharSource</code> for the same bytes, converted to UTF-8 using a Byte-Order Mark if available.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contentEquals(com.google.common.io.ByteSource)">contentEquals</a></span>&#8203;(com.google.common.io.ByteSource&nbsp;other)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyOf(byte%5B%5D)">copyOf</a></span>&#8203;(byte[]&nbsp;array)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance, copying the array.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyOf(byte%5B%5D,int)">copyOf</a></span>&#8203;(byte[]&nbsp;array,
       int&nbsp;fromIndex)</code></th>
@@ -211,7 +216,7 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <div class="block">Obtains an instance by copying part of an array.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyOf(byte%5B%5D,int,int)">copyOf</a></span>&#8203;(byte[]&nbsp;array,
       int&nbsp;fromIndexInclusive,
@@ -220,96 +225,168 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <div class="block">Obtains an instance by copying part of an array.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyTo(java.io.OutputStream)">copyTo</a></span>&#8203;(java.io.OutputStream&nbsp;output)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(com.google.common.io.ByteSource)">from</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(com.google.common.io.ByteSource)">from</a></span>&#8203;(com.google.common.io.ByteSource&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance from another byte source.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(com.opengamma.strata.collect.function.CheckedSupplier)">from</a></span>&#8203;(<a href="../function/CheckedSupplier.html" title="interface in com.opengamma.strata.collect.function">CheckedSupplier</a>&lt;java.io.InputStream&gt;&nbsp;inputStreamSupplier)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance from an input stream.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/hash/HashCode.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashCode</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hash(com.google.common.hash.HashFunction)">hash</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</code></th>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromBase64(java.lang.String)">fromBase64</a></span>&#8203;(java.lang.String&nbsp;base64)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance from a base-64 encoded string.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromHex(java.lang.String)">fromHex</a></span>&#8203;(java.lang.String&nbsp;hex)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance from a hex encoded string, sometimes referred to as base-16.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>com.google.common.hash.HashCode</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hash(com.google.common.hash.HashFunction)">hash</a></span>&#8203;(com.google.common.hash.HashFunction&nbsp;hashFunction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty()">isEmpty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUnsafe(byte%5B%5D)">ofUnsafe</a></span>&#8203;(byte[]&nbsp;array)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance, not copying the array.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUtf8(java.lang.String)">ofUtf8</a></span>&#8203;(java.lang.String&nbsp;str)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance from a string using UTF-8.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.io.ByteArrayInputStream</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openBufferedStream()">openBufferedStream</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.io.ByteArrayInputStream</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openStream()">openStream</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read()">read</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(com.google.common.io.ByteProcessor)">read</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteProcessor.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteProcessor</a>&lt;T&gt;&nbsp;processor)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(com.google.common.io.ByteProcessor)">read</a></span>&#8203;(com.google.common.io.ByteProcessor&lt;T&gt;&nbsp;processor)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUnsafe()">readUnsafe</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the underlying array.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUtf8()">readUtf8</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source, converting to UTF-8.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUtf8UsingBom()">readUtf8UsingBom</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source, converting to UTF-8 using a Byte-Order Mark if available.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size()">size</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/base/Optional.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Optional</a>&lt;java.lang.Long&gt;</code></td>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>com.google.common.base.Optional&lt;java.lang.Long&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sizeIfKnown()">sizeIfKnown</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the size, which is always known.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slice(long,long)">slice</a></span>&#8203;(long&nbsp;offset,
+     long&nbsp;length)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBase64()">toBase64</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Encodes the byte source using base-64.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBase64String()">toBase64String</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Encodes the byte source using base-64, returning a string.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toHexString()">toHexString</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Encodes the byte source using hex, sometimes referred to as base-16, returning a string.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMd5()">toMd5</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the MD5 hash of the bytes.</div>
+</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toSha512()">toSha512</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the SHA-512 hash of the bytes.</div>
+</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -319,15 +396,15 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <li class="blockList"><a id="methods.inherited.from.class.com.google.common.io.ByteSource">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.google.common.io.<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></h3>
-<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#asCharSource(java.nio.charset.Charset)" title="class or interface in com.google.common.io" class="externalLink">asCharSource</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(com.google.common.io.ByteSource...)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(java.lang.Iterable)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(java.util.Iterator)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#contentEquals(com.google.common.io.ByteSource)" title="class or interface in com.google.common.io" class="externalLink">contentEquals</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#copyTo(com.google.common.io.ByteSink)" title="class or interface in com.google.common.io" class="externalLink">copyTo</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#empty()" title="class or interface in com.google.common.io" class="externalLink">empty</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#slice(long,long)" title="class or interface in com.google.common.io" class="externalLink">slice</a>, <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#wrap(byte%5B%5D)" title="class or interface in com.google.common.io" class="externalLink">wrap</a></code></li>
+<h3>Methods inherited from class&nbsp;com.google.common.io.ByteSource</h3>
+<code>asCharSource, concat, concat, concat, copyTo, empty, wrap</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -447,13 +524,29 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 </dl>
 </li>
 </ul>
+<a id="ofUtf8(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofUtf8</h4>
+<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;ofUtf8&#8203;(java.lang.String&nbsp;str)</pre>
+<div class="block">Creates an instance from a string using UTF-8.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>str</code> - the string to store using UTF-8</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the byte source</dd>
+</dl>
+</li>
+</ul>
 <a id="from(com.google.common.io.ByteSource)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;from&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;other)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;from&#8203;(com.google.common.io.ByteSource&nbsp;other)</pre>
 <div class="block">Creates an instance from another byte source.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -484,6 +577,42 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <dd>the byte source</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.UncheckedIOException</code> - if an IO error occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="fromBase64(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromBase64</h4>
+<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;fromBase64&#8203;(java.lang.String&nbsp;base64)</pre>
+<div class="block">Creates an instance from a base-64 encoded string.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>base64</code> - the base64 string to convert</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the decoded byte source</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the input is not Base64 encoded</dd>
+</dl>
+</li>
+</ul>
+<a id="fromHex(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromHex</h4>
+<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;fromHex&#8203;(java.lang.String&nbsp;hex)</pre>
+<div class="block">Creates an instance from a hex encoded string, sometimes referred to as base-16.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hex</code> - the hex string to convert</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the decoded byte source</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the input is not hex encoded</dd>
 </dl>
 </li>
 </ul>
@@ -539,11 +668,83 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <ul class="blockList">
 <li class="blockList">
 <h4>asCharSourceUtf8UsingBom</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;asCharSourceUtf8UsingBom()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.io.CharSource&nbsp;asCharSourceUtf8UsingBom()</pre>
 <div class="block">Returns a <code>CharSource</code> for the same bytes, converted to UTF-8 using a Byte-Order Mark if available.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the equivalent <code>CharSource</code></dd>
+</dl>
+</li>
+</ul>
+<a id="toMd5()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toMd5</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toMd5()</pre>
+<div class="block">Returns the MD5 hash of the bytes.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the MD5 hash</dd>
+</dl>
+</li>
+</ul>
+<a id="toSha512()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toSha512</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toSha512()</pre>
+<div class="block">Returns the SHA-512 hash of the bytes.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the SHA-512 hash</dd>
+</dl>
+</li>
+</ul>
+<a id="toBase64()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toBase64</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toBase64()</pre>
+<div class="block">Encodes the byte source using base-64.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the base-64 encoded form</dd>
+</dl>
+</li>
+</ul>
+<a id="toBase64String()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toBase64String</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toBase64String()</pre>
+<div class="block">Encodes the byte source using base-64, returning a string.
+ <p>
+ Equivalent to <code>toBase64().readUtf8()</code>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the base-64 encoded string</dd>
+</dl>
+</li>
+</ul>
+<a id="toHexString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toHexString</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toHexString()</pre>
+<div class="block">Encodes the byte source using hex, sometimes referred to as base-16, returning a string.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the hex encoded string</dd>
 </dl>
 </li>
 </ul>
@@ -556,7 +757,7 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <pre class="methodSignature">public&nbsp;java.io.ByteArrayInputStream&nbsp;openStream()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#openStream()" title="class or interface in com.google.common.io" class="externalLink">openStream</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>openStream</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 </dl>
 </li>
 </ul>
@@ -569,7 +770,7 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <pre class="methodSignature">public&nbsp;java.io.ByteArrayInputStream&nbsp;openBufferedStream()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#openBufferedStream()" title="class or interface in com.google.common.io" class="externalLink">openBufferedStream</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>openBufferedStream</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 </dl>
 </li>
 </ul>
@@ -582,7 +783,7 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isEmpty()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#isEmpty()" title="class or interface in com.google.common.io" class="externalLink">isEmpty</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>isEmpty</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 </dl>
 </li>
 </ul>
@@ -592,11 +793,11 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <ul class="blockList">
 <li class="blockList">
 <h4>sizeIfKnown</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/base/Optional.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Optional</a>&lt;java.lang.Long&gt;&nbsp;sizeIfKnown()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.base.Optional&lt;java.lang.Long&gt;&nbsp;sizeIfKnown()</pre>
 <div class="block">Gets the size, which is always known.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#sizeIfKnown()" title="class or interface in com.google.common.io" class="externalLink">sizeIfKnown</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>sizeIfKnown</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the size, which is always known</dd>
 </dl>
@@ -611,7 +812,21 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <pre class="methodSignature">public&nbsp;long&nbsp;size()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#size()" title="class or interface in com.google.common.io" class="externalLink">size</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>size</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
+</dl>
+</li>
+</ul>
+<a id="slice(long,long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>slice</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;slice&#8203;(long&nbsp;offset,
+                             long&nbsp;length)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>slice</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 </dl>
 </li>
 </ul>
@@ -625,7 +840,7 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
             throws java.io.IOException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#copyTo(java.io.OutputStream)" title="class or interface in com.google.common.io" class="externalLink">copyTo</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>copyTo</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>
@@ -640,7 +855,7 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <pre class="methodSignature">public&nbsp;byte[]&nbsp;read()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#read()" title="class or interface in com.google.common.io" class="externalLink">read</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>read</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 </dl>
 </li>
 </ul>
@@ -650,11 +865,11 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <ul class="blockList">
 <li class="blockList">
 <h4>read</h4>
-<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;read&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteProcessor.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteProcessor</a>&lt;T&gt;&nbsp;processor)
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;read&#8203;(com.google.common.io.ByteProcessor&lt;T&gt;&nbsp;processor)
            throws java.io.IOException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#read(com.google.common.io.ByteProcessor)" title="class or interface in com.google.common.io" class="externalLink">read</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>read</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>
@@ -666,10 +881,52 @@ extends <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/g
 <ul class="blockList">
 <li class="blockList">
 <h4>hash</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/hash/HashCode.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashCode</a>&nbsp;hash&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.hash.HashCode&nbsp;hash&#8203;(com.google.common.hash.HashFunction&nbsp;hashFunction)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#hash(com.google.common.hash.HashFunction)" title="class or interface in com.google.common.io" class="externalLink">hash</a></code>&nbsp;in class&nbsp;<code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+<dd><code>hash</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
+</dl>
+</li>
+</ul>
+<a id="contentEquals(com.google.common.io.ByteSource)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>contentEquals</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;contentEquals&#8203;(com.google.common.io.ByteSource&nbsp;other)
+                      throws java.io.IOException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>contentEquals</code>&nbsp;in class&nbsp;<code>com.google.common.io.ByteSource</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;obj)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a id="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>

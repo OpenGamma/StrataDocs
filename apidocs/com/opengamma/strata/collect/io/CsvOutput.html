@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -270,12 +270,28 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeCsvFile(com.opengamma.strata.collect.io.CsvFile,boolean)">writeCsvFile</a></span>&#8203;(<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a>&nbsp;file,
+            boolean&nbsp;alwaysQuote)</code></th>
+<td class="colLast">
+<div class="block">Writes the provided <code>CsvFile</code> to the underlying.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeCsvIterator(com.opengamma.strata.collect.io.CsvIterator,boolean)">writeCsvIterator</a></span>&#8203;(<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;iterator,
+                boolean&nbsp;alwaysQuote)</code></th>
+<td class="colLast">
+<div class="block">Writes the output of the provided <code>CsvIterator</code> to the underlying.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLine(java.util.List)">writeLine</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;line)</code></th>
 <td class="colLast">
 <div class="block">Writes a single CSV line to the underlying, only quoting if needed.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLine(java.util.List,boolean)">writeLine</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;line,
          boolean&nbsp;alwaysQuote)</code></th>
@@ -283,7 +299,7 @@ extends java.lang.Object</pre>
 <div class="block">Writes a single CSV line to the underlying.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.lang.Iterable,boolean)">writeLines</a></span>&#8203;(java.lang.Iterable&lt;? extends java.util.List&lt;java.lang.String&gt;&gt;&nbsp;lines,
           boolean&nbsp;alwaysQuote)</code></th>
@@ -291,11 +307,34 @@ extends java.lang.Object</pre>
 <div class="block">Writes multiple CSV lines to the underlying.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="CsvOutput.html" title="class in com.opengamma.strata.collect.io">CsvOutput</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeNewLine()">writeNewLine</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Writes a new line character.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeRow(com.opengamma.strata.collect.io.CsvRow)">writeRow</a></span>&#8203;(<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
+<td class="colLast">
+<div class="block">Writes a single <code>CsvRow</code> to the underlying, only quoting if needed.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeRow(com.opengamma.strata.collect.io.CsvRow,boolean)">writeRow</a></span>&#8203;(<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+        boolean&nbsp;alwaysQuote)</code></th>
+<td class="colLast">
+<div class="block">Writes a single <code>CsvRow</code> to the underlying.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeRows(java.lang.Iterable,boolean)">writeRows</a></span>&#8203;(java.lang.Iterable&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;rows,
+         boolean&nbsp;alwaysQuote)</code></th>
+<td class="colLast">
+<div class="block">Writes multiple <code>CsvRow</code>s to the underlying.</div>
 </td>
 </tr>
 </table>
@@ -545,6 +584,107 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>line</code> - the line to write</dd>
+<dd><code>alwaysQuote</code> - when true, each column will be quoted, when false, quoting is selective</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="writeRows(java.lang.Iterable,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeRows</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;writeRows&#8203;(java.lang.Iterable&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;rows,
+                      boolean&nbsp;alwaysQuote)</pre>
+<div class="block">Writes multiple <code>CsvRow</code>s to the underlying.
+ <p>
+ The boolean flag controls whether each entry is always quoted or only quoted when necessary.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>rows</code> - the rows to write</dd>
+<dd><code>alwaysQuote</code> - when true, each column will be quoted, when false, quoting is selective</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="writeRow(com.opengamma.strata.collect.io.CsvRow)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeRow</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;writeRow&#8203;(<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</pre>
+<div class="block">Writes a single <code>CsvRow</code> to the underlying, only quoting if needed.
+ <p>
+ This can be used as a method reference from a <code>Stream</code> pipeline from
+ <code>Stream.forEachOrdered(Consumer)</code>.
+ <p>
+ This method writes each field in the specified row to the underlying, followed by
+ a new line character.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the row to write</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="writeRow(com.opengamma.strata.collect.io.CsvRow,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeRow</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;writeRow&#8203;(<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                     boolean&nbsp;alwaysQuote)</pre>
+<div class="block">Writes a single <code>CsvRow</code> to the underlying.
+ <p>
+ The boolean flag controls whether each entry is always quoted or only quoted when necessary.
+ <p>
+ This method writes each field in the specified row to the underlying, followed by
+ a new line character.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the row to write</dd>
+<dd><code>alwaysQuote</code> - when true, each column will be quoted, when false, quoting is selective</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="writeCsvFile(com.opengamma.strata.collect.io.CsvFile,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeCsvFile</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;writeCsvFile&#8203;(<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a>&nbsp;file,
+                         boolean&nbsp;alwaysQuote)</pre>
+<div class="block">Writes the provided <code>CsvFile</code> to the underlying.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - the file whose contents to write</dd>
+<dd><code>alwaysQuote</code> - when true, each column will be quoted, when false, quoting is selective</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="writeCsvIterator(com.opengamma.strata.collect.io.CsvIterator,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeCsvIterator</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;writeCsvIterator&#8203;(<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a>&nbsp;iterator,
+                             boolean&nbsp;alwaysQuote)</pre>
+<div class="block">Writes the output of the provided <code>CsvIterator</code> to the underlying.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>iterator</code> - the iterator whose output to write</dd>
 <dd><code>alwaysQuote</code> - when true, each column will be quoted, when false, quoting is selective</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>

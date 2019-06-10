@@ -175,7 +175,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;<br><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources,
      java.lang.Class&lt;T&gt;&nbsp;positionType)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files.</div>
@@ -193,11 +193,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>default <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LightweightPositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/LightweightPositionCsvInfoResolver.html#parseEtdFuturePosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdFuturePosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                      <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/PositionCsvInfoResolver.html#parseEtdFuturePosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdFuturePosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                       <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Parses an ETD future position from the CSV row.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LightweightPositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/LightweightPositionCsvInfoResolver.html#parseEtdOptionPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdOptionPosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                      <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>default <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
@@ -205,6 +217,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                       <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Parses an ETD future position from the CSV row.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LightweightPositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/LightweightPositionCsvInfoResolver.html#parseNonEtdPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdPosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/PositionCsvInfoResolver.html#parseNonEtdPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdPosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<td class="colLast">
+<div class="block">Parses a non-ETD position from the CSV row.</div>
 </td>
 </tr>
 </tbody>
@@ -233,7 +259,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files, returning ETD futures and
  options using information from reference data.</div>

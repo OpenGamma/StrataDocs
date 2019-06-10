@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":9,"i10":9,"i11":10,"i12":10};
+var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":9,"i12":9,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -140,12 +140,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a></code>, <code>java.io.Serializable</code>, <code>java.lang.Comparable&lt;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;&gt;</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a></code>, <code>java.io.Serializable</code>, <code>java.lang.Comparable&lt;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;&gt;</code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">Triple&lt;A,&#8203;B,&#8203;C&gt;</span>
 extends java.lang.Object
-implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a>, java.lang.Comparable&lt;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;&gt;, java.io.Serializable</pre>
+implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a>, <a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a>, java.lang.Comparable&lt;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;&gt;, java.io.Serializable</pre>
 <div class="block">An immutable triple consisting of three elements.
  <p>
  This implementation refers to the elements as 'first', 'second' and 'third'.
@@ -206,6 +206,25 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;Q,&#8203;R,&#8203;S&gt;<br><a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;<a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">C</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combinedWith(com.opengamma.strata.collect.tuple.Triple,java.util.function.BiFunction,java.util.function.BiFunction,java.util.function.BiFunction)">combinedWith</a></span>&#8203;(<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;Q,&#8203;R,&#8203;S&gt;&nbsp;other,
+            java.util.function.BiFunction&lt;? super <a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;? super Q,&#8203;? extends <a href="Triple.html" title="type parameter in Triple">A</a>&gt;&nbsp;combinerFirst,
+            java.util.function.BiFunction&lt;? super <a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;? super R,&#8203;? extends <a href="Triple.html" title="type parameter in Triple">B</a>&gt;&nbsp;combinerSecond,
+            java.util.function.BiFunction&lt;? super <a href="Triple.html" title="type parameter in Triple">C</a>,&#8203;? super S,&#8203;? extends <a href="Triple.html" title="type parameter in Triple">C</a>&gt;&nbsp;combinerThird)</code></th>
+<td class="colLast">
+<div class="block">Combines this instance with another.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static &lt;A,&#8203;B,&#8203;C&gt;<br>java.util.function.BinaryOperator&lt;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combining(java.util.function.BiFunction,java.util.function.BiFunction,java.util.function.BiFunction)">combining</a></span>&#8203;(java.util.function.BiFunction&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
+         java.util.function.BiFunction&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond,
+         java.util.function.BiFunction&lt;? super C,&#8203;? super C,&#8203;? extends C&gt;&nbsp;combinerThird)</code></th>
+<td class="colLast">
+<div class="block">Returns a combiner of triple instances.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#compareTo(com.opengamma.strata.collect.tuple.Triple)">compareTo</a></span>&#8203;(<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;<a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">C</a>&gt;&nbsp;other)</code></th>
 <td class="colLast">
@@ -213,57 +232,57 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
  element followed by the third element.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.Object&gt;</code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.lang.Object&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#elements()">elements</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the elements from this triple as a list.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="Triple.html" title="type parameter in Triple">A</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirst()">getFirst</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the first element in this pair.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="Triple.html" title="type parameter in Triple">B</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSecond()">getSecond</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the second element in this pair.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="Triple.html" title="type parameter in Triple">C</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getThird()">getThird</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the third element in this pair.</div>
+<div class="block">Gets the first element in this triple.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="Triple.html" title="type parameter in Triple">B</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSecond()">getSecond</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the second element in this triple.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="Triple.html" title="type parameter in Triple">C</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getThird()">getThird</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the third element in this triple.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="Triple.Meta.html" title="class in com.opengamma.strata.collect.tuple">Triple.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>Triple</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="Triple.Meta.html" title="class in com.opengamma.strata.collect.tuple">Triple.Meta</a>&lt;<a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">C</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static &lt;R,&#8203;S,&#8203;T&gt;<br><a href="Triple.Meta.html" title="class in com.opengamma.strata.collect.tuple">Triple.Meta</a>&lt;R,&#8203;S,&#8203;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaTriple(java.lang.Class,java.lang.Class,java.lang.Class)">metaTriple</a></span>&#8203;(java.lang.Class&lt;R&gt;&nbsp;cls1,
           java.lang.Class&lt;S&gt;&nbsp;cls2,
@@ -272,7 +291,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <div class="block">The meta-bean for <code>Triple</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static &lt;A,&#8203;B,&#8203;C&gt;<br><a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(A,B,C)">of</a></span>&#8203;(A&nbsp;first,
   B&nbsp;second,
@@ -281,18 +300,18 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <div class="block">Obtains a triple inferring the types.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size()">size</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of elements held by this triple.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the pair using a standard string format.</div>
+<div class="block">Gets the triple using a standard string format.</div>
 </td>
 </tr>
 </table>
@@ -307,8 +326,8 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
-<code>property, propertyNames</code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
+<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
 </ul>
 </li>
 </ul>
@@ -352,6 +371,63 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 </dl>
 </li>
 </ul>
+<a id="combining(java.util.function.BiFunction,java.util.function.BiFunction,java.util.function.BiFunction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>combining</h4>
+<pre class="methodSignature">public static&nbsp;&lt;A,&#8203;B,&#8203;C&gt;&nbsp;java.util.function.BinaryOperator&lt;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;A,&#8203;B,&#8203;C&gt;&gt;&nbsp;combining&#8203;(java.util.function.BiFunction&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
+                                                                                                         java.util.function.BiFunction&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond,
+                                                                                                         java.util.function.BiFunction&lt;? super C,&#8203;? super C,&#8203;? extends C&gt;&nbsp;combinerThird)</pre>
+<div class="block">Returns a combiner of triple instances.
+ <p>
+ This is useful if you have a stream of <code>Triple&lt;A, B, C&gt;</code> and would like to call reduce.
+ <p>
+ e.g
+ <pre><code>tripleList.stream()
+     .reduce(Triple.combining(A::combinedWith, B::combinedWith, C::combinedWith))
+ </code></pre></div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>A</code> - the type of the first values</dd>
+<dd><code>B</code> - the type of the second values</dd>
+<dd><code>C</code> - the type of the third values</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>combinerFirst</code> - the combiner of first values</dd>
+<dd><code>combinerSecond</code> - the combiner of second values</dd>
+<dd><code>combinerThird</code> - the combiner of third values</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the combiner of triple instances</dd>
+</dl>
+</li>
+</ul>
+<a id="combinedWith(com.opengamma.strata.collect.tuple.Triple,java.util.function.BiFunction,java.util.function.BiFunction,java.util.function.BiFunction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>combinedWith</h4>
+<pre class="methodSignature">public&nbsp;&lt;Q,&#8203;R,&#8203;S&gt;&nbsp;<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;<a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">C</a>&gt;&nbsp;combinedWith&#8203;(<a href="Triple.html" title="class in com.opengamma.strata.collect.tuple">Triple</a>&lt;Q,&#8203;R,&#8203;S&gt;&nbsp;other,
+                                                                  java.util.function.BiFunction&lt;? super <a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;? super Q,&#8203;? extends <a href="Triple.html" title="type parameter in Triple">A</a>&gt;&nbsp;combinerFirst,
+                                                                  java.util.function.BiFunction&lt;? super <a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;? super R,&#8203;? extends <a href="Triple.html" title="type parameter in Triple">B</a>&gt;&nbsp;combinerSecond,
+                                                                  java.util.function.BiFunction&lt;? super <a href="Triple.html" title="type parameter in Triple">C</a>,&#8203;? super S,&#8203;? extends <a href="Triple.html" title="type parameter in Triple">C</a>&gt;&nbsp;combinerThird)</pre>
+<div class="block">Combines this instance with another.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>Q</code> - the type of the first value in the other instance</dd>
+<dd><code>R</code> - the type of the second value in the other instance</dd>
+<dd><code>S</code> - the type of the third value in the other instance</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the other triple</dd>
+<dd><code>combinerFirst</code> - the combiner of first values</dd>
+<dd><code>combinerSecond</code> - the combiner of second values</dd>
+<dd><code>combinerThird</code> - the combiner of third values</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the combined triple instance</dd>
+</dl>
+</li>
+</ul>
 <a id="size()">
 <!--   -->
 </a>
@@ -374,7 +450,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>elements</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.Object&gt;&nbsp;elements()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.lang.Object&gt;&nbsp;elements()</pre>
 <div class="block">Gets the elements from this triple as a list.
  <p>
  The list returns each element in the triple in order.</div>
@@ -401,7 +477,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>compareTo</code>&nbsp;in interface&nbsp;<code>java.lang.Comparable&lt;<a href="Triple.html" title="type parameter in Triple">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>other</code> - the other pair</dd>
+<dd><code>other</code> - the other triple</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>negative if this is less, zero if equal, positive if greater</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -416,14 +492,14 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList">
 <h4>toString</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
-<div class="block">Gets the pair using a standard string format.
+<div class="block">Gets the triple using a standard string format.
  <p>
  The standard format is '[$first, $second, $third]'. Spaces around the values are trimmed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the pair as a string</dd>
+<dd>the triple as a string</dd>
 </dl>
 </li>
 </ul>
@@ -474,7 +550,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <pre class="methodSignature">public&nbsp;<a href="Triple.Meta.html" title="class in com.opengamma.strata.collect.tuple">Triple.Meta</a>&lt;<a href="Triple.html" title="type parameter in Triple">A</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">B</a>,&#8203;<a href="Triple.html" title="type parameter in Triple">C</a>&gt;&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
+<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -485,7 +561,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList">
 <h4>getFirst</h4>
 <pre class="methodSignature">public&nbsp;<a href="Triple.html" title="type parameter in Triple">A</a>&nbsp;getFirst()</pre>
-<div class="block">Gets the first element in this pair.</div>
+<div class="block">Gets the first element in this triple.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of the property, not null</dd>
@@ -499,7 +575,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList">
 <h4>getSecond</h4>
 <pre class="methodSignature">public&nbsp;<a href="Triple.html" title="type parameter in Triple">B</a>&nbsp;getSecond()</pre>
-<div class="block">Gets the second element in this pair.</div>
+<div class="block">Gets the second element in this triple.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of the property, not null</dd>
@@ -513,7 +589,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList">
 <h4>getThird</h4>
 <pre class="methodSignature">public&nbsp;<a href="Triple.html" title="type parameter in Triple">C</a>&nbsp;getThird()</pre>
-<div class="block">Gets the third element in this pair.</div>
+<div class="block">Gets the third element in this triple.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of the property, not null</dd>

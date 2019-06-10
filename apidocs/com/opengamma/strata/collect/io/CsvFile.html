@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 extends java.lang.Object</pre>
 <div class="block">A CSV file.
  <p>
- Represents a CSV file together with the ability to parse it from a <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a>.
+ Represents a CSV file together with the ability to parse it from a <code>CharSource</code>.
  The separator may be specified, allowing TSV files (tab-separated) and other similar formats to be parsed.
  <p>
  This class loads the entire CSV file into memory.
@@ -200,37 +200,44 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>static char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findSeparator(com.google.common.io.CharSource)">findSeparator</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source)</code></th>
+<td class="colLast">
+<div class="block">Finds the separator used by the specified CSV file.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a suitable hash code for the CSV file.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;</code></td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#headers()">headers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the header row.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source,
   boolean&nbsp;headerRow)</code></th>
 <td class="colLast">
 <div class="block">Parses the specified source as a CSV file, using a comma as the separator.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(com.google.common.io.CharSource&nbsp;source,
   boolean&nbsp;headerRow,
   char&nbsp;separator)</code></th>
 <td class="colLast">
 <div class="block">Parses the specified source as a CSV file where the separator is specified and might not be a comma.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.io.Reader,boolean)">of</a></span>&#8203;(java.io.Reader&nbsp;reader,
   boolean&nbsp;headerRow)</code></th>
@@ -238,7 +245,7 @@ extends java.lang.Object</pre>
 <div class="block">Parses the specified reader as a CSV file, using a comma as the separator.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.io.Reader,boolean,char)">of</a></span>&#8203;(java.io.Reader&nbsp;reader,
   boolean&nbsp;headerRow,
@@ -247,7 +254,7 @@ extends java.lang.Object</pre>
 <div class="block">Parses the specified reader as a CSV file where the separator is specified and might not be a comma.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List,java.util.List)">of</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;headers,
   java.util.List&lt;? extends java.util.List&lt;java.lang.String&gt;&gt;&nbsp;rows)</code></th>
@@ -255,28 +262,28 @@ extends java.lang.Object</pre>
 <div class="block">Obtains an instance from a list of headers and rows.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#row(int)">row</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Gets a single row.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rowCount()">rowCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of data rows.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></td>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rows()">rows</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all data rows in the file.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -313,7 +320,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a>&nbsp;of&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<pre class="methodSignature">public static&nbsp;<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a>&nbsp;of&#8203;(com.google.common.io.CharSource&nbsp;source,
                          boolean&nbsp;headerRow)</pre>
 <div class="block">Parses the specified source as a CSV file, using a comma as the separator.
  <p>
@@ -337,7 +344,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a>&nbsp;of&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
+<pre class="methodSignature">public static&nbsp;<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io">CsvFile</a>&nbsp;of&#8203;(com.google.common.io.CharSource&nbsp;source,
                          boolean&nbsp;headerRow,
                          char&nbsp;separator)</pre>
 <div class="block">Parses the specified source as a CSV file where the separator is specified and might not be a comma.
@@ -371,7 +378,7 @@ extends java.lang.Object</pre>
 <div class="block">Parses the specified reader as a CSV file, using a comma as the separator.
  <p>
  This factory method takes a <code>Reader</code>.
- Callers are encouraged to use <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> instead of <code>Reader</code>
+ Callers are encouraged to use <code>CharSource</code> instead of <code>Reader</code>
  as it allows the resource to be safely managed.
  <p>
  This factory method allows the separator to be controlled.
@@ -403,7 +410,7 @@ extends java.lang.Object</pre>
 <div class="block">Parses the specified reader as a CSV file where the separator is specified and might not be a comma.
  <p>
  This factory method takes a <code>Reader</code>.
- Callers are encouraged to use <a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> instead of <code>Reader</code>
+ Callers are encouraged to use <code>CharSource</code> instead of <code>Reader</code>
  as it allows the resource to be safely managed.
  <p>
  This factory method allows the separator to be controlled.
@@ -416,6 +423,39 @@ extends java.lang.Object</pre>
 <dd><code>reader</code> - the file resource</dd>
 <dd><code>headerRow</code> - whether the source has a header row, an empty source must still contain the header</dd>
 <dd><code>separator</code> - the separator used to separate each field, typically a comma, but a tab is sometimes used</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the CSV file</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.UncheckedIOException</code> - if an IO exception occurs</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if the file cannot be parsed</dd>
+</dl>
+</li>
+</ul>
+<a id="findSeparator(com.google.common.io.CharSource)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findSeparator</h4>
+<pre class="methodSignature">public static&nbsp;char&nbsp;findSeparator&#8203;(com.google.common.io.CharSource&nbsp;source)</pre>
+<div class="block">Finds the separator used by the specified CSV file.
+ <p>
+ The search includes comma, semicolon, colon, tab and pipe (in that order of priority).
+ <p>
+ The algorithm operates in a number of steps.
+ Firstly, it looks for occurrences where a separator is followed by valid quoted text.
+ If this matches, the separator is assumed to be correct.
+ Secondly, it looks for lines that only consist of a separator.
+ If this matches, the separator is assumed to be correct.
+ Thirdly, it looks to see which separator is the most common on the line.
+ If that separator is also the most common on the next line, and the number of columns matches,
+ the separator is assumed to be correct. Otherwise another line is processed.
+ Thus to match a separator, there must be two lines with the same number of columns.
+ At most, 100 content lines are read from the file.
+ The default is comma if the file is empty.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - the source to read as CSV</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the CSV file</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -453,7 +493,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>headers</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.String&gt;&nbsp;headers()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.lang.String&gt;&nbsp;headers()</pre>
 <div class="block">Gets the header row.
  <p>
  If there is no header row, an empty list is returned.</div>
@@ -469,7 +509,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>rows</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;rows()</pre>
+<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;rows()</pre>
 <div class="block">Gets all data rows in the file.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

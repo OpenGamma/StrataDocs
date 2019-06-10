@@ -138,17 +138,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="../../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;com.google.common.collect.ListMultimap&lt;java.lang.String,&#8203;<a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(java.util.Collection&lt;<a href="../../../collect/io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format sensitivities files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<td class="colFirst"><code><a href="../../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;com.google.common.collect.ListMultimap&lt;java.lang.String,&#8203;<a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files, returning sensitivities.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../collect/result/ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parseAndMerge(java.util.Collection)">parseAndMerge</a></span>&#8203;(java.util.Collection&lt;com.google.common.io.CharSource&gt;&nbsp;charSources)</code></th>
+<td class="colLast">
+<div class="block">Parses one or more CSV format position files, merging the result to a single sensitivities instance.</div>
 </td>
 </tr>
 </tbody>
@@ -285,7 +292,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>org.joda.beans.BeanBuilder&lt;? extends <a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/BeanBuilder.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">BeanBuilder</a>&lt;? extends <a href="../CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CurveSensitivities.Meta.</span><code><span class="memberNameLink"><a href="../CurveSensitivities.Meta.html#builder()">builder</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>

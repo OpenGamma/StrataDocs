@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":1,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":1};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":1,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,6 +124,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="LightweightPositionCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">LightweightPositionCsvInfoResolver</a></code></dd>
+</dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">PositionCsvInfoResolver</span></pre>
 <div class="block">Resolves additional information when parsing position CSV files.
@@ -232,6 +236,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>default <a href="../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseNonEtdPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdPosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<td class="colLast">
+<div class="block">Parses a non-ETD position from the CSV row.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>default <a href="../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseNonEtdSecurityPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdSecurityPosition</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                           <a href="../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<td class="colLast">
+<div class="block">Parses a non-ETD position from the CSV row.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parsePositionInfo(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfoBuilder)">parsePositionInfo</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                  <a href="../../product/PositionInfoBuilder.html" title="class in com.opengamma.strata.product">PositionInfoBuilder</a>&nbsp;builder)</code></th>
@@ -239,7 +259,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses attributes into <code>PositionInfo</code>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="PositionCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">PositionCsvInfoResolver</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#standard()">standard</a></span>()</code></th>
 <td class="colLast">
@@ -273,7 +293,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance that uses the standard set of reference data.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the loader</dd>
+<dd>the resolver</dd>
 </dl>
 </li>
 </ul>
@@ -289,7 +309,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>refData</code> - the reference data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the loader</dd>
+<dd>the resolver</dd>
 </dl>
 </li>
 </ul>
@@ -390,6 +410,51 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>position</code> - the parsed position</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the updated position</dd>
+</dl>
+</li>
+</ul>
+<a id="parseNonEtdPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseNonEtdPosition</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&nbsp;parseNonEtdPosition&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                     <a href="../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</pre>
+<div class="block">Parses a non-ETD position from the CSV row.
+ <p>
+ This parses the basic <a href="../../product/SecurityPosition.html" title="class in com.opengamma.strata.product"><code>SecurityPosition</code></a> and then tries to parse the
+ extra details to convert it into a <a href="../../product/GenericSecurityPosition.html" title="class in com.opengamma.strata.product"><code>GenericSecurityPosition</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>info</code> - the position information</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the parsed position</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the row cannot be parsed</dd>
+</dl>
+</li>
+</ul>
+<a id="parseNonEtdSecurityPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseNonEtdSecurityPosition</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a>&nbsp;parseNonEtdSecurityPosition&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                                     <a href="../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</pre>
+<div class="block">Parses a non-ETD position from the CSV row.
+ <p>
+ This parses the basic <a href="../../product/SecurityPosition.html" title="class in com.opengamma.strata.product"><code>SecurityPosition</code></a> without using reference data.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>info</code> - the position information</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the parsed position</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the row cannot be parsed</dd>
 </dl>
 </li>
 </ul>

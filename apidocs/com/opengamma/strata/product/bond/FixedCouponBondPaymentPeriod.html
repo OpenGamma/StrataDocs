@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="BondPaymentPeriod.html" title="interface in com.opengamma.strata.product.bond">BondPaymentPeriod</a></code>, <code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="BondPaymentPeriod.html" title="interface in com.opengamma.strata.product.bond">BondPaymentPeriod</a></code>, <code>java.io.Serializable</code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">FixedCouponBondPaymentPeriod</span>
 extends java.lang.Object
-implements <a href="BondPaymentPeriod.html" title="interface in com.opengamma.strata.product.bond">BondPaymentPeriod</a>, org.joda.beans.ImmutableBean, java.io.Serializable</pre>
+implements <a href="BondPaymentPeriod.html" title="interface in com.opengamma.strata.product.bond">BondPaymentPeriod</a>, <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a>, java.io.Serializable</pre>
 <div class="block">A period over which a fixed coupon is paid.
  <p>
  A single payment period within a fixed coupon bond, <a href="ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond"><code>ResolvedFixedCouponBond</code></a>.
@@ -217,7 +217,7 @@ implements <a href="BondPaymentPeriod.html" title="interface in com.opengamma.st
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectIndices(com.google.common.collect.ImmutableSet.Builder)">collectIndices</a></span>&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectIndices(com.google.common.collect.ImmutableSet.Builder)">collectIndices</a></span>&#8203;(com.google.common.collect.ImmutableSet.Builder&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</code></th>
 <td class="colLast">
 <div class="block">Collects all the indices referred to by this period.</div>
 </td>
@@ -345,8 +345,8 @@ implements <a href="BondPaymentPeriod.html" title="interface in com.opengamma.st
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
-<code>property, propertyNames</code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
+<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
 </ul>
 </li>
 </ul>
@@ -370,7 +370,7 @@ implements <a href="BondPaymentPeriod.html" title="interface in com.opengamma.st
 <ul class="blockList">
 <li class="blockList">
 <h4>collectIndices</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;collectIndices&#8203;(<a href="https://google.github.io/guava/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.Builder.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet.Builder</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;collectIndices&#8203;(com.google.common.collect.ImmutableSet.Builder&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;builder)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="BondPaymentPeriod.html#collectIndices(com.google.common.collect.ImmutableSet.Builder)">BondPaymentPeriod</a></code></span></div>
 <div class="block">Collects all the indices referred to by this period.
  <p>
@@ -477,7 +477,7 @@ implements <a href="BondPaymentPeriod.html" title="interface in com.opengamma.st
 <pre class="methodSignature">public&nbsp;<a href="FixedCouponBondPaymentPeriod.Meta.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondPaymentPeriod.Meta</a>&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
+<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
 </dl>
 </li>
 </ul>
