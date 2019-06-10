@@ -51,8 +51,8 @@ to specify the identifier and counterparty.
 | `FX Rate`               | Conditional | `1.364`                 | The FX rate, mandatory for cross-currency swaps |
 | `Roll Convention`       | Optional    | `Day1`              ([values]({{site.baseurl}}/common_values/#roll-convention)) | The roll convention |
 | `Stub Convention`       | Optional    | `ShortInitial`      ([values]({{site.baseurl}}/common_values/#stub-convention)) | The stub convention |
-| `First Regular Start Date` | Optional | `2017-09-01`        ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted start date of the first regular accrual period |
-| `Last Regular End Date` | Optional    | `2022-03-01`        ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted end date of the last regular accrual period |
+| <code>First&nbsp;Regular&nbsp;Start&nbsp;Date</code> | Optional | `2017-09-01`        ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted start date of the first regular accrual period |
+| <code>Last&nbsp;Regular&nbsp;End&nbsp;Date</code> | Optional    | `2022-03-01`        ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted end date of the last regular accrual period |
 | `Date Convention`       | Optional    | `ModifiedFollowing` ([values]({{site.baseurl}}/common_values/#business-day-convention)) | The [business day convention]({{site.baseurl}}/date_adjustments/) |
 | `Date Calendar`         | Optional    | `GBLO`              ([values]({{site.baseurl}}/holiday_data/)) | The [holiday calendar]({{site.baseurl}}/holidays/) to use |
 
