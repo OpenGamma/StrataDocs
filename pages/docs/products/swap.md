@@ -62,8 +62,8 @@ SwapLeg receiveLeg = RateCalculationSwapLeg.builder()
 Swap swap = Swap.of(payLeg, receiveLeg);
 ```
 
-{{tip}}The strata-loader project provides the ability to load a Swap
-from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_swap).{{end}}
+> **_TIP:_** The strata-loader project provides the ability to load a Swap
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_swap).
 
 
 ## Risk measures
