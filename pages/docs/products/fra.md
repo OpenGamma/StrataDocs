@@ -31,8 +31,8 @@ Fra fra = Fra.builder()
   .build();
 ```
 
-{{tip}}The strata-loader project provides the ability to load a FRA
-from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_fra).{{end}}
+> **TIP:** The strata-loader project provides the ability to load a FRA
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_fra).
 
 
 ## Risk measures

@@ -29,8 +29,8 @@ FxSwap fx = FxSwap.ofForwardPoints(CurrencyAmount.of(Currency.USD, 1000),  // am
                                    LocalDate.of(2015, 9, 15));             // far date
 ```
 
-{{tip}}The strata-loader project provides the ability to load an FX Swap
-from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_fx_swap).{{end}}
+> **TIP:** The strata-loader project provides the ability to load an FX Swap
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_fx_swap).
 
 
 ## Risk measures

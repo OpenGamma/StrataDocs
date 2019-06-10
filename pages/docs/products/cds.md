@@ -32,8 +32,8 @@ CdsTrade cdsTrade = CdsConventions.USD_STANDARD.toTrade(
     0.012);                                    // fixed rate of 1.2%
 ```
 
-{{tip}}The strata-loader project provides the ability to load a CDS
-from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_cds).{{end}}
+> **TIP:** The strata-loader project provides the ability to load a CDS
+from [FpML]({{site.baseurl}}/fpml_loader) and [CSV]({{site.baseurl}}/trade_loader_cds).
 
 
 ## Risk measures
