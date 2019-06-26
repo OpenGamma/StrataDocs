@@ -90,8 +90,8 @@ The leg columns are of the form "Leg n xxx" where "n" is the leg number starting
 | Leg 1 End Date Calendar              | Optional    | `GBLO` ([values]({{site.baseurl}}/holiday_data/))               | The end date holiday calendar |
 | Leg 1 Roll Convention                | Optional    | `Day1` ([values]({{site.baseurl}}/common_values/#roll-convention)) | The roll convention |
 | Leg 1 Stub Convention                | Optional    | `ShortInitial` ([values]({{site.baseurl}}/common_values/#stub-convention)) | The stub convention, defaults to "SmartInitial" |
-| Leg 1 First Regular Start Date       | Optional    | `2017-09-01` ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted start date of the first regular accrual period |
-| Leg 1 Last Regular End Date          | Optional    | `2022-03-01` ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted end date of the last regular accrual period |
+| Leg 1 Payment First Regular Start Date       | Optional    | `2017-09-01` ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted start date of the first regular accrual period |
+| Leg 1 Payment Last Regular End Date          | Optional    | `2022-03-01` ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted end date of the last regular accrual period |
 | Leg 1 Override Start Date            | Optional    | `2017-03-01` ([formats]({{site.baseurl}}/common_formats/#date)) | The unadjusted start date override |
 | Leg 1 Override Start Date Convention | Optional    | `ModifiedFollowing` ([values]({{site.baseurl}}/common_values/#business-day-convention)) | The start date override business day convention |
 | Leg 1 Override Start Date Calendar   | Optional    | `GBLO` ([values]({{site.baseurl}}/holiday_data/))               | The start date override holiday calendar |
