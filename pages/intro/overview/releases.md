@@ -6,6 +6,23 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.5.0
+
+* 28 June 2019
+
+This release contains over 10 [fixed issues](https://github.com/OpenGamma/Strata/milestone/24?closed=1).
+
+* Ability to represent the Central Counterparty Clearing House (CCP), see `CcpId`
+ [#2013](https://github.com/OpenGamma/Strata/issues/2013),
+ [#2014](https://github.com/OpenGamma/Strata/issues/2014)
+* Ability to represent groups of Exchange Traded Derivatives (ETDs) for risk, see `EtdContractGroupId`
+ [#2015](https://github.com/OpenGamma/Strata/issues/2015)
+* Add ability to get the opposite of Buy/Sell, Long/Short and Put/Call
+ [#2008](https://github.com/OpenGamma/Strata/issues/2008)
+* Remove dependency on TestNG from `TestHelper`
+ [#2007](https://github.com/OpenGamma/Strata/issues/2007)
+
+
 ## Strata v2.4.0
 
 * 10 June 2019
