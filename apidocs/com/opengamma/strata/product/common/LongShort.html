@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":9,"i7":9};
+var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -228,27 +228,34 @@ implements <a href="../../collect/named/NamedEnum.html" title="interface in com.
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#opposite()">opposite</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Supplies the opposite of this value.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sign()">sign</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the sign, where 'Long' returns 1 and 'Short' returns -1.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the formatted name of the type.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valueOf(java.lang.String)">valueOf</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
 <td class="colLast">
@@ -442,6 +449,20 @@ not permitted.)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>1 if long, -1 if short</dd>
+</dl>
+</li>
+</ul>
+<a id="opposite()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>opposite</h4>
+<pre class="methodSignature">public&nbsp;<a href="LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>&nbsp;opposite()</pre>
+<div class="block">Supplies the opposite of this value.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the opposite value</dd>
 </dl>
 </li>
 </ul>

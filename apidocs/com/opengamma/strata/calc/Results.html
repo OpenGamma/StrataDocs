@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
+<dd><code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">Results</span>
 extends java.lang.Object
-implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></pre>
+implements org.joda.beans.ImmutableBean</pre>
 <div class="block">Calculation results of performing calculations for a set of targets and columns.
  <p>
  This defines a grid of results where the grid contains a row for each target and a column for each measure.
@@ -230,7 +230,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;<a href="../collect/result/Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../collect/result/Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCells()">getCells</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the grid of results, stored as a flat list.</div>
@@ -244,7 +244,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;<a href="ColumnHeader.html" title="class in com.opengamma.strata.calc">ColumnHeader</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="ColumnHeader.html" title="class in com.opengamma.strata.calc">ColumnHeader</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColumns()">getColumns</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the column headers.</div>
@@ -299,8 +299,8 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
-<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
+<code>property, propertyNames</code></li>
 </ul>
 </li>
 </ul>
@@ -509,7 +509,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <pre class="methodSignature">public&nbsp;<a href="Results.Meta.html" title="class in com.opengamma.strata.calc">Results.Meta</a>&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>
@@ -519,7 +519,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getColumns</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;<a href="ColumnHeader.html" title="class in com.opengamma.strata.calc">ColumnHeader</a>&gt;&nbsp;getColumns()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="ColumnHeader.html" title="class in com.opengamma.strata.calc">ColumnHeader</a>&gt;&nbsp;getColumns()</pre>
 <div class="block">Gets the column headers.
  <p>
  Each column in the results is defined by a header consisting of the name and measure.
@@ -536,7 +536,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getCells</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;<a href="../collect/result/Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;&nbsp;getCells()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../collect/result/Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;&nbsp;getCells()</pre>
 <div class="block">Gets the grid of results, stored as a flat list.
  <p>
  This list contains the calculated result for each cell in the grid.

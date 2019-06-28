@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../product/AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a></code>, <code><a href="../calc/ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a></code>, <code><a href="../market/curve/CurveGroupName.html" title="class in com.opengamma.strata.market.curve">CurveGroupName</a></code>, <code><a href="../market/curve/CurveInfoType.html" title="class in com.opengamma.strata.market.curve">CurveInfoType</a></code>, <code><a href="../market/sensitivity/CurveSensitivitiesType.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesType</a></code>, <code><a href="../product/etd/EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a></code>, <code><a href="../market/explain/ExplainKey.html" title="class in com.opengamma.strata.market.explain">ExplainKey</a></code>, <code><a href="../data/FieldName.html" title="class in com.opengamma.strata.data">FieldName</a></code>, <code><a href="../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a></code>, <code><a href="../data/ObservableSource.html" title="class in com.opengamma.strata.data">ObservableSource</a></code>, <code><a href="../product/ProductType.html" title="class in com.opengamma.strata.product">ProductType</a></code>, <code><a href="../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a></code>, <code><a href="../market/option/StrikeType.html" title="class in com.opengamma.strata.market.option">StrikeType</a></code>, <code><a href="../market/surface/SurfaceInfoType.html" title="class in com.opengamma.strata.market.surface">SurfaceInfoType</a></code>, <code><a href="../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></dd>
+<dd><code><a href="../product/AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a></code>, <code><a href="../calc/ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a></code>, <code><a href="../market/curve/CurveGroupName.html" title="class in com.opengamma.strata.market.curve">CurveGroupName</a></code>, <code><a href="../market/curve/CurveInfoType.html" title="class in com.opengamma.strata.market.curve">CurveInfoType</a></code>, <code><a href="../market/sensitivity/CurveSensitivitiesType.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesType</a></code>, <code><a href="../product/etd/EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a></code>, <code><a href="../product/etd/EtdContractGroupCode.html" title="class in com.opengamma.strata.product.etd">EtdContractGroupCode</a></code>, <code><a href="../market/explain/ExplainKey.html" title="class in com.opengamma.strata.market.explain">ExplainKey</a></code>, <code><a href="../data/FieldName.html" title="class in com.opengamma.strata.data">FieldName</a></code>, <code><a href="../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a></code>, <code><a href="../data/ObservableSource.html" title="class in com.opengamma.strata.data">ObservableSource</a></code>, <code><a href="../product/ProductType.html" title="class in com.opengamma.strata.product">ProductType</a></code>, <code><a href="../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a></code>, <code><a href="../market/option/StrikeType.html" title="class in com.opengamma.strata.market.option">StrikeType</a></code>, <code><a href="../market/surface/SurfaceInfoType.html" title="class in com.opengamma.strata.market.surface">SurfaceInfoType</a></code>, <code><a href="../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">TypedString&lt;T extends TypedString&lt;T&gt;&gt;</span>
@@ -207,7 +207,7 @@ implements <a href="named/Named.html" title="interface in com.opengamma.strata.c
 <tr class="rowColor">
 <td class="colFirst"><code>protected </code></td>
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,com.google.common.base.CharMatcher,java.lang.String)">TypedString</a></span>&#8203;(java.lang.String&nbsp;name,
-           com.google.common.base.CharMatcher&nbsp;matcher,
+           <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/base/CharMatcher.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">CharMatcher</a>&nbsp;matcher,
            java.lang.String&nbsp;msg)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance, validating the name against a matcher.</div>
@@ -324,7 +324,7 @@ implements <a href="named/Named.html" title="interface in com.opengamma.strata.c
                       java.lang.String&nbsp;msg)</pre>
 <div class="block">Creates an instance, validating the name against a regex.
  <p>
- In most cases, a <code>CharMatcher</code> will be faster than a regex <code>Pattern</code>,
+ In most cases, a <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/base/CharMatcher.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink"><code>CharMatcher</code></a> will be faster than a regex <code>Pattern</code>,
  typically by over an order of magnitude.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -341,11 +341,11 @@ implements <a href="named/Named.html" title="interface in com.opengamma.strata.c
 <li class="blockList">
 <h4>TypedString</h4>
 <pre>protected&nbsp;TypedString&#8203;(java.lang.String&nbsp;name,
-                      com.google.common.base.CharMatcher&nbsp;matcher,
+                      <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/base/CharMatcher.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">CharMatcher</a>&nbsp;matcher,
                       java.lang.String&nbsp;msg)</pre>
 <div class="block">Creates an instance, validating the name against a matcher.
  <p>
- In most cases, a <code>CharMatcher</code> will be faster than a regex <code>Pattern</code>,
+ In most cases, a <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/base/CharMatcher.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink"><code>CharMatcher</code></a> will be faster than a regex <code>Pattern</code>,
  typically by over an order of magnitude.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

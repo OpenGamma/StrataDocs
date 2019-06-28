@@ -101,7 +101,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region"><a id="package.description">
 <!--   -->
 </a>
-<div class="block">Entity objects describing Exchange Traded Derivatives (ETDs).</div>
+<div class="block">Entity objects describing Exchange Traded Derivatives (ETDs).
+ <p>
+ This package models exchange-traded futures and options.
+ Each ETD - <a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd"><code>EtdFutureSecurity</code></a> and
+ <a href="EtdOptionSecurity.html" title="class in com.opengamma.strata.product.etd"><code>EtdOptionSecurity</code></a> - runs for a
+ specific period of time and has a known expiry date.
+ The individual future/option is one of a series, based on a
+ <a href="EtdContractSpec.html" title="class in com.opengamma.strata.product.etd"><code>EtdContractSpec</code></a>.
+ The specification effectively acts as a factory for futures/options.
+ Different contract specifications can be grouped together for risk purposes using
+ <a href="EtdContractGroupId.html" title="class in com.opengamma.strata.product.etd"><code>EtdContractGroupId</code></a>.
+ <p>
+ Strata provides a standard approach to ETD identifiers in
+ <a href="EtdIdUtils.html" title="class in com.opengamma.strata.product.etd"><code>EtdIdUtils</code></a>.</div>
 </section>
 <ul class="blockList">
 <li class="blockList">
@@ -139,6 +152,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a></th>
 <td class="colLast">
 <div class="block">The contract code for an Exchange Traded Derivative (ETD).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="EtdContractGroupCode.html" title="class in com.opengamma.strata.product.etd">EtdContractGroupCode</a></th>
+<td class="colLast">
+<div class="block">The code for a group of ETD contracts, as defined an exchange.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="EtdContractGroupId.html" title="class in com.opengamma.strata.product.etd">EtdContractGroupId</a></th>
+<td class="colLast">
+<div class="block">An identifier for a group of ETD contracts.</div>
 </td>
 </tr>
 <tr class="rowColor">

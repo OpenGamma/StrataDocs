@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code>, <code>java.io.Serializable</code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
+<dd><code><a href="Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code>, <code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">IntArray</span>
 extends java.lang.Object
-implements <a href="Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>, <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a>, java.io.Serializable</pre>
+implements <a href="Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>, org.joda.beans.ImmutableBean, java.io.Serializable</pre>
 <div class="block">An immutable array of <code>int</code> values.
  <p>
  This provides functionality similar to <code>List</code> but for <code>int[]</code>.
@@ -374,7 +374,7 @@ implements <a href="Matrix.html" title="interface in com.opengamma.strata.collec
 </td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/MetaBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaBean</a></code></td>
+<td class="colFirst"><code>org.joda.beans.MetaBean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -559,7 +559,7 @@ implements <a href="Matrix.html" title="interface in com.opengamma.strata.collec
 </td>
 </tr>
 <tr id="i46" class="altColor">
-<td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="https://www.joda.org/joda-beans/apidocs/Property.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Property</a>&lt;R&gt;</code></td>
+<td class="colFirst"><code>&lt;R&gt;&nbsp;org.joda.beans.Property&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#property(java.lang.String)">property</a></span>&#8203;(java.lang.String&nbsp;propertyName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -1829,10 +1829,10 @@ implements <a href="Matrix.html" title="interface in com.opengamma.strata.collec
 <ul class="blockList">
 <li class="blockList">
 <h4>metaBean</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://www.joda.org/joda-beans/apidocs/MetaBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">MetaBean</a>&nbsp;metaBean()</pre>
+<pre class="methodSignature">public&nbsp;org.joda.beans.MetaBean&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>
@@ -1842,10 +1842,10 @@ implements <a href="Matrix.html" title="interface in com.opengamma.strata.collec
 <ul class="blockList">
 <li class="blockList">
 <h4>property</h4>
-<pre class="methodSignature">public&nbsp;&lt;R&gt;&nbsp;<a href="https://www.joda.org/joda-beans/apidocs/Property.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Property</a>&lt;R&gt;&nbsp;property&#8203;(java.lang.String&nbsp;propertyName)</pre>
+<pre class="methodSignature">public&nbsp;&lt;R&gt;&nbsp;org.joda.beans.Property&lt;R&gt;&nbsp;property&#8203;(java.lang.String&nbsp;propertyName)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>property</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>
@@ -1858,7 +1858,7 @@ implements <a href="Matrix.html" title="interface in com.opengamma.strata.collec
 <pre class="methodSignature">public&nbsp;java.util.Set&lt;java.lang.String&gt;&nbsp;propertyNames()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>propertyNames</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>

@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Product.html" title="interface in com.opengamma.strata.product">Product</a></code>, <code><a href="SecuritizedProduct.html" title="interface in com.opengamma.strata.product">SecuritizedProduct</a></code>, <code><a href="Security.html" title="interface in com.opengamma.strata.product">Security</a></code>, <code>java.io.Serializable</code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
+<dd><code><a href="Product.html" title="interface in com.opengamma.strata.product">Product</a></code>, <code><a href="SecuritizedProduct.html" title="interface in com.opengamma.strata.product">SecuritizedProduct</a></code>, <code><a href="Security.html" title="interface in com.opengamma.strata.product">Security</a></code>, <code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">GenericSecurity</span>
 extends java.lang.Object
-implements <a href="Security.html" title="interface in com.opengamma.strata.product">Security</a>, <a href="SecuritizedProduct.html" title="interface in com.opengamma.strata.product">SecuritizedProduct</a>, <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a>, java.io.Serializable</pre>
+implements <a href="Security.html" title="interface in com.opengamma.strata.product">Security</a>, <a href="SecuritizedProduct.html" title="interface in com.opengamma.strata.product">SecuritizedProduct</a>, org.joda.beans.ImmutableBean, java.io.Serializable</pre>
 <div class="block">A generic security, defined in terms of the value of each tick.
  <p>
  In most cases, applications will choose to represent information about securities
@@ -259,7 +259,7 @@ implements <a href="Security.html" title="interface in com.opengamma.strata.prod
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableSet&lt;<a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnderlyingIds()">getUnderlyingIds</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the set of underlying security identifiers.</div>
@@ -313,8 +313,8 @@ implements <a href="Security.html" title="interface in com.opengamma.strata.prod
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
-<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
+<code>property, propertyNames</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.product.Product">
@@ -408,7 +408,7 @@ implements <a href="Security.html" title="interface in com.opengamma.strata.prod
 <ul class="blockList">
 <li class="blockList">
 <h4>getUnderlyingIds</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableSet&lt;<a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&gt;&nbsp;getUnderlyingIds()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&gt;&nbsp;getUnderlyingIds()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Security.html#getUnderlyingIds()">Security</a></code></span></div>
 <div class="block">Gets the set of underlying security identifiers.
  <p>
@@ -568,7 +568,7 @@ implements <a href="Security.html" title="interface in com.opengamma.strata.prod
 <pre class="methodSignature">public&nbsp;<a href="GenericSecurity.Meta.html" title="class in com.opengamma.strata.product">GenericSecurity.Meta</a>&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>

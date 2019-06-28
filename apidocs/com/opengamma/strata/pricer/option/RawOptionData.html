@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.io.Serializable</code>, <code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code>, <code><a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a></code></dd>
+<dd><code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">RawOptionData</span>
 extends java.lang.Object
-implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">ImmutableBean</a>, java.io.Serializable</pre>
+implements org.joda.beans.ImmutableBean, java.io.Serializable</pre>
 <div class="block">Raw data from the volatility market.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -199,7 +199,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>com.google.common.collect.ImmutableList&lt;java.time.Period&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.time.Period&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExpiries()">getExpiries</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the expiry values.</div>
@@ -232,14 +232,14 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="https://www.joda.org/joda-beans/apidocs/TypedMetaBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">TypedMetaBean</a>&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;</code></td>
+<td class="colFirst"><code>static org.joda.beans.TypedMetaBean&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>RawOptionData</code>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://www.joda.org/joda-beans/apidocs/TypedMetaBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">TypedMetaBean</a>&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.TypedMetaBean&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -306,8 +306,8 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;org.joda.beans.<a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></h3>
-<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#property(java.lang.String)" title="class or interface in org.joda.beans" class="externalLink">property</a>, <a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#propertyNames()" title="class or interface in org.joda.beans" class="externalLink">propertyNames</a></code></li>
+<h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
+<code>property, propertyNames</code></li>
 </ul>
 </li>
 </ul>
@@ -451,7 +451,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>meta</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://www.joda.org/joda-beans/apidocs/TypedMetaBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">TypedMetaBean</a>&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;&nbsp;meta()</pre>
+<pre class="methodSignature">public static&nbsp;org.joda.beans.TypedMetaBean&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;&nbsp;meta()</pre>
 <div class="block">The meta-bean for <code>RawOptionData</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -465,10 +465,10 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>metaBean</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://www.joda.org/joda-beans/apidocs/TypedMetaBean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">TypedMetaBean</a>&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;&nbsp;metaBean()</pre>
+<pre class="methodSignature">public&nbsp;org.joda.beans.TypedMetaBean&lt;<a href="RawOptionData.html" title="class in com.opengamma.strata.pricer.option">RawOptionData</a>&gt;&nbsp;metaBean()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true#metaBean()" title="class or interface in org.joda.beans" class="externalLink">metaBean</a></code>&nbsp;in interface&nbsp;<code><a href="https://www.joda.org/joda-beans/apidocs/Bean.html?is-external=true" title="class or interface in org.joda.beans" class="externalLink">Bean</a></code></dd>
+<dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
 </dl>
 </li>
 </ul>
@@ -478,7 +478,7 @@ implements <a href="https://www.joda.org/joda-beans/apidocs/ImmutableBean.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getExpiries</h4>
-<pre class="methodSignature">public&nbsp;com.google.common.collect.ImmutableList&lt;java.time.Period&gt;&nbsp;getExpiries()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.time.Period&gt;&nbsp;getExpiries()</pre>
 <div class="block">Gets the expiry values.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

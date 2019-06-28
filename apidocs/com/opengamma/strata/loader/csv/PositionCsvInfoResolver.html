@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":1,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":1};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":1,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -260,6 +260,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseStandardAttributes(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfoBuilder)">parseStandardAttributes</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                       <a href="../../product/PositionInfoBuilder.html" title="class in com.opengamma.strata.product">PositionInfoBuilder</a>&nbsp;builder)</code></th>
+<td class="colLast">
+<div class="block">Parses standard attributes into <code>PositionInfo</code>.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="PositionCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">PositionCsvInfoResolver</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#standard()">standard</a></span>()</code></th>
 <td class="colLast">
@@ -324,6 +332,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the reference data</dd>
+</dl>
+</li>
+</ul>
+<a id="parseStandardAttributes(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfoBuilder)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseStandardAttributes</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;parseStandardAttributes&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                     <a href="../../product/PositionInfoBuilder.html" title="class in com.opengamma.strata.product">PositionInfoBuilder</a>&nbsp;builder)</pre>
+<div class="block">Parses standard attributes into <code>PositionInfo</code>.
+ <p>
+ This parses the standard set of attributes, which are the three constants in <a href="../../product/AttributeType.html" title="class in com.opengamma.strata.product"><code>AttributeType</code></a>.
+ The column names are 'Description', 'Name' and 'CCP'.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>builder</code> - the builder to update</dd>
 </dl>
 </li>
 </ul>
