@@ -141,7 +141,7 @@ The denominator is always 365.</td>
 </tr>
 <tr>
   <th>Also&nbsp;known</th>
-  <td>'English'</td>
+  <td>'English' or `AFI/365`</td>
 </tr>
 <tr>
   <th>Definition</th>
@@ -332,7 +332,7 @@ The first day in the period is included, the last day is excluded.</td>
 </tr>
 <tr>
   <th>Also&nbsp;known</th>
-  <td>'ISMA-99'</td>
+  <td>'ISMA-99' or 'ICM/ACT'</td>
 </tr>
 <tr>
   <th>Definition</th>
@@ -367,6 +367,10 @@ The first day in the schedule period is included, the last day is excluded.<br /
 Read the Javadoc for a discussion of the algorithm, the
 <a href="http://www.acp.banque-france.fr/fileadmin/user_upload/banque_de_france/archipel/publications/bdf_bof/bdf_bof_1999/bdf_bof_01.pdf">original French text</a>
 and confusion with the <a href="https://www.isda.org/a/pIJEE/The-Actual-Actual-Day-Count-Fraction-1999.pdf">ISDA clarification</a>.</td>
+</tr>
+<tr>
+  <th>Also&nbsp;known</th>
+  <td>'Base Exact/Exact' or 'EXA/EXA'</td>
 </tr>
 <tr>
   <th>Definition</th>
@@ -609,7 +613,7 @@ If the second day-of-month is 31, it is changed to 30.</td>
 </tr>
 <tr>
   <th>Also&nbsp;known</th>
-  <td>'30/360 ISMA', '30/360 European', '30S/360 Special German' or 'Eurobond'</td>
+  <td>'30/360 ISMA', '30/360 European', '30S/360 Special German', 'EBD/360' or 'Eurobond'</td>
 </tr>
 <tr>
   <th>Definition</th>
