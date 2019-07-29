@@ -6,6 +6,20 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.6.0
+
+* 30 July 2019
+
+This release contains over 20 [fixed issues](https://github.com/OpenGamma/Strata/milestone/25?closed=1).
+
+* Add SWIFT code formats for day conut and business day convention
+ [#2023](https://github.com/OpenGamma/Strata/issues/2023)
+* Performance enhancements
+ [#2027](https://github.com/OpenGamma/Strata/issues/2027),
+ [#2031](https://github.com/OpenGamma/Strata/issues/2031)
+* AttributeType now has stronger Java type,
+ [#2044](https://github.com/OpenGamma/Strata/issues/2044)
+
 ## Strata v2.5.0
 
 * 28 June 2019

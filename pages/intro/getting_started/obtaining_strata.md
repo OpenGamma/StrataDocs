@@ -15,7 +15,7 @@ and [JCenter](https://bintray.com/opengamma/releases/Strata):
 <dependency>
   <groupId>com.opengamma.strata</groupId>
   <artifactId>strata-measure</artifactId>
-  <version>2.5.0</version>
+  <version>2.6.0</version>
 </dependency>
 ```
 
