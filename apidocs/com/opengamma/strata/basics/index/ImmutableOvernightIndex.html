@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>com.opengamma.strata.basics.index.ImmutableOvernightIndex</li>
@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a></code>, <code><a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></code>, <code><a href="OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a></code>, <code><a href="RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code>, <code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code>, <code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a></code>, <code><a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></code>, <code><a href="OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a></code>, <code><a href="RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code>, <code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">ImmutableOvernightIndex</span>
-extends java.lang.Object
-implements <a href="OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a>, org.joda.beans.ImmutableBean, java.io.Serializable</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements <a href="OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a>, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">An overnight index, such as Sonia or Eonia.
  <p>
  An index represented by this class relates to lending over one night.
@@ -214,40 +214,40 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateEffectiveFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateEffectiveFromFixing</a></span>&#8203;(java.time.LocalDate&nbsp;fixingDate,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateEffectiveFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateEffectiveFromFixing</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
                             <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Calculates the effective date from the fixing date.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateFixingFromEffective(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateFixingFromEffective</a></span>&#8203;(java.time.LocalDate&nbsp;effectiveDate,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateFixingFromEffective(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateFixingFromEffective</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;effectiveDate,
                             <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Calculates the fixing date from the effective date.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateMaturityFromEffective(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateMaturityFromEffective</a></span>&#8203;(java.time.LocalDate&nbsp;effectiveDate,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateMaturityFromEffective(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateMaturityFromEffective</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;effectiveDate,
                               <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Calculates the maturity date from the effective date.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateMaturityFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateMaturityFromFixing</a></span>&#8203;(java.time.LocalDate&nbsp;fixingDate,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculateMaturityFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculateMaturityFromFixing</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
                            <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Calculates the maturity date from the fixing date.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculatePublicationFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculatePublicationFromFixing</a></span>&#8203;(java.time.LocalDate&nbsp;fixingDate,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#calculatePublicationFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">calculatePublicationFromFixing</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
                               <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Calculates the publication date from the fixing date.</div>
@@ -255,7 +255,7 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -301,7 +301,7 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the index name, such as 'GBP-SONIA'.</div>
@@ -353,7 +353,7 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 </td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the name of the index.</div>
@@ -364,8 +364,8 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
@@ -433,8 +433,8 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>calculatePublicationFromFixing</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;calculatePublicationFromFixing&#8203;(java.time.LocalDate&nbsp;fixingDate,
-                                                          <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;calculatePublicationFromFixing&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
+                                                <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="OvernightIndex.html#calculatePublicationFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">OvernightIndex</a></code></span></div>
 <div class="block">Calculates the publication date from the fixing date.
  <p>
@@ -460,8 +460,8 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>calculateEffectiveFromFixing</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;calculateEffectiveFromFixing&#8203;(java.time.LocalDate&nbsp;fixingDate,
-                                                        <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;calculateEffectiveFromFixing&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
+                                              <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="OvernightIndex.html#calculateEffectiveFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">OvernightIndex</a></code></span></div>
 <div class="block">Calculates the effective date from the fixing date.
  <p>
@@ -487,8 +487,8 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>calculateMaturityFromFixing</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;calculateMaturityFromFixing&#8203;(java.time.LocalDate&nbsp;fixingDate,
-                                                       <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;calculateMaturityFromFixing&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
+                                             <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="OvernightIndex.html#calculateMaturityFromFixing(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">OvernightIndex</a></code></span></div>
 <div class="block">Calculates the maturity date from the fixing date.
  <p>
@@ -514,8 +514,8 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>calculateFixingFromEffective</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;calculateFixingFromEffective&#8203;(java.time.LocalDate&nbsp;effectiveDate,
-                                                        <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;calculateFixingFromEffective&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;effectiveDate,
+                                              <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="OvernightIndex.html#calculateFixingFromEffective(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">OvernightIndex</a></code></span></div>
 <div class="block">Calculates the fixing date from the effective date.
  <p>
@@ -541,8 +541,8 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>calculateMaturityFromEffective</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;calculateMaturityFromEffective&#8203;(java.time.LocalDate&nbsp;effectiveDate,
-                                                          <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;calculateMaturityFromEffective&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;effectiveDate,
+                                                <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="OvernightIndex.html#calculateMaturityFromEffective(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">OvernightIndex</a></code></span></div>
 <div class="block">Calculates the maturity date from the effective date.
  <p>
@@ -568,10 +568,10 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;obj)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -584,7 +584,7 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -594,11 +594,11 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
 <div class="block">Returns the name of the index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the name of the index</dd>
 </dl>
@@ -651,7 +651,7 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getName()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getName()</pre>
 <div class="block">Gets the index name, such as 'GBP-SONIA'.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -879,7 +879,7 @@ implements <a href="OvernightIndex.html" title="interface in com.opengamma.strat
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

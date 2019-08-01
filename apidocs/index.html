@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":16,"i1":16,"i2":16,"i3":16,"i4":16,"i5":16,"i6":16,"i7":16,"i8":16,"i9":16,"i10":16,"i11":16,"i12":16,"i13":16,"i14":16,"i15":16,"i16":16,"i17":16,"i18":16,"i19":16,"i20":16,"i21":16,"i22":16,"i23":4,"i24":4,"i25":4,"i26":4,"i27":4,"i28":4,"i29":4,"i30":4,"i31":4,"i32":4,"i33":4,"i34":4,"i35":4,"i36":16,"i37":16,"i38":16,"i39":1,"i40":1,"i41":1,"i42":1,"i43":1,"i44":1,"i45":1,"i46":1,"i47":1,"i48":1,"i49":1,"i50":1,"i51":1,"i52":1,"i53":1,"i54":1,"i55":1,"i56":1,"i57":2,"i58":2,"i59":2,"i60":2,"i61":2,"i62":2,"i63":2,"i64":2,"i65":2,"i66":2,"i67":2,"i68":2,"i69":2,"i70":2,"i71":2,"i72":2,"i73":2,"i74":2,"i75":2,"i76":2,"i77":8,"i78":8,"i79":8,"i80":8,"i81":8,"i82":8,"i83":8,"i84":8,"i85":8,"i86":8,"i87":8,"i88":8,"i89":8,"i90":8,"i91":8,"i92":8,"i93":8,"i94":8,"i95":8,"i96":8,"i97":8,"i98":8,"i99":8,"i100":8,"i101":16,"i102":16,"i103":16,"i104":16,"i105":16};
+var data = {"i0":16,"i1":16,"i2":16,"i3":16,"i4":16,"i5":16,"i6":16,"i7":16,"i8":16,"i9":16,"i10":16,"i11":16,"i12":16,"i13":16,"i14":16,"i15":16,"i16":16,"i17":16,"i18":16,"i19":16,"i20":16,"i21":16,"i22":16,"i23":16,"i24":4,"i25":4,"i26":4,"i27":4,"i28":4,"i29":4,"i30":4,"i31":4,"i32":4,"i33":4,"i34":4,"i35":4,"i36":4,"i37":16,"i38":16,"i39":16,"i40":16,"i41":16,"i42":16,"i43":16,"i44":16,"i45":16,"i46":16,"i47":16,"i48":16,"i49":16,"i50":16,"i51":16,"i52":16,"i53":16,"i54":16,"i55":16,"i56":16,"i57":1,"i58":1,"i59":1,"i60":1,"i61":1,"i62":1,"i63":1,"i64":1,"i65":1,"i66":1,"i67":1,"i68":1,"i69":1,"i70":1,"i71":1,"i72":1,"i73":1,"i74":1,"i75":2,"i76":2,"i77":2,"i78":2,"i79":2,"i80":2,"i81":2,"i82":2,"i83":2,"i84":2,"i85":2,"i86":2,"i87":2,"i88":2,"i89":2,"i90":2,"i91":2,"i92":2,"i93":2,"i94":2,"i95":2,"i96":2,"i97":2,"i98":2,"i99":2,"i100":2,"i101":2,"i102":2,"i103":2,"i104":8,"i105":8,"i106":8,"i107":8,"i108":8,"i109":8,"i110":8,"i111":8,"i112":8,"i113":8,"i114":8,"i115":8,"i116":8,"i117":8,"i118":8,"i119":8,"i120":8,"i121":8,"i122":8,"i123":8,"i124":8,"i125":8,"i126":8,"i127":8,"i128":16,"i129":16,"i130":16,"i131":16,"i132":16};
 var tabs = {65535:["t0","All Packages"],1:["t1","Measure-level API"],2:["t2","Pricer-level API"],4:["t4","Market data structures"],8:["t8","Product domain model"],16:["t16","Supporting toolkit"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -103,23 +103,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h1 class="title"><h1>OpenGamma Strata</h1></h1>
 </div>
 <main role="main">
-<div class="contentContainer">
-<div class="block"><h3>Overview</h3>
-<p>
-Strata consists of a number of modules:
-</p>
-<ul>
-<li>Measure - High-level API producing market risk measures for trades and securities</li>
-<li>Calc - Calculation framework, allowing measures to be calculated on a mixed portfolio of trades and securities</li>
-<li>Pricer - Low-level API for pricing trades and securities</li>
-<li>Loader - Provides the ability to load trades from FpML and market data from CSV</li>
-<li>Market - Market data structures, such as curves and surfaces</li>
-<li>Data - General-purpose market data containers</li>
-<li>Product - Domain model beans for different types of trade and security</li>
-<li>Basics - Common utilities for finance, such as day counts, holidays and indices</li>
-<li>Collect - Common data structures, such as time-series, immutable arrays and tuples</li>
-</ul></div>
-</div>
 <div class="contentContainer">
 <table class="overviewSummary">
 <caption><span id="t0" class="activeTableTab"><span>All Packages</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Measure-level API</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Pricer-level API</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(4);">Market data structures</a></span><span class="tabEnd">&nbsp;</span></span><span id="t8" class="tableTab"><span><a href="javascript:show(8);">Product domain model</a></span><span class="tabEnd">&nbsp;</span></span><span id="t16" class="tableTab"><span><a href="javascript:show(16);">Supporting toolkit</a></span><span class="tabEnd">&nbsp;</span></span></caption>
@@ -267,498 +250,616 @@ Strata consists of a number of modules:
 </td>
 </tr>
 <tr class="rowColor" id="i23">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/loader/impl/fpml/package-summary.html">com.opengamma.strata.loader.impl.fpml</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i24">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/package-summary.html">com.opengamma.strata.market</a></th>
 <td class="colLast">
 <div class="block">Data structures for market data.</div>
 </td>
 </tr>
-<tr class="altColor" id="i24">
+<tr class="rowColor" id="i25">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/amount/package-summary.html">com.opengamma.strata.market.amount</a></th>
 <td class="colLast">
 <div class="block">Defines representations of amounts typically used as result types.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i25">
+<tr class="altColor" id="i26">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/curve/package-summary.html">com.opengamma.strata.market.curve</a></th>
 <td class="colLast">
 <div class="block">Definitions of curves.</div>
 </td>
 </tr>
-<tr class="altColor" id="i26">
+<tr class="rowColor" id="i27">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/curve/interpolator/package-summary.html">com.opengamma.strata.market.curve.interpolator</a></th>
 <td class="colLast">
 <div class="block">Interpolators for interpolating in one and two dimensions.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i27">
+<tr class="altColor" id="i28">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/curve/node/package-summary.html">com.opengamma.strata.market.curve.node</a></th>
 <td class="colLast">
 <div class="block">Curve nodes.</div>
 </td>
 </tr>
-<tr class="altColor" id="i28">
+<tr class="rowColor" id="i29">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/explain/package-summary.html">com.opengamma.strata.market.explain</a></th>
 <td class="colLast">
 <div class="block">Support for explaining results.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i29">
+<tr class="altColor" id="i30">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/model/package-summary.html">com.opengamma.strata.market.model</a></th>
 <td class="colLast">
 <div class="block">Market data related to pricing models.</div>
 </td>
 </tr>
-<tr class="altColor" id="i30">
+<tr class="rowColor" id="i31">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/observable/package-summary.html">com.opengamma.strata.market.observable</a></th>
 <td class="colLast">
 <div class="block">Market data for quotes.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i31">
+<tr class="altColor" id="i32">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/option/package-summary.html">com.opengamma.strata.market.option</a></th>
 <td class="colLast">
 <div class="block">Entity objects for options.</div>
 </td>
 </tr>
-<tr class="altColor" id="i32">
+<tr class="rowColor" id="i33">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/param/package-summary.html">com.opengamma.strata.market.param</a></th>
 <td class="colLast">
 <div class="block">Market data based on parameters.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i33">
+<tr class="altColor" id="i34">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/sensitivity/package-summary.html">com.opengamma.strata.market.sensitivity</a></th>
 <td class="colLast">
 <div class="block">Entity objects for sensitivities.</div>
 </td>
 </tr>
-<tr class="altColor" id="i34">
+<tr class="rowColor" id="i35">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/surface/package-summary.html">com.opengamma.strata.market.surface</a></th>
 <td class="colLast">
 <div class="block">Definitions of surfaces.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i35">
+<tr class="altColor" id="i36">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/market/surface/interpolator/package-summary.html">com.opengamma.strata.market.surface.interpolator</a></th>
 <td class="colLast">
 <div class="block">Interpolators for surfaces.</div>
 </td>
 </tr>
-<tr class="altColor" id="i36">
+<tr class="rowColor" id="i37">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/math/package-summary.html">com.opengamma.strata.math</a></th>
 <td class="colLast">
 <div class="block">Base package of the strata-math project.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i37">
+<tr class="altColor" id="i38">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/cern/package-summary.html">com.opengamma.strata.math.impl.cern</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i39">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/differentiation/package-summary.html">com.opengamma.strata.math.impl.differentiation</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i40">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/function/package-summary.html">com.opengamma.strata.math.impl.function</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i41">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/function/special/package-summary.html">com.opengamma.strata.math.impl.function.special</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i42">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/integration/package-summary.html">com.opengamma.strata.math.impl.integration</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i43">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/interpolation/package-summary.html">com.opengamma.strata.math.impl.interpolation</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i44">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/linearalgebra/package-summary.html">com.opengamma.strata.math.impl.linearalgebra</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i45">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/matrix/package-summary.html">com.opengamma.strata.math.impl.matrix</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i46">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/minimization/package-summary.html">com.opengamma.strata.math.impl.minimization</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i47">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/random/package-summary.html">com.opengamma.strata.math.impl.random</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i48">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/regression/package-summary.html">com.opengamma.strata.math.impl.regression</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i49">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/rootfinding/package-summary.html">com.opengamma.strata.math.impl.rootfinding</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i50">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/rootfinding/newton/package-summary.html">com.opengamma.strata.math.impl.rootfinding.newton</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i51">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/statistics/descriptive/package-summary.html">com.opengamma.strata.math.impl.statistics.descriptive</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i52">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/statistics/distribution/package-summary.html">com.opengamma.strata.math.impl.statistics.distribution</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i53">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/statistics/leastsquare/package-summary.html">com.opengamma.strata.math.impl.statistics.leastsquare</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i54">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/math/impl/util/package-summary.html">com.opengamma.strata.math.impl.util</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i55">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/math/linearalgebra/package-summary.html">com.opengamma.strata.math.linearalgebra</a></th>
 <td class="colLast">
 <div class="block">Linear algebra.</div>
 </td>
 </tr>
-<tr class="altColor" id="i38">
+<tr class="altColor" id="i56">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/math/rootfind/package-summary.html">com.opengamma.strata.math.rootfind</a></th>
 <td class="colLast">
 <div class="block">Root finding.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i39">
+<tr class="rowColor" id="i57">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/package-summary.html">com.opengamma.strata.measure</a></th>
 <td class="colLast">
 <div class="block">Provides the ability to calculate high-level measures on financial instruments.</div>
 </td>
 </tr>
-<tr class="altColor" id="i40">
+<tr class="altColor" id="i58">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/bond/package-summary.html">com.opengamma.strata.measure.bond</a></th>
 <td class="colLast">
 <div class="block">Base package for calculation functions.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i41">
+<tr class="rowColor" id="i59">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/calc/package-summary.html">com.opengamma.strata.measure.calc</a></th>
 <td class="colLast">
 <div class="block">Additional calculation parameters.</div>
 </td>
 </tr>
-<tr class="altColor" id="i42">
+<tr class="altColor" id="i60">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/capfloor/package-summary.html">com.opengamma.strata.measure.capfloor</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for Ibor cap/floor products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i43">
+<tr class="rowColor" id="i61">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/cms/package-summary.html">com.opengamma.strata.measure.cms</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for constant maturity swap (CMS) products.</div>
 </td>
 </tr>
-<tr class="altColor" id="i44">
+<tr class="altColor" id="i62">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/credit/package-summary.html">com.opengamma.strata.measure.credit</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for credit products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i45">
+<tr class="rowColor" id="i63">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/curve/package-summary.html">com.opengamma.strata.measure.curve</a></th>
 <td class="colLast">
 <div class="block">Integration code that allows strata-calc to use and calibrate curves.</div>
 </td>
 </tr>
-<tr class="altColor" id="i46">
+<tr class="altColor" id="i64">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/deposit/package-summary.html">com.opengamma.strata.measure.deposit</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for deposit products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i47">
+<tr class="rowColor" id="i65">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/dsf/package-summary.html">com.opengamma.strata.measure.dsf</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for DSF products.</div>
 </td>
 </tr>
-<tr class="altColor" id="i48">
+<tr class="altColor" id="i66">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/fra/package-summary.html">com.opengamma.strata.measure.fra</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for FRA products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i49">
+<tr class="rowColor" id="i67">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/fx/package-summary.html">com.opengamma.strata.measure.fx</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for FX products.</div>
 </td>
 </tr>
-<tr class="altColor" id="i50">
+<tr class="altColor" id="i68">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/fxopt/package-summary.html">com.opengamma.strata.measure.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for FX option products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i51">
+<tr class="rowColor" id="i69">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/index/package-summary.html">com.opengamma.strata.measure.index</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for index products.</div>
 </td>
 </tr>
-<tr class="altColor" id="i52">
+<tr class="altColor" id="i70">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/payment/package-summary.html">com.opengamma.strata.measure.payment</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for payment products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i53">
+<tr class="rowColor" id="i71">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/rate/package-summary.html">com.opengamma.strata.measure.rate</a></th>
 <td class="colLast">
 <div class="block">Base package for calculation functions.</div>
 </td>
 </tr>
-<tr class="altColor" id="i54">
+<tr class="altColor" id="i72">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/security/package-summary.html">com.opengamma.strata.measure.security</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for futures products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i55">
+<tr class="rowColor" id="i73">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/swap/package-summary.html">com.opengamma.strata.measure.swap</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for swap products.</div>
 </td>
 </tr>
-<tr class="altColor" id="i56">
+<tr class="altColor" id="i74">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/measure/swaption/package-summary.html">com.opengamma.strata.measure.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for swaption products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i57">
+<tr class="rowColor" id="i75">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/package-summary.html">com.opengamma.strata.pricer</a></th>
 <td class="colLast">
 <div class="block">Calculators for financial instruments.</div>
 </td>
 </tr>
-<tr class="altColor" id="i58">
+<tr class="altColor" id="i76">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/bond/package-summary.html">com.opengamma.strata.pricer.bond</a></th>
 <td class="colLast">
 <div class="block">Calculators for bonds.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i59">
+<tr class="rowColor" id="i77">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/capfloor/package-summary.html">com.opengamma.strata.pricer.capfloor</a></th>
 <td class="colLast">
 <div class="block">Calculators for Ibor cap-floor.</div>
 </td>
 </tr>
-<tr class="altColor" id="i60">
+<tr class="altColor" id="i78">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/cms/package-summary.html">com.opengamma.strata.pricer.cms</a></th>
 <td class="colLast">
 <div class="block">Calculators for CMS.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i61">
+<tr class="rowColor" id="i79">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/common/package-summary.html">com.opengamma.strata.pricer.common</a></th>
 <td class="colLast">
 <div class="block">Common code for pricing.</div>
 </td>
 </tr>
-<tr class="altColor" id="i62">
+<tr class="altColor" id="i80">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/credit/package-summary.html">com.opengamma.strata.pricer.credit</a></th>
 <td class="colLast">
 <div class="block">Calculators for credit instruments, such as Credit Default Swap (CDS).</div>
 </td>
 </tr>
-<tr class="rowColor" id="i63">
+<tr class="rowColor" id="i81">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/curve/package-summary.html">com.opengamma.strata.pricer.curve</a></th>
 <td class="colLast">
 <div class="block">Provides the ability to calibrate curves.</div>
 </td>
 </tr>
-<tr class="altColor" id="i64">
+<tr class="altColor" id="i82">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/deposit/package-summary.html">com.opengamma.strata.pricer.deposit</a></th>
 <td class="colLast">
 <div class="block">Calculators for rate deposit instruments, such as term deposit.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i65">
+<tr class="rowColor" id="i83">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/dsf/package-summary.html">com.opengamma.strata.pricer.dsf</a></th>
 <td class="colLast">
 <div class="block">Calculators for Deliverable Swap Futures (DSFs).</div>
 </td>
 </tr>
-<tr class="altColor" id="i66">
+<tr class="altColor" id="i84">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/fra/package-summary.html">com.opengamma.strata.pricer.fra</a></th>
 <td class="colLast">
 <div class="block">Calculators for Forward Rate Agreement (FRA) instruments.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i67">
+<tr class="rowColor" id="i85">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/fx/package-summary.html">com.opengamma.strata.pricer.fx</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX instruments, such as FX forward and FX swap.</div>
 </td>
 </tr>
-<tr class="altColor" id="i68">
+<tr class="altColor" id="i86">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/fxopt/package-summary.html">com.opengamma.strata.pricer.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX options.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i69">
+<tr class="rowColor" id="i87">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/cms/package-summary.html">com.opengamma.strata.pricer.impl.cms</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i88">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of option pricing.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i89">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate calculations.</div>
+</td>
+</tr>
+<tr class="altColor" id="i90">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/rate/model/package-summary.html">com.opengamma.strata.pricer.impl.rate.model</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of analytic models.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i91">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/rate/swap/package-summary.html">com.opengamma.strata.pricer.impl.rate.swap</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i92">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate swap calculations.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i93">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/tree/package-summary.html">com.opengamma.strata.pricer.impl.tree</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i94">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/volatility/local/package-summary.html">com.opengamma.strata.pricer.impl.volatility.local</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i95">
+<th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of volatility smile.</div>
+</td>
+</tr>
+<tr class="altColor" id="i96">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/index/package-summary.html">com.opengamma.strata.pricer.index</a></th>
 <td class="colLast">
 <div class="block">Calculators for products based on rate indices, such as Short Term Interest Rate futures (STIRs).</div>
 </td>
 </tr>
-<tr class="altColor" id="i70">
+<tr class="rowColor" id="i97">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/model/package-summary.html">com.opengamma.strata.pricer.model</a></th>
 <td class="colLast">
 <div class="block">Common code for model pricing.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i71">
+<tr class="altColor" id="i98">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/option/package-summary.html">com.opengamma.strata.pricer.option</a></th>
 <td class="colLast">
 <div class="block">Pricer support classes for options.</div>
 </td>
 </tr>
-<tr class="altColor" id="i72">
+<tr class="rowColor" id="i99">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/payment/package-summary.html">com.opengamma.strata.pricer.payment</a></th>
 <td class="colLast">
 <div class="block">Calculators for payment instruments.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i73">
+<tr class="altColor" id="i100">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/rate/package-summary.html">com.opengamma.strata.pricer.rate</a></th>
 <td class="colLast">
 <div class="block">Calculators for rates instruments, such as Forward Rate Agreement (FRA) and interest rate swap.</div>
 </td>
 </tr>
-<tr class="altColor" id="i74">
+<tr class="rowColor" id="i101">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/sensitivity/package-summary.html">com.opengamma.strata.pricer.sensitivity</a></th>
 <td class="colLast">
 <div class="block">Calculators for sensitivities.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i75">
+<tr class="altColor" id="i102">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/swap/package-summary.html">com.opengamma.strata.pricer.swap</a></th>
 <td class="colLast">
 <div class="block">Calculators for interest rate swaps.</div>
 </td>
 </tr>
-<tr class="altColor" id="i76">
+<tr class="rowColor" id="i103">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/pricer/swaption/package-summary.html">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i77">
+<tr class="altColor" id="i104">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/package-summary.html">com.opengamma.strata.product</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing trades and products in financial markets.</div>
 </td>
 </tr>
-<tr class="altColor" id="i78">
+<tr class="rowColor" id="i105">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/bond/package-summary.html">com.opengamma.strata.product.bond</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing bonds.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i79">
+<tr class="altColor" id="i106">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/capfloor/package-summary.html">com.opengamma.strata.product.capfloor</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Ibor cap/floor.</div>
 </td>
 </tr>
-<tr class="altColor" id="i80">
+<tr class="rowColor" id="i107">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/cms/package-summary.html">com.opengamma.strata.product.cms</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Constant Maturity Swap (CMS) or CMS cap/floor.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i81">
+<tr class="altColor" id="i108">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/common/package-summary.html">com.opengamma.strata.product.common</a></th>
 <td class="colLast">
 <div class="block">Entity objects shared between other packages.</div>
 </td>
 </tr>
-<tr class="altColor" id="i82">
+<tr class="rowColor" id="i109">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/credit/package-summary.html">com.opengamma.strata.product.credit</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Credit Default Swap (CDS) and CDS index.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i83">
+<tr class="altColor" id="i110">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/credit/type/package-summary.html">com.opengamma.strata.product.credit.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of credit instruments.</div>
 </td>
 </tr>
-<tr class="altColor" id="i84">
+<tr class="rowColor" id="i111">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/deposit/package-summary.html">com.opengamma.strata.product.deposit</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing financial instruments representing a simple deposit with interest.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i85">
+<tr class="altColor" id="i112">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/deposit/type/package-summary.html">com.opengamma.strata.product.deposit.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of deposits.</div>
 </td>
 </tr>
-<tr class="altColor" id="i86">
+<tr class="rowColor" id="i113">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/dsf/package-summary.html">com.opengamma.strata.product.dsf</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Deliverable Swap Futures (DSFs).</div>
 </td>
 </tr>
-<tr class="rowColor" id="i87">
+<tr class="altColor" id="i114">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/etd/package-summary.html">com.opengamma.strata.product.etd</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Exchange Traded Derivatives (ETDs).</div>
 </td>
 </tr>
-<tr class="altColor" id="i88">
+<tr class="rowColor" id="i115">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/fra/package-summary.html">com.opengamma.strata.product.fra</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a forward rate agreement (FRA).</div>
 </td>
 </tr>
-<tr class="rowColor" id="i89">
+<tr class="altColor" id="i116">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/fra/type/package-summary.html">com.opengamma.strata.product.fra.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of FRAs.</div>
 </td>
 </tr>
-<tr class="altColor" id="i90">
+<tr class="rowColor" id="i117">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/fx/package-summary.html">com.opengamma.strata.product.fx</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing financial instruments in the foreign exchange market.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i91">
+<tr class="altColor" id="i118">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/fx/type/package-summary.html">com.opengamma.strata.product.fx.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of foreign exchange products.</div>
 </td>
 </tr>
-<tr class="altColor" id="i92">
+<tr class="rowColor" id="i119">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/fxopt/package-summary.html">com.opengamma.strata.product.fxopt</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options in the foreign exchange market.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i93">
+<tr class="altColor" id="i120">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/index/package-summary.html">com.opengamma.strata.product.index</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing contracts based on rate indices.</div>
 </td>
 </tr>
-<tr class="altColor" id="i94">
+<tr class="rowColor" id="i121">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/index/type/package-summary.html">com.opengamma.strata.product.index.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of rate index products.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i95">
+<tr class="altColor" id="i122">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/option/package-summary.html">com.opengamma.strata.product.option</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing common option concepts.</div>
 </td>
 </tr>
-<tr class="altColor" id="i96">
+<tr class="rowColor" id="i123">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/payment/package-summary.html">com.opengamma.strata.product.payment</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing simple payment financial instruments.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i97">
+<tr class="altColor" id="i124">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/rate/package-summary.html">com.opengamma.strata.product.rate</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing the rate-based financial instruments.</div>
 </td>
 </tr>
-<tr class="altColor" id="i98">
+<tr class="rowColor" id="i125">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/swap/package-summary.html">com.opengamma.strata.product.swap</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a swap.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i99">
+<tr class="altColor" id="i126">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/swap/type/package-summary.html">com.opengamma.strata.product.swap.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of rate swaps.</div>
 </td>
 </tr>
-<tr class="altColor" id="i100">
+<tr class="rowColor" id="i127">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/product/swaption/package-summary.html">com.opengamma.strata.product.swaption</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options on swaps, known as swaptions.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i101">
+<tr class="altColor" id="i128">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/report/package-summary.html">com.opengamma.strata.report</a></th>
 <td class="colLast">
 <div class="block">Reporting Framework</div>
 </td>
 </tr>
-<tr class="altColor" id="i102">
+<tr class="rowColor" id="i129">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/report/cashflow/package-summary.html">com.opengamma.strata.report.cashflow</a></th>
 <td class="colLast">
 <div class="block">Types for reporting and formatting cashflows.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i103">
+<tr class="altColor" id="i130">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/report/framework/expression/package-summary.html">com.opengamma.strata.report.framework.expression</a></th>
 <td class="colLast">
 <div class="block">Provide the ability to extract data using textual expressions.</div>
 </td>
 </tr>
-<tr class="altColor" id="i104">
+<tr class="rowColor" id="i131">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/report/framework/format/package-summary.html">com.opengamma.strata.report.framework.format</a></th>
 <td class="colLast">
 <div class="block">Provide the ability to format calculated values.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i105">
+<tr class="altColor" id="i132">
 <th class="colFirst" scope="row"><a href="com/opengamma/strata/report/trade/package-summary.html">com.opengamma.strata.report.trade</a></th>
 <td class="colLast">
 <div class="block">Types for reporting and formatting trades.</div>
@@ -814,7 +915,7 @@ Strata consists of a number of modules:
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

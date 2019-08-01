@@ -114,30 +114,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate.swap">com.opengamma.strata.pricer.impl.rate.swap</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swap">com.opengamma.strata.pricer.swap</a></th>
 <td class="colLast">
 <div class="block">Calculators for interest rate swaps.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swaption">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.capfloor">com.opengamma.strata.product.capfloor</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Ibor cap/floor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.cms">com.opengamma.strata.product.cms</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Constant Maturity Swap (CMS) or CMS cap/floor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swap">com.opengamma.strata.product.swap</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a swap.</div>
@@ -167,6 +171,89 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   <a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a swap leg and amount.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.rate.swap">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a> in <a href="../../../pricer/impl/rate/swap/package-summary.html">com.opengamma.strata.pricer.impl.rate.swap</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/rate/swap/package-summary.html">com.opengamma.strata.pricer.impl.rate.swap</a> that return <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentFixedLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentFixedLeg</a></span>&#8203;(<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;fixedLeg,
+                          <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of fixed leg.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentIborLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentIborLeg</a></span>&#8203;(<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;iborLeg,
+                         <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of Ibor leg.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentSwap(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentSwap</a></span>&#8203;(<a href="../ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
+                      <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of swap.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/rate/swap/package-summary.html">com.opengamma.strata.pricer.impl.rate.swap</a> with parameters of type <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentAndSensitivityFixedLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentAndSensitivityFixedLeg</a></span>&#8203;(<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;fixedLeg,
+                                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent and sensitivity of fixed leg.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentAndSensitivityIborLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentAndSensitivityIborLeg</a></span>&#8203;(<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;iborLeg,
+                                       <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent and sensitivity of Ibor leg.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentFixedLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentFixedLeg</a></span>&#8203;(<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;fixedLeg,
+                          <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of fixed leg.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentIborLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentIborLeg</a></span>&#8203;(<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;iborLeg,
+                         <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of Ibor leg.</div>
 </td>
 </tr>
 </tbody>
@@ -384,7 +471,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedIborCapFloor.</span><code><span class="memberNameLink"><a href="../../capfloor/ResolvedIborCapFloor.html#getPayLeg()">getPayLeg</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional pay leg of the product.</div>
@@ -433,7 +520,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedCms.</span><code><span class="memberNameLink"><a href="../../cms/ResolvedCms.html#getPayLeg()">getPayLeg</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional pay leg of the product.</div>
@@ -525,12 +612,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedSwapLeg.Meta.</span><code><span class="memberNameLink"><a href="../ResolvedSwapLeg.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedSwap.</span><code><span class="memberNameLink"><a href="../ResolvedSwap.html#getLeg(com.opengamma.strata.product.common.PayReceive)">getLeg</a></span>&#8203;(<a href="../../common/PayReceive.html" title="enum in com.opengamma.strata.product.common">PayReceive</a>&nbsp;payReceive)</code></th>
 <td class="colLast">
 <div class="block">Gets the first pay or receive leg of the swap.</div>
@@ -551,14 +638,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedSwap.</span><code><span class="memberNameLink"><a href="../ResolvedSwap.html#getPayLeg()">getPayLeg</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the first pay leg of the swap.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedSwap.</span><code><span class="memberNameLink"><a href="../ResolvedSwap.html#getReceiveLeg()">getReceiveLeg</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the first receive leg of the swap.</div>
@@ -608,7 +695,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ResolvedSwap.Builder.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedSwap.Builder.</span><code><span class="memberNameLink"><a href="../ResolvedSwap.Builder.html#legs(java.util.List)">legs</a></span>&#8203;(java.util.List&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;&nbsp;legs)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedSwap.Builder.</span><code><span class="memberNameLink"><a href="../ResolvedSwap.Builder.html#legs(java.util.List)">legs</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&gt;&nbsp;legs)</code></th>
 <td class="colLast">
 <div class="block">Sets the legs of the swap.</div>
 </td>
@@ -668,7 +755,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

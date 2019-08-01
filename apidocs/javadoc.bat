@@ -1,0 +1,1 @@
+C:\apps\jdk11\bin\javadoc.exe -J-Xmx2048m -J-Xms512m --no-module-directories @options @packages

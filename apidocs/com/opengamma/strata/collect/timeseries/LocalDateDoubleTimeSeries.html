@@ -138,7 +138,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <p>
  Implementations must be immutable and thread-safe beans.
  <p>
- Note that <code>Double.NaN</code> is used internally as a sentinel
+ Note that <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true#NaN" title="class or interface in java.lang" class="externalLink"><code>Double.NaN</code></a> is used internally as a sentinel
  value and is therefore not allowed as a value.</div>
 </li>
 </ul>
@@ -168,7 +168,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static java.util.stream.Collector&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>,&#8203;<a href="LocalDateDoubleTimeSeriesBuilder.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeriesBuilder</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>,&#8203;<a href="LocalDateDoubleTimeSeriesBuilder.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeriesBuilder</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collector()">collector</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a collector that can be used to create a time-series from a stream of points.</div>
@@ -176,13 +176,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsDate(java.time.LocalDate)">containsDate</a></span>&#8203;(java.time.LocalDate&nbsp;date)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsDate(java.time.LocalDate)">containsDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Checks if this time-series contains a value for the specified date.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.stream.Stream&lt;java.time.LocalDate&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dates()">dates</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a stream over the dates of this time-series.</div>
@@ -197,27 +197,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(com.opengamma.strata.collect.function.ObjDoublePredicate)">filter</a></span>&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;java.time.LocalDate&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(com.opengamma.strata.collect.function.ObjDoublePredicate)">filter</a></span>&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Create a new time-series by filtering this one.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forEach(java.util.function.ObjDoubleConsumer)">forEach</a></span>&#8203;(java.util.function.ObjDoubleConsumer&lt;java.time.LocalDate&gt;&nbsp;action)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forEach(java.util.function.ObjDoubleConsumer)">forEach</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">ObjDoubleConsumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;action)</code></th>
 <td class="colLast">
 <div class="block">Applies an action to each pair in the time series.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.util.OptionalDouble</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(java.time.LocalDate)">get</a></span>&#8203;(java.time.LocalDate&nbsp;date)</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalDouble</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(java.time.LocalDate)">get</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Gets the value associated with the specified date.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>default java.time.LocalDate</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEarliestDate()">getEarliestDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the earliest date contained in this time-series.</div>
@@ -231,7 +231,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLatestDate()">getLatestDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the latest date contained in this time-series.</div>
@@ -254,7 +254,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>default <a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersection(com.opengamma.strata.collect.timeseries.LocalDateDoubleTimeSeries,java.util.function.DoubleBinaryOperator)">intersection</a></span>&#8203;(<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;other,
-            java.util.function.DoubleBinaryOperator&nbsp;mapper)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleBinaryOperator</a>&nbsp;mapper)</code></th>
 <td class="colLast">
 <div class="block">Obtains the intersection of a pair of time series.</div>
 </td>
@@ -268,7 +268,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapDates(java.util.function.Function)">mapDates</a></span>&#8203;(java.util.function.Function&lt;? super java.time.LocalDate,&#8203;? extends java.time.LocalDate&gt;&nbsp;mapper)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapDates(java.util.function.Function)">mapDates</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>,&#8203;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;mapper)</code></th>
 <td class="colLast">
 <div class="block">Applies an operation to each date in the time series which creates a new date, returning a new time series
  with the new dates and the points from this time series.</div>
@@ -276,14 +276,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapValues(java.util.function.DoubleUnaryOperator)">mapValues</a></span>&#8203;(java.util.function.DoubleUnaryOperator&nbsp;mapper)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapValues(java.util.function.DoubleUnaryOperator)">mapValues</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;mapper)</code></th>
 <td class="colLast">
 <div class="block">Applies an operation to each value in the time series.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,double)">of</a></span>&#8203;(java.time.LocalDate&nbsp;date,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,double)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date,
   double&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Obtains a time-series containing a single date and value.</div>
@@ -291,14 +291,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>default <a href="../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#partition(com.opengamma.strata.collect.function.ObjDoublePredicate)">partition</a></span>&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;java.time.LocalDate&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#partition(com.opengamma.strata.collect.function.ObjDoublePredicate)">partition</a></span>&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Partition the time-series into a pair of distinct series using a predicate.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>default <a href="../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#partitionByValue(java.util.function.DoublePredicate)">partitionByValue</a></span>&#8203;(java.util.function.DoublePredicate&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#partitionByValue(java.util.function.DoublePredicate)">partitionByValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoublePredicate</a>&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Partition the time-series into a pair of distinct series using a predicate.</div>
 </td>
@@ -311,7 +311,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>java.util.stream.Stream&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a stream over the points of this time-series.</div>
@@ -319,8 +319,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#subSeries(java.time.LocalDate,java.time.LocalDate)">subSeries</a></span>&#8203;(java.time.LocalDate&nbsp;startInclusive,
-         java.time.LocalDate&nbsp;endExclusive)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#subSeries(java.time.LocalDate,java.time.LocalDate)">subSeries</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startInclusive,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endExclusive)</code></th>
 <td class="colLast">
 <div class="block">Gets part of this series as a sub-series between two dates.</div>
 </td>
@@ -342,13 +342,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>default <a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#union(com.opengamma.strata.collect.timeseries.LocalDateDoubleTimeSeries,java.util.function.DoubleBinaryOperator)">union</a></span>&#8203;(<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;other,
-     java.util.function.DoubleBinaryOperator&nbsp;mapper)</code></th>
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleBinaryOperator</a>&nbsp;mapper)</code></th>
 <td class="colLast">
 <div class="block">Obtains the union of a pair of time series.</div>
 </td>
 </tr>
 <tr id="i26" class="altColor">
-<td class="colFirst"><code>java.util.stream.DoubleStream</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">DoubleStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a stream over the values of this time-series.</div>
@@ -392,7 +392,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;of&#8203;(java.time.LocalDate&nbsp;date,
+<pre class="methodSignature">static&nbsp;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date,
                                     double&nbsp;value)</pre>
 <div class="block">Obtains a time-series containing a single date and value.</div>
 <dl>
@@ -426,7 +426,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>collector</h4>
-<pre class="methodSignature">static&nbsp;java.util.stream.Collector&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>,&#8203;<a href="LocalDateDoubleTimeSeriesBuilder.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeriesBuilder</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;collector()</pre>
+<pre class="methodSignature">static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>,&#8203;<a href="LocalDateDoubleTimeSeriesBuilder.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeriesBuilder</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;collector()</pre>
 <div class="block">Returns a collector that can be used to create a time-series from a stream of points.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -468,7 +468,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>containsDate</h4>
-<pre class="methodSignature">boolean&nbsp;containsDate&#8203;(java.time.LocalDate&nbsp;date)</pre>
+<pre class="methodSignature">boolean&nbsp;containsDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</pre>
 <div class="block">Checks if this time-series contains a value for the specified date.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -484,10 +484,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature">java.util.OptionalDouble&nbsp;get&#8203;(java.time.LocalDate&nbsp;date)</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalDouble</a>&nbsp;get&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</pre>
 <div class="block">Gets the value associated with the specified date.
  <p>
- The result is an <code>OptionalDouble</code> which avoids the need to handle null
+ The result is an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>OptionalDouble</code></a> which avoids the need to handle null
  or exceptions. Use <code>isPresent()</code> to check whether the value is present.
  Use <code>orElse(double)</code> to default a missing value.</div>
 <dl>
@@ -504,15 +504,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getEarliestDate</h4>
-<pre class="methodSignature">default&nbsp;java.time.LocalDate&nbsp;getEarliestDate()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getEarliestDate()</pre>
 <div class="block">Get the earliest date contained in this time-series.
  <p>
- If the time-series is empty then <code>NoSuchElementException</code> will be thrown.</div>
+ If the time-series is empty then <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a> will be thrown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the earliest date contained in this time-series</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.util.NoSuchElementException</code> - if the time-series is empty</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a></code> - if the time-series is empty</dd>
 </dl>
 </li>
 </ul>
@@ -525,12 +525,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">default&nbsp;double&nbsp;getEarliestValue()</pre>
 <div class="block">Get the value held for the earliest date contained in this time-series.
  <p>
- If the time-series is empty then <code>NoSuchElementException</code> will be thrown.</div>
+ If the time-series is empty then <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a> will be thrown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value held for the earliest date contained in this time-series</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.util.NoSuchElementException</code> - if the time-series is empty</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a></code> - if the time-series is empty</dd>
 </dl>
 </li>
 </ul>
@@ -540,15 +540,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getLatestDate</h4>
-<pre class="methodSignature">java.time.LocalDate&nbsp;getLatestDate()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getLatestDate()</pre>
 <div class="block">Get the latest date contained in this time-series.
  <p>
- If the time-series is empty then <code>NoSuchElementException</code> will be thrown.</div>
+ If the time-series is empty then <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a> will be thrown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the latest date contained in this time-series</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.util.NoSuchElementException</code> - if the time-series is empty</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a></code> - if the time-series is empty</dd>
 </dl>
 </li>
 </ul>
@@ -561,12 +561,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">double&nbsp;getLatestValue()</pre>
 <div class="block">Get the value held for the latest date contained in this time-series.
  <p>
- If the time-series is empty then <code>NoSuchElementException</code> will be thrown.</div>
+ If the time-series is empty then <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a> will be thrown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value held for the latest date contained in this time-series</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.util.NoSuchElementException</code> - if the time-series is empty</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a></code> - if the time-series is empty</dd>
 </dl>
 </li>
 </ul>
@@ -576,8 +576,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>subSeries</h4>
-<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;subSeries&#8203;(java.time.LocalDate&nbsp;startInclusive,
-                                    java.time.LocalDate&nbsp;endExclusive)</pre>
+<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;subSeries&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startInclusive,
+                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endExclusive)</pre>
 <div class="block">Gets part of this series as a sub-series between two dates.
  <p>
  The date-times do not have to match exactly.
@@ -594,7 +594,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sub-series between the dates</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if the end is before the start</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the end is before the start</dd>
 </dl>
 </li>
 </ul>
@@ -615,7 +615,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sub-series of the requested size starting with the earliest entry</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if the number of items is less than zero</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the number of items is less than zero</dd>
 </dl>
 </li>
 </ul>
@@ -636,7 +636,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sub-series of the requested size ending with the latest entry</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if the number of items is less than zero</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the number of items is less than zero</dd>
 </dl>
 </li>
 </ul>
@@ -646,7 +646,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>stream</h4>
-<pre class="methodSignature">java.util.stream.Stream&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>&gt;&nbsp;stream()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="LocalDateDoublePoint.html" title="class in com.opengamma.strata.collect.timeseries">LocalDateDoublePoint</a>&gt;&nbsp;stream()</pre>
 <div class="block">Returns a stream over the points of this time-series.
  <p>
  This provides access to the entire time-series.</div>
@@ -662,7 +662,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>dates</h4>
-<pre class="methodSignature">java.util.stream.Stream&lt;java.time.LocalDate&gt;&nbsp;dates()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;dates()</pre>
 <div class="block">Returns a stream over the dates of this time-series.
  <p>
  This is most useful to summarize the dates in the stream, such as calculating
@@ -679,7 +679,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>values</h4>
-<pre class="methodSignature">java.util.stream.DoubleStream&nbsp;values()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">DoubleStream</a>&nbsp;values()</pre>
 <div class="block">Returns a stream over the values of this time-series.
  <p>
  This is most useful to summarize the values in the stream, such as calculating
@@ -696,7 +696,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>forEach</h4>
-<pre class="methodSignature">void&nbsp;forEach&#8203;(java.util.function.ObjDoubleConsumer&lt;java.time.LocalDate&gt;&nbsp;action)</pre>
+<pre class="methodSignature">void&nbsp;forEach&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">ObjDoubleConsumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;action)</pre>
 <div class="block">Applies an action to each pair in the time series.
  <p>
  This is generally used to apply a mathematical operation to the values.
@@ -716,7 +716,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>mapDates</h4>
-<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;mapDates&#8203;(java.util.function.Function&lt;? super java.time.LocalDate,&#8203;? extends java.time.LocalDate&gt;&nbsp;mapper)</pre>
+<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;mapDates&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>,&#8203;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;mapper)</pre>
 <div class="block">Applies an operation to each date in the time series which creates a new date, returning a new time series
  with the new dates and the points from this time series.
  <p>
@@ -741,7 +741,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>mapValues</h4>
-<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;mapValues&#8203;(java.util.function.DoubleUnaryOperator&nbsp;mapper)</pre>
+<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;mapValues&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;mapper)</pre>
 <div class="block">Applies an operation to each value in the time series.
  <p>
  This is generally used to apply a mathematical operation to the values.
@@ -763,7 +763,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>filter</h4>
-<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;filter&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;java.time.LocalDate&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature"><a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;filter&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;predicate)</pre>
 <div class="block">Create a new time-series by filtering this one.
  <p>
  The time-series can be filtered by both date and value.
@@ -784,7 +784,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>intersection</h4>
 <pre class="methodSignature">default&nbsp;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;intersection&#8203;(<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;other,
-                                               java.util.function.DoubleBinaryOperator&nbsp;mapper)</pre>
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleBinaryOperator</a>&nbsp;mapper)</pre>
 <div class="block">Obtains the intersection of a pair of time series.
  <p>
  This returns a time-series with the intersection of the dates of the two inputs.
@@ -806,7 +806,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>union</h4>
 <pre class="methodSignature">default&nbsp;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;union&#8203;(<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;other,
-                                        java.util.function.DoubleBinaryOperator&nbsp;mapper)</pre>
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleBinaryOperator</a>&nbsp;mapper)</pre>
 <div class="block">Obtains the union of a pair of time series.
  <p>
  This returns a time-series with the union of the dates of the two inputs.
@@ -827,7 +827,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>partition</h4>
-<pre class="methodSignature">default&nbsp;<a href="../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;partition&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;java.time.LocalDate&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;<a href="../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;partition&#8203;(<a href="../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;predicate)</pre>
 <div class="block">Partition the time-series into a pair of distinct series using a predicate.
  <p>
  Points in the time-series which match the predicate will be put into the first series,
@@ -848,7 +848,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>partitionByValue</h4>
-<pre class="methodSignature">default&nbsp;<a href="../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;partitionByValue&#8203;(java.util.function.DoublePredicate&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;<a href="../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;partitionByValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoublePredicate</a>&nbsp;predicate)</pre>
 <div class="block">Partition the time-series into a pair of distinct series using a predicate.
  <p>
  Points in the time-series whose values match the predicate will be put into the first series,
@@ -949,7 +949,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

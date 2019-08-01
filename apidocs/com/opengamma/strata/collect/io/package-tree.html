@@ -105,17 +105,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region">
 <h2 title="Class Hierarchy">Class Hierarchy</h2>
 <ul>
-<li class="circle">java.lang.Object
+<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Object</span></a>
 <ul>
 <li class="circle">com.opengamma.strata.collect.io.<a href="AsciiTable.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">AsciiTable</span></a></li>
 <li class="circle">com.google.common.io.<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><span class="typeNameLink">ByteSource</span></a>
 <ul>
-<li class="circle">com.opengamma.strata.collect.io.<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">ArrayByteSource</span></a></li>
+<li class="circle">com.opengamma.strata.collect.io.<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">BeanByteSource</span></a> (implements org.joda.beans.ImmutableBean)
+<ul>
+<li class="circle">com.opengamma.strata.collect.io.<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">ArrayByteSource</span></a> (implements org.joda.beans.ImmutableBean, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
+<li class="circle">com.opengamma.strata.collect.io.<a href="FileByteSource.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">FileByteSource</span></a> (implements org.joda.beans.ImmutableBean, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
+<li class="circle">com.opengamma.strata.collect.io.<a href="UriByteSource.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">UriByteSource</span></a> (implements org.joda.beans.ImmutableBean, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="circle">com.opengamma.strata.collect.io.<a href="CharSources.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CharSources</span></a></li>
 <li class="circle">com.opengamma.strata.collect.io.<a href="CsvFile.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CsvFile</span></a></li>
-<li class="circle">com.opengamma.strata.collect.io.<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CsvIterator</span></a> (implements java.lang.AutoCloseable, com.google.common.collect.<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;E&gt;)</li>
+<li class="circle">com.opengamma.strata.collect.io.<a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CsvIterator</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a>, com.google.common.collect.<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/PeekingIterator.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">PeekingIterator</a>&lt;E&gt;)</li>
 <li class="circle">com.opengamma.strata.collect.io.<a href="CsvOutput.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CsvOutput</span></a></li>
 <li class="circle">com.opengamma.strata.collect.io.<a href="CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CsvOutput.CsvRowOutputWithHeaders</span></a></li>
 <li class="circle">com.opengamma.strata.collect.io.<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io"><span class="typeNameLink">CsvRow</span></a></li>
@@ -134,9 +140,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region">
 <h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>
-<li class="circle">java.lang.Object
+<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Object</span></a>
 <ul>
-<li class="circle">java.lang.Enum&lt;E&gt; (implements java.lang.Comparable&lt;T&gt;, java.io.Serializable)
+<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Enum</span></a>&lt;E&gt; (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)
 <ul>
 <li class="circle">com.opengamma.strata.collect.io.<a href="AsciiTableAlignment.html" title="enum in com.opengamma.strata.collect.io"><span class="typeNameLink">AsciiTableAlignment</span></a> (implements com.opengamma.strata.collect.named.<a href="../named/NamedEnum.html" title="interface in com.opengamma.strata.collect.named">NamedEnum</a>)</li>
 </ul>
@@ -193,7 +199,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

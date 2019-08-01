@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>com.opengamma.strata.product.swap.IborRateCalculation</li>
@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="RateCalculation.html" title="interface in com.opengamma.strata.product.swap">RateCalculation</a></code>, <code>java.io.Serializable</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="RateCalculation.html" title="interface in com.opengamma.strata.product.swap">RateCalculation</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">IborRateCalculation</span>
-extends java.lang.Object
-implements <a href="RateCalculation.html" title="interface in com.opengamma.strata.product.swap">RateCalculation</a>, org.joda.beans.ImmutableBean, java.io.Serializable</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements <a href="RateCalculation.html" title="interface in com.opengamma.strata.product.swap">RateCalculation</a>, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">Defines the calculation of a floating rate swap leg based on an Ibor index.
  <p>
  This defines the data necessary to calculate the amount payable on the leg.
@@ -242,7 +242,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -253,28 +253,28 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFinalStub()">getFinalStub</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the rate to be used in final stub, optional.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirstFixingDateOffset()">getFirstFixingDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the first fixing date from the first adjusted reset date, optional.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>java.util.OptionalDouble</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalDouble</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirstRate()">getFirstRate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the rate of the first reset period, which may be a stub, optional.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>java.util.OptionalDouble</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalDouble</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirstRegularRate()">getFirstRegularRate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the rate of the first regular reset period, optional.</div>
@@ -295,7 +295,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGearing()">getGearing</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the gearing multiplier, optional.</div>
@@ -309,7 +309,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInitialStub()">getInitialStub</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the rate to be used in initial stub, optional.</div>
@@ -323,14 +323,14 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="ResetSchedule.html" title="class in com.opengamma.strata.product.swap">ResetSchedule</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ResetSchedule.html" title="class in com.opengamma.strata.product.swap">ResetSchedule</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResetPeriods()">getResetPeriods</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the reset schedule, used when averaging rates, optional.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpread()">getSpread</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the spread rate, with a 5% rate expressed as 0.05, optional.</div>
@@ -375,7 +375,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -384,8 +384,8 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
@@ -599,7 +599,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getResetPeriods</h4>
-<pre class="methodSignature">public&nbsp;java.util.Optional&lt;<a href="ResetSchedule.html" title="class in com.opengamma.strata.product.swap">ResetSchedule</a>&gt;&nbsp;getResetPeriods()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ResetSchedule.html" title="class in com.opengamma.strata.product.swap">ResetSchedule</a>&gt;&nbsp;getResetPeriods()</pre>
 <div class="block">Gets the reset schedule, used when averaging rates, optional.
  <p>
  Most swaps have a single fixing for each accrual period.
@@ -680,7 +680,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getFirstRegularRate</h4>
-<pre class="methodSignature">public&nbsp;java.util.OptionalDouble&nbsp;getFirstRegularRate()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalDouble</a>&nbsp;getFirstRegularRate()</pre>
 <div class="block">Gets the rate of the first regular reset period, optional.
  A 5% rate will be expressed as 0.05.
  <p>
@@ -708,7 +708,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getFirstRate</h4>
-<pre class="methodSignature">public&nbsp;java.util.OptionalDouble&nbsp;getFirstRate()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalDouble</a>&nbsp;getFirstRate()</pre>
 <div class="block">Gets the rate of the first reset period, which may be a stub, optional.
  A 5% rate will be expressed as 0.05.
  <p>
@@ -739,7 +739,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getFirstFixingDateOffset</h4>
-<pre class="methodSignature">public&nbsp;java.util.Optional&lt;<a href="../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&gt;&nbsp;getFirstFixingDateOffset()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&gt;&nbsp;getFirstFixingDateOffset()</pre>
 <div class="block">Gets the offset of the first fixing date from the first adjusted reset date, optional.
  <p>
  If present, this offset is used instead of <code>fixingDateOffset</code> for the first
@@ -762,7 +762,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getInitialStub</h4>
-<pre class="methodSignature">public&nbsp;java.util.Optional&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;&nbsp;getInitialStub()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;&nbsp;getInitialStub()</pre>
 <div class="block">Gets the rate to be used in initial stub, optional.
  <p>
  The initial stub of a swap may have different rate rules to the regular accrual periods.
@@ -784,7 +784,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getFinalStub</h4>
-<pre class="methodSignature">public&nbsp;java.util.Optional&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;&nbsp;getFinalStub()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="IborRateStubCalculation.html" title="class in com.opengamma.strata.product.swap">IborRateStubCalculation</a>&gt;&nbsp;getFinalStub()</pre>
 <div class="block">Gets the rate to be used in final stub, optional.
  <p>
  The final stub of a swap may have different rate rules to the regular accrual periods.
@@ -806,7 +806,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getGearing</h4>
-<pre class="methodSignature">public&nbsp;java.util.Optional&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;&nbsp;getGearing()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;&nbsp;getGearing()</pre>
 <div class="block">Gets the gearing multiplier, optional.
  <p>
  This defines the gearing as an initial value and a list of adjustments.
@@ -831,7 +831,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpread</h4>
-<pre class="methodSignature">public&nbsp;java.util.Optional&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;&nbsp;getSpread()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/value/ValueSchedule.html" title="class in com.opengamma.strata.basics.value">ValueSchedule</a>&gt;&nbsp;getSpread()</pre>
 <div class="block">Gets the spread rate, with a 5% rate expressed as 0.05, optional.
  <p>
  This defines the spread as an initial value and a list of adjustments.
@@ -871,10 +871,10 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;obj)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -887,7 +887,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -897,10 +897,10 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -974,7 +974,7 @@ implements <a href="RateCalculation.html" title="interface in com.opengamma.stra
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

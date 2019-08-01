@@ -130,11 +130,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code>java.util.function.Function&lt;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>,&#8203;R&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>,&#8203;R&gt;</code></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../impl/linearalgebra/CholeskyDecompositionCommons.html" title="class in com.opengamma.strata.math.impl.linearalgebra">CholeskyDecompositionCommons</a></code>, <code><a href="../impl/linearalgebra/CholeskyDecompositionOpenGamma.html" title="class in com.opengamma.strata.math.impl.linearalgebra">CholeskyDecompositionOpenGamma</a></code>, <code><a href="../impl/linearalgebra/LUDecompositionCommons.html" title="class in com.opengamma.strata.math.impl.linearalgebra">LUDecompositionCommons</a></code>, <code><a href="../impl/linearalgebra/QRDecompositionCommons.html" title="class in com.opengamma.strata.math.impl.linearalgebra">QRDecompositionCommons</a></code>, <code><a href="../impl/linearalgebra/SVDecompositionCommons.html" title="class in com.opengamma.strata.math.impl.linearalgebra">SVDecompositionCommons</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">Decomposition&lt;R extends <a href="DecompositionResult.html" title="interface in com.opengamma.strata.math.linearalgebra">DecompositionResult</a>&gt;</span>
-extends java.util.function.Function&lt;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>,&#8203;R&gt;</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>,&#8203;R&gt;</pre>
 <div class="block">Base interface for matrix decompositions, such as SVD and LU.</div>
 </li>
 </ul>
@@ -168,8 +172,8 @@ extends java.util.function.Function&lt;<a href="../../collect/array/DoubleMatrix
 <li class="blockList"><a id="methods.inherited.from.class.java.util.function.Function">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.function.Function</h3>
-<code>andThen, compose</code></li>
+<h3>Methods inherited from interface&nbsp;java.util.function.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#andThen(java.util.function.Function)" title="class or interface in java.util.function" class="externalLink">andThen</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#compose(java.util.function.Function)" title="class or interface in java.util.function" class="externalLink">compose</a></code></li>
 </ul>
 </li>
 </ul>
@@ -197,7 +201,7 @@ extends java.util.function.Function&lt;<a href="../../collect/array/DoubleMatrix
 <div class="block">Applies this function to the given argument.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>apply</code>&nbsp;in interface&nbsp;<code>java.util.function.Function&lt;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>,&#8203;<a href="Decomposition.html" title="type parameter in Decomposition">R</a> extends <a href="DecompositionResult.html" title="interface in com.opengamma.strata.math.linearalgebra">DecompositionResult</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink">apply</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>,&#8203;<a href="Decomposition.html" title="type parameter in Decomposition">R</a> extends <a href="DecompositionResult.html" title="interface in com.opengamma.strata.math.linearalgebra">DecompositionResult</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - the input matrix</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -275,7 +279,7 @@ extends java.util.function.Function&lt;<a href="../../collect/array/DoubleMatrix
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

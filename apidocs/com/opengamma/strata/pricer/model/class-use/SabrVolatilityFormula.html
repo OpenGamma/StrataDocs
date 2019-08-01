@@ -114,12 +114,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.volatility.smile">com.opengamma.strata.pricer.impl.volatility.smile</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of volatility smile.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.model">com.opengamma.strata.pricer.model</a></th>
 <td class="colLast">
 <div class="block">Common code for model pricing.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swaption">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
@@ -408,6 +414,50 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.volatility.smile">
+<!--   -->
+</a>
+<h3>Uses of <a href="../SabrVolatilityFormula.html" title="interface in com.opengamma.strata.pricer.model">SabrVolatilityFormula</a> in <a href="../../impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a> that implement <a href="../SabrVolatilityFormula.html" title="interface in com.opengamma.strata.pricer.model">SabrVolatilityFormula</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/volatility/smile/SabrHaganVolatilityFunctionProvider.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">SabrHaganVolatilityFunctionProvider</a></span></code></th>
+<td class="colLast">
+<div class="block">The Hagan SABR volatility function provider.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Constructors in <a href="../../impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a> with parameters of type <a href="../SabrVolatilityFormula.html" title="interface in com.opengamma.strata.pricer.model">SabrVolatilityFormula</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/volatility/smile/SabrModelFitter.html#%3Cinit%3E(double,com.opengamma.strata.collect.array.DoubleArray,double,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.pricer.model.SabrVolatilityFormula)">SabrModelFitter</a></span>&#8203;(double&nbsp;forward,
+               <a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;strikes,
+               double&nbsp;timeToExpiry,
+               <a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;impliedVols,
+               <a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;error,
+               <a href="../SabrVolatilityFormula.html" title="interface in com.opengamma.strata.pricer.model">SabrVolatilityFormula</a>&nbsp;sabrVolatilityFormula)</code></th>
+<td class="colLast">
+<div class="block">Constructs SABR model fitter from forward, strikes, time to expiry, implied volatilities and error values.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
 <section role="region"><a id="com.opengamma.strata.pricer.model">
 <!--   -->
 </a>
@@ -586,7 +636,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

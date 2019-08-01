@@ -140,21 +140,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>&lt;U,&#8203;R&gt;<br><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combinedWith(com.opengamma.strata.collect.result.ValueWithFailures,java.util.function.BiFunction)">combinedWith</a></span>&#8203;(<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;U&gt;&nbsp;other,
-            java.util.function.BiFunction&lt;<a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;U,&#8203;R&gt;&nbsp;combiner)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;U,&#8203;R&gt;&nbsp;combiner)</code></th>
 <td class="colLast">
 <div class="block">Combines this instance with another.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combineValuesAsList(java.lang.Iterable)">combineValuesAsList</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;&gt;&nbsp;items)</code></th>
+<td class="colLast">
+<div class="block">Combines separate instances of <code>ValueWithFailure</code> into a single instance,
+ using a list to collect the values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combineValuesAsSet(java.lang.Iterable)">combineValuesAsSet</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;&gt;&nbsp;items)</code></th>
+<td class="colLast">
+<div class="block">Combines separate instances of <code>ValueWithFailure</code> into a single instance,
+ using a set to collect the values.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(java.util.function.Function&lt;? super <a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;&gt;&nbsp;function)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes the value by applying a function that returns another result.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#map(java.util.function.Function)">map</a></span>&#8203;(java.util.function.Function&lt;? super <a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;? extends R&gt;&nbsp;function)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#map(java.util.function.Function)">map</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;? extends R&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes the value by applying a function that alters the value.</div>
 </td>
@@ -170,7 +186,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#of(T,java.util.function.Supplier)">of</a></span>&#8203;(T&nbsp;emptyValue,
-  java.util.function.Supplier&lt;T&gt;&nbsp;supplier)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;T&gt;&nbsp;supplier)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance using a supplier.</div>
 </td>
@@ -178,14 +194,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#of(T,java.util.List)">of</a></span>&#8203;(T&nbsp;successValue,
-  java.util.List&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;failures)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;failures)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance wrapping the success value and failures.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#withAdditionalFailures(java.util.List)">withAdditionalFailures</a></span>&#8203;(java.util.List&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;additionalFailures)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#withAdditionalFailures(java.util.List)">withAdditionalFailures</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;additionalFailures)</code></th>
 <td class="colLast">
 <div class="block">Returns a new instance with the specified failures, retaining the current value.</div>
 </td>
@@ -207,7 +223,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#withValue(R,java.util.List)">withValue</a></span>&#8203;(R&nbsp;value,
-         java.util.List&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;additionalFailures)</code></th>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;additionalFailures)</code></th>
 <td class="colLast">
 <div class="block">Returns a new instance with the specified value, combining the failures.</div>
 </td>
@@ -223,7 +239,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../ValueWithFailures.Meta.html" title="type parameter in ValueWithFailures.Meta">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../ValueWithFailures.Meta.html" title="type parameter in ValueWithFailures.Meta">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.Meta.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -233,29 +249,61 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.function.BinaryOperator&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combiningValues(java.util.function.BinaryOperator)">combiningValues</a></span>&#8203;(java.util.function.BinaryOperator&lt;T&gt;&nbsp;combiner)</code></th>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combiningValues(java.util.function.BinaryOperator)">combiningValues</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;T&gt;&nbsp;combiner)</code></th>
 <td class="colLast">
 <div class="block">Returns a <code>BinaryOperator</code> that combines <code>ValueWithFailures</code> objects using the provided combiner
  function.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
-                   java.util.function.BinaryOperator&lt;T&gt;&nbsp;operator)</code></th>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsList()">toCombinedValuesAsList</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a collector that can be used to create a ValueWithFailure instance from a stream of ValueWithFailure
- instances.</div>
+<div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
+ of separate instances, combining into an immutable list.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.stream.Collector&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
-                   java.util.function.BinaryOperator&lt;T&gt;&nbsp;operator)</code></th>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsList()">toCombinedValuesAsList</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a collector that can be used to create a ValueWithFailure instance from a stream of ValueWithFailure
- instances.</div>
+<div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
+ of separate instances, combining into an immutable list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsSet()">toCombinedValuesAsSet</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
+ of separate instances, combining into an immutable set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsSet()">toCombinedValuesAsSet</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
+ of separate instances, combining into an immutable set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;T&gt;&nbsp;operator)</code></th>
+<td class="colLast">
+<div class="block">Returns a collector that can be used to create a combined <code>ValueWithFailure</code>
+ from a stream of separate instances.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;T&gt;&nbsp;operator)</code></th>
+<td class="colLast">
+<div class="block">Returns a collector that can be used to create a combined <code>ValueWithFailure</code>
+ from a stream of separate instances.</div>
 </td>
 </tr>
 </tbody>
@@ -271,7 +319,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>&lt;U,&#8203;R&gt;<br><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combinedWith(com.opengamma.strata.collect.result.ValueWithFailures,java.util.function.BiFunction)">combinedWith</a></span>&#8203;(<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;U&gt;&nbsp;other,
-            java.util.function.BiFunction&lt;<a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;U,&#8203;R&gt;&nbsp;combiner)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;U,&#8203;R&gt;&nbsp;combiner)</code></th>
 <td class="colLast">
 <div class="block">Combines this instance with another.</div>
 </td>
@@ -294,8 +342,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combineValuesAsList(java.lang.Iterable)">combineValuesAsList</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;&gt;&nbsp;items)</code></th>
+<td class="colLast">
+<div class="block">Combines separate instances of <code>ValueWithFailure</code> into a single instance,
+ using a list to collect the values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#combineValuesAsSet(java.lang.Iterable)">combineValuesAsSet</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;&gt;&nbsp;items)</code></th>
+<td class="colLast">
+<div class="block">Combines separate instances of <code>ValueWithFailure</code> into a single instance,
+ using a set to collect the values.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(java.util.function.Function&lt;? super <a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;&gt;&nbsp;function)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="../ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes the value by applying a function that returns another result.</div>
 </td>
@@ -318,96 +382,96 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#load(com.opengamma.strata.collect.io.ResourceLocator...)">load</a></span>&#8203;(<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>...&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format position files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(java.util.Collection&lt;<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format position files.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(java.util.Collection&lt;<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format sensitivities files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#load(com.opengamma.strata.collect.io.ResourceLocator...)">load</a></span>&#8203;(<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>...&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format trade files.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(java.util.Collection&lt;<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#load(java.util.Collection)">load</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../../io/ResourceLocator.html" title="class in com.opengamma.strata.collect.io">ResourceLocator</a>&gt;&nbsp;resources)</code></th>
 <td class="colLast">
 <div class="block">Loads one or more CSV format trade files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files, returning ETD futures and
  options using information from reference data.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;<br><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
-     java.lang.Class&lt;T&gt;&nbsp;positionType)</code></th>
+<td class="colFirst"><code>&lt;T extends <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;<br><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;positionType)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;java.lang.String,&#8203;<a href="../../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ListMultimap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ListMultimap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files, returning sensitivities.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;<br><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
-     java.lang.Class&lt;T&gt;&nbsp;tradeType)</code></th>
+<td class="colFirst"><code>&lt;T extends <a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;<br><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.lang.Class)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;tradeType)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files with a quiet type filter.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.util.List)">parse</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
-     java.util.List&lt;java.lang.Class&lt;? extends <a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;&nbsp;tradeTypes)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvLoader.html#parse(java.util.Collection,java.util.List)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&gt;&nbsp;tradeTypes)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format trade files with an error-creating type filter.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="../../../market/sensitivity/CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parseAndMerge(java.util.Collection)">parseAndMerge</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SensitivityCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/SensitivityCsvLoader.html#parseAndMerge(java.util.Collection)">parseAndMerge</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block">Parses one or more CSV format position files, merging the result to a single sensitivities instance.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;java.util.List&lt;<a href="../../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#parseLightweight(java.util.Collection)">parseLightweight</a></span>&#8203;(java.util.Collection&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
+<td class="colFirst"><code><a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvLoader.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvLoader.html#parseLightweight(java.util.Collection)">parseLightweight</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&gt;&nbsp;charSources)</code></th>
 <td class="colLast">
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
 <div class="deprecationComment">Use <a href="../../../loader/csv/LightweightPositionCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv"><code>LightweightPositionCsvInfoResolver</code></a> instead</div>
@@ -469,7 +533,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

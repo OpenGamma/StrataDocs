@@ -108,6 +108,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.option">com.opengamma.strata.pricer.impl.option</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of option pricing.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.option">com.opengamma.strata.product.option</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing common option concepts.</div>
@@ -118,6 +124,99 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.option">
+<!--   -->
+</a>
+<h3>Uses of <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a> in <a href="../../../pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a> with parameters of type <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackBarrierPriceFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackBarrierPriceFormulaRepository.html#price(double,double,double,double,double,double,boolean,com.opengamma.strata.product.option.SimpleConstantContinuousBarrier)">price</a></span>&#8203;(double&nbsp;spot,
+     double&nbsp;strike,
+     double&nbsp;timeToExpiry,
+     double&nbsp;costOfCarry,
+     double&nbsp;rate,
+     double&nbsp;lognormalVol,
+     boolean&nbsp;isCall,
+     <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&nbsp;barrier)</code></th>
+<td class="colLast">
+<div class="block">Computes the price of a barrier option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackOneTouchAssetPriceFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackOneTouchAssetPriceFormulaRepository.html#price(double,double,double,double,double,com.opengamma.strata.product.option.SimpleConstantContinuousBarrier)">price</a></span>&#8203;(double&nbsp;spot,
+     double&nbsp;timeToExpiry,
+     double&nbsp;costOfCarry,
+     double&nbsp;rate,
+     double&nbsp;lognormalVol,
+     <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&nbsp;barrier)</code></th>
+<td class="colLast">
+<div class="block">Computes the price of a one-touch/no-touch option.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackOneTouchCashPriceFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackOneTouchCashPriceFormulaRepository.html#price(double,double,double,double,double,com.opengamma.strata.product.option.SimpleConstantContinuousBarrier)">price</a></span>&#8203;(double&nbsp;spot,
+     double&nbsp;timeToExpiry,
+     double&nbsp;costOfCarry,
+     double&nbsp;rate,
+     double&nbsp;lognormalVol,
+     <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&nbsp;barrier)</code></th>
+<td class="colLast">
+<div class="block">Computes the price of a one-touch/no-touch option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackBarrierPriceFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackBarrierPriceFormulaRepository.html#priceAdjoint(double,double,double,double,double,double,boolean,com.opengamma.strata.product.option.SimpleConstantContinuousBarrier)">priceAdjoint</a></span>&#8203;(double&nbsp;spot,
+            double&nbsp;strike,
+            double&nbsp;timeToExpiry,
+            double&nbsp;costOfCarry,
+            double&nbsp;rate,
+            double&nbsp;lognormalVol,
+            boolean&nbsp;isCall,
+            <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&nbsp;barrier)</code></th>
+<td class="colLast">
+<div class="block">Computes the price and derivatives of a barrier option.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackOneTouchAssetPriceFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackOneTouchAssetPriceFormulaRepository.html#priceAdjoint(double,double,double,double,double,com.opengamma.strata.product.option.SimpleConstantContinuousBarrier)">priceAdjoint</a></span>&#8203;(double&nbsp;spot,
+            double&nbsp;timeToExpiry,
+            double&nbsp;costOfCarry,
+            double&nbsp;rate,
+            double&nbsp;lognormalVol,
+            <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&nbsp;barrier)</code></th>
+<td class="colLast">
+<div class="block">Computes the price and derivatives of a one-touch/no-touch option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackOneTouchCashPriceFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackOneTouchCashPriceFormulaRepository.html#priceAdjoint(double,double,double,double,double,com.opengamma.strata.product.option.SimpleConstantContinuousBarrier)">priceAdjoint</a></span>&#8203;(double&nbsp;spot,
+            double&nbsp;timeToExpiry,
+            double&nbsp;costOfCarry,
+            double&nbsp;rate,
+            double&nbsp;lognormalVol,
+            <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&nbsp;barrier)</code></th>
+<td class="colLast">
+<div class="block">Computes the price and derivatives of a one-touch/no-touch option.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.product.option">
 <!--   -->
@@ -156,7 +255,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../SimpleConstantContinuousBarrier.html" title="class in com.opengamma.strata.product.option">SimpleConstantContinuousBarrier</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SimpleConstantContinuousBarrier.Meta.</span><code><span class="memberNameLink"><a href="../SimpleConstantContinuousBarrier.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -220,7 +319,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="DirectIborCapletFloorletVolatilityDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">DirectIborCapletFloorletVolatilityDefinition</a></code>, <code><a href="SabrIborCapletFloorletVolatilityBootstrapDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SabrIborCapletFloorletVolatilityBootstrapDefinition</a></code>, <code><a href="SabrIborCapletFloorletVolatilityCalibrationDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SabrIborCapletFloorletVolatilityCalibrationDefinition</a></code>, <code><a href="SurfaceIborCapletFloorletVolatilityBootstrapDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SurfaceIborCapletFloorletVolatilityBootstrapDefinition</a></code></dd>
+<dd><code><a href="DirectIborCapletFloorletFlatVolatilityDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">DirectIborCapletFloorletFlatVolatilityDefinition</a></code>, <code><a href="DirectIborCapletFloorletVolatilityDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">DirectIborCapletFloorletVolatilityDefinition</a></code>, <code><a href="SabrIborCapletFloorletVolatilityBootstrapDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SabrIborCapletFloorletVolatilityBootstrapDefinition</a></code>, <code><a href="SabrIborCapletFloorletVolatilityCalibrationDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SabrIborCapletFloorletVolatilityCalibrationDefinition</a></code>, <code><a href="SurfaceIborCapletFloorletVolatilityBootstrapDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SurfaceIborCapletFloorletVolatilityBootstrapDefinition</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">IborCapletFloorletVolatilityDefinition</span></pre>
@@ -153,8 +153,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default <a href="../../product/capfloor/IborCapFloorLeg.html" title="class in com.opengamma.strata.product.capfloor">IborCapFloorLeg</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createCap(java.time.LocalDate,java.time.LocalDate,double)">createCap</a></span>&#8203;(java.time.LocalDate&nbsp;startDate,
-         java.time.LocalDate&nbsp;endDate,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createCap(java.time.LocalDate,java.time.LocalDate,double)">createCap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
          double&nbsp;strike)</code></th>
 <td class="colLast">
 <div class="block">Creates a standard cap from start date, end date and strike.</div>
@@ -269,8 +269,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createCap</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../product/capfloor/IborCapFloorLeg.html" title="class in com.opengamma.strata.product.capfloor">IborCapFloorLeg</a>&nbsp;createCap&#8203;(java.time.LocalDate&nbsp;startDate,
-                                  java.time.LocalDate&nbsp;endDate,
+<pre class="methodSignature">default&nbsp;<a href="../../product/capfloor/IborCapFloorLeg.html" title="class in com.opengamma.strata.product.capfloor">IborCapFloorLeg</a>&nbsp;createCap&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
                                   double&nbsp;strike)</pre>
 <div class="block">Creates a standard cap from start date, end date and strike.</div>
 <dl>
@@ -353,7 +353,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

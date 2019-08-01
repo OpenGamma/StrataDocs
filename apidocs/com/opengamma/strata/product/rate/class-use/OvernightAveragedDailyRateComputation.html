@@ -108,6 +108,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate">com.opengamma.strata.pricer.impl.rate</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate calculations.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.rate">com.opengamma.strata.product.rate</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing the rate-based financial instruments.</div>
@@ -118,6 +124,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.rate">
+<!--   -->
+</a>
+<h3>Uses of <a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a> in <a href="../../../pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a> with parameters of type <a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ForwardOvernightAveragedDailyRateComputationFn.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/ForwardOvernightAveragedDailyRateComputationFn.html#explainRate(com.opengamma.strata.product.rate.OvernightAveragedDailyRateComputation,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.market.explain.ExplainMapBuilder)">explainRate</a></span>&#8203;(<a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&nbsp;computation,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+           <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
+           <a href="../../../market/explain/ExplainMapBuilder.html" title="class in com.opengamma.strata.market.explain">ExplainMapBuilder</a>&nbsp;builder)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ForwardOvernightAveragedDailyRateComputationFn.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/ForwardOvernightAveragedDailyRateComputationFn.html#rate(com.opengamma.strata.product.rate.OvernightAveragedDailyRateComputation,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.pricer.rate.RatesProvider)">rate</a></span>&#8203;(<a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&nbsp;computation,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+    <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ForwardOvernightAveragedDailyRateComputationFn.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/ForwardOvernightAveragedDailyRateComputationFn.html#rateSensitivity(com.opengamma.strata.product.rate.OvernightAveragedDailyRateComputation,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.pricer.rate.RatesProvider)">rateSensitivity</a></span>&#8203;(<a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&nbsp;computation,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+               <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.product.rate">
 <!--   -->
@@ -139,8 +187,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">OvernightAveragedDailyRateComputation.</span><code><span class="memberNameLink"><a href="../OvernightAveragedDailyRateComputation.html#of(com.opengamma.strata.basics.index.OvernightIndex,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">of</a></span>&#8203;(<a href="../../../basics/index/OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a>&nbsp;index,
-  java.time.LocalDate&nbsp;startDate,
-  java.time.LocalDate&nbsp;endDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
   <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance from an index and accrual period dates</div>
@@ -157,7 +205,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">OvernightAveragedDailyRateComputation.Meta.</span><code><span class="memberNameLink"><a href="../OvernightAveragedDailyRateComputation.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -216,7 +264,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

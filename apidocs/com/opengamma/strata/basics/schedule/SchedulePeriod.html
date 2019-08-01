@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>com.opengamma.strata.basics.schedule.SchedulePeriod</li>
@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.io.Serializable</code>, <code>java.lang.Comparable&lt;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&gt;</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&gt;</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">SchedulePeriod</span>
-extends java.lang.Object
-implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&gt;, java.io.Serializable</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">A period in a schedule.
  <p>
  This consists of a single period (date range) within a schedule.
@@ -228,39 +228,39 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.time.LocalDate)">contains</a></span>&#8203;(java.time.LocalDate&nbsp;date)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.time.LocalDate)">contains</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Checks if this period contains the specified date.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEndDate()">getEndDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the end date of this period, used for financial calculations such as interest accrual.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStartDate()">getStartDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the start date of this period, used for financial calculations such as interest accrual.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnadjustedEndDate()">getUnadjustedEndDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the unadjusted end date.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnadjustedStartDate()">getUnadjustedStartDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the unadjusted start date.</div>
@@ -280,7 +280,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>java.time.Period</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#length()">length</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the length of the period.</div>
@@ -307,18 +307,18 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,java.time.LocalDate)">of</a></span>&#8203;(java.time.LocalDate&nbsp;startDate,
-  java.time.LocalDate&nbsp;endDate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,java.time.LocalDate)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from two dates.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,java.time.LocalDate,java.time.LocalDate,java.time.LocalDate)">of</a></span>&#8203;(java.time.LocalDate&nbsp;startDate,
-  java.time.LocalDate&nbsp;endDate,
-  java.time.LocalDate&nbsp;unadjustedStartDate,
-  java.time.LocalDate&nbsp;unadjustedEndDate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,java.time.LocalDate,java.time.LocalDate,java.time.LocalDate)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedStartDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedEndDate)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the adjusted and unadjusted dates.</div>
 </td>
@@ -348,7 +348,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 </td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -372,8 +372,8 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
@@ -404,10 +404,10 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&nbsp;of&#8203;(java.time.LocalDate&nbsp;startDate,
-                                java.time.LocalDate&nbsp;endDate,
-                                java.time.LocalDate&nbsp;unadjustedStartDate,
-                                java.time.LocalDate&nbsp;unadjustedEndDate)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedStartDate,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedEndDate)</pre>
 <div class="block">Obtains an instance from the adjusted and unadjusted dates.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -426,8 +426,8 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&nbsp;of&#8203;(java.time.LocalDate&nbsp;startDate,
-                                java.time.LocalDate&nbsp;endDate)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate)</pre>
 <div class="block">Obtains an instance from two dates.
  <p>
  This factory is used when there is no business day adjustment of schedule dates.</div>
@@ -446,12 +446,12 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>length</h4>
-<pre class="methodSignature">public&nbsp;java.time.Period&nbsp;length()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;length()</pre>
 <div class="block">Returns the length of the period.
  <p>
  This returns the length of the period, considering the adjusted start and end dates.
  The calculation does not involve a day count or holiday calendar.
- The period is calculated using <code>Period.between(LocalDate, LocalDate)</code> and as
+ The period is calculated using <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true#between(java.time.LocalDate,java.time.LocalDate)" title="class or interface in java.time" class="externalLink"><code>Period.between(LocalDate, LocalDate)</code></a> and as
  such includes the start date and excludes the end date.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -525,7 +525,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(java.time.LocalDate&nbsp;date)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</pre>
 <div class="block">Checks if this period contains the specified date.
  <p>
  The adjusted start and end dates are used in the comparison.
@@ -618,7 +618,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <div class="block">Compares this period to another by unadjusted start date, then unadjusted end date.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>compareTo</code>&nbsp;in interface&nbsp;<code>java.lang.Comparable&lt;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang" class="externalLink">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other period</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -673,7 +673,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>getStartDate</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;getStartDate()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getStartDate()</pre>
 <div class="block">Gets the start date of this period, used for financial calculations such as interest accrual.
  <p>
  The first date in the schedule period, typically treated as inclusive.
@@ -690,7 +690,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>getEndDate</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;getEndDate()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getEndDate()</pre>
 <div class="block">Gets the end date of this period, used for financial calculations such as interest accrual.
  <p>
  The last date in the schedule period, typically treated as exclusive.
@@ -707,7 +707,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>getUnadjustedStartDate</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;getUnadjustedStartDate()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getUnadjustedStartDate()</pre>
 <div class="block">Gets the unadjusted start date.
  <p>
  The start date before any business day adjustment.
@@ -727,7 +727,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>getUnadjustedEndDate</h4>
-<pre class="methodSignature">public&nbsp;java.time.LocalDate&nbsp;getUnadjustedEndDate()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getUnadjustedEndDate()</pre>
 <div class="block">Gets the unadjusted end date.
  <p>
  The end date before any business day adjustment.
@@ -761,10 +761,10 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;obj)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -777,7 +777,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -787,10 +787,10 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -864,7 +864,7 @@ implements org.joda.beans.ImmutableBean, java.lang.Comparable&lt;<a href="Schedu
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

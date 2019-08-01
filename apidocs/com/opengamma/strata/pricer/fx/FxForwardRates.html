@@ -174,7 +174,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.time.LocalDate</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValuationDate()">getValuationDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the valuation date.</div>
@@ -190,7 +190,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rate(com.opengamma.strata.basics.currency.Currency,java.time.LocalDate)">rate</a></span>&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
-    java.time.LocalDate&nbsp;referenceDate)</code></th>
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate)</code></th>
 <td class="colLast">
 <div class="block">Gets the forward rate at the specified payment date.</div>
 </td>
@@ -198,7 +198,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rateFxSpotSensitivity(com.opengamma.strata.basics.currency.Currency,java.time.LocalDate)">rateFxSpotSensitivity</a></span>&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
-                     java.time.LocalDate&nbsp;referenceDate)</code></th>
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate)</code></th>
 <td class="colLast">
 <div class="block">Calculates the sensitivity of the forward rate to the current FX rate.</div>
 </td>
@@ -206,7 +206,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ratePointSensitivity(com.opengamma.strata.basics.currency.Currency,java.time.LocalDate)">ratePointSensitivity</a></span>&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
-                    java.time.LocalDate&nbsp;referenceDate)</code></th>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate)</code></th>
 <td class="colLast">
 <div class="block">Calculates the point sensitivity of the forward rate at the specified payment date.</div>
 </td>
@@ -279,7 +279,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <ul class="blockList">
 <li class="blockList">
 <h4>getValuationDate</h4>
-<pre class="methodSignature">java.time.LocalDate&nbsp;getValuationDate()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getValuationDate()</pre>
 <div class="block">Gets the valuation date.
  <p>
  The raw data in this provider is calibrated for this date.</div>
@@ -346,7 +346,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <li class="blockList">
 <h4>rate</h4>
 <pre class="methodSignature">double&nbsp;rate&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
-            java.time.LocalDate&nbsp;referenceDate)</pre>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate)</pre>
 <div class="block">Gets the forward rate at the specified payment date.
  <p>
  The exchange rate of the currency pair varies over time.
@@ -369,7 +369,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the forward rate of the currency pair</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the value cannot be obtained</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the value cannot be obtained</dd>
 </dl>
 </li>
 </ul>
@@ -380,7 +380,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <li class="blockList">
 <h4>ratePointSensitivity</h4>
 <pre class="methodSignature"><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&nbsp;ratePointSensitivity&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
-                                             java.time.LocalDate&nbsp;referenceDate)</pre>
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate)</pre>
 <div class="block">Calculates the point sensitivity of the forward rate at the specified payment date.
  <p>
  This returns a sensitivity instance referring to the points that were queried in the market data.
@@ -392,7 +392,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the point sensitivity of the rate</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the value cannot be obtained</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the value cannot be obtained</dd>
 </dl>
 </li>
 </ul>
@@ -403,7 +403,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <li class="blockList">
 <h4>rateFxSpotSensitivity</h4>
 <pre class="methodSignature">double&nbsp;rateFxSpotSensitivity&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
-                             java.time.LocalDate&nbsp;referenceDate)</pre>
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate)</pre>
 <div class="block">Calculates the sensitivity of the forward rate to the current FX rate.
  <p>
  This returns the sensitivity to the current FX rate that was used to determine the FX forward rate.
@@ -415,7 +415,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sensitivity of the FX forward rate to the current FX rate</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the value cannot be obtained</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the value cannot be obtained</dd>
 </dl>
 </li>
 </ul>
@@ -435,7 +435,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the parameter sensitivity</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the result cannot be calculated</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the result cannot be calculated</dd>
 </dl>
 </li>
 </ul>
@@ -455,7 +455,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the currency exposure</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the result cannot be calculated</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the result cannot be calculated</dd>
 </dl>
 </li>
 </ul>
@@ -529,7 +529,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

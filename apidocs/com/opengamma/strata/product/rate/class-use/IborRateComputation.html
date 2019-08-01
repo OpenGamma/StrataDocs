@@ -108,24 +108,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate">com.opengamma.strata.pricer.impl.rate</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate calculations.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.capfloor">com.opengamma.strata.product.capfloor</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Ibor cap/floor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.deposit">com.opengamma.strata.product.deposit</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing financial instruments representing a simple deposit with interest.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.index">com.opengamma.strata.product.index</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing contracts based on rate indices.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.rate">com.opengamma.strata.product.rate</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing the rate-based financial instruments.</div>
@@ -136,6 +142,73 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.rate">
+<!--   -->
+</a>
+<h3>Uses of <a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a> in <a href="../../../pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a> with parameters of type <a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ForwardIborRateComputationFn.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/ForwardIborRateComputationFn.html#explainRate(com.opengamma.strata.product.rate.IborRateComputation,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.market.explain.ExplainMapBuilder)">explainRate</a></span>&#8203;(<a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&nbsp;computation,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+           <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
+           <a href="../../../market/explain/ExplainMapBuilder.html" title="class in com.opengamma.strata.market.explain">ExplainMapBuilder</a>&nbsp;builder)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ForwardIborRateComputationFn.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/ForwardIborRateComputationFn.html#rate(com.opengamma.strata.product.rate.IborRateComputation,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.pricer.rate.RatesProvider)">rate</a></span>&#8203;(<a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&nbsp;computation,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+    <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ForwardIborRateComputationFn.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/ForwardIborRateComputationFn.html#rateSensitivity(com.opengamma.strata.product.rate.IborRateComputation,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.pricer.rate.RatesProvider)">rateSensitivity</a></span>&#8203;(<a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&nbsp;computation,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate,
+               <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Constructor parameters in <a href="../../../pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a> with type arguments of type <a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/DispatchingRateComputationFn.html#%3Cinit%3E(com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn)">DispatchingRateComputationFn</a></span>&#8203;(<a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&gt;&nbsp;iborRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../IborInterpolatedRateComputation.html" title="class in com.opengamma.strata.product.rate">IborInterpolatedRateComputation</a>&gt;&nbsp;iborInterpolatedRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../IborAveragedRateComputation.html" title="class in com.opengamma.strata.product.rate">IborAveragedRateComputation</a>&gt;&nbsp;iborAveragedRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../OvernightCompoundedRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightCompoundedRateComputation</a>&gt;&nbsp;overnightCompoundedRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../OvernightCompoundedAnnualRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightCompoundedAnnualRateComputation</a>&gt;&nbsp;overnightCompundedAnnualRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../OvernightAveragedRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedRateComputation</a>&gt;&nbsp;overnightAveragedRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&gt;&nbsp;overnightAveragedDailyRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../InflationMonthlyRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationMonthlyRateComputation</a>&gt;&nbsp;inflationMonthlyRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../InflationInterpolatedRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationInterpolatedRateComputation</a>&gt;&nbsp;inflationInterpolatedRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../InflationEndMonthRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationEndMonthRateComputation</a>&gt;&nbsp;inflationEndMonthRateComputationFn,
+                            <a href="../../../pricer/rate/RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../InflationEndInterpolatedRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationEndInterpolatedRateComputation</a>&gt;&nbsp;inflationEndInterpolatedRateComputationFn)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.product.capfloor">
 <!--   -->
@@ -333,7 +406,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborRateComputation.</span><code><span class="memberNameLink"><a href="../IborRateComputation.html#of(com.opengamma.strata.basics.index.IborIndex,java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">of</a></span>&#8203;(<a href="../../../basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a>&nbsp;index,
-  java.time.LocalDate&nbsp;fixingDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
   <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance from an index and fixing date.</div>
@@ -350,7 +423,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborRateComputation.Meta.</span><code><span class="memberNameLink"><a href="../IborRateComputation.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -414,7 +487,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

@@ -168,7 +168,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default java.util.Optional&lt;<a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)">filter</a></span>&#8203;(<a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a>&nbsp;target,
       <a href="../Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure)</code></th>
 <td class="colLast">
@@ -176,7 +176,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default java.lang.Class&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#queryType()">queryType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type that the parameter will be queried by.</div>
@@ -205,13 +205,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>queryType</h4>
-<pre class="methodSignature">default&nbsp;java.lang.Class&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;queryType()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;queryType()</pre>
 <div class="block">Gets the type that the parameter will be queried by.
  <p>
  Parameters can be queried using <a href="CalculationParameters.html#findParameter(java.lang.Class)"><code>CalculationParameters.findParameter(Class)</code></a>.
  This type is the key that callers must use in that method.
  <p>
- By default, this is just <code>Object.getClass()</code>.
+ By default, this is just <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink"><code>Object.getClass()</code></a>.
  It will only differ if the query type is an interface rather than the concrete class.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -225,8 +225,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filter</h4>
-<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;filter&#8203;(<a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a>&nbsp;target,
-                                                        <a href="../Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure)</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;filter&#8203;(<a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a>&nbsp;target,
+                                              <a href="../Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure)</pre>
 <div class="block">Filters this parameter to the specified target and measure.
  <p>
  Parameters may apply to all targets and measures or just a subset.
@@ -316,7 +316,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

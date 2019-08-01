@@ -120,6 +120,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate">com.opengamma.strata.pricer.impl.rate</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate calculations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.swap">com.opengamma.strata.pricer.impl.swap</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate swap calculations.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.index">com.opengamma.strata.pricer.index</a></th>
 <td class="colLast">
 <div class="block">Calculators for products based on rate indices, such as Short Term Interest Rate futures (STIRs).</div>
@@ -207,6 +219,114 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/RateComputation.html#com.opengamma.strata.pricer.fra">RateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines a mechanism for computing a rate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.pricer.impl.rate">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">com.opengamma.strata.product.rate</a> used by <a href="../../pricer/impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/IborAveragedRateComputation.html#com.opengamma.strata.pricer.impl.rate">IborAveragedRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of a rate of interest based on the average of multiple
+ fixings of a single Ibor floating rate index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/IborInterpolatedRateComputation.html#com.opengamma.strata.pricer.impl.rate">IborInterpolatedRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of a rate of interest interpolated from two Ibor indices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/IborRateComputation.html#com.opengamma.strata.pricer.impl.rate">IborRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of a rate of interest from a single Ibor index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/InflationEndInterpolatedRateComputation.html#com.opengamma.strata.pricer.impl.rate">InflationEndInterpolatedRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of inflation figures from a price index with interpolation
+ where the start index value is known.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/InflationEndMonthRateComputation.html#com.opengamma.strata.pricer.impl.rate">InflationEndMonthRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of inflation figures from a price index
+ where the start index value is known.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/InflationInterpolatedRateComputation.html#com.opengamma.strata.pricer.impl.rate">InflationInterpolatedRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of inflation figures from a price index with interpolation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/InflationMonthlyRateComputation.html#com.opengamma.strata.pricer.impl.rate">InflationMonthlyRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of inflation figures from a price index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/OvernightAveragedDailyRateComputation.html#com.opengamma.strata.pricer.impl.rate">OvernightAveragedDailyRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of an averaged daily rate for a single Overnight index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/OvernightAveragedRateComputation.html#com.opengamma.strata.pricer.impl.rate">OvernightAveragedRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of a rate from a single Overnight index that is averaged daily.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/OvernightCompoundedAnnualRateComputation.html#com.opengamma.strata.pricer.impl.rate">OvernightCompoundedAnnualRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of a rate from a single overnight index that follows
+ overnight compounding using an annualized rate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/OvernightCompoundedRateComputation.html#com.opengamma.strata.pricer.impl.rate">OvernightCompoundedRateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines the computation of a rate from a single Overnight index that is compounded daily.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/RateComputation.html#com.opengamma.strata.pricer.impl.rate">RateComputation</a></th>
+<td class="colLast">
+<div class="block">Defines a mechanism for computing a rate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.pricer.impl.swap">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">com.opengamma.strata.product.rate</a> used by <a href="../../pricer/impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/RateComputation.html#com.opengamma.strata.pricer.impl.swap">RateComputation</a></th>
 <td class="colLast">
 <div class="block">Defines a mechanism for computing a rate.</div>
 </td>
@@ -648,7 +768,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

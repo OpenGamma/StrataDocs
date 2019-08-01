@@ -212,7 +212,7 @@ extends <a href="CalculationParameter.html" title="interface in com.opengamma.st
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>default java.lang.Class&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#queryType()">queryType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type that the parameter will be queried by.</div>
@@ -364,14 +364,14 @@ extends <a href="CalculationParameter.html" title="interface in com.opengamma.st
 <ul class="blockList">
 <li class="blockList">
 <h4>queryType</h4>
-<pre class="methodSignature">default&nbsp;java.lang.Class&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;queryType()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;queryType()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="CalculationParameter.html#queryType()">CalculationParameter</a></code></span></div>
 <div class="block">Gets the type that the parameter will be queried by.
  <p>
  Parameters can be queried using <a href="CalculationParameters.html#findParameter(java.lang.Class)"><code>CalculationParameters.findParameter(Class)</code></a>.
  This type is the key that callers must use in that method.
  <p>
- By default, this is just <code>Object.getClass()</code>.
+ By default, this is just <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink"><code>Object.getClass()</code></a>.
  It will only differ if the query type is an interface rather than the concrete class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -469,7 +469,7 @@ extends <a href="CalculationParameter.html" title="interface in com.opengamma.st
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

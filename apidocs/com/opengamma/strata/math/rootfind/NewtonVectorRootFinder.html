@@ -124,6 +124,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../impl/rootfinding/newton/BaseNewtonVectorRootFinder.html" title="class in com.opengamma.strata.math.impl.rootfinding.newton">BaseNewtonVectorRootFinder</a></code>, <code><a href="../impl/rootfinding/newton/BroydenVectorRootFinder.html" title="class in com.opengamma.strata.math.impl.rootfinding.newton">BroydenVectorRootFinder</a></code>, <code><a href="../impl/rootfinding/newton/NewtonDefaultVectorRootFinder.html" title="class in com.opengamma.strata.math.impl.rootfinding.newton">NewtonDefaultVectorRootFinder</a></code>, <code><a href="../impl/rootfinding/newton/ShermanMorrisonVectorRootFinder.html" title="class in com.opengamma.strata.math.impl.rootfinding.newton">ShermanMorrisonVectorRootFinder</a></code></dd>
+</dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">NewtonVectorRootFinder</span></pre>
 <div class="block">Performs Newton-Raphson style multi-dimensional root finding.
@@ -177,7 +181,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRoot(java.util.function.Function,com.opengamma.strata.collect.array.DoubleArray)">findRoot</a></span>&#8203;(java.util.function.Function&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRoot(java.util.function.Function,com.opengamma.strata.collect.array.DoubleArray)">findRoot</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
         <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startPosition)</code></th>
 <td class="colLast">
 <div class="block">Finds the root from the specified start position.</div>
@@ -185,8 +189,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRoot(java.util.function.Function,java.util.function.Function,com.opengamma.strata.collect.array.DoubleArray)">findRoot</a></span>&#8203;(java.util.function.Function&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
-        java.util.function.Function&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&gt;&nbsp;jacobianFunction,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRoot(java.util.function.Function,java.util.function.Function,com.opengamma.strata.collect.array.DoubleArray)">findRoot</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&gt;&nbsp;jacobianFunction,
         <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startPosition)</code></th>
 <td class="colLast">
 <div class="block">Finds the root from the specified start position.</div>
@@ -275,7 +279,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>findRoot</h4>
-<pre class="methodSignature"><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;findRoot&#8203;(java.util.function.Function&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
+<pre class="methodSignature"><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;findRoot&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
                      <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startPosition)</pre>
 <div class="block">Finds the root from the specified start position.
  <p>
@@ -298,8 +302,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>findRoot</h4>
-<pre class="methodSignature"><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;findRoot&#8203;(java.util.function.Function&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
-                     java.util.function.Function&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&gt;&nbsp;jacobianFunction,
+<pre class="methodSignature"><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;findRoot&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;&nbsp;function,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&gt;&nbsp;jacobianFunction,
                      <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startPosition)</pre>
 <div class="block">Finds the root from the specified start position.
  <p>
@@ -387,7 +391,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

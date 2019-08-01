@@ -126,6 +126,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.option">com.opengamma.strata.pricer.impl.option</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of option pricing.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.tree">com.opengamma.strata.pricer.impl.tree</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swaption">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
@@ -187,7 +197,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">LoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/LoaderUtils.html#parsePutCall(java.lang.String)">parsePutCall</a></span>&#8203;(java.lang.String&nbsp;str)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/LoaderUtils.html#parsePutCall(java.lang.String)">parsePutCall</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
 <td class="colLast">
 <div class="block">Parses put/call from the input string.</div>
 </td>
@@ -211,7 +221,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#price(double,com.opengamma.strata.product.common.PutCall,double,double,double)">price</a></span>&#8203;(double&nbsp;expiry,
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryFlatVolatilities.html#price(double,com.opengamma.strata.product.common.PutCall,double,double,double)">price</a></span>&#8203;(double&nbsp;expiry,
      <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
      double&nbsp;strike,
      double&nbsp;forward,
@@ -219,6 +229,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#price(double,com.opengamma.strata.product.common.PutCall,double,double,double)">price</a></span>&#8203;(double&nbsp;expiry,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+     double&nbsp;strike,
+     double&nbsp;forward,
+     double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html#price(double,com.opengamma.strata.product.common.PutCall,double,double,double)">price</a></span>&#8203;(double&nbsp;expiry,
      <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -228,6 +247,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Calculates the price.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/NormalIborCapletFloorletExpiryFlatVolatilities.html#price(double,com.opengamma.strata.product.common.PutCall,double,double,double)">price</a></span>&#8203;(double&nbsp;expiry,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+     double&nbsp;strike,
+     double&nbsp;forward,
+     double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
@@ -258,7 +286,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceDelta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceDelta</a></span>&#8203;(double&nbsp;expiry,
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryFlatVolatilities.html#priceDelta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceDelta</a></span>&#8203;(double&nbsp;expiry,
           <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
           double&nbsp;strike,
           double&nbsp;forward,
@@ -266,6 +294,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceDelta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceDelta</a></span>&#8203;(double&nbsp;expiry,
+          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+          double&nbsp;strike,
+          double&nbsp;forward,
+          double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html#priceDelta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceDelta</a></span>&#8203;(double&nbsp;expiry,
           <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -275,6 +312,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Calculates the price delta.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/NormalIborCapletFloorletExpiryFlatVolatilities.html#priceDelta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceDelta</a></span>&#8203;(double&nbsp;expiry,
+          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+          double&nbsp;strike,
+          double&nbsp;forward,
+          double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -305,7 +351,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceGamma(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceGamma</a></span>&#8203;(double&nbsp;expiry,
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryFlatVolatilities.html#priceGamma(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceGamma</a></span>&#8203;(double&nbsp;expiry,
           <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
           double&nbsp;strike,
           double&nbsp;forward,
@@ -313,6 +359,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceGamma(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceGamma</a></span>&#8203;(double&nbsp;expiry,
+          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+          double&nbsp;strike,
+          double&nbsp;forward,
+          double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html#priceGamma(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceGamma</a></span>&#8203;(double&nbsp;expiry,
           <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -322,6 +377,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Calculates the price gamma.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/NormalIborCapletFloorletExpiryFlatVolatilities.html#priceGamma(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceGamma</a></span>&#8203;(double&nbsp;expiry,
+          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+          double&nbsp;strike,
+          double&nbsp;forward,
+          double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
@@ -352,7 +416,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceTheta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceTheta</a></span>&#8203;(double&nbsp;expiry,
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryFlatVolatilities.html#priceTheta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceTheta</a></span>&#8203;(double&nbsp;expiry,
           <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
           double&nbsp;strike,
           double&nbsp;forward,
@@ -360,6 +424,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceTheta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceTheta</a></span>&#8203;(double&nbsp;expiry,
+          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+          double&nbsp;strike,
+          double&nbsp;forward,
+          double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html#priceTheta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceTheta</a></span>&#8203;(double&nbsp;expiry,
           <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -369,6 +442,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Calculates the price theta.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/NormalIborCapletFloorletExpiryFlatVolatilities.html#priceTheta(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceTheta</a></span>&#8203;(double&nbsp;expiry,
+          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+          double&nbsp;strike,
+          double&nbsp;forward,
+          double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -399,7 +481,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceVega(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceVega</a></span>&#8203;(double&nbsp;expiry,
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryFlatVolatilities.html#priceVega(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceVega</a></span>&#8203;(double&nbsp;expiry,
          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
          double&nbsp;strike,
          double&nbsp;forward,
@@ -407,6 +489,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackIborCapletFloorletExpiryStrikeVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/BlackIborCapletFloorletExpiryStrikeVolatilities.html#priceVega(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceVega</a></span>&#8203;(double&nbsp;expiry,
+         <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+         double&nbsp;strike,
+         double&nbsp;forward,
+         double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html#priceVega(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceVega</a></span>&#8203;(double&nbsp;expiry,
          <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -416,6 +507,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Calculates the price vega.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborCapletFloorletExpiryFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/NormalIborCapletFloorletExpiryFlatVolatilities.html#priceVega(double,com.opengamma.strata.product.common.PutCall,double,double,double)">priceVega</a></span>&#8203;(double&nbsp;expiry,
+         <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+         double&nbsp;strike,
+         double&nbsp;forward,
+         double&nbsp;volatility)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
@@ -497,6 +597,175 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
      double&nbsp;volatility)</code></th>
 <td class="colLast">
 <div class="block">Calculates the price.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.option">
+<!--   -->
+</a>
+<h3>Uses of <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a> in <a href="../../../pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a> with parameters of type <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#delta(double,double,double,double,com.opengamma.strata.product.common.PutCall)">delta</a></span>&#8203;(double&nbsp;forward,
+     double&nbsp;strike,
+     double&nbsp;timeToExpiry,
+     double&nbsp;normalVol,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the delta.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#gamma(double,double,double,double,com.opengamma.strata.product.common.PutCall)">gamma</a></span>&#8203;(double&nbsp;forward,
+     double&nbsp;strike,
+     double&nbsp;timeToExpiry,
+     double&nbsp;normalVol,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the gamma.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#impliedVolatility(double,double,double,double,double,double,com.opengamma.strata.product.common.PutCall)">impliedVolatility</a></span>&#8203;(double&nbsp;optionPrice,
+                 double&nbsp;forward,
+                 double&nbsp;strike,
+                 double&nbsp;timeToExpiry,
+                 double&nbsp;initialNormalVol,
+                 double&nbsp;numeraire,
+                 <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the implied volatility.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#price(double,double,double,double,com.opengamma.strata.product.common.PutCall)">price</a></span>&#8203;(double&nbsp;forward,
+     double&nbsp;strike,
+     double&nbsp;timeToExpiry,
+     double&nbsp;normalVol,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the forward price.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrExtrapolationRightFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/SabrExtrapolationRightFunction.html#price(double,com.opengamma.strata.product.common.PutCall)">price</a></span>&#8203;(double&nbsp;strike,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the option price with numeraire=1.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#priceAdjoint(double,double,double,double,double,com.opengamma.strata.product.common.PutCall)">priceAdjoint</a></span>&#8203;(double&nbsp;forward,
+            double&nbsp;strike,
+            double&nbsp;timeToExpiry,
+            double&nbsp;normalVol,
+            double&nbsp;numeraire,
+            <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the price and first order derivatives.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrExtrapolationRightFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/SabrExtrapolationRightFunction.html#priceAdjointSabr(double,com.opengamma.strata.product.common.PutCall)">priceAdjointSabr</a></span>&#8203;(double&nbsp;strike,
+                <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the option price derivative with respect to the SABR parameters.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrExtrapolationRightFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/SabrExtrapolationRightFunction.html#priceDerivativeForward(double,com.opengamma.strata.product.common.PutCall)">priceDerivativeForward</a></span>&#8203;(double&nbsp;strike,
+                      <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the option price derivative with respect to the forward.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrExtrapolationRightFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/SabrExtrapolationRightFunction.html#priceDerivativeStrike(double,com.opengamma.strata.product.common.PutCall)">priceDerivativeStrike</a></span>&#8203;(double&nbsp;strike,
+                     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the option price derivative with respect to the strike.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#theta(double,double,double,double,com.opengamma.strata.product.common.PutCall)">theta</a></span>&#8203;(double&nbsp;forward,
+     double&nbsp;strike,
+     double&nbsp;timeToExpiry,
+     double&nbsp;normalVol,
+     <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the theta.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/NormalFormulaRepository.html#vega(double,double,double,double,com.opengamma.strata.product.common.PutCall)">vega</a></span>&#8203;(double&nbsp;forward,
+    double&nbsp;strike,
+    double&nbsp;timeToExpiry,
+    double&nbsp;normalVol,
+    <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the vega.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.tree">
+<!--   -->
+</a>
+<h3>Uses of <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a> in <a href="../../../pricer/impl/tree/package-summary.html">com.opengamma.strata.pricer.impl.tree</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/tree/package-summary.html">com.opengamma.strata.pricer.impl.tree</a> with parameters of type <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../pricer/impl/tree/ConstantContinuousSingleBarrierKnockoutFunction.html" title="class in com.opengamma.strata.pricer.impl.tree">ConstantContinuousSingleBarrierKnockoutFunction</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ConstantContinuousSingleBarrierKnockoutFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/tree/ConstantContinuousSingleBarrierKnockoutFunction.html#of(double,double,com.opengamma.strata.product.common.PutCall,int,com.opengamma.strata.product.option.BarrierType,double,com.opengamma.strata.collect.array.DoubleArray)">of</a></span>&#8203;(double&nbsp;strike,
+  double&nbsp;timeToExpiry,
+  <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  int&nbsp;numberOfSteps,
+  <a href="../../option/BarrierType.html" title="enum in com.opengamma.strata.product.option">BarrierType</a>&nbsp;barrierType,
+  double&nbsp;barrierLevel,
+  <a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;rebate)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../pricer/impl/tree/EuropeanVanillaOptionFunction.html" title="class in com.opengamma.strata.pricer.impl.tree">EuropeanVanillaOptionFunction</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">EuropeanVanillaOptionFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/tree/EuropeanVanillaOptionFunction.html#of(double,double,com.opengamma.strata.product.common.PutCall,int)">of</a></span>&#8203;(double&nbsp;strike,
+  double&nbsp;timeToExpiry,
+  <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  int&nbsp;numberOfSteps)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance.</div>
 </td>
 </tr>
 </tbody>
@@ -969,7 +1238,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PutCall.</span><code><span class="memberNameLink"><a href="../PutCall.html#of(java.lang.String)">of</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PutCall.</span><code><span class="memberNameLink"><a href="../PutCall.html#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified name.</div>
 </td>
@@ -990,7 +1259,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PutCall.</span><code><span class="memberNameLink"><a href="../PutCall.html#valueOf(java.lang.String)">valueOf</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PutCall.</span><code><span class="memberNameLink"><a href="../PutCall.html#valueOf(java.lang.String)">valueOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
@@ -1056,7 +1325,7 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../etd/EtdOptionSecurity.html" title="class in com.opengamma.strata.product.etd">EtdOptionSecurity</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdContractSpec.</span><code><span class="memberNameLink"><a href="../../etd/EtdContractSpec.html#createOption(java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double)">createOption</a></span>&#8203;(java.time.YearMonth&nbsp;expiryMonth,
+<th class="colSecond" scope="row"><span class="typeNameLabel">EtdContractSpec.</span><code><span class="memberNameLink"><a href="../../etd/EtdContractSpec.html#createOption(java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double)">createOption</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiryMonth,
             <a href="../../etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant,
             int&nbsp;version,
             <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -1067,12 +1336,12 @@ the order they are declared.</div>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../etd/EtdOptionSecurity.html" title="class in com.opengamma.strata.product.etd">EtdOptionSecurity</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdContractSpec.</span><code><span class="memberNameLink"><a href="../../etd/EtdContractSpec.html#createOption(java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double,java.time.YearMonth)">createOption</a></span>&#8203;(java.time.YearMonth&nbsp;expiryMonth,
+<th class="colSecond" scope="row"><span class="typeNameLabel">EtdContractSpec.</span><code><span class="memberNameLink"><a href="../../etd/EtdContractSpec.html#createOption(java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double,java.time.YearMonth)">createOption</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiryMonth,
             <a href="../../etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant,
             int&nbsp;version,
             <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
             double&nbsp;strikePrice,
-            java.time.YearMonth&nbsp;underlyingExpiryMonth)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;underlyingExpiryMonth)</code></th>
 <td class="colLast">
 <div class="block">Creates an option security based on this contract specification.</div>
 </td>
@@ -1080,7 +1349,7 @@ the order they are declared.</div>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../etd/EtdOptionSecurity.html" title="class in com.opengamma.strata.product.etd">EtdOptionSecurity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdOptionSecurity.</span><code><span class="memberNameLink"><a href="../../etd/EtdOptionSecurity.html#of(com.opengamma.strata.product.etd.EtdContractSpec,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double)">of</a></span>&#8203;(<a href="../../etd/EtdContractSpec.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec</a>&nbsp;spec,
-  java.time.YearMonth&nbsp;expiry,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
   <a href="../../etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant,
   int&nbsp;version,
   <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -1092,12 +1361,12 @@ the order they are declared.</div>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../etd/EtdOptionSecurity.html" title="class in com.opengamma.strata.product.etd">EtdOptionSecurity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdOptionSecurity.</span><code><span class="memberNameLink"><a href="../../etd/EtdOptionSecurity.html#of(com.opengamma.strata.product.etd.EtdContractSpec,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double,java.time.YearMonth)">of</a></span>&#8203;(<a href="../../etd/EtdContractSpec.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec</a>&nbsp;spec,
-  java.time.YearMonth&nbsp;expiry,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
   <a href="../../etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant,
   int&nbsp;version,
   <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
   double&nbsp;strikePrice,
-  java.time.YearMonth&nbsp;underlyingExpiryMonth)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;underlyingExpiryMonth)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a contract specification, expiry year-month, variant,
  version, put/call, strike price and underlying expiry.</div>
@@ -1107,7 +1376,7 @@ the order they are declared.</div>
 <td class="colFirst"><code>static <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../../etd/EtdIdUtils.html#optionId(com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double)">optionId</a></span>&#8203;(<a href="../ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
         <a href="../../etd/EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode,
-        java.time.YearMonth&nbsp;expiryMonth,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiryMonth,
         <a href="../../etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant,
         int&nbsp;version,
         <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -1120,12 +1389,12 @@ the order they are declared.</div>
 <td class="colFirst"><code>static <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../../etd/EtdIdUtils.html#optionId(com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double,java.time.YearMonth)">optionId</a></span>&#8203;(<a href="../ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
         <a href="../../etd/EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode,
-        java.time.YearMonth&nbsp;expiryMonth,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiryMonth,
         <a href="../../etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant,
         int&nbsp;version,
         <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
         double&nbsp;strikePrice,
-        java.time.YearMonth&nbsp;underlyingExpiryMonth)</code></th>
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;underlyingExpiryMonth)</code></th>
 <td class="colLast">
 <div class="block">Creates an identifier for an ETD option instrument.</div>
 </td>
@@ -1316,7 +1585,7 @@ the order they are declared.</div>
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

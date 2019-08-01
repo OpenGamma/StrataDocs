@@ -133,7 +133,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre>@FunctionalInterface
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">ObjDoubleToDoubleFunction&lt;T&gt;</span></pre>
 <div class="block">A function of two arguments - one object and one <code>double</code> - that returns a <code>double</code>.
  <p>
@@ -160,7 +160,7 @@ public interface <span class="typeNameLabel">ObjDoubleToDoubleFunction&lt;T&gt;<
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default <a href="ObjDoubleToDoubleFunction.html" title="interface in com.opengamma.strata.collect.function">ObjDoubleToDoubleFunction</a>&lt;<a href="ObjDoubleToDoubleFunction.html" title="type parameter in ObjDoubleToDoubleFunction">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#andThen(java.util.function.DoubleUnaryOperator)">andThen</a></span>&#8203;(java.util.function.DoubleUnaryOperator&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#andThen(java.util.function.DoubleUnaryOperator)">andThen</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Returns a new function that composes this function and the specified function.</div>
 </td>
@@ -216,7 +216,7 @@ public interface <span class="typeNameLabel">ObjDoubleToDoubleFunction&lt;T&gt;<
 <ul class="blockListLast">
 <li class="blockList">
 <h4>andThen</h4>
-<pre class="methodSignature">default&nbsp;<a href="ObjDoubleToDoubleFunction.html" title="interface in com.opengamma.strata.collect.function">ObjDoubleToDoubleFunction</a>&lt;<a href="ObjDoubleToDoubleFunction.html" title="type parameter in ObjDoubleToDoubleFunction">T</a>&gt;&nbsp;andThen&#8203;(java.util.function.DoubleUnaryOperator&nbsp;other)</pre>
+<pre class="methodSignature">default&nbsp;<a href="ObjDoubleToDoubleFunction.html" title="interface in com.opengamma.strata.collect.function">ObjDoubleToDoubleFunction</a>&lt;<a href="ObjDoubleToDoubleFunction.html" title="type parameter in ObjDoubleToDoubleFunction">T</a>&gt;&nbsp;andThen&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;other)</pre>
 <div class="block">Returns a new function that composes this function and the specified function.
  <p>
  This returns a composed function that applies the input to this function
@@ -227,7 +227,7 @@ public interface <span class="typeNameLabel">ObjDoubleToDoubleFunction&lt;T&gt;<
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the combined function, "this AND_THEN that"</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the other function is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang" class="externalLink">NullPointerException</a></code> - if the other function is null</dd>
 </dl>
 </li>
 </ul>
@@ -301,7 +301,7 @@ public interface <span class="typeNameLabel">ObjDoubleToDoubleFunction&lt;T&gt;<
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

@@ -108,6 +108,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.swap">com.opengamma.strata.pricer.impl.swap</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate swap calculations.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swap">com.opengamma.strata.pricer.swap</a></th>
 <td class="colLast">
 <div class="block">Calculators for interest rate swaps.</div>
@@ -118,6 +124,60 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.swap">
+<!--   -->
+</a>
+<h3>Uses of <a href="../SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a> in <a href="../../impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a> that implement <a href="../SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/swap/DiscountingKnownAmountPaymentPeriodPricer.html" title="class in com.opengamma.strata.pricer.impl.swap">DiscountingKnownAmountPaymentPeriodPricer</a></span></code></th>
+<td class="colLast">
+<div class="block">Pricer implementation for swap payment periods based on a known amount.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/swap/DiscountingRatePaymentPeriodPricer.html" title="class in com.opengamma.strata.pricer.impl.swap">DiscountingRatePaymentPeriodPricer</a></span></code></th>
+<td class="colLast">
+<div class="block">Pricer implementation for swap payment periods based on a rate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/swap/DispatchingSwapPaymentPeriodPricer.html" title="class in com.opengamma.strata.pricer.impl.swap">DispatchingSwapPaymentPeriodPricer</a></span></code></th>
+<td class="colLast">
+<div class="block">Pricer implementation for payment periods using multiple dispatch.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Constructors in <a href="../../impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a> with parameters of type <a href="../SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/swap/DispatchingSwapPaymentPeriodPricer.html#%3Cinit%3E(com.opengamma.strata.pricer.swap.SwapPaymentPeriodPricer,com.opengamma.strata.pricer.swap.SwapPaymentPeriodPricer)">DispatchingSwapPaymentPeriodPricer</a></span>&#8203;(<a href="../SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a>&lt;<a href="../../../product/swap/RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&gt;&nbsp;ratePaymentPeriodPricer,
+                                  <a href="../SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a>&lt;<a href="../../../product/swap/KnownAmountSwapPaymentPeriod.html" title="class in com.opengamma.strata.product.swap">KnownAmountSwapPaymentPeriod</a>&gt;&nbsp;knownAmountPaymentPeriodPricer)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.pricer.swap">
 <!--   -->
@@ -216,7 +276,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

@@ -120,6 +120,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate">com.opengamma.strata.pricer.impl.rate</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate calculations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.swap">com.opengamma.strata.pricer.impl.swap</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate swap calculations.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.index">com.opengamma.strata.pricer.index</a></th>
 <td class="colLast">
 <div class="block">Calculators for products based on rate indices, such as Short Term Interest Rate futures (STIRs).</div>
@@ -189,6 +201,165 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../fra/DiscountingFraProductPricer.html#%3Cinit%3E(com.opengamma.strata.pricer.rate.RateComputationFn)">DiscountingFraProductPricer</a></span>&#8203;(<a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/RateComputation.html" title="interface in com.opengamma.strata.product.rate">RateComputation</a>&gt;&nbsp;rateComputationFn)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.rate">
+<!--   -->
+</a>
+<h3>Uses of <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a> in <a href="../../impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a> that implement <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ApproxForwardOvernightAveragedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ApproxForwardOvernightAveragedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a rate based on a single overnight index that is arithmetically averaged.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/DispatchingRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">DispatchingRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation using multiple dispatch.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardIborAveragedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardIborAveragedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a rate based on the average of multiple fixings of a
+ single Ibor floating rate index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardIborInterpolatedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardIborInterpolatedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for rate based on the weighted average of the fixing
+ on a single date of two Ibor indices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardIborRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardIborRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for an Ibor index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardInflationEndInterpolatedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardInflationEndInterpolatedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for rate based on the weighted average of fixings 
+ of a single price index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardInflationEndMonthRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardInflationEndMonthRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a price index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardInflationInterpolatedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardInflationInterpolatedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for rate based on the weighted average of fixings 
+ of a single price index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardInflationMonthlyRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardInflationMonthlyRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a price index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardOvernightAveragedDailyRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardOvernightAveragedDailyRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for an averaged daily rate for a single Overnight index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardOvernightAveragedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardOvernightAveragedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a rate based on a single overnight index that is arithmetically averaged.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardOvernightCompoundedAnnualRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardOvernightCompoundedAnnualRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a rate based on a single overnight index that is compounded using an annual rate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/ForwardOvernightCompoundedRateComputationFn.html" title="class in com.opengamma.strata.pricer.impl.rate">ForwardOvernightCompoundedRateComputationFn</a></span></code></th>
+<td class="colLast">
+<div class="block">Rate computation implementation for a rate based on a single overnight index that is compounded.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Constructors in <a href="../../impl/rate/package-summary.html">com.opengamma.strata.pricer.impl.rate</a> with parameters of type <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/rate/DispatchingRateComputationFn.html#%3Cinit%3E(com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn,com.opengamma.strata.pricer.rate.RateComputationFn)">DispatchingRateComputationFn</a></span>&#8203;(<a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/IborRateComputation.html" title="class in com.opengamma.strata.product.rate">IborRateComputation</a>&gt;&nbsp;iborRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/IborInterpolatedRateComputation.html" title="class in com.opengamma.strata.product.rate">IborInterpolatedRateComputation</a>&gt;&nbsp;iborInterpolatedRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/IborAveragedRateComputation.html" title="class in com.opengamma.strata.product.rate">IborAveragedRateComputation</a>&gt;&nbsp;iborAveragedRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/OvernightCompoundedRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightCompoundedRateComputation</a>&gt;&nbsp;overnightCompoundedRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/OvernightCompoundedAnnualRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightCompoundedAnnualRateComputation</a>&gt;&nbsp;overnightCompundedAnnualRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/OvernightAveragedRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedRateComputation</a>&gt;&nbsp;overnightAveragedRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/OvernightAveragedDailyRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightAveragedDailyRateComputation</a>&gt;&nbsp;overnightAveragedDailyRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/InflationMonthlyRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationMonthlyRateComputation</a>&gt;&nbsp;inflationMonthlyRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/InflationInterpolatedRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationInterpolatedRateComputation</a>&gt;&nbsp;inflationInterpolatedRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/InflationEndMonthRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationEndMonthRateComputation</a>&gt;&nbsp;inflationEndMonthRateComputationFn,
+                            <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/InflationEndInterpolatedRateComputation.html" title="class in com.opengamma.strata.product.rate">InflationEndInterpolatedRateComputation</a>&gt;&nbsp;inflationEndInterpolatedRateComputationFn)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.swap">
+<!--   -->
+</a>
+<h3>Uses of <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a> in <a href="../../impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a></h3>
+<table class="useSummary">
+<caption><span>Constructors in <a href="../../impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a> with parameters of type <a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../impl/swap/DiscountingRatePaymentPeriodPricer.html#%3Cinit%3E(com.opengamma.strata.pricer.rate.RateComputationFn)">DiscountingRatePaymentPeriodPricer</a></span>&#8203;(<a href="../RateComputationFn.html" title="interface in com.opengamma.strata.pricer.rate">RateComputationFn</a>&lt;<a href="../../../product/rate/RateComputation.html" title="interface in com.opengamma.strata.product.rate">RateComputation</a>&gt;&nbsp;rateComputationFn)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance.</div>
 </td>
@@ -294,7 +465,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

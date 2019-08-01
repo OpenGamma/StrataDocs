@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>com.opengamma.strata.report.framework.expression.TokenEvaluator&lt;T&gt;</li>
@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">TokenEvaluator&lt;T&gt;</span>
-extends java.lang.Object</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
 <div class="block">Evaluates a token against an object to produce another object.
  <p>
  Tokens are taken from expressions in a report template. These expressions tell the reporting framework
@@ -194,7 +194,7 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="EvaluationResult.html" title="class in com.opengamma.strata.report.framework.expression">EvaluationResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ambiguousTokenFailure(T,java.lang.String)">ambiguousTokenFailure</a></span>&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object,
-                     java.lang.String&nbsp;token)</code></th>
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;token)</code></th>
 <td class="colLast">
 <div class="block">Generates a failure result for an ambiguous token.</div>
 </td>
@@ -203,14 +203,14 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>abstract <a href="EvaluationResult.html" title="class in com.opengamma.strata.report.framework.expression">EvaluationResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#evaluate(T,com.opengamma.strata.calc.runner.CalculationFunctions,java.lang.String,java.util.List)">evaluate</a></span>&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;target,
         <a href="../../../calc/runner/CalculationFunctions.html" title="interface in com.opengamma.strata.calc.runner">CalculationFunctions</a>&nbsp;functions,
-        java.lang.String&nbsp;firstToken,
-        java.util.List&lt;java.lang.String&gt;&nbsp;remainingTokens)</code></th>
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;firstToken,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;remainingTokens)</code></th>
 <td class="colLast">
 <div class="block">Evaluates a token against a given object.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>abstract java.lang.Class&lt;?&gt;</code></td>
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTargetType()">getTargetType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type against which tokens can be evaluated in this implementation.</div>
@@ -219,13 +219,13 @@ extends java.lang.Object</pre>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="EvaluationResult.html" title="class in com.opengamma.strata.report.framework.expression">EvaluationResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#invalidTokenFailure(T,java.lang.String)">invalidTokenFailure</a></span>&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object,
-                   java.lang.String&nbsp;token)</code></th>
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;token)</code></th>
 <td class="colLast">
 <div class="block">Generates a failure result for an invalid token.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>abstract java.util.Set&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tokens(T)">tokens</a></span>&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object)</code></th>
 <td class="colLast">
 <div class="block">Gets the set of supported token for the given object.</div>
@@ -236,8 +236,8 @@ extends java.lang.Object</pre>
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -280,7 +280,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTargetType</h4>
-<pre class="methodSignature">public abstract&nbsp;java.lang.Class&lt;?&gt;&nbsp;getTargetType()</pre>
+<pre class="methodSignature">public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;getTargetType()</pre>
 <div class="block">Gets the type against which tokens can be evaluated in this implementation.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -296,7 +296,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>tokens</h4>
-<pre class="methodSignature">public abstract&nbsp;java.util.Set&lt;java.lang.String&gt;&nbsp;tokens&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object)</pre>
+<pre class="methodSignature">public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;tokens&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object)</pre>
 <div class="block">Gets the set of supported token for the given object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -316,8 +316,8 @@ extends java.lang.Object</pre>
 <h4>evaluate</h4>
 <pre class="methodSignature">public abstract&nbsp;<a href="EvaluationResult.html" title="class in com.opengamma.strata.report.framework.expression">EvaluationResult</a>&nbsp;evaluate&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;target,
                                           <a href="../../../calc/runner/CalculationFunctions.html" title="interface in com.opengamma.strata.calc.runner">CalculationFunctions</a>&nbsp;functions,
-                                          java.lang.String&nbsp;firstToken,
-                                          java.util.List&lt;java.lang.String&gt;&nbsp;remainingTokens)</pre>
+                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;firstToken,
+                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;remainingTokens)</pre>
 <div class="block">Evaluates a token against a given object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -339,7 +339,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>invalidTokenFailure</h4>
 <pre class="methodSignature">protected&nbsp;<a href="EvaluationResult.html" title="class in com.opengamma.strata.report.framework.expression">EvaluationResult</a>&nbsp;invalidTokenFailure&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object,
-                                               java.lang.String&nbsp;token)</pre>
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;token)</pre>
 <div class="block">Generates a failure result for an invalid token.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -359,7 +359,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>ambiguousTokenFailure</h4>
 <pre class="methodSignature">protected&nbsp;<a href="EvaluationResult.html" title="class in com.opengamma.strata.report.framework.expression">EvaluationResult</a>&nbsp;ambiguousTokenFailure&#8203;(<a href="TokenEvaluator.html" title="type parameter in TokenEvaluator">T</a>&nbsp;object,
-                                                 java.lang.String&nbsp;token)</pre>
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;token)</pre>
 <div class="block">Generates a failure result for an ambiguous token.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -440,7 +440,7 @@ extends java.lang.Object</pre>
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

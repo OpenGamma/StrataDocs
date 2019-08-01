@@ -113,6 +113,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Array data structures.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.math.impl.linearalgebra">com.opengamma.strata.math.impl.linearalgebra</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.math.impl.matrix">com.opengamma.strata.math.impl.matrix</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -157,6 +165,435 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../LongArray.html" title="class in com.opengamma.strata.collect.array">LongArray</a></span></code></th>
 <td class="colLast">
 <div class="block">An immutable array of <code>long</code> values.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.math.impl.linearalgebra">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a> in <a href="../../../math/impl/linearalgebra/package-summary.html">com.opengamma.strata.math.impl.linearalgebra</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../math/impl/linearalgebra/package-summary.html">com.opengamma.strata.math.impl.linearalgebra</a> that implement <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../math/impl/linearalgebra/TridiagonalMatrix.html" title="class in com.opengamma.strata.math.impl.linearalgebra">TridiagonalMatrix</a></span></code></th>
+<td class="colLast">
+<div class="block">Class representing a tridiagonal matrix.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.math.impl.matrix">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a> in <a href="../../../math/impl/matrix/package-summary.html">com.opengamma.strata.math.impl.matrix</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../math/impl/matrix/package-summary.html">com.opengamma.strata.math.impl.matrix</a> that return <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#add(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">add</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+   <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Adds two matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#divide(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">divide</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+      <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the quotient of two matrices $C = \frac{A}{B} = AB^{-1}$, where
+ $B^{-1}$ is the pseudo-inverse of $B$ i.e.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#kroneckerProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">kroneckerProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+                <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the Kronecker product of two matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#multiply(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">multiply</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Multiplies two matrices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#multiply(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">multiply</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Multiplies two matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#multiply(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">multiply</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Multiplies two matrices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#scale(com.opengamma.strata.collect.array.Matrix,double)">scale</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+     double&nbsp;scale)</code></th>
+<td class="colLast">
+<div class="block">Scale a vector or matrix by a given amount, i.e.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#subtract(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">subtract</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Subtracts two matrices.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../math/impl/matrix/package-summary.html">com.opengamma.strata.math.impl.matrix</a> with parameters of type <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#add(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">add</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+   <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Adds two matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#divide(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">divide</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+      <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the quotient of two matrices $C = \frac{A}{B} = AB^{-1}$, where
+ $B^{-1}$ is the pseudo-inverse of $B$ i.e.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getCondition(com.opengamma.strata.collect.array.Matrix)">getCondition</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getCondition(com.opengamma.strata.collect.array.Matrix)">getCondition</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the condition number of the matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getCondition(com.opengamma.strata.collect.array.Matrix)">getCondition</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the condition number of the matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getDeterminant(com.opengamma.strata.collect.array.Matrix)">getDeterminant</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getDeterminant(com.opengamma.strata.collect.array.Matrix)">getDeterminant</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the determinant of the matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getDeterminant(com.opengamma.strata.collect.array.Matrix)">getDeterminant</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the determinant of the matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getInnerProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">getInnerProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+               <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getInnerProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">getInnerProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+               <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the inner (or dot) product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getInnerProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">getInnerProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+               <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the inner (or dot) product.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getInverse(com.opengamma.strata.collect.array.Matrix)">getInverse</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getInverse(com.opengamma.strata.collect.array.Matrix)">getInverse</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the inverse (or pseudo-inverse) of the matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getInverse(com.opengamma.strata.collect.array.Matrix)">getInverse</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the inverse (or pseudo-inverse) of the matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getNorm1(com.opengamma.strata.collect.array.Matrix)">getNorm1</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getNorm1(com.opengamma.strata.collect.array.Matrix)">getNorm1</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">For a vector, returns the <a href="http://mathworld.wolfram.com/L1-Norm.html">$L_1$ norm</a>
+ (also known as the Taxicab norm or Manhattan norm), i.e.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getNorm1(com.opengamma.strata.collect.array.Matrix)">getNorm1</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">For a vector, returns the <a href="http://mathworld.wolfram.com/L1-Norm.html">$L_1$ norm</a>
+ (also known as the Taxicab norm or Manhattan norm), i.e.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getNorm2(com.opengamma.strata.collect.array.Matrix)">getNorm2</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getNorm2(com.opengamma.strata.collect.array.Matrix)">getNorm2</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">For a vector, returns <a href="http://mathworld.wolfram.com/L2-Norm.html">$L_2$ norm</a> (also known as the
+ Euclidean norm).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getNorm2(com.opengamma.strata.collect.array.Matrix)">getNorm2</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">For a vector, returns <a href="http://mathworld.wolfram.com/L2-Norm.html">$L_2$ norm</a> (also known as the
+ Euclidean norm).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getNormInfinity(com.opengamma.strata.collect.array.Matrix)">getNormInfinity</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getNormInfinity(com.opengamma.strata.collect.array.Matrix)">getNormInfinity</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">For a vector, returns the <a href="http://mathworld.wolfram.com/L-Infinity-Norm.html">$L_\infty$ norm</a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getNormInfinity(com.opengamma.strata.collect.array.Matrix)">getNormInfinity</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">For a vector, returns the <a href="http://mathworld.wolfram.com/L-Infinity-Norm.html">$L_\infty$ norm</a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getOuterProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">getOuterProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+               <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getOuterProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">getOuterProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+               <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the outer product.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getOuterProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">getOuterProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+               <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the outer product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getPower(com.opengamma.strata.collect.array.Matrix,double)">getPower</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+        double&nbsp;p)</code></th>
+<td class="colLast">
+<div class="block">Returns a real matrix raised to some real power 
+ Currently this method is limited to symmetric matrices only as Commons Math does not
+ support the diagonalization of asymmetric matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getPower(com.opengamma.strata.collect.array.Matrix,int)">getPower</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+        int&nbsp;p)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getPower(com.opengamma.strata.collect.array.Matrix,double)">getPower</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+        double&nbsp;p)</code></th>
+<td class="colLast">
+<div class="block">Returns a matrix raised to a power, $\mathbf{A}^3 = \mathbf{A}\mathbf{A}\mathbf{A}$.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getPower(com.opengamma.strata.collect.array.Matrix,int)">getPower</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+        int&nbsp;p)</code></th>
+<td class="colLast">
+<div class="block">Returns a matrix raised to an integer power, e.g.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getPower(com.opengamma.strata.collect.array.Matrix,double)">getPower</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+        double&nbsp;p)</code></th>
+<td class="colLast">
+<div class="block">Returns a matrix raised to a power, $\mathbf{A}^3 = \mathbf{A}\mathbf{A}\mathbf{A}$.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getPower(com.opengamma.strata.collect.array.Matrix,int)">getPower</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+        int&nbsp;p)</code></th>
+<td class="colLast">
+<div class="block">Returns a matrix raised to an integer power, e.g.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getTrace(com.opengamma.strata.collect.array.Matrix)">getTrace</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getTrace(com.opengamma.strata.collect.array.Matrix)">getTrace</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the trace (i.e.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getTrace(com.opengamma.strata.collect.array.Matrix)">getTrace</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the trace (i.e.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#getTranspose(com.opengamma.strata.collect.array.Matrix)">getTranspose</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#getTranspose(com.opengamma.strata.collect.array.Matrix)">getTranspose</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the transpose of a matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#getTranspose(com.opengamma.strata.collect.array.Matrix)">getTranspose</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m)</code></th>
+<td class="colLast">
+<div class="block">Returns the transpose of a matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#kroneckerProduct(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">kroneckerProduct</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+                <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Returns the Kronecker product of two matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CommonsMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/CommonsMatrixAlgebra.html#multiply(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">multiply</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Multiplies two matrices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#multiply(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">multiply</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Multiplies two matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OGMatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/OGMatrixAlgebra.html#multiply(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">multiply</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Multiplies two matrices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#scale(com.opengamma.strata.collect.array.Matrix,double)">scale</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m,
+     double&nbsp;scale)</code></th>
+<td class="colLast">
+<div class="block">Scale a vector or matrix by a given amount, i.e.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MatrixAlgebra.</span><code><span class="memberNameLink"><a href="../../../math/impl/matrix/MatrixAlgebra.html#subtract(com.opengamma.strata.collect.array.Matrix,com.opengamma.strata.collect.array.Matrix)">subtract</a></span>&#8203;(<a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m1,
+        <a href="../Matrix.html" title="interface in com.opengamma.strata.collect.array">Matrix</a>&nbsp;m2)</code></th>
+<td class="colLast">
+<div class="block">Subtracts two matrices.</div>
 </td>
 </tr>
 </tbody>
@@ -214,7 +651,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

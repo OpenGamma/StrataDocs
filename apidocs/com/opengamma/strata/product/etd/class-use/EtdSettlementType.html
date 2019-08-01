@@ -138,7 +138,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;java.lang.String,&#8203;<a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#SETTLEMENT_BY_CODE">SETTLEMENT_BY_CODE</a></span></code></th>
 <td class="colLast">
 <div class="block">Lookup settlement by code.</div>
@@ -156,7 +156,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseEtdSettlementType(java.lang.String)">parseEtdSettlementType</a></span>&#8203;(java.lang.String&nbsp;str)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseEtdSettlementType(java.lang.String)">parseEtdSettlementType</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
 <td class="colLast">
 <div class="block">Parses the ETD settlement type from the short code or full name.</div>
 </td>
@@ -180,14 +180,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdSettlementType.</span><code><span class="memberNameLink"><a href="../EtdSettlementType.html#of(java.lang.String)">of</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">EtdSettlementType.</span><code><span class="memberNameLink"><a href="../EtdSettlementType.html#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified name.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdSettlementType.</span><code><span class="memberNameLink"><a href="../EtdSettlementType.html#valueOf(java.lang.String)">valueOf</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">EtdSettlementType.</span><code><span class="memberNameLink"><a href="../EtdSettlementType.html#valueOf(java.lang.String)">valueOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
@@ -211,7 +211,7 @@ the order they are declared.</div>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdVariant.</span><code><span class="memberNameLink"><a href="../EtdVariant.html#getSettlementType()">getSettlementType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional settlement type, such as 'Cash' or 'Physical', populated for Flex Futures and Flex Options.</div>
@@ -299,7 +299,7 @@ the order they are declared.</div>
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

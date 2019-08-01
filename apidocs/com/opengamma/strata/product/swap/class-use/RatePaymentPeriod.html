@@ -108,6 +108,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.swap">com.opengamma.strata.pricer.impl.swap</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of rate swap calculations.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swap">com.opengamma.strata.product.swap</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a swap.</div>
@@ -118,6 +124,100 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.swap">
+<!--   -->
+</a>
+<h3>Uses of <a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a> in <a href="../../../pricer/impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a> with parameters of type <a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#accruedInterest(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">accruedInterest</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+               <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#currencyExposure(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">currencyExposure</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+                <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#currentCash(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">currentCash</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+           <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#explainPresentValue(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.market.explain.ExplainMapBuilder)">explainPresentValue</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;paymentPeriod,
+                   <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
+                   <a href="../../../market/explain/ExplainMapBuilder.html" title="class in com.opengamma.strata.market.explain">ExplainMapBuilder</a>&nbsp;builder)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#forecastValue(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">forecastValue</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#forecastValueSensitivity(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">forecastValueSensitivity</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#presentValue(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">presentValue</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#presentValueSensitivity(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">presentValueSensitivity</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;period,
+                       <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#pvbp(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">pvbp</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;paymentPeriod,
+    <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingRatePaymentPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DiscountingRatePaymentPeriodPricer.html#pvbpSensitivity(com.opengamma.strata.product.swap.RatePaymentPeriod,com.opengamma.strata.pricer.rate.RatesProvider)">pvbpSensitivity</a></span>&#8203;(<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&nbsp;paymentPeriod,
+               <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Constructor parameters in <a href="../../../pricer/impl/swap/package-summary.html">com.opengamma.strata.pricer.impl.swap</a> with type arguments of type <a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/impl/swap/DispatchingSwapPaymentPeriodPricer.html#%3Cinit%3E(com.opengamma.strata.pricer.swap.SwapPaymentPeriodPricer,com.opengamma.strata.pricer.swap.SwapPaymentPeriodPricer)">DispatchingSwapPaymentPeriodPricer</a></span>&#8203;(<a href="../../../pricer/swap/SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a>&lt;<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&gt;&nbsp;ratePaymentPeriodPricer,
+                                  <a href="../../../pricer/swap/SwapPaymentPeriodPricer.html" title="interface in com.opengamma.strata.pricer.swap">SwapPaymentPeriodPricer</a>&lt;<a href="../KnownAmountSwapPaymentPeriod.html" title="class in com.opengamma.strata.product.swap">KnownAmountSwapPaymentPeriod</a>&gt;&nbsp;knownAmountPaymentPeriodPricer)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.product.swap">
 <!--   -->
@@ -133,7 +233,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">RatePaymentPeriod.</span><code><span class="memberNameLink"><a href="../RatePaymentPeriod.html#adjustPaymentDate(java.time.temporal.TemporalAdjuster)">adjustPaymentDate</a></span>&#8203;(java.time.temporal.TemporalAdjuster&nbsp;adjuster)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RatePaymentPeriod.</span><code><span class="memberNameLink"><a href="../RatePaymentPeriod.html#adjustPaymentDate(java.time.temporal.TemporalAdjuster)">adjustPaymentDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalAdjuster.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalAdjuster</a>&nbsp;adjuster)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -152,7 +252,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RatePaymentPeriod.Meta.</span><code><span class="memberNameLink"><a href="../RatePaymentPeriod.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -200,7 +300,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../RatePeriodSwapLeg.Builder.html" title="class in com.opengamma.strata.product.swap">RatePeriodSwapLeg.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">RatePeriodSwapLeg.Builder.</span><code><span class="memberNameLink"><a href="../RatePeriodSwapLeg.Builder.html#paymentPeriods(java.util.List)">paymentPeriods</a></span>&#8203;(java.util.List&lt;<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&gt;&nbsp;paymentPeriods)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RatePeriodSwapLeg.Builder.</span><code><span class="memberNameLink"><a href="../RatePeriodSwapLeg.Builder.html#paymentPeriods(java.util.List)">paymentPeriods</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../RatePaymentPeriod.html" title="class in com.opengamma.strata.product.swap">RatePaymentPeriod</a>&gt;&nbsp;paymentPeriods)</code></th>
 <td class="colLast">
 <div class="block">Sets the payment periods that combine to form the swap leg.</div>
 </td>
@@ -260,7 +360,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

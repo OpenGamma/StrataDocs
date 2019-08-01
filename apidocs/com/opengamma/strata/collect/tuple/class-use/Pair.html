@@ -150,6 +150,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.math.impl.function.special">com.opengamma.strata.math.impl.function.special</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.math.impl.interpolation">com.opengamma.strata.math.impl.interpolation</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.credit">com.opengamma.strata.measure.credit</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for credit products.</div>
@@ -177,6 +185,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.fxopt">com.opengamma.strata.pricer.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX options.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.option">com.opengamma.strata.pricer.impl.option</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of option pricing.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate.model">com.opengamma.strata.pricer.impl.rate.model</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of analytic models.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -210,7 +230,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static java.util.stream.Collector&lt;? super <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>,&#8203;java.lang.Double&gt;,&#8203;<a href="../../../basics/currency/FxMatrixBuilder.html" title="class in com.opengamma.strata.basics.currency">FxMatrixBuilder</a>,&#8203;<a href="../../../basics/currency/FxMatrix.html" title="class in com.opengamma.strata.basics.currency">FxMatrix</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;? super <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;,&#8203;<a href="../../../basics/currency/FxMatrixBuilder.html" title="class in com.opengamma.strata.basics.currency">FxMatrixBuilder</a>,&#8203;<a href="../../../basics/currency/FxMatrix.html" title="class in com.opengamma.strata.basics.currency">FxMatrix</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxMatrix.</span><code><span class="memberNameLink"><a href="../../../basics/currency/FxMatrix.html#pairsToFxMatrix()">pairsToFxMatrix</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates a <code>Collector</code> that allows a collection of pairs each containing
@@ -235,9 +255,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.String,&#8203;java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Messages.</span><code><span class="memberNameLink"><a href="../../Messages.html#formatWithAttributes(java.lang.String,java.lang.Object...)">formatWithAttributes</a></span>&#8203;(java.lang.String&nbsp;messageTemplate,
-                    java.lang.Object...&nbsp;args)</code></th>
+<td class="colFirst"><code>static <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Messages.</span><code><span class="memberNameLink"><a href="../../Messages.html#formatWithAttributes(java.lang.String,java.lang.Object...)">formatWithAttributes</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;messageTemplate,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;args)</code></th>
 <td class="colLast">
 <div class="block">Formats a templated message inserting named arguments.</div>
 </td>
@@ -253,7 +273,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>java.util.stream.Collector&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;? extends K,&#8203;? extends V&gt;,&#8203;?,&#8203;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;K,&#8203;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Guavate.</span><code><span class="memberNameLink"><a href="../../Guavate.html#pairsToImmutableMap()">pairsToImmutableMap</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Collector used at the end of a stream to build an immutable map
@@ -261,9 +281,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br>java.util.stream.Stream&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Guavate.</span><code><span class="memberNameLink"><a href="../../Guavate.html#zip(java.util.stream.Stream,java.util.stream.Stream)">zip</a></span>&#8203;(java.util.stream.Stream&lt;A&gt;&nbsp;stream1,
-   java.util.stream.Stream&lt;B&gt;&nbsp;stream2)</code></th>
+<td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Guavate.</span><code><span class="memberNameLink"><a href="../../Guavate.html#zip(java.util.stream.Stream,java.util.stream.Stream)">zip</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;A&gt;&nbsp;stream1,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;B&gt;&nbsp;stream2)</code></th>
 <td class="colLast">
 <div class="block">Creates a stream that combines two other streams, continuing until either stream ends.</div>
 </td>
@@ -287,14 +307,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>default <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="../../timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">LocalDateDoubleTimeSeries.</span><code><span class="memberNameLink"><a href="../../timeseries/LocalDateDoubleTimeSeries.html#partition(com.opengamma.strata.collect.function.ObjDoublePredicate)">partition</a></span>&#8203;(<a href="../../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;java.time.LocalDate&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LocalDateDoubleTimeSeries.</span><code><span class="memberNameLink"><a href="../../timeseries/LocalDateDoubleTimeSeries.html#partition(com.opengamma.strata.collect.function.ObjDoublePredicate)">partition</a></span>&#8203;(<a href="../../function/ObjDoublePredicate.html" title="interface in com.opengamma.strata.collect.function">ObjDoublePredicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Partition the time-series into a pair of distinct series using a predicate.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>default <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>,&#8203;<a href="../../timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">LocalDateDoubleTimeSeries.</span><code><span class="memberNameLink"><a href="../../timeseries/LocalDateDoubleTimeSeries.html#partitionByValue(java.util.function.DoublePredicate)">partitionByValue</a></span>&#8203;(java.util.function.DoublePredicate&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LocalDateDoubleTimeSeries.</span><code><span class="memberNameLink"><a href="../../timeseries/LocalDateDoubleTimeSeries.html#partitionByValue(java.util.function.DoublePredicate)">partitionByValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoublePredicate</a>&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Partition the time-series into a pair of distinct series using a predicate.</div>
 </td>
@@ -319,8 +339,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>&lt;C,&#8203;D&gt;<br><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../Pair.html" title="type parameter in Pair">A</a>,&#8203;<a href="../Pair.html" title="type parameter in Pair">B</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Pair.</span><code><span class="memberNameLink"><a href="../Pair.html#combinedWith(com.opengamma.strata.collect.tuple.Pair,java.util.function.BiFunction,java.util.function.BiFunction)">combinedWith</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;C,&#8203;D&gt;&nbsp;other,
-            java.util.function.BiFunction&lt;? super <a href="../Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
-            java.util.function.BiFunction&lt;? super <a href="../Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="../Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="../Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</code></th>
 <td class="colLast">
 <div class="block">Combines this instance with another.</div>
 </td>
@@ -334,35 +354,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DoublesPair.</span><code><span class="memberNameLink"><a href="../DoublesPair.html#toPair()">toPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this pair to an object-based <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Integer,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IntDoublePair.</span><code><span class="memberNameLink"><a href="../IntDoublePair.html#toPair()">toPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this pair to an object-based <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Long,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang" class="externalLink">Long</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LongDoublePair.</span><code><span class="memberNameLink"><a href="../LongDoublePair.html#toPair()">toPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this pair to an object-based <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../ObjDoublePair.html" title="type parameter in ObjDoublePair">A</a>,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../ObjDoublePair.html" title="type parameter in ObjDoublePair">A</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ObjDoublePair.</span><code><span class="memberNameLink"><a href="../ObjDoublePair.html#toPair()">toPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this pair to an object-based <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../ObjIntPair.html" title="type parameter in ObjIntPair">A</a>,&#8203;java.lang.Integer&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../ObjIntPair.html" title="type parameter in ObjIntPair">A</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ObjIntPair.</span><code><span class="memberNameLink"><a href="../ObjIntPair.html#toPair()">toPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this pair to an object-based <code>Pair</code>.</div>
@@ -379,7 +399,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../Pair.Meta.html" title="type parameter in Pair.Meta">A</a>,&#8203;<a href="../Pair.Meta.html" title="type parameter in Pair.Meta">B</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../Pair.Meta.html" title="type parameter in Pair.Meta">A</a>,&#8203;<a href="../Pair.Meta.html" title="type parameter in Pair.Meta">B</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Pair.Meta.</span><code><span class="memberNameLink"><a href="../Pair.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -389,9 +409,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br>java.util.function.BinaryOperator&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Pair.</span><code><span class="memberNameLink"><a href="../Pair.html#combining(java.util.function.BiFunction,java.util.function.BiFunction)">combining</a></span>&#8203;(java.util.function.BiFunction&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
-         java.util.function.BiFunction&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond)</code></th>
+<td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Pair.</span><code><span class="memberNameLink"><a href="../Pair.html#combining(java.util.function.BiFunction,java.util.function.BiFunction)">combining</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond)</code></th>
 <td class="colLast">
 <div class="block">Returns a combiner of pair instances.</div>
 </td>
@@ -409,8 +429,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>&lt;C,&#8203;D&gt;<br><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../Pair.html" title="type parameter in Pair">A</a>,&#8203;<a href="../Pair.html" title="type parameter in Pair">B</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Pair.</span><code><span class="memberNameLink"><a href="../Pair.html#combinedWith(com.opengamma.strata.collect.tuple.Pair,java.util.function.BiFunction,java.util.function.BiFunction)">combinedWith</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;C,&#8203;D&gt;&nbsp;other,
-            java.util.function.BiFunction&lt;? super <a href="../Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
-            java.util.function.BiFunction&lt;? super <a href="../Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="../Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="../Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="../Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</code></th>
 <td class="colLast">
 <div class="block">Combines this instance with another.</div>
 </td>
@@ -424,35 +444,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">DoublesPair.</span><code><span class="memberNameLink"><a href="../DoublesPair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DoublesPair.</span><code><span class="memberNameLink"><a href="../DoublesPair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;pair)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../IntDoublePair.html" title="class in com.opengamma.strata.collect.tuple">IntDoublePair</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IntDoublePair.</span><code><span class="memberNameLink"><a href="../IntDoublePair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Integer,&#8203;java.lang.Double&gt;&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IntDoublePair.</span><code><span class="memberNameLink"><a href="../IntDoublePair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;pair)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../LongDoublePair.html" title="class in com.opengamma.strata.collect.tuple">LongDoublePair</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">LongDoublePair.</span><code><span class="memberNameLink"><a href="../LongDoublePair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Long,&#8203;java.lang.Double&gt;&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LongDoublePair.</span><code><span class="memberNameLink"><a href="../LongDoublePair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang" class="externalLink">Long</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;pair)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static &lt;A&gt;&nbsp;<a href="../ObjDoublePair.html" title="class in com.opengamma.strata.collect.tuple">ObjDoublePair</a>&lt;A&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ObjDoublePair.</span><code><span class="memberNameLink"><a href="../ObjDoublePair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;java.lang.Double&gt;&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ObjDoublePair.</span><code><span class="memberNameLink"><a href="../ObjDoublePair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;pair)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a <code>Pair</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static &lt;A&gt;&nbsp;<a href="../ObjIntPair.html" title="class in com.opengamma.strata.collect.tuple">ObjIntPair</a>&lt;A&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ObjIntPair.</span><code><span class="memberNameLink"><a href="../ObjIntPair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;java.lang.Integer&gt;&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ObjIntPair.</span><code><span class="memberNameLink"><a href="../ObjIntPair.html#ofPair(com.opengamma.strata.collect.tuple.Pair)">ofPair</a></span>&#8203;(<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;pair)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a <code>Pair</code>.</div>
 </td>
@@ -475,7 +495,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.time.YearMonth,&#8203;<a href="../../../product/etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>,&#8203;<a href="../../../product/etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseEtdVariant(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.etd.EtdType)">parseEtdVariant</a></span>&#8203;(<a href="../../io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                <a href="../../../product/etd/EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a>&nbsp;type)</code></th>
 <td class="colLast">
@@ -539,7 +559,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../market/curve/LegalEntityCurveGroup.Builder.html" title="class in com.opengamma.strata.market.curve">LegalEntityCurveGroup.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityCurveGroup.Builder.</span><code><span class="memberNameLink"><a href="../../../market/curve/LegalEntityCurveGroup.Builder.html#issuerCurves(java.util.Map)">issuerCurves</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;issuerCurves)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityCurveGroup.Builder.</span><code><span class="memberNameLink"><a href="../../../market/curve/LegalEntityCurveGroup.Builder.html#issuerCurves(java.util.Map)">issuerCurves</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;issuerCurves)</code></th>
 <td class="colLast">
 <div class="block">Sets the issuer curves in the curve group, keyed by legal entity group and currency.</div>
 </td>
@@ -547,15 +567,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../market/curve/LegalEntityCurveGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityCurveGroup</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityCurveGroup.</span><code><span class="memberNameLink"><a href="../../../market/curve/LegalEntityCurveGroup.html#of(com.opengamma.strata.market.curve.CurveGroupName,java.util.Map,java.util.Map)">of</a></span>&#8203;(<a href="../../../market/curve/CurveGroupName.html" title="class in com.opengamma.strata.market.curve">CurveGroupName</a>&nbsp;name,
-  java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;repoCurves,
-  java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;issuerCurves)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;repoCurves,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;issuerCurves)</code></th>
 <td class="colLast">
 <div class="block">Returns a curve group containing the specified curves.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../market/curve/LegalEntityCurveGroup.Builder.html" title="class in com.opengamma.strata.market.curve">LegalEntityCurveGroup.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityCurveGroup.Builder.</span><code><span class="memberNameLink"><a href="../../../market/curve/LegalEntityCurveGroup.Builder.html#repoCurves(java.util.Map)">repoCurves</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;repoCurves)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityCurveGroup.Builder.</span><code><span class="memberNameLink"><a href="../../../market/curve/LegalEntityCurveGroup.Builder.html#repoCurves(java.util.Map)">repoCurves</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a>&gt;&nbsp;repoCurves)</code></th>
 <td class="colLast">
 <div class="block">Sets the repo curves in the curve group, keyed by repo group and currency.</div>
 </td>
@@ -570,6 +590,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a> in <a href="../../../market/param/package-summary.html">com.opengamma.strata.market.param</a></h3>
 <table class="useSummary">
+<caption><span>Methods in <a href="../../../market/param/package-summary.html">com.opengamma.strata.market.param</a> that return <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>,&#8203;<a href="../../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TenorTenorParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../market/param/TenorTenorParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Methods in <a href="../../../market/param/package-summary.html">com.opengamma.strata.market.param</a> that return types with arguments of type <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -578,17 +613,105 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../data/MarketDataName.html" title="class in com.opengamma.strata.data">MarketDataName</a>&lt;?&gt;,&#8203;java.util.List&lt;? extends <a href="../../../market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../data/MarketDataName.html" title="class in com.opengamma.strata.data">MarketDataName</a>&lt;?&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../../../market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CrossGammaParameterSensitivity.</span><code><span class="memberNameLink"><a href="../../../market/param/CrossGammaParameterSensitivity.html#getOrder()">getOrder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the sensitivity order.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../data/MarketDataName.html" title="class in com.opengamma.strata.data">MarketDataName</a>&lt;?&gt;,&#8203;java.util.List&lt;? extends <a href="../../../market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&gt;&gt;&gt;</code></td>
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../data/MarketDataName.html" title="class in com.opengamma.strata.data">MarketDataName</a>&lt;?&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../../../market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CrossGammaParameterSensitivity.Meta.</span><code><span class="memberNameLink"><a href="../../../market/param/CrossGammaParameterSensitivity.Meta.html#order()">order</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>order</code> property.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.math.impl.function.special">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a> in <a href="../../../math/impl/function/special/package-summary.html">com.opengamma.strata.math.impl.function.special</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../math/impl/function/special/package-summary.html">com.opengamma.strata.math.impl.function.special</a> that return <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HermitePolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/HermitePolynomialFunction.html#getPolynomialsAndFirstDerivative(int)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">JacobiPolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/JacobiPolynomialFunction.html#getPolynomialsAndFirstDerivative(int)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">JacobiPolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/JacobiPolynomialFunction.html#getPolynomialsAndFirstDerivative(int,double,double)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n,
+                                double&nbsp;alpha,
+                                double&nbsp;beta)</code></th>
+<td class="colLast">
+<div class="block">Calculates polynomials and derivative.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LaguerrePolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/LaguerrePolynomialFunction.html#getPolynomialsAndFirstDerivative(int)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LaguerrePolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/LaguerrePolynomialFunction.html#getPolynomialsAndFirstDerivative(int,double)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n,
+                                double&nbsp;alpha)</code></th>
+<td class="colLast">
+<div class="block">Gets the polynomials and derivative.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LegendrePolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/LegendrePolynomialFunction.html#getPolynomialsAndFirstDerivative(int)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OrthogonalPolynomialFunctionGenerator.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/OrthogonalPolynomialFunctionGenerator.html#getPolynomialsAndFirstDerivative(int)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>,&#8203;<a href="../../../math/impl/function/DoubleFunction1D.html" title="interface in com.opengamma.strata.math.impl.function">DoubleFunction1D</a>&gt;[]</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OrthonormalHermitePolynomialFunction.</span><code><span class="memberNameLink"><a href="../../../math/impl/function/special/OrthonormalHermitePolynomialFunction.html#getPolynomialsAndFirstDerivative(int)">getPolynomialsAndFirstDerivative</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.math.impl.interpolation">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a> in <a href="../../../math/impl/interpolation/package-summary.html">com.opengamma.strata.math.impl.interpolation</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../math/impl/interpolation/package-summary.html">com.opengamma.strata.math.impl.interpolation</a> that return <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BasisFunctionAggregation.</span><code><span class="memberNameLink"><a href="../../../math/impl/interpolation/BasisFunctionAggregation.html#valueAndWeightSensitivity(T)">valueAndWeightSensitivity</a></span>&#8203;(<a href="../../../math/impl/interpolation/BasisFunctionAggregation.html" title="type parameter in BasisFunctionAggregation">T</a>&nbsp;x)</code></th>
+<td class="colLast">
+<div class="block">The value of the function at the given point and its sensitivity to the weights of the basis functions.</div>
 </td>
 </tr>
 </tbody>
@@ -610,18 +733,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../measure/credit/CreditRatesMarketDataLookup.html" title="interface in com.opengamma.strata.measure.credit">CreditRatesMarketDataLookup</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../../measure/credit/CreditRatesMarketDataLookup.html#of(java.util.Map,java.util.Map,java.util.Map)">of</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;creditCurveIds,
-  java.util.Map&lt;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;discountCurveIds,
-  java.util.Map&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;recoveryRateCurveIds)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../../measure/credit/CreditRatesMarketDataLookup.html#of(java.util.Map,java.util.Map,java.util.Map)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;creditCurveIds,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;discountCurveIds,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;recoveryRateCurveIds)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance based on a maps for credit, discount and recovery rate curves.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../measure/credit/CreditRatesMarketDataLookup.html" title="interface in com.opengamma.strata.measure.credit">CreditRatesMarketDataLookup</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../../measure/credit/CreditRatesMarketDataLookup.html#of(java.util.Map,java.util.Map,java.util.Map,com.opengamma.strata.data.ObservableSource)">of</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;creditCurveIds,
-  java.util.Map&lt;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;discountCurveIds,
-  java.util.Map&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;recoveryRateCurveIds,
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../../measure/credit/CreditRatesMarketDataLookup.html#of(java.util.Map,java.util.Map,java.util.Map,com.opengamma.strata.data.ObservableSource)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;creditCurveIds,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;discountCurveIds,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../market/curve/CurveId.html" title="class in com.opengamma.strata.market.curve">CurveId</a>&gt;&nbsp;recoveryRateCurveIds,
   <a href="../../../data/ObservableSource.html" title="class in com.opengamma.strata.data">ObservableSource</a>&nbsp;observableSource)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance based on a maps for credit, discount and recovery rate curves.</div>
@@ -684,14 +807,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html" title="class in com.opengamma.strata.pricer.bond">ImmutableLegalEntityDiscountingProvider.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html#issuerCurves(java.util.Map)">issuerCurves</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/DiscountFactors.html" title="interface in com.opengamma.strata.pricer">DiscountFactors</a>&gt;&nbsp;issuerCurves)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html#issuerCurves(java.util.Map)">issuerCurves</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/LegalEntityGroup.html" title="class in com.opengamma.strata.market.curve">LegalEntityGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/DiscountFactors.html" title="interface in com.opengamma.strata.pricer">DiscountFactors</a>&gt;&nbsp;issuerCurves)</code></th>
 <td class="colLast">
 <div class="block">Sets the issuer curves, keyed by group and currency.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html" title="class in com.opengamma.strata.pricer.bond">ImmutableLegalEntityDiscountingProvider.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html#repoCurves(java.util.Map)">repoCurves</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/DiscountFactors.html" title="interface in com.opengamma.strata.pricer">DiscountFactors</a>&gt;&nbsp;repoCurves)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html#repoCurves(java.util.Map)">repoCurves</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/DiscountFactors.html" title="interface in com.opengamma.strata.pricer">DiscountFactors</a>&gt;&nbsp;repoCurves)</code></th>
 <td class="colLast">
 <div class="block">Sets the repo curves, keyed by group and currency.</div>
 </td>
@@ -714,12 +837,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.time.Period,&#8203;<a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>,&#8203;<a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">GenericVolatilitySurfacePeriodParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../pricer/common/GenericVolatilitySurfacePeriodParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;<a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">GenericVolatilitySurfaceYearFractionParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../pricer/common/GenericVolatilitySurfaceYearFractionParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -759,7 +882,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../pricer/credit/ImmutableCreditRatesProvider.Builder.html" title="class in com.opengamma.strata.pricer.credit">ImmutableCreditRatesProvider.Builder</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableCreditRatesProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/credit/ImmutableCreditRatesProvider.Builder.html#creditCurves(java.util.Map)">creditCurves</a></span>&#8203;(java.util.Map&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/credit/LegalEntitySurvivalProbabilities.html" title="class in com.opengamma.strata.pricer.credit">LegalEntitySurvivalProbabilities</a>&gt;&nbsp;creditCurves)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableCreditRatesProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/credit/ImmutableCreditRatesProvider.Builder.html#creditCurves(java.util.Map)">creditCurves</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/credit/LegalEntitySurvivalProbabilities.html" title="class in com.opengamma.strata.pricer.credit">LegalEntitySurvivalProbabilities</a>&gt;&nbsp;creditCurves)</code></th>
 <td class="colLast">
 <div class="block">Sets the credit curves.</div>
 </td>
@@ -782,9 +905,79 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;<a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxVolatilitySurfaceYearFractionParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/FxVolatilitySurfaceYearFractionParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.option">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a> in <a href="../../../pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/option/package-summary.html">com.opengamma.strata.pricer.impl.option</a> that return <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>,&#8203;double[][]&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackFormulaRepository.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/option/BlackFormulaRepository.html#priceAdjoint2(double,double,double,double,boolean)">priceAdjoint2</a></span>&#8203;(double&nbsp;forward,
+             double&nbsp;strike,
+             double&nbsp;timeToExpiry,
+             double&nbsp;lognormalVol,
+             boolean&nbsp;isCall)</code></th>
+<td class="colLast">
+<div class="block">Computes the price without numeraire and its derivatives of the first and second order.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.rate.model">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a> in <a href="../../../pricer/impl/rate/model/package-summary.html">com.opengamma.strata.pricer.impl.rate.model</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/rate/model/package-summary.html">com.opengamma.strata.pricer.impl.rate.model</a> that return <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#swapRateDx2Da1(double,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray)">swapRateDx2Da1</a></span>&#8203;(double&nbsp;x,
+              <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;discountedCashFlowFixed,
+              <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;alphaFixed,
+              <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;discountedCashFlowIbor,
+              <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;alphaIbor)</code></th>
+<td class="colLast">
+<div class="block">Calculates the first order derivative with respect to the alphaFixed and to the alphaIbor of
+ the of swap rate second derivative with respect to the random variable x in the
+ <code>P(*,theta)</code> numeraire.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#swapRateDx2Ddcf1(double,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray)">swapRateDx2Ddcf1</a></span>&#8203;(double&nbsp;x,
+                <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;discountedCashFlowFixed,
+                <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;alphaFixed,
+                <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;discountedCashFlowIbor,
+                <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;alphaIbor)</code></th>
+<td class="colLast">
+<div class="block">Calculates the first order derivative with respect to the discountedCashFlowFixed and to the discountedCashFlowIbor 
+ of the of swap rate second derivative with respect to the random variable x in the <code>P(*,theta)</code> numeraire.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -805,7 +998,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">RawOptionData.</span><code><span class="memberNameLink"><a href="../../../pricer/option/RawOptionData.html#availableSmileAtExpiry(java.time.Period)">availableSmileAtExpiry</a></span>&#8203;(java.time.Period&nbsp;expiry)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RawOptionData.</span><code><span class="memberNameLink"><a href="../../../pricer/option/RawOptionData.html#availableSmileAtExpiry(java.time.Period)">availableSmileAtExpiry</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;expiry)</code></th>
 <td class="colLast">
 <div class="block">For a given expiration returns all the data available.</div>
 </td>
@@ -865,11 +1058,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCalibrator.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCalibrator.html#calibrateAtmShiftedFromBlackVolatilities(com.opengamma.strata.basics.date.BusinessDayAdjustment,java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,java.time.Period,double,double,double,com.opengamma.strata.collect.array.DoubleArray,double)">calibrateAtmShiftedFromBlackVolatilities</a></span>&#8203;(<a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;bda,
-                                        java.time.ZonedDateTime&nbsp;calibrationDateTime,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;calibrationDateTime,
                                         <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-                                        java.time.Period&nbsp;periodToExpiry,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToExpiry,
                                         double&nbsp;forward,
                                         double&nbsp;blackVolatility,
                                         double&nbsp;shiftInput,
@@ -881,11 +1074,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCalibrator.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCalibrator.html#calibrateAtmShiftedFromNormalVolatilities(com.opengamma.strata.basics.date.BusinessDayAdjustment,java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,java.time.Period,double,double,com.opengamma.strata.collect.array.DoubleArray,double)">calibrateAtmShiftedFromNormalVolatilities</a></span>&#8203;(<a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;bda,
-                                         java.time.ZonedDateTime&nbsp;calibrationDateTime,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;calibrationDateTime,
                                          <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-                                         java.time.Period&nbsp;periodToExpiry,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToExpiry,
                                          double&nbsp;forward,
                                          double&nbsp;normalVolatility,
                                          <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startParameters,
@@ -896,69 +1089,69 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;com.opengamma.strata.math.impl.statistics.leastsquare.LeastSquareResultsWithTransform,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/statistics/leastsquare/LeastSquareResultsWithTransform.html" title="class in com.opengamma.strata.math.impl.statistics.leastsquare">LeastSquareResultsWithTransform</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCalibrator.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCalibrator.html#calibrateLsShiftedFromBlackVolatilities(com.opengamma.strata.basics.date.BusinessDayAdjustment,java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,java.time.Period,double,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.market.ValueType,com.opengamma.strata.collect.array.DoubleArray,double,com.opengamma.strata.collect.array.DoubleArray,java.util.BitSet,double)">calibrateLsShiftedFromBlackVolatilities</a></span>&#8203;(<a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;bda,
-                                       java.time.ZonedDateTime&nbsp;calibrationDateTime,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;calibrationDateTime,
                                        <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-                                       java.time.Period&nbsp;periodToExpiry,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToExpiry,
                                        double&nbsp;forward,
                                        <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;strikesLike,
                                        <a href="../../../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a>&nbsp;strikeType,
                                        <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;blackVolatilitiesInput,
                                        double&nbsp;shiftInput,
                                        <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startParameters,
-                                       java.util.BitSet&nbsp;fixedParameters,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/BitSet.html?is-external=true" title="class or interface in java.util" class="externalLink">BitSet</a>&nbsp;fixedParameters,
                                        double&nbsp;shiftOutput)</code></th>
 <td class="colLast">
 <div class="block">Calibrate the SABR parameters to a set of Black volatilities at given moneyness by least square.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;com.opengamma.strata.math.impl.statistics.leastsquare.LeastSquareResultsWithTransform,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/statistics/leastsquare/LeastSquareResultsWithTransform.html" title="class in com.opengamma.strata.math.impl.statistics.leastsquare">LeastSquareResultsWithTransform</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCalibrator.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCalibrator.html#calibrateLsShiftedFromNormalVolatilities(com.opengamma.strata.basics.date.BusinessDayAdjustment,java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,java.time.Period,double,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.market.ValueType,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,java.util.BitSet,double)">calibrateLsShiftedFromNormalVolatilities</a></span>&#8203;(<a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;bda,
-                                        java.time.ZonedDateTime&nbsp;calibrationDateTime,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;calibrationDateTime,
                                         <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-                                        java.time.Period&nbsp;periodToExpiry,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToExpiry,
                                         double&nbsp;forward,
                                         <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;strikesLike,
                                         <a href="../../../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a>&nbsp;strikeType,
                                         <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;normalVolatilities,
                                         <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startParameters,
-                                        java.util.BitSet&nbsp;fixedParameters,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/BitSet.html?is-external=true" title="class or interface in java.util" class="externalLink">BitSet</a>&nbsp;fixedParameters,
                                         double&nbsp;shiftOutput)</code></th>
 <td class="colLast">
 <div class="block">Calibrate the SABR parameters to a set of normal volatilities at given moneyness.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;com.opengamma.strata.math.impl.statistics.leastsquare.LeastSquareResultsWithTransform,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../math/impl/statistics/leastsquare/LeastSquareResultsWithTransform.html" title="class in com.opengamma.strata.math.impl.statistics.leastsquare">LeastSquareResultsWithTransform</a>,&#8203;<a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCalibrator.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCalibrator.html#calibrateLsShiftedFromPrices(com.opengamma.strata.basics.date.BusinessDayAdjustment,java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,java.time.Period,double,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.market.ValueType,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,java.util.BitSet,double)">calibrateLsShiftedFromPrices</a></span>&#8203;(<a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;bda,
-                            java.time.ZonedDateTime&nbsp;calibrationDateTime,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;calibrationDateTime,
                             <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-                            java.time.Period&nbsp;periodToExpiry,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToExpiry,
                             double&nbsp;forward,
                             <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;strikesLike,
                             <a href="../../../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a>&nbsp;strikeType,
                             <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;prices,
                             <a href="../../array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;startParameters,
-                            java.util.BitSet&nbsp;fixedParameters,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/BitSet.html?is-external=true" title="class or interface in java.util" class="externalLink">BitSet</a>&nbsp;fixedParameters,
                             double&nbsp;shiftOutput)</code></th>
 <td class="colLast">
 <div class="block">Calibrate the SABR parameters to a set of option prices at given moneyness.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionSurfaceExpirySimpleMoneynessParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SwaptionSurfaceExpirySimpleMoneynessParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionSurfaceExpiryStrikeParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SwaptionSurfaceExpiryStrikeParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;java.lang.Double,&#8203;java.lang.Double&gt;</code></td>
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionSurfaceExpiryTenorParameterMetadata.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SwaptionSurfaceExpiryTenorParameterMetadata.html#getIdentifier()">getIdentifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -1017,7 +1210,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

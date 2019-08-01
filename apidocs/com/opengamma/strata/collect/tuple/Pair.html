@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>com.opengamma.strata.collect.tuple.Pair&lt;A,&#8203;B&gt;</li>
@@ -139,12 +139,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a></code>, <code>java.io.Serializable</code>, <code>java.lang.Comparable&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">Pair&lt;A,&#8203;B&gt;</span>
-extends java.lang.Object
-implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a>, java.lang.Comparable&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;, java.io.Serializable</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface in com.opengamma.strata.collect.tuple">Tuple</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">An immutable pair consisting of two elements.
  <p>
  This implementation refers to the elements as 'first' and 'second'.
@@ -209,16 +209,16 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;C,&#8203;D&gt;<br><a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="Pair.html" title="type parameter in Pair">A</a>,&#8203;<a href="Pair.html" title="type parameter in Pair">B</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combinedWith(com.opengamma.strata.collect.tuple.Pair,java.util.function.BiFunction,java.util.function.BiFunction)">combinedWith</a></span>&#8203;(<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;C,&#8203;D&gt;&nbsp;other,
-            java.util.function.BiFunction&lt;? super <a href="Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
-            java.util.function.BiFunction&lt;? super <a href="Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</code></th>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</code></th>
 <td class="colLast">
 <div class="block">Combines this instance with another.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br>java.util.function.BinaryOperator&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combining(java.util.function.BiFunction,java.util.function.BiFunction)">combining</a></span>&#8203;(java.util.function.BiFunction&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
-         java.util.function.BiFunction&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond)</code></th>
+<td class="colFirst"><code>static &lt;A,&#8203;B&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#combining(java.util.function.BiFunction,java.util.function.BiFunction)">combining</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond)</code></th>
 <td class="colLast">
 <div class="block">Returns a combiner of pair instances.</div>
 </td>
@@ -231,7 +231,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.Object&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#elements()">elements</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the elements from this pair as a list.</div>
@@ -239,7 +239,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -275,8 +275,8 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;R,&#8203;S&gt;<br><a href="Pair.Meta.html" title="class in com.opengamma.strata.collect.tuple">Pair.Meta</a>&lt;R,&#8203;S&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaPair(java.lang.Class,java.lang.Class)">metaPair</a></span>&#8203;(java.lang.Class&lt;R&gt;&nbsp;cls1,
-        java.lang.Class&lt;S&gt;&nbsp;cls2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaPair(java.lang.Class,java.lang.Class)">metaPair</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;R&gt;&nbsp;cls1,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;S&gt;&nbsp;cls2)</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>Pair</code>.</div>
 </td>
@@ -297,7 +297,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the pair using a standard string format.</div>
@@ -308,8 +308,8 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.joda.beans.Bean">
@@ -363,8 +363,8 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>combining</h4>
-<pre class="methodSignature">public static&nbsp;&lt;A,&#8203;B&gt;&nbsp;java.util.function.BinaryOperator&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;&nbsp;combining&#8203;(java.util.function.BiFunction&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
-                                                                                       java.util.function.BiFunction&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;A,&#8203;B&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;A,&#8203;B&gt;&gt;&nbsp;combining&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super A,&#8203;? super A,&#8203;? extends A&gt;&nbsp;combinerFirst,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super B,&#8203;? super B,&#8203;? extends B&gt;&nbsp;combinerSecond)</pre>
 <div class="block">Returns a combiner of pair instances.
  <p>
  This is useful if you have a stream of <code>Pair&lt;A, B&gt;</code> and would like to reduce.
@@ -392,8 +392,8 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <li class="blockList">
 <h4>combinedWith</h4>
 <pre class="methodSignature">public&nbsp;&lt;C,&#8203;D&gt;&nbsp;<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="Pair.html" title="type parameter in Pair">A</a>,&#8203;<a href="Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinedWith&#8203;(<a href="Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;C,&#8203;D&gt;&nbsp;other,
-                                                java.util.function.BiFunction&lt;? super <a href="Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
-                                                java.util.function.BiFunction&lt;? super <a href="Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</pre>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="Pair.html" title="type parameter in Pair">A</a>,&#8203;? super C,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">A</a>&gt;&nbsp;combinerFirst,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="Pair.html" title="type parameter in Pair">B</a>,&#8203;? super D,&#8203;? extends <a href="Pair.html" title="type parameter in Pair">B</a>&gt;&nbsp;combinerSecond)</pre>
 <div class="block">Combines this instance with another.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -430,7 +430,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>elements</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;java.lang.Object&gt;&nbsp;elements()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;elements()</pre>
 <div class="block">Gets the elements from this pair as a list.
  <p>
  The list returns each element in the pair in order.</div>
@@ -454,13 +454,13 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
  The element types must be <code>Comparable</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>compareTo</code>&nbsp;in interface&nbsp;<code>java.lang.Comparable&lt;<a href="Pair.html" title="type parameter in Pair">A</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang" class="externalLink">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="Pair.html" title="type parameter in Pair">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other pair</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>negative if this is less, zero if equal, positive if greater</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.ClassCastException</code> - if either object is not comparable</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ClassCastException</a></code> - if either object is not comparable</dd>
 </dl>
 </li>
 </ul>
@@ -470,13 +470,13 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
 <div class="block">Gets the pair using a standard string format.
  <p>
  The standard format is '[$first, $second]'. Spaces around the values are trimmed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the pair as a string</dd>
 </dl>
@@ -502,8 +502,8 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>metaPair</h4>
-<pre class="methodSignature">public static&nbsp;&lt;R,&#8203;S&gt;&nbsp;<a href="Pair.Meta.html" title="class in com.opengamma.strata.collect.tuple">Pair.Meta</a>&lt;R,&#8203;S&gt;&nbsp;metaPair&#8203;(java.lang.Class&lt;R&gt;&nbsp;cls1,
-                                                        java.lang.Class&lt;S&gt;&nbsp;cls2)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;R,&#8203;S&gt;&nbsp;<a href="Pair.Meta.html" title="class in com.opengamma.strata.collect.tuple">Pair.Meta</a>&lt;R,&#8203;S&gt;&nbsp;metaPair&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;R&gt;&nbsp;cls1,
+                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;S&gt;&nbsp;cls2)</pre>
 <div class="block">The meta-bean for <code>Pair</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -564,10 +564,10 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;obj)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -580,7 +580,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -654,7 +654,7 @@ implements org.joda.beans.ImmutableBean, <a href="Tuple.html" title="interface i
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

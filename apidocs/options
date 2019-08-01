@@ -1,0 +1,48 @@
+--class-path
+'D:/og/Strata/modules/basics/target/classes;D:/og/Strata/modules/collect/target/classes;D:/og/Strata/modules/data/target/classes;D:/og/Strata/modules/product/target/classes;D:/og/Strata/modules/market/target/classes;D:/og/Strata/modules/loader/target/classes;D:/og/Strata/modules/math/target/classes;D:/og/Strata/modules/pricer/target/classes;D:/og/Strata/modules/calc/target/classes;D:/og/Strata/modules/measure/target/classes;D:/og/Strata/modules/report/target/classes;C:/Users/Stephen/.m2/repository/com/google/guava/guava/26.0-jre/guava-26.0-jre.jar;C:/Users/Stephen/.m2/repository/org/joda/joda-beans/2.7.1/joda-beans-2.7.1.jar;C:/Users/Stephen/.m2/repository/org/joda/joda-convert/2.2.1/joda-convert-2.2.1.jar;C:/Users/Stephen/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar;C:/Users/Stephen/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+8
+-sourcepath
+'D:/og/Strata/modules/basics/src/main/java;D:/og/Strata/modules/collect/src/main/java;D:/og/Strata/modules/data/src/main/java;D:/og/Strata/modules/product/src/main/java;D:/og/Strata/modules/market/src/main/java;D:/og/Strata/modules/loader/src/main/java;D:/og/Strata/modules/math/src/main/java;D:/og/Strata/modules/pricer/src/main/java;D:/og/Strata/modules/calc/src/main/java;D:/og/Strata/modules/measure/src/main/java;D:/og/Strata/modules/report/src/main/java'
+--allow-script-in-comments
+-Xdoclint:missing
+-Xdoclint:reference
+-bottom
+'<i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push([\'_setAccount\', \'UA-12092825-5\']);_gaq.push([\'_trackPageview\']);(function() {var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true; ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\'; var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s); })(); </script>'
+-charset
+'UTF-8'
+-d
+'D:/og/Strata/modules/target/site/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'<h1>OpenGamma Strata</h1>'
+-group
+'Measure-level API' 'com.opengamma.strata.measure:com.opengamma.strata.measure.*'
+-group
+'Pricer-level API' 'com.opengamma.strata.pricer:com.opengamma.strata.pricer.*'
+-group
+'Market data structures' 'com.opengamma.strata.market:com.opengamma.strata.market.*'
+-group
+'Product domain model' 'com.opengamma.strata.product:com.opengamma.strata.product.*'
+-group
+'Supporting toolkit' 'com.opengamma.strata.*'
+-header
+'<script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [ [\'$\',\'$\'], ["\\\\(","\\\\)"] ],processEscapes: true} });</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>'
+-link
+'https://www.joda.org/joda-beans/apidocs'
+-link
+'https://www.joda.org/joda-collect/apidocs'
+-link
+'https://guava.dev/releases/26.0-jre/api/docs'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'D:/og/Strata/modules/target/javadoc-bundle-options'
+-notimestamp
+-use
+-version
+-windowtitle
+'OpenGamma Strata'

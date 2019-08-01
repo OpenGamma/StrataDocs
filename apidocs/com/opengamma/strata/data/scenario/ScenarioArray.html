@@ -196,14 +196,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(int,java.util.function.IntFunction)">of</a></span>&#8203;(int&nbsp;scenarioCount,
-  java.util.function.IntFunction&lt;T&gt;&nbsp;valueFunction)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">IntFunction</a>&lt;T&gt;&nbsp;valueFunction)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance using a function to create the entries.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List)">of</a></span>&#8203;(java.util.List&lt;T&gt;&nbsp;values)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&nbsp;values)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified list of values.</div>
 </td>
@@ -224,7 +224,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>default java.util.stream.Stream&lt;<a href="ScenarioArray.html" title="type parameter in ScenarioArray">T</a>&gt;</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="ScenarioArray.html" title="type parameter in ScenarioArray">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a stream of the values.</div>
@@ -255,7 +255,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">@SafeVarargs
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SafeVarargs.html?is-external=true" title="class or interface in java.lang" class="externalLink">@SafeVarargs</a>
 static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;T&gt;&nbsp;of&#8203;(T...&nbsp;values)</pre>
 <div class="block">Obtains an instance from the specified array of values.</div>
 <dl>
@@ -274,7 +274,7 @@ static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;T&gt;&nbsp;of&#8203;(java.util.List&lt;T&gt;&nbsp;values)</pre>
+<pre class="methodSignature">static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;T&gt;&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&nbsp;values)</pre>
 <div class="block">Obtains an instance from the specified list of values.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -293,7 +293,7 @@ static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;T&gt;&nbsp;of&#8203;(int&nbsp;scenarioCount,
-                               java.util.function.IntFunction&lt;T&gt;&nbsp;valueFunction)</pre>
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">IntFunction</a>&lt;T&gt;&nbsp;valueFunction)</pre>
 <div class="block">Obtains an instance using a function to create the entries.
  <p>
  The function is passed the scenario index and returns the value for that index.</div>
@@ -306,7 +306,7 @@ static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an instance initialized using the function</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - is size is zero or less</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - is size is zero or less</dd>
 </dl>
 </li>
 </ul>
@@ -360,7 +360,7 @@ static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value at the specified index</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IndexOutOfBoundsException</code> - if the index is invalid</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IndexOutOfBoundsException</a></code> - if the index is invalid</dd>
 </dl>
 </li>
 </ul>
@@ -370,7 +370,7 @@ static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>stream</h4>
-<pre class="methodSignature">default&nbsp;java.util.stream.Stream&lt;<a href="ScenarioArray.html" title="type parameter in ScenarioArray">T</a>&gt;&nbsp;stream()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="ScenarioArray.html" title="type parameter in ScenarioArray">T</a>&gt;&nbsp;stream()</pre>
 <div class="block">Returns a stream of the values.
  <p>
  The stream will return the value for each scenario.</div>
@@ -450,7 +450,7 @@ static&nbsp;&lt;T&gt;&nbsp;<a href="ScenarioArray.html" title="interface in com.
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

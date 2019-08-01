@@ -108,6 +108,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate.model">com.opengamma.strata.pricer.impl.rate.model</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of analytic models.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.model">com.opengamma.strata.pricer.model</a></th>
 <td class="colLast">
 <div class="block">Common code for model pricing.</div>
@@ -118,6 +124,96 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.rate.model">
+<!--   -->
+</a>
+<h3>Uses of <a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a> in <a href="../../impl/rate/model/package-summary.html">com.opengamma.strata.pricer.impl.rate.model</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../impl/rate/model/package-summary.html">com.opengamma.strata.pricer.impl.rate.model</a> with parameters of type <a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#alpha(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,double,double,double)">alpha</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;data,
+     double&nbsp;startExpiry,
+     double&nbsp;endExpiry,
+     double&nbsp;numeraireTime,
+     double&nbsp;bondMaturity)</code></th>
+<td class="colLast">
+<div class="block">Calculates the (zero-coupon) bond volatility divided by a bond numeraire, i.e., alpha, for a given period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#alphaAdjoint(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,double,double,double)">alphaAdjoint</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;data,
+            double&nbsp;startExpiry,
+            double&nbsp;endExpiry,
+            double&nbsp;numeraireTime,
+            double&nbsp;bondMaturity)</code></th>
+<td class="colLast">
+<div class="block">Calculates the (zero-coupon) bond volatility divided by a bond numeraire, i.e., alpha, for a given period and 
+ its derivatives.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#beta(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,double)">beta</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;data,
+    double&nbsp;startExpiry,
+    double&nbsp;endExpiry)</code></th>
+<td class="colLast">
+<div class="block">Calculates the beta parameter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#futuresConvexityFactor(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,double,double)">futuresConvexityFactor</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;data,
+                      double&nbsp;t0,
+                      double&nbsp;t1,
+                      double&nbsp;t2)</code></th>
+<td class="colLast">
+<div class="block">Calculates the future convexity factor used in future pricing.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#futuresConvexityFactorAdjoint(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,double,double)">futuresConvexityFactorAdjoint</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;data,
+                             double&nbsp;t0,
+                             double&nbsp;t1,
+                             double&nbsp;t2)</code></th>
+<td class="colLast">
+<div class="block">Calculates the future convexity factor and its derivatives with respect to the model volatilities.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#paymentDelayConvexityFactor(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,double,double,double,double)">paymentDelayConvexityFactor</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;parameters,
+                           double&nbsp;startExpiry,
+                           double&nbsp;endExpiry,
+                           double&nbsp;u,
+                           double&nbsp;v,
+                           double&nbsp;tp)</code></th>
+<td class="colLast">
+<div class="block">Calculates the payment delay convexity factor used in coupons with mismatched dates pricing.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantInterestRateModel.</span><code><span class="memberNameLink"><a href="../../impl/rate/model/HullWhiteOneFactorPiecewiseConstantInterestRateModel.html#volatilityMaturityPart(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,double,com.opengamma.strata.collect.array.DoubleMatrix)">volatilityMaturityPart</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;hwParameters,
+                      double&nbsp;u,
+                      <a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&nbsp;v)</code></th>
+<td class="colLast">
+<div class="block">Calculates the maturity dependent part of the volatility (function called H in the implementation note).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.pricer.model">
 <!--   -->
@@ -212,9 +308,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static <a href="../HullWhiteOneFactorPiecewiseConstantParametersProvider.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParametersProvider</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantParametersProvider.</span><code><span class="memberNameLink"><a href="../HullWhiteOneFactorPiecewiseConstantParametersProvider.html#of(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,com.opengamma.strata.basics.date.DayCount,java.time.LocalDate,java.time.LocalTime,java.time.ZoneId)">of</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;parameters,
   <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-  java.time.LocalDate&nbsp;valuationDate,
-  java.time.LocalTime&nbsp;valuationTime,
-  java.time.ZoneId&nbsp;valuationZone)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalTime</a>&nbsp;valuationTime,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html?is-external=true" title="class or interface in java.time" class="externalLink">ZoneId</a>&nbsp;valuationZone)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from Hull-White model parameters and the date, time and zone for which it is valid.</div>
 </td>
@@ -223,7 +319,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static <a href="../HullWhiteOneFactorPiecewiseConstantParametersProvider.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParametersProvider</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteOneFactorPiecewiseConstantParametersProvider.</span><code><span class="memberNameLink"><a href="../HullWhiteOneFactorPiecewiseConstantParametersProvider.html#of(com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParameters,com.opengamma.strata.basics.date.DayCount,java.time.ZonedDateTime)">of</a></span>&#8203;(<a href="../HullWhiteOneFactorPiecewiseConstantParameters.html" title="class in com.opengamma.strata.pricer.model">HullWhiteOneFactorPiecewiseConstantParameters</a>&nbsp;parameters,
   <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
-  java.time.ZonedDateTime&nbsp;valuationDateTime)</code></th>
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;valuationDateTime)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from Hull-White model parameters and the date-time for which it is valid.</div>
 </td>
@@ -283,7 +379,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>

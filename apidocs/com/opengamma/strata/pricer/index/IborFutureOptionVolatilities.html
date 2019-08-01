@@ -177,14 +177,14 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default java.time.LocalDate</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValuationDate()">getValuationDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the valuation date.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.time.ZonedDateTime</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValuationDateTime()">getValuationDateTime</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the valuation date-time.</div>
@@ -213,7 +213,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#relativeTime(java.time.ZonedDateTime)">relativeTime</a></span>&#8203;(java.time.ZonedDateTime&nbsp;dateTime)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#relativeTime(java.time.ZonedDateTime)">relativeTime</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;dateTime)</code></th>
 <td class="colLast">
 <div class="block">Converts a time and date to a relative year fraction.</div>
 </td>
@@ -221,7 +221,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,java.time.LocalDate,double,double)">volatility</a></span>&#8203;(double&nbsp;expiry,
-          java.time.LocalDate&nbsp;fixingDate,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
           double&nbsp;strikePrice,
           double&nbsp;futurePrice)</code></th>
 <td class="colLast">
@@ -230,8 +230,8 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>default double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(java.time.ZonedDateTime,java.time.LocalDate,double,double)">volatility</a></span>&#8203;(java.time.ZonedDateTime&nbsp;expiryDateTime,
-          java.time.LocalDate&nbsp;fixingDate,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(java.time.ZonedDateTime,java.time.LocalDate,double,double)">volatility</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiryDateTime,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
           double&nbsp;strikePrice,
           double&nbsp;futurePrice)</code></th>
 <td class="colLast">
@@ -332,7 +332,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <ul class="blockList">
 <li class="blockList">
 <h4>getValuationDate</h4>
-<pre class="methodSignature">default&nbsp;java.time.LocalDate&nbsp;getValuationDate()</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getValuationDate()</pre>
 <div class="block">Gets the valuation date.
  <p>
  The volatilities are calibrated for this date.</div>
@@ -350,7 +350,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <ul class="blockList">
 <li class="blockList">
 <h4>getValuationDateTime</h4>
-<pre class="methodSignature">java.time.ZonedDateTime&nbsp;getValuationDateTime()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;getValuationDateTime()</pre>
 <div class="block">Gets the valuation date-time.
  <p>
  The volatilities are calibrated for this date-time.</div>
@@ -414,8 +414,8 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <ul class="blockList">
 <li class="blockList">
 <h4>volatility</h4>
-<pre class="methodSignature">default&nbsp;double&nbsp;volatility&#8203;(java.time.ZonedDateTime&nbsp;expiryDateTime,
-                          java.time.LocalDate&nbsp;fixingDate,
+<pre class="methodSignature">default&nbsp;double&nbsp;volatility&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiryDateTime,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
                           double&nbsp;strikePrice,
                           double&nbsp;futurePrice)</pre>
 <div class="block">Calculates the volatility at the specified expiry.</div>
@@ -428,7 +428,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the volatility</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the value cannot be obtained</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the value cannot be obtained</dd>
 </dl>
 </li>
 </ul>
@@ -439,7 +439,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <li class="blockList">
 <h4>volatility</h4>
 <pre class="methodSignature">double&nbsp;volatility&#8203;(double&nbsp;expiry,
-                  java.time.LocalDate&nbsp;fixingDate,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;fixingDate,
                   double&nbsp;strikePrice,
                   double&nbsp;futurePrice)</pre>
 <div class="block">Calculates the volatility at the specified expiry.
@@ -454,7 +454,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the volatility</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - if the value cannot be obtained</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the value cannot be obtained</dd>
 </dl>
 </li>
 </ul>
@@ -502,7 +502,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 <ul class="blockListLast">
 <li class="blockList">
 <h4>relativeTime</h4>
-<pre class="methodSignature">double&nbsp;relativeTime&#8203;(java.time.ZonedDateTime&nbsp;dateTime)</pre>
+<pre class="methodSignature">double&nbsp;relativeTime&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;dateTime)</pre>
 <div class="block">Converts a time and date to a relative year fraction. 
  <p>
  When the date is after the valuation date (and potentially time), the returned number is negative.</div>
@@ -584,7 +584,7 @@ extends <a href="../../market/MarketDataView.html" title="interface in com.openg
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br/><i>Apache v2 licensed</i><br/><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
+<p class="legalCopy"><small><i>Copyright 2009-Present by OpenGamma Inc. and individual contributors</i><br /><i>Apache v2 licensed</i><br /><i>Additional documentation can be found at <a href="http://strata.opengamma.io">strata.opengamma.io</a>.</i><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12092825-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script></small></p>
 </footer>
 </body>
 </html>
