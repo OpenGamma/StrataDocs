@@ -26,8 +26,8 @@ to specify the identifier and counterparty.
 
 | Column name              | Mandatory?  | Description |
 |--------------------------|-------------|-------------|
-| Strata Trade Type        | Mandatory   | The type of the trade, "CDS", case insensitive |
-| Buy Sell                 | Mandatory   | Whether the CDS is "Buy" or "Sell" |
+| Strata Trade Type        | Mandatory   | The type of the trade, "CDS Index", case insensitive |
+| Buy Sell                 | Mandatory   | Whether the CDS Index is "Buy" or "Sell" |
 | Currency                 | Mandatory   | The currency of the notional amount |
 | Notional                 | Mandatory   | The notional amount |
 | Fixed Rate               | Mandatory   | The fixed rate, as a percentage, such as "1.2" for 1.2% |
