@@ -200,7 +200,7 @@ The numerator is the actual number of days in the requested period.<br />
 The denominator is determined by examining the frequency and the period end date (the date of the next coupon).<br />
 If the frequency is annual then the denominator is 366 if the period contains February 29th, if not it is 365.<br />
 The first day in the period is excluded, the last day is included.<br />
-If the frequency is not annual, the the denominator is 366 if the period end date is in a leap year, if not it is 365.</td>
+If the frequency is not annual, the denominator is 366 if the period end date is in a leap year, if not it is 365.</td>
 </tr>
 <tr>
   <th>Schedules</th>

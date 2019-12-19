@@ -25,7 +25,9 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 | COP-OIBR *     | IBR index for COP        | Act/360      |
 | DKK-TNR        | TNR index for CHF        | Act/360      |
 | EUR-EONIA      | EONIA index for EUR      | Act/360      |
+| EUR-ESTR       | ESTR index for EUR       | Act/360      |
 | GBP-SONIA      | SONIA index for GBP      | Act/365F     |
+| HKD-HONIA *    | HONIA index for HKD      | Act/365F     |
 | INR-OMIBOR *   | OMIBOR index for INR     | Act/365F     |
 | NOK-NOWA       | NOWA index for NOK       | Act/Act Year |
 | NZD-NZIONA     | NZIONA index for AUD     | Act/365F     |
@@ -34,6 +36,7 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 | SGD-SONAR *    | SONAR index for SGD      | Act/365F     |
 | JPY-TONAR      | TONAR index for JPY      | Act/365F     |
 | USD-FED-FUND   | Fed-Fund index for USD   | Act/360      |
+| USD-SOFR       | SOFR index for USD       | Act/360      |
 | ZAR-SABOR      | SABOR index for ZAR      | Act/360      |
 
 Overnight indices have a constant in `OvernightIndices`.
