@@ -6,6 +6,23 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.7.0
+
+* 25 February 2020
+
+This release contains over 70 [fixed issues](https://github.com/OpenGamma/Strata/milestone/26?closed=1).
+
+* Add `PortfolioItem.withInfo()` method, source compatible but not binary compatible for callers,
+also not source compatible for custom implementations of `PortfolioItem`
+ [#2133](https://github.com/OpenGamma/Strata/issues/2133)
+* Rename `ESTER` index to `ESTR`, old code will be accepted on input for compatibility
+ [#2101](https://github.com/OpenGamma/Strata/issues/2101)
+* Fix `EtdOptionPosition` and `EtdFuturePosition` `resolveTarget()` methods
+ [#2138](https://github.com/OpenGamma/Strata/issues/2138)
+* Fix `CurrencyParameterSensitivity.toUnitParameterSensitivity()` method
+ [#2127](https://github.com/OpenGamma/Strata/issues/2127)
+
+
 ## Strata v2.6.0
 
 * 30 July 2019
