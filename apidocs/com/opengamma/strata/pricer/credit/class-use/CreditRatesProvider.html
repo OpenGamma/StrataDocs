@@ -743,6 +743,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IsdaHomogenousCdsIndexProductPricer.</span><code><span class="memberNameLink"><a href="../IsdaHomogenousCdsIndexProductPricer.html#riskyAnnuity(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">riskyAnnuity</a></span>&#8203;(<a href="../../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
+            <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+            <a href="../../common/PriceType.html" title="enum in com.opengamma.strata.pricer.common">PriceType</a>&nbsp;priceType,
+            <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Calculates the risky annuity, which is RPV01 per unit notional.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IsdaCdsProductPricer.</span><code><span class="memberNameLink"><a href="../IsdaCdsProductPricer.html#riskyAnnuitySensitivity(com.opengamma.strata.product.credit.ResolvedCds,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">riskyAnnuitySensitivity</a></span>&#8203;(<a href="../../../product/credit/ResolvedCds.html" title="class in com.opengamma.strata.product.credit">ResolvedCds</a>&nbsp;cds,
+                       <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+                       <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Calculates the risky annuity sensitivity of the product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IsdaHomogenousCdsIndexProductPricer.</span><code><span class="memberNameLink"><a href="../IsdaHomogenousCdsIndexProductPricer.html#riskyAnnuitySensitivity(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">riskyAnnuitySensitivity</a></span>&#8203;(<a href="../../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
+                       <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+                       <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Calculates the risky annuity sensitivity of the product.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IsdaCdsProductPricer.</span><code><span class="memberNameLink"><a href="../IsdaCdsProductPricer.html#rpv01(com.opengamma.strata.product.credit.ResolvedCds,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">rpv01</a></span>&#8203;(<a href="../../../product/credit/ResolvedCds.html" title="class in com.opengamma.strata.product.credit">ResolvedCds</a>&nbsp;cds,
      <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
@@ -753,7 +784,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the risky PV01 of the CDS product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IsdaHomogenousCdsIndexProductPricer.</span><code><span class="memberNameLink"><a href="../IsdaHomogenousCdsIndexProductPricer.html#rpv01(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">rpv01</a></span>&#8203;(<a href="../../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
      <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
@@ -764,7 +795,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the risky PV01 of the CDS index product.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IsdaCdsTradePricer.</span><code><span class="memberNameLink"><a href="../IsdaCdsTradePricer.html#rpv01OnSettle(com.opengamma.strata.product.credit.ResolvedCdsTrade,com.opengamma.strata.pricer.credit.CreditRatesProvider,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">rpv01OnSettle</a></span>&#8203;(<a href="../../../product/credit/ResolvedCdsTrade.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsTrade</a>&nbsp;trade,
              <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
@@ -774,7 +805,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the risky PV01 of the underlying product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IsdaHomogenousCdsIndexTradePricer.</span><code><span class="memberNameLink"><a href="../IsdaHomogenousCdsIndexTradePricer.html#rpv01OnSettle(com.opengamma.strata.product.credit.ResolvedCdsIndexTrade,com.opengamma.strata.pricer.credit.CreditRatesProvider,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">rpv01OnSettle</a></span>&#8203;(<a href="../../../product/credit/ResolvedCdsIndexTrade.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndexTrade</a>&nbsp;trade,
              <a href="../CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,

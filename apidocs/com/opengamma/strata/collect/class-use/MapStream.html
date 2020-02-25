@@ -283,6 +283,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;V,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#of(java.util.Collection)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;V&gt;&nbsp;collection)</code></th>
+<td class="colLast">
+<div class="block">Returns a stream of map entries where the keys and values are taken from a collection.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#of(java.util.Collection,java.util.function.Function)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;V&gt;&nbsp;collection,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super V,&#8203;? extends K&gt;&nbsp;keyFunction)</code></th>
@@ -291,14 +298,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  and the keys are created by applying a function to each value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#of(java.util.Map)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;map)</code></th>
 <td class="colLast">
 <div class="block">Returns a stream over the entries in the map.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T,&#8203;K,&#8203;V&gt;<br><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#of(java.util.stream.Stream,java.util.function.Function,java.util.function.Function)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;T&gt;&nbsp;stream,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super T,&#8203;? extends K&gt;&nbsp;keyFunction,
@@ -306,6 +313,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Returns a stream of map entries where the keys and values are extracted from a
  stream by applying a function to each item in the stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;V,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#of(java.util.stream.Stream)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;V&gt;&nbsp;stream)</code></th>
+<td class="colLast">
+<div class="block">Returns a stream of map entries where the keys and values are taken from a stream.</div>
 </td>
 </tr>
 <tr class="rowColor">

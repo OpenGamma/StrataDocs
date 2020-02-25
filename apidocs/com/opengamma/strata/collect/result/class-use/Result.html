@@ -485,13 +485,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureItem)">failure</a></span>&#8203;(<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&nbsp;failureItem)</code></th>
+<td class="colLast">
+<div class="block">Creates a failed result containing a failure item.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.Exception)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result caused by an exception with a specified reason.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.Exception,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception,
@@ -501,7 +508,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a failed result caused by an exception with a specified reason and message.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -510,14 +517,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a failed result specifying the failure reason.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.Result)">failure</a></span>&#8203;(<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&nbsp;failureResult)</code></th>
 <td class="colLast">
 <div class="block">Returns a failed result from another failed result.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.Result,com.opengamma.strata.collect.result.Result,com.opengamma.strata.collect.result.Result...)">failure</a></span>&#8203;(<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&nbsp;result1,
        <a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&nbsp;result2,
@@ -526,14 +533,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a failed result combining multiple failed results.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Exception)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result caused by an exception.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Exception,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -542,14 +549,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a failed result caused by an exception.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Iterable)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;&nbsp;results)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result combining multiple failed results.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;T,&#8203;R&gt;<br><a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#flatCombine(java.lang.Iterable,java.util.function.Function)">flatCombine</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;&gt;&nbsp;results,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;T&gt;,&#8203;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;&gt;&nbsp;function)</code></th>
@@ -558,21 +565,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  and then applies the supplied function to the successes.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="../Result.html" title="type parameter in Result">T</a>,&#8203;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes a successful result by applying a function that returns another result.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#map(java.util.function.Function)">map</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="../Result.html" title="type parameter in Result">T</a>,&#8203;? extends R&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes a successful result by applying a function that alters the value.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#of(java.util.function.Supplier)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;T&gt;&nbsp;supplier)</code></th>
 <td class="colLast">
@@ -580,7 +587,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  supplier.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#ofNullable(R)">ofNullable</a></span>&#8203;(R&nbsp;value)</code></th>
 <td class="colLast">
@@ -588,7 +595,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  with a reason of <a href="../FailureReason.html#MISSING_DATA"><code>FailureReason.MISSING_DATA</code></a> and message to say an unexpected null was found.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#ofNullable(R,com.opengamma.strata.collect.result.FailureReason,java.lang.String,java.lang.Object...)">ofNullable</a></span>&#8203;(R&nbsp;value,
           <a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
@@ -599,14 +606,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  with the specified reason and message.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#success(R)">success</a></span>&#8203;(R&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Creates a successful result wrapping a value.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#wrap(java.util.function.Supplier)">wrap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;&gt;&nbsp;supplier)</code></th>
 <td class="colLast">

@@ -132,9 +132,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="PortfolioItemInfoBuilder.html" title="interface in com.opengamma.strata.product">PortfolioItemInfoBuilder</a>&lt;<a href="TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&gt;</code></dd>
+</dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">TradeInfoBuilder</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements <a href="PortfolioItemInfoBuilder.html" title="interface in com.opengamma.strata.product">PortfolioItemInfoBuilder</a>&lt;<a href="TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&gt;</pre>
 <div class="block">Builder to create <code>TradeInfo</code>.
  <p>
  This builder allows a <a href="TradeInfo.html" title="class in com.opengamma.strata.product"><code>TradeInfo</code></a> to be created.</div>
@@ -250,6 +255,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>
  The identifier is used to identify the trade.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="PortfolioItemInfoBuilder.html#id(com.opengamma.strata.basics.StandardId)">id</a></code>&nbsp;in interface&nbsp;<code><a href="PortfolioItemInfoBuilder.html" title="interface in com.opengamma.strata.product">PortfolioItemInfoBuilder</a>&lt;<a href="TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - the identifier</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -353,6 +360,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>
  The attribute is added using <code>Map.put(type, value)</code> semantics.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="PortfolioItemInfoBuilder.html#addAttribute(com.opengamma.strata.product.AttributeType,V)">addAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="PortfolioItemInfoBuilder.html" title="interface in com.opengamma.strata.product">PortfolioItemInfoBuilder</a>&lt;<a href="TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&gt;</code></dd>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of the value</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -372,6 +381,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;<a href="TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;build()</pre>
 <div class="block">Builds the trade information.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="PortfolioItemInfoBuilder.html#build()">build</a></code>&nbsp;in interface&nbsp;<code><a href="PortfolioItemInfoBuilder.html" title="interface in com.opengamma.strata.product">PortfolioItemInfoBuilder</a>&lt;<a href="TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the trade information</dd>
 </dl>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":9,"i14":9,"i15":9,"i16":9,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a></code>, <code><a href="../../basics/ResolvableCalculationTarget.html" title="interface in com.opengamma.strata.basics">ResolvableCalculationTarget</a></code>, <code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code>, <code><a href="../PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code>, <code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code>, <code><a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a></code>, <code><a href="../SecurityQuantity.html" title="interface in com.opengamma.strata.product">SecurityQuantity</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a></code>, <code><a href="../../basics/ResolvableCalculationTarget.html" title="interface in com.opengamma.strata.basics">ResolvableCalculationTarget</a></code>, <code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code>, <code><a href="../PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code>, <code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code>, <code><a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a></code>, <code><a href="../SecuritizedProductPortfolioItem.html" title="interface in com.opengamma.strata.product">SecuritizedProductPortfolioItem</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code>, <code><a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code>, <code><a href="../SecurityQuantity.html" title="interface in com.opengamma.strata.product">SecurityQuantity</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">EtdFuturePosition</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a>, <a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a>, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
+implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a>, <a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;, <a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a>, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">A position in an ETD future, where the security is embedded ready for mark-to-market pricing.
  <p>
  This represents a position in a future, defined by long and short quantity.
@@ -219,58 +219,79 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the currency of the position.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInfo()">getInfo</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the additional position information, defaulted to an empty instance.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLongQuantity()">getLongQuantity</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the long quantity of the security.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProduct()">getProduct</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the product of the security that was traded.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQuantity()">getQuantity</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the net quantity of the security.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSecurity()">getSecurity</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the underlying security.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSecurityId()">getSecurityId</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the security identifier.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getShortQuantity()">getShortQuantity</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the short quantity of the security.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="EtdFuturePosition.Meta.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>EtdFuturePosition</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="EtdFuturePosition.Meta.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofLongShort(com.opengamma.strata.product.etd.EtdFutureSecurity,double,double)">ofLongShort</a></span>&#8203;(<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&nbsp;security,
            double&nbsp;longQuantity,
@@ -279,7 +300,7 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <div class="block">Obtains an instance from the security, long quantity and short quantity.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofLongShort(com.opengamma.strata.product.PositionInfo,com.opengamma.strata.product.etd.EtdFutureSecurity,double,double)">ofLongShort</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;positionInfo,
            <a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&nbsp;security,
@@ -289,7 +310,7 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <div class="block">Obtains an instance from position information, security, long quantity and short quantity.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofNet(com.opengamma.strata.product.etd.EtdFutureSecurity,double)">ofNet</a></span>&#8203;(<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&nbsp;security,
      double&nbsp;netQuantity)</code></th>
@@ -297,7 +318,7 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <div class="block">Obtains an instance from the security and net quantity.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofNet(com.opengamma.strata.product.PositionInfo,com.opengamma.strata.product.etd.EtdFutureSecurity,double)">ofNet</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;positionInfo,
      <a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&nbsp;security,
@@ -306,44 +327,52 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <div class="block">Obtains an instance from position information, security and net quantity.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolveTarget(com.opengamma.strata.basics.ReferenceData)">resolveTarget</a></span>&#8203;(<a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Resolves the security identifier using the specified reference data.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../PortfolioItemSummary.html" title="class in com.opengamma.strata.product">PortfolioItemSummary</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#summarize()">summarize</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Summarizes the portfolio item.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="EtdFuturePosition.Builder.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Returns an instance with the specified info.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withQuantities(double,double)">withQuantities</a></span>&#8203;(double&nbsp;longQuantity,
+              double&nbsp;shortQuantity)</code></th>
+<td class="colLast">
+<div class="block">Returns an instance with the specified quantities.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withQuantity(double)">withQuantity</a></span>&#8203;(double&nbsp;quantity)</code></th>
 <td class="colLast">
-<div class="block">Returns an instance with the specified quantity.</div>
+<div class="block">Returns an instance with the specified net quantity.</div>
 </td>
 </tr>
 </table>
@@ -366,7 +395,7 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.opengamma.strata.product.etd.<a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></h3>
-<code><a href="EtdPosition.html#getCurrency()">getCurrency</a>, <a href="EtdPosition.html#getSecurityId()">getSecurityId</a>, <a href="EtdPosition.html#getType()">getType</a></code></li>
+<code><a href="EtdPosition.html#getType()">getType</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.product.PortfolioItem">
@@ -487,22 +516,43 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 </dl>
 </li>
 </ul>
-<a id="withInfo(com.opengamma.strata.product.PositionInfo)">
+<a id="getProduct()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProduct</h4>
+<pre class="methodSignature">public&nbsp;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&nbsp;getProduct()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../SecuritizedProductPortfolioItem.html#getProduct()">SecuritizedProductPortfolioItem</a></code></span></div>
+<div class="block">Gets the product of the security that was traded.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPortfolioItem.html#getProduct()">getProduct</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPortfolioItem.html" title="interface in com.opengamma.strata.product">SecuritizedProductPortfolioItem</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the product</dd>
+</dl>
+</li>
+</ul>
+<a id="withInfo(com.opengamma.strata.product.PortfolioItemInfo)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>withInfo</h4>
-<pre class="methodSignature">public&nbsp;<a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a>&nbsp;withInfo&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EtdPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">EtdPosition</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a>&nbsp;withInfo&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EtdPosition.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">EtdPosition</a></code></span></div>
 <div class="block">Returns an instance with the specified info.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="EtdPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></dd>
+<dd><code><a href="EtdPosition.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Position.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
+<dd><code><a href="../PortfolioItem.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResolvableSecurityPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a></code></dd>
+<dd><code><a href="../Position.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../ResolvableSecurityPosition.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPosition.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>info</code> - the new info</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -518,7 +568,7 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <h4>withQuantity</h4>
 <pre class="methodSignature">public&nbsp;<a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a>&nbsp;withQuantity&#8203;(double&nbsp;quantity)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EtdPosition.html#withQuantity(double)">EtdPosition</a></code></span></div>
-<div class="block">Returns an instance with the specified quantity.</div>
+<div class="block">Returns an instance with the specified net quantity.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="EtdPosition.html#withQuantity(double)">withQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></dd>
@@ -526,10 +576,35 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <dd><code><a href="../Position.html#withQuantity(double)">withQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../ResolvableSecurityPosition.html#withQuantity(double)">withQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPortfolioItem.html#withQuantity(double)">withQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPortfolioItem.html" title="interface in com.opengamma.strata.product">SecuritizedProductPortfolioItem</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPosition.html#withQuantity(double)">withQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>quantity</code> - the new quantity</dd>
+<dd><code>quantity</code> - the new net quantity</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the instance with the specified quantity</dd>
+<dd>the instance with the specified net quantity</dd>
+</dl>
+</li>
+</ul>
+<a id="withQuantities(double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withQuantities</h4>
+<pre class="methodSignature">public&nbsp;<a href="EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a>&nbsp;withQuantities&#8203;(double&nbsp;longQuantity,
+                                        double&nbsp;shortQuantity)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EtdPosition.html#withQuantities(double,double)">EtdPosition</a></code></span></div>
+<div class="block">Returns an instance with the specified quantities.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="EtdPosition.html#withQuantities(double,double)">withQuantities</a></code>&nbsp;in interface&nbsp;<code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>longQuantity</code> - the new long quantity</dd>
+<dd><code>shortQuantity</code> - the new short quantity</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance with the specified quantities</dd>
 </dl>
 </li>
 </ul>
@@ -577,6 +652,54 @@ implements <a href="EtdPosition.html" title="interface in com.opengamma.strata.p
 <dd><code><a href="../SecurityQuantity.html#getQuantity()">getQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="../SecurityQuantity.html" title="interface in com.opengamma.strata.product">SecurityQuantity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the net quantity of the underlying security</dd>
+</dl>
+</li>
+</ul>
+<a id="getCurrency()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrency</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;getCurrency()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EtdPosition.html#getCurrency()">EtdPosition</a></code></span></div>
+<div class="block">Gets the currency of the position.
+ <p>
+ This is the currency of the security.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="EtdPosition.html#getCurrency()">getCurrency</a></code>&nbsp;in interface&nbsp;<code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPortfolioItem.html#getCurrency()">getCurrency</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPortfolioItem.html" title="interface in com.opengamma.strata.product">SecuritizedProductPortfolioItem</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the trading currency</dd>
+</dl>
+</li>
+</ul>
+<a id="getSecurityId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSecurityId</h4>
+<pre class="methodSignature">public&nbsp;<a href="../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;getSecurityId()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EtdPosition.html#getSecurityId()">EtdPosition</a></code></span></div>
+<div class="block">Gets the security identifier.
+ <p>
+ This identifier uniquely identifies the security within the system.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="EtdPosition.html#getSecurityId()">getSecurityId</a></code>&nbsp;in interface&nbsp;<code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../Position.html#getSecurityId()">getSecurityId</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPortfolioItem.html#getSecurityId()">getSecurityId</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPortfolioItem.html" title="interface in com.opengamma.strata.product">SecuritizedProductPortfolioItem</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecuritizedProductPosition.html#getSecurityId()">getSecurityId</a></code>&nbsp;in interface&nbsp;<code><a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd">EtdFutureSecurity</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../SecurityQuantity.html#getSecurityId()">getSecurityId</a></code>&nbsp;in interface&nbsp;<code><a href="../SecurityQuantity.html" title="interface in com.opengamma.strata.product">SecurityQuantity</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the security identifier</dd>
 </dl>
 </li>
 </ul>

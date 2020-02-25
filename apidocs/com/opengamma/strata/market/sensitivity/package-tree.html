@@ -107,7 +107,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Object</span></a>
 <ul>
-<li class="circle">com.opengamma.strata.market.sensitivity.<a href="CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">CurveSensitivities</span></a> (implements com.opengamma.strata.basics.currency.<a href="../../basics/currency/FxConvertible.html" title="interface in com.opengamma.strata.basics.currency">FxConvertible</a>&lt;R&gt;, org.joda.beans.ImmutableBean, com.opengamma.strata.product.<a href="../../product/PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a>, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
+<li class="circle">com.opengamma.strata.market.sensitivity.<a href="CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">CurveSensitivities</span></a> (implements com.opengamma.strata.basics.currency.<a href="../../basics/currency/FxConvertible.html" title="interface in com.opengamma.strata.basics.currency">FxConvertible</a>&lt;R&gt;, org.joda.beans.ImmutableBean, com.opengamma.strata.market.sensitivity.<a href="Sensitivities.html" title="interface in com.opengamma.strata.market.sensitivity">Sensitivities</a>, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
 <li class="circle">com.opengamma.strata.market.sensitivity.<a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">CurveSensitivitiesBuilder</span></a></li>
 <li class="circle">org.joda.beans.impl.direct.DirectMetaBean (implements org.joda.beans.MetaBean)
 <ul>
@@ -129,12 +129,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region">
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
+<li class="circle">org.joda.beans.Bean
+<ul>
+<li class="circle">org.joda.beans.ImmutableBean
+<ul>
+<li class="circle">com.opengamma.strata.market.sensitivity.<a href="Sensitivities.html" title="interface in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">Sensitivities</span></a> (also extends com.opengamma.strata.product.<a href="../../product/PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a>, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">com.opengamma.strata.basics.<a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics"><span class="typeNameLink">CalculationTarget</span></a>
+<ul>
+<li class="circle">com.opengamma.strata.product.<a href="../../product/PortfolioItem.html" title="interface in com.opengamma.strata.product"><span class="typeNameLink">PortfolioItem</span></a>
+<ul>
+<li class="circle">com.opengamma.strata.market.sensitivity.<a href="Sensitivities.html" title="interface in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">Sensitivities</span></a> (also extends org.joda.beans.ImmutableBean, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="circle">com.opengamma.strata.basics.currency.<a href="../../basics/currency/FxConvertible.html" title="interface in com.opengamma.strata.basics.currency"><span class="typeNameLink">FxConvertible</span></a>&lt;R&gt;
 <ul>
 <li class="circle">com.opengamma.strata.market.sensitivity.<a href="PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">PointSensitivity</span></a></li>
 </ul>
 </li>
 <li class="circle">com.opengamma.strata.market.sensitivity.<a href="PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">PointSensitivityBuilder</span></a></li>
+<li class="circle">java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink"><span class="typeNameLink">Serializable</span></a>
+<ul>
+<li class="circle">com.opengamma.strata.market.sensitivity.<a href="Sensitivities.html" title="interface in com.opengamma.strata.market.sensitivity"><span class="typeNameLink">Sensitivities</span></a> (also extends org.joda.beans.ImmutableBean, com.opengamma.strata.product.<a href="../../product/PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a>)</li>
+</ul>
+</li>
 </ul>
 </section>
 </div>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -310,6 +310,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#riskyAnnuity(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">riskyAnnuity</a></span>&#8203;(<a href="../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
+            <a href="CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+            <a href="../common/PriceType.html" title="enum in com.opengamma.strata.pricer.common">PriceType</a>&nbsp;priceType,
+            <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Calculates the risky annuity, which is RPV01 per unit notional.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#riskyAnnuitySensitivity(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">riskyAnnuitySensitivity</a></span>&#8203;(<a href="../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
+                       <a href="CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+                       <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Calculates the risky annuity sensitivity of the product.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rpv01(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">rpv01</a></span>&#8203;(<a href="../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
      <a href="CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
@@ -580,6 +601,59 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>refData</code> - the reference date</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the RPV01</dd>
+</dl>
+</li>
+</ul>
+<a id="riskyAnnuity(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.pricer.common.PriceType,com.opengamma.strata.basics.ReferenceData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>riskyAnnuity</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;riskyAnnuity&#8203;(<a href="../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
+                           <a href="CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+                           <a href="../common/PriceType.html" title="enum in com.opengamma.strata.pricer.common">PriceType</a>&nbsp;priceType,
+                           <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="block">Calculates the risky annuity, which is RPV01 per unit notional.
+ <p>
+ Zero is returned if the CDS index already expired.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cdsIndex</code> - the product</dd>
+<dd><code>ratesProvider</code> - the rates provider</dd>
+<dd><code>referenceDate</code> - the reference date</dd>
+<dd><code>priceType</code> - the price type</dd>
+<dd><code>refData</code> - the reference data</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the risky annuity</dd>
+</dl>
+</li>
+</ul>
+<a id="riskyAnnuitySensitivity(com.opengamma.strata.product.credit.ResolvedCdsIndex,com.opengamma.strata.pricer.credit.CreditRatesProvider,java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>riskyAnnuitySensitivity</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&nbsp;riskyAnnuitySensitivity&#8203;(<a href="../../product/credit/ResolvedCdsIndex.html" title="class in com.opengamma.strata.product.credit">ResolvedCdsIndex</a>&nbsp;cdsIndex,
+                                                       <a href="CreditRatesProvider.html" title="interface in com.opengamma.strata.pricer.credit">CreditRatesProvider</a>&nbsp;ratesProvider,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;referenceDate,
+                                                       <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="block">Calculates the risky annuity sensitivity of the product.
+ <p>
+ The risky annuity sensitivity of the product is the sensitivity of risky annuity to the underlying curves.
+ The resulting sensitivity is based on the currency of the CDS index product.
+ <p>
+ Empty sensitivity is returned if the CDS index already expired.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cdsIndex</code> - the product</dd>
+<dd><code>ratesProvider</code> - the rates provider</dd>
+<dd><code>referenceDate</code> - the reference date</dd>
+<dd><code>refData</code> - the reference data</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the risky annuity sensitivity</dd>
 </dl>
 </li>
 </ul>

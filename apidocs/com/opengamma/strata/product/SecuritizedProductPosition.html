@@ -134,7 +134,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="bond/BillPosition.html" title="class in com.opengamma.strata.product.bond">BillPosition</a></code>, <code><a href="bond/BondFutureOptionPosition.html" title="class in com.opengamma.strata.product.bond">BondFutureOptionPosition</a></code>, <code><a href="bond/BondFuturePosition.html" title="class in com.opengamma.strata.product.bond">BondFuturePosition</a></code>, <code><a href="bond/CapitalIndexedBondPosition.html" title="class in com.opengamma.strata.product.bond">CapitalIndexedBondPosition</a></code>, <code><a href="dsf/DsfPosition.html" title="class in com.opengamma.strata.product.dsf">DsfPosition</a></code>, <code><a href="bond/FixedCouponBondPosition.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondPosition</a></code>, <code><a href="GenericSecurityPosition.html" title="class in com.opengamma.strata.product">GenericSecurityPosition</a></code>, <code><a href="index/IborFutureOptionPosition.html" title="class in com.opengamma.strata.product.index">IborFutureOptionPosition</a></code>, <code><a href="index/IborFuturePosition.html" title="class in com.opengamma.strata.product.index">IborFuturePosition</a></code>, <code><a href="index/OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></dd>
+<dd><code><a href="bond/BillPosition.html" title="class in com.opengamma.strata.product.bond">BillPosition</a></code>, <code><a href="bond/BondFutureOptionPosition.html" title="class in com.opengamma.strata.product.bond">BondFutureOptionPosition</a></code>, <code><a href="bond/BondFuturePosition.html" title="class in com.opengamma.strata.product.bond">BondFuturePosition</a></code>, <code><a href="bond/CapitalIndexedBondPosition.html" title="class in com.opengamma.strata.product.bond">CapitalIndexedBondPosition</a></code>, <code><a href="dsf/DsfPosition.html" title="class in com.opengamma.strata.product.dsf">DsfPosition</a></code>, <code><a href="etd/EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code>, <code><a href="etd/EtdOptionPosition.html" title="class in com.opengamma.strata.product.etd">EtdOptionPosition</a></code>, <code><a href="bond/FixedCouponBondPosition.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondPosition</a></code>, <code><a href="GenericSecurityPosition.html" title="class in com.opengamma.strata.product">GenericSecurityPosition</a></code>, <code><a href="index/IborFutureOptionPosition.html" title="class in com.opengamma.strata.product.index">IborFutureOptionPosition</a></code>, <code><a href="index/IborFuturePosition.html" title="class in com.opengamma.strata.product.index">IborFuturePosition</a></code>, <code><a href="index/OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">SecuritizedProductPosition&lt;P extends <a href="SecuritizedProduct.html" title="interface in com.opengamma.strata.product">SecuritizedProduct</a>&gt;</span>
@@ -181,7 +181,7 @@ extends <a href="Position.html" title="interface in com.opengamma.strata.product
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="SecuritizedProductPosition.html" title="type parameter in SecuritizedProductPosition">P</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></span>&#8203;(<a href="PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Returns an instance with the specified info.</div>
 </td>
@@ -254,17 +254,19 @@ extends <a href="Position.html" title="interface in com.opengamma.strata.product
 </dl>
 </li>
 </ul>
-<a id="withInfo(com.opengamma.strata.product.PositionInfo)">
+<a id="withInfo(com.opengamma.strata.product.PortfolioItemInfo)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>withInfo</h4>
-<pre class="methodSignature"><a href="SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="SecuritizedProductPosition.html" title="type parameter in SecuritizedProductPosition">P</a>&gt;&nbsp;withInfo&#8203;(<a href="PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</pre>
+<pre class="methodSignature"><a href="SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="SecuritizedProductPosition.html" title="type parameter in SecuritizedProductPosition">P</a>&gt;&nbsp;withInfo&#8203;(<a href="PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</pre>
 <div class="block">Returns an instance with the specified info.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Position.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
+<dd><code><a href="PortfolioItem.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Position.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>info</code> - the new info</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":9,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -220,37 +220,44 @@ implements <a href="Attributes.html" title="interface in com.opengamma.strata.pr
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttributeTypes()">getAttributeTypes</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the attribute types that are available.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the security identifier.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="SecurityPriceInfo.html" title="class in com.opengamma.strata.product">SecurityPriceInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPriceInfo()">getPriceInfo</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the information about the security price.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="SecurityInfo.Meta.html" title="class in com.opengamma.strata.product">SecurityInfo.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>SecurityInfo</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="SecurityInfo.Meta.html" title="class in com.opengamma.strata.product">SecurityInfo.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="SecurityInfo.html" title="class in com.opengamma.strata.product">SecurityInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.product.SecurityId,double,com.opengamma.strata.basics.currency.CurrencyAmount)">of</a></span>&#8203;(<a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;id,
   double&nbsp;tickSize,
@@ -259,7 +266,7 @@ implements <a href="Attributes.html" title="interface in com.opengamma.strata.pr
 <div class="block">Obtains an instance from the identifier, tick size and tick value.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="SecurityInfo.html" title="class in com.opengamma.strata.product">SecurityInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.product.SecurityId,com.opengamma.strata.product.SecurityPriceInfo)">of</a></span>&#8203;(<a href="SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;id,
   <a href="SecurityPriceInfo.html" title="class in com.opengamma.strata.product">SecurityPriceInfo</a>&nbsp;priceInfo)</code></th>
@@ -267,24 +274,31 @@ implements <a href="Attributes.html" title="interface in com.opengamma.strata.pr
 <div class="block">Obtains an instance from the identifier and pricing info.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="SecurityInfoBuilder.html" title="class in com.opengamma.strata.product">SecurityInfoBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder populated with the values of this instance.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="SecurityInfo.html" title="class in com.opengamma.strata.product">SecurityInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this instance with the attribute added.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="SecurityInfo.html" title="class in com.opengamma.strata.product">SecurityInfo</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAttributes(com.opengamma.strata.product.Attributes)">withAttributes</a></span>&#8203;(<a href="Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Returns a copy of this instance with the attributes added.</div>
 </td>
 </tr>
 </table>
@@ -388,6 +402,27 @@ implements <a href="Attributes.html" title="interface in com.opengamma.strata.pr
 </dl>
 </li>
 </ul>
+<a id="getAttributeTypes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeTypes</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;?&gt;&gt;&nbsp;getAttributeTypes()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Attributes.html#getAttributeTypes()">Attributes</a></code></span></div>
+<div class="block">Gets the attribute types that are available.
+ <p>
+ See <a href="AttributeType.html#captureWildcard()"><code>AttributeType.captureWildcard()</code></a> for a way to capture the wildcard type.
+ <p>
+ The default implementation returns an empty set (backwards compatibility prevents an abstract method for now).</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Attributes.html#getAttributeTypes()">getAttributeTypes</a></code>&nbsp;in interface&nbsp;<code><a href="Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the attribute types</dd>
+</dl>
+</li>
+</ul>
 <a id="findAttribute(com.opengamma.strata.product.AttributeType)">
 <!--   -->
 </a>
@@ -439,6 +474,28 @@ implements <a href="Attributes.html" title="interface in com.opengamma.strata.pr
 <dd><code>value</code> - the value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance based on this one with the attribute added</dd>
+</dl>
+</li>
+</ul>
+<a id="withAttributes(com.opengamma.strata.product.Attributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withAttributes</h4>
+<pre class="methodSignature">public&nbsp;<a href="SecurityInfo.html" title="class in com.opengamma.strata.product">SecurityInfo</a>&nbsp;withAttributes&#8203;(<a href="Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>&nbsp;other)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Attributes.html#withAttributes(com.opengamma.strata.product.Attributes)">Attributes</a></code></span></div>
+<div class="block">Returns a copy of this instance with the attributes added.
+ <p>
+ This returns a new instance with the specified attributes added.
+ The attributes are added using <code>Map.putAll(type, value)</code> semantics.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Attributes.html#withAttributes(com.opengamma.strata.product.Attributes)">withAttributes</a></code>&nbsp;in interface&nbsp;<code><a href="Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the other instance to copy from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance based on this one with the attributes from the other instance</dd>
 </dl>
 </li>
 </ul>

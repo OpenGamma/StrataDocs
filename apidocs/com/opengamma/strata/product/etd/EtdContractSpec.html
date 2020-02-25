@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -252,75 +252,89 @@ implements <a href="../Attributes.html" title="interface in com.opengamma.strata
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttributeTypes()">getAttributeTypes</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the attribute types that are available.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getContractCode()">getContractCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the code supplied by the exchange for use in clearing and margining, such as in SPAN.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDescription()">getDescription</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the human readable description of the product.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../common/ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExchangeId()">getExchangeId</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the ID of the exchange where the instruments derived from the product are traded.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="EtdContractSpecId.html" title="class in com.opengamma.strata.product.etd">EtdContractSpecId</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the ID of this contract specification.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../SecurityPriceInfo.html" title="class in com.opengamma.strata.product">SecurityPriceInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPriceInfo()">getPriceInfo</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the information about the security price.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type of the contract - future or option.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="EtdContractSpec.Meta.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>EtdContractSpec</code>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="EtdContractSpec.Meta.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="EtdContractSpec.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this instance with the attribute added.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="EtdContractSpec.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAttributes(com.opengamma.strata.product.Attributes)">withAttributes</a></span>&#8203;(<a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Returns a copy of this instance with the attributes added.</div>
 </td>
 </tr>
 </table>
@@ -377,6 +391,27 @@ implements <a href="../Attributes.html" title="interface in com.opengamma.strata
 </dl>
 </li>
 </ul>
+<a id="getAttributeTypes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeTypes</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;?&gt;&gt;&nbsp;getAttributeTypes()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Attributes.html#getAttributeTypes()">Attributes</a></code></span></div>
+<div class="block">Gets the attribute types that are available.
+ <p>
+ See <a href="../AttributeType.html#captureWildcard()"><code>AttributeType.captureWildcard()</code></a> for a way to capture the wildcard type.
+ <p>
+ The default implementation returns an empty set (backwards compatibility prevents an abstract method for now).</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../Attributes.html#getAttributeTypes()">getAttributeTypes</a></code>&nbsp;in interface&nbsp;<code><a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the attribute types</dd>
+</dl>
+</li>
+</ul>
 <a id="findAttribute(com.opengamma.strata.product.AttributeType)">
 <!--   -->
 </a>
@@ -428,6 +463,28 @@ implements <a href="../Attributes.html" title="interface in com.opengamma.strata
 <dd><code>value</code> - the value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance based on this one with the attribute added</dd>
+</dl>
+</li>
+</ul>
+<a id="withAttributes(com.opengamma.strata.product.Attributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withAttributes</h4>
+<pre class="methodSignature">public&nbsp;<a href="EtdContractSpec.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec</a>&nbsp;withAttributes&#8203;(<a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>&nbsp;other)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Attributes.html#withAttributes(com.opengamma.strata.product.Attributes)">Attributes</a></code></span></div>
+<div class="block">Returns a copy of this instance with the attributes added.
+ <p>
+ This returns a new instance with the specified attributes added.
+ The attributes are added using <code>Map.putAll(type, value)</code> semantics.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../Attributes.html#withAttributes(com.opengamma.strata.product.Attributes)">withAttributes</a></code>&nbsp;in interface&nbsp;<code><a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the other instance to copy from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance based on this one with the attributes from the other instance</dd>
 </dl>
 </li>
 </ul>

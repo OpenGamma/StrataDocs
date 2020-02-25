@@ -197,6 +197,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns the INI file as a map.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../PropertySet.html" title="class in com.opengamma.strata.collect.io">PropertySet</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IniFile.</span><code><span class="memberNameLink"><a href="../IniFile.html#findSection(java.lang.String)">findSection</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">
+<div class="block">Finds a single section in this INI file.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -226,6 +233,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">PropertySet.</span><code><span class="memberNameLink"><a href="../PropertySet.html#overrideWith(com.opengamma.strata.collect.io.PropertySet)">overrideWith</a></span>&#8203;(<a href="../PropertySet.html" title="class in com.opengamma.strata.collect.io">PropertySet</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Overrides this property set with another.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IniFileOutput.</span><code><span class="memberNameLink"><a href="../IniFileOutput.html#writeSection(java.lang.String,com.opengamma.strata.collect.io.PropertySet)">writeSection</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sectionName,
+            <a href="../PropertySet.html" title="class in com.opengamma.strata.collect.io">PropertySet</a>&nbsp;section)</code></th>
+<td class="colLast">
+<div class="block">Writes an individual section of an INI file to the underlying.</div>
 </td>
 </tr>
 </tbody>

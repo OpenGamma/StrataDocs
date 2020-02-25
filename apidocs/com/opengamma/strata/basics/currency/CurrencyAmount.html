@@ -350,7 +350,7 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMoney()">toMoney</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Converts the current instance of <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency"><code>CurrencyAmount</code></a> to the equivalent <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a> instance.</div>
+<div class="block">Converts this monetary amount to the equivalent <code>Money</code>.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
@@ -745,12 +745,13 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <li class="blockList">
 <h4>toMoney</h4>
 <pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;toMoney()</pre>
-<div class="block">Converts the current instance of <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency"><code>CurrencyAmount</code></a> to the equivalent <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a> instance.
- This will result into loss of precision in the amount, since <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a> is storing the amount
- rounded to the currency specification.</div>
+<div class="block">Converts this monetary amount to the equivalent <code>Money</code>.
+ <p>
+ An instance of <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a> only stores the amount to the number of decimal places of the currency.
+ As such, this method may result in a loss of precision.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The newly created instance of <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a>.</dd>
+<dd>the equivalent <code>Money</code></dd>
 </dl>
 </li>
 </ul>

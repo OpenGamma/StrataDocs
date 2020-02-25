@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10};
+var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -227,6 +227,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Parses the FpML document extracting the trades.</div>
 </td>
 </tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseTrades(com.opengamma.strata.collect.io.XmlFile)">parseTrades</a></span>&#8203;(<a href="../../collect/io/XmlFile.html" title="class in com.opengamma.strata.collect.io">XmlFile</a>&nbsp;xmlFile)</code></th>
+<td class="colLast">
+<div class="block">Parses FpML from the specified XML document, extracting the trades.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withLenientMode()">withLenientMode</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Obtains a 'lenient' version of this parser instance.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -394,6 +408,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
+<a id="withLenientMode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withLenientMode</h4>
+<pre class="methodSignature">public&nbsp;<a href="FpmlDocumentParser.html" title="class in com.opengamma.strata.loader.fpml">FpmlDocumentParser</a>&nbsp;withLenientMode()</pre>
+<div class="block">Obtains a 'lenient' version of this parser instance.
+ <p>
+ In 'lenient' mode any FpML elements unsupported in Strata will be silently ignored (rather than resulting in errors).</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the lenient document parser</dd>
+</dl>
+</li>
+</ul>
 <a id="isKnownFormat(com.google.common.io.ByteSource)">
 <!--   -->
 </a>
@@ -437,6 +467,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the source of the FpML XML document</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the parsed trades</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if a parse error occurred</dd>
+</dl>
+</li>
+</ul>
+<a id="parseTrades(com.opengamma.strata.collect.io.XmlFile)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseTrades</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;&nbsp;parseTrades&#8203;(<a href="../../collect/io/XmlFile.html" title="class in com.opengamma.strata.collect.io">XmlFile</a>&nbsp;xmlFile)</pre>
+<div class="block">Parses FpML from the specified XML document, extracting the trades.
+ <p>
+ This parses the specified XmlFile.
+ <p>
+ Sometimes, the FpML document is embedded in a non-FpML wrapper.
+ This method will intelligently find the FpML document at the root, within any children of
+ the root, or within any grand-children of the root.
+ The FpML root element is the one that contains both <code>&lt;trade&gt;</code> and <code>&lt;party&gt;</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>xmlFile</code> - the FpML XML document</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the parsed trades</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

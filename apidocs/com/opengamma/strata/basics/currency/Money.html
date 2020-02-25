@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9,"i10":9,"i11":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":9,"i14":9,"i15":9,"i16":10,"i17":10,"i18":10,"i19":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,7 +205,7 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAmount()">getAmount</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the amount of the currency as an instance of <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a>.</div>
+<div class="block">Gets the amount of the currency.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -223,13 +223,48 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNegative()">isNegative</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the amount is negative.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPositive()">isPositive</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the amount is positive.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isZero()">isZero</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the amount is zero.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minus(com.opengamma.strata.basics.currency.Money)">minus</a></span>&#8203;(<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;amountToSubtract)</code></th>
+<td class="colLast">
+<div class="block">Returns a copy of this <code>Money</code> with the specified amount subtracted.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#multipliedBy(long)">multipliedBy</a></span>&#8203;(long&nbsp;valueToMultiplyBy)</code></th>
+<td class="colLast">
+<div class="block">Returns a copy of this <code>Money</code> with the amount multiplied.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.CurrencyAmount)">of</a></span>&#8203;(<a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;currencyAmount)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <code>Money</code> for the specified <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency"><code>CurrencyAmount</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount)</code></th>
@@ -237,7 +272,7 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.Currency,java.math.BigDecimal)">of</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
@@ -245,18 +280,39 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountStr)</code></th>
 <td class="colLast">
 <div class="block">Parses the string to produce a <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plus(com.opengamma.strata.basics.currency.Money)">plus</a></span>&#8203;(<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;amountToAdd)</code></th>
+<td class="colLast">
+<div class="block">Returns a copy of this <code>Money</code> with the specified amount added.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCurrencyAmount()">toCurrencyAmount</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Converts this monetary amount to the equivalent <code>CurrencyAmount</code>.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the amount as a string.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zero(com.opengamma.strata.basics.currency.Currency)">zero</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Obtains a zero amount instance of <code>Money</code> for the specified currency.</div>
 </td>
 </tr>
 </table>
@@ -283,6 +339,22 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="zero(com.opengamma.strata.basics.currency.Currency)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>zero</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;zero&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</pre>
+<div class="block">Obtains a zero amount instance of <code>Money</code> for the specified currency.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>currency</code> - the currency the amount is in</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the zero amount instance</dd>
+</dl>
+</li>
+</ul>
 <a id="of(com.opengamma.strata.basics.currency.CurrencyAmount)">
 <!--   -->
 </a>
@@ -378,7 +450,7 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <li class="blockList">
 <h4>getAmount</h4>
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;getAmount()</pre>
-<div class="block">Gets the amount of the currency as an instance of <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a>.
+<div class="block">Gets the amount of the currency.
  <p>
  The amount will be rounded to the currency specifications.
  <p>
@@ -386,6 +458,130 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the amount</dd>
+</dl>
+</li>
+</ul>
+<a id="plus(com.opengamma.strata.basics.currency.Money)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>plus</h4>
+<pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;plus&#8203;(<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;amountToAdd)</pre>
+<div class="block">Returns a copy of this <code>Money</code> with the specified amount added.
+ <p>
+ This adds the specified amount to this monetary amount, returning a new object.
+ <p>
+ This instance is immutable and unaffected by this method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>amountToAdd</code> - the amount to add, in the same currency</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an amount based on this with the specified amount added</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the currencies are not equal</dd>
+</dl>
+</li>
+</ul>
+<a id="minus(com.opengamma.strata.basics.currency.Money)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>minus</h4>
+<pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;minus&#8203;(<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;amountToSubtract)</pre>
+<div class="block">Returns a copy of this <code>Money</code> with the specified amount subtracted.
+ <p>
+ This subtracts the specified amount to this monetary amount, returning a new object.
+ <p>
+ This instance is immutable and unaffected by this method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>amountToSubtract</code> - the amount to subtract, in the same currency</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an amount based on this with the specified amount subtracted</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the currencies are not equal</dd>
+</dl>
+</li>
+</ul>
+<a id="multipliedBy(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>multipliedBy</h4>
+<pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;multipliedBy&#8203;(long&nbsp;valueToMultiplyBy)</pre>
+<div class="block">Returns a copy of this <code>Money</code> with the amount multiplied.
+ <p>
+ This takes this amount and multiplies it by the specified value.
+ <p>
+ This instance is immutable and unaffected by this method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>valueToMultiplyBy</code> - the scalar amount to multiply by</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an amount based on this with the amount multiplied</dd>
+</dl>
+</li>
+</ul>
+<a id="isZero()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isZero</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isZero()</pre>
+<div class="block">Checks if the amount is zero.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if zero</dd>
+</dl>
+</li>
+</ul>
+<a id="isPositive()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isPositive</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isPositive()</pre>
+<div class="block">Checks if the amount is positive.
+ <p>
+ Zero and negative amounts return false.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if positive</dd>
+</dl>
+</li>
+</ul>
+<a id="isNegative()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isNegative</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isNegative()</pre>
+<div class="block">Checks if the amount is negative.
+ <p>
+ Zero and positive amounts return false.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if negative</dd>
+</dl>
+</li>
+</ul>
+<a id="toCurrencyAmount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toCurrencyAmount</h4>
+<pre class="methodSignature">public&nbsp;<a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;toCurrencyAmount()</pre>
+<div class="block">Converts this monetary amount to the equivalent <code>CurrencyAmount</code>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the equivalent <code>CurrencyAmount</code></dd>
 </dl>
 </li>
 </ul>

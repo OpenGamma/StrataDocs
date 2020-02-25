@@ -561,7 +561,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>
  The map of references is used to link one part of the XML to another.
  For example, if one part of the XML has <code>&lt;foo id="fooId"&gt;</code>, the references
- map will contain an entry mapping "fooId" to the parsed element <code>&lt;foo&gt;</code>.</div>
+ map will contain an entry mapping "fooId" to the parsed element <code>&lt;foo&gt;</code>.
+ <p>
+ The created document will be in 'strict' mode, which means that any FpML elements
+ unsupported in Strata will trigger errors during parsing.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>fpmlRootEl</code> - the source of the FpML XML document</dd>

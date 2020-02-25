@@ -252,10 +252,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#combinedWith(com.opengamma.strata.product.PortfolioItemInfo)">combinedWith</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;other)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#empty()">empty</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Obtains an empty instance, with no identifier or attributes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#from(com.opengamma.strata.product.PortfolioItemInfo)">from</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance based on the supplied info.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -287,9 +299,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#overrideWith(com.opengamma.strata.product.PortfolioItemInfo)">overrideWith</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;other)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#withAttributes(com.opengamma.strata.product.Attributes)">withAttributes</a></span>&#8203;(<a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -426,37 +448,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains an instance from position information, security identifier and net quantity.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../GenericSecurityPosition.html" title="class in com.opengamma.strata.product">GenericSecurityPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">GenericSecurityPosition.</span><code><span class="memberNameLink"><a href="../GenericSecurityPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Position.</span><code><span class="memberNameLink"><a href="../Position.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../ResolvableSecurityPosition.html" title="interface in com.opengamma.strata.product">ResolvableSecurityPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvableSecurityPosition.</span><code><span class="memberNameLink"><a href="../ResolvableSecurityPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../SecuritizedProductPosition.html" title="interface in com.opengamma.strata.product">SecuritizedProductPosition</a>&lt;<a href="../SecuritizedProductPosition.html" title="type parameter in SecuritizedProductPosition">P</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SecuritizedProductPosition.</span><code><span class="memberNameLink"><a href="../SecuritizedProductPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SecurityPosition.</span><code><span class="memberNameLink"><a href="../SecurityPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -770,31 +761,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from position information, product and net quantity.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../bond/BillPosition.html" title="class in com.opengamma.strata.product.bond">BillPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BillPosition.</span><code><span class="memberNameLink"><a href="../bond/BillPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../bond/BondFutureOptionPosition.html" title="class in com.opengamma.strata.product.bond">BondFutureOptionPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureOptionPosition.</span><code><span class="memberNameLink"><a href="../bond/BondFutureOptionPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../bond/BondFuturePosition.html" title="class in com.opengamma.strata.product.bond">BondFuturePosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BondFuturePosition.</span><code><span class="memberNameLink"><a href="../bond/BondFuturePosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../bond/CapitalIndexedBondPosition.html" title="class in com.opengamma.strata.product.bond">CapitalIndexedBondPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CapitalIndexedBondPosition.</span><code><span class="memberNameLink"><a href="../bond/CapitalIndexedBondPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../bond/FixedCouponBondPosition.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondPosition.</span><code><span class="memberNameLink"><a href="../bond/FixedCouponBondPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -886,11 +852,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains an instance from position information, product and net quantity.</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../dsf/DsfPosition.html" title="class in com.opengamma.strata.product.dsf">DsfPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">DsfPosition.</span><code><span class="memberNameLink"><a href="../dsf/DsfPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1037,23 +998,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
      double&nbsp;netQuantity)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from position information, security and net quantity.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../etd/EtdFuturePosition.html" title="class in com.opengamma.strata.product.etd">EtdFuturePosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdFuturePosition.</span><code><span class="memberNameLink"><a href="../etd/EtdFuturePosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../etd/EtdOptionPosition.html" title="class in com.opengamma.strata.product.etd">EtdOptionPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdOptionPosition.</span><code><span class="memberNameLink"><a href="../etd/EtdOptionPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../etd/EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdPosition.</span><code><span class="memberNameLink"><a href="../etd/EtdPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
 </td>
 </tr>
 </tbody>
@@ -1257,21 +1201,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains an instance from position information, product and net quantity.</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../index/IborFutureOptionPosition.html" title="class in com.opengamma.strata.product.index">IborFutureOptionPosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IborFutureOptionPosition.</span><code><span class="memberNameLink"><a href="../index/IborFutureOptionPosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../index/IborFuturePosition.html" title="class in com.opengamma.strata.product.index">IborFuturePosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IborFuturePosition.</span><code><span class="memberNameLink"><a href="../index/IborFuturePosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../index/OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFuturePosition.</span><code><span class="memberNameLink"><a href="../index/OvernightFuturePosition.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -1468,7 +1468,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The end date, which is the end of the last schedule period.
  <p>
  This is the end date of the schedule.
- It is is unadjusted and as such might be a weekend or holiday.
+ It is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted maturity date or unadjusted termination date.
  This date must be after the start date.</div>
@@ -1556,7 +1556,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The start date, which is the start of the first schedule period.
  <p>
  This is the start date of the schedule.
- It is is unadjusted and as such might be a weekend or holiday.
+ It is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted effective date.
  <p>
@@ -2290,10 +2290,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
-<li class="blockListLast">
+<li class="blockList">
 <h4>array</h4>
 <pre>byte[] array</pre>
 <div class="block">The byte array.</div>
+</li>
+<li class="blockListLast">
+<h4>fileName</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> fileName</pre>
+<div class="block">The file name, null if not known.</div>
 </li>
 </ul>
 </li>
@@ -11346,6 +11351,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The identifier of the security that was traded.
  <p>
  This identifier uniquely identifies the security within the system.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.SimpleAttributes">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/SimpleAttributes.html" title="class in com.opengamma.strata.product">com.opengamma.strata.product.SimpleAttributes</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>attributes</h4>
+<pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="com/opengamma/strata/product/AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;?&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt; attributes</pre>
+<div class="block">The attributes.
+ <p>
+ Attributes provide the ability to associate arbitrary information in a key-value map.</div>
 </li>
 </ul>
 </li>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":18,"i5":6,"i6":18,"i7":6,"i8":6};
+var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":18,"i5":6,"i6":18,"i7":6,"i8":18,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -216,16 +216,24 @@ extends <a href="../Position.html" title="interface in com.opengamma.strata.prod
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></span>&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Returns an instance with the specified info.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>default <a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withQuantities(double,double)">withQuantities</a></span>&#8203;(double&nbsp;longQuantity,
+              double&nbsp;shortQuantity)</code></th>
+<td class="colLast">
+<div class="block">Returns an instance with the specified quantities.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withQuantity(double)">withQuantity</a></span>&#8203;(double&nbsp;quantity)</code></th>
 <td class="colLast">
-<div class="block">Returns an instance with the specified quantity.</div>
+<div class="block">Returns an instance with the specified net quantity.</div>
 </td>
 </tr>
 </table>
@@ -381,17 +389,19 @@ extends <a href="../Position.html" title="interface in com.opengamma.strata.prod
 </dl>
 </li>
 </ul>
-<a id="withInfo(com.opengamma.strata.product.PositionInfo)">
+<a id="withInfo(com.opengamma.strata.product.PortfolioItemInfo)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>withInfo</h4>
-<pre class="methodSignature"><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a>&nbsp;withInfo&#8203;(<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</pre>
+<pre class="methodSignature"><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a>&nbsp;withInfo&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</pre>
 <div class="block">Returns an instance with the specified info.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Position.html#withInfo(com.opengamma.strata.product.PositionInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
+<dd><code><a href="../PortfolioItem.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../Position.html#withInfo(com.opengamma.strata.product.PortfolioItemInfo)">withInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>info</code> - the new info</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -402,18 +412,36 @@ extends <a href="../Position.html" title="interface in com.opengamma.strata.prod
 <a id="withQuantity(double)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>withQuantity</h4>
 <pre class="methodSignature"><a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a>&nbsp;withQuantity&#8203;(double&nbsp;quantity)</pre>
-<div class="block">Returns an instance with the specified quantity.</div>
+<div class="block">Returns an instance with the specified net quantity.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../Position.html#withQuantity(double)">withQuantity</a></code>&nbsp;in interface&nbsp;<code><a href="../Position.html" title="interface in com.opengamma.strata.product">Position</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>quantity</code> - the new quantity</dd>
+<dd><code>quantity</code> - the new net quantity</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the instance with the specified quantity</dd>
+<dd>the instance with the specified net quantity</dd>
+</dl>
+</li>
+</ul>
+<a id="withQuantities(double,double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>withQuantities</h4>
+<pre class="methodSignature">default&nbsp;<a href="EtdPosition.html" title="interface in com.opengamma.strata.product.etd">EtdPosition</a>&nbsp;withQuantities&#8203;(double&nbsp;longQuantity,
+                                   double&nbsp;shortQuantity)</pre>
+<div class="block">Returns an instance with the specified quantities.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>longQuantity</code> - the new long quantity</dd>
+<dd><code>shortQuantity</code> - the new short quantity</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance with the specified quantities</dd>
 </dl>
 </li>
 </ul>

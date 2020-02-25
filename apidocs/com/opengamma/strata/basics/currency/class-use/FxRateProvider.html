@@ -244,6 +244,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tbody>
 </table>
 <table class="useSummary">
+<caption><span>Methods in <a href="../package-summary.html">com.opengamma.strata.basics.currency</a> that return <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxRateProvider.</span><code><span class="memberNameLink"><a href="../FxRateProvider.html#lazy(java.util.function.Supplier)">lazy</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&gt;&nbsp;target)</code></th>
+<td class="colLast">
+<div class="block">Returns an <code>FxRateProvider</code> that delays fetching its underlying provider
+ until actually necessary.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxRateProvider.</span><code><span class="memberNameLink"><a href="../FxRateProvider.html#minimal()">minimal</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a provider that provides minimal behavior.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxRateProvider.</span><code><span class="memberNameLink"><a href="../FxRateProvider.html#noConversion()">noConversion</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a provider that always throws an exception.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Methods in <a href="../package-summary.html">com.opengamma.strata.basics.currency</a> with parameters of type <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -301,6 +333,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
 <td class="colLast">
 <div class="block">Converts this payment to an equivalent payment in the specified currency.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Method parameters in <a href="../package-summary.html">com.opengamma.strata.basics.currency</a> with type arguments of type <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxRateProvider.</span><code><span class="memberNameLink"><a href="../FxRateProvider.html#lazy(java.util.function.Supplier)">lazy</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&gt;&nbsp;target)</code></th>
+<td class="colLast">
+<div class="block">Returns an <code>FxRateProvider</code> that delays fetching its underlying provider
+ until actually necessary.</div>
 </td>
 </tr>
 </tbody>

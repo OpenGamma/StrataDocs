@@ -10,6 +10,7 @@ com.opengamma.strata.calc.marketdata
 com.opengamma.strata.calc.runner
 com.opengamma.strata.collect
 com.opengamma.strata.collect.array
+com.opengamma.strata.collect.concurrent
 com.opengamma.strata.collect.function
 com.opengamma.strata.collect.io
 com.opengamma.strata.collect.named

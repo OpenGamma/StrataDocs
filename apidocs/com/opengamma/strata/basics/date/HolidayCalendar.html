@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":6,"i5":18,"i6":18,"i7":18,"i8":6,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18};
+var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":6,"i5":18,"i6":18,"i7":18,"i8":6,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -252,20 +252,27 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 </td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>default <a href="HolidayCalendar.html" title="interface in com.opengamma.strata.basics.date">HolidayCalendar</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#linkedWith(com.opengamma.strata.basics.date.HolidayCalendar)">linkedWith</a></span>&#8203;(<a href="HolidayCalendar.html" title="interface in com.opengamma.strata.basics.date">HolidayCalendar</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Combines this holiday calendar with another.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#next(java.time.LocalDate)">next</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Finds the next business day, always returning a later date.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextOrSame(java.time.LocalDate)">nextOrSame</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Finds the next business day, returning the input date if it is a business day.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextSameOrLastInMonth(java.time.LocalDate)">nextSameOrLastInMonth</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
@@ -273,21 +280,21 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
  or the last business day of the month if the next business day is in a different month.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#previous(java.time.LocalDate)">previous</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Finds the previous business day, always returning an earlier date.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#previousOrSame(java.time.LocalDate)">previousOrSame</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Finds the previous business day, returning the input date if it is a business day.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shift(java.time.LocalDate,int)">shift</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date,
      int&nbsp;amount)</code></th>
@@ -647,6 +654,25 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <dd>the combined calendar</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if unable to combine the calendars</dd>
+</dl>
+</li>
+</ul>
+<a id="linkedWith(com.opengamma.strata.basics.date.HolidayCalendar)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linkedWith</h4>
+<pre class="methodSignature">default&nbsp;<a href="HolidayCalendar.html" title="interface in com.opengamma.strata.basics.date">HolidayCalendar</a>&nbsp;linkedWith&#8203;(<a href="HolidayCalendar.html" title="interface in com.opengamma.strata.basics.date">HolidayCalendar</a>&nbsp;other)</pre>
+<div class="block">Combines this holiday calendar with another.
+ <p>
+ The resulting calendar will declare a day as a business day if it is a
+ business day in either source calendar.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the other holiday calendar</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the combined calendar</dd>
 </dl>
 </li>
 </ul>

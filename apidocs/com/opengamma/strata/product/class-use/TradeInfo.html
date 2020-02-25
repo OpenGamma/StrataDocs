@@ -252,6 +252,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#overrideParseTrade(java.lang.String,com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">overrideParseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeUpper,
+                  <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                  <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
+<td class="colLast">
+<div class="block">Parses any kind of trade from CSV before standard matching.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../payment/BulletPaymentTrade.html" title="class in com.opengamma.strata.product.payment">BulletPaymentTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseBulletPaymentTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseBulletPaymentTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                        <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -259,7 +268,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a Bullet Payment trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../credit/CdsIndexTrade.html" title="class in com.opengamma.strata.product.credit">CdsIndexTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseCdsIndexTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseCdsIndexTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                   <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -267,7 +276,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a CDS Index trade from CSV.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../credit/CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseCdsTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseCdsTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
              <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -275,7 +284,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a CDS trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../fra/FraTrade.html" title="class in com.opengamma.strata.product.fra">FraTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseFraTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFraTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
              <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -283,7 +292,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FRA trade from CSV.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../fx/FxSingleTrade.html" title="class in com.opengamma.strata.product.fx">FxSingleTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseFxSingleTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFxSingleTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                   <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -291,7 +300,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FX Single trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseFxSwapTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFxSwapTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                 <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -299,7 +308,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FX Swap trade from CSV.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../fxopt/FxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOptionTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseFxVanillaOptionTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFxVanillaOptionTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                          <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -307,16 +316,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FX Vanilla Option trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseOtherTrade(java.lang.String,com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseOtherTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeUpper,
                <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
-<div class="block">Parses any other kind of trade from CSV.</div>
+<div class="block">Parses any kind of trade from CSV after standard matching.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../SecurityQuantityTrade.html" title="interface in com.opengamma.strata.product">SecurityQuantityTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseSecurityTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseSecurityTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                   <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -324,7 +333,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a Security trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../swaption/SwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">SwaptionTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseSwaptionTrade(com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo)">parseSwaptionTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;variableRows,
@@ -333,7 +342,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a Swaption trade from CSV.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../swap/SwapTrade.html" title="class in com.opengamma.strata.product.swap">SwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseSwapTrade(com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo)">parseSwapTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;variableRows,
@@ -342,7 +351,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a Swap trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvInfoResolver.html#parseTermDepositTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseTermDepositTrade</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                      <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -375,10 +384,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#combinedWith(com.opengamma.strata.product.PortfolioItemInfo)">combinedWith</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;other)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#empty()">empty</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Obtains an empty instance, with no values or attributes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#from(com.opengamma.strata.product.PortfolioItemInfo)">from</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;info)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance based on the supplied info.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -410,9 +431,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#overrideWith(com.opengamma.strata.product.PortfolioItemInfo)">overrideWith</a></span>&#8203;(<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a>&nbsp;other)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#withAttributes(com.opengamma.strata.product.Attributes)">withAttributes</a></span>&#8203;(<a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -514,58 +545,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   double&nbsp;price)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from trade information, identifier, quantity and price.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../GenericSecurityTrade.html" title="class in com.opengamma.strata.product">GenericSecurityTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">GenericSecurityTrade.</span><code><span class="memberNameLink"><a href="../GenericSecurityTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../ProductTrade.html" title="interface in com.opengamma.strata.product">ProductTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ProductTrade.</span><code><span class="memberNameLink"><a href="../ProductTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../ResolvableSecurityTrade.html" title="interface in com.opengamma.strata.product">ResolvableSecurityTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvableSecurityTrade.</span><code><span class="memberNameLink"><a href="../ResolvableSecurityTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../ResolvableTrade.html" title="interface in com.opengamma.strata.product">ResolvableTrade</a>&lt;<a href="../ResolvableTrade.html" title="type parameter in ResolvableTrade">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvableTrade.</span><code><span class="memberNameLink"><a href="../ResolvableTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../SecuritizedProductTrade.html" title="interface in com.opengamma.strata.product">SecuritizedProductTrade</a>&lt;<a href="../SecuritizedProductTrade.html" title="type parameter in SecuritizedProductTrade">P</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SecuritizedProductTrade.</span><code><span class="memberNameLink"><a href="../SecuritizedProductTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../SecurityQuantityTrade.html" title="interface in com.opengamma.strata.product">SecurityQuantityTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SecurityQuantityTrade.</span><code><span class="memberNameLink"><a href="../SecurityQuantityTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../SecurityTrade.html" title="class in com.opengamma.strata.product">SecurityTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SecurityTrade.</span><code><span class="memberNameLink"><a href="../SecurityTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Trade.</span><code><span class="memberNameLink"><a href="../Trade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">
-<div class="block">Returns an instance with the specified info.</div>
 </td>
 </tr>
 </tbody>
@@ -770,31 +749,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Generates a Bill trade instance where the price is computed from the traded yield.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../bond/BillTrade.html" title="class in com.opengamma.strata.product.bond">BillTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BillTrade.</span><code><span class="memberNameLink"><a href="../bond/BillTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../bond/BondFutureOptionTrade.html" title="class in com.opengamma.strata.product.bond">BondFutureOptionTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureOptionTrade.</span><code><span class="memberNameLink"><a href="../bond/BondFutureOptionTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../bond/BondFutureTrade.html" title="class in com.opengamma.strata.product.bond">BondFutureTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureTrade.</span><code><span class="memberNameLink"><a href="../bond/BondFutureTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../bond/CapitalIndexedBondTrade.html" title="class in com.opengamma.strata.product.bond">CapitalIndexedBondTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CapitalIndexedBondTrade.</span><code><span class="memberNameLink"><a href="../bond/CapitalIndexedBondTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../bond/FixedCouponBondTrade.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondTrade.</span><code><span class="memberNameLink"><a href="../bond/FixedCouponBondTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -874,11 +828,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the additional trade information, defaulted to an empty instance.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../capfloor/IborCapFloorTrade.html" title="class in com.opengamma.strata.product.capfloor">IborCapFloorTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IborCapFloorTrade.</span><code><span class="memberNameLink"><a href="../capfloor/IborCapFloorTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -957,11 +906,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Sets the additional trade information, defaulted to an empty instance.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../cms/CmsTrade.html" title="class in com.opengamma.strata.product.cms">CmsTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CmsTrade.</span><code><span class="memberNameLink"><a href="../cms/CmsTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1093,26 +1037,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Sets the additional trade information, defaulted to an empty instance.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../credit/CdsCalibrationTrade.html" title="class in com.opengamma.strata.product.credit">CdsCalibrationTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CdsCalibrationTrade.</span><code><span class="memberNameLink"><a href="../credit/CdsCalibrationTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../credit/CdsIndexCalibrationTrade.html" title="class in com.opengamma.strata.product.credit">CdsIndexCalibrationTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CdsIndexCalibrationTrade.</span><code><span class="memberNameLink"><a href="../credit/CdsIndexCalibrationTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../credit/CdsIndexTrade.html" title="class in com.opengamma.strata.product.credit">CdsIndexTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CdsIndexTrade.</span><code><span class="memberNameLink"><a href="../credit/CdsIndexTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../credit/CdsTrade.html" title="class in com.opengamma.strata.product.credit">CdsTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">CdsTrade.</span><code><span class="memberNameLink"><a href="../credit/CdsTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1334,16 +1258,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance of a Term Deposit trade.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../deposit/IborFixingDepositTrade.html" title="class in com.opengamma.strata.product.deposit">IborFixingDepositTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IborFixingDepositTrade.</span><code><span class="memberNameLink"><a href="../deposit/IborFixingDepositTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TermDepositTrade.</span><code><span class="memberNameLink"><a href="../deposit/TermDepositTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -1471,11 +1385,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the additional trade information, defaulted to an empty instance.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../dsf/DsfTrade.html" title="class in com.opengamma.strata.product.dsf">DsfTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">DsfTrade.</span><code><span class="memberNameLink"><a href="../dsf/DsfTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -1591,16 +1500,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from trade information, security, quantity and price.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../etd/EtdFutureTrade.html" title="class in com.opengamma.strata.product.etd">EtdFutureTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdFutureTrade.</span><code><span class="memberNameLink"><a href="../etd/EtdFutureTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../etd/EtdOptionTrade.html" title="class in com.opengamma.strata.product.etd">EtdOptionTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">EtdOptionTrade.</span><code><span class="memberNameLink"><a href="../etd/EtdOptionTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -1695,11 +1594,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains an instance of a resolved FRA trade.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../fra/FraTrade.html" title="class in com.opengamma.strata.product.fra">FraTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FraTrade.</span><code><span class="memberNameLink"><a href="../fra/FraTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1953,26 +1847,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance of a resolved FX swap trade.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../fx/FxNdfTrade.html" title="class in com.opengamma.strata.product.fx">FxNdfTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxNdfTrade.</span><code><span class="memberNameLink"><a href="../fx/FxNdfTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../fx/FxSingleTrade.html" title="class in com.opengamma.strata.product.fx">FxSingleTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxSingleTrade.</span><code><span class="memberNameLink"><a href="../fx/FxSingleTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxSwapTrade.</span><code><span class="memberNameLink"><a href="../fx/FxSwapTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../fx/FxTrade.html" title="interface in com.opengamma.strata.product.fx">FxTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxTrade.</span><code><span class="memberNameLink"><a href="../fx/FxTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -2135,16 +2009,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the additional trade information, defaulted to an empty instance.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../fxopt/FxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">FxSingleBarrierOptionTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxSingleBarrierOptionTrade.</span><code><span class="memberNameLink"><a href="../fxopt/FxSingleBarrierOptionTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../fxopt/FxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOptionTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxVanillaOptionTrade.</span><code><span class="memberNameLink"><a href="../fxopt/FxVanillaOptionTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -2269,21 +2133,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the additional trade information, defaulted to an empty instance.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../index/IborFutureOptionTrade.html" title="class in com.opengamma.strata.product.index">IborFutureOptionTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IborFutureOptionTrade.</span><code><span class="memberNameLink"><a href="../index/IborFutureOptionTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../index/IborFutureTrade.html" title="class in com.opengamma.strata.product.index">IborFutureTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IborFutureTrade.</span><code><span class="memberNameLink"><a href="../index/IborFutureTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../index/OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureTrade.</span><code><span class="memberNameLink"><a href="../index/OvernightFutureTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -2379,11 +2228,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance of a resolved Bullet Payment trade.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../payment/BulletPaymentTrade.html" title="class in com.opengamma.strata.product.payment">BulletPaymentTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BulletPaymentTrade.</span><code><span class="memberNameLink"><a href="../payment/BulletPaymentTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -2478,11 +2322,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains an instance of a Swap trade.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../swap/SwapTrade.html" title="class in com.opengamma.strata.product.swap">SwapTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SwapTrade.</span><code><span class="memberNameLink"><a href="../swap/SwapTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -2774,11 +2613,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains an instance of a Swaption trade with a fixed payment.</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../swaption/SwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">SwaptionTrade</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTrade.</span><code><span class="memberNameLink"><a href="../swaption/SwaptionTrade.html#withInfo(com.opengamma.strata.product.TradeInfo)">withInfo</a></span>&#8203;(<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>

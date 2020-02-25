@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":9,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":9,"i20":9,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":42,"i35":42,"i36":10,"i37":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -197,7 +197,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -219,7 +219,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyOf(byte%5B%5D)">copyOf</a></span>&#8203;(byte[]&nbsp;array)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance, copying the array.</div>
+<div class="block">Obtains an instance, copying the array.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -253,168 +253,208 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(com.google.common.io.ByteSource)">from</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;other)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance from another byte source.</div>
+<div class="block">Obtains an instance from another byte source.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(com.opengamma.strata.collect.function.CheckedSupplier)">from</a></span>&#8203;(<a href="../function/CheckedSupplier.html" title="interface in com.opengamma.strata.collect.function">CheckedSupplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&gt;&nbsp;inputStreamSupplier)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance from an input stream.</div>
+<div class="block">Obtains an instance from an input stream.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromBase64(java.lang.String)">fromBase64</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;base64)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(java.io.InputStream)">from</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&nbsp;inputStream)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance from a base-64 encoded string.</div>
+<div class="block">Obtains an instance from an input stream.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromHex(java.lang.String)">fromHex</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;hex)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(java.io.InputStream,int)">from</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&nbsp;inputStream,
+    int&nbsp;expectedSize)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance from a hex encoded string, sometimes referred to as base-16.</div>
+<div class="block">Obtains an instance from an input stream, specifying the expected size.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromBase64(java.lang.String)">fromBase64</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;base64)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a base-64 encoded string.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromHex(java.lang.String)">fromHex</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;hex)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a hex encoded string, sometimes referred to as base-16.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileName()">getFileName</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the file name of the source.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashCode.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashCode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hash(com.google.common.hash.HashFunction)">hash</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty()">isEmpty</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the byte source is empty, throwing an unchecked exception.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#load()">load</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Loads the content of the byte source into memory.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaBean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUnsafe(byte%5B%5D)">ofUnsafe</a></span>&#8203;(byte[]&nbsp;array)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance, not copying the array.</div>
+<div class="block">Obtains an instance, not copying the array.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUtf8(java.lang.String)">ofUtf8</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
 <td class="colLast">
-<div class="block">Creates an instance from a string using UTF-8.</div>
+<div class="block">Obtains an instance from a string using UTF-8.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayInputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">ByteArrayInputStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openBufferedStream()">openBufferedStream</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayInputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">ByteArrayInputStream</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openStream()">openStream</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read()">read</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source as a byte array, throwing an unchecked exception.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(com.google.common.io.ByteProcessor)">read</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteProcessor.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteProcessor</a>&lt;T&gt;&nbsp;processor)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUnsafe()">readUnsafe</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the underlying array.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUtf8()">readUtf8</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source, converting to UTF-8.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUtf8UsingBom()">readUtf8UsingBom</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source, converting to UTF-8 using a Byte-Order Mark if available.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size()">size</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the size of the byte source, throwing an unchecked exception.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/base/Optional.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang" class="externalLink">Long</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sizeIfKnown()">sizeIfKnown</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the size, which is always known.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slice(long,long)">slice</a></span>&#8203;(long&nbsp;offset,
      long&nbsp;length)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBase64()">toBase64</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Encodes the byte source using base-64.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBase64String()">toBase64String</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Encodes the byte source using base-64, returning a string.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toHexString()">toHexString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Encodes the byte source using hex, sometimes referred to as base-16, returning a string.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toMd5()">toMd5</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the MD5 hash of the bytes.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="BeanByteSource.html#toHash(com.google.common.hash.HashFunction)"><code>BeanByteSource.toHash(HashFunction)</code></a></div>
+</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toSha512()">toSha512</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the SHA-512 hash of the bytes.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="BeanByteSource.html#toHash(com.google.common.hash.HashFunction)"><code>BeanByteSource.toHash(HashFunction)</code></a></div>
+</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withFileName(java.lang.String)">withFileName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileName)</code></th>
+<td class="colLast">
+<div class="block">Returns an instance with the file name updated.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -422,7 +462,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.opengamma.strata.collect.io.<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></h3>
-<code><a href="BeanByteSource.html#asCharSourceUtf8()">asCharSourceUtf8</a>, <a href="BeanByteSource.html#load()">load</a></code></li>
+<code><a href="BeanByteSource.html#asCharSourceUtf8()">asCharSourceUtf8</a>, <a href="BeanByteSource.html#toHash(com.google.common.hash.HashFunction)">toHash</a>, <a href="BeanByteSource.html#toHashString(com.google.common.hash.HashFunction)">toHashString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.google.common.io.ByteSource">
@@ -488,7 +528,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>copyOf</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;copyOf&#8203;(byte[]&nbsp;array)</pre>
-<div class="block">Creates an instance, copying the array.</div>
+<div class="block">Obtains an instance, copying the array.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>array</code> - the array, copied</dd>
@@ -550,7 +590,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>ofUnsafe</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;ofUnsafe&#8203;(byte[]&nbsp;array)</pre>
-<div class="block">Creates an instance, not copying the array.
+<div class="block">Obtains an instance, not copying the array.
  <p>
  This method is inherently unsafe as it relies on good behavior by callers.
  Callers must never make any changes to the passed in array after calling this method.
@@ -570,7 +610,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>ofUtf8</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;ofUtf8&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</pre>
-<div class="block">Creates an instance from a string using UTF-8.</div>
+<div class="block">Obtains an instance from a string using UTF-8.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>str</code> - the string to store using UTF-8</dd>
@@ -586,7 +626,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>from</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;from&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;other)</pre>
-<div class="block">Creates an instance from another byte source.</div>
+<div class="block">Obtains an instance from another byte source.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other byte source</dd>
@@ -604,7 +644,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>from</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;from&#8203;(<a href="../function/CheckedSupplier.html" title="interface in com.opengamma.strata.collect.function">CheckedSupplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&gt;&nbsp;inputStreamSupplier)</pre>
-<div class="block">Creates an instance from an input stream.
+<div class="block">Obtains an instance from an input stream.
  <p>
  This method use the supplier to open the input stream, extract the bytes and close the stream.
  It is intended that invoking the supplier opens the stream.
@@ -619,6 +659,52 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </dl>
 </li>
 </ul>
+<a id="from(java.io.InputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>from</h4>
+<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;from&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&nbsp;inputStream)
+                            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+<div class="block">Obtains an instance from an input stream.
+ <p>
+ This method uses an already open input stream, extracting the bytes.
+ The stream is not closed - that is the responsibility of the caller.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inputStream</code> - the open input stream, which will not be closed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the byte source</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code> - if an IO error occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="from(java.io.InputStream,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>from</h4>
+<pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;from&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&nbsp;inputStream,
+                                   int&nbsp;expectedSize)
+                            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+<div class="block">Obtains an instance from an input stream, specifying the expected size.
+ <p>
+ This method uses an already open input stream, extracting the bytes.
+ The stream is not closed - that is the responsibility of the caller.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inputStream</code> - the open input stream, which will not be closed</dd>
+<dd><code>expectedSize</code> - the expected size of the input, not negative</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the byte source</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code> - if an IO error occurs</dd>
+</dl>
+</li>
+</ul>
 <a id="fromBase64(java.lang.String)">
 <!--   -->
 </a>
@@ -626,7 +712,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>fromBase64</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;fromBase64&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;base64)</pre>
-<div class="block">Creates an instance from a base-64 encoded string.</div>
+<div class="block">Obtains an instance from a base-64 encoded string.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>base64</code> - the base64 string to convert</dd>
@@ -644,7 +730,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>fromHex</h4>
 <pre class="methodSignature">public static&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;fromHex&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;hex)</pre>
-<div class="block">Creates an instance from a hex encoded string, sometimes referred to as base-16.</div>
+<div class="block">Obtains an instance from a hex encoded string, sometimes referred to as base-16.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>hex</code> - the hex string to convert</dd>
@@ -665,6 +751,44 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>metaBean</code>&nbsp;in interface&nbsp;<code>org.joda.beans.Bean</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getFileName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFileName</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;getFileName()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="BeanByteSource.html#getFileName()">BeanByteSource</a></code></span></div>
+<div class="block">Gets the file name of the source.
+ <p>
+ Most sources originate from a file-based location.
+ This is captured and returned here where available.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="BeanByteSource.html#getFileName()">getFileName</a></code>&nbsp;in class&nbsp;<code><a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the file name, empty if not known</dd>
+</dl>
+</li>
+</ul>
+<a id="withFileName(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withFileName</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;withFileName&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileName)</pre>
+<div class="block">Returns an instance with the file name updated.
+ <p>
+ If a path is passed in, only the file name is retained.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fileName</code> - the file name, an empty string can be used to remove the file name</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a source with the specified file name</dd>
 </dl>
 </li>
 </ul>
@@ -734,14 +858,33 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </dl>
 </li>
 </ul>
+<a id="hash(com.google.common.hash.HashFunction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hash</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashCode.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashCode</a>&nbsp;hash&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="BeanByteSource.html#hash(com.google.common.hash.HashFunction)">hash</a></code>&nbsp;in class&nbsp;<code><a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="toMd5()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>toMd5</h4>
-<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toMd5()</pre>
-<div class="block">Returns the MD5 hash of the bytes.</div>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toMd5()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="BeanByteSource.html#toHash(com.google.common.hash.HashFunction)"><code>BeanByteSource.toHash(HashFunction)</code></a></div>
+</div>
+<div class="block">Returns the MD5 hash of the bytes.
+ <p>
+ The returned hash is in byte form.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the MD5 hash</dd>
@@ -754,7 +897,11 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <ul class="blockList">
 <li class="blockList">
 <h4>toSha512</h4>
-<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toSha512()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toSha512()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="BeanByteSource.html#toHash(com.google.common.hash.HashFunction)"><code>BeanByteSource.toHash(HashFunction)</code></a></div>
+</div>
 <div class="block">Returns the SHA-512 hash of the bytes.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -771,6 +918,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;toBase64()</pre>
 <div class="block">Encodes the byte source using base-64.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="BeanByteSource.html#toBase64()">toBase64</a></code>&nbsp;in class&nbsp;<code><a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the base-64 encoded form</dd>
 </dl>
@@ -787,6 +936,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  <p>
  Equivalent to <code>toBase64().readUtf8()</code>.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="BeanByteSource.html#toBase64String()">toBase64String</a></code>&nbsp;in class&nbsp;<code><a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the base-64 encoded string</dd>
 </dl>
@@ -947,19 +1098,6 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </dl>
 </li>
 </ul>
-<a id="hash(com.google.common.hash.HashFunction)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hash</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashCode.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashCode</a>&nbsp;hash&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#hash(com.google.common.hash.HashFunction)" title="class or interface in com.google.common.io" class="externalLink">hash</a></code>&nbsp;in class&nbsp;<code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
-</dl>
-</li>
-</ul>
 <a id="contentEquals(com.google.common.io.ByteSource)">
 <!--   -->
 </a>
@@ -973,6 +1111,23 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <dd><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#contentEquals(com.google.common.io.ByteSource)" title="class or interface in com.google.common.io" class="externalLink">contentEquals</a></code>&nbsp;in class&nbsp;<code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="load()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>load</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&nbsp;load()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="BeanByteSource.html#load()">BeanByteSource</a></code></span></div>
+<div class="block">Loads the content of the byte source into memory.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="BeanByteSource.html#load()">load</a></code>&nbsp;in class&nbsp;<code><a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the byte array</dd>
 </dl>
 </li>
 </ul>

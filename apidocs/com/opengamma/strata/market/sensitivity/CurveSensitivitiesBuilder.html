@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -158,6 +158,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(com.opengamma.strata.market.sensitivity.CurveSensitivities)">add</a></span>&#8203;(<a href="CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Adds another set of sensitivities to the builder.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(com.opengamma.strata.market.sensitivity.CurveSensitivitiesType,com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.market.param.ParameterMetadata,double)">add</a></span>&#8203;(<a href="CurveSensitivitiesType.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesType</a>&nbsp;type,
    <a href="../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;curveName,
    <a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
@@ -167,7 +174,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds a single sensitivity to the builder.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(com.opengamma.strata.market.sensitivity.CurveSensitivitiesType,com.opengamma.strata.market.param.CurrencyParameterSensitivities)">add</a></span>&#8203;(<a href="CurveSensitivitiesType.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesType</a>&nbsp;type,
+   <a href="../param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a>&nbsp;sensitivities)</code></th>
+<td class="colLast">
+<div class="block">Adds sensitivities to the builder.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(com.opengamma.strata.market.sensitivity.CurveSensitivitiesType,com.opengamma.strata.market.param.CurrencyParameterSensitivity)">add</a></span>&#8203;(<a href="CurveSensitivitiesType.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesType</a>&nbsp;type,
    <a href="../param/CurrencyParameterSensitivity.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivity</a>&nbsp;sensitivity)</code></th>
@@ -175,7 +190,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds a sensitivity to the builder.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#build()">build</a></span>()</code></th>
 <td class="colLast">
@@ -206,6 +221,44 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="add(com.opengamma.strata.market.sensitivity.CurveSensitivities)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre class="methodSignature">public&nbsp;<a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesBuilder</a>&nbsp;add&#8203;(<a href="CurveSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivities</a>&nbsp;other)</pre>
+<div class="block">Adds another set of sensitivities to the builder.
+ <p>
+ Values with the same market data name and currency will be merged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the other sensitivities</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this, for chaining</dd>
+</dl>
+</li>
+</ul>
+<a id="add(com.opengamma.strata.market.sensitivity.CurveSensitivitiesType,com.opengamma.strata.market.param.CurrencyParameterSensitivities)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre class="methodSignature">public&nbsp;<a href="CurveSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesBuilder</a>&nbsp;add&#8203;(<a href="CurveSensitivitiesType.html" title="class in com.opengamma.strata.market.sensitivity">CurveSensitivitiesType</a>&nbsp;type,
+                                     <a href="../param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a>&nbsp;sensitivities)</pre>
+<div class="block">Adds sensitivities to the builder.
+ <p>
+ Values with the same market data name and currency will be merged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the sensitivity type</dd>
+<dd><code>sensitivities</code> - the sensitivities to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this, for chaining</dd>
+</dl>
+</li>
+</ul>
 <a id="add(com.opengamma.strata.market.sensitivity.CurveSensitivitiesType,com.opengamma.strata.market.param.CurrencyParameterSensitivity)">
 <!--   -->
 </a>
@@ -220,7 +273,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - the sensitivity type</dd>
-<dd><code>sensitivity</code> - the sensitivity to ad</dd>
+<dd><code>sensitivity</code> - the sensitivity to add</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this, for chaining</dd>
 </dl>

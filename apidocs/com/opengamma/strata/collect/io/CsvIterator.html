@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":9,"i11":9,"i12":9,"i13":10,"i14":10,"i15":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":9,"i13":9,"i14":9,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,10 +155,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
     // use the CsvIterator
   }
  </pre>
- One way to use the iterable is with the for-each loop, using a lambda to adapt <code>Iterator</code> to <code>Iterable</code>:
+ One way to use the iterable is with the for-each loop, using <a href="#asIterable()"><code>asIterable()</code></a>:
  <pre>
   try (CsvIterator csvIterator = CsvIterator.of(source, true)) {
-    for (CsvRow row : () -&gt; csvIterator) {
+    for (CsvRow row : csvIterator.asIterable()) {
       // process the row
     }
   }
@@ -190,69 +190,83 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asIterable()">asIterable</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns an <code>Iterable</code> that wraps this iterator.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asStream()">asStream</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a stream that wraps this iterator.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close()">close</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Closes the underlying reader.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsHeader(java.lang.String)">containsHeader</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;header)</code></th>
 <td class="colLast">
-<div class="block">Checks if the header is known.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsHeader(java.util.regex.Pattern)">containsHeader</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex" class="externalLink">Pattern</a>&nbsp;headerPattern)</code></th>
-<td class="colLast">
-<div class="block">Checks if the header pattern is known.</div>
+<div class="block">Checks if the header is present in the file.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsHeader(java.util.regex.Pattern)">containsHeader</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex" class="externalLink">Pattern</a>&nbsp;headerPattern)</code></th>
+<td class="colLast">
+<div class="block">Checks if the header pattern is present in the file.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsHeaders(java.util.Collection)">containsHeaders</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;headers)</code></th>
+<td class="colLast">
+<div class="block">Checks if the headers are present in the file.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasNext()">hasNext</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks whether there is another row in the CSV file.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#headers()">headers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the header row.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#next()">next</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the next row from the CSV file.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextBatch(int)">nextBatch</a></span>&#8203;(int&nbsp;count)</code></th>
 <td class="colLast">
 <div class="block">Returns the next batch of rows from the CSV file.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextBatch(java.util.function.Predicate)">nextBatch</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;selector)</code></th>
 <td class="colLast">
 <div class="block">Returns the next batch of rows from the CSV file using a predicate to determine the rows.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean)">of</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
   boolean&nbsp;headerRow)</code></th>
@@ -260,7 +274,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <div class="block">Parses the specified source as a CSV file, using a comma as the separator.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.google.common.io.CharSource,boolean,char)">of</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source,
   boolean&nbsp;headerRow,
@@ -269,7 +283,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <div class="block">Parses the specified source as a CSV file where the separator is specified and might not be a comma.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.io.Reader,boolean)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink">Reader</a>&nbsp;reader,
   boolean&nbsp;headerRow)</code></th>
@@ -277,7 +291,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <div class="block">Parses the specified reader as a CSV file, using a comma as the separator.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="CsvIterator.html" title="class in com.opengamma.strata.collect.io">CsvIterator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.io.Reader,boolean,char)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink">Reader</a>&nbsp;reader,
   boolean&nbsp;headerRow,
@@ -286,21 +300,21 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <div class="block">Parses the specified reader as a CSV file where the separator is specified and might not be a comma.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peek()">peek</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Peeks the next row from the CSV file without changing the iteration position.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove()">remove</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Throws an exception as remove is not supported.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -459,14 +473,32 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <li class="blockList">
 <h4>containsHeader</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;containsHeader&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;header)</pre>
-<div class="block">Checks if the header is known.
+<div class="block">Checks if the header is present in the file.
  <p>
  Matching is case insensitive.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>header</code> - the column header to match</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the header is known</dd>
+<dd>true if the header is present</dd>
+</dl>
+</li>
+</ul>
+<a id="containsHeaders(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>containsHeaders</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;containsHeaders&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;headers)</pre>
+<div class="block">Checks if the headers are present in the file.
+ <p>
+ Matching is case insensitive.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>headers</code> - the column headers to match</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if all the headers are present</dd>
 </dl>
 </li>
 </ul>
@@ -477,14 +509,38 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <li class="blockList">
 <h4>containsHeader</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;containsHeader&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex" class="externalLink">Pattern</a>&nbsp;headerPattern)</pre>
-<div class="block">Checks if the header pattern is known.
+<div class="block">Checks if the header pattern is present in the file.
  <p>
  Matching is case insensitive.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>headerPattern</code> - the header pattern to match</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the header is known</dd>
+<dd>true if the header is present</dd>
+</dl>
+</li>
+</ul>
+<a id="asIterable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asIterable</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;asIterable()</pre>
+<div class="block">Returns an <code>Iterable</code> that wraps this iterator.
+ <p>
+ Unlike most <code>Iterable</code> implementations, the method <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator()" title="class or interface in java.lang" class="externalLink"><code>Iterable.iterator()</code></a>
+ can only be called once. This is intended for use with the for-each loop.
+ <pre>
+  try (CsvIterator csvIterator = CsvIterator.of(source, true)) {
+    for (CsvRow row : csvIterator.asIterable()) {
+      // process the row
+    }
+  }
+ </pre></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this iterator as an <code>Iterable</code></dd>
 </dl>
 </li>
 </ul>
