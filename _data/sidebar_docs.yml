@@ -55,6 +55,9 @@
     - title: CDS
       url: /cds/
 
+    - title: Quant Research
+      url: /quant_research/
+
 - title: Basics
   items:
     - title: Extended Enums
