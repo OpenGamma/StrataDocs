@@ -22,7 +22,7 @@ Note that some research papers have been lost to the mists of time, so the list 
 
 1. [Adjoint Algorithmic Differentiation: Calibration and implicit function theorem](https://quant.opengamma.io/Adjoint-Algorithmic-Differentiation-OpenGamma.pdf), Nov 2011
 2. [Local Volatility](https://quant.opengamma.io/Local-Volatility-OpenGamma.pdf), Jan 2012
-3. My future is not convex, May 2012
+3. [My future is not convex](https://quant.opengamma.io/My-Future-Is_not_Convex-SSRN.pdf), May 2012
 4. [Equity Variance Swap with Dividends](https://quant.opengamma.io/Equity-Variance-Swaps-with-Dividends-OpenGamma.pdf), May 2012
 5. [Deliverable Interest Rate Swap Futures: Pricing in Gaussian HJM Model](https://quant.opengamma.io/Swap-Futures2.pdf), Sep 2012
 6. [Multi-Curves: Variations on a Theme](https://quant.opengamma.io/Multi-Curves-Variations2.pdf), Oct 2012
@@ -42,6 +42,9 @@ Note that some research papers have been lost to the mists of time, so the list 
 20. [Inflation caps and floors](https://quant.opengamma.io/Inflation-Cap-Floor-OpenGamma.pdf), Jan 2014
 21. [Convexity adjustment for inflation derivatives](https://quant.opengamma.io/Inflation-Convexity-Adjustment-OpenGamma.pdf), Jan 2014
 22. [Forward CDS, Indices and Options](https://quant.opengamma.io/CDS-Options-OpenGamma.pdf), Mar 2014
+23. Tree Option Pricing Model, Apr 2014
+24. Eight ways to strip your caplets: An introduction to caplet stripping, September 2014
+25. [Smile Interpolation and Extrapolation](https://quant.opengamma.io/Smile-Extrapolation-OpenGamma.pdf), Sep 2014
 
 
 ## Other papers
