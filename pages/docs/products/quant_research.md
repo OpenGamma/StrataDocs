@@ -22,7 +22,7 @@ Note that some research papers have been lost to the mists of time, so the list 
 
 1. [Adjoint Algorithmic Differentiation: Calibration and implicit function theorem](https://quant.opengamma.io/Adjoint-Algorithmic-Differentiation-OpenGamma.pdf), Nov 2011
 2. [Local Volatility](https://quant.opengamma.io/Local-Volatility-OpenGamma.pdf), Jan 2012
-3. [My future is not convex](https://quant.opengamma.io/My-Future-Is_not_Convex-SSRN.pdf), May 2012
+3. [My future is not convex](https://quant.opengamma.io/My-Future-Is-Not-Convex-SSRN.pdf), May 2012
 4. [Equity Variance Swap with Dividends](https://quant.opengamma.io/Equity-Variance-Swaps-with-Dividends-OpenGamma.pdf), May 2012
 5. [Deliverable Interest Rate Swap Futures: Pricing in Gaussian HJM Model](https://quant.opengamma.io/Swap-Futures2.pdf), Sep 2012
 6. [Multi-Curves: Variations on a Theme](https://quant.opengamma.io/Multi-Curves-Variations2.pdf), Oct 2012
