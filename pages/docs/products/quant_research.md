@@ -1,6 +1,6 @@
 ---
 title: Quant research
-permalink: /docs/quant_research
+permalink: /quant_research/
 ---
 
 {% include macros.html %}
