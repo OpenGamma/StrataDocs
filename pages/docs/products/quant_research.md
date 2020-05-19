@@ -43,7 +43,7 @@ Note that some research papers have been lost to the mists of time, so the list 
 21. [Convexity adjustment for inflation derivatives](https://quant.opengamma.io/Inflation-Convexity-Adjustment-OpenGamma.pdf), Jan 2014
 22. [Forward CDS, Indices and Options](https://quant.opengamma.io/CDS-Options-OpenGamma.pdf), Mar 2014
 23. [Tree Option Pricing Model](https://quant.opengamma.io/Tree-Option-Pricing-Model.pdf), Apr 2014
-24. [Eight ways to strip your caplets: An introduction to caplet stripping](https://quant.opengamma.io/Caplet-Stripping-OpenGamma.pdf), September 2014
+24. [Eight ways to strip your caplets: An introduction to caplet stripping](https://quant.opengamma.io/Caplet-Stripping-OpenGamma.pdf), Sep 2014
 25. [Smile Interpolation and Extrapolation](https://quant.opengamma.io/Smile-Extrapolation-OpenGamma.pdf), Sep 2014
 
 
