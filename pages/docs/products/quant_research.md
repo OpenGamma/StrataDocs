@@ -33,7 +33,7 @@ Note that some research papers have been lost to the mists of time, so the list 
 11. [Multi-curves Framework with Stochastic Spread: A Coherent Approach to STIR Futures and Their Options](https://quant.opengamma.io/Multi-Curves-Stochastic-Spread-STIR-Futures-Options-OpenGamma.pdf), Mar 2013
 12. [Algorithmic Differentiation in Finance: Root Finding and Least Square Calibration](https://quant.opengamma.io/Algorithmic-Differentiation-in-Finance-Root-Finding-and-Least-Square-Calibration-OpenGamma.pdf), Jan 2013
 13. [Multi-curve Framework with Collateral](https://quant.opengamma.io/Multi-Curve-Framework-with-Collateral-OpenGamma.pdf), May 2013
-14. Mixed Bivariate Log-Normal Model for Forex Cross, Jan 2013
+14. [Mixed Bivariate Log-Normal Model for Forex Cross](https://quant.opengamma.io/Mixed-Bivariate-Log-Normal-Compress.pdf), Jan 2013
 15. [Piecewise Polynomial Interpolations](https://quant.opengamma.io/Piecewise-Polynomial-Interpolation3.pdf), May 2013
 16. [The Pricing and Risk Management of Credit Default Swaps, with a Focus on the ISDA Model](https://quant.opengamma.io/Pricing-and-Risk-Management-of-Credit-Default-Swaps-OpenGamma.pdf), Sep 2013
 17. [Conventions for Single-Name Credit Default Swaps](https://quant.opengamma.io/Single-Name-CDS-Conventions.pdf), Dec 2013
@@ -42,8 +42,8 @@ Note that some research papers have been lost to the mists of time, so the list 
 20. [Inflation caps and floors](https://quant.opengamma.io/Inflation-Cap-Floor-OpenGamma.pdf), Jan 2014
 21. [Convexity adjustment for inflation derivatives](https://quant.opengamma.io/Inflation-Convexity-Adjustment-OpenGamma.pdf), Jan 2014
 22. [Forward CDS, Indices and Options](https://quant.opengamma.io/CDS-Options-OpenGamma.pdf), Mar 2014
-23. Tree Option Pricing Model, Apr 2014
-24. Eight ways to strip your caplets: An introduction to caplet stripping, September 2014
+23. [Tree Option Pricing Model](https://quant.opengamma.io/Tree-Option-Pricing-Model.pdf), Apr 2014
+24. [Eight ways to strip your caplets: An introduction to caplet stripping](https://quant.opengamma.io/Caplet-Stripping-OpenGamma.pdf), September 2014
 25. [Smile Interpolation and Extrapolation](https://quant.opengamma.io/Smile-Extrapolation-OpenGamma.pdf), Sep 2014
 
 
