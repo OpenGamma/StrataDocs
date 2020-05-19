@@ -6,6 +6,9 @@
     - title: Dependencies
       url: /dependencies/
 
+    - title: Quant Research
+      url: /quant_research/
+
     - title: Javadoc
       url: /apidocs/
 
@@ -54,9 +57,6 @@
 
     - title: CDS
       url: /cds/
-
-    - title: Quant Research
-      url: /quant_research/
 
 - title: Basics
   items:
