@@ -112,7 +112,7 @@ Thus "3X6", "P3M X P6M" and "3MX6M" are all equivalent.
 
 An Ibor future node (STIR).
 The convention column must contain a contract specification from
-[`IborFutureContractSpecs`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/IborFutureContractSpecs.html).
+[`IborFutureContractSpecs`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/IborFutureContractSpec.html).
 The time column must contain a description of the future, either as a relative or absolute month.
 For example, "Jun16" defines the future absolutely, whereas, "7D+3" defines the future in relative terms.
 
@@ -134,7 +134,7 @@ and then finding the nth matching future according to the convention, where n is
 
 An Overnight future node (STIR).
 The convention column must contain a contract specification from
-[`OvenightFutureContractSpecs`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/OvenightFutureContractSpecs.html).
+[`OvenightFutureContractSpecs`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/OvernightFutureContractSpec.html).
 
 In other respects this is the configured as per as an "IFU" node, see above.
 
