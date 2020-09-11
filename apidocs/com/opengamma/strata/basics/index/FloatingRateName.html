@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code></dd>
+<dd><code><a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></code>, <code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -134,7 +134,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">FloatingRateName</span>
-extends <a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></pre>
+extends <a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a>, <a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></pre>
 <div class="block">A floating rate index name, such as Libor, Euribor or US Fed Fund.
  <p>
  An index represented by this class relates to some form of floating rate.
@@ -211,7 +211,7 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the name that uniquely identifies this floating rate.</div>
+<div class="block">Gets the name that uniquely identifies this floating rate, such as 'GBP-LIBOR'.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -299,6 +299,13 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.basics.index.FloatingRate">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.opengamma.strata.basics.index.<a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></h3>
+<code><a href="FloatingRate.html#getFloatingRateName()">getFloatingRateName</a></code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -445,10 +452,9 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <li class="blockList">
 <h4>getName</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getName()</pre>
-<div class="block">Gets the name that uniquely identifies this floating rate.
+<div class="block">Gets the name that uniquely identifies this floating rate, such as 'GBP-LIBOR'.
  <p>
- This name is used in serialization and can be parsed using <a href="#of(java.lang.String)"><code>of(String)</code></a>.
- It will be the external name, typically from FpML, such as 'GBP-LIBOR-BBA'.</div>
+ This name is used in serialization and can be parsed using <a href="#of(java.lang.String)"><code>of(String)</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../collect/named/Named.html#getName()">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code></dd>
@@ -480,6 +486,8 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <pre class="methodSignature">default&nbsp;<a href="../currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;getCurrency()</pre>
 <div class="block">Gets the currency of the floating rate.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="FloatingRate.html#getCurrency()">getCurrency</a></code>&nbsp;in interface&nbsp;<code><a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the currency</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

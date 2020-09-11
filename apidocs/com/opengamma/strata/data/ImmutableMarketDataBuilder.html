@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -158,20 +158,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(com.opengamma.strata.data.MarketData)">add</a></span>&#8203;(<a href="MarketData.html" title="interface in com.opengamma.strata.data">MarketData</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Adds all time series and values from another market data instance.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addTimeSeries(com.opengamma.strata.data.ObservableId,com.opengamma.strata.collect.timeseries.LocalDateDoubleTimeSeries)">addTimeSeries</a></span>&#8203;(<a href="ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>&nbsp;id,
              <a href="../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;timeSeries)</code></th>
 <td class="colLast">
 <div class="block">Adds a time-series of observable market data values.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addTimeSeriesMap(java.util.Map)">addTimeSeriesMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>,&#8203;<a href="../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;timeSeriesMap)</code></th>
 <td class="colLast">
 <div class="block">Adds multiple time-series of observable market data values to the builder.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addValue(com.opengamma.strata.data.MarketDataId,T)">addValue</a></span>&#8203;(<a href="MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;T&gt;&nbsp;id,
         T&nbsp;value)</code></th>
@@ -179,14 +186,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds a value to the builder.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addValueMap(java.util.Map)">addValueMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;,&#8203;?&gt;&nbsp;values)</code></th>
 <td class="colLast">
 <div class="block">Adds multiple values to the builder.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addValueUnsafe(com.opengamma.strata.data.MarketDataId,java.lang.Object)">addValueUnsafe</a></span>&#8203;(<a href="MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&nbsp;id,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
@@ -194,28 +201,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds a value to the builder when the types are not known at compile time.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="ImmutableMarketData.html" title="class in com.opengamma.strata.data">ImmutableMarketData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#build()">build</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a set of market data built from the data in this builder.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeTimeSeriesIf(java.util.function.Predicate)">removeTimeSeriesIf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>&gt;&nbsp;predicate)</code></th>
+<td class="colLast">
+<div class="block">Removes values where the time series ID matches the specified predicate.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeValueIf(java.util.function.Predicate)">removeValueIf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;&nbsp;predicate)</code></th>
+<td class="colLast">
+<div class="block">Removes values where the value ID matches the specified predicate.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#timeSeries(java.util.Map)">timeSeries</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>,&#8203;<a href="../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;timeSeries)</code></th>
 <td class="colLast">
 <div class="block">Sets the time-series in the builder, replacing any existing values.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valuationDate(java.time.LocalDate)">valuationDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate)</code></th>
 <td class="colLast">
 <div class="block">Sets the valuation date.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values(java.util.Map)">values</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;,&#8203;?&gt;&nbsp;values)</code></th>
 <td class="colLast">
@@ -385,6 +406,56 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>timeSeriesMap</code> - the map of time-series</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder</dd>
+</dl>
+</li>
+</ul>
+<a id="add(com.opengamma.strata.data.MarketData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre class="methodSignature">public&nbsp;<a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a>&nbsp;add&#8203;(<a href="MarketData.html" title="interface in com.opengamma.strata.data">MarketData</a>&nbsp;other)</pre>
+<div class="block">Adds all time series and values from another market data instance.
+ <p>
+ The valuation date of the other market data instance is ignored.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - the other market data instance</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder</dd>
+</dl>
+</li>
+</ul>
+<a id="removeTimeSeriesIf(java.util.function.Predicate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTimeSeriesIf</h4>
+<pre class="methodSignature">public&nbsp;<a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a>&nbsp;removeTimeSeriesIf&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>&gt;&nbsp;predicate)</pre>
+<div class="block">Removes values where the time series ID matches the specified predicate.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>predicate</code> - the predicate to apply, item removed if the predicate returns true</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder</dd>
+</dl>
+</li>
+</ul>
+<a id="removeValueIf(java.util.function.Predicate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeValueIf</h4>
+<pre class="methodSignature">public&nbsp;<a href="ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a>&nbsp;removeValueIf&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;&nbsp;predicate)</pre>
+<div class="block">Removes values where the value ID matches the specified predicate.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>predicate</code> - the predicate to apply, item removed if the predicate returns true</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder</dd>
 </dl>

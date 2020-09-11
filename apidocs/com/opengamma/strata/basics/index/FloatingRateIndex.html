@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></code>, <code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code></dd>
+<dd><code><a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></code>, <code><a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></code>, <code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -138,7 +138,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">FloatingRateIndex</span>
-extends <a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></pre>
+extends <a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>, <a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></pre>
 <div class="block">An index used to provide floating rates, typically in interest rate swaps.
  <p>
  See <a href="IborIndex.html" title="interface in com.opengamma.strata.basics.index"><code>IborIndex</code></a>, <a href="OvernightIndex.html" title="interface in com.opengamma.strata.basics.index"><code>OvernightIndex</code></a> and  <a href="PriceIndex.html" title="interface in com.opengamma.strata.basics.index"><code>PriceIndex</code></a> for more details.
@@ -376,6 +376,8 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 <pre class="methodSignature"><a href="../currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;getCurrency()</pre>
 <div class="block">Gets the currency of the index.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="FloatingRate.html#getCurrency()">getCurrency</a></code>&nbsp;in interface&nbsp;<code><a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the currency of the index</dd>
 </dl>
@@ -424,6 +426,8 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
  For an Ibor index, the <a href="FloatingRateName.html" title="interface in com.opengamma.strata.basics.index"><code>FloatingRateName</code></a> does not include the tenor.
  It can be used to find the other tenors available for this index.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="FloatingRate.html#getFloatingRateName()">getFloatingRateName</a></code>&nbsp;in interface&nbsp;<code><a href="FloatingRate.html" title="interface in com.opengamma.strata.basics.index">FloatingRate</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the floating rate name</dd>
 </dl>

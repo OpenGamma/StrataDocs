@@ -346,40 +346,49 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>default &lt;T&gt;&nbsp;boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Attributes.</span><code><span class="memberNameLink"><a href="../Attributes.html#containsAttribute(com.opengamma.strata.product.AttributeType,T)">containsAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
+                 T&nbsp;attributeValue)</code></th>
+<td class="colLast">
+<div class="block">Determines if an attribute associated with the specified type is present <em>and</em> its value is <code>equal</code>
+ to the supplied value.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Attributes.</span><code><span class="memberNameLink"><a href="../Attributes.html#findAttribute(com.opengamma.strata.product.AttributeType)">findAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Finds the attribute associated with the specified type.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#findAttribute(com.opengamma.strata.product.AttributeType)">findAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SecurityInfo.</span><code><span class="memberNameLink"><a href="../SecurityInfo.html#findAttribute(com.opengamma.strata.product.AttributeType)">findAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SimpleAttributes.</span><code><span class="memberNameLink"><a href="../SimpleAttributes.html#findAttribute(com.opengamma.strata.product.AttributeType)">findAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#findAttribute(com.opengamma.strata.product.AttributeType)">findAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Attributes.</span><code><span class="memberNameLink"><a href="../Attributes.html#getAttribute(com.opengamma.strata.product.AttributeType)">getAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Gets the attribute associated with the specified type.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Attributes.</span><code><span class="memberNameLink"><a href="../Attributes.html#of(com.opengamma.strata.product.AttributeType,T)">of</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
   T&nbsp;value)</code></th>
@@ -387,7 +396,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance with a single attribute.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PortfolioItemInfo.</span><code><span class="memberNameLink"><a href="../PortfolioItemInfo.html#of(com.opengamma.strata.product.AttributeType,T)">of</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
   T&nbsp;value)</code></th>
@@ -395,7 +404,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance with a single attribute.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../SimpleAttributes.html" title="class in com.opengamma.strata.product">SimpleAttributes</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SimpleAttributes.</span><code><span class="memberNameLink"><a href="../SimpleAttributes.html#of(com.opengamma.strata.product.AttributeType,T)">of</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
   T&nbsp;value)</code></th>
@@ -403,7 +412,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance with a single attribute.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Attributes.</span><code><span class="memberNameLink"><a href="../Attributes.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
@@ -411,31 +420,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns a copy of this instance with the attribute added.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../PortfolioItemInfo.html" title="interface in com.opengamma.strata.product">PortfolioItemInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PortfolioItemInfo.</span><code><span class="memberNameLink"><a href="../PortfolioItemInfo.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionInfo.</span><code><span class="memberNameLink"><a href="../PositionInfo.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../SecurityInfo.html" title="class in com.opengamma.strata.product">SecurityInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SecurityInfo.</span><code><span class="memberNameLink"><a href="../SecurityInfo.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../SimpleAttributes.html" title="class in com.opengamma.strata.product">SimpleAttributes</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SimpleAttributes.</span><code><span class="memberNameLink"><a href="../SimpleAttributes.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeInfo.</span><code><span class="memberNameLink"><a href="../TradeInfo.html#withAttribute(com.opengamma.strata.product.AttributeType,T)">withAttribute</a></span>&#8203;(<a href="../AttributeType.html" title="class in com.opengamma.strata.product">AttributeType</a>&lt;T&gt;&nbsp;type,
              T&nbsp;value)</code></th>

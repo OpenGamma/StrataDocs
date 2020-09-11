@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":10,"i20":9,"i21":10,"i22":10,"i23":10,"i24":10};
+var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":10,"i21":9,"i22":10,"i23":10,"i24":10,"i25":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -312,13 +312,21 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(T,java.util.Collection)">of</a></span>&#8203;(T&nbsp;successValue,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;failures)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance wrapping the success value and failures.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(T,java.util.function.Supplier)">of</a></span>&#8203;(T&nbsp;emptyValue,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;T&gt;&nbsp;supplier)</code></th>
 <td class="colLast">
 <div class="block">Creates an instance using a supplier.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(T,java.util.List)">of</a></span>&#8203;(T&nbsp;successValue,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;failures)</code></th>
@@ -326,7 +334,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Creates an instance wrapping the success value and failures.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCombinedValuesAsList()">toCombinedValuesAsList</a></span>()</code></th>
 <td class="colLast">
@@ -334,7 +342,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  of separate instances, combining into an immutable list.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCombinedValuesAsSet()">toCombinedValuesAsSet</a></span>()</code></th>
 <td class="colLast">
@@ -342,12 +350,12 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  of separate instances, combining into an immutable set.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;T&gt;&nbsp;operator)</code></th>
@@ -356,28 +364,28 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  from a stream of separate instances.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="ValueWithFailures.html" title="type parameter in ValueWithFailures">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAdditionalFailures(java.util.List)">withAdditionalFailures</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;additionalFailures)</code></th>
 <td class="colLast">
 <div class="block">Returns a new instance with the specified failures, retaining the current value.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValue(com.opengamma.strata.collect.result.ValueWithFailures)">withValue</a></span>&#8203;(<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;&nbsp;valueWithFailures)</code></th>
 <td class="colLast">
 <div class="block">Returns a new instance with the specified value, combining the failures.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValue(R)">withValue</a></span>&#8203;(R&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Returns a new instance with the specified value, retaining the current failures.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValue(R,java.util.List)">withValue</a></span>&#8203;(R&nbsp;value,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;additionalFailures)</code></th>
@@ -448,6 +456,28 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <h4>of</h4>
 <pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&nbsp;of&#8203;(T&nbsp;successValue,
                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;failures)</pre>
+<div class="block">Creates an instance wrapping the success value and failures.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the success value</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>successValue</code> - the success value</dd>
+<dd><code>failures</code> - the failures</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance wrapping the value and failures</dd>
+</dl>
+</li>
+</ul>
+<a id="of(java.lang.Object,java.util.Collection)">
+<!--   -->
+</a><a id="of(T,java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;<a href="ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&nbsp;of&#8203;(T&nbsp;successValue,
+                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;failures)</pre>
 <div class="block">Creates an instance wrapping the success value and failures.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

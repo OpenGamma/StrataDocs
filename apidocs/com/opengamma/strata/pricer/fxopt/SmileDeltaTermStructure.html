@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":18,"i5":18,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
+var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":18,"i5":18,"i6":18,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -191,27 +191,34 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExpiryTenors()">getExpiryTenors</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the tenor associated with each expiry in the volatility term.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSmileCount()">getSmileCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of smiles.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStrikeCount()">getStrikeCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of strikes.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVolatilityTerm()">getVolatilityTerm</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the volatility smiles from delta.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="SmileAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">SmileAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileAndSensitivitiesForExpiry(double,com.opengamma.strata.collect.array.DoubleArray)">smileAndSensitivitiesForExpiry</a></span>&#8203;(double&nbsp;expiry,
                               <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;volatilityAtTimeSensitivity)</code></th>
@@ -219,14 +226,14 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Calculates the smile at a given time and the sensitivities with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileForExpiry(double)">smileForExpiry</a></span>&#8203;(double&nbsp;expiry)</code></th>
 <td class="colLast">
 <div class="block">Calculates the smile at a given time.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,double,double)">volatility</a></span>&#8203;(double&nbsp;expiry,
           double&nbsp;strike,
@@ -235,7 +242,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Calculates the volatility at a given time/strike/forward from the term structure.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="VolatilityAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">VolatilityAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAndSensitivities(double,double,double)">volatilityAndSensitivities</a></span>&#8203;(double&nbsp;expiry,
                           double&nbsp;strike,
@@ -244,7 +251,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Calculates the volatility and the volatility sensitivity with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -252,7 +259,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../../market/param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -265,7 +272,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.opengamma.strata.market.param.<a href="../../market/param/ParameterizedData.html" title="interface in com.opengamma.strata.market.param">ParameterizedData</a></h3>
-<code><a href="../../market/param/ParameterizedData.html#getParameter(int)">getParameter</a>, <a href="../../market/param/ParameterizedData.html#getParameterCount()">getParameterCount</a>, <a href="../../market/param/ParameterizedData.html#getParameterMetadata(int)">getParameterMetadata</a></code></li>
+<code><a href="../../market/param/ParameterizedData.html#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">findParameterIndex</a>, <a href="../../market/param/ParameterizedData.html#getParameter(int)">getParameter</a>, <a href="../../market/param/ParameterizedData.html#getParameterCount()">getParameterCount</a>, <a href="../../market/param/ParameterizedData.html#getParameterMetadata(int)">getParameterMetadata</a></code></li>
 </ul>
 </li>
 </ul>
@@ -364,6 +371,20 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the set of expiry</dd>
+</dl>
+</li>
+</ul>
+<a id="getExpiryTenors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpiryTenors</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&gt;&gt;&nbsp;getExpiryTenors()</pre>
+<div class="block">Gets the tenor associated with each expiry in the volatility term.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of tenors associated with the expiries, empty if not available</dd>
 </dl>
 </li>
 </ul>

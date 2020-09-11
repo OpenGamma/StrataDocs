@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":1,"i5":6,"i6":6,"i7":1};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":38,"i1":38,"i2":38,"i3":38,"i4":33,"i5":38,"i6":38,"i7":33};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -133,8 +133,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code><a href="ImmutableIborFutureConvention.html" title="class in com.opengamma.strata.product.index.type">ImmutableIborFutureConvention</a></code></dd>
 </dl>
 <hr>
-<pre>public interface <span class="typeNameLabel">IborFutureConvention</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public interface <span class="typeNameLabel">IborFutureConvention</span>
 extends <a href="../../TradeConvention.html" title="interface in com.opengamma.strata.product">TradeConvention</a>, <a href="../../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="IborFutureContractSpec.html" title="interface in com.opengamma.strata.product.index.type"><code>IborFutureContractSpec</code></a></div>
+</div>
 <div class="block">A market convention for Ibor Future trades.
  <p>
  This defines the market convention for a future against a particular index.
@@ -155,7 +159,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -168,6 +172,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
                                    int&nbsp;sequenceNumber,
                                    <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Calculates the reference date from the trade date.</div>
 </td>
 </tr>
@@ -177,6 +182,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;yearMonth,
                                    <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Calculates the reference date from the trade date.</div>
 </td>
 </tr>
@@ -191,6 +197,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
            double&nbsp;price,
            <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
@@ -204,6 +211,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
            double&nbsp;price,
            <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
@@ -211,6 +219,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <td class="colFirst"><code>static <a href="../../../collect/named/ExtendedEnum.html" title="class in com.opengamma.strata.collect.named">ExtendedEnum</a>&lt;<a href="IborFutureConvention.html" title="interface in com.opengamma.strata.product.index.type">IborFutureConvention</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extendedEnum()">extendedEnum</a></span>()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Gets the extended enum helper.</div>
 </td>
 </tr>
@@ -218,6 +227,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <td class="colFirst"><code><a href="../../../basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndex()">getIndex</a></span>()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Gets the Ibor index.</div>
 </td>
 </tr>
@@ -225,6 +235,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Gets the name that uniquely identifies this convention.</div>
 </td>
 </tr>
@@ -232,6 +243,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <td class="colFirst"><code>static <a href="IborFutureConvention.html" title="interface in com.opengamma.strata.product.index.type">IborFutureConvention</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Obtains an instance from the specified unique name.</div>
 </td>
 </tr>
@@ -259,6 +271,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="IborFutureConvention.html" title="interface in com.opengamma.strata.product.index.type">IborFutureConvention</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Obtains an instance from the specified unique name.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -277,6 +290,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <li class="blockList">
 <h4>extendedEnum</h4>
 <pre class="methodSignature">static&nbsp;<a href="../../../collect/named/ExtendedEnum.html" title="class in com.opengamma.strata.collect.named">ExtendedEnum</a>&lt;<a href="IborFutureConvention.html" title="interface in com.opengamma.strata.product.index.type">IborFutureConvention</a>&gt;&nbsp;extendedEnum()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Gets the extended enum helper.
  <p>
  This helper allows instances of the convention to be looked up.
@@ -294,6 +308,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <li class="blockList">
 <h4>getIndex</h4>
 <pre class="methodSignature"><a href="../../../basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a>&nbsp;getIndex()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Gets the Ibor index.
  <p>
  The floating rate to be paid is based on this index
@@ -318,6 +333,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
                             double&nbsp;notional,
                             double&nbsp;price,
                             <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Creates a trade based on this convention.
  <p>
  This returns a trade based on the specified minimum period and sequence number.</div>
@@ -351,6 +367,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
                             double&nbsp;notional,
                             double&nbsp;price,
                             <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Creates a trade based on this convention.
  <p>
  This returns a trade based on the specified year-month.</div>
@@ -380,6 +397,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;minimumPeriod,
                                               int&nbsp;sequenceNumber,
                                               <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Calculates the reference date from the trade date.
  <p>
  This determines the date from the specified minimum period and sequence number.</div>
@@ -403,6 +421,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;calculateReferenceDateFromTradeDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;yearMonth,
                                               <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Calculates the reference date from the trade date.
  <p>
  This determines the date from the specified year-month.</div>
@@ -423,6 +442,7 @@ extends <a href="../../TradeConvention.html" title="interface in com.opengamma.s
 <li class="blockList">
 <h4>getName</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getName()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Gets the name that uniquely identifies this convention.
  <p>
  This name is used in serialization and can be parsed using <a href="#of(java.lang.String)"><code>of(String)</code></a>.</div>

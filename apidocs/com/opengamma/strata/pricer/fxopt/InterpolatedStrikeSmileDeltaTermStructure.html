@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":41,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -195,7 +195,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -221,93 +221,100 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExpiryTenors()">getExpiryTenors</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the tenor associated with each expiry in the volatility term.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameter(int)">getParameter</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterCount()">getParameterCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of parameters.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStrikeExtrapolatorLeft()">getStrikeExtrapolatorLeft</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the left extrapolator used in the strike dimension.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStrikeExtrapolatorRight()">getStrikeExtrapolatorRight</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the right extrapolator used in the strike dimension.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStrikeInterpolator()">getStrikeInterpolator</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the interpolator used in the strike dimension.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTimeExtrapolatorLeft()">getTimeExtrapolatorLeft</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the left extrapolator used in the time dimension.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTimeExtrapolatorRight()">getTimeExtrapolatorRight</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the right extrapolator used in the time dimension.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTimeInterpolator()">getTimeInterpolator</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the interpolator used in the time dimension.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVolatilityTerm()">getVolatilityTerm</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the smile description at the different time to expiry.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.Meta.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>InterpolatedStrikeSmileDeltaTermStructure</code>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="InterpolatedStrikeSmileDeltaTermStructure.Meta.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.basics.date.DayCount)">of</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;expiries,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;delta,
@@ -320,7 +327,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
  strangle figures.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;expiries,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;delta,
@@ -336,7 +343,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
  strangle figures with strike interpolator and extrapolators specified.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;expiries,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;delta,
@@ -355,7 +362,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
  strangle figures with interpolator and extrapolators fully specified.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.basics.date.DayCount)">of</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;expiries,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;delta,
@@ -365,7 +372,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Obtains volatility term structure from expiry times, delta values and volatilities.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;expiries,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;delta,
@@ -379,7 +386,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
  with strike interpolator and extrapolators specified.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleMatrix,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;expiries,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;delta,
@@ -396,7 +403,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
  with interpolator and extrapolators fully specified.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List,com.opengamma.strata.basics.date.DayCount)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
   <a href="../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount)</code></th>
@@ -404,7 +411,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Obtains volatility term structure from a set of smile descriptions.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
   <a href="../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -415,11 +422,12 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
   <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;strikeInterpolator,
   <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorRight)</code></th>
 <td class="colLast">
-<div class="block">Obtains volatility term structure from a set of smile descriptions 
- with interpolator and extrapolators fully specified.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use variant with correct interpolator/extrapolator order</div>
+</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
   <a href="../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -431,7 +439,22 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
  with strike interpolator and extrapolators specified.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>static <a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.List,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
+  <a href="../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
+  <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;timeInterpolator,
+  <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorLeft,
+  <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorRight,
+  <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;strikeInterpolator,
+  <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorLeft,
+  <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorRight)</code></th>
+<td class="colLast">
+<div class="block">Obtains volatility term structure from a set of smile descriptions 
+ with interpolator and extrapolators fully specified.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="SmileAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">SmileAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileAndSensitivitiesForExpiry(double,com.opengamma.strata.collect.array.DoubleArray)">smileAndSensitivitiesForExpiry</a></span>&#8203;(double&nbsp;expiry,
                               <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;volatilityAtTimeSensitivity)</code></th>
@@ -439,19 +462,19 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Calculates the smile at a given time and the sensitivities with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileForExpiry(double)">smileForExpiry</a></span>&#8203;(double&nbsp;expiry)</code></th>
 <td class="colLast">
 <div class="block">Calculates the smile at a given time.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,double,double)">volatility</a></span>&#8203;(double&nbsp;time,
           double&nbsp;strike,
@@ -460,7 +483,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Calculates the volatility at a given time/strike/forward from the term structure.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="VolatilityAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">VolatilityAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAndSensitivities(double,double,double)">volatilityAndSensitivities</a></span>&#8203;(double&nbsp;time,
                           double&nbsp;strike,
@@ -469,7 +492,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Calculates the volatility and the volatility sensitivity with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -477,7 +500,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../../market/param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -498,6 +521,13 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 </a>
 <h3>Methods inherited from interface&nbsp;org.joda.beans.Bean</h3>
 <code>property, propertyNames</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.market.param.ParameterizedData">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.opengamma.strata.market.param.<a href="../../market/param/ParameterizedData.html" title="interface in com.opengamma.strata.market.param">ParameterizedData</a></h3>
+<code><a href="../../market/param/ParameterizedData.html#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">findParameterIndex</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.pricer.fxopt.SmileDeltaTermStructure">
@@ -576,7 +606,8 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">public static&nbsp;<a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public static&nbsp;<a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
                                                            <a href="../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
                                                            <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorLeft,
                                                            <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;timeInterpolator,
@@ -584,6 +615,9 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
                                                            <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorLeft,
                                                            <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;strikeInterpolator,
                                                            <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorRight)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use variant with correct interpolator/extrapolator order</div>
+</div>
 <div class="block">Obtains volatility term structure from a set of smile descriptions 
  with interpolator and extrapolators fully specified.</div>
 <dl>
@@ -595,6 +629,37 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <dd><code>timeExtrapolatorRight</code> - right extrapolator used in the time dimension</dd>
 <dd><code>strikeExtrapolatorLeft</code> - left extrapolator used in the strike dimension</dd>
 <dd><code>strikeInterpolator</code> - interpolator used in the strike dimension</dd>
+<dd><code>strikeExtrapolatorRight</code> - right extrapolator used in the strike dimension</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance</dd>
+</dl>
+</li>
+</ul>
+<a id="of(java.util.List,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">public static&nbsp;<a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
+                                                           <a href="../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
+                                                           <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;timeInterpolator,
+                                                           <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorLeft,
+                                                           <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorRight,
+                                                           <a href="../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;strikeInterpolator,
+                                                           <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorLeft,
+                                                           <a href="../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorRight)</pre>
+<div class="block">Obtains volatility term structure from a set of smile descriptions 
+ with interpolator and extrapolators fully specified.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>volatilityTerm</code> - the volatility descriptions</dd>
+<dd><code>dayCount</code> - the day count used for the expiry year-fraction</dd>
+<dd><code>timeInterpolator</code> - interpolator used in the time dimension</dd>
+<dd><code>timeExtrapolatorLeft</code> - left extrapolator used in the time dimension</dd>
+<dd><code>timeExtrapolatorRight</code> - right extrapolator used in the time dimension</dd>
+<dd><code>strikeInterpolator</code> - interpolator used in the strike dimension</dd>
+<dd><code>strikeExtrapolatorLeft</code> - left extrapolator used in the strike dimension</dd>
 <dd><code>strikeExtrapolatorRight</code> - right extrapolator used in the strike dimension</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the instance</dd>
@@ -955,6 +1020,23 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <dd><code><a href="SmileDeltaTermStructure.html#getExpiries()">getExpiries</a></code>&nbsp;in interface&nbsp;<code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the set of expiry</dd>
+</dl>
+</li>
+</ul>
+<a id="getExpiryTenors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpiryTenors</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&gt;&gt;&nbsp;getExpiryTenors()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="SmileDeltaTermStructure.html#getExpiryTenors()">SmileDeltaTermStructure</a></code></span></div>
+<div class="block">Gets the tenor associated with each expiry in the volatility term.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="SmileDeltaTermStructure.html#getExpiryTenors()">getExpiryTenors</a></code>&nbsp;in interface&nbsp;<code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of tenors associated with the expiries, empty if not available</dd>
 </dl>
 </li>
 </ul>

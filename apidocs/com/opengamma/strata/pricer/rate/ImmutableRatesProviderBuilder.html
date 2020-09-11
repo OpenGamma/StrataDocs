@@ -510,8 +510,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds an index forward curve to the provider.
  <p>
  This adds the specified forward curve to the provider.
- This is used for Ibor, Overnight and Price indices.
- This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#put(K,V)" title="class or interface in java.util" class="externalLink"><code>Map.put(Object, Object)</code></a> semantics using the index as the key.</div>
+ This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#put(K,V)" title="class or interface in java.util" class="externalLink"><code>Map.put(Object, Object)</code></a> semantics using the index as the key.
+ <p>
+ Any index may be used, however <a href="RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate"><code>RatesProvider</code></a> only directly supports
+ Ibor, Overnight and Price indices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - the index of the curve</dd>
@@ -533,8 +535,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds an index forward curve to the provider with associated time-series.
  <p>
  This adds the specified forward curve to the provider.
- This is used for Ibor, Overnight and Price indices.
- This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#put(K,V)" title="class or interface in java.util" class="externalLink"><code>Map.put(Object, Object)</code></a> semantics using the index as the key.</div>
+ This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#put(K,V)" title="class or interface in java.util" class="externalLink"><code>Map.put(Object, Object)</code></a> semantics using the index as the key.
+ <p>
+ Any index may be used, however <a href="RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate"><code>RatesProvider</code></a> only directly supports
+ Ibor, Overnight and Price indices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - the index of the curve</dd>
@@ -555,8 +559,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds index forward curves to the provider with associated time-series.
  <p>
  This adds the specified index forward curves to the provider.
- This is used for Ibor, Overnight and Price indices.
- This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util" class="externalLink"><code>Map.putAll(Map)</code></a> semantics using the index as the key.</div>
+ This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util" class="externalLink"><code>Map.putAll(Map)</code></a> semantics using the index as the key.
+ <p>
+ Any index may be used, however <a href="RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate"><code>RatesProvider</code></a> only directly supports
+ Ibor, Overnight and Price indices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>indexCurves</code> - the index forward curves</dd>
@@ -576,8 +582,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds index forward curves to the provider with associated time-series.
  <p>
  This adds the specified index forward curves to the provider.
- This is used for Ibor, Overnight and Price indices.
- This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util" class="externalLink"><code>Map.putAll(Map)</code></a> semantics using the index as the key.</div>
+ This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util" class="externalLink"><code>Map.putAll(Map)</code></a> semantics using the index as the key.
+ <p>
+ Any index may be used, however <a href="RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate"><code>RatesProvider</code></a> only directly supports
+ Ibor, Overnight and Price indices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>indexCurves</code> - the index forward curves</dd>
@@ -598,7 +606,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds a time-series to the provider.
  <p>
  This adds the specified time-series to the provider.
- This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#put(K,V)" title="class or interface in java.util" class="externalLink"><code>Map.put(Object, Object)</code></a> semantics using the index as the key.</div>
+ This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#put(K,V)" title="class or interface in java.util" class="externalLink"><code>Map.put(Object, Object)</code></a> semantics using the index as the key.
+ <p>
+ Any index may be used, however <a href="RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate"><code>RatesProvider</code></a> only directly supports
+ Ibor, Overnight and Price indices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - the FX index</dd>
@@ -618,7 +629,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Adds time-series to the provider.
  <p>
  This adds the specified time-series to the provider.
- This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util" class="externalLink"><code>Map.putAll(Map)</code></a> semantics using the index as the key.</div>
+ This operates using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util" class="externalLink"><code>Map.putAll(Map)</code></a> semantics using the index as the key.
+ <p>
+ Any index may be used, however <a href="RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate"><code>RatesProvider</code></a> only directly supports
+ Ibor, Overnight and Price indices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>timeSeries</code> - the FX index time-series</dd>

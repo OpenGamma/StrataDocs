@@ -133,20 +133,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#add(com.opengamma.strata.data.MarketData)">add</a></span>&#8203;(<a href="../MarketData.html" title="interface in com.opengamma.strata.data">MarketData</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Adds all time series and values from another market data instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#addTimeSeries(com.opengamma.strata.data.ObservableId,com.opengamma.strata.collect.timeseries.LocalDateDoubleTimeSeries)">addTimeSeries</a></span>&#8203;(<a href="../ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>&nbsp;id,
              <a href="../../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;timeSeries)</code></th>
 <td class="colLast">
 <div class="block">Adds a time-series of observable market data values.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#addTimeSeriesMap(java.util.Map)">addTimeSeriesMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="../ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>,&#8203;<a href="../../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;timeSeriesMap)</code></th>
 <td class="colLast">
 <div class="block">Adds multiple time-series of observable market data values to the builder.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#addValue(com.opengamma.strata.data.MarketDataId,T)">addValue</a></span>&#8203;(<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;T&gt;&nbsp;id,
         T&nbsp;value)</code></th>
@@ -154,14 +161,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Adds a value to the builder.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#addValueMap(java.util.Map)">addValueMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;,&#8203;?&gt;&nbsp;values)</code></th>
 <td class="colLast">
 <div class="block">Adds multiple values to the builder.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#addValueUnsafe(com.opengamma.strata.data.MarketDataId,java.lang.Object)">addValueUnsafe</a></span>&#8203;(<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&nbsp;id,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
@@ -169,35 +176,49 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Adds a value to the builder when the types are not known at compile time.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketData.</span><code><span class="memberNameLink"><a href="../ImmutableMarketData.html#builder(java.time.LocalDate)">builder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate)</code></th>
 <td class="colLast">
 <div class="block">Creates a builder that can be used to build an instance of <code>MarketData</code>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#removeTimeSeriesIf(java.util.function.Predicate)">removeTimeSeriesIf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>&gt;&nbsp;predicate)</code></th>
+<td class="colLast">
+<div class="block">Removes values where the time series ID matches the specified predicate.</div>
+</td>
+</tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#removeValueIf(java.util.function.Predicate)">removeValueIf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;&nbsp;predicate)</code></th>
+<td class="colLast">
+<div class="block">Removes values where the value ID matches the specified predicate.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#timeSeries(java.util.Map)">timeSeries</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="../ObservableId.html" title="interface in com.opengamma.strata.data">ObservableId</a>,&#8203;<a href="../../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&gt;&nbsp;timeSeries)</code></th>
 <td class="colLast">
 <div class="block">Sets the time-series in the builder, replacing any existing values.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketData.</span><code><span class="memberNameLink"><a href="../ImmutableMarketData.html#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder populated with the same data as this instance.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#valuationDate(java.time.LocalDate)">valuationDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate)</code></th>
 <td class="colLast">
 <div class="block">Sets the valuation date.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#values(java.util.Map)">values</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;,&#8203;?&gt;&nbsp;values)</code></th>
 <td class="colLast">

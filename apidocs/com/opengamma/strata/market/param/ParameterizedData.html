@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":18};
+var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,27 +163,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">findParameterIndex</a></span>&#8203;(<a href="ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">Finds the parameter index of the specified metadata.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameter(int)">getParameter</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterCount()">getParameterCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of parameters.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="ParameterizedData.html" title="interface in com.opengamma.strata.market.param">ParameterizedData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -191,7 +198,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="ParameterizedData.html" title="interface in com.opengamma.strata.market.param">ParameterizedData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -267,6 +274,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>the metadata of the parameter</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IndexOutOfBoundsException</a></code> - if the index is invalid</dd>
+</dl>
+</li>
+</ul>
+<a id="findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findParameterIndex</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a>&nbsp;findParameterIndex&#8203;(<a href="ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&nbsp;metadata)</pre>
+<div class="block">Finds the parameter index of the specified metadata.
+ <p>
+ If the parameter metadata is not matched, an empty optional will be returned.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>metadata</code> - the parameter metadata to find the index of</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index of the parameter</dd>
 </dl>
 </li>
 </ul>

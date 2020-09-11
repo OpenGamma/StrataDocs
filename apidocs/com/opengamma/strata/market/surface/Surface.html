@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":6,"i3":18,"i4":18,"i5":6,"i6":6,"i7":18,"i8":6,"i9":18,"i10":6,"i11":18};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":18,"i5":18,"i6":6,"i7":6,"i8":18,"i9":6,"i10":18,"i11":6,"i12":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -187,34 +187,41 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">findParameterIndex</a></span>&#8203;(<a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">Finds the parameter index of the specified metadata.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMetadata()">getMetadata</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface metadata.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="SurfaceName.html" title="class in com.opengamma.strata.market.surface">SurfaceName</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface name.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withMetadata(com.opengamma.strata.market.surface.SurfaceMetadata)">withMetadata</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">Returns a new surface with the specified metadata.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -222,14 +229,14 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>default <a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
 <div class="block">Returns a perturbed copy of the data.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValue(double,double)">zValue</a></span>&#8203;(double&nbsp;x,
       double&nbsp;y)</code></th>
@@ -237,14 +244,14 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <div class="block">Computes the z-value for the specified x-value and y-value.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>default double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValue(com.opengamma.strata.collect.tuple.DoublesPair)">zValue</a></span>&#8203;(<a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>&nbsp;xyPair)</code></th>
 <td class="colLast">
 <div class="block">Computes the z-value for the specified pair of x-value and y-value.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../param/UnitParameterSensitivity.html" title="class in com.opengamma.strata.market.param">UnitParameterSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValueParameterSensitivity(double,double)">zValueParameterSensitivity</a></span>&#8203;(double&nbsp;x,
                           double&nbsp;y)</code></th>
@@ -252,7 +259,7 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <div class="block">Computes the sensitivity of the z-value with respect to the surface parameters.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>default <a href="../param/UnitParameterSensitivity.html" title="class in com.opengamma.strata.market.param">UnitParameterSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValueParameterSensitivity(com.opengamma.strata.collect.tuple.DoublesPair)">zValueParameterSensitivity</a></span>&#8203;(<a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>&nbsp;xyPair)</code></th>
 <td class="colLast">
@@ -353,6 +360,27 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <dd><code>parameterIndex</code> - the zero-based index of the parameter to get</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the metadata of the parameter</dd>
+</dl>
+</li>
+</ul>
+<a id="findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findParameterIndex</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a>&nbsp;findParameterIndex&#8203;(<a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&nbsp;metadata)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../param/ParameterizedData.html#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">ParameterizedData</a></code></span></div>
+<div class="block">Finds the parameter index of the specified metadata.
+ <p>
+ If the parameter metadata is not matched, an empty optional will be returned.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../param/ParameterizedData.html#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">findParameterIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../param/ParameterizedData.html" title="interface in com.opengamma.strata.market.param">ParameterizedData</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>metadata</code> - the parameter metadata to find the index of</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index of the parameter</dd>
 </dl>
 </li>
 </ul>

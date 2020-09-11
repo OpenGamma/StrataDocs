@@ -727,6 +727,46 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 </li>
+<li class="blockList"><a id="com.opengamma.strata.basics.date.MarketTenor">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/basics/date/MarketTenor.html" title="class in com.opengamma.strata.basics.date">com.opengamma.strata.basics.date.MarketTenor</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>readResolve</h4>
+<pre class="methodSignature">private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;readResolve()</pre>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>code</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> code</pre>
+<div class="block">The code of the tenor.</div>
+</li>
+<li class="blockList">
+<h4>spotLagIndicator</h4>
+<pre>int spotLagIndicator</pre>
+<div class="block">The spot lag or 0, 1 or MARKET_CONVENTION_LAG.</div>
+</li>
+<li class="blockListLast">
+<h4>tenor</h4>
+<pre><a href="com/opengamma/strata/basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a> tenor</pre>
+<div class="block">The tenor.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a id="com.opengamma.strata.basics.date.PeriodAdjustment">
 <!--   -->
 </a>
@@ -763,6 +803,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The period to be added.
  <p>
  When the adjustment is performed, this period will be added to the input date.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.basics.date.SequenceDate">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/basics/date/SequenceDate.html" title="class in com.opengamma.strata.basics.date">com.opengamma.strata.basics.date.SequenceDate</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>fullSequence</h4>
+<pre>boolean fullSequence</pre>
+<div class="block">Whether to use the full sequence (true) or base sequence (false).
+ <p>
+ Many date sequences have two interlinked sequences.
+ One is considered to be the base sequence, selected by setting this to false.
+ The other is considered to be the full sequence, selected by setting this to true.
+ <p>
+ For example, the "base sequence" of a future is often March, June, September and December.
+ But additionally, the nearest two "serial" months are also listed.
+ Together these make the "full sequence".</div>
+</li>
+<li class="blockList">
+<h4>minimumPeriod</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a> minimumPeriod</pre>
+<div class="block">The minimum period before using the sequence number.
+ <p>
+ This is added to the input date before starting to count the sequence.</div>
+</li>
+<li class="blockList">
+<h4>sequenceNumber</h4>
+<pre>int sequenceNumber</pre>
+<div class="block">The 1-based sequence number.
+ <p>
+ A value of 1 obtains the first date in the sequence.</div>
+</li>
+<li class="blockListLast">
+<h4>yearMonth</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a> yearMonth</pre>
+<div class="block">The base year-month.
+ <p>
+ The start of this month is used instead of the input date when starting to count the sequence.</div>
 </li>
 </ul>
 </li>
@@ -2064,6 +2154,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>parameters</h4>
 <pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="com/opengamma/strata/calc/runner/CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;,&#8203;<a href="com/opengamma/strata/calc/runner/CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt; parameters</pre>
 <div class="block">The parameters, keyed by query type.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.calc.runner.CalculationParametersId">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/calc/runner/CalculationParametersId.html" title="class in com.opengamma.strata.calc.runner">com.opengamma.strata.calc.runner.CalculationParametersId</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> name</pre>
+<div class="block">The name of the parameters.</div>
 </li>
 </ul>
 </li>
@@ -4918,7 +5029,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockListLast">
 <h4>template</h4>
-<pre><a href="com/opengamma/strata/product/index/type/IborFutureTemplate.html" title="interface in com.opengamma.strata.product.index.type">IborFutureTemplate</a> template</pre>
+<pre><a href="com/opengamma/strata/product/index/type/IborFutureTemplate.html" title="class in com.opengamma.strata.product.index.type">IborFutureTemplate</a> template</pre>
 <div class="block">The template for the Ibor Futures associated with this node.</div>
 </li>
 </ul>
@@ -4969,6 +5080,58 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>template</h4>
 <pre><a href="com/opengamma/strata/product/swap/type/IborIborSwapTemplate.html" title="class in com.opengamma.strata.product.swap.type">IborIborSwapTemplate</a> template</pre>
 <div class="block">The template for the swap associated with this node.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.market.curve.node.OvernightFutureCurveNode">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/market/curve/node/OvernightFutureCurveNode.html" title="class in com.opengamma.strata.market.curve.node">com.opengamma.strata.market.curve.node.OvernightFutureCurveNode</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>additionalSpread</h4>
+<pre>double additionalSpread</pre>
+<div class="block">The additional spread added to the price.
+ This amount is directly added to the price, where 0.993 represents a 0.7% rate.</div>
+</li>
+<li class="blockList">
+<h4>date</h4>
+<pre><a href="com/opengamma/strata/market/curve/CurveNodeDate.html" title="class in com.opengamma.strata.market.curve">CurveNodeDate</a> date</pre>
+<div class="block">The method by which the date of the node is calculated, defaulted to 'End'.</div>
+</li>
+<li class="blockList">
+<h4>dateOrder</h4>
+<pre><a href="com/opengamma/strata/market/curve/CurveNodeDateOrder.html" title="class in com.opengamma.strata.market.curve">CurveNodeDateOrder</a> dateOrder</pre>
+<div class="block">The date order rules, used to ensure that the dates in the curve are in order.
+ If not specified, this will default to <a href="com/opengamma/strata/market/curve/CurveNodeDateOrder.html#DEFAULT"><code>CurveNodeDateOrder.DEFAULT</code></a>.</div>
+</li>
+<li class="blockList">
+<h4>label</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> label</pre>
+<div class="block">The label to use for the node, may be empty.
+ <p>
+ If empty, a default label will be created when the metadata is built.
+ The default label depends on the valuation date, so cannot be created in the node.</div>
+</li>
+<li class="blockList">
+<h4>rateId</h4>
+<pre><a href="com/opengamma/strata/market/observable/QuoteId.html" title="class in com.opengamma.strata.market.observable">QuoteId</a> rateId</pre>
+<div class="block">The identifier of the market data value which provides the price.</div>
+</li>
+<li class="blockListLast">
+<h4>template</h4>
+<pre><a href="com/opengamma/strata/product/index/type/OvernightFutureTemplate.html" title="class in com.opengamma.strata.product.index.type">OvernightFutureTemplate</a> template</pre>
+<div class="block">The template for the Overnight Futures associated with this node.
+ The contract specification of the future.</div>
 </li>
 </ul>
 </li>
@@ -8418,13 +8581,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <p>
  This is the strike that the node on the surface is defined as.</div>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>yearFraction</h4>
 <pre>double yearFraction</pre>
 <div class="block">The year fraction of the surface node.
  <p>
  This is the time to expiry that the node on the surface is defined as.
  There is not necessarily a direct relationship with a date from an underlying instrument.</div>
+</li>
+<li class="blockListLast">
+<h4>yearFractionTenor</h4>
+<pre><a href="com/opengamma/strata/basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a> yearFractionTenor</pre>
+<div class="block">The tenor associated with the year fraction.</div>
 </li>
 </ul>
 </li>
@@ -9073,13 +9241,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <p>
  This is the strike that the node on the surface is defined as.</div>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>yearFraction</h4>
 <pre>double yearFraction</pre>
 <div class="block">The year fraction of the surface node.
  <p>
  This is the time to expiry that the node on the surface is defined as.
  There is not necessarily a direct relationship with a date from an underlying instrument.</div>
+</li>
+<li class="blockListLast">
+<h4>yearFractionTenor</h4>
+<pre><a href="com/opengamma/strata/basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a> yearFractionTenor</pre>
+<div class="block">The tenor associated with the year fraction.</div>
 </li>
 </ul>
 </li>
@@ -9241,7 +9414,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="com/opengamma/strata/collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a> delta</pre>
 <div class="block">The delta of the different data points.
  Must be positive and sorted in ascending order.
- The put will have as delta the opposite of the numbers.</div>
+ The put will have as delta the opposite of the numbers.
+ The array is typically <code>[0.1, 0.25]</code>. The at-the-money value of 0.5 is not included.</div>
 </li>
 <li class="blockList">
 <h4>expiry</h4>
@@ -9251,11 +9425,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>parameterMetadata</h4>
 <pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="com/opengamma/strata/market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt; parameterMetadata</pre>
+<div class="block">The associated metadata.
+ This will be of size <code>(delta.size() * 2) + 1</code> with the put with lower delta (in absolute value) first,
+ at-the-money and call with larger delta first.</div>
 </li>
 <li class="blockListLast">
 <h4>volatility</h4>
 <pre><a href="com/opengamma/strata/collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a> volatility</pre>
-<div class="block">The volatilities associated with the strikes.</div>
+<div class="block">The volatilities associated with the strikes.
+ This will be of size <code>(delta.size() * 2) + 1</code> with the put with lower delta (in absolute value) first,
+ at-the-money and call with larger delta first.</div>
 </li>
 </ul>
 </li>
@@ -19631,10 +19810,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region">
 <h2 title="Package">Package&nbsp;com.opengamma.strata.product.index.type</h2>
 <ul class="blockList">
-<li class="blockList"><a id="com.opengamma.strata.product.index.type.ImmutableIborFutureConvention">
+<li class="blockList"><a id="com.opengamma.strata.product.index.type.IborFutureTemplate">
 <!--   -->
 </a>
-<h3>Class <a href="com/opengamma/strata/product/index/type/ImmutableIborFutureConvention.html" title="class in com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type.ImmutableIborFutureConvention</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<h3>Class <a href="com/opengamma/strata/product/index/type/IborFutureTemplate.html" title="class in com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type.IborFutureTemplate</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>contractSpec</h4>
+<pre><a href="com/opengamma/strata/product/index/type/IborFutureContractSpec.html" title="interface in com.opengamma.strata.product.index.type">IborFutureContractSpec</a> contractSpec</pre>
+<div class="block">The underlying contract specification.
+ <p>
+ This specifies the contract of the Ibor Futures to be created.</div>
+</li>
+<li class="blockListLast">
+<h4>sequenceDate</h4>
+<pre><a href="com/opengamma/strata/basics/date/SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a> sequenceDate</pre>
+<div class="block">The instructions that define which future is desired.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.index.type.ImmutableIborFutureContractSpec">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/index/type/ImmutableIborFutureContractSpec.html" title="class in com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type.ImmutableIborFutureContractSpec</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -19666,12 +19873,173 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  The floating rate to be paid is based on this index
  It will be a well known market index such as 'GBP-LIBOR-3M'.</div>
 </li>
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> name</pre>
+<div class="block">The name, such as 'USD-LIBOR-3M-IMM-CME'.</div>
+</li>
+<li class="blockListLast">
+<h4>notional</h4>
+<pre>double notional</pre>
+<div class="block">The notional deposit that the contract models.
+ <p>
+ This is the full notional of the deposit, such as 1 million dollars.
+ The notional expressed here must be positive.
+ The currency of the notional is specified by the index.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.index.type.ImmutableIborFutureConvention">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/index/type/ImmutableIborFutureConvention.html" title="class in com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type.ImmutableIborFutureConvention</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>businessDayAdjustment</h4>
+<pre><a href="com/opengamma/strata/basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a> businessDayAdjustment</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+<div class="block">The business day adjustment to apply to the reference date.
+ <p>
+ The reference date, which is often the third Wednesday of the month, will be adjusted as defined here.</div>
+</li>
+<li class="blockList">
+<h4>dateSequence</h4>
+<pre><a href="com/opengamma/strata/basics/date/DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a> dateSequence</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+<div class="block">The sequence of dates that the future is based on.
+ <p>
+ This is used to calculate the reference date of the future that is the start
+ date of the underlying synthetic deposit.</div>
+</li>
+<li class="blockList">
+<h4>index</h4>
+<pre><a href="com/opengamma/strata/basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a> index</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+<div class="block">The Ibor index.
+ <p>
+ The floating rate to be paid is based on this index
+ It will be a well known market index such as 'GBP-LIBOR-3M'.</div>
+</li>
 <li class="blockListLast">
 <h4>name</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> name</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">The convention name, such as 'USD-LIBOR-3M-Quarterly-IMM'.
  <p>
  This will default to the name of the index suffixed by the name of the date sequence if not specified.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.index.type.ImmutableOvernightFutureContractSpec">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/index/type/ImmutableOvernightFutureContractSpec.html" title="class in com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type.ImmutableOvernightFutureContractSpec</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>accrualMethod</h4>
+<pre><a href="com/opengamma/strata/product/swap/OvernightAccrualMethod.html" title="enum in com.opengamma.strata.product.swap">OvernightAccrualMethod</a> accrualMethod</pre>
+<div class="block">The method of accruing Overnight interest.</div>
+</li>
+<li class="blockList">
+<h4>dateSequence</h4>
+<pre><a href="com/opengamma/strata/basics/date/DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a> dateSequence</pre>
+<div class="block">The sequence of dates that the future is based on.
+ <p>
+ This is used to calculate the reference date of the future that is the start
+ date of the underlying synthetic deposit.</div>
+</li>
+<li class="blockList">
+<h4>endDateAdjustment</h4>
+<pre><a href="com/opengamma/strata/basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a> endDateAdjustment</pre>
+<div class="block">The days adjustment to apply to get the end date.
+ <p>
+ The end date is obtained by applying this adjustment to the next date in sequence from the start date.
+ This defaults to minus one without applying a holiday calendar.</div>
+</li>
+<li class="blockList">
+<h4>index</h4>
+<pre><a href="com/opengamma/strata/basics/index/OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a> index</pre>
+<div class="block">The Overnight index.
+ <p>
+ The floating rate to be paid is based on this index
+ It will be a well known market index such as 'GBP-SONIA'.</div>
+</li>
+<li class="blockList">
+<h4>lastTradeDateAdjustment</h4>
+<pre><a href="com/opengamma/strata/basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a> lastTradeDateAdjustment</pre>
+<div class="block">The days adjustment to apply to get the last trade date.
+ <p>
+ The last trade date is obtained by applying this adjustment to the next date in sequence from the start date.
+ This defaults to the previous business day in the fixing calendar (minus one calendar day and preceding).</div>
+</li>
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> name</pre>
+<div class="block">The name, such as 'GBP-SONIA-3M-IMM-ICE'.</div>
+</li>
+<li class="blockList">
+<h4>notional</h4>
+<pre>double notional</pre>
+<div class="block">The notional deposit that the contract models.
+ <p>
+ This is the full notional of the deposit, such as 1 million dollars.
+ The notional expressed here must be positive.
+ The currency of the notional is specified by the index.</div>
+</li>
+<li class="blockListLast">
+<h4>startDateAdjustment</h4>
+<pre><a href="com/opengamma/strata/basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a> startDateAdjustment</pre>
+<div class="block">The business day adjustment to apply to get the start date.
+ <p>
+ The start date is obtained by applying this adjustment to the reference date from the date sequence.
+ The reference date is often the third Wednesday of the month or the start of the month.
+ This defaults to accepting the date from the sequence without applying a holiday calendar.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.index.type.OvernightFutureTemplate">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/index/type/OvernightFutureTemplate.html" title="class in com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type.OvernightFutureTemplate</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>contractSpec</h4>
+<pre><a href="com/opengamma/strata/product/index/type/OvernightFutureContractSpec.html" title="interface in com.opengamma.strata.product.index.type">OvernightFutureContractSpec</a> contractSpec</pre>
+<div class="block">The underlying contract specification.
+ <p>
+ This specifies the contract of the Overnight Futures to be created.</div>
+</li>
+<li class="blockListLast">
+<h4>sequenceDate</h4>
+<pre><a href="com/opengamma/strata/basics/date/SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a> sequenceDate</pre>
+<div class="block">The instructions that define which future is desired.</div>
 </li>
 </ul>
 </li>

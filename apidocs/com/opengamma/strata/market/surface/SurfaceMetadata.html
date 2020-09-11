@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":18,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,55 +167,62 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">findParameterIndex</a></span>&#8203;(<a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">Finds the parameter index of the specified metadata.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInfo(com.opengamma.strata.market.surface.SurfaceInfoType)">getInfo</a></span>&#8203;(<a href="SurfaceInfoType.html" title="class in com.opengamma.strata.market.surface">SurfaceInfoType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Gets surface information of a specific type.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata()">getParameterMetadata</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets metadata about each parameter underlying the surface, optional.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="SurfaceName.html" title="class in com.opengamma.strata.market.surface">SurfaceName</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSurfaceName()">getSurfaceName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface name.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getXValueType()">getXValueType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the x-value type, providing meaning to the x-values of the surface.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getYValueType()">getYValueType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the y-value type, providing meaning to the y-values of the surface.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getZValueType()">getZValueType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the z-value type, providing meaning to the z-values of the surface.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="DefaultSurfaceMetadata.html" title="class in com.opengamma.strata.market.surface">DefaultSurfaceMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withInfo(com.opengamma.strata.market.surface.SurfaceInfoType,T)">withInfo</a></span>&#8203;(<a href="SurfaceInfoType.html" title="class in com.opengamma.strata.market.surface">SurfaceInfoType</a>&lt;T&gt;&nbsp;type,
         T&nbsp;value)</code></th>
@@ -223,7 +230,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns an instance where the specified additional information has been added.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameterMetadata(java.util.List)">withParameterMetadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
 <td class="colLast">
@@ -385,6 +392,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the parameter metadata</dd>
+</dl>
+</li>
+</ul>
+<a id="findParameterIndex(com.opengamma.strata.market.param.ParameterMetadata)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findParameterIndex</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a>&nbsp;findParameterIndex&#8203;(<a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&nbsp;metadata)</pre>
+<div class="block">Finds the parameter index of the specified metadata.
+ <p>
+ If the parameter metadata is not matched, an empty optional will be returned.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>metadata</code> - the parameter metadata to find the index of</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index of the parameter</dd>
 </dl>
 </li>
 </ul>

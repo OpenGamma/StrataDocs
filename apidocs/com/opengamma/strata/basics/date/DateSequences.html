@@ -158,23 +158,44 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MONTHLY_1ST">MONTHLY_1ST</a></span></code></th>
+<td class="colLast">
+<div class="block">The 'Monthly-1st' date sequence, equivalent to a sequence of calendar months.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MONTHLY_IMM">MONTHLY_IMM</a></span></code></th>
 <td class="colLast">
 <div class="block">The 'Monthly-IMM' date sequence.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#QUARTERLY_10TH">QUARTERLY_10TH</a></span></code></th>
 <td class="colLast">
 <div class="block">The 'Quarterly-10th' date sequence.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#QUARTERLY_IMM">QUARTERLY_IMM</a></span></code></th>
 <td class="colLast">
 <div class="block">The 'Quarterly-IMM' date sequence.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#QUARTERLY_IMM_3_SERIAL">QUARTERLY_IMM_3_SERIAL</a></span></code></th>
+<td class="colLast">
+<div class="block">The 'Quarterly-IMM-3-Serial' date sequence.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#QUARTERLY_IMM_6_SERIAL">QUARTERLY_IMM_6_SERIAL</a></span></code></th>
+<td class="colLast">
+<div class="block">The 'Quarterly-IMM-6-Serial' date sequence.</div>
 </td>
 </tr>
 </table>
@@ -224,6 +245,38 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  The quarterly IMM dates are the third Wednesday of March, June, September and December.</div>
 </li>
 </ul>
+<a id="QUARTERLY_IMM_6_SERIAL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QUARTERLY_IMM_6_SERIAL</h4>
+<pre>public static final&nbsp;<a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a> QUARTERLY_IMM_6_SERIAL</pre>
+<div class="block">The 'Quarterly-IMM-6-Serial' date sequence.
+ <p>
+ An instance defining the sequence of 6 serial monthly IMM dates followed by the standard quarterly IMM dates.
+ The IMM dates are the third Wednesday of each month.
+ The quarterly months are March, June, September and December.
+ The base sequence consists of just the quarterly IMM dates.
+ The full sequence consists of the six serial months before joining the base quarterly sequence.</div>
+</li>
+</ul>
+<a id="QUARTERLY_IMM_3_SERIAL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QUARTERLY_IMM_3_SERIAL</h4>
+<pre>public static final&nbsp;<a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a> QUARTERLY_IMM_3_SERIAL</pre>
+<div class="block">The 'Quarterly-IMM-3-Serial' date sequence.
+ <p>
+ An instance defining the sequence of 3 serial monthly IMM dates followed by the standard quarterly IMM dates.
+ The IMM dates are the third Wednesday of each month.
+ The quarterly months are March, June, September and December.
+ The base sequence consists of just the quarterly IMM dates.
+ The full sequence consists of the three serial months before joining the base quarterly sequence.</div>
+</li>
+</ul>
 <a id="MONTHLY_IMM">
 <!--   -->
 </a>
@@ -240,7 +293,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a id="QUARTERLY_10TH">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>QUARTERLY_10TH</h4>
 <pre>public static final&nbsp;<a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a> QUARTERLY_10TH</pre>
@@ -248,6 +301,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>
  An instance defining the sequence of quarterly dates on the 10th of each month.
  The quarterly months are March, June, September and December.</div>
+</li>
+</ul>
+<a id="MONTHLY_1ST">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MONTHLY_1ST</h4>
+<pre>public static final&nbsp;<a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a> MONTHLY_1ST</pre>
+<div class="block">The 'Monthly-1st' date sequence, equivalent to a sequence of calendar months.
+ <p>
+ An instance defining the sequence of monthly dates on the 1st of each month.</div>
 </li>
 </ul>
 </li>

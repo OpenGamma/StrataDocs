@@ -346,44 +346,58 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#NL_360">NL_360</a></span></code></th>
+<td class="colLast">
+<div class="block">The 'NL/360' day count, which divides the actual number of days omitting leap days by 360.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#NL_365">NL_365</a></span></code></th>
 <td class="colLast">
 <div class="block">The 'NL/365' day count, which divides the actual number of days omitting leap days by 365.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#ONE_ONE">ONE_ONE</a></span></code></th>
 <td class="colLast">
 <div class="block">The '1/1' day count, which always returns a day count of 1.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#THIRTY_360_ISDA">THIRTY_360_ISDA</a></span></code></th>
 <td class="colLast">
 <div class="block">The '30/360 ISDA' day count, which treats input day-of-month 31 specially.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#THIRTY_360_PSA">THIRTY_360_PSA</a></span></code></th>
 <td class="colLast">
 <div class="block">The '30/360 PSA' day count, which treats input day-of-month 31 and end of February specially.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#THIRTY_E_360">THIRTY_E_360</a></span></code></th>
 <td class="colLast">
 <div class="block">The '30E/360' day count, which treats input day-of-month 31 specially.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#THIRTY_E_360_ISDA">THIRTY_E_360_ISDA</a></span></code></th>
 <td class="colLast">
 <div class="block">The '30E/360 ISDA' day count, which treats input day-of-month 31 and end of February specially.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DayCounts.</span><code><span class="memberNameLink"><a href="../DayCounts.html#THIRTY_E_365">THIRTY_E_365</a></span></code></th>
+<td class="colLast">
+<div class="block">The '30E/365' day count, which treats input day-of-month 31 and end of February specially.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1304,6 +1318,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../pricer/fxopt/FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxOptionVolatilitiesNode.</span><code><span class="memberNameLink"><a href="../../../measure/fxopt/FxOptionVolatilitiesNode.html#metadata(java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.basics.ReferenceData)">metadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;valuationDateTime,
+        <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
+        <a href="../../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Returns metadata for the node.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxOptionVolatilitiesNode.</span><code><span class="memberNameLink"><a href="../../../measure/fxopt/FxOptionVolatilitiesNode.html#timeToExpiry(java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.basics.ReferenceData)">timeToExpiry</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;valuationDateTime,
             <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -1969,8 +1992,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   <a href="../../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;strikeInterpolator,
   <a href="../../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorRight)</code></th>
 <td class="colLast">
-<div class="block">Obtains volatility term structure from a set of smile descriptions 
- with interpolator and extrapolators fully specified.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use variant with correct interpolator/extrapolator order</div>
+</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1983,6 +2007,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Obtains volatility term structure from a set of smile descriptions 
  with strike interpolator and extrapolators specified.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../pricer/fxopt/InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">InterpolatedStrikeSmileDeltaTermStructure.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/InterpolatedStrikeSmileDeltaTermStructure.html#of(java.util.List,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveInterpolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator,com.opengamma.strata.market.curve.interpolator.CurveExtrapolator)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../pricer/fxopt/SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a>&gt;&nbsp;volatilityTerm,
+  <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
+  <a href="../../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;timeInterpolator,
+  <a href="../../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorLeft,
+  <a href="../../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;timeExtrapolatorRight,
+  <a href="../../../market/curve/interpolator/CurveInterpolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveInterpolator</a>&nbsp;strikeInterpolator,
+  <a href="../../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorLeft,
+  <a href="../../../market/curve/interpolator/CurveExtrapolator.html" title="interface in com.opengamma.strata.market.curve.interpolator">CurveExtrapolator</a>&nbsp;strikeExtrapolatorRight)</code></th>
+<td class="colLast">
+<div class="block">Obtains volatility term structure from a set of smile descriptions 
+ with interpolator and extrapolators fully specified.</div>
 </td>
 </tr>
 </tbody>

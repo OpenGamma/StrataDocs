@@ -688,6 +688,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a> in <a href="../../measure/credit/package-summary.html">com.opengamma.strata.measure.credit</a></h3>
 <table class="useSummary">
+<caption><span>Methods in <a href="../../measure/credit/package-summary.html">com.opengamma.strata.measure.credit</a> that return types with arguments of type <a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../collect/tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>,&#8203;<a href="../currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getCreditLegalEntities()">getCreditLegalEntities</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the set of pairs of legal entity ID and currency that credit curves are provided for.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getRecoveryRateLegalEntities()">getRecoveryRateLegalEntities</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the set of legal entity IDs that recovery rate curves are provided for.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Methods in <a href="../../measure/credit/package-summary.html">com.opengamma.strata.measure.credit</a> with parameters of type <a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -695,6 +719,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../data/MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getCreditMarketDataIds(com.opengamma.strata.basics.StandardId,com.opengamma.strata.basics.currency.Currency)">getCreditMarketDataIds</a></span>&#8203;(<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;standardId,
+                      <a href="../currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Gets the identifiers used to obtain the credit curve for the pair of legal entity ID and currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../../data/MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getRecoveryRateMarketDataIds(com.opengamma.strata.basics.StandardId)">getRecoveryRateMarketDataIds</a></span>&#8203;(<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;standardId)</code></th>
+<td class="colLast">
+<div class="block">Gets the identifiers used to obtain the recovery rate curve for the legal entity ID.</div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../calc/runner/FunctionRequirements.html" title="class in com.opengamma.strata.calc.runner">FunctionRequirements</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#requirements(com.opengamma.strata.basics.StandardId,com.opengamma.strata.basics.currency.Currency)">requirements</a></span>&#8203;(<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;legalEntityId,

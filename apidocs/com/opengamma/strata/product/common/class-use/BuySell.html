@@ -778,6 +778,18 @@ the order they are declared.</div>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TermDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/TermDepositConvention.html#createTrade(java.time.LocalDate,com.opengamma.strata.basics.date.MarketTenor,com.opengamma.strata.product.common.BuySell,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
+           <a href="../../../basics/date/MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&nbsp;marketTenor,
+           <a href="../BuySell.html" title="enum in com.opengamma.strata.product.common">BuySell</a>&nbsp;buySell,
+           double&nbsp;notional,
+           double&nbsp;rate,
+           <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a trade based on this convention using a market tenor, such as ON, TN, SN, SW or 1M.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TermDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/TermDepositConvention.html#createTrade(java.time.LocalDate,java.time.Period,com.opengamma.strata.product.common.BuySell,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;depositPeriod,
            <a href="../BuySell.html" title="enum in com.opengamma.strata.product.common">BuySell</a>&nbsp;buySell,
@@ -788,7 +800,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TermDepositTemplate.</span><code><span class="memberNameLink"><a href="../../deposit/type/TermDepositTemplate.html#createTrade(java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
            <a href="../BuySell.html" title="enum in com.opengamma.strata.product.common">BuySell</a>&nbsp;buySell,
@@ -799,7 +811,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this template.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../deposit/IborFixingDepositTrade.html" title="class in com.opengamma.strata.product.deposit">IborFixingDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborFixingDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/IborFixingDepositConvention.html#toTrade(com.opengamma.strata.product.TradeInfo,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double)">toTrade</a></span>&#8203;(<a href="../../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;tradeInfo,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -811,7 +823,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../deposit/IborFixingDepositTrade.html" title="class in com.opengamma.strata.product.deposit">IborFixingDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborFixingDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/IborFixingDepositConvention.html#toTrade(java.time.LocalDate,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double)">toTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -823,7 +835,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../deposit/IborFixingDepositTrade.html" title="class in com.opengamma.strata.product.deposit">IborFixingDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableIborFixingDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/ImmutableIborFixingDepositConvention.html#toTrade(com.opengamma.strata.product.TradeInfo,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double)">toTrade</a></span>&#8203;(<a href="../../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;tradeInfo,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -833,7 +845,7 @@ the order they are declared.</div>
        double&nbsp;fixedRate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableTermDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/ImmutableTermDepositConvention.html#toTrade(com.opengamma.strata.product.TradeInfo,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double)">toTrade</a></span>&#8203;(<a href="../../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;tradeInfo,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -843,7 +855,7 @@ the order they are declared.</div>
        double&nbsp;rate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TermDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/TermDepositConvention.html#toTrade(com.opengamma.strata.product.TradeInfo,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double)">toTrade</a></span>&#8203;(<a href="../../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;tradeInfo,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -855,7 +867,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../deposit/TermDepositTrade.html" title="class in com.opengamma.strata.product.deposit">TermDepositTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TermDepositConvention.</span><code><span class="memberNameLink"><a href="../../deposit/type/TermDepositConvention.html#toTrade(java.time.LocalDate,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double)">toTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -1045,6 +1057,19 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>default <a href="../../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxSwapConvention.</span><code><span class="memberNameLink"><a href="../../fx/type/FxSwapConvention.html#createTrade(java.time.LocalDate,com.opengamma.strata.basics.date.MarketTenor,com.opengamma.strata.product.common.BuySell,double,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
+           <a href="../../../basics/date/MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&nbsp;marketTenor,
+           <a href="../BuySell.html" title="enum in com.opengamma.strata.product.common">BuySell</a>&nbsp;buySell,
+           double&nbsp;notional,
+           double&nbsp;nearFxRate,
+           double&nbsp;farLegForwardPoints,
+           <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a trade based on this convention using a market tenor, such as ON, TN, SN, SW or 1M.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxSwapConvention.</span><code><span class="memberNameLink"><a href="../../fx/type/FxSwapConvention.html#createTrade(java.time.LocalDate,java.time.Period,java.time.Period,com.opengamma.strata.product.common.BuySell,double,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToNear,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a>&nbsp;periodToFar,
@@ -1057,7 +1082,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxSwapTemplate.</span><code><span class="memberNameLink"><a href="../../fx/type/FxSwapTemplate.html#createTrade(java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
            <a href="../BuySell.html" title="enum in com.opengamma.strata.product.common">BuySell</a>&nbsp;buySell,
@@ -1069,7 +1094,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this template.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxSwapConvention.</span><code><span class="memberNameLink"><a href="../../fx/type/FxSwapConvention.html#toTrade(com.opengamma.strata.product.TradeInfo,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double,double)">toTrade</a></span>&#8203;(<a href="../../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;tradeInfo,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -1082,7 +1107,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxSwapConvention.</span><code><span class="memberNameLink"><a href="../../fx/type/FxSwapConvention.html#toTrade(java.time.LocalDate,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double,double)">toTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,
@@ -1095,7 +1120,7 @@ the order they are declared.</div>
 <div class="block">Creates a trade based on this convention.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableFxSwapConvention.</span><code><span class="memberNameLink"><a href="../../fx/type/ImmutableFxSwapConvention.html#toTrade(com.opengamma.strata.product.TradeInfo,java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.product.common.BuySell,double,double,double)">toTrade</a></span>&#8203;(<a href="../../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;tradeInfo,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate,

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":1,"i2":6,"i3":18,"i4":6,"i5":18,"i6":18,"i7":1};
+var data = {"i0":18,"i1":6,"i2":1,"i3":6,"i4":18,"i5":6,"i6":18,"i7":18,"i8":1,"i9":18,"i10":18};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -164,41 +164,48 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#baseSequence()">baseSequence</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the simpler "base" sequence underlying this one.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dateMatching(java.time.YearMonth)">dateMatching</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;yearMonth)</code></th>
 <td class="colLast">
 <div class="block">Finds the date in the sequence that corresponds to the specified year-month.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../collect/named/ExtendedEnum.html" title="class in com.opengamma.strata.collect.named">ExtendedEnum</a>&lt;<a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extendedEnum()">extendedEnum</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the extended enum helper.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the name that uniquely identifies this sequence.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#next(java.time.LocalDate)">next</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Finds the next date in the sequence, always returning a date later than the input date.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextOrSame(java.time.LocalDate)">nextOrSame</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
 <td class="colLast">
 <div class="block">Finds the next date in the sequence, returning the input date if it is a date in the sequence.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nth(java.time.LocalDate,int)">nth</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date,
    int&nbsp;sequenceNumber)</code></th>
@@ -207,7 +214,7 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
  always returning a date later than the input date.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nthOrSame(java.time.LocalDate,int)">nthOrSame</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date,
          int&nbsp;sequenceNumber)</code></th>
@@ -216,11 +223,27 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
  returning the input date if it is a date in the sequence.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified unique name.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectDate(java.time.LocalDate,com.opengamma.strata.basics.date.SequenceDate)">selectDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;inputDate,
+          <a href="SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a>&nbsp;sequenceDate)</code></th>
+<td class="colLast">
+<div class="block">Selects a date from the sequence.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectDateOrSame(java.time.LocalDate,com.opengamma.strata.basics.date.SequenceDate)">selectDateOrSame</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;inputDate,
+                <a href="SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a>&nbsp;sequenceDate)</code></th>
+<td class="colLast">
+<div class="block">Selects a date from the sequence.</div>
 </td>
 </tr>
 </table>
@@ -272,6 +295,30 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the extended enum helper</dd>
+</dl>
+</li>
+</ul>
+<a id="baseSequence()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>baseSequence</h4>
+<pre class="methodSignature">default&nbsp;<a href="DateSequence.html" title="interface in com.opengamma.strata.basics.date">DateSequence</a>&nbsp;baseSequence()</pre>
+<div class="block">Returns the simpler "base" sequence underlying this one.
+ <p>
+ Many date sequences have two interlinked sequences.
+ One is considered to be the base sequence, the other is considered to be the full sequence.
+ <p>
+ For example, the "base sequence" of a future is often March, June, September and December.
+ But additionally, the nearest two "serial" months are also listed.
+ Together these make the "full sequence".
+ <p>
+ If this instance represents the "full sequence", this method returns the "base sequence".
+ If this instance represents the "base sequence", or there is no "base sequence", this method returns <code>this</code>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the base sequence</dd>
 </dl>
 </li>
 </ul>
@@ -387,6 +434,54 @@ extends <a href="../../collect/named/Named.html" title="interface in com.opengam
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>yearMonth</code> - the input year-month</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the next sequence date after the input date</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if there are no more sequence dates</dd>
+</dl>
+</li>
+</ul>
+<a id="selectDate(java.time.LocalDate,com.opengamma.strata.basics.date.SequenceDate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectDate</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;selectDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;inputDate,
+                             <a href="SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a>&nbsp;sequenceDate)</pre>
+<div class="block">Selects a date from the sequence.
+ <p>
+ Given an input date, this uses the <a href="SequenceDate.html" title="class in com.opengamma.strata.basics.date"><code>SequenceDate</code></a> to select a single matching date from the sequence.
+ If the <code>SequenceDate</code> specifies a year-month, the match starts from the first date of the specified month.
+ Otherwise, the match starts from the day after the input date.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inputDate</code> - the input date</dd>
+<dd><code>sequenceDate</code> - the instructions specifying which date to select</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the next sequence date after the input date</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if there are no more sequence dates</dd>
+</dl>
+</li>
+</ul>
+<a id="selectDateOrSame(java.time.LocalDate,com.opengamma.strata.basics.date.SequenceDate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectDateOrSame</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;selectDateOrSame&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;inputDate,
+                                   <a href="SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a>&nbsp;sequenceDate)</pre>
+<div class="block">Selects a date from the sequence.
+ <p>
+ Given an input date, this uses the <a href="SequenceDate.html" title="class in com.opengamma.strata.basics.date"><code>SequenceDate</code></a> to select a single matching date from the sequence.
+ If the <code>SequenceDate</code> specifies a year-month, the match starts from the first date of the specified month.
+ Otherwise, the match starts from the input date.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inputDate</code> - the input date</dd>
+<dd><code>sequenceDate</code> - the instructions specifying which date to select</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the next sequence date after the input date</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

@@ -108,6 +108,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.fxopt">com.opengamma.strata.measure.fxopt</a></th>
+<td class="colLast">
+<div class="block">Calculation functions for FX option products.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.fxopt">com.opengamma.strata.pricer.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX options.</div>
@@ -118,6 +124,32 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.measure.fxopt">
+<!--   -->
+</a>
+<h3>Uses of <a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a> in <a href="../../../measure/fxopt/package-summary.html">com.opengamma.strata.measure.fxopt</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../measure/fxopt/package-summary.html">com.opengamma.strata.measure.fxopt</a> that return <a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxOptionVolatilitiesNode.</span><code><span class="memberNameLink"><a href="../../../measure/fxopt/FxOptionVolatilitiesNode.html#metadata(java.time.ZonedDateTime,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.basics.ReferenceData)">metadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;valuationDateTime,
+        <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
+        <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Returns metadata for the node.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.pricer.fxopt">
 <!--   -->
@@ -131,6 +163,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxVolatilitySurfaceYearFractionParameterMetadata.</span><code><span class="memberNameLink"><a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html#of(double,com.opengamma.strata.basics.date.Tenor,com.opengamma.strata.market.option.Strike,com.opengamma.strata.basics.currency.CurrencyPair)">of</a></span>&#8203;(double&nbsp;yearFraction,
+  <a href="../../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&nbsp;yearFractionTenor,
+  <a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&nbsp;strike,
+  <a href="../../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</code></th>
+<td class="colLast">
+<div class="block">Creates node metadata using year fraction, associated tenor, strike and currency pair.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxVolatilitySurfaceYearFractionParameterMetadata.</span><code><span class="memberNameLink"><a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html#of(double,com.opengamma.strata.basics.date.Tenor,com.opengamma.strata.market.option.Strike,java.lang.String,com.opengamma.strata.basics.currency.CurrencyPair)">of</a></span>&#8203;(double&nbsp;yearFraction,
+  <a href="../../../basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&nbsp;yearFractionTenor,
+  <a href="../../../market/option/Strike.html" title="interface in com.opengamma.strata.market.option">Strike</a>&nbsp;strike,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+  <a href="../../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</code></th>
+<td class="colLast">
+<div class="block">Creates node using year fraction, associated tenor, strike, label and currency pair.</div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html" title="class in com.opengamma.strata.pricer.fxopt">FxVolatilitySurfaceYearFractionParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxVolatilitySurfaceYearFractionParameterMetadata.</span><code><span class="memberNameLink"><a href="../FxVolatilitySurfaceYearFractionParameterMetadata.html#of(double,com.opengamma.strata.market.option.Strike,com.opengamma.strata.basics.currency.CurrencyPair)">of</a></span>&#8203;(double&nbsp;yearFraction,

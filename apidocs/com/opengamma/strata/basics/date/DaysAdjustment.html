@@ -492,7 +492,10 @@ implements <a href="../Resolvable.html" title="interface in com.opengamma.strata
  When adjusting a date, the specified number of business days is added.
  This is equivalent to repeatedly finding the next business day.
  <p>
- No business day adjustment is applied to the result of the addition.</div>
+ No business day adjustment is applied to the result of the addition.
+ <p>
+ If the input is a holiday, the first business day counted will be the next business day.
+ If the input is a holiday and the number of days to add is zero, the result will be the next business day.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>numberOfDays</code> - the number of days</dd>

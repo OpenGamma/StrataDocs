@@ -162,66 +162,72 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.credit">com.opengamma.strata.measure.credit</a></th>
+<td class="colLast">
+<div class="block">Calculation functions for credit products.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.fxopt">com.opengamma.strata.measure.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for FX option products.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.index">com.opengamma.strata.measure.index</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for index products.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.rate">com.opengamma.strata.measure.rate</a></th>
 <td class="colLast">
 <div class="block">Base package for calculation functions.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.swaption">com.opengamma.strata.measure.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for swaption products.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer">com.opengamma.strata.pricer</a></th>
 <td class="colLast">
 <div class="block">Calculators for financial instruments.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.bond">com.opengamma.strata.pricer.bond</a></th>
 <td class="colLast">
 <div class="block">Calculators for bonds.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.capfloor">com.opengamma.strata.pricer.capfloor</a></th>
 <td class="colLast">
 <div class="block">Calculators for Ibor cap-floor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.fxopt">com.opengamma.strata.pricer.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX options.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.index">com.opengamma.strata.pricer.index</a></th>
 <td class="colLast">
 <div class="block">Calculators for products based on rate indices, such as Short Term Interest Rate futures (STIRs).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.rate">com.opengamma.strata.pricer.rate</a></th>
 <td class="colLast">
 <div class="block">Calculators for rates instruments, such as Forward Rate Agreement (FRA) and interest rate swap.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swaption">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
@@ -462,6 +468,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Uses of <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a> in <a href="../../calc/runner/package-summary.html">com.opengamma.strata.calc.runner</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../calc/runner/package-summary.html">com.opengamma.strata.calc.runner</a> that implement <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../calc/runner/CalculationParametersId.html" title="class in com.opengamma.strata.calc.runner">CalculationParametersId</a></span></code></th>
+<td class="colLast">
+<div class="block">An identifier used to access calculation parameters by name.</div>
+</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary">
 <caption><span>Methods in <a href="../../calc/runner/package-summary.html">com.opengamma.strata.calc.runner</a> that return types with arguments of type <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -735,6 +758,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#removeValueIf(java.util.function.Predicate)">removeValueIf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;&nbsp;predicate)</code></th>
+<td class="colLast">
+<div class="block">Removes values where the value ID matches the specified predicate.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../ImmutableMarketDataBuilder.html" title="class in com.opengamma.strata.data">ImmutableMarketDataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableMarketDataBuilder.</span><code><span class="memberNameLink"><a href="../ImmutableMarketDataBuilder.html#values(java.util.Map)">values</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;? extends <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;,&#8203;?&gt;&nbsp;values)</code></th>
 <td class="colLast">
@@ -1229,6 +1259,45 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapFloorMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/capfloor/IborCapFloorMarketDataLookup.html#getVolatilityIds(com.opengamma.strata.basics.index.IborIndex)">getVolatilityIds</a></span>&#8203;(<a href="../../basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a>&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Gets the identifiers used to obtain the volatilities for the specified currency.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.measure.credit">
+<!--   -->
+</a>
+<h3>Uses of <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a> in <a href="../../measure/credit/package-summary.html">com.opengamma.strata.measure.credit</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../measure/credit/package-summary.html">com.opengamma.strata.measure.credit</a> that return types with arguments of type <a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getCreditMarketDataIds(com.opengamma.strata.basics.StandardId,com.opengamma.strata.basics.currency.Currency)">getCreditMarketDataIds</a></span>&#8203;(<a href="../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;standardId,
+                      <a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Gets the identifiers used to obtain the credit curve for the pair of legal entity ID and currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getDiscountMarketDataIds(com.opengamma.strata.basics.currency.Currency)">getDiscountMarketDataIds</a></span>&#8203;(<a href="../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Gets the identifiers used to obtain the discount factors for the specified currency.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../MarketDataId.html" title="interface in com.opengamma.strata.data">MarketDataId</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CreditRatesMarketDataLookup.</span><code><span class="memberNameLink"><a href="../../measure/credit/CreditRatesMarketDataLookup.html#getRecoveryRateMarketDataIds(com.opengamma.strata.basics.StandardId)">getRecoveryRateMarketDataIds</a></span>&#8203;(<a href="../../basics/StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;standardId)</code></th>
+<td class="colLast">
+<div class="block">Gets the identifiers used to obtain the recovery rate curve for the legal entity ID.</div>
 </td>
 </tr>
 </tbody>

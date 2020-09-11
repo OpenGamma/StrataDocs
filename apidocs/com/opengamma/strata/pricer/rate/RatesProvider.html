@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":18,"i11":6,"i12":6,"i13":6};
+var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":18,"i10":6,"i11":18,"i12":6,"i13":6,"i14":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -227,34 +227,41 @@ extends <a href="../BaseProvider.html" title="interface in com.opengamma.strata.
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#indices()">indices</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the forward indices that are available.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="OvernightIndexRates.html" title="interface in com.opengamma.strata.pricer.rate">OvernightIndexRates</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#overnightIndexRates(com.opengamma.strata.basics.index.OvernightIndex)">overnightIndexRates</a></span>&#8203;(<a href="../../basics/index/OvernightIndex.html" title="interface in com.opengamma.strata.basics.index">OvernightIndex</a>&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Gets the rates for an Overnight index.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>default <a href="../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parameterSensitivity(com.opengamma.strata.market.sensitivity.PointSensitivities)">parameterSensitivity</a></span>&#8203;(<a href="../../market/sensitivity/PointSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">PointSensitivities</a>&nbsp;pointSensitivities)</code></th>
 <td class="colLast">
 <div class="block">Computes the parameter sensitivity.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="PriceIndexValues.html" title="interface in com.opengamma.strata.pricer.rate">PriceIndexValues</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#priceIndexValues(com.opengamma.strata.basics.index.PriceIndex)">priceIndexValues</a></span>&#8203;(<a href="../../basics/index/PriceIndex.html" title="interface in com.opengamma.strata.basics.index">PriceIndex</a>&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Gets the values for an Price index.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#timeSeries(com.opengamma.strata.basics.index.Index)">timeSeries</a></span>&#8203;(<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Gets the time series.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="ImmutableRatesProvider.html" title="class in com.opengamma.strata.pricer.rate">ImmutableRatesProvider</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toImmutableRatesProvider()">toImmutableRatesProvider</a></span>()</code></th>
 <td class="colLast">
@@ -292,6 +299,23 @@ extends <a href="../BaseProvider.html" title="interface in com.opengamma.strata.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="indices()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>indices</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>&gt;&nbsp;indices()</pre>
+<div class="block">Gets the forward indices that are available.
+ <p>
+ Normally this will only return Ibor, Overnight and Price indices,
+ however it may return other types of index.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the indices</dd>
+</dl>
+</li>
+</ul>
 <a id="getIborIndices()">
 <!--   -->
 </a>

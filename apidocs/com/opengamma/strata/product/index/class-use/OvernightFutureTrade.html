@@ -108,15 +108,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.market.curve.node">com.opengamma.strata.market.curve.node</a></th>
+<td class="colLast">
+<div class="block">Curve nodes.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.measure.index">com.opengamma.strata.measure.index</a></th>
 <td class="colLast">
 <div class="block">Calculation functions for index products.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.index">com.opengamma.strata.product.index</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing contracts based on rate indices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type</a></th>
+<td class="colLast">
+<div class="block">Conventions and templates to aid the construction of rate index products.</div>
 </td>
 </tr>
 </tbody>
@@ -124,6 +136,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.market.curve.node">
+<!--   -->
+</a>
+<h3>Uses of <a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a> in <a href="../../../market/curve/node/package-summary.html">com.opengamma.strata.market.curve.node</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../market/curve/node/package-summary.html">com.opengamma.strata.market.curve.node</a> that return <a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureCurveNode.</span><code><span class="memberNameLink"><a href="../../../market/curve/node/OvernightFutureCurveNode.html#trade(double,com.opengamma.strata.data.MarketData,com.opengamma.strata.basics.ReferenceData)">trade</a></span>&#8203;(double&nbsp;quantity,
+     <a href="../../../data/MarketData.html" title="interface in com.opengamma.strata.data">MarketData</a>&nbsp;marketData,
+     <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.measure.index">
 <!--   -->
@@ -203,6 +239,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureTrade.Meta.</span><code><span class="memberNameLink"><a href="../OvernightFutureTrade.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.index.type">
+<!--   -->
+</a>
+<h3>Uses of <a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a> in <a href="../type/package-summary.html">com.opengamma.strata.product.index.type</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../type/package-summary.html">com.opengamma.strata.product.index.type</a> that return <a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableOvernightFutureContractSpec.</span><code><span class="memberNameLink"><a href="../type/ImmutableOvernightFutureContractSpec.html#createTrade(java.time.LocalDate,com.opengamma.strata.product.SecurityId,com.opengamma.strata.basics.date.SequenceDate,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
+           <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+           <a href="../../../basics/date/SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a>&nbsp;sequenceDate,
+           double&nbsp;quantity,
+           double&nbsp;price,
+           <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureContractSpec.</span><code><span class="memberNameLink"><a href="../type/OvernightFutureContractSpec.html#createTrade(java.time.LocalDate,com.opengamma.strata.product.SecurityId,com.opengamma.strata.basics.date.SequenceDate,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
+           <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+           <a href="../../../basics/date/SequenceDate.html" title="class in com.opengamma.strata.basics.date">SequenceDate</a>&nbsp;sequenceDate,
+           double&nbsp;quantity,
+           double&nbsp;price,
+           <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a trade based on this convention.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../OvernightFutureTrade.html" title="class in com.opengamma.strata.product.index">OvernightFutureTrade</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureTemplate.</span><code><span class="memberNameLink"><a href="../type/OvernightFutureTemplate.html#createTrade(java.time.LocalDate,com.opengamma.strata.product.SecurityId,double,double,com.opengamma.strata.basics.ReferenceData)">createTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;tradeDate,
+           <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+           double&nbsp;quantity,
+           double&nbsp;price,
+           <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a trade based on this template.</div>
+</td>
 </tr>
 </tbody>
 </table>

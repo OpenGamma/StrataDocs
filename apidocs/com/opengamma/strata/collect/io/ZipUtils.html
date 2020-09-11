@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -157,13 +157,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#decryptZip(com.opengamma.strata.collect.io.BeanByteSource,java.lang.String)">decryptZip</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password)</code></th>
+<td class="colLast">
+<div class="block">Provides a new source that decrypts the specified source ZIP.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unpackInMemory(com.opengamma.strata.collect.io.BeanByteSource)">unpackInMemory</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Unpacks the source into memory, returning a map.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unpackInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.util.function.BiConsumer)">unpackInMemory</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiConsumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;&nbsp;consumer)</code></th>
@@ -171,7 +179,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Unpacks the source into memory, invoking the consumer for each entry.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unzip(com.opengamma.strata.collect.io.BeanByteSource,java.nio.file.Path)">unzip</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a>&nbsp;path)</code></th>
@@ -179,14 +187,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Unzips the source to a file path.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unzipInMemory(com.opengamma.strata.collect.io.BeanByteSource)">unzipInMemory</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Unzips the source into memory, returning a map.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unzipInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.util.function.BiConsumer)">unzipInMemory</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiConsumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;&nbsp;consumer)</code></th>
@@ -194,7 +202,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Unzips the source into memory, invoking the consumer for each entry.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unzipPathNameInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.lang.String)">unzipPathNameInMemory</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;relativePathName)</code></th>
@@ -202,14 +210,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Unzips a single file from the source in memory.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unzipPathNames(com.opengamma.strata.collect.io.BeanByteSource)">unzipPathNames</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Unzips the source returning the file names that are contained.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zipInMemory(java.util.List)">zipInMemory</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&gt;&nbsp;sources)</code></th>
 <td class="colLast">
@@ -301,6 +309,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>path</code> - the path to unzip to</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/UncheckedIOException.html?is-external=true" title="class or interface in java.io" class="externalLink">UncheckedIOException</a></code> - if an IO error occurs</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang" class="externalLink">SecurityException</a></code> - if the path is not absolute and the calling thread cannot access system property "user.dir"</dd>
 </dl>
 </li>
 </ul>
@@ -361,7 +370,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Unpacks the source into memory, invoking the consumer for each entry.
  <p>
  Unpacking handles ZIP, GZ and BASE64 formats based entirely on the suffix of the input file name.
- If the input suffix is not recognized as a packed format, the consumer is invoked with the original file.</div>
+ If the input suffix is not recognized as a packed format, the consumer is invoked with the original file.
+ This method is not recursive.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the byte source to unpack</dd>
@@ -398,7 +408,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a id="unzipInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.util.function.BiConsumer)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>unzipInMemory</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;unzipInMemory&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
@@ -412,6 +422,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>consumer</code> - the consumer, which is passed the relative path name and content for each entry</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/UncheckedIOException.html?is-external=true" title="class or interface in java.io" class="externalLink">UncheckedIOException</a></code> - if an IO error occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="decryptZip(com.opengamma.strata.collect.io.BeanByteSource,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>decryptZip</h4>
+<pre class="methodSignature">public static&nbsp;<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;decryptZip&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password)</pre>
+<div class="block">Provides a new source that decrypts the specified source ZIP.
+ <p>
+ This returns a wrapper around the input source that provides decryption.
+ The result is normally passed directly into one of the other methods on this class.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - the byte source to unpack</dd>
+<dd><code>password</code> - the password to decrypt the input</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the decrypted zip file</dd>
 </dl>
 </li>
 </ul>

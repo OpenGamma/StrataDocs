@@ -297,6 +297,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#columnResults(int)">columnResults</a></span>&#8203;(int&nbsp;columnIndex)</code></th>
+<td class="colLast">
+<div class="block">Returns a stream of results for a single column by column index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#columnResults(int,java.lang.Class)">columnResults</a></span>&#8203;(int&nbsp;columnIndex,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;type)</code></th>
+<td class="colLast">
+<div class="block">Returns a stream of results for a single column by column index.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#getCells()">getCells</a></span>()</code></th>
 <td class="colLast">
@@ -493,7 +508,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.Exception)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception)</code></th>
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result caused by an exception with a specified reason.</div>
 </td>
@@ -501,7 +516,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.Exception,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;messageArgs)</code></th>
 <td class="colLast">
@@ -515,6 +530,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;messageArgs)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result specifying the failure reason.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.Throwable)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
+<td class="colLast">
+<div class="block">Creates a failed result caused by a throwable with a specified reason.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(com.opengamma.strata.collect.result.FailureReason,java.lang.Throwable,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="../FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;messageArgs)</code></th>
+<td class="colLast">
+<div class="block">Creates a failed result caused by a throwable with a specified reason and message.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -535,14 +568,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Exception)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Exception)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result caused by an exception.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Exception,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;exception,
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Exception,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;messageArgs)</code></th>
 <td class="colLast">
@@ -554,6 +587,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Iterable)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;&nbsp;results)</code></th>
 <td class="colLast">
 <div class="block">Creates a failed result combining multiple failed results.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Throwable)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
+<td class="colLast">
+<div class="block">Creates a failed result caused by a throwable.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#failure(java.lang.Throwable,java.lang.String,java.lang.Object...)">failure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;messageArgs)</code></th>
+<td class="colLast">
+<div class="block">Creates a failed result caused by a throwable.</div>
 </td>
 </tr>
 <tr class="altColor">

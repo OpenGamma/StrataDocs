@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9};
+var data = {"i0":10,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,7 +142,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></pre>
 <div class="block">AutoCloseable wrapper around an executor.
  <p>
- This shuts down the wrapped executor when it is closed.</div>
+ This shuts down the wrapped executor when it is closed, and can wait for tasks to exit.</div>
 </li>
 </ul>
 </div>
@@ -171,6 +171,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="CloseableExecutor.html" title="class in com.opengamma.strata.collect.concurrent">CloseableExecutor</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.concurrent.ExecutorService)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a>&nbsp;executor)</code></th>
+<td class="colLast">
+<div class="block">Returns a closeable executor that wraps a passed in executor.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="CloseableExecutor.html" title="class in com.opengamma.strata.collect.concurrent">CloseableExecutor</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.concurrent.ExecutorService,java.time.Duration)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a>&nbsp;executor,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;duration)</code></th>
 <td class="colLast">
 <div class="block">Returns a closeable executor that wraps a passed in executor.</div>
 </td>
@@ -212,6 +220,27 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>executor</code> - the executor to wrap</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a CloseableExecutor</dd>
+</dl>
+</li>
+</ul>
+<a id="of(java.util.concurrent.ExecutorService,java.time.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CloseableExecutor.html" title="class in com.opengamma.strata.collect.concurrent">CloseableExecutor</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a>&nbsp;executor,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;duration)</pre>
+<div class="block">Returns a closeable executor that wraps a passed in executor.
+ <p>
+ The passed in executor is shut down when the returned CloseableExecutor is closed, and waits for the given 
+ duration for tasks to finish.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>executor</code> - the executor to wrap</dd>
+<dd><code>duration</code> - the duration to wait for tasks to exit</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a CloseableExecutor</dd>
 </dl>

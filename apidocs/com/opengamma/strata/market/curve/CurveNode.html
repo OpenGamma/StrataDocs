@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":18,"i8":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="node/FixedIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FixedIborSwapCurveNode</a></code>, <code><a href="node/FixedInflationSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FixedInflationSwapCurveNode</a></code>, <code><a href="node/FixedOvernightSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FixedOvernightSwapCurveNode</a></code>, <code><a href="node/FraCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FraCurveNode</a></code>, <code><a href="node/FxSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FxSwapCurveNode</a></code>, <code><a href="node/IborFixingDepositCurveNode.html" title="class in com.opengamma.strata.market.curve.node">IborFixingDepositCurveNode</a></code>, <code><a href="node/IborFutureCurveNode.html" title="class in com.opengamma.strata.market.curve.node">IborFutureCurveNode</a></code>, <code><a href="node/IborIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">IborIborSwapCurveNode</a></code>, <code><a href="node/OvernightIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">OvernightIborSwapCurveNode</a></code>, <code><a href="node/TermDepositCurveNode.html" title="class in com.opengamma.strata.market.curve.node">TermDepositCurveNode</a></code>, <code><a href="node/ThreeLegBasisSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">ThreeLegBasisSwapCurveNode</a></code>, <code><a href="node/XCcyIborIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">XCcyIborIborSwapCurveNode</a></code></dd>
+<dd><code><a href="node/FixedIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FixedIborSwapCurveNode</a></code>, <code><a href="node/FixedInflationSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FixedInflationSwapCurveNode</a></code>, <code><a href="node/FixedOvernightSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FixedOvernightSwapCurveNode</a></code>, <code><a href="node/FraCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FraCurveNode</a></code>, <code><a href="node/FxSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">FxSwapCurveNode</a></code>, <code><a href="node/IborFixingDepositCurveNode.html" title="class in com.opengamma.strata.market.curve.node">IborFixingDepositCurveNode</a></code>, <code><a href="node/IborFutureCurveNode.html" title="class in com.opengamma.strata.market.curve.node">IborFutureCurveNode</a></code>, <code><a href="node/IborIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">IborIborSwapCurveNode</a></code>, <code><a href="node/OvernightFutureCurveNode.html" title="class in com.opengamma.strata.market.curve.node">OvernightFutureCurveNode</a></code>, <code><a href="node/OvernightIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">OvernightIborSwapCurveNode</a></code>, <code><a href="node/TermDepositCurveNode.html" title="class in com.opengamma.strata.market.curve.node">TermDepositCurveNode</a></code>, <code><a href="node/ThreeLegBasisSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">ThreeLegBasisSwapCurveNode</a></code>, <code><a href="node/XCcyIborIborSwapCurveNode.html" title="class in com.opengamma.strata.market.curve.node">XCcyIborIborSwapCurveNode</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">CurveNode</span></pre>
@@ -147,7 +147,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -208,6 +208,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>default <a href="../../product/ResolvedTrade.html" title="interface in com.opengamma.strata.product">ResolvedTrade</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sampleResolvedTrade(java.time.LocalDate,com.opengamma.strata.basics.currency.FxRateProvider,com.opengamma.strata.basics.ReferenceData)">sampleResolvedTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate,
+                   <a href="../../basics/currency/FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;fxProvider,
+                   <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a resolved trade representing the instrument at the node.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#trade(double,com.opengamma.strata.data.MarketData,com.opengamma.strata.basics.ReferenceData)">trade</a></span>&#8203;(double&nbsp;quantity,
      <a href="../../data/MarketData.html" title="interface in com.opengamma.strata.data">MarketData</a>&nbsp;marketData,
@@ -374,6 +383,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>quantity</code> - the quantity or notional of the trade</dd>
 <dd><code>marketData</code> - the market data required to build a trade for the instrument, including the valuation date</dd>
+<dd><code>refData</code> - the reference data, used to resolve the trade</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a trade representing the instrument at the node</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../basics/ReferenceDataNotFoundException.html" title="class in com.opengamma.strata.basics">ReferenceDataNotFoundException</a></code> - if an identifier cannot be resolved in the reference data</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if unable to resolve due to an invalid definition</dd>
+</dl>
+</li>
+</ul>
+<a id="sampleResolvedTrade(java.time.LocalDate,com.opengamma.strata.basics.currency.FxRateProvider,com.opengamma.strata.basics.ReferenceData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sampleResolvedTrade</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../product/ResolvedTrade.html" title="interface in com.opengamma.strata.product">ResolvedTrade</a>&nbsp;sampleResolvedTrade&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate,
+                                          <a href="../../basics/currency/FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;fxProvider,
+                                          <a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="block">Creates a resolved trade representing the instrument at the node.
+ <p>
+ This uses an arbitrary quantity, typically 1, and an arbitrary market data quote, typically 0, to create a trade.
+ This is useful when the trade is to be used to calculate the current par value.
+ The FX provider is typically only used for cross-currency trades.
+ In many cases, <a href="../../basics/currency/FxRateProvider.html#minimal()"><code>FxRateProvider.minimal()</code></a> can be passed in.
+ <p>
+ Resolved objects may be bound to data that changes over time, such as holiday calendars.
+ If the data changes, such as the addition of a new holiday, the resolved form will not be updated.
+ Care must be taken when placing the resolved form in a cache or persistence layer.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>valuationDate</code> - the valuation date</dd>
+<dd><code>fxProvider</code> - the FX rate provider</dd>
 <dd><code>refData</code> - the reference data, used to resolve the trade</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a trade representing the instrument at the node</dd>
