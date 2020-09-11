@@ -239,6 +239,30 @@ The denominator is always 365.25.</td>
 </tr>
 </table>
 
+### NL/360
+
+<table>
+<tr>
+  <th>Name</th>
+  <td>NL/360</td>
+</tr>
+<tr>
+  <th>Constant</th>
+  <td>DayCounts.NL_360</td>
+</tr>
+<tr>
+  <th>Summary</th>
+  <td>Divides the actual number of days omitting leap days by 360</td>
+</tr>
+<tr>
+  <th>Description</th>
+  <td>The result is a simple division.<br />
+The numerator is the actual number of days in the requested period minus the number of occurrences of February 29.<br />
+The denominator is always 360.<br />
+The first day in the period is excluded, the last day is included.</td>
+</tr>
+</table>
+
 ### NL/365
 
 <table>
@@ -642,6 +666,30 @@ If the second day-of-month is 31, it is changed to 30.</td>
 The deltaDay and deltaMonth are calculated once adjustments have occurred.<br />
 If the first day-of-month is 31, it is changed to 30.<br />
 If the second day-of-month is 31, it is changed to 1 and the second month is incremented.</td>
+</tr>
+</table>
+
+### 30E/365
+
+<table>
+<tr>
+  <th>Name</th>
+  <td>30E/365</td>
+</tr>
+<tr>
+  <th>Constant</th>
+  <td>DayCounts.THIRTY_E_365</td>
+</tr>
+<tr>
+  <th>Summary</th>
+  <td>An unusual 30/360 style algorithm with special rules for the 31st day-of-month</td>
+</tr>
+<tr>
+  <th>Description</th>
+  <td>The result is calculated as <code>(360 * deltaYear + 30 * deltaMonth + deltaDay) / 365</code>.<br />
+The deltaDay is then calculated once day-of-month adjustments have occurred.<br />
+If the first day-of-month is the last day of the month, it is changed to 30.<br />
+If the second day-of-month is the last day of the month, it is changed to 30.</td>
 </tr>
 </table>
 

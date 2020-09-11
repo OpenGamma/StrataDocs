@@ -111,20 +111,32 @@ Thus "3X6", "P3M X P6M" and "3MX6M" are all equivalent.
 ### "IFU" or "IborFuture"
 
 An Ibor future node (STIR).
-The convention column must contain a convention name from
-[`IborFutureConventions`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/IborFutureConventions.html).
+The convention column must contain a contract specification from
+[`IborFutureContractSpecs`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/IborFutureContractSpecs.html).
 The time column must contain a description of the future, either as a relative or absolute month.
 For example, "Jun16" defines the future absolutely, whereas, "7D+3" defines the future in relative terms.
 
 The absolute time format is simply the three letter month name in English, followed by the two digit year.
 
-The relative time format consists of three parts - base period, "+" and sequence number.
+The relative time format consists of four parts - base period, "+", sequence number and an optional suffix.
 The base period is an ISO-8601 style period of days, weeks or months, such as "P2D" or "P1W".
 The "P" may be omitted, thus "P2D" and "2D" are equivalent.
 There may be a space either side of the "+".
 The sequence number is a simple integer.
+The suffix can be "B" for the base sequence or "F" for the full sequence, if omitted "B" is assumed.
+For example, many futures have a base quarterly sequence but with an initial listing of serial months.
+The base sequence is quarterly, the full sequence includes the serial months as well.
+
 The selected future is determined by adding the base period to the valuation date,
 and then finding the nth matching future according to the convention, where n is the sequence number.
+
+### "ONF" or "OvernightFuture"
+
+An Overnight future node (STIR).
+The convention column must contain a contract specification from
+[`OvenightFutureContractSpecs`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/index/type/OvenightFutureContractSpecs.html).
+
+In other respects this is the configured as per as an "IFU" node, see above.
 
 ### "OIS" or "FixedOvernightSwap"
 
@@ -171,6 +183,14 @@ The "P" may be omitted, thus "P1Y" and "1Y" are equivalent.
 A cross currency basis swap node.
 The convention column must contain a convention name from
 [`XCcyIborIborSwapConventions`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/swap/type/XCcyIborIborSwapConventions.html).
+The time column must contain the tenor as an ISO-8601 style period, such as "P1Y".
+The "P" may be omitted, thus "P1Y" and "1Y" are equivalent.
+
+### "INF" or "FixedInflationSwap"
+
+An inflation swap node.
+The convention column must contain a convention name from
+[`FixedInflationSwapConventions`]({{site.baseurl}}/apidocs/com/opengamma/strata/product/swap/type/FixedInflationSwapConventions.html).
 The time column must contain the tenor as an ISO-8601 style period, such as "P1Y".
 The "P" may be omitted, thus "P1Y" and "1Y" are equivalent.
 

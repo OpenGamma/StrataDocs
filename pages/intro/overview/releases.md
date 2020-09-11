@@ -6,6 +6,24 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+## Strata v2.8.0
+
+* 11 September 2020
+
+This release contains over 65 [fixed issues](https://github.com/OpenGamma/Strata/milestone/27?closed=1).
+
+* Calibrate curves using Overnight Futures
+ [#2216](https://github.com/OpenGamma/Strata/issues/2216),
+ [#2208](https://github.com/OpenGamma/Strata/issues/2208)
+* Change `IborFutureConvention` to `IborFutureContractSpec` and add `OvernightFutureContractSpec`
+ [#2203](https://github.com/OpenGamma/Strata/issues/2203),
+ [#2209](https://github.com/OpenGamma/Strata/issues/2209)
+* Add `SGD-SORA` index
+ [#2215](https://github.com/OpenGamma/Strata/issues/2215)
+* Add `MarketTenor` to represent the concept of ON/TN/SN tenors
+ [#2184](https://github.com/OpenGamma/Strata/issues/2184)
+
+
 ## Strata v2.7.0
 
 * 25 February 2020
