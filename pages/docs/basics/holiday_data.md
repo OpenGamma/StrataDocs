@@ -71,8 +71,13 @@ These are listed below for completeness.
 | CNBE | Beijing (China) holidays                         | CNY     |
 | COBO | Bogota (Colombia) holidays                       | COP     |
 | HKHK | Hong Kong holidays                               | HKD     |
+| IDJA | Jakarta holidays                                 | IDR     |
+| ILTA | Tel Aviv (Israel) holidays                       | ILS     |
 | INMU | Mumbai (India) holidays                          | INR     |
 | KRSE | Seoul (Republic of Korea) holidays               | KRW     |
+| RUMO | Moscow (Russia) holidays                         | RUB     |
+| SARI | Riyadh (Saudi Arabia) holidays                   | SAR     |
 | SGSI | Singapore holidays                               | SGD     |
 | THBA | Bangkok (Thailand) holidays                      | THB     |
+| TRIS | Istanbul (Turkey) holidays                       | TRY     |
 | TWTA | Taipei (Taiwan) holidays                         | TWD     |
