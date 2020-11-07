@@ -25,7 +25,7 @@ The following third party libraries are used in test code by Strata:
 | [AssertJ](http://joel-costigliola.github.io/assertj/)  | 3.18.0  | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
 | [OpenTest4J](https://github.com/ota4j-team/opentest4j) | 1.2.0   | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
 | [Objenesis](http://objenesis.org/)                     | 3.1     | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
-| [ByteBuddy](https://bytebuddy.net/#/)                  | 1.10.5  | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
+| [ByteBuddy](https://bytebuddy.net/#/)                  | 1.10.15 | [Apache v2.0](https://www.apache.org/licenses/LICENSE-2.0.html) |
 
 The following third party libraries are used in example code by Strata:
 
