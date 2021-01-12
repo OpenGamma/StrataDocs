@@ -24,7 +24,7 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 | CLP-TNA *      | TNA index for CLP        | Act/360      |
 | COP-OIBR *     | IBR index for COP        | Act/360      |
 | CZK-CZEONIA *  | CZEONIA index for CZK    | Act/360      |
-| DKK-TNR        | TNR index for CHF        | Act/360      |
+| DKK-TNR        | TNR index for DKK        | Act/360      |
 | EUR-EONIA      | EONIA index for EUR      | Act/360      |
 | EUR-ESTR       | ESTR index for EUR       | Act/360      |
 | GBP-SONIA      | SONIA index for GBP      | Act/365F     |
