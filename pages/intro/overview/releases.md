@@ -6,6 +6,32 @@ permalink: /releases/
 Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
+
+## Strata v2.9.0
+
+* 2 February 2021
+
+This release contains over 50 [fixed issues](https://github.com/OpenGamma/Strata/milestone/28?closed=1).
+
+* Add new indices for CZK, HUF, IDR, ILS, RUB, SAR, TRY and AMERIBOR
+ [#2248](https://github.com/OpenGamma/Strata/issues/2248),
+ [#2268](https://github.com/OpenGamma/Strata/issues/2268)
+* Add OIS conventions for ESTR
+ [#2257](https://github.com/OpenGamma/Strata/issues/2257)
+* Make CSV parsing extensible via standard extended enum approach
+ [#2284](https://github.com/OpenGamma/Strata/issues/2284),
+ [#2285](https://github.com/OpenGamma/Strata/issues/2285),
+ [#2286](https://github.com/OpenGamma/Strata/issues/2286)
+* Handle CNY repo swaps
+ [#2249](https://github.com/OpenGamma/Strata/issues/2249)
+* Add constants for standard ID schemes
+ [#2240](https://github.com/OpenGamma/Strata/issues/2240),
+ [#2287](https://github.com/OpenGamma/Strata/issues/2287),
+ [#2261](https://github.com/OpenGamma/Strata/issues/2261)
+* Switch code to use main branch instead of master
+ [#2267](https://github.com/OpenGamma/Strata/issues/2267)
+
+
 ## Strata v2.8.0
 
 * 11 September 2020

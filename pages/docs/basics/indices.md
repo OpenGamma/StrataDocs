@@ -43,6 +43,7 @@ Usually this is from today to tomorrow, but it can be from tomorrow to the day a
 | SGD-SONAR *    | SONAR index for SGD      | Act/365F     |
 | SGD-SORA *     | SORA index for SGD       | Act/365F     |
 | TRY-TLREF *    | TLREF index for TRY      | Act/365F     |
+| USD-AMERIBOR   | AMERIBOR index for USD   | Act/360      |
 | USD-FED-FUND   | Fed-Fund index for USD   | Act/360      |
 | USD-SOFR       | SOFR index for USD       | Act/360      |
 | ZAR-SABOR      | SABOR index for ZAR      | Act/360      |
