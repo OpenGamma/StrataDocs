@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":9,"i6":9,"i7":10};
+var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":9,"i7":9,"i8":9,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -539,13 +538,20 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCode3Char()">getCode3Char</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the ISO-3166-1 alpha-3 three letter country code.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a suitable hash code for the country.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="Country.html" title="class in com.opengamma.strata.basics.location">Country</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;countryCode)</code></th>
 <td class="colLast">
@@ -553,14 +559,22 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
  two letter country code dynamically creating a country if necessary.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static <a href="Country.html" title="class in com.opengamma.strata.basics.location">Country</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of3Char(java.lang.String)">of3Char</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;countryCode)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from the specified ISO-3166-1 alpha-3
+ three letter country code dynamically creating a country if necessary.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="Country.html" title="class in com.opengamma.strata.basics.location">Country</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;countryCode)</code></th>
 <td class="colLast">
 <div class="block">Parses a string to obtain a <code>Country</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -1121,6 +1135,28 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </dl>
 </li>
 </ul>
+<a id="of3Char(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of3Char</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Country.html" title="class in com.opengamma.strata.basics.location">Country</a>&nbsp;of3Char&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;countryCode)</pre>
+<div class="block">Obtains an instance from the specified ISO-3166-1 alpha-3
+ three letter country code dynamically creating a country if necessary.
+ <p>
+ A country is uniquely identified by ISO-3166-1 alpha-3 three letter code.
+ This method creates the country if it is not known.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>countryCode</code> - the three letter country code, ASCII and upper case</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the singleton instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the country code is invalid</dd>
+</dl>
+</li>
+</ul>
 <a id="getCode()">
 <!--   -->
 </a>
@@ -1132,6 +1168,22 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the two letter ISO code</dd>
+</dl>
+</li>
+</ul>
+<a id="getCode3Char()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCode3Char</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getCode3Char()</pre>
+<div class="block">Gets the ISO-3166-1 alpha-3 three letter country code.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the three letter country code</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the country is invalid</dd>
 </dl>
 </li>
 </ul>

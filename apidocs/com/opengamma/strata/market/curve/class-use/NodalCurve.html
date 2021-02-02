@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -117,12 +116,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.credit">com.opengamma.strata.pricer.credit</a></th>
 <td class="colLast">
 <div class="block">Calculators for credit instruments, such as Credit Default Swap (CDS).</div>
-</td>
-</tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.rate">com.opengamma.strata.pricer.rate</a></th>
-<td class="colLast">
-<div class="block">Calculators for rates instruments, such as Forward Rate Agreement (FRA) and interest rate swap.</div>
 </td>
 </tr>
 </tbody>
@@ -385,74 +378,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/credit/IsdaCreditDiscountFactors.html" title="class in com.opengamma.strata.pricer.credit">IsdaCreditDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IsdaCreditDiscountFactors.</span><code><span class="memberNameLink"><a href="../../../pricer/credit/IsdaCreditDiscountFactors.html#withCurve(com.opengamma.strata.market.curve.NodalCurve)">withCurve</a></span>&#8203;(<a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&nbsp;curve)</code></th>
-<td class="colLast">
-<div class="block">Returns a new instance with a different curve.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
-</li>
-<li class="blockList">
-<section role="region"><a id="com.opengamma.strata.pricer.rate">
-<!--   -->
-</a>
-<h3>Uses of <a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a> in <a href="../../../pricer/rate/package-summary.html">com.opengamma.strata.pricer.rate</a></h3>
-<table class="useSummary">
-<caption><span>Methods in <a href="../../../pricer/rate/package-summary.html">com.opengamma.strata.pricer.rate</a> that return <a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Method</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SimplePriceIndexValues.</span><code><span class="memberNameLink"><a href="../../../pricer/rate/SimplePriceIndexValues.html#getCurve()">getCurve</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the underlying curve.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary">
-<caption><span>Methods in <a href="../../../pricer/rate/package-summary.html">com.opengamma.strata.pricer.rate</a> that return types with arguments of type <a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Method</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SimplePriceIndexValues.Meta.</span><code><span class="memberNameLink"><a href="../../../pricer/rate/SimplePriceIndexValues.Meta.html#curve()">curve</a></span>()</code></th>
-<td class="colLast">
-<div class="block">The meta-property for the <code>curve</code> property.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary">
-<caption><span>Methods in <a href="../../../pricer/rate/package-summary.html">com.opengamma.strata.pricer.rate</a> with parameters of type <a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Method</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../pricer/rate/SimplePriceIndexValues.html" title="class in com.opengamma.strata.pricer.rate">SimplePriceIndexValues</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SimplePriceIndexValues.</span><code><span class="memberNameLink"><a href="../../../pricer/rate/SimplePriceIndexValues.html#of(com.opengamma.strata.basics.index.PriceIndex,java.time.LocalDate,com.opengamma.strata.market.curve.NodalCurve,com.opengamma.strata.collect.timeseries.LocalDateDoubleTimeSeries)">of</a></span>&#8203;(<a href="../../../basics/index/PriceIndex.html" title="interface in com.opengamma.strata.basics.index">PriceIndex</a>&nbsp;index,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;valuationDate,
-  <a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&nbsp;curve,
-  <a href="../../../collect/timeseries/LocalDateDoubleTimeSeries.html" title="interface in com.opengamma.strata.collect.timeseries">LocalDateDoubleTimeSeries</a>&nbsp;fixings)</code></th>
-<td class="colLast">
-<div class="block">Obtains an instance based on a curve with no seasonality adjustment.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../pricer/rate/SimplePriceIndexValues.html" title="class in com.opengamma.strata.pricer.rate">SimplePriceIndexValues</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SimplePriceIndexValues.</span><code><span class="memberNameLink"><a href="../../../pricer/rate/SimplePriceIndexValues.html#withCurve(com.opengamma.strata.market.curve.NodalCurve)">withCurve</a></span>&#8203;(<a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&nbsp;curve)</code></th>
 <td class="colLast">
 <div class="block">Returns a new instance with a different curve.</div>
 </td>

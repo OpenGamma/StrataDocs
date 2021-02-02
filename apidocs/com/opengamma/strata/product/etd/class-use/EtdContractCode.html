@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -139,6 +138,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdId.</span><code><span class="memberNameLink"><a href="../SplitEtdId.html#getContractCode()">getContractCode</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the code supplied by the exchange for use in clearing and margining, such as in SPAN.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdContractCode.</span><code><span class="memberNameLink"><a href="../EtdContractCode.html#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
@@ -180,6 +186,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../SplitEtdId.Builder.html" title="class in com.opengamma.strata.product.etd">SplitEtdId.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdId.Builder.</span><code><span class="memberNameLink"><a href="../SplitEtdId.Builder.html#contractCode(com.opengamma.strata.product.etd.EtdContractCode)">contractCode</a></span>&#8203;(<a href="../EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode)</code></th>
+<td class="colLast">
+<div class="block">Sets the code supplied by the exchange for use in clearing and margining, such as in SPAN.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdContractSpecId.html" title="class in com.opengamma.strata.product.etd">EtdContractSpecId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../EtdIdUtils.html#contractSpecId(com.opengamma.strata.product.etd.EtdType,com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode)">contractSpecId</a></span>&#8203;(<a href="../EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a>&nbsp;type,
               <a href="../../common/ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
@@ -188,7 +201,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifier for a contract specification.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../EtdIdUtils.html#futureId(com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant)">futureId</a></span>&#8203;(<a href="../../common/ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
         <a href="../EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode,
@@ -198,7 +211,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifier for an ETD future instrument.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../EtdIdUtils.html#optionId(com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double)">optionId</a></span>&#8203;(<a href="../../common/ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
         <a href="../EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode,
@@ -211,7 +224,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates an identifier for an ETD option instrument.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../EtdIdUtils.html#optionId(com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double,java.time.YearMonth)">optionId</a></span>&#8203;(<a href="../../common/ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
         <a href="../EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode,

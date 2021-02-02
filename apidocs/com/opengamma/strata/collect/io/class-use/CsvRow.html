@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -408,6 +407,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvParserPlugin.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvParserPlugin.html#isAdditionalRow(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.collect.io.CsvRow)">isAdditionalRow</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+               <a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;additionalRow)</code></th>
+<td class="colLast">
+<div class="block">Checks if there is an additional row that must be parsed alongside the base row.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#overrideParseTrade(java.lang.String,com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">overrideParseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeUpper,
                   <a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
@@ -416,12 +423,43 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses any kind of trade from CSV before standard matching.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../basics/date/AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseAdjustableDate(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">parseAdjustableDate</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Parses a business day adjustment, without defaulting the adjustment.</div>
+</td>
+</tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../basics/date/AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseAdjustableDate(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,com.opengamma.strata.basics.date.BusinessDayConvention,com.opengamma.strata.basics.currency.Currency)">parseAdjustableDate</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField,
+                   <a href="../../../basics/date/BusinessDayConvention.html" title="interface in com.opengamma.strata.basics.date">BusinessDayConvention</a>&nbsp;defaultConvention,
+                   <a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Parses a business day adjustment, defaulting the adjustment using the currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/payment/BulletPaymentTrade.html" title="class in com.opengamma.strata.product.payment">BulletPaymentTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseBulletPaymentTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseBulletPaymentTrade</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                        <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Parses a Bullet Payment trade from CSV.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseBusinessDayAdjustment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String)">parseBusinessDayAdjustment</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Parses a business day adjustment.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -441,6 +479,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseCurrencyAmount(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String)">parseCurrencyAmount</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField)</code></th>
+<td class="colLast">
+<div class="block">Parses a currency amount.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseCurrencyAmountWithDirection(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">parseCurrencyAmountWithDirection</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField)</code></th>
+<td class="colLast">
+<div class="block">Parses a currency amount with direction.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseDaysAdjustment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">parseDaysAdjustment</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;daysField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;daysCalField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cnvField,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calField)</code></th>
+<td class="colLast">
+<div class="block">Parses days adjustment from CSV.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/etd/EtdContractSpec.html" title="class in com.opengamma.strata.product.etd">EtdContractSpec</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseEtdContractSpec(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.etd.EtdType)">parseEtdContractSpec</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                     <a href="../../../product/etd/EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a>&nbsp;type)</code></th>
@@ -448,13 +516,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses the contract specification from the row.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LightweightPositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/LightweightPositionCsvInfoResolver.html#parseEtdFuturePosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdFuturePosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                       <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseEtdFuturePosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdFuturePosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                       <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
@@ -462,7 +530,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses an ETD future position from the CSV row.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseEtdFutureSecurityPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdFutureSecurityPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                               <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
@@ -470,13 +538,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses an ETD future position from the CSV row without using reference data.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LightweightPositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/LightweightPositionCsvInfoResolver.html#parseEtdOptionPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdOptionPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                       <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseEtdOptionPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdOptionPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                       <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
@@ -484,7 +552,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses an ETD future position from the CSV row.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseEtdOptionSecurityPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseEtdOptionSecurityPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                               <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
@@ -492,7 +560,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses an ETD option position from the CSV row without using reference data.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>,&#8203;<a href="../../../product/etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseEtdVariant(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.etd.EtdType)">parseEtdVariant</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                <a href="../../../product/etd/EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a>&nbsp;type)</code></th>
@@ -500,7 +568,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses the year-month and variant.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/fra/FraTrade.html" title="class in com.opengamma.strata.product.fra">FraTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseFraTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFraTrade</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
              <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -508,7 +576,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FRA trade from CSV.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/fx/FxSingleTrade.html" title="class in com.opengamma.strata.product.fx">FxSingleTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseFxSingleTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFxSingleTrade</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                   <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -516,7 +584,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FX Single trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/fx/FxSwapTrade.html" title="class in com.opengamma.strata.product.fx">FxSwapTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseFxSwapTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFxSwapTrade</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                 <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -524,7 +592,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FX Swap trade from CSV.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/fxopt/FxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOptionTrade</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseFxVanillaOptionTrade(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseFxVanillaOptionTrade</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                          <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
@@ -532,13 +600,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a FX Vanilla Option trade from CSV.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LightweightPositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/LightweightPositionCsvInfoResolver.html#parseNonEtdPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                    <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseNonEtdPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                    <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
@@ -546,7 +614,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a non-ETD position from the CSV row.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../product/SecurityPosition.html" title="class in com.opengamma.strata.product">SecurityPosition</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvInfoResolver.html#parseNonEtdSecurityPosition(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo)">parseNonEtdSecurityPosition</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                            <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info)</code></th>
@@ -554,13 +622,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Parses a non-ETD position from the CSV row.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseOtherTrade(java.lang.String,com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfo)">parseOtherTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeUpper,
                <a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Parses any kind of trade from CSV after standard matching.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../product/Position.html" title="interface in com.opengamma.strata.product">Position</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PositionCsvParserPlugin.</span><code><span class="memberNameLink"><a href="../../../loader/csv/PositionCsvParserPlugin.html#parsePosition(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.PositionInfo,com.opengamma.strata.loader.csv.PositionCsvInfoResolver)">parsePosition</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+             <a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+             <a href="../../../product/PositionInfo.html" title="class in com.opengamma.strata.product">PositionInfo</a>&nbsp;info,
+             <a href="../../../loader/csv/PositionCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">PositionCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">
+<div class="block">Parses a single CSV format position from the input.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -637,6 +715,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvParserPlugin.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvParserPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">
+<div class="block">Parses a single CSV format trade from the input.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvInfoResolver.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvInfoResolver.html#parseTradeInfo(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.TradeInfoBuilder)">parseTradeInfo</a></span>&#8203;(<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
               <a href="../../../product/TradeInfoBuilder.html" title="class in com.opengamma.strata.product">TradeInfoBuilder</a>&nbsp;builder)</code></th>
@@ -670,6 +759,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
               <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Parses a Swap trade from CSV.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvParserPlugin.</span><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvParserPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../../../product/TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">
+<div class="block">Parses a single CSV format trade from the input.</div>
 </td>
 </tr>
 </tbody>

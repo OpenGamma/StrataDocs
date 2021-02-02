@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -316,6 +315,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info)</code></th>
 <td class="colLast">
 <div class="block">Parses any kind of trade from CSV after standard matching.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TradeCsvParserPlugin.</span><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvParserPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">
+<div class="block">Parses a single CSV format trade from the input.</div>
 </td>
 </tr>
 </tbody>

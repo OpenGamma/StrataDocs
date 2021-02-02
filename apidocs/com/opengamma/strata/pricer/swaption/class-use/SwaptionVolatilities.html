@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -253,6 +252,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#bachelierVega(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">bachelierVega</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
+             <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+             <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates present value vega sensitivity for a single set of market data.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#currencyExposure(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">currencyExposure</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
                 <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -261,7 +269,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates currency exposure for a single set of market data.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#currentCash(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">currentCash</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
            <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -270,7 +278,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates current cash for a single set of market data.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#presentValue(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
             <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -279,7 +287,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates present value for a single set of market data.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#pv01RatesCalibratedBucketed(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">pv01RatesCalibratedBucketed</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
                            <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -288,7 +296,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates present value sensitivity for a single set of market data.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#pv01RatesCalibratedSum(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">pv01RatesCalibratedSum</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
                       <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -297,7 +305,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates present value sensitivity for a single set of market data.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#pv01RatesMarketQuoteBucketed(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">pv01RatesMarketQuoteBucketed</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
                             <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -306,7 +314,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates present value sensitivity for a single set of market data.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionTradeCalculations.</span><code><span class="memberNameLink"><a href="../../../measure/swaption/SwaptionTradeCalculations.html#pv01RatesMarketQuoteSum(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">pv01RatesMarketQuoteSum</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;trade,
                        <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,

@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -1489,6 +1488,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFxVanillaOption.</span><code><span class="memberNameLink"><a href="../../../product/fxopt/ResolvedFxVanillaOption.html#getCurrencyPair()">getCurrencyPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets currency pair of the base currency and counter currency.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/fxopt/package-summary.html">com.opengamma.strata.product.fxopt</a> with parameters of type <a href="../CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../product/fxopt/FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxVanillaOption.</span><code><span class="memberNameLink"><a href="../../../product/fxopt/FxVanillaOption.html#of(com.opengamma.strata.product.common.LongShort,java.time.ZonedDateTime,com.opengamma.strata.basics.currency.CurrencyPair,com.opengamma.strata.product.common.PutCall,double,double,java.time.LocalDate)">of</a></span>&#8203;(<a href="../../../product/common/LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>&nbsp;longShort,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiry,
+  <a href="../CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+  <a href="../../../product/common/PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  double&nbsp;strike,
+  double&nbsp;baseNotional,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;paymentDate)</code></th>
+<td class="colLast">
+<div class="block">Creates an equivalent <code>FxVanillaOption</code> using currency pair, option expiry, call/put flag, strike, base
+ currency notional, and underlying payment date.</div>
 </td>
 </tr>
 </tbody>

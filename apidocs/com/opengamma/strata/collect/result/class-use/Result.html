@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -626,6 +625,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#map(java.util.function.Function)">map</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;? super <a href="../Result.html" title="type parameter in Result">T</a>,&#8203;? extends R&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes a successful result by applying a function that alters the value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="../Result.html" title="type parameter in Result">T</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#mapFailure(java.util.function.Function)">mapFailure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>,&#8203;<a href="../Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>&gt;&nbsp;function)</code></th>
+<td class="colLast">
+<div class="block">Processes a failed result by applying a function that alters the failure.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="../Result.html" title="type parameter in Result">T</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Result.</span><code><span class="memberNameLink"><a href="../Result.html#mapFailureItems(java.util.function.Function)">mapFailureItems</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>,&#8203;<a href="../FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;function)</code></th>
+<td class="colLast">
+<div class="block">Processes a failed result by applying a function that alters the failure items.</div>
 </td>
 </tr>
 <tr class="rowColor">

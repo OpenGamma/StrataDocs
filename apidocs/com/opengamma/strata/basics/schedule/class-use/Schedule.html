@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -152,10 +151,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PeriodicSchedule.</span><code><span class="memberNameLink"><a href="../PeriodicSchedule.html#createSchedule(com.opengamma.strata.basics.ReferenceData)">createSchedule</a></span>&#8203;(<a href="../../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
-<div class="block">Creates the schedule from the definition.</div>
+<div class="block">Creates the schedule from the definition, see <a href="../PeriodicSchedule.html#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)"><code>PeriodicSchedule.createSchedule(ReferenceData, boolean)</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PeriodicSchedule.</span><code><span class="memberNameLink"><a href="../PeriodicSchedule.html#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)">createSchedule</a></span>&#8203;(<a href="../../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData,
+              boolean&nbsp;combinePeriodsIfNecessary)</code></th>
+<td class="colLast">
+<div class="block">Creates the schedule from the definition.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Schedule.</span><code><span class="memberNameLink"><a href="../Schedule.html#merge(int,java.time.LocalDate,java.time.LocalDate)">merge</a></span>&#8203;(int&nbsp;groupSize,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;firstRegularStartDate,
@@ -164,7 +171,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Merges this schedule to form a new schedule by combining the schedule periods.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Schedule.</span><code><span class="memberNameLink"><a href="../Schedule.html#mergeRegular(int,boolean)">mergeRegular</a></span>&#8203;(int&nbsp;groupSize,
             boolean&nbsp;rollForwards)</code></th>
@@ -172,21 +179,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Merges this schedule to form a new schedule by combining the regular schedule periods.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Schedule.</span><code><span class="memberNameLink"><a href="../Schedule.html#mergeToTerm()">mergeToTerm</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Merges this schedule to form a new schedule with a single 'Term' period.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Schedule.</span><code><span class="memberNameLink"><a href="../Schedule.html#ofTerm(com.opengamma.strata.basics.schedule.SchedulePeriod)">ofTerm</a></span>&#8203;(<a href="../SchedulePeriod.html" title="class in com.opengamma.strata.basics.schedule">SchedulePeriod</a>&nbsp;period)</code></th>
 <td class="colLast">
 <div class="block">Obtains a 'Term' instance based on a single period.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Schedule.</span><code><span class="memberNameLink"><a href="../Schedule.html#toAdjusted(com.opengamma.strata.basics.date.DateAdjuster)">toAdjusted</a></span>&#8203;(<a href="../../date/DateAdjuster.html" title="interface in com.opengamma.strata.basics.date">DateAdjuster</a>&nbsp;adjuster)</code></th>
 <td class="colLast">
@@ -194,7 +201,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  adjusted using the specified adjuster.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Schedule.</span><code><span class="memberNameLink"><a href="../Schedule.html#toUnadjusted()">toUnadjusted</a></span>()</code></th>
 <td class="colLast">

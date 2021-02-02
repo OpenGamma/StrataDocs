@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -127,27 +126,39 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="PositionCsvParserPlugin.html" title="interface in com.opengamma.strata.loader.csv">PositionCsvParserPlugin</a></th>
+<td class="colLast">
+<div class="block">Pluggable CSV position parser.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="SensitivityCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">SensitivityCsvInfoResolver</a></th>
 <td class="colLast">
 <div class="block">Resolves additional information when parsing sensitivity CSV files.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SensitivityCsvInfoSupplier.html" title="interface in com.opengamma.strata.loader.csv">SensitivityCsvInfoSupplier</a></th>
 <td class="colLast">
 <div class="block">Resolves additional information when writing sensitivity CSV files.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a></th>
 <td class="colLast">
 <div class="block">Resolves additional information when parsing trade CSV files.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="TradeCsvInfoSupplier.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoSupplier</a></th>
 <td class="colLast">
 <div class="block">Resolves additional information when writing trade CSV files.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="TradeCsvParserPlugin.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvParserPlugin</a></th>
+<td class="colLast">
+<div class="block">Pluggable CSV trade parser.</div>
 </td>
 </tr>
 </tbody>
@@ -162,84 +173,90 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="CsvLoaderColumns.html" title="class in com.opengamma.strata.loader.csv">CsvLoaderColumns</a></th>
+<td class="colLast">
+<div class="block">Column names for CSV files.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="CsvLoaderUtils.html" title="class in com.opengamma.strata.loader.csv">CsvLoaderUtils</a></th>
 <td class="colLast">
 <div class="block">CSV information resolver helper.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="FixingSeriesCsvLoader.html" title="class in com.opengamma.strata.loader.csv">FixingSeriesCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of historical fixing series into memory from CSV resources.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="FxRatesCsvLoader.html" title="class in com.opengamma.strata.loader.csv">FxRatesCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of FX rates into memory from CSV resources.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="LegalEntityRatesCurvesCsvLoader.html" title="class in com.opengamma.strata.loader.csv">LegalEntityRatesCurvesCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of legal entity rates curves into memory by reading from CSV resources.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="PositionCsvLoader.html" title="class in com.opengamma.strata.loader.csv">PositionCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads positions from CSV files.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="QuotesCsvLoader.html" title="class in com.opengamma.strata.loader.csv">QuotesCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of quotes into memory from CSV resources.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="RatesCalibrationCsvLoader.html" title="class in com.opengamma.strata.loader.csv">RatesCalibrationCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of definitions to calibrate rates curves by reading from CSV resources.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="RatesCurveGroupDefinitionCsvLoader.html" title="class in com.opengamma.strata.loader.csv">RatesCurveGroupDefinitionCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of curve group definitions into memory by reading from CSV resources.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="RatesCurvesCsvLoader.html" title="class in com.opengamma.strata.loader.csv">RatesCurvesCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of rates curves into memory by reading from CSV resources.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SeasonalityDefinitionCsvLoader.html" title="class in com.opengamma.strata.loader.csv">SeasonalityDefinitionCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads a set of seasonality definitions into memory by reading from CSV resources.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="SensitivityCsvLoader.html" title="class in com.opengamma.strata.loader.csv">SensitivityCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads sensitivities from CSV files.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SensitivityCsvWriter.html" title="class in com.opengamma.strata.loader.csv">SensitivityCsvWriter</a></th>
 <td class="colLast">
 <div class="block">Writes sensitivities to a CSV file.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="TradeCsvLoader.html" title="class in com.opengamma.strata.loader.csv">TradeCsvLoader</a></th>
 <td class="colLast">
 <div class="block">Loads trades from CSV files.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="TradeCsvWriter.html" title="class in com.opengamma.strata.loader.csv">TradeCsvWriter</a></th>
 <td class="colLast">
 <div class="block">Writes trades to a CSV file.</div>

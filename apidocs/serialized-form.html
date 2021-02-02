@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -1557,8 +1556,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> endDate</pre>
 <div class="block">The end date, which is the end of the last schedule period.
  <p>
- This is the end date of the schedule.
- It is unadjusted and as such might be a weekend or holiday.
+ This is the end date of the schedule, it is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted maturity date or unadjusted termination date.
  This date must be after the start date.</div>
@@ -1645,8 +1643,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> startDate</pre>
 <div class="block">The start date, which is the start of the first schedule period.
  <p>
- This is the start date of the schedule.
- It is unadjusted and as such might be a weekend or holiday.
+ This is the start date of the schedule, it is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted effective date.
  <p>
@@ -1697,8 +1694,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  end date backwards. Date generation may or may not result in a stub, but if it does then
  the stub will be of the correct type.
  <p>
- When the stub convention is not present, the generation of stubs is based entirely on
- the presence or absence of the explicit dates.</div>
+ When the stub convention is not present, the generation of stubs is based on the presence or absence
+ of the explicit dates. When there are no explicit stubs and there is a roll convention that matches
+ the start or end date, then the stub convention will be defaulted to 'SmartInitial' or 'SmartFinal'.</div>
 </li>
 </ul>
 </li>
@@ -10479,7 +10477,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>curve</h4>
-<pre><a href="com/opengamma/strata/market/curve/NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a> curve</pre>
+<pre><a href="com/opengamma/strata/market/curve/Curve.html" title="interface in com.opengamma.strata.market.curve">Curve</a> curve</pre>
 <div class="block">The underlying curve.
  Each x-value on the curve is the number of months between the valuation month and the estimation month.
  For example, zero represents the valuation month, one the next month and so on.</div>
@@ -18445,8 +18443,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="com/opengamma/strata/product/common/LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a> longShort</pre>
 <div class="block">Whether the option is long or short.
  <p>
- At expiry, the long party will have the option to enter in this transaction; 
- the short party will, at the option of the long party, potentially enter into the inverse transaction.</div>
+ At expiry, the long party will have the option to enter in this transaction; the short party will, at the option of
+ the long party, potentially enter into the inverse transaction.</div>
 </li>
 <li class="blockListLast">
 <h4>underlying</h4>

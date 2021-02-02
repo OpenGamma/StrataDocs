@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":10,"i25":9,"i26":9,"i27":10,"i28":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":9,"i25":10,"i26":9,"i27":9,"i28":10,"i29":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -321,123 +320,131 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <td class="colFirst"><code><a href="Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSchedule(com.opengamma.strata.basics.ReferenceData)">createSchedule</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
-<div class="block">Creates the schedule from the definition.</div>
+<div class="block">Creates the schedule from the definition, see <a href="#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)"><code>createSchedule(ReferenceData, boolean)</code></a>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)">createSchedule</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData,
+              boolean&nbsp;combinePeriodsIfNecessary)</code></th>
+<td class="colLast">
+<div class="block">Creates the schedule from the definition.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createUnadjustedDates()">createUnadjustedDates</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates the list of unadjusted dates in the schedule.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createUnadjustedDates(com.opengamma.strata.basics.ReferenceData)">createUnadjustedDates</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Creates the list of unadjusted dates in the schedule.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBusinessDayAdjustment()">getBusinessDayAdjustment</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the business day adjustment to apply.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEndDate()">getEndDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the end date, which is the end of the last schedule period.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEndDateBusinessDayAdjustment()">getEndDateBusinessDayAdjustment</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional business day adjustment to apply to the end date.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirstRegularStartDate()">getFirstRegularStartDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional start date of the first regular schedule period, which is the end date of the initial stub.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="Frequency.html" title="class in com.opengamma.strata.basics.schedule">Frequency</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFrequency()">getFrequency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the regular periodic frequency to use.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLastRegularEndDate()">getLastRegularEndDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional end date of the last regular schedule period, which is the start date of the final stub.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../date/AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOverrideStartDate()">getOverrideStartDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional start date of the first schedule period, overriding normal schedule generation.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RollConvention.html" title="interface in com.opengamma.strata.basics.schedule">RollConvention</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRollConvention()">getRollConvention</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional convention defining how to roll dates.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStartDate()">getStartDate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the start date, which is the start of the first schedule period.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStartDateBusinessDayAdjustment()">getStartDateBusinessDayAdjustment</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional business day adjustment to apply to the start date.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="StubConvention.html" title="enum in com.opengamma.strata.basics.schedule">StubConvention</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStubConvention()">getStubConvention</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the optional convention defining how to handle stubs.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="PeriodicSchedule.Meta.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>PeriodicSchedule</code>.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="PeriodicSchedule.Meta.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="PeriodicSchedule.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.basics.schedule.Frequency,com.opengamma.strata.basics.date.BusinessDayAdjustment,com.opengamma.strata.basics.schedule.StubConvention,boolean)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedStartDate,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedEndDate,
@@ -449,7 +456,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains an instance based on a stub convention and end-of-month flag.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="PeriodicSchedule.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.basics.schedule.Frequency,com.opengamma.strata.basics.date.BusinessDayAdjustment,com.opengamma.strata.basics.schedule.StubConvention,com.opengamma.strata.basics.schedule.RollConvention)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedStartDate,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;unadjustedEndDate,
@@ -461,14 +468,14 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains an instance based on roll and stub conventions.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="PeriodicSchedule.Builder.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -572,10 +579,28 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <li class="blockList">
 <h4>createSchedule</h4>
 <pre class="methodSignature">public&nbsp;<a href="Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;createSchedule&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</pre>
+<div class="block">Creates the schedule from the definition, see <a href="#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)"><code>createSchedule(ReferenceData, boolean)</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>refData</code> - the reference data, used to find the holiday calendars</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the schedule</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="ScheduleException.html" title="class in com.opengamma.strata.basics.schedule">ScheduleException</a></code> - if the definition is invalid</dd>
+</dl>
+</li>
+</ul>
+<a id="createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createSchedule</h4>
+<pre class="methodSignature">public&nbsp;<a href="Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a>&nbsp;createSchedule&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData,
+                               boolean&nbsp;combinePeriodsIfNecessary)</pre>
 <div class="block">Creates the schedule from the definition.
  <p>
- The schedule consists of an optional initial stub, a number of regular periods
- and an optional final stub.
+ The schedule consists of an optional initial stub, a number of regular periods and an optional final stub.
  <p>
  The roll convention, stub convention and additional dates are all used to determine the schedule.
  If the roll convention is not present it will be defaulted from the stub convention, with 'None' as the default.
@@ -605,6 +630,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>refData</code> - the reference data, used to find the holiday calendars</dd>
+<dd><code>combinePeriodsIfNecessary</code> - determines whether periods should be combined if necessary</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the schedule</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -874,8 +900,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getStartDate()</pre>
 <div class="block">Gets the start date, which is the start of the first schedule period.
  <p>
- This is the start date of the schedule.
- It is unadjusted and as such might be a weekend or holiday.
+ This is the start date of the schedule, it is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted effective date.
  <p>
@@ -897,8 +922,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;getEndDate()</pre>
 <div class="block">Gets the end date, which is the end of the last schedule period.
  <p>
- This is the end date of the schedule.
- It is unadjusted and as such might be a weekend or holiday.
+ This is the end date of the schedule, it is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted maturity date or unadjusted termination date.
  This date must be after the start date.</div>
@@ -1020,8 +1044,9 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  end date backwards. Date generation may or may not result in a stub, but if it does then
  the stub will be of the correct type.
  <p>
- When the stub convention is not present, the generation of stubs is based entirely on
- the presence or absence of the explicit dates.</div>
+ When the stub convention is not present, the generation of stubs is based on the presence or absence
+ of the explicit dates. When there are no explicit stubs and there is a roll convention that matches
+ the start or end date, then the stub convention will be defaulted to 'SmartInitial' or 'SmartFinal'.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the optional value of the property, not null</dd>

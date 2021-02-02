@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,6 +179,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the date that the payment is made.</div>
 </td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isKnownAmountAt(java.time.LocalDate)">isKnownAmountAt</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</code></th>
+<td class="colLast">
+<div class="block">Checks whether the payment amount of an event is known at a given date.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -234,7 +240,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="adjustPaymentDate(java.time.temporal.TemporalAdjuster)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>adjustPaymentDate</h4>
 <pre class="methodSignature"><a href="SwapPaymentEvent.html" title="interface in com.opengamma.strata.product.swap">SwapPaymentEvent</a>&nbsp;adjustPaymentDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalAdjuster.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalAdjuster</a>&nbsp;adjuster)</pre>
@@ -247,6 +253,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>adjuster</code> - the adjuster to apply to the payment date</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the adjusted payment event</dd>
+</dl>
+</li>
+</ul>
+<a id="isKnownAmountAt(java.time.LocalDate)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isKnownAmountAt</h4>
+<pre class="methodSignature">boolean&nbsp;isKnownAmountAt&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;date)</pre>
+<div class="block">Checks whether the payment amount of an event is known at a given date.
+ <p>
+ Each payment event may be a known amount at a given date, else it could be fixed at a later date</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>date</code> - the date to check whether payment amount is known or not</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if payment is fixed at given date</dd>
 </dl>
 </li>
 </ul>

@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -977,10 +976,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="../schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PeriodicSchedule.</span><code><span class="memberNameLink"><a href="../schedule/PeriodicSchedule.html#createSchedule(com.opengamma.strata.basics.ReferenceData)">createSchedule</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
-<div class="block">Creates the schedule from the definition.</div>
+<div class="block">Creates the schedule from the definition, see <a href="../schedule/PeriodicSchedule.html#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)"><code>PeriodicSchedule.createSchedule(ReferenceData, boolean)</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../schedule/Schedule.html" title="class in com.opengamma.strata.basics.schedule">Schedule</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PeriodicSchedule.</span><code><span class="memberNameLink"><a href="../schedule/PeriodicSchedule.html#createSchedule(com.opengamma.strata.basics.ReferenceData,boolean)">createSchedule</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData,
+              boolean&nbsp;combinePeriodsIfNecessary)</code></th>
+<td class="colLast">
+<div class="block">Creates the schedule from the definition.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PeriodicSchedule.</span><code><span class="memberNameLink"><a href="../schedule/PeriodicSchedule.html#createUnadjustedDates(com.opengamma.strata.basics.ReferenceData)">createUnadjustedDates</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
@@ -5685,6 +5692,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                                    <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Calculates the reference date of the trade.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../product/index/IborFuturePosition.html" title="class in com.opengamma.strata.product.index">IborFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IborFutureContractSpec.</span><code><span class="memberNameLink"><a href="../../product/index/type/IborFutureContractSpec.html#createPosition(com.opengamma.strata.product.SecurityId,java.time.YearMonth,double,com.opengamma.strata.basics.ReferenceData)">createPosition</a></span>&#8203;(<a href="../../product/SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
+              double&nbsp;quantity,
+              <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a position based on this convention.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../product/index/IborFuturePosition.html" title="class in com.opengamma.strata.product.index">IborFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableIborFutureContractSpec.</span><code><span class="memberNameLink"><a href="../../product/index/type/ImmutableIborFutureContractSpec.html#createPosition(com.opengamma.strata.product.SecurityId,java.time.YearMonth,double,com.opengamma.strata.basics.ReferenceData)">createPosition</a></span>&#8203;(<a href="../../product/SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
+              double&nbsp;quantity,
+              <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../product/index/OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableOvernightFutureContractSpec.</span><code><span class="memberNameLink"><a href="../../product/index/type/ImmutableOvernightFutureContractSpec.html#createPosition(com.opengamma.strata.product.SecurityId,java.time.YearMonth,double,com.opengamma.strata.basics.ReferenceData)">createPosition</a></span>&#8203;(<a href="../../product/SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
+              double&nbsp;quantity,
+              <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../product/index/OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureContractSpec.</span><code><span class="memberNameLink"><a href="../../product/index/type/OvernightFutureContractSpec.html#createPosition(com.opengamma.strata.product.SecurityId,java.time.YearMonth,double,com.opengamma.strata.basics.ReferenceData)">createPosition</a></span>&#8203;(<a href="../../product/SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
+              double&nbsp;quantity,
+              <a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a position based on this convention.</div>
 </td>
 </tr>
 <tr class="rowColor">

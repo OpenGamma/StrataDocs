@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -201,37 +200,44 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdId.</span><code><span class="memberNameLink"><a href="../SplitEtdId.html#getVariant()">getVariant</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the variant of ETD.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdVariant.</span><code><span class="memberNameLink"><a href="../EtdVariant.html#ofDaily(int)">ofDaily</a></span>&#8203;(int&nbsp;dayOfMonth)</code></th>
 <td class="colLast">
 <div class="block">The standard daily ETD.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdVariant.</span><code><span class="memberNameLink"><a href="../EtdVariant.html#ofFlexFuture(int,com.opengamma.strata.product.etd.EtdSettlementType)">ofFlexFuture</a></span>&#8203;(int&nbsp;dayOfMonth,
             <a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&nbsp;settlementType)</code></th>
 <td class="colLast">
-<div class="block">The standard monthly ETD.</div>
+<div class="block">The flex future.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdVariant.</span><code><span class="memberNameLink"><a href="../EtdVariant.html#ofFlexOption(int,com.opengamma.strata.product.etd.EtdSettlementType,com.opengamma.strata.product.etd.EtdOptionType)">ofFlexOption</a></span>&#8203;(int&nbsp;dayOfMonth,
             <a href="../EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a>&nbsp;settlementType,
             <a href="../EtdOptionType.html" title="enum in com.opengamma.strata.product.etd">EtdOptionType</a>&nbsp;optionType)</code></th>
 <td class="colLast">
-<div class="block">The standard monthly ETD.</div>
+<div class="block">The flex option.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdVariant.</span><code><span class="memberNameLink"><a href="../EtdVariant.html#ofMonthly()">ofMonthly</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The standard monthly ETD.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdVariant.</span><code><span class="memberNameLink"><a href="../EtdVariant.html#ofWeekly(int)">ofWeekly</a></span>&#8203;(int&nbsp;week)</code></th>
 <td class="colLast">
@@ -385,6 +391,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code><a href="../EtdOptionSecurity.Builder.html" title="class in com.opengamma.strata.product.etd">EtdOptionSecurity.Builder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdOptionSecurity.Builder.</span><code><span class="memberNameLink"><a href="../EtdOptionSecurity.Builder.html#variant(com.opengamma.strata.product.etd.EtdVariant)">variant</a></span>&#8203;(<a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant)</code></th>
+<td class="colLast">
+<div class="block">Sets the variant of ETD.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../SplitEtdId.Builder.html" title="class in com.opengamma.strata.product.etd">SplitEtdId.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdId.Builder.</span><code><span class="memberNameLink"><a href="../SplitEtdId.Builder.html#variant(com.opengamma.strata.product.etd.EtdVariant)">variant</a></span>&#8203;(<a href="../EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&nbsp;variant)</code></th>
 <td class="colLast">
 <div class="block">Sets the variant of ETD.</div>
 </td>

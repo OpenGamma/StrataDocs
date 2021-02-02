@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -114,12 +113,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.loader">com.opengamma.strata.loader</a></th>
+<td class="colLast">
+<div class="block">Tools for loading data from files.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.deposit.type">com.opengamma.strata.product.deposit.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of deposits.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.fx.type">com.opengamma.strata.product.fx.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of foreign exchange products.</div>
@@ -190,6 +195,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MarketTenor.</span><code><span class="memberNameLink"><a href="../MarketTenor.html#ofSpotDays(int)">ofSpotDays</a></span>&#8203;(int&nbsp;days)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a number of days from spot.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MarketTenor.</span><code><span class="memberNameLink"><a href="../MarketTenor.html#ofSpotMonths(int)">ofSpotMonths</a></span>&#8203;(int&nbsp;months)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a number of months from spot.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MarketTenor.</span><code><span class="memberNameLink"><a href="../MarketTenor.html#ofSpotYears(int)">ofSpotYears</a></span>&#8203;(int&nbsp;years)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a number of years from spot.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MarketTenor.</span><code><span class="memberNameLink"><a href="../MarketTenor.html#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toParse)</code></th>
 <td class="colLast">
 <div class="block">Parses a formatted string representing the market tenor.</div>
@@ -210,6 +236,47 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">MarketTenor.</span><code><span class="memberNameLink"><a href="../MarketTenor.html#compareTo(com.opengamma.strata.basics.date.MarketTenor)">compareTo</a></span>&#8203;(<a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Compares this market tenor to another market tenor.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.loader">
+<!--   -->
+</a>
+<h3>Uses of <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a> in <a href="../../../loader/package-summary.html">com.opengamma.strata.loader</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/package-summary.html">com.opengamma.strata.loader</a> that return <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/LoaderUtils.html#parseMarketTenor(java.lang.String)">parseMarketTenor</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
+<td class="colLast">
+<div class="block">Parses a market tenor from the input string.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/package-summary.html">com.opengamma.strata.loader</a> that return types with arguments of type <a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/LoaderUtils.html#tryParseMarketTenor(java.lang.String)">tryParseMarketTenor</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
+<td class="colLast">
+<div class="block">Tries to parse a market tenor from the input string.</div>
 </td>
 </tr>
 </tbody>

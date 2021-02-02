@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":9,"i7":9,"i8":10,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":9,"i37":10,"i38":9,"i39":9,"i40":9,"i41":9,"i42":10,"i43":9,"i44":10,"i45":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":10,"i6":9,"i7":9,"i8":10,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":9,"i39":10,"i40":9,"i41":9,"i42":9,"i43":9,"i44":10,"i45":9,"i46":10,"i47":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -486,25 +485,39 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </td>
 </tr>
 <tr id="i36" class="altColor">
+<td class="colFirst"><code><a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="Result.html" title="type parameter in Result">T</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapFailure(java.util.function.Function)">mapFailure</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>,&#8203;<a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>&gt;&nbsp;function)</code></th>
+<td class="colLast">
+<div class="block">Processes a failed result by applying a function that alters the failure.</div>
+</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code><a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="Result.html" title="type parameter in Result">T</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapFailureItems(java.util.function.Function)">mapFailureItems</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>,&#8203;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;function)</code></th>
+<td class="colLast">
+<div class="block">Processes a failed result by applying a function that alters the failure items.</div>
+</td>
+</tr>
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>static <a href="Result.Meta.html" title="class in com.opengamma.strata.collect.result">Result.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>Result</code>.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="Result.Meta.html" title="class in com.opengamma.strata.collect.result">Result.Meta</a>&lt;<a href="Result.html" title="type parameter in Result">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="Result.Meta.html" title="class in com.opengamma.strata.collect.result">Result.Meta</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaResult(java.lang.Class)">metaResult</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;R&gt;&nbsp;cls)</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>Result</code>.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;T&gt;&nbsp;supplier)</code></th>
 <td class="colLast">
@@ -512,7 +525,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  supplier.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofNullable(R)">ofNullable</a></span>&#8203;(R&nbsp;value)</code></th>
 <td class="colLast">
@@ -520,7 +533,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  with a reason of <a href="FailureReason.html#MISSING_DATA"><code>FailureReason.MISSING_DATA</code></a> and message to say an unexpected null was found.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofNullable(R,com.opengamma.strata.collect.result.FailureReason,java.lang.String,java.lang.Object...)">ofNullable</a></span>&#8203;(R&nbsp;value,
           <a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
@@ -531,26 +544,26 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  with the specified reason and message.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Result.html" title="type parameter in Result">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this result to a stream.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#success(R)">success</a></span>&#8203;(R&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Creates a successful result wrapping a value.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrap(java.util.function.Supplier)">wrap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;T&gt;&gt;&nbsp;supplier)</code></th>
 <td class="colLast">
@@ -1475,6 +1488,60 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <dd><code>R</code> - the type of the value in the returned result</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>function</code> - the function to transform the value with</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new result</dd>
+</dl>
+</li>
+</ul>
+<a id="mapFailure(java.util.function.Function)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapFailure</h4>
+<pre class="methodSignature">public&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="Result.html" title="type parameter in Result">T</a>&gt;&nbsp;mapFailure&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>,&#8203;<a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>&gt;&nbsp;function)</pre>
+<div class="block">Processes a failed result by applying a function that alters the failure.
+ <p>
+ This operation allows post-processing of a result failure.
+ The specified function represents a conversion to be performed on the failure.
+ <p>
+ If this result is a failure, then the specified function is invoked.
+ The return value of the specified function is returned to the caller
+ wrapped in a failure result. If an exception is thrown when the function
+ is invoked, this will be caught and a failure <code>Result</code> returned.
+ <p>
+ If this result is a success, then <code>this</code> is returned.
+ The specified function is not invoked.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>function</code> - the function to transform the failure with</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new result</dd>
+</dl>
+</li>
+</ul>
+<a id="mapFailureItems(java.util.function.Function)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapFailureItems</h4>
+<pre class="methodSignature">public&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="Result.html" title="type parameter in Result">T</a>&gt;&nbsp;mapFailureItems&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>,&#8203;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;function)</pre>
+<div class="block">Processes a failed result by applying a function that alters the failure items.
+ <p>
+ This operation allows post-processing of a result failure.
+ The specified function represents a conversion to be performed on the failure.
+ <p>
+ If this result is a failure, then the specified function is invoked.
+ The return values of the specified function is returned to the caller
+ wrapped in a failure result. If an exception is thrown when the function
+ is invoked, this will be caught and a failure <code>Result</code> returned.
+ <p>
+ If this result is a success, then <code>this</code> is returned.
+ The specified function is not invoked.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>function</code> - the function to transform the failure with</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new result</dd>
 </dl>

@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -199,13 +198,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">StandardSchemes.</span><code><span class="memberNameLink"><a href="../StandardSchemes.html#createTicMic(java.lang.String,java.lang.String)">createTicMic</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;ticker,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;exchangeMic)</code></th>
+<td class="colLast">
+<div class="block">Creates a TICMIC identifier.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">StandardId.</span><code><span class="memberNameLink"><a href="../StandardId.html#of(java.lang.String,java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;scheme,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from a scheme and value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">StandardId.</span><code><span class="memberNameLink"><a href="../StandardId.html#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
 <td class="colLast">
@@ -247,6 +254,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">StandardId.</span><code><span class="memberNameLink"><a href="../StandardId.html#compareTo(com.opengamma.strata.basics.StandardId)">compareTo</a></span>&#8203;(<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Compares the external identifiers, sorting alphabetically by scheme followed by value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../collect/tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">StandardSchemes.</span><code><span class="memberNameLink"><a href="../StandardSchemes.html#splitTicMic(com.opengamma.strata.basics.StandardId)">splitTicMic</a></span>&#8203;(<a href="../StandardId.html" title="class in com.opengamma.strata.basics">StandardId</a>&nbsp;ticMic)</code></th>
+<td class="colLast">
+<div class="block">Splits a TICMIC identifier.</div>
 </td>
 </tr>
 </tbody>

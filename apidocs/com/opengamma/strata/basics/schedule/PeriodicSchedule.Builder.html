@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -363,8 +362,7 @@ extends org.joda.beans.impl.direct.DirectFieldsBeanBuilder&lt;<a href="PeriodicS
 <pre class="methodSignature">public&nbsp;<a href="PeriodicSchedule.Builder.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule.Builder</a>&nbsp;startDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;startDate)</pre>
 <div class="block">Sets the start date, which is the start of the first schedule period.
  <p>
- This is the start date of the schedule.
- It is unadjusted and as such might be a weekend or holiday.
+ This is the start date of the schedule, it is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted effective date.
  <p>
@@ -388,8 +386,7 @@ extends org.joda.beans.impl.direct.DirectFieldsBeanBuilder&lt;<a href="PeriodicS
 <pre class="methodSignature">public&nbsp;<a href="PeriodicSchedule.Builder.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule.Builder</a>&nbsp;endDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;endDate)</pre>
 <div class="block">Sets the end date, which is the end of the last schedule period.
  <p>
- This is the end date of the schedule.
- It is unadjusted and as such might be a weekend or holiday.
+ This is the end date of the schedule, it is unadjusted and as such might be a weekend or holiday.
  Any applicable business day adjustment will be applied when creating the schedule.
  This is also known as the unadjusted maturity date or unadjusted termination date.
  This date must be after the start date.</div>
@@ -521,8 +518,9 @@ extends org.joda.beans.impl.direct.DirectFieldsBeanBuilder&lt;<a href="PeriodicS
  end date backwards. Date generation may or may not result in a stub, but if it does then
  the stub will be of the correct type.
  <p>
- When the stub convention is not present, the generation of stubs is based entirely on
- the presence or absence of the explicit dates.</div>
+ When the stub convention is not present, the generation of stubs is based on the presence or absence
+ of the explicit dates. When there are no explicit stubs and there is a roll convention that matches
+ the start or end date, then the stub convention will be defaulted to 'SmartInitial' or 'SmartFinal'.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>stubConvention</code> - the new value</dd>

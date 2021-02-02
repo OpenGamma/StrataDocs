@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,11 +141,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a>, <a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOption</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">A vanilla FX option.
  <p>
- An FX option is a financial instrument that provides an option based on the future value of
- a foreign exchange. The option is European, exercised only on the exercise date.
+ An FX option is a financial instrument that provides an option based on the future value of a foreign exchange. The
+ option is European, exercised only on the exercise date.
  <p>
- For example, a call on a 'EUR 1.00 / USD -1.41' exchange is the option to
- perform a foreign exchange on the expiry date, where USD 1.41 is paid to receive EUR 1.00.</div>
+ For example, a call on a 'EUR 1.00 / USD -1.41' exchange is the option to perform a foreign exchange on the expiry
+ date, where USD 1.41 is paid to receive EUR 1.00.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../serialized-form.html#com.opengamma.strata.product.fxopt.FxVanillaOption">Serialized Form</a></dd>
@@ -282,20 +281,34 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.product.common.LongShort,java.time.ZonedDateTime,com.opengamma.strata.basics.currency.CurrencyPair,com.opengamma.strata.product.common.PutCall,double,double,java.time.LocalDate)">of</a></span>&#8203;(<a href="../common/LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>&nbsp;longShort,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiry,
+  <a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+  <a href="../common/PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  double&nbsp;strike,
+  double&nbsp;baseNotional,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;paymentDate)</code></th>
+<td class="colLast">
+<div class="block">Creates an equivalent <code>FxVanillaOption</code> using currency pair, option expiry, call/put flag, strike, base
+ currency notional, and underlying payment date.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="ResolvedFxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOption</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(com.opengamma.strata.basics.ReferenceData)">resolve</a></span>&#8203;(<a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Resolves this object using the specified reference data.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="FxVanillaOption.Builder.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -345,6 +358,35 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="of(com.opengamma.strata.product.common.LongShort,java.time.ZonedDateTime,com.opengamma.strata.basics.currency.CurrencyPair,com.opengamma.strata.product.common.PutCall,double,double,java.time.LocalDate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">public static&nbsp;<a href="FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a>&nbsp;of&#8203;(<a href="../common/LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>&nbsp;longShort,
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiry,
+                                 <a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                                 <a href="../common/PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+                                 double&nbsp;strike,
+                                 double&nbsp;baseNotional,
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;paymentDate)</pre>
+<div class="block">Creates an equivalent <code>FxVanillaOption</code> using currency pair, option expiry, call/put flag, strike, base
+ currency notional, and underlying payment date.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>longShort</code> - the long/short flag of the option</dd>
+<dd><code>expiry</code> - the option expiry</dd>
+<dd><code>currencyPair</code> - the FX currency pair</dd>
+<dd><code>putCall</code> - the put/call flag of the option</dd>
+<dd><code>strike</code> - the FX strike</dd>
+<dd><code>baseNotional</code> - the base currency notional amount: should always be positive</dd>
+<dd><code>paymentDate</code> - the payment date of the underlying FX cash flows</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an equivalent fx vanilla option</dd>
+</dl>
+</li>
+</ul>
 <a id="getCurrencyPair()">
 <!--   -->
 </a>
@@ -458,8 +500,8 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 <pre class="methodSignature">public&nbsp;<a href="../common/LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>&nbsp;getLongShort()</pre>
 <div class="block">Gets whether the option is long or short.
  <p>
- At expiry, the long party will have the option to enter in this transaction;
- the short party will, at the option of the long party, potentially enter into the inverse transaction.</div>
+ At expiry, the long party will have the option to enter in this transaction; the short party will, at the option of
+ the long party, potentially enter into the inverse transaction.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of the property, not null</dd>

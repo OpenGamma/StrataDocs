@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -117,6 +116,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.index">com.opengamma.strata.product.index</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing contracts based on rate indices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.index.type">com.opengamma.strata.product.index.type</a></th>
+<td class="colLast">
+<div class="block">Conventions and templates to aid the construction of rate index products.</div>
 </td>
 </tr>
 </tbody>
@@ -224,6 +229,41 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFuturePosition.Meta.</span><code><span class="memberNameLink"><a href="../OvernightFuturePosition.Meta.html#beanType()">beanType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.index.type">
+<!--   -->
+</a>
+<h3>Uses of <a href="../OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a> in <a href="../type/package-summary.html">com.opengamma.strata.product.index.type</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../type/package-summary.html">com.opengamma.strata.product.index.type</a> that return <a href="../OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableOvernightFutureContractSpec.</span><code><span class="memberNameLink"><a href="../type/ImmutableOvernightFutureContractSpec.html#createPosition(com.opengamma.strata.product.SecurityId,java.time.YearMonth,double,com.opengamma.strata.basics.ReferenceData)">createPosition</a></span>&#8203;(<a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
+              double&nbsp;quantity,
+              <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../OvernightFuturePosition.html" title="class in com.opengamma.strata.product.index">OvernightFuturePosition</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightFutureContractSpec.</span><code><span class="memberNameLink"><a href="../type/OvernightFutureContractSpec.html#createPosition(com.opengamma.strata.product.SecurityId,java.time.YearMonth,double,com.opengamma.strata.basics.ReferenceData)">createPosition</a></span>&#8203;(<a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;expiry,
+              double&nbsp;quantity,
+              <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Creates a position based on this convention.</div>
+</td>
 </tr>
 </tbody>
 </table>

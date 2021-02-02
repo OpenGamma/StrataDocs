@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -208,6 +207,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Maps the sensitivity metadata.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="CurrencyParameterSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivitiesBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapSensitivities(java.util.function.BiFunction)">mapSensitivities</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;mapFn)</code></th>
+<td class="colLast">
+<div class="block">Maps the sensitivity.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -324,6 +330,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>metadataFn</code> - the function to adjust the metadata</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this, for chaining</dd>
+</dl>
+</li>
+</ul>
+<a id="mapSensitivities(java.util.function.BiFunction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapSensitivities</h4>
+<pre class="methodSignature">public&nbsp;<a href="CurrencyParameterSensitivitiesBuilder.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivitiesBuilder</a>&nbsp;mapSensitivities&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;mapFn)</pre>
+<div class="block">Maps the sensitivity.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapFn</code> - the function to adjust the sensitivity</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this, for chaining</dd>
 </dl>

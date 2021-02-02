@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -296,12 +295,33 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofSpotDays(int)">ofSpotDays</a></span>&#8203;(int&nbsp;days)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a number of days from spot.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofSpotMonths(int)">ofSpotMonths</a></span>&#8203;(int&nbsp;months)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a number of months from spot.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofSpotYears(int)">ofSpotYears</a></span>&#8203;(int&nbsp;years)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from a number of years from spot.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static <a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toParse)</code></th>
 <td class="colLast">
 <div class="block">Parses a formatted string representing the market tenor.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -399,6 +419,57 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tenor</code> - the tenor</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the tenor</dd>
+</dl>
+</li>
+</ul>
+<a id="ofSpotDays(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofSpotDays</h4>
+<pre class="methodSignature">public static&nbsp;<a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&nbsp;ofSpotDays&#8203;(int&nbsp;days)</pre>
+<div class="block">Obtains an instance from a number of days from spot.
+ <p>
+ A tenor of 1D will return SN.
+ A tenor of 7D will return SW.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>days</code> - the tenor in days</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the tenor</dd>
+</dl>
+</li>
+</ul>
+<a id="ofSpotMonths(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofSpotMonths</h4>
+<pre class="methodSignature">public static&nbsp;<a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&nbsp;ofSpotMonths&#8203;(int&nbsp;months)</pre>
+<div class="block">Obtains an instance from a number of months from spot.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>months</code> - the tenor in months</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the tenor</dd>
+</dl>
+</li>
+</ul>
+<a id="ofSpotYears(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofSpotYears</h4>
+<pre class="methodSignature">public static&nbsp;<a href="MarketTenor.html" title="class in com.opengamma.strata.basics.date">MarketTenor</a>&nbsp;ofSpotYears&#8203;(int&nbsp;years)</pre>
+<div class="block">Obtains an instance from a number of years from spot.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>years</code> - the tenor in years</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the tenor</dd>
 </dl>

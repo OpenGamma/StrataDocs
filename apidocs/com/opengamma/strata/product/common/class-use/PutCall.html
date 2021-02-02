@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -1296,6 +1295,13 @@ the order they are declared.</div>
 <div class="block">Gets whether the option is a put or call.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdOption.</span><code><span class="memberNameLink"><a href="../../etd/SplitEtdOption.html#getPutCall()">getPutCall</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets whether the option is a put or call.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -1373,6 +1379,25 @@ the order they are declared.</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="../../etd/SplitEtdOption.html" title="class in com.opengamma.strata.product.etd">SplitEtdOption</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdOption.</span><code><span class="memberNameLink"><a href="../../etd/SplitEtdOption.html#of(int,com.opengamma.strata.product.common.PutCall,double)">of</a></span>&#8203;(int&nbsp;version,
+  <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  double&nbsp;strikePrice)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../etd/SplitEtdOption.html" title="class in com.opengamma.strata.product.etd">SplitEtdOption</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SplitEtdOption.</span><code><span class="memberNameLink"><a href="../../etd/SplitEtdOption.html#of(int,com.opengamma.strata.product.common.PutCall,double,java.time.YearMonth)">of</a></span>&#8203;(int&nbsp;version,
+  <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  double&nbsp;strikePrice,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>&nbsp;underlyingExpiryMonth)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">EtdIdUtils.</span><code><span class="memberNameLink"><a href="../../etd/EtdIdUtils.html#optionId(com.opengamma.strata.product.common.ExchangeId,com.opengamma.strata.product.etd.EtdContractCode,java.time.YearMonth,com.opengamma.strata.product.etd.EtdVariant,int,com.opengamma.strata.product.common.PutCall,double)">optionId</a></span>&#8203;(<a href="../ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a>&nbsp;exchangeId,
         <a href="../../etd/EtdContractCode.html" title="class in com.opengamma.strata.product.etd">EtdContractCode</a>&nbsp;contractCode,
@@ -1428,6 +1453,30 @@ the order they are declared.</div>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFxVanillaOption.</span><code><span class="memberNameLink"><a href="../../fxopt/ResolvedFxVanillaOption.html#getPutCall()">getPutCall</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the put/call flag.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../fxopt/package-summary.html">com.opengamma.strata.product.fxopt</a> with parameters of type <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../fxopt/FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxVanillaOption.</span><code><span class="memberNameLink"><a href="../../fxopt/FxVanillaOption.html#of(com.opengamma.strata.product.common.LongShort,java.time.ZonedDateTime,com.opengamma.strata.basics.currency.CurrencyPair,com.opengamma.strata.product.common.PutCall,double,double,java.time.LocalDate)">of</a></span>&#8203;(<a href="../LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a>&nbsp;longShort,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiry,
+  <a href="../../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+  <a href="../PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
+  double&nbsp;strike,
+  double&nbsp;baseNotional,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;paymentDate)</code></th>
+<td class="colLast">
+<div class="block">Creates an equivalent <code>FxVanillaOption</code> using currency pair, option expiry, call/put flag, strike, base
+ currency notional, and underlying payment date.</div>
 </td>
 </tr>
 </tbody>
