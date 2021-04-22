@@ -217,13 +217,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>&lt;C&gt;&nbsp;<a href="../../collect/result/Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="../../data/scenario/ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;C&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../Results.html#getScenarios(int,com.opengamma.strata.calc.ColumnName,java.lang.Class)">getScenarios</a></span>&#8203;(int&nbsp;rowIndex,
+            <a href="../ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a>&nbsp;columnName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;componentType)</code></th>
+<td class="colLast">
+<div class="block">Returns multi-scenario results for a target and column name, casting the result to a known type.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Column.Builder.html" title="class in com.opengamma.strata.calc">Column.Builder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Column.Builder.</span><code><span class="memberNameLink"><a href="../Column.Builder.html#name(com.opengamma.strata.calc.ColumnName)">name</a></span>&#8203;(<a href="../ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Sets the column name.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../ColumnHeader.html" title="class in com.opengamma.strata.calc">ColumnHeader</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ColumnHeader.</span><code><span class="memberNameLink"><a href="../ColumnHeader.html#of(com.opengamma.strata.calc.ColumnName,com.opengamma.strata.calc.Measure)">of</a></span>&#8203;(<a href="../ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a>&nbsp;name,
   <a href="../Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure)</code></th>
@@ -231,7 +240,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from the name and measure.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../ColumnHeader.html" title="class in com.opengamma.strata.calc">ColumnHeader</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ColumnHeader.</span><code><span class="memberNameLink"><a href="../ColumnHeader.html#of(com.opengamma.strata.calc.ColumnName,com.opengamma.strata.calc.Measure,com.opengamma.strata.basics.currency.Currency)">of</a></span>&#8203;(<a href="../ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a>&nbsp;name,
   <a href="../Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure,

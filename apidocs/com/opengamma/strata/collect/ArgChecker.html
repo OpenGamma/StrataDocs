@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":9,"i42":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":9,"i42":9,"i43":9,"i44":9,"i45":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -206,6 +206,36 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;<br>T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeComparable(T,T,T,java.lang.String)">inRangeComparable</a></span>&#8203;(T&nbsp;argument,
+                 T&nbsp;lowInclusive,
+                 T&nbsp;highExclusive,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">
+<div class="block">Checks that the argument is within the range defined by <code>low &lt;= x &lt; high</code> using the items' natural order.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;<br>T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeComparableExclusive(T,T,T,java.lang.String)">inRangeComparableExclusive</a></span>&#8203;(T&nbsp;argument,
+                          T&nbsp;lowExclusive,
+                          T&nbsp;highExclusive,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">
+<div class="block">Checks that the argument is within the range defined by <code>low &lt; x &lt; high</code> using the items' natural order.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static &lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;<br>T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeComparableInclusive(T,T,T,java.lang.String)">inRangeComparableInclusive</a></span>&#8203;(T&nbsp;argument,
+                          T&nbsp;lowInclusive,
+                          T&nbsp;highInclusive,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">
+<div class="block">Checks that the argument is within the range defined by <code>low &lt;= x &lt;= high</code> using the items' natural order.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeExclusive(double,double,double,java.lang.String)">inRangeExclusive</a></span>&#8203;(double&nbsp;argument,
                 double&nbsp;lowExclusive,
@@ -215,7 +245,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is within the range defined by <code>low &lt; x &lt; high</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeExclusive(int,int,int,java.lang.String)">inRangeExclusive</a></span>&#8203;(int&nbsp;argument,
                 int&nbsp;lowExclusive,
@@ -225,7 +255,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is within the range defined by <code>low &lt; x &lt; high</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeInclusive(double,double,double,java.lang.String)">inRangeInclusive</a></span>&#8203;(double&nbsp;argument,
                 double&nbsp;lowInclusive,
@@ -235,7 +265,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is within the range defined by <code>low &lt;= x &lt;= high</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inRangeInclusive(int,int,int,java.lang.String)">inRangeInclusive</a></span>&#8203;(int&nbsp;argument,
                 int&nbsp;lowInclusive,
@@ -245,7 +275,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is within the range defined by <code>low &lt;= x &lt;= high</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFalse(boolean,java.lang.String)">isFalse</a></span>&#8203;(boolean&nbsp;validIfFalse,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message)</code></th>
@@ -253,7 +283,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified boolean is false.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFalse(boolean,java.lang.String,java.lang.Object...)">isFalse</a></span>&#8203;(boolean&nbsp;validIfFalse,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -262,14 +292,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified boolean is false.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTrue(boolean)">isTrue</a></span>&#8203;(boolean&nbsp;validIfTrue)</code></th>
 <td class="colLast">
 <div class="block">Checks that the specified boolean is true.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTrue(boolean,java.lang.String)">isTrue</a></span>&#8203;(boolean&nbsp;validIfTrue,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message)</code></th>
@@ -277,7 +307,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified boolean is true.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTrue(boolean,java.lang.String,double)">isTrue</a></span>&#8203;(boolean&nbsp;validIfTrue,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -286,7 +316,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified boolean is true.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTrue(boolean,java.lang.String,long)">isTrue</a></span>&#8203;(boolean&nbsp;validIfTrue,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -295,7 +325,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified boolean is true.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTrue(boolean,java.lang.String,java.lang.Object...)">isTrue</a></span>&#8203;(boolean&nbsp;validIfTrue,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -304,7 +334,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified boolean is true.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matches(com.google.common.base.CharMatcher,int,int,java.lang.String,java.lang.String,java.lang.String)">matches</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/base/CharMatcher.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">CharMatcher</a>&nbsp;matcher,
        int&nbsp;minLength,
@@ -316,7 +346,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument is non-null and only contains the specified characters.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matches(java.util.regex.Pattern,java.lang.String,java.lang.String)">matches</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex" class="externalLink">Pattern</a>&nbsp;pattern,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;argument,
@@ -325,7 +355,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument is non-null and matches the specified pattern.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noDuplicates(double%5B%5D,java.lang.String)">noDuplicates</a></span>&#8203;(double[]&nbsp;argument,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -333,7 +363,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null and does not contain any duplicate values.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noDuplicatesSorted(double%5B%5D,java.lang.String)">noDuplicatesSorted</a></span>&#8203;(double[]&nbsp;argument,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -341,7 +371,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null, sorted, and does not contain any duplicate values.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static &lt;T,&#8203;I extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;T&gt;&gt;<br>I</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noNulls(I,java.lang.String)">noNulls</a></span>&#8203;(I&nbsp;argument,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -349,7 +379,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument collection is non-null and contains no nulls.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V,&#8203;M extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;<br>M</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noNulls(M,java.lang.String)">noNulls</a></span>&#8203;(M&nbsp;argument,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -357,7 +387,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument map is non-null and contains no nulls.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noNulls(T%5B%5D,java.lang.String)">noNulls</a></span>&#8203;(T[]&nbsp;argument,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -365,7 +395,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null and contains no nulls.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notBlank(java.lang.String,java.lang.String)">notBlank</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -373,7 +403,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument is non-null and not blank.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(double%5B%5D,java.lang.String)">notEmpty</a></span>&#8203;(double[]&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -381,7 +411,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(int%5B%5D,java.lang.String)">notEmpty</a></span>&#8203;(int[]&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -389,7 +419,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(long%5B%5D,java.lang.String)">notEmpty</a></span>&#8203;(long[]&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -397,7 +427,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static &lt;T,&#8203;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&gt;<br>C</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(C,java.lang.String)">notEmpty</a></span>&#8203;(C&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -405,7 +435,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument collection is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static &lt;T,&#8203;I extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;T&gt;&gt;<br>I</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(I,java.lang.String)">notEmpty</a></span>&#8203;(I&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -413,7 +443,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument iterable is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(java.lang.String,java.lang.String)">notEmpty</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -421,7 +451,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V,&#8203;M extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;<br>M</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(M,java.lang.String)">notEmpty</a></span>&#8203;(M&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -429,7 +459,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument map is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notEmpty(T%5B%5D,java.lang.String)">notEmpty</a></span>&#8203;(T[]&nbsp;argument,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -437,7 +467,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument array is non-null and not empty.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNaN(double,java.lang.String)">notNaN</a></span>&#8203;(double&nbsp;argument,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -445,7 +475,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is a number and not NaN.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegative(double,java.lang.String)">notNegative</a></span>&#8203;(double&nbsp;argument,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -453,7 +483,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not negative.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegative(int,java.lang.String)">notNegative</a></span>&#8203;(int&nbsp;argument,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -461,7 +491,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not negative.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>static long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegative(long,java.lang.String)">notNegative</a></span>&#8203;(long&nbsp;argument,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -469,7 +499,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not negative.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegativeOrZero(double,double,java.lang.String)">notNegativeOrZero</a></span>&#8203;(double&nbsp;argument,
                  double&nbsp;tolerance,
@@ -478,7 +508,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is greater than zero to within a given accuracy.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegativeOrZero(double,java.lang.String)">notNegativeOrZero</a></span>&#8203;(double&nbsp;argument,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -486,7 +516,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not negative or zero.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegativeOrZero(int,java.lang.String)">notNegativeOrZero</a></span>&#8203;(int&nbsp;argument,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -494,7 +524,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not negative or zero.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>static long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNegativeOrZero(long,java.lang.String)">notNegativeOrZero</a></span>&#8203;(long&nbsp;argument,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -502,7 +532,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not negative or zero.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNull(T,java.lang.String)">notNull</a></span>&#8203;(T&nbsp;argument,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -510,14 +540,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the specified argument is non-null.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notNullItem(T)">notNullItem</a></span>&#8203;(T&nbsp;argument)</code></th>
 <td class="colLast">
 <div class="block">Checks that the specified item is non-null.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notZero(double,double,java.lang.String)">notZero</a></span>&#8203;(double&nbsp;argument,
        double&nbsp;tolerance,
@@ -526,7 +556,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Checks that the argument is not equal to zero to within a given accuracy.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notZero(double,java.lang.String)">notZero</a></span>&#8203;(double&nbsp;argument,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
@@ -1694,7 +1724,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  lower boundary but excluding the upper boundary.
  For example, in a constructor:
  <pre>
-  this.amount = ArgChecker.inRange(amount, 0d, 1d, "amount");
+  this.amount = ArgChecker.inRange(amount, 0, 1, "amount");
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1724,7 +1754,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  Given a value, this returns true if it is within the specified range including both boundaries.
  For example, in a constructor:
  <pre>
-  this.amount = ArgChecker.inRangeInclusive(amount, 0d, 1d, "amount");
+  this.amount = ArgChecker.inRangeInclusive(amount, 0, 1, "amount");
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1754,9 +1784,112 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  Given a value, this returns true if it is within the specified range excluding both boundaries.
  For example, in a constructor:
  <pre>
-  this.amount = ArgChecker.inRangeExclusive(amount, 0d, 1d, "amount");
+  this.amount = ArgChecker.inRangeExclusive(amount, 0, 1, "amount");
  </pre></div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>argument</code> - the value to check</dd>
+<dd><code>lowExclusive</code> - the low value of the range</dd>
+<dd><code>highExclusive</code> - the high value of the range</dd>
+<dd><code>name</code> - the name of the argument to use in the error message, not null</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the input <code>argument</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the argument is outside the valid range</dd>
+</dl>
+</li>
+</ul>
+<a id="inRangeComparable(java.lang.Comparable,java.lang.Comparable,java.lang.Comparable,java.lang.String)">
+<!--   -->
+</a><a id="inRangeComparable(T,T,T,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>inRangeComparable</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;&nbsp;T&nbsp;inRangeComparable&#8203;(T&nbsp;argument,
+                                                            T&nbsp;lowInclusive,
+                                                            T&nbsp;highExclusive,
+                                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<div class="block">Checks that the argument is within the range defined by <code>low &lt;= x &lt; high</code> using the items' natural order.
+ <p>
+ Given a value, this returns true if it is within the specified range including the
+ lower boundary but excluding the upper boundary.
+ For example, in a constructor:
+ <pre>
+  this.duration = ArgChecker.inRangeComparable(duration, Duration.ZERO, Duration.ofHours(1), "duration");
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the value</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>argument</code> - the value to check</dd>
+<dd><code>lowInclusive</code> - the low value of the range</dd>
+<dd><code>highExclusive</code> - the high value of the range</dd>
+<dd><code>name</code> - the name of the argument to use in the error message, not null</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the input <code>argument</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the argument is outside the valid range</dd>
+</dl>
+</li>
+</ul>
+<a id="inRangeComparableInclusive(java.lang.Comparable,java.lang.Comparable,java.lang.Comparable,java.lang.String)">
+<!--   -->
+</a><a id="inRangeComparableInclusive(T,T,T,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>inRangeComparableInclusive</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;&nbsp;T&nbsp;inRangeComparableInclusive&#8203;(T&nbsp;argument,
+                                                                     T&nbsp;lowInclusive,
+                                                                     T&nbsp;highInclusive,
+                                                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<div class="block">Checks that the argument is within the range defined by <code>low &lt;= x &lt;= high</code> using the items' natural order.
+ <p>
+ Given a value, this returns true if it is within the specified range including both boundaries.
+ For example, in a constructor:
+ <pre>
+  this.duration = ArgChecker.inRangeComparableInclusive(duration, Duration.ZERO, Duration.ofHours(1), "duration");
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the value</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>argument</code> - the value to check</dd>
+<dd><code>lowInclusive</code> - the low value of the range</dd>
+<dd><code>highInclusive</code> - the high value of the range</dd>
+<dd><code>name</code> - the name of the argument to use in the error message, not null</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the input <code>argument</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the argument is outside the valid range</dd>
+</dl>
+</li>
+</ul>
+<a id="inRangeComparableExclusive(java.lang.Comparable,java.lang.Comparable,java.lang.Comparable,java.lang.String)">
+<!--   -->
+</a><a id="inRangeComparableExclusive(T,T,T,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>inRangeComparableExclusive</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;&nbsp;T&nbsp;inRangeComparableExclusive&#8203;(T&nbsp;argument,
+                                                                     T&nbsp;lowExclusive,
+                                                                     T&nbsp;highExclusive,
+                                                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<div class="block">Checks that the argument is within the range defined by <code>low &lt; x &lt; high</code> using the items' natural order.
+ <p>
+ Given a value, this returns true if it is within the specified range excluding both boundaries.
+ For example, in a constructor:
+ <pre>
+  this.duration = ArgChecker.inRangeComparableExclusive(duration, Duration.ZERO, Duration.ofHours(1), "duration");
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the value</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>argument</code> - the value to check</dd>
 <dd><code>lowExclusive</code> - the low value of the range</dd>

@@ -145,8 +145,8 @@ implements <a href="../../calc/runner/CalculationFunction.html" title="interface
  An instance of <a href="../rate/RatesMarketDataLookup.html" title="interface in com.opengamma.strata.measure.rate"><code>RatesMarketDataLookup</code></a> must also be specified.
  <p>
  Two pricing methods are available, 'Black' and 'TrinomialTree'.
- By default, 'Black' will be used. To control the method, pass an instance of
- <a href="FxSingleBarrierOptionMethod.html" title="enum in com.opengamma.strata.measure.fxopt"><code>FxSingleBarrierOptionMethod</code></a> in the calculation parameters.
+ By default, 'Black' will be used.
+ To control the method, pass an instance of <a href="FxSingleBarrierOptionMethod.html" title="enum in com.opengamma.strata.measure.fxopt"><code>FxSingleBarrierOptionMethod</code></a> in the calculation parameters.
  <p>
  The supported built-in measures are:
  <ul>
@@ -157,6 +157,7 @@ implements <a href="../../calc/runner/CalculationFunction.html" title="interface
    <li><a href="../Measures.html#PV01_MARKET_QUOTE_BUCKETED">PV01 market quote bucketed on rate curves</a>
    <li><a href="../Measures.html#CURRENCY_EXPOSURE">Currency exposure</a>
    <li><a href="../Measures.html#CURRENT_CASH">Current cash</a>
+   <li><a href="../Measures.html#VEGA_MARKET_QUOTE_BUCKETED">Vega market quote bucketed on volatility curves/surfaces</a>
    <li><a href="../Measures.html#RESOLVED_TARGET">Resolved trade</a>
  </ul>
  <p>

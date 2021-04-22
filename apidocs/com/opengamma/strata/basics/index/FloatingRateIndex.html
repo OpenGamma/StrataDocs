@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":18,"i3":6,"i4":6,"i5":1,"i6":1,"i7":1,"i8":1};
+var data = {"i0":6,"i1":6,"i2":18,"i3":6,"i4":6,"i5":6,"i6":1,"i7":1,"i8":1,"i9":1,"i10":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -192,20 +192,34 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the name that uniquely identifies this index.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isActive()">isActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether the index is active.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from the specified unique name.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;indexStr)</code></th>
 <td class="colLast">
 <div class="block">Parses a string, handling different types of index.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String,com.opengamma.strata.basics.date.Tenor)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;indexStr,
      <a href="../date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&nbsp;defaultIborTenor)</code></th>
@@ -213,14 +227,14 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 <div class="block">Parses a string, handling different types of index, optionally specifying a tenor for Ibor.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParse(java.lang.String)">tryParse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;indexStr)</code></th>
 <td class="colLast">
 <div class="block">Parses a string, handling different types of index.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParse(java.lang.String,com.opengamma.strata.basics.date.Tenor)">tryParse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;indexStr,
         <a href="../date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a>&nbsp;defaultIborTenor)</code></th>
@@ -229,13 +243,6 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 </td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.opengamma.strata.basics.index.Index">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;com.opengamma.strata.basics.index.<a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></h3>
-<code><a href="Index.html#getName()">getName</a></code></li>
-</ul>
 </li>
 </ul>
 </section>
@@ -363,6 +370,46 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 <dd><code>defaultIborTenor</code> - the tenor to use for Ibor if matched as a <code>FloatingRateName</code>, may be null</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the floating rate index, empty if not found</dd>
+</dl>
+</li>
+</ul>
+<a id="of(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">static&nbsp;<a href="FloatingRateIndex.html" title="interface in com.opengamma.strata.basics.index">FloatingRateIndex</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</pre>
+<div class="block">Obtains an instance from the specified unique name.
+ <p>
+ This parses names from <a href="IborIndex.html" title="interface in com.opengamma.strata.basics.index"><code>IborIndex</code></a>, <a href="OvernightIndex.html" title="interface in com.opengamma.strata.basics.index"><code>OvernightIndex</code></a> and <a href="PriceIndex.html" title="interface in com.opengamma.strata.basics.index"><code>PriceIndex</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uniqueName</code> - the unique name</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the name is not known</dd>
+</dl>
+</li>
+</ul>
+<a id="getName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getName()</pre>
+<div class="block">Gets the name that uniquely identifies this index.
+ <p>
+ This name is used in serialization and can be parsed using <a href="#of(java.lang.String)"><code>of(String)</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Index.html#getName()">getName</a></code>&nbsp;in interface&nbsp;<code><a href="Index.html" title="interface in com.opengamma.strata.basics.index">Index</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../collect/named/Named.html#getName()">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the unique name</dd>
 </dl>
 </li>
 </ul>

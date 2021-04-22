@@ -405,6 +405,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#correlationByExpiry(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,java.util.List)">correlationByExpiry</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
+                   <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
+<td class="colLast">
+<div class="block">Creates curve metadata for a curve providing correlation by expiry.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#discountFactors(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,java.util.List)">discountFactors</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
                <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
@@ -412,7 +421,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates curve metadata for a curve providing discount factors.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#forwardRates(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,java.util.List)">forwardRates</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
             <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -421,7 +430,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates curve metadata for a curve providing forward rates.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#normalVolatilityByExpiry(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,java.util.List)">normalVolatilityByExpiry</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
                         <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -430,21 +439,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates curve metadata for a curve providing normal volatility by expiry.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../curve/DefaultCurveMetadataBuilder.html" title="class in com.opengamma.strata.market.curve">DefaultCurveMetadataBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DefaultCurveMetadataBuilder.</span><code><span class="memberNameLink"><a href="../../curve/DefaultCurveMetadataBuilder.html#parameterMetadata(java.util.List)">parameterMetadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
 <td class="colLast">
 <div class="block">Sets the parameter-level metadata.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../curve/ParameterizedFunctionalCurveDefinition.Builder.html" title="class in com.opengamma.strata.market.curve">ParameterizedFunctionalCurveDefinition.Builder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ParameterizedFunctionalCurveDefinition.Builder.</span><code><span class="memberNameLink"><a href="../../curve/ParameterizedFunctionalCurveDefinition.Builder.html#parameterMetadata(java.util.List)">parameterMetadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
 <td class="colLast">
 <div class="block">Sets the parameter metadata of the curve, defaulted to empty metadata instances.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#prices(com.opengamma.strata.market.curve.CurveName,java.util.List)">prices</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
@@ -452,7 +461,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates curve metadata for a curve providing monthly prices, typically used in inflation.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#recoveryRates(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,java.util.List)">recoveryRates</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
              <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -461,7 +470,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates curve metadata for a curve providing recovery rates.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#sabrParameterByExpiry(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,com.opengamma.strata.market.ValueType,java.util.List)">sabrParameterByExpiry</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
                      <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,
@@ -471,19 +480,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates metadata for a curve providing a SABR parameter.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CurveMetadata.</span><code><span class="memberNameLink"><a href="../../curve/CurveMetadata.html#withParameterMetadata(java.util.List)">withParameterMetadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
 <td class="colLast">
 <div class="block">Returns an instance where the parameter metadata has been changed.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../curve/DefaultCurveMetadata.html" title="class in com.opengamma.strata.market.curve">DefaultCurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DefaultCurveMetadata.</span><code><span class="memberNameLink"><a href="../../curve/DefaultCurveMetadata.html#withParameterMetadata(java.util.List)">withParameterMetadata</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="../ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a>&gt;&nbsp;parameterMetadata)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../curve/CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Curves.</span><code><span class="memberNameLink"><a href="../../curve/Curves.html#zeroRates(com.opengamma.strata.market.curve.CurveName,com.opengamma.strata.basics.date.DayCount,java.util.List)">zeroRates</a></span>&#8203;(<a href="../../curve/CurveName.html" title="class in com.opengamma.strata.market.curve">CurveName</a>&nbsp;name,
          <a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a>&nbsp;dayCount,

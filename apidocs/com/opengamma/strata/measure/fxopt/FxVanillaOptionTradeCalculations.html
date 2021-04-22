@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -359,6 +359,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates present value sensitivity for a single set of market data.</div>
 </td>
 </tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../data/scenario/ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;<a href="../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vegaMarketQuoteBucketed(com.opengamma.strata.product.fxopt.ResolvedFxVanillaOptionTrade,com.opengamma.strata.measure.rate.RatesMarketDataLookup,com.opengamma.strata.measure.fxopt.FxOptionMarketDataLookup,com.opengamma.strata.data.scenario.ScenarioMarketData,com.opengamma.strata.measure.fxopt.FxVanillaOptionMethod)">vegaMarketQuoteBucketed</a></span>&#8203;(<a href="../../product/fxopt/ResolvedFxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOptionTrade</a>&nbsp;trade,
+                       <a href="../rate/RatesMarketDataLookup.html" title="interface in com.opengamma.strata.measure.rate">RatesMarketDataLookup</a>&nbsp;ratesLookup,
+                       <a href="FxOptionMarketDataLookup.html" title="interface in com.opengamma.strata.measure.fxopt">FxOptionMarketDataLookup</a>&nbsp;fxLookup,
+                       <a href="../../data/scenario/ScenarioMarketData.html" title="interface in com.opengamma.strata.data.scenario">ScenarioMarketData</a>&nbsp;marketData,
+                       <a href="FxVanillaOptionMethod.html" title="enum in com.opengamma.strata.measure.fxopt">FxVanillaOptionMethod</a>&nbsp;method)</code></th>
+<td class="colLast">
+<div class="block">Calculates present value vega sensitivity across one or more scenarios.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vegaMarketQuoteBucketed(com.opengamma.strata.product.fxopt.ResolvedFxVanillaOptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.fxopt.FxOptionVolatilities,com.opengamma.strata.measure.fxopt.FxVanillaOptionMethod)">vegaMarketQuoteBucketed</a></span>&#8203;(<a href="../../product/fxopt/ResolvedFxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOptionTrade</a>&nbsp;trade,
+                       <a href="../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                       <a href="../../pricer/fxopt/FxOptionVolatilities.html" title="interface in com.opengamma.strata.pricer.fxopt">FxOptionVolatilities</a>&nbsp;volatilities,
+                       <a href="FxVanillaOptionMethod.html" title="enum in com.opengamma.strata.measure.fxopt">FxVanillaOptionMethod</a>&nbsp;method)</code></th>
+<td class="colLast">
+<div class="block">Calculates present value vega sensitivity for a single set of market data.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -678,6 +699,58 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  This is the sensitivity of present value to a one basis point shift in
  the market quotes used to calibrate the curves.
  The result is provided for each affected curve and currency, bucketed by curve node.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>trade</code> - the trade</dd>
+<dd><code>ratesProvider</code> - the market data</dd>
+<dd><code>volatilities</code> - the option volatilities</dd>
+<dd><code>method</code> - the pricing method</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the present value sensitivity</dd>
+</dl>
+</li>
+</ul>
+<a id="vegaMarketQuoteBucketed(com.opengamma.strata.product.fxopt.ResolvedFxVanillaOptionTrade,com.opengamma.strata.measure.rate.RatesMarketDataLookup,com.opengamma.strata.measure.fxopt.FxOptionMarketDataLookup,com.opengamma.strata.data.scenario.ScenarioMarketData,com.opengamma.strata.measure.fxopt.FxVanillaOptionMethod)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>vegaMarketQuoteBucketed</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../data/scenario/ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;<a href="../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a>&gt;&nbsp;vegaMarketQuoteBucketed&#8203;(<a href="../../product/fxopt/ResolvedFxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOptionTrade</a>&nbsp;trade,
+                                                                             <a href="../rate/RatesMarketDataLookup.html" title="interface in com.opengamma.strata.measure.rate">RatesMarketDataLookup</a>&nbsp;ratesLookup,
+                                                                             <a href="FxOptionMarketDataLookup.html" title="interface in com.opengamma.strata.measure.fxopt">FxOptionMarketDataLookup</a>&nbsp;fxLookup,
+                                                                             <a href="../../data/scenario/ScenarioMarketData.html" title="interface in com.opengamma.strata.data.scenario">ScenarioMarketData</a>&nbsp;marketData,
+                                                                             <a href="FxVanillaOptionMethod.html" title="enum in com.opengamma.strata.measure.fxopt">FxVanillaOptionMethod</a>&nbsp;method)</pre>
+<div class="block">Calculates present value vega sensitivity across one or more scenarios.
+ <p>
+ This is the sensitivity of present value to the implied volatilities
+ used to calibrate the curves.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>trade</code> - the trade</dd>
+<dd><code>ratesLookup</code> - the lookup used to query the market data</dd>
+<dd><code>marketData</code> - the market data</dd>
+<dd><code>fxLookup</code> - the lookup used to query the option market data</dd>
+<dd><code>method</code> - the pricing method</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the present value sensitivity, one entry per scenario</dd>
+</dl>
+</li>
+</ul>
+<a id="vegaMarketQuoteBucketed(com.opengamma.strata.product.fxopt.ResolvedFxVanillaOptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.fxopt.FxOptionVolatilities,com.opengamma.strata.measure.fxopt.FxVanillaOptionMethod)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>vegaMarketQuoteBucketed</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a>&nbsp;vegaMarketQuoteBucketed&#8203;(<a href="../../product/fxopt/ResolvedFxVanillaOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOptionTrade</a>&nbsp;trade,
+                                                              <a href="../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                                              <a href="../../pricer/fxopt/FxOptionVolatilities.html" title="interface in com.opengamma.strata.pricer.fxopt">FxOptionVolatilities</a>&nbsp;volatilities,
+                                                              <a href="FxVanillaOptionMethod.html" title="enum in com.opengamma.strata.measure.fxopt">FxVanillaOptionMethod</a>&nbsp;method)</pre>
+<div class="block">Calculates present value vega sensitivity for a single set of market data.
+ <p>
+ This is the sensitivity of present value of the implied volatilities
+ used to calibrate the curves.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>trade</code> - the trade</dd>

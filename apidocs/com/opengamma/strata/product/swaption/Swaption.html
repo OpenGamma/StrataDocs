@@ -143,7 +143,8 @@ implements <a href="../Product.html" title="interface in com.opengamma.strata.pr
  <p>
  A swaption is a financial instrument that provides an option based on the future value of a swap.
  The option is European, exercised only on the exercise date.
- The underlying swap must be a single currency, Fixed-Ibor swap with a single Ibor index and no interpolated stubs.</div>
+ The underlying swap must be a single currency, Fixed-Float swap with a single index.
+ The index may be Ibor or Overnight.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../serialized-form.html#com.opengamma.strata.product.swaption.Swaption">Serialized Form</a></dd>
@@ -255,7 +256,7 @@ implements <a href="../Product.html" title="interface in com.opengamma.strata.pr
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a></code></td>
+<td class="colFirst"><code><a href="../../basics/index/RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndex()">getIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the index of the underlying swap.</div>
@@ -416,11 +417,11 @@ implements <a href="../Product.html" title="interface in com.opengamma.strata.pr
 <ul class="blockList">
 <li class="blockList">
 <h4>getIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../basics/index/IborIndex.html" title="interface in com.opengamma.strata.basics.index">IborIndex</a>&nbsp;getIndex()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/index/RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a>&nbsp;getIndex()</pre>
 <div class="block">Gets the index of the underlying swap.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the Ibor index of the underlying swap</dd>
+<dd>the index of the underlying swap</dd>
 </dl>
 </li>
 </ul>

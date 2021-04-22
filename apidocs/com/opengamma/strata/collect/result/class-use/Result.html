@@ -278,6 +278,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns the results for a target and column name, casting the result to a known type.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;C&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="../../../data/scenario/ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;C&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#getScenarios(int,int,java.lang.Class)">getScenarios</a></span>&#8203;(int&nbsp;rowIndex,
+            int&nbsp;columnIndex,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;componentType)</code></th>
+<td class="colLast">
+<div class="block">Returns multi-scenario results for a target and column index, casting the result to a known type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;C&gt;&nbsp;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="../../../data/scenario/ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;C&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#getScenarios(int,com.opengamma.strata.calc.ColumnName,java.lang.Class)">getScenarios</a></span>&#8203;(int&nbsp;rowIndex,
+            <a href="../../../calc/ColumnName.html" title="class in com.opengamma.strata.calc">ColumnName</a>&nbsp;columnName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;componentType)</code></th>
+<td class="colLast">
+<div class="block">Returns multi-scenario results for a target and column name, casting the result to a known type.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -311,6 +329,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>&lt;C&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;<a href="../../../data/scenario/ScenarioArray.html" title="interface in com.opengamma.strata.data.scenario">ScenarioArray</a>&lt;C&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#columnResultsScenarios(int,java.lang.Class)">columnResultsScenarios</a></span>&#8203;(int&nbsp;columnIndex,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;componentType)</code></th>
+<td class="colLast">
+<div class="block">Returns a stream of multi-scenario results for a single column by column index.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Results.</span><code><span class="memberNameLink"><a href="../../../calc/Results.html#getCells()">getCells</a></span>()</code></th>
 <td class="colLast">

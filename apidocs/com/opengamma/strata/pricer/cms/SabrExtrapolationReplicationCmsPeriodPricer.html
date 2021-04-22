@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,6 +197,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCutOffStrike()">getCutOffStrike</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the cut-off strike.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMu()">getMu</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the tail thickness parameter.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../swap/DiscountingSwapProductPricer.html" title="class in com.opengamma.strata.pricer.swap">DiscountingSwapProductPricer</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSwapPricer()">getSwapPricer</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the underlying swap pricer.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="SabrExtrapolationReplicationCmsPeriodPricer.html" title="class in com.opengamma.strata.pricer.cms">SabrExtrapolationReplicationCmsPeriodPricer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(double,double)">of</a></span>&#8203;(double&nbsp;cutOffStrike,
   double&nbsp;mu)</code></th>
@@ -204,7 +225,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Obtains the pricer with default swap pricer.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="SabrExtrapolationReplicationCmsPeriodPricer.html" title="class in com.opengamma.strata.pricer.cms">SabrExtrapolationReplicationCmsPeriodPricer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.pricer.swap.DiscountingSwapProductPricer,double,double)">of</a></span>&#8203;(<a href="../swap/DiscountingSwapProductPricer.html" title="class in com.opengamma.strata.pricer.swap">DiscountingSwapProductPricer</a>&nbsp;swapPricer,
   double&nbsp;cutOffStrike,
@@ -213,7 +234,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Obtains the pricer.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValue(com.opengamma.strata.product.cms.CmsPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValue</a></span>&#8203;(<a href="../../product/cms/CmsPeriod.html" title="class in com.opengamma.strata.product.cms">CmsPeriod</a>&nbsp;cmsPeriod,
             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
@@ -222,7 +243,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Computes the present value by replication in SABR framework with extrapolation on the right.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityModelParamsSabr(com.opengamma.strata.product.cms.CmsPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityModelParamsSabr</a></span>&#8203;(<a href="../../product/cms/CmsPeriod.html" title="class in com.opengamma.strata.product.cms">CmsPeriod</a>&nbsp;cmsPeriod,
                                       <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
@@ -231,7 +252,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Computes the present value sensitivity to SABR parameters by replication in SABR framework with extrapolation on the right.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityRates(com.opengamma.strata.product.cms.CmsPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityRates</a></span>&#8203;(<a href="../../product/cms/CmsPeriod.html" title="class in com.opengamma.strata.product.cms">CmsPeriod</a>&nbsp;cmsPeriod,
                             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
@@ -240,7 +261,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Computes the present value curve sensitivity by replication in SABR framework with extrapolation on the right.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityStrike(com.opengamma.strata.product.cms.CmsPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityStrike</a></span>&#8203;(<a href="../../product/cms/CmsPeriod.html" title="class in com.opengamma.strata.product.cms">CmsPeriod</a>&nbsp;cmsPeriod,
                              <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;provider,
@@ -308,6 +329,48 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>mu</code> - the tail thickness</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the pricer</dd>
+</dl>
+</li>
+</ul>
+<a id="getSwapPricer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSwapPricer</h4>
+<pre class="methodSignature">public&nbsp;<a href="../swap/DiscountingSwapProductPricer.html" title="class in com.opengamma.strata.pricer.swap">DiscountingSwapProductPricer</a>&nbsp;getSwapPricer()</pre>
+<div class="block">Returns the underlying swap pricer.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the pricer</dd>
+</dl>
+</li>
+</ul>
+<a id="getMu()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMu</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getMu()</pre>
+<div class="block">Returns the tail thickness parameter.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the parameter</dd>
+</dl>
+</li>
+</ul>
+<a id="getCutOffStrike()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCutOffStrike</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getCutOffStrike()</pre>
+<div class="block">Returns the cut-off strike.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the strike</dd>
 </dl>
 </li>
 </ul>
