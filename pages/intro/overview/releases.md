@@ -7,6 +7,20 @@ Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
 
+## Strata v2.10.0
+
+* 22 April 2021
+
+This release contains over 15 [fixed issues](https://github.com/OpenGamma/Strata/milestone/29?closed=1).
+
+* Change Swaption to support Overnight index (source and binary incompatible)
+ [#2305](https://github.com/OpenGamma/Strata/issues/2305)
+* Add vega to FX option
+ [#2292](https://github.com/OpenGamma/Strata/issues/2292)
+* Update Japanese holiday calendar
+ [#2293](https://github.com/OpenGamma/Strata/issues/2293)
+
+
 ## Strata v2.9.0
 
 * 2 February 2021
