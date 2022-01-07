@@ -9,7 +9,7 @@ To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obt
 
 ## Strata v2.11.0
 
-* 7 January 2021
+* 7 January 2022
 
 This release contains over 70 [fixed issues](https://github.com/OpenGamma/Strata/milestone/30?closed=1).
 
