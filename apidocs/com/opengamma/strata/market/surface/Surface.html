@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":18,"i5":18,"i6":6,"i7":6,"i8":18,"i9":6,"i10":18,"i11":6,"i12":18};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":6,"i5":18,"i6":18,"i7":6,"i8":6,"i9":18,"i10":6,"i11":18,"i12":6,"i13":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -193,34 +193,42 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the surface.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMetadata()">getMetadata</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface metadata.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="SurfaceName.html" title="class in com.opengamma.strata.market.surface">SurfaceName</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface name.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default <a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withMetadata(com.opengamma.strata.market.surface.SurfaceMetadata)">withMetadata</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">Returns a new surface with the specified metadata.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -228,14 +236,14 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>default <a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
 <div class="block">Returns a perturbed copy of the data.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValue(double,double)">zValue</a></span>&#8203;(double&nbsp;x,
       double&nbsp;y)</code></th>
@@ -243,14 +251,14 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <div class="block">Computes the z-value for the specified x-value and y-value.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>default double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValue(com.opengamma.strata.collect.tuple.DoublesPair)">zValue</a></span>&#8203;(<a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>&nbsp;xyPair)</code></th>
 <td class="colLast">
 <div class="block">Computes the z-value for the specified pair of x-value and y-value.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../param/UnitParameterSensitivity.html" title="class in com.opengamma.strata.market.param">UnitParameterSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValueParameterSensitivity(double,double)">zValueParameterSensitivity</a></span>&#8203;(double&nbsp;x,
                           double&nbsp;y)</code></th>
@@ -258,7 +266,7 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <div class="block">Computes the sensitivity of the z-value with respect to the surface parameters.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>default <a href="../param/UnitParameterSensitivity.html" title="class in com.opengamma.strata.market.param">UnitParameterSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValueParameterSensitivity(com.opengamma.strata.collect.tuple.DoublesPair)">zValueParameterSensitivity</a></span>&#8203;(<a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>&nbsp;xyPair)</code></th>
 <td class="colLast">
@@ -506,6 +514,33 @@ extends <a href="../param/ParameterizedData.html" title="interface in com.openga
 <dd>the sensitivity at the x/y/ point</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the sensitivity cannot be calculated</dd>
+</dl>
+</li>
+</ul>
+<a id="firstPartialDerivatives(double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>firstPartialDerivatives</h4>
+<pre class="methodSignature"><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;firstPartialDerivatives&#8203;(double&nbsp;x,
+                                         double&nbsp;y)</pre>
+<div class="block">Computes the partial derivatives of the surface.
+ <p>
+ The first derivatives are <code>dz/dx and dz/dy</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to x
+ <li>[1] derivative with respect to y
+ </ul></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - the x-value at which the partial derivative is taken</dd>
+<dd><code>y</code> - the y-value at which the partial derivative is taken</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the derivative cannot be calculated</dd>
 </dl>
 </li>
 </ul>

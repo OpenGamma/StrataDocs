@@ -139,9 +139,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">UncoupledParameterTransforms</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
 implements <a href="NonLinearParameterTransforms.html" title="interface in com.opengamma.strata.math.impl.minimization">NonLinearParameterTransforms</a></pre>
-<div class="block">For a set of <i>n</i> function parameters, this takes <i>n</i> ParameterLimitsTransform (which can be the NullTransform which does NOT transform the parameter) which transform
- a constrained function parameter (e.g. must be between -1 and 1) to a unconstrained fit parameter. It also takes a BitSet (of length <i>n</i>) with an element set to <b>true</b> if
- that parameter is fixed - a set of <i>n</i> startValues must also be provided, with only those corresponding to fixed parameters being used (i.e. the parameter is fixed at the startValue).
+<div class="block">For a set of <i>n</i> function parameters, this takes <i>n</i> ParameterLimitsTransform
+ (which can be the NullTransform which does NOT transform the parameter) which transform
+ a constrained function parameter (e.g. must be between -1 and 1) to a unconstrained fit parameter.
+ It also takes a BitSet (of length <i>n</i>) with an element set to <b>true</b> if
+ that parameter is fixed - a set of <i>n</i> startValues must also be provided, with only those corresponding
+ to fixed parameters being used (i.e. the parameter is fixed at the startValue).
  The purpose is to allow an optimiser to work with unconstrained parameters without modifying the function that one wishes to optimise.</div>
 </li>
 </ul>
@@ -218,7 +221,8 @@ implements <a href="NonLinearParameterTransforms.html" title="interface in com.o
 <td class="colFirst"><code><a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inverseTransform(com.opengamma.strata.collect.array.DoubleArray)">inverseTransform</a></span>&#8203;(<a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;fittingParameters)</code></th>
 <td class="colLast">
-<div class="block">Transforms from a set of unconstrained fitting parameters to a (possibly larger) set of function parameters (some of which may have constrained range and/or be fixed).</div>
+<div class="block">Transforms from a set of unconstrained fitting parameters to a (possibly larger) set of function parameters
+  (some of which may have constrained range and/or be fixed).</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -273,7 +277,8 @@ implements <a href="NonLinearParameterTransforms.html" title="interface in com.o
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>startValues</code> - fixed parameter values (if no parameters are fixed this is completely ignored)</dd>
-<dd><code>transforms</code> - Array of ParameterLimitsTransform (which can be the NullTransform which does NOT transform the parameter) which transform
+<dd><code>transforms</code> - Array of ParameterLimitsTransform
+  (which can be the NullTransform which does NOT transform the parameter) which transform
    a constrained function parameter (e.g. must be between -1 and 1) to a unconstrained fit parameter.</dd>
 <dd><code>fixed</code> - BitSet with an element set to <b>true</b> if that parameter is fixed</dd>
 </dl>
@@ -347,7 +352,8 @@ implements <a href="NonLinearParameterTransforms.html" title="interface in com.o
 <li class="blockList">
 <h4>inverseTransform</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;inverseTransform&#8203;(<a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;fittingParameters)</pre>
-<div class="block">Transforms from a set of unconstrained fitting parameters to a (possibly larger) set of function parameters (some of which may have constrained range and/or be fixed).</div>
+<div class="block">Transforms from a set of unconstrained fitting parameters to a (possibly larger) set of function parameters
+  (some of which may have constrained range and/or be fixed).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="NonLinearParameterTransforms.html#inverseTransform(com.opengamma.strata.collect.array.DoubleArray)">inverseTransform</a></code>&nbsp;in interface&nbsp;<code><a href="NonLinearParameterTransforms.html" title="interface in com.opengamma.strata.math.impl.minimization">NonLinearParameterTransforms</a></code></dd>

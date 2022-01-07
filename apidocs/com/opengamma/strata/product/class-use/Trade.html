@@ -237,6 +237,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a> in <a href="../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a></h3>
 <table class="useSummary">
+<caption><span>Classes in <a href="../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> with type parameters of type <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../loader/csv/TradeCsvWriterPlugin.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvWriterPlugin</a>&lt;T extends <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Pluggable CSV trade writer.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Methods in <a href="../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> with type parameters of type <a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -316,6 +333,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Parses any kind of trade from CSV after standard matching.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxNdfTradeCsvPlugin.</span><code><span class="memberNameLink"><a href="../../loader/csv/FxNdfTradeCsvPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxSingleBarrierOptionTradeCsvPlugin.</span><code><span class="memberNameLink"><a href="../../loader/csv/FxSingleBarrierOptionTradeCsvPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IborCapFloorTradeCsvPlugin.</span><code><span class="memberNameLink"><a href="../../loader/csv/IborCapFloorTradeCsvPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SecurityTradeCsvPlugin.</span><code><span class="memberNameLink"><a href="../../loader/csv/SecurityTradeCsvPlugin.html#parseTrade(java.lang.Class,com.opengamma.strata.collect.io.CsvRow,java.util.List,com.opengamma.strata.product.TradeInfo,com.opengamma.strata.loader.csv.TradeCsvInfoResolver)">parseTrade</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;requiredJavaType,
+          <a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;baseRow,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&gt;&nbsp;additionalRows,
+          <a href="../TradeInfo.html" title="class in com.opengamma.strata.product">TradeInfo</a>&nbsp;info,
+          <a href="../../loader/csv/TradeCsvInfoResolver.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvInfoResolver</a>&nbsp;resolver)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</code></td>
@@ -874,6 +927,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../fx/FxOptionTrade.html" title="interface in com.opengamma.strata.product.fx">FxOptionTrade</a></span></code></th>
+<td class="colLast">
+<div class="block">A foreign exchange option trade such as a FxVanillaOptionTrade.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../fx/FxTrade.html" title="interface in com.opengamma.strata.product.fx">FxTrade</a></span></code></th>
 <td class="colLast">

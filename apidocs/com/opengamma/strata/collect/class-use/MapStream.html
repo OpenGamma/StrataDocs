@@ -171,7 +171,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;<a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="../MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#filter(java.util.function.BiFunction)">filter</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;? super <a href="../MapStream.html" title="type parameter in MapStream">V</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#filter(java.util.function.BiPredicate)">filter</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;? super <a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;? super <a href="../MapStream.html" title="type parameter in MapStream">V</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Filters the stream by applying the predicate function to each key and value.</div>
 </td>
@@ -238,9 +238,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;<a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../MapStream.html" title="type parameter in MapStream">V</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#groupingAndThen()">groupingAndThen</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a stream built from a map of the entries in the stream, grouped by key.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;A,&#8203;R&gt;<br><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;<a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;R&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#groupingAndThen(java.util.stream.Collector)">groupingAndThen</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;? super <a href="../MapStream.html" title="type parameter in MapStream">V</a>,&#8203;A,&#8203;R&gt;&nbsp;valueCollector)</code></th>
+<td class="colLast">
+<div class="block">Returns a stream built from a map of the entries in the stream, grouped by key.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;<a href="../MapStream.html" title="type parameter in MapStream">V</a>,&#8203;<a href="../MapStream.html" title="type parameter in MapStream">K</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#inverse()">inverse</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a stream where the keys and values are swapped.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;<a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;<a href="../MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#limit(long)">limit</a></span>&#8203;(long&nbsp;maxSize)</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;RK,&#8203;RV&gt;<br><a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;RK,&#8203;RV&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MapStream.</span><code><span class="memberNameLink"><a href="../MapStream.html#mapBoth(java.util.function.BiFunction)">mapBoth</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;? super <a href="../MapStream.html" title="type parameter in MapStream">K</a>,&#8203;? super <a href="../MapStream.html" title="type parameter in MapStream">V</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;RK,&#8203;RV&gt;&gt;&nbsp;mapper)</code></th>
+<td class="colLast">
+<div class="block">Transforms the entries in the stream by applying a mapper function to each key and value.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../MapStream.html" title="class in com.opengamma.strata.collect">MapStream</a>&lt;R,&#8203;<a href="../MapStream.html" title="type parameter in MapStream">V</a>&gt;</code></td>

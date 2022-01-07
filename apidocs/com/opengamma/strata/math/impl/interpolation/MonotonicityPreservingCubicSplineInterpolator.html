@@ -140,10 +140,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">MonotonicityPreservingCubicSplineInterpolator</span>
 extends <a href="PiecewisePolynomialInterpolator.html" title="class in com.opengamma.strata.math.impl.interpolation">PiecewisePolynomialInterpolator</a></pre>
 <div class="block">Filter for local monotonicity of cubic spline interpolation based on 
- R. L. Dougherty, A. Edelman, and J. M. Hyman, "Nonnegativity-, Monotonicity-, or Convexity-Preserving Cubic and Quintic Hermite Interpolation" 
+ R. L. Dougherty, A. Edelman, and J. M. Hyman, "Nonnegativity-, Monotonicity-, or Convexity-Preserving Cubic
+ and Quintic Hermite Interpolation" 
  Mathematics Of Computation, v. 52, n. 186, April 1989, pp. 471-494. 
- 
- First, interpolant is computed by another cubic interpolation method. Then the first derivatives are modified such that local monotonicity conditions are satisfied.</div>
+ <p>
+ First, interpolant is computed by another cubic interpolation method.
+ Then the first derivatives are modified such that local monotonicity conditions are satisfied.</div>
 </li>
 </ul>
 </div>
@@ -290,7 +292,8 @@ extends <a href="PiecewisePolynomialInterpolator.html" title="class in com.openg
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValues</code> - Y values of data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><a href="PiecewisePolynomialResult.html" title="class in com.opengamma.strata.math.impl.interpolation"><code>PiecewisePolynomialResult</code></a> containing knots, coefficients of piecewise polynomials, number of intervals, degree of polynomials, dimension of spline</dd>
+<dd><a href="PiecewisePolynomialResult.html" title="class in com.opengamma.strata.math.impl.interpolation"><code>PiecewisePolynomialResult</code></a> containing knots, coefficients of piecewise polynomials,
+  number of intervals, degree of polynomials, dimension of spline</dd>
 </dl>
 </li>
 </ul>
@@ -311,7 +314,8 @@ extends <a href="PiecewisePolynomialInterpolator.html" title="class in com.openg
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValuesMatrix</code> - Y values of data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Coefficient matrix whose i-th row vector is {a_n, a_{n-1}, ... } of f(x) = a_n * (x-x_i)^n + a_{n-1} * (x-x_i)^{n-1} +... for the i-th interval</dd>
+<dd>Coefficient matrix whose i-th row vector is {a_n, a_{n-1}, ... } 
+  of f(x) = a_n * (x-x_i)^n + a_{n-1} * (x-x_i)^{n-1} +... for the i-th interval</dd>
 </dl>
 </li>
 </ul>

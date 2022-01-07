@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -232,13 +232,30 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="IborCapletFloorletPeriodAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">IborCapletFloorletPeriodAmounts</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forwardRates(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider)">forwardRates</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
+            <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Calculates the forward rates for each caplet/floorlet of the Ibor cap/floor.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="../swap/DiscountingSwapLegPricer.html" title="class in com.opengamma.strata.pricer.swap">DiscountingSwapLegPricer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPayLegPricer()">getPayLegPricer</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the pay leg pricer.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="IborCapletFloorletPeriodAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">IborCapletFloorletPeriodAmounts</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#impliedVolatilities(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">impliedVolatilities</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
+                   <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                   <a href="IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the implied volatilities for each caplet/floorlet of the Ibor cap/floor.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValue(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -247,7 +264,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="IborCapletFloorletPeriodCurrencyAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">IborCapletFloorletPeriodCurrencyAmounts</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueCapletFloorletPeriods(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueCapletFloorletPeriods</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
+                                 <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                 <a href="IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value for each caplet/floorlet of the Ibor cap/floor product.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueDelta(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueDelta</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -256,7 +282,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value delta of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueGamma(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueGamma</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -265,7 +291,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value gamma of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
                                             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -274,7 +300,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value volatility sensitivity of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityRates(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityRates</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
                             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -283,7 +309,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value rates sensitivity of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueTheta(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueTheta</a></span>&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -398,6 +424,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>volatilities</code> - the volatilities</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the present value</dd>
+</dl>
+</li>
+</ul>
+<a id="presentValueCapletFloorletPeriods(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>presentValueCapletFloorletPeriods</h4>
+<pre class="methodSignature">public&nbsp;<a href="IborCapletFloorletPeriodCurrencyAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">IborCapletFloorletPeriodCurrencyAmounts</a>&nbsp;presentValueCapletFloorletPeriods&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
+                                                                                 <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                                                                 <a href="IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</pre>
+<div class="block">Calculates the present value for each caplet/floorlet of the Ibor cap/floor product.
+ <p>
+ The present value of each caplet/floorlet is the value on the valuation date.
+ The result is returned using the payment currency of the leg.
+ <p>
+ The present value will not be calculated for the pay leg if the product has one.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>capFloor</code> - the Ibor cap/floor product</dd>
+<dd><code>ratesProvider</code> - the rates provider</dd>
+<dd><code>volatilities</code> - the volatilities</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the present values</dd>
 </dl>
 </li>
 </ul>
@@ -545,7 +596,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a id="currentCash(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>currentCash</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../basics/currency/MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a>&nbsp;currentCash&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
@@ -559,6 +610,44 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>volatilities</code> - the volatilities</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the current cash</dd>
+</dl>
+</li>
+</ul>
+<a id="forwardRates(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forwardRates</h4>
+<pre class="methodSignature">public&nbsp;<a href="IborCapletFloorletPeriodAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">IborCapletFloorletPeriodAmounts</a>&nbsp;forwardRates&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
+                                                    <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</pre>
+<div class="block">Calculates the forward rates for each caplet/floorlet of the Ibor cap/floor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>capFloor</code> - the Ibor cap/floor</dd>
+<dd><code>ratesProvider</code> - the rates provider</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the forward rates</dd>
+</dl>
+</li>
+</ul>
+<a id="impliedVolatilities(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>impliedVolatilities</h4>
+<pre class="methodSignature">public&nbsp;<a href="IborCapletFloorletPeriodAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">IborCapletFloorletPeriodAmounts</a>&nbsp;impliedVolatilities&#8203;(<a href="../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
+                                                           <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                                           <a href="IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</pre>
+<div class="block">Calculates the implied volatilities for each caplet/floorlet of the Ibor cap/floor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>capFloor</code> - the Ibor cap/floor</dd>
+<dd><code>ratesProvider</code> - the rates provider</dd>
+<dd><code>volatilities</code> - the volatilities</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the implied volatilities</dd>
 </dl>
 </li>
 </ul>

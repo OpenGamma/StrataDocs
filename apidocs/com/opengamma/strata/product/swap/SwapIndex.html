@@ -136,8 +136,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 extends <a href="../../basics/index/Index.html" title="interface in com.opengamma.strata.basics.index">Index</a>, <a href="../../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></pre>
 <div class="block">A swap index.
  <p>
- Swap rates for CHF, EUR, GBP, JPY and USD are established by ISDA in co-operation with
- Reuters (now Thomson Reuters) and Intercapital Brokers (now ICAP plc). 
+ Swap rates for different currencies are published by several providers. The indices
+ can be related to IBOR-linked swaps or Overnight-linked swaps.
  Ref: https://quant.opengamma.io/Interest-Rate-Instruments-and-Market-Conventions.pdf
  <p>
  The most common implementations are provided in <a href="SwapIndices.html" title="class in com.opengamma.strata.product.swap"><code>SwapIndices</code></a>.
@@ -199,10 +199,10 @@ extends <a href="../../basics/index/Index.html" title="interface in com.opengamm
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="type/FixedIborSwapTemplate.html" title="class in com.opengamma.strata.product.swap.type">FixedIborSwapTemplate</a></code></td>
+<td class="colFirst"><code><a href="type/FixedFloatSwapTemplate.html" title="interface in com.opengamma.strata.product.swap.type">FixedFloatSwapTemplate</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTemplate()">getTemplate</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the template for creating Fixed-Ibor swap.</div>
+<div class="block">Gets the template for creating Fixed-Float swap.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -326,8 +326,8 @@ extends <a href="../../basics/index/Index.html" title="interface in com.opengamm
 <ul class="blockList">
 <li class="blockList">
 <h4>getTemplate</h4>
-<pre class="methodSignature"><a href="type/FixedIborSwapTemplate.html" title="class in com.opengamma.strata.product.swap.type">FixedIborSwapTemplate</a>&nbsp;getTemplate()</pre>
-<div class="block">Gets the template for creating Fixed-Ibor swap.</div>
+<pre class="methodSignature"><a href="type/FixedFloatSwapTemplate.html" title="interface in com.opengamma.strata.product.swap.type">FixedFloatSwapTemplate</a>&nbsp;getTemplate()</pre>
+<div class="block">Gets the template for creating Fixed-Float swap.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the template</dd>

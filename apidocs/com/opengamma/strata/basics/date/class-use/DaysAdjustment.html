@@ -220,6 +220,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Conventions and templates to aid the construction of rate swaps.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption</a></th>
+<td class="colLast">
+<div class="block">Entity objects describing options on swaps, known as swaptions.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -2142,13 +2148,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FloatRateSwapLegConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/FloatRateSwapLegConvention.html#getPaymentDateOffset()">getPaymentDateOffset</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the offset of the payment date from the base date.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborRateSwapLegConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/IborRateSwapLegConvention.html#getPaymentDateOffset()">getPaymentDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of payment from the base date,
  providing a default result if no override specified.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">OvernightRateSwapLegConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/OvernightRateSwapLegConvention.html#getPaymentDateOffset()">getPaymentDateOffset</a></span>()</code></th>
 <td class="colLast">
@@ -2156,63 +2169,63 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  providing a default result if no override specified.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableFixedIborSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableFixedIborSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableFixedInflationSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableFixedInflationSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableFixedOvernightSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableFixedOvernightSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableIborIborSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableIborIborSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableOvernightIborSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableOvernightIborSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableThreeLegBasisSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableThreeLegBasisSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableXCcyIborIborSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableXCcyIborIborSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SingleCurrencySwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/SingleCurrencySwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the spot value date from the trade date.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">XCcyIborIborSwapConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/XCcyIborIborSwapConvention.html#getSpotDateOffset()">getSpotDateOffset</a></span>()</code></th>
 <td class="colLast">
@@ -2476,6 +2489,94 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableXCcyIborIborSwapConvention.Builder.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/ImmutableXCcyIborIborSwapConvention.Builder.html#spotDateOffset(com.opengamma.strata.basics.date.DaysAdjustment)">spotDateOffset</a></span>&#8203;(<a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&nbsp;spotDateOffset)</code></th>
 <td class="colLast">
 <div class="block">Sets the offset of the spot value date from the trade date.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.swaption">
+<!--   -->
+</a>
+<h3>Uses of <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a> in <a href="../../../product/swaption/package-summary.html">com.opengamma.strata.product.swaption</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/swaption/package-summary.html">com.opengamma.strata.product.swaption</a> that return <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionExercise.</span><code><span class="memberNameLink"><a href="../../../product/swaption/SwaptionExercise.html#getSwapStartDateOffset()">getSwapStartDateOffset</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the offset to the swap start date.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/swaption/package-summary.html">com.opengamma.strata.product.swaption</a> that return types with arguments of type <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionExercise.Meta.</span><code><span class="memberNameLink"><a href="../../../product/swaption/SwaptionExercise.Meta.html#swapStartDateOffset()">swapStartDateOffset</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>swapStartDateOffset</code> property.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/swaption/package-summary.html">com.opengamma.strata.product.swaption</a> with parameters of type <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../product/swaption/SwaptionExercise.html" title="class in com.opengamma.strata.product.swaption">SwaptionExercise</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionExercise.</span><code><span class="memberNameLink"><a href="../../../product/swaption/SwaptionExercise.html#ofAmerican(java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.basics.date.BusinessDayAdjustment,com.opengamma.strata.basics.date.DaysAdjustment)">ofAmerican</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;earliestExerciseDate,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;latestExerciseDate,
+          <a href="../BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;dateAdjustment,
+          <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&nbsp;swapStartDateOffset)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance for an American swaption.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../product/swaption/SwaptionExercise.html" title="class in com.opengamma.strata.product.swaption">SwaptionExercise</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionExercise.</span><code><span class="memberNameLink"><a href="../../../product/swaption/SwaptionExercise.html#ofBermudan(com.opengamma.strata.basics.date.AdjustableDates,com.opengamma.strata.basics.date.DaysAdjustment)">ofBermudan</a></span>&#8203;(<a href="../AdjustableDates.html" title="class in com.opengamma.strata.basics.date">AdjustableDates</a>&nbsp;exerciseDates,
+          <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&nbsp;swapStartDateOffset)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance for a Bermudan swaption.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../product/swaption/SwaptionExercise.html" title="class in com.opengamma.strata.product.swaption">SwaptionExercise</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionExercise.</span><code><span class="memberNameLink"><a href="../../../product/swaption/SwaptionExercise.html#ofBermudan(java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.basics.date.BusinessDayAdjustment,com.opengamma.strata.basics.schedule.Frequency,com.opengamma.strata.basics.date.DaysAdjustment)">ofBermudan</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;earliestExerciseDate,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;latestExerciseDate,
+          <a href="../BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;dateAdjustment,
+          <a href="../../schedule/Frequency.html" title="class in com.opengamma.strata.basics.schedule">Frequency</a>&nbsp;frequency,
+          <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&nbsp;swapStartDateOffset)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance for a Bermudan swaption where the dates are calculated.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../product/swaption/SwaptionExercise.html" title="class in com.opengamma.strata.product.swaption">SwaptionExercise</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SwaptionExercise.</span><code><span class="memberNameLink"><a href="../../../product/swaption/SwaptionExercise.html#ofEuropean(com.opengamma.strata.basics.date.AdjustableDate,com.opengamma.strata.basics.date.DaysAdjustment)">ofEuropean</a></span>&#8203;(<a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&nbsp;exerciseDate,
+          <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a>&nbsp;swapStartDateOffset)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance for a European swaption.</div>
 </td>
 </tr>
 </tbody>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":9,"i25":10,"i26":9,"i27":9,"i28":10,"i29":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":9,"i25":10,"i26":9,"i27":9,"i28":10,"i29":10,"i30":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -469,13 +469,20 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </td>
 </tr>
 <tr id="i28" class="altColor">
+<td class="colFirst"><code><a href="PeriodicSchedule.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#replaceStartDate(java.time.LocalDate)">replaceStartDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;adjustedStartDate)</code></th>
+<td class="colLast">
+<div class="block">Returns an instance based on this schedule with the start date replaced.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="PeriodicSchedule.Builder.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -850,6 +857,33 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 </dl>
 </li>
 </ul>
+<a id="replaceStartDate(java.time.LocalDate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>replaceStartDate</h4>
+<pre class="methodSignature">public&nbsp;<a href="PeriodicSchedule.html" title="class in com.opengamma.strata.basics.schedule">PeriodicSchedule</a>&nbsp;replaceStartDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;adjustedStartDate)</pre>
+<div class="block">Returns an instance based on this schedule with the start date replaced.
+ <p>
+ This returns a new instance with the schedule altered to have the specified start date.
+ The specified date is considered to be adjusted, thus <code>startDateBusinessDayAdjustment</code> is set to 'None'.
+ The <code>firstRegularStartDate</code> and <code>overrideStartDate</code> fields are also removed.
+ <p>
+ The stub convention is typically altered to be 'SmartInitial'.
+ The algorithm retains the 'ShortInitial' and 'LongInitial' conventions as is.
+ The algorithm examines "Final" conventions to try and set the <code>lastRegularEndDate</code>
+ via schedule generation allowing the stub convention to become 'SmartInitial'.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>adjustedStartDate</code> - the proposed start date, which is considered to be adjusted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a schedule with the proposed start date</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the schedule start date cannot be replaced with the proposed start date</dd>
+</dl>
+</li>
+</ul>
 <a id="meta()">
 <!--   -->
 </a>
@@ -1086,7 +1120,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  This is used to identify the boundary date between the initial stub and the first regular schedule period.
  <p>
  This is an unadjusted date, and as such it might not be a valid business day.
- This date must be on or after 'startDate'.
+ This date must be on or after 'startDate' and on or before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to determine the schedule.
  If not present, then the overall schedule start date will be used instead, resulting in no initial stub.</div>
@@ -1108,8 +1142,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  This is used to identify the boundary date between the last regular schedule period and the final stub.
  <p>
  This is an unadjusted date, and as such it might not be a valid business day.
- This date must be after 'startDate' and on or after 'firstRegularStartDate'.
- This date must be on or before 'endDate'.
+ This date must be one or after 'startDate', on or after 'firstRegularStartDate' and on or before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to determine the schedule.
  If not present, then the overall schedule end date will be used instead, resulting in no final stub.</div>
@@ -1137,7 +1170,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  then the override will be used when generating regular periods.
  <p>
  If set, it should be different to the start date, although this is not validated.
- Validation does check that it is before the 'firstRegularStartDate'.
+ Validation does check that it is on or before 'firstRegularStartDate' and 'lastRegularEndDate',
+ and before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to override the start date
  of the first generated schedule period.

@@ -139,8 +139,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">BicubicSplineInterpolator</span>
 extends <a href="PiecewisePolynomialInterpolator2D.html" title="class in com.opengamma.strata.math.impl.interpolation">PiecewisePolynomialInterpolator2D</a></pre>
-<div class="block">Given a set of data (x0Values_i, x1Values_j, yValues_{ij}), derive the piecewise bicubic function, f(x0,x1) = sum_{i=0}^{3} sum_{j=0}^{3} coefMat_{ij} (x0-x0Values_i)^{3-i} (x1-x1Values_j)^{3-j},
-  for the region x0Values_i < x0 < x0Values_{i+1}, x1Values_j < x1 < x1Values_{j+1}  such that f(x0Values_a, x1Values_b) = yValues_{ab} where a={i,i+1}, b={j,j+1}. 
+<div class="block">Given a set of data (x0Values_i, x1Values_j, yValues_{ij}), derive the piecewise bicubic function,
+  f(x0,x1) = sum_{i=0}^{3} sum_{j=0}^{3} coefMat_{ij} (x0-x0Values_i)^{3-i} (x1-x1Values_j)^{3-j},
+  for the region x0Values_i < x0 < x0Values_{i+1}, x1Values_j < x1 < x1Values_{j+1}  such that
+  f(x0Values_a, x1Values_b) = yValues_{ab} where a={i,i+1}, b={j,j+1}. 
   1D piecewise polynomial interpolation methods are called to determine first derivatives and cross derivative at data points
   Note that the value of the cross derivative at {ij} is not "accurate" if yValues_{ij} = 0.</div>
 </li>

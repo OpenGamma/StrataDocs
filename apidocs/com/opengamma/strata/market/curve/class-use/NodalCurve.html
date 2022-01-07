@@ -145,12 +145,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../HybridNodalCurve.html" title="class in com.opengamma.strata.market.curve">HybridNodalCurve</a></span></code></th>
+<td class="colLast">
+<div class="block">A hybrid curve which combines two underlying nodal curves,
+ allowing different interpolators to be used for different parts of the curve.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../InflationNodalCurve.html" title="class in com.opengamma.strata.market.curve">InflationNodalCurve</a></span></code></th>
 <td class="colLast">
 <div class="block">Curve specifically designed for inflation, with features for seasonality and initial point.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../InterpolatedNodalCurve.html" title="class in com.opengamma.strata.market.curve">InterpolatedNodalCurve</a></span></code></th>
 <td class="colLast">
@@ -180,6 +188,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
      <a href="../CurveMetadata.html" title="interface in com.opengamma.strata.market.curve">CurveMetadata</a>&nbsp;metadata,
      <a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;parameters)</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HybridNodalCurve.</span><code><span class="memberNameLink"><a href="../HybridNodalCurve.html#getLeftCurve()">getLeftCurve</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the left nodal curve.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HybridNodalCurve.</span><code><span class="memberNameLink"><a href="../HybridNodalCurve.html#getRightCurve()">getRightCurve</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the right nodal curve.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a></code></td>
@@ -240,6 +262,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
+<tr class="altColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HybridNodalCurve.Meta.</span><code><span class="memberNameLink"><a href="../HybridNodalCurve.Meta.html#leftCurve()">leftCurve</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>leftCurve</code> property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HybridNodalCurve.Meta.</span><code><span class="memberNameLink"><a href="../HybridNodalCurve.Meta.html#rightCurve()">rightCurve</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>rightCurve</code> property.</div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">InflationNodalCurve.Meta.</span><code><span class="memberNameLink"><a href="../InflationNodalCurve.Meta.html#underlying()">underlying</a></span>()</code></th>

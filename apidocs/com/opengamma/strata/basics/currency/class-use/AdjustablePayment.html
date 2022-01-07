@@ -113,42 +113,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.loader.csv">com.opengamma.strata.loader.csv</a></th>
+<td class="colLast">
+<div class="block">Loader that reads market data from CSV files.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.bond">com.opengamma.strata.product.bond</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing bonds.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.capfloor">com.opengamma.strata.product.capfloor</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Ibor cap/floor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.cms">com.opengamma.strata.product.cms</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Constant Maturity Swap (CMS) or CMS cap/floor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.credit">com.opengamma.strata.product.credit</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Credit Default Swap (CDS) and CDS index.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.credit.type">com.opengamma.strata.product.credit.type</a></th>
 <td class="colLast">
 <div class="block">Conventions and templates to aid the construction of credit instruments.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.fxopt">com.opengamma.strata.product.fxopt</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options in the foreign exchange market.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options on swaps, known as swaptions.</div>
@@ -271,6 +277,116 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>org.joda.beans.BeanBuilder&lt;? extends <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AdjustablePayment.Meta.</span><code><span class="memberNameLink"><a href="../AdjustablePayment.Meta.html#builder()">builder</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.loader.csv">
+<!--   -->
+</a>
+<h3>Uses of <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a> in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> that return <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">parseAdjustablePayment</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Parses an adjustable payment.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#parsePremiumFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">parsePremiumFromDefaultFields</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
+<td class="colLast">
+<div class="block">Parses the premium using the default premium fields.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> that return types with arguments of type <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">tryParseAdjustablePayment</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing an adjustable payment, defaulting the AdjustableDate to no BusinessDayAdjustment.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">tryParseAdjustablePayment</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing an adjustable payment using the mentioned fields.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvLoaderUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvLoaderUtils.html#tryParsePremiumFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">tryParsePremiumFromDefaultFields</a></span>&#8203;(<a href="../../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing the premium using the default premium fields.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> with parameters of type <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvWriterUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvWriterUtils.html#writeAdjustablePayment(com.opengamma.strata.collect.io.CsvOutput.CsvRowOutputWithHeaders,com.opengamma.strata.basics.currency.AdjustablePayment,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">writeAdjustablePayment</a></span>&#8203;(<a href="../../../collect/io/CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io">CsvOutput.CsvRowOutputWithHeaders</a>&nbsp;csv,
+                      <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&nbsp;adjustablePayment,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateConventionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateCalendarField)</code></th>
+<td class="colLast">
+<div class="block">Writes an AdjustablePayment object to CSV</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvWriterUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvWriterUtils.html#writePremiumFields(com.opengamma.strata.collect.io.CsvOutput.CsvRowOutputWithHeaders,com.opengamma.strata.basics.currency.AdjustablePayment)">writePremiumFields</a></span>&#8203;(<a href="../../../collect/io/CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io">CsvOutput.CsvRowOutputWithHeaders</a>&nbsp;csv,
+                  <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&nbsp;premium)</code></th>
+<td class="colLast">
+<div class="block">Writes an AdjustablePayment object to CSV</div>
+</td>
 </tr>
 </tbody>
 </table>

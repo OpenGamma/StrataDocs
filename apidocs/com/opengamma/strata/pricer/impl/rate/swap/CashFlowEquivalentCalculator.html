@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -175,13 +175,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cashFlowEquivalentAndSensitivityOnLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentAndSensitivityOnLeg</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;onLeg,
+                                     <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;multicurve)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of and sensitivity overnight leg.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cashFlowEquivalentAndSensitivitySwap(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentAndSensitivitySwap</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                                     <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
 <td class="colLast">
 <div class="block">Computes cash flow equivalent and sensitivity of swap.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cashFlowEquivalentFixedLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentFixedLeg</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;fixedLeg,
                           <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
@@ -189,7 +197,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Computes cash flow equivalent of fixed leg.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cashFlowEquivalentIborLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentIborLeg</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;iborLeg,
                          <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
@@ -197,12 +205,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Computes cash flow equivalent of Ibor leg.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cashFlowEquivalentOnLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentOnLeg</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;onLeg,
+                       <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;multicurve)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of overnight leg.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cashFlowEquivalentSwap(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentSwap</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                       <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
 <td class="colLast">
 <div class="block">Computes cash flow equivalent of swap.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#normalize(com.opengamma.strata.product.swap.ResolvedSwapLeg)">normalize</a></span>&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;input)</code></th>
+<td class="colLast">
+<div class="block">Extract the payments from the <a href="../../../../product/swap/NotionalExchange.html" title="class in com.opengamma.strata.product.swap"><code>NotionalExchange</code></a> in the SwapLeg.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#normalize(java.util.List)">normalize</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>&gt;&nbsp;input)</code></th>
+<td class="colLast">
+<div class="block">Generate a new payment list with the dates sorted and the amounts of elements with same payment date compressed.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#normalize(java.util.Map)">normalize</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;input)</code></th>
+<td class="colLast">
+<div class="block">Generate a new map with each payment date unique and the amounts and sensitivities of elements 
+ with same payment date compressed.</div>
 </td>
 </tr>
 </table>
@@ -295,6 +333,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
+<a id="cashFlowEquivalentOnLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cashFlowEquivalentOnLeg</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;cashFlowEquivalentOnLeg&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;onLeg,
+                                                      <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;multicurve)</pre>
+<div class="block">Computes cash flow equivalent of overnight leg.
+ <p>
+ Each payment period should contain one accrual period of type <a href="../../../../product/rate/OvernightCompoundedRateComputation.html" title="class in com.opengamma.strata.product.rate"><code>OvernightCompoundedRateComputation</code></a>.
+ When the payment date is not equal to the end composition date, the start and end cashflow equivalent are
+ adjusted by the ratio of discount factors between the payment date and the end date.
+ <p>
+ The return type is <code>ResolvedSwapLeg</code> in which individual payments are
+ represented in terms of <code>NotionalExchange</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>onLeg</code> - the overnight leg</dd>
+<dd><code>multicurve</code> - the multi-curve rates provider</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the cash flow equivalent</dd>
+</dl>
+</li>
+</ul>
 <a id="cashFlowEquivalentAndSensitivitySwap(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">
 <!--   -->
 </a>
@@ -340,7 +403,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a id="cashFlowEquivalentAndSensitivityFixedLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>cashFlowEquivalentAndSensitivityFixedLeg</h4>
 <pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;cashFlowEquivalentAndSensitivityFixedLeg&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;fixedLeg,
@@ -354,6 +417,86 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>ratesProvider</code> - the rates provider</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the cash flow equivalent and sensitivity</dd>
+</dl>
+</li>
+</ul>
+<a id="cashFlowEquivalentAndSensitivityOnLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cashFlowEquivalentAndSensitivityOnLeg</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;cashFlowEquivalentAndSensitivityOnLeg&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;onLeg,
+                                                                                                        <a href="../../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;multicurve)</pre>
+<div class="block">Computes cash flow equivalent of and sensitivity overnight leg.
+ <p>
+ Each payment period should contain one accrual period of type <a href="../../../../product/rate/OvernightCompoundedRateComputation.html" title="class in com.opengamma.strata.product.rate"><code>OvernightCompoundedRateComputation</code></a>.
+ When the payment date is not equal to the end composition date, the start and end cashflow equivalent are
+ adjusted by the ratio of discount factors between the payment date and the end date.
+ <p>
+ The return type is a map of <code>NotionalExchange</code> and <code>PointSensitivityBuilder</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>onLeg</code> - the overnight leg</dd>
+<dd><code>multicurve</code> - the multi-curve rates provider</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the cash flow equivalent</dd>
+</dl>
+</li>
+</ul>
+<a id="normalize(com.opengamma.strata.product.swap.ResolvedSwapLeg)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>normalize</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>&gt;&nbsp;normalize&#8203;(<a href="../../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;input)</pre>
+<div class="block">Extract the payments from the <a href="../../../../product/swap/NotionalExchange.html" title="class in com.opengamma.strata.product.swap"><code>NotionalExchange</code></a> in the SwapLeg.
+ Generate a list with the dates sorted and the amounts of elements with same payment date compressed.
+ <p>
+ The original SwapLeg is unchanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the starting swap leg</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the normalized list</dd>
+</dl>
+</li>
+</ul>
+<a id="normalize(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>normalize</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>&gt;&nbsp;normalize&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>&gt;&nbsp;input)</pre>
+<div class="block">Generate a new payment list with the dates sorted and the amounts of elements with same payment date compressed.
+ <p>
+ The original list is unchanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the starting list</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the normalized list</dd>
+</dl>
+</li>
+</ul>
+<a id="normalize(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>normalize</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;normalize&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;input)</pre>
+<div class="block">Generate a new map with each payment date unique and the amounts and sensitivities of elements 
+ with same payment date compressed.
+ <p>
+ The original map is unchanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the starting map</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the normalized map</dd>
 </dl>
 </li>
 </ul>

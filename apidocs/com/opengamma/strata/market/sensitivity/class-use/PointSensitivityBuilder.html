@@ -1272,10 +1272,44 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentAndSensitivityOnLeg(com.opengamma.strata.product.swap.ResolvedSwapLeg,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentAndSensitivityOnLeg</a></span>&#8203;(<a href="../../../product/swap/ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a>&nbsp;onLeg,
+                                     <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;multicurve)</code></th>
+<td class="colLast">
+<div class="block">Computes cash flow equivalent of and sensitivity overnight leg.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#cashFlowEquivalentAndSensitivitySwap(com.opengamma.strata.product.swap.ResolvedSwap,com.opengamma.strata.pricer.rate.RatesProvider)">cashFlowEquivalentAndSensitivitySwap</a></span>&#8203;(<a href="../../../product/swap/ResolvedSwap.html" title="class in com.opengamma.strata.product.swap">ResolvedSwap</a>&nbsp;swap,
                                     <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
 <td class="colLast">
 <div class="block">Computes cash flow equivalent and sensitivity of swap.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#normalize(java.util.Map)">normalize</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;input)</code></th>
+<td class="colLast">
+<div class="block">Generate a new map with each payment date unique and the amounts and sensitivities of elements 
+ with same payment date compressed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Method parameters in <a href="../../../pricer/impl/rate/swap/package-summary.html">com.opengamma.strata.pricer.impl.rate.swap</a> with type arguments of type <a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CashFlowEquivalentCalculator.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/rate/swap/CashFlowEquivalentCalculator.html#normalize(java.util.Map)">normalize</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../../basics/currency/Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a>,&#8203;<a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&gt;&nbsp;input)</code></th>
+<td class="colLast">
+<div class="block">Generate a new map with each payment date unique and the amounts and sensitivities of elements 
+ with same payment date compressed.</div>
 </td>
 </tr>
 </tbody>

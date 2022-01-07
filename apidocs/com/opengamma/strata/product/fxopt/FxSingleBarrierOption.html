@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":9,"i11":9,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -133,25 +133,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOption</a>&gt;</code>, <code><a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a></code>, <code><a href="../Product.html" title="interface in com.opengamma.strata.product">Product</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOption</a>&gt;</code>, <code><a href="../fx/FxOptionProduct.html" title="interface in com.opengamma.strata.product.fx">FxOptionProduct</a></code>, <code><a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a></code>, <code><a href="../Product.html" title="interface in com.opengamma.strata.product">Product</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">FxSingleBarrierOption</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a>, <a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOption</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
+implements <a href="../fx/FxOptionProduct.html" title="interface in com.opengamma.strata.product.fx">FxOptionProduct</a>, <a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOption</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">FX (European) single barrier option.
  <p>
- An FX option is a financial instrument that provides an option to exchange two currencies at a specified future time 
+ An FX option is a financial instrument that provides an option to exchange two currencies at a specified future time
  only when barrier event occurs (knock-in option) or does not occur (knock-out option).
  <p>
- Depending on the barrier defined in <a href="../option/Barrier.html" title="interface in com.opengamma.strata.product.option"><code>Barrier</code></a>, the options are classified into four types: up-and-in, 
+ Depending on the barrier defined in <a href="../option/Barrier.html" title="interface in com.opengamma.strata.product.option"><code>Barrier</code></a>, the options are classified into four types: up-and-in,
  down-and-in, up-and-out and down-and-out.
  <p>
  For example, an up-and-out call on a 'EUR 1.00 / USD -1.41' exchange with barrier of 1.5 is the option to
  perform a foreign exchange on the expiry date, where USD 1.41 is paid to receive EUR 1.00, only when EUR/USD rate does
  not exceed 1.5 during the barrier event observation period.
  <p>
- In case of the occurrence (non-occurrence for knock-in options) of the barrier event, the option becomes worthless, 
+ In case of the occurrence (non-occurrence for knock-in options) of the barrier event, the option becomes worthless,
  or alternatively, a rebate is made.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -236,6 +236,13 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExpiry()">getExpiry</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the underlying Fx vanilla option's expiry.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRebate()">getRebate</a></span>()</code></th>
 <td class="colLast">
@@ -243,31 +250,31 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
  for a 'in' option, the amount is paid at expiry if the barrier is not reached.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnderlyingOption()">getUnderlyingOption</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the underlying FX vanilla option.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="FxSingleBarrierOption.Meta.html" title="class in com.opengamma.strata.product.fxopt">FxSingleBarrierOption.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>FxSingleBarrierOption</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="FxSingleBarrierOption.Meta.html" title="class in com.opengamma.strata.product.fxopt">FxSingleBarrierOption.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="FxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">FxSingleBarrierOption</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.product.fxopt.FxVanillaOption,com.opengamma.strata.product.option.Barrier)">of</a></span>&#8203;(<a href="FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a>&nbsp;underlyingOption,
   <a href="../option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a>&nbsp;barrier)</code></th>
@@ -275,7 +282,7 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 <div class="block">Obtains FX single barrier option without rebate.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="FxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">FxSingleBarrierOption</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.product.fxopt.FxVanillaOption,com.opengamma.strata.product.option.Barrier,com.opengamma.strata.basics.currency.CurrencyAmount)">of</a></span>&#8203;(<a href="FxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">FxVanillaOption</a>&nbsp;underlyingOption,
   <a href="../option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a>&nbsp;barrier,
@@ -284,21 +291,21 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 <div class="block">Obtains FX single barrier option with rebate.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="ResolvedFxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOption</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(com.opengamma.strata.basics.ReferenceData)">resolve</a></span>&#8203;(<a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Resolves this object using the specified reference data.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="FxSingleBarrierOption.Builder.html" title="class in com.opengamma.strata.product.fxopt">FxSingleBarrierOption.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -401,6 +408,22 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
 <dd><code><a href="../fx/FxProduct.html#getCurrencyPair()">getCurrencyPair</a></code>&nbsp;in interface&nbsp;<code><a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the currency pair</dd>
+</dl>
+</li>
+</ul>
+<a id="getExpiry()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpiry</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;getExpiry()</pre>
+<div class="block">Gets the underlying Fx vanilla option's expiry.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../fx/FxOptionProduct.html#getExpiry()">getExpiry</a></code>&nbsp;in interface&nbsp;<code><a href="../fx/FxOptionProduct.html" title="interface in com.opengamma.strata.product.fx">FxOptionProduct</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the expiry</dd>
 </dl>
 </li>
 </ul>

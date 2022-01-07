@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":1,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":1,"i9":6};
+var data = {"i0":6,"i1":6,"i2":1,"i3":1,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":1,"i10":1,"i11":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -184,55 +184,69 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createFxIndex(com.opengamma.strata.basics.currency.CurrencyPair)">createFxIndex</a></span>&#8203;(<a href="../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</code></th>
+<td class="colLast">
+<div class="block">Creates a FX index for the provided currency pair.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../collect/named/ExtendedEnum.html" title="class in com.opengamma.strata.collect.named">ExtendedEnum</a>&lt;<a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extendedEnum()">extendedEnum</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the extended enum helper.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrencyPair()">getCurrencyPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency pair of the index.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../date/HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFixingCalendar()">getFixingCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the calendar that determines which dates are fixing dates.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFixingDateOffset()">getFixingDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the adjustment applied to the maturity date to obtain the fixing date.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMaturityDateOffset()">getMaturityDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the adjustment applied to the fixing date to obtain the maturity date.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the name that uniquely identifies this index.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.CurrencyPair)">of</a></span>&#8203;(<a href="../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from the specified currency pair.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified unique name.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>,&#8203;<a href="FxIndexObservation.html" title="class in com.opengamma.strata.basics.index">FxIndexObservation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(com.opengamma.strata.basics.ReferenceData)">resolve</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
@@ -263,7 +277,9 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</pre>
-<div class="block">Obtains an instance from the specified unique name.</div>
+<div class="block">Obtains an instance from the specified unique name.
+ <p>
+ If the unique name can be parsed as a currency pair, an FX index will be looked up on the pair.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uniqueName</code> - the unique name</dd>
@@ -271,6 +287,43 @@ extends <a href="Index.html" title="interface in com.opengamma.strata.basics.ind
 <dd>the index</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the name is not known</dd>
+</dl>
+</li>
+</ul>
+<a id="of(com.opengamma.strata.basics.currency.CurrencyPair)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">static&nbsp;<a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a>&nbsp;of&#8203;(<a href="../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</pre>
+<div class="block">Obtains an instance from the specified currency pair.
+ <p>
+ If a currency pair does not have an implementation, an FX index will be created.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>currencyPair</code> - the currency pair</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index</dd>
+</dl>
+</li>
+</ul>
+<a id="createFxIndex(com.opengamma.strata.basics.currency.CurrencyPair)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createFxIndex</h4>
+<pre class="methodSignature">static&nbsp;<a href="FxIndex.html" title="interface in com.opengamma.strata.basics.index">FxIndex</a>&nbsp;createFxIndex&#8203;(<a href="../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</pre>
+<div class="block">Creates a FX index for the provided currency pair.
+ <p>
+ The FX index will be default to the combined holiday calendars for the currency pair.
+ The maturity day offset will default to 2 days.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>currencyPair</code> - the currency pair</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index</dd>
 </dl>
 </li>
 </ul>

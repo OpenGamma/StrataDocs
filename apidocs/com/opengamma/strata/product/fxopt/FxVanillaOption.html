@@ -133,12 +133,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOption</a>&gt;</code>, <code><a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a></code>, <code><a href="../Product.html" title="interface in com.opengamma.strata.product">Product</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOption</a>&gt;</code>, <code><a href="../fx/FxOptionProduct.html" title="interface in com.opengamma.strata.product.fx">FxOptionProduct</a></code>, <code><a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a></code>, <code><a href="../Product.html" title="interface in com.opengamma.strata.product">Product</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">FxVanillaOption</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.strata.product.fx">FxProduct</a>, <a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOption</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
+implements <a href="../fx/FxOptionProduct.html" title="interface in com.opengamma.strata.product.fx">FxOptionProduct</a>, <a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxVanillaOption.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxVanillaOption</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">A vanilla FX option.
  <p>
  An FX option is a financial instrument that provides an option based on the future value of a foreign exchange. The
@@ -418,6 +418,8 @@ implements <a href="../fx/FxProduct.html" title="interface in com.opengamma.stra
  <p>
  The result is returned by combining the expiry date, time and time-zone.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../fx/FxOptionProduct.html#getExpiry()">getExpiry</a></code>&nbsp;in interface&nbsp;<code><a href="../fx/FxOptionProduct.html" title="interface in com.opengamma.strata.product.fx">FxOptionProduct</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the expiry date and time</dd>
 </dl>

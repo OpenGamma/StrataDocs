@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -151,6 +151,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the surface.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#interpolate(double,double)">interpolate</a></span>&#8203;(double&nbsp;x,
            double&nbsp;y)</code></th>
@@ -158,7 +166,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Computes the z-value for the specified x-y-value by interpolation.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parameterSensitivity(double,double)">parameterSensitivity</a></span>&#8203;(double&nbsp;x,
                     double&nbsp;y)</code></th>
@@ -200,6 +208,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>the value at the x-y-value</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the z-value cannot be calculated</dd>
+</dl>
+</li>
+</ul>
+<a id="firstPartialDerivatives(double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>firstPartialDerivatives</h4>
+<pre class="methodSignature"><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;firstPartialDerivatives&#8203;(double&nbsp;x,
+                                         double&nbsp;y)</pre>
+<div class="block">Computes the partial derivatives of the surface.
+ <p>
+ The first derivatives are <code>dz/dx and dz/dy</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to x
+ <li>[1] derivative with respect to y
+ </ul></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - the x-value at which the partial derivative is taken</dd>
+<dd><code>y</code> - the y-value at which the partial derivative is taken</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the derivative cannot be calculated</dd>
 </dl>
 </li>
 </ul>

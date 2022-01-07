@@ -213,8 +213,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                      <a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&nbsp;m,
                      int&nbsp;index)</code></th>
 <td class="colLast">
-<div class="block">Assume a tensor has been flattened to a vector as {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
-  (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.</div>
+<div class="block">Assume a tensor has been flattened to a vector as
+ {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
+ (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -249,7 +250,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                 int[]&nbsp;k,
                 double[]&nbsp;lambda)</code></th>
 <td class="colLast">
-<div class="block">Assume a tensor has been flattened to a vector as {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
+<div class="block">Assume a tensor has been flattened to a vector as
+ {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
  (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.</div>
 </td>
 </tr>
@@ -259,8 +261,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                 int&nbsp;k,
                 int&nbsp;index)</code></th>
 <td class="colLast">
-<div class="block">Assume a tensor has been flattened to a vector as {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
-  (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.</div>
+<div class="block">Assume a tensor has been flattened to a vector as
+ {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
+ (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -365,9 +368,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public static&nbsp;<a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&nbsp;getPenaltyMatrix&#8203;(int[]&nbsp;numElements,
                                             int&nbsp;k,
                                             int&nbsp;index)</pre>
-<div class="block">Assume a tensor has been flattened to a vector as {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
-  (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.  This produces a penalty matrix that acts on a given set of indexes only<P>
- To produce a penalty matrix that acts on multiple indexes, produce one for each set of indexes and add them together (scaling if necessary)</div>
+<div class="block">Assume a tensor has been flattened to a vector as
+ {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
+ (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly. 
+ This produces a penalty matrix that acts on a given set of indexes only<P>
+ To produce a penalty matrix that acts on multiple indexes, produce one for each set of indexes
+ and add them together (scaling if necessary).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>numElements</code> - The range of each index. In the example above, this would be {n,m}</dd>
@@ -387,9 +393,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public static&nbsp;<a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&nbsp;getPenaltyMatrix&#8203;(int[]&nbsp;numElements,
                                             int[]&nbsp;k,
                                             double[]&nbsp;lambda)</pre>
-<div class="block">Assume a tensor has been flattened to a vector as {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
- (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.  This produces the sum of penalty matrices (or order given by k) with each scaled 
- by lambda.</div>
+<div class="block">Assume a tensor has been flattened to a vector as
+ {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
+ (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly.
+ This produces the sum of penalty matrices (or order given by k) with each scaled by lambda.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>numElements</code> - The range of each index. In the example above, this would be {n,m}</dd>
@@ -514,8 +521,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public static&nbsp;<a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&nbsp;getMatrixForFlattened&#8203;(int[]&nbsp;numElements,
                                                  <a href="../../../collect/array/DoubleMatrix.html" title="class in com.opengamma.strata.collect.array">DoubleMatrix</a>&nbsp;m,
                                                  int&nbsp;index)</pre>
-<div class="block">Assume a tensor has been flattened to a vector as {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
-  (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly. 
+<div class="block">Assume a tensor has been flattened to a vector as
+ {A_{0,0}, A_{0,1},...._A_{0,m}, A_{1,0}, A_{1,1},...._A_{1,m},...,A_{n,0}, A_{n,1},...._A_{n,m}}
+ (see <a href="#flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)"><code>flattenMatrix(com.opengamma.strata.collect.array.DoubleMatrix)</code></a>) that is, the <b>last</b> index changes most rapidly. 
  Given a matrix, M, that acts on the elements of one index only, i.e.
  $$y_{i, i_1, i_2, \dots,i_{k-1}, i_{k+1},\dots, i_n} =  \sum_{i_k=0}^{N_k-1} M_{i,i_k}  x_{i_1, i_2, \dots,i_k,\dots, i_n} $$
  form the larger matrix that acts on the flattened vector.</div>

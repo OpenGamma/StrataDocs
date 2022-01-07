@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":9,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":9,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,45 +172,37 @@ implements <a href="../../calc/runner/CalculationParameter.html" title="interfac
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../calc/runner/CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)">filter</a></span>&#8203;(<a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a>&nbsp;target,
-      <a href="../../calc/Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure)</code></th>
-<td class="colLast">
-<div class="block">Filters this parameter to the specified target and measure.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCutOffStrike()">getCutOffStrike</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the cut-off strike.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMu()">getMu</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the tail thickness parameter.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static org.joda.beans.TypedMetaBean&lt;<a href="CmsSabrExtrapolationParams.html" title="class in com.opengamma.strata.measure.cms">CmsSabrExtrapolationParams</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>CmsSabrExtrapolationParams</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.joda.beans.TypedMetaBean&lt;<a href="CmsSabrExtrapolationParams.html" title="class in com.opengamma.strata.measure.cms">CmsSabrExtrapolationParams</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="CmsSabrExtrapolationParams.html" title="class in com.opengamma.strata.measure.cms">CmsSabrExtrapolationParams</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(double,double)">of</a></span>&#8203;(double&nbsp;cutOffStrike,
   double&nbsp;mu)</code></th>
@@ -218,7 +210,7 @@ implements <a href="../../calc/runner/CalculationParameter.html" title="interfac
 <div class="block">Obtains an instance based on a lookup and market data.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -243,7 +235,7 @@ implements <a href="../../calc/runner/CalculationParameter.html" title="interfac
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.opengamma.strata.calc.runner.<a href="../../calc/runner/CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a></h3>
-<code><a href="../../calc/runner/CalculationParameter.html#queryType()">queryType</a></code></li>
+<code><a href="../../calc/runner/CalculationParameter.html#filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)">filter</a>, <a href="../../calc/runner/CalculationParameter.html#queryType()">queryType</a></code></li>
 </ul>
 </li>
 </ul>
@@ -279,36 +271,6 @@ implements <a href="../../calc/runner/CalculationParameter.html" title="interfac
 <dd><code>mu</code> - the tail thickness parameter</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the SABR extrapolation parameters</dd>
-</dl>
-</li>
-</ul>
-<a id="filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>filter</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../calc/runner/CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a>&gt;&nbsp;filter&#8203;(<a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a>&nbsp;target,
-                                             <a href="../../calc/Measure.html" title="interface in com.opengamma.strata.calc">Measure</a>&nbsp;measure)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../calc/runner/CalculationParameter.html#filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)">CalculationParameter</a></code></span></div>
-<div class="block">Filters this parameter to the specified target and measure.
- <p>
- Parameters may apply to all targets and measures or just a subset.
- The <a href="../../calc/runner/CalculationParameters.html#filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)"><code>CalculationParameters.filter(CalculationTarget, Measure)</code></a> method
- uses this method to filter a complete set of parameters.
- <p>
- By default, this returns <code>Optional.of(this)</code>.
- If the parameter does not apply to either the target or measure, then optional empty must be returned.
- If desired, the result can be a different parameter, allowing one parameter to delegate
- to another when filtered.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../calc/runner/CalculationParameter.html#filter(com.opengamma.strata.basics.CalculationTarget,com.opengamma.strata.calc.Measure)">filter</a></code>&nbsp;in interface&nbsp;<code><a href="../../calc/runner/CalculationParameter.html" title="interface in com.opengamma.strata.calc.runner">CalculationParameter</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>target</code> - the calculation target, such as a trade</dd>
-<dd><code>measure</code> - the measure to be calculated</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the parameter appropriate to the target and measure, empty if this parameter does not apply</dd>
 </dl>
 </li>
 </ul>

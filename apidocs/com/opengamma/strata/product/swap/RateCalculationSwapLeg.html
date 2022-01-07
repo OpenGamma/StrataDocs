@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -317,20 +317,27 @@ implements <a href="ScheduledSwapLeg.html" title="interface in com.opengamma.str
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="RateCalculationSwapLeg.html" title="class in com.opengamma.strata.product.swap">RateCalculationSwapLeg</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#replaceStartDate(java.time.LocalDate)">replaceStartDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;adjustedStartDate)</code></th>
+<td class="colLast">
+<div class="block">Returns an instance based on this leg with the start date replaced.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="ResolvedSwapLeg.html" title="class in com.opengamma.strata.product.swap">ResolvedSwapLeg</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(com.opengamma.strata.basics.ReferenceData)">resolve</a></span>&#8203;(<a href="../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Converts this swap leg to the equivalent <code>ResolvedSwapLeg</code>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="RateCalculationSwapLeg.Builder.html" title="class in com.opengamma.strata.product.swap">RateCalculationSwapLeg.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -489,6 +496,28 @@ implements <a href="ScheduledSwapLeg.html" title="interface in com.opengamma.str
 <dd><code><a href="SwapLeg.html#collectIndices(com.google.common.collect.ImmutableSet.Builder)">collectIndices</a></code>&nbsp;in interface&nbsp;<code><a href="SwapLeg.html" title="interface in com.opengamma.strata.product.swap">SwapLeg</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>builder</code> - the builder to populate</dd>
+</dl>
+</li>
+</ul>
+<a id="replaceStartDate(java.time.LocalDate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>replaceStartDate</h4>
+<pre class="methodSignature">public&nbsp;<a href="RateCalculationSwapLeg.html" title="class in com.opengamma.strata.product.swap">RateCalculationSwapLeg</a>&nbsp;replaceStartDate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;adjustedStartDate)</pre>
+<div class="block">Returns an instance based on this leg with the start date replaced.
+ <p>
+ This uses <a href="../../basics/schedule/PeriodicSchedule.html#replaceStartDate(java.time.LocalDate)"><code>PeriodicSchedule.replaceStartDate(LocalDate)</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="SwapLeg.html#replaceStartDate(java.time.LocalDate)">replaceStartDate</a></code>&nbsp;in interface&nbsp;<code><a href="SwapLeg.html" title="interface in com.opengamma.strata.product.swap">SwapLeg</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>adjustedStartDate</code> - the new adjusted start date</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the updated leg</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the start date cannot be replaced with the proposed start date</dd>
 </dl>
 </li>
 </ul>

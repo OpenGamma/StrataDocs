@@ -192,7 +192,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                        double[]&nbsp;doubVec,
                        double[][]&nbsp;doubMat2)</code></th>
 <td class="colLast">
-<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
+<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b
+ where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -204,7 +205,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                    double[]&nbsp;commonVector,
                                    double[][]&nbsp;commonVecSensitivity)</code></th>
 <td class="colLast">
-<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
+<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b
+ where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -374,7 +376,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValues</code> - Y values of data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Coefficient matrix whose i-th row vector is (a_0,a_1,...) for i-th intervals, where a_0,a_1,... are coefficients of f(x) = a_0 + a_1 x^1 + ....
+<dd>Coefficient matrix whose i-th row vector is (a_0,a_1,...) for
+  i-th intervals, where a_0,a_1,... are coefficients of f(x) = a_0 + a_1 x^1 + ....
    Note that the degree of polynomial is NOT necessarily 3</dd>
 </dl>
 </li>
@@ -395,7 +398,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValues</code> - Y values of data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Array of  matrices: the 0-th element is Coefficient Matrix (same as the solve method above), the i-th element is \frac{\partial a^{i-1}_j}{\partial yValues_k} 
+<dd>Array of  matrices: the 0-th element is Coefficient Matrix (same as the solve method above),
+  the i-th element is \frac{\partial a^{i-1}_j}{\partial yValues_k} 
    where a_0^i,a_1^i,... are coefficients of f^i(x) = a_0^i + a_1^i (x - xValues_{i}) + .... with x \in [xValues_{i}, xValues_{i+1}]</dd>
 </dl>
 </li>
@@ -416,7 +420,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValuesMatrix</code> - Y values of data, where NumberOfRow defines dimension of the spline</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A set of coefficient matrices whose i-th row vector is (a_0,a_1,...) for the i-th interval, where a_0,a_1,... are coefficients of f(x) = a_0 + a_1 x^1 + .... 
+<dd>A set of coefficient matrices whose i-th row vector is (a_0,a_1,...) for the i-th interval,
+  where a_0,a_1,... are coefficients of f(x) = a_0 + a_1 x^1 + .... 
    Each matrix corresponds to an interpolation (xValues, yValuesMatrix RowVector)
    Note that the degree of polynomial is NOT necessarily 3</dd>
 </dl>
@@ -470,7 +475,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>intervals</code> - {xValues[1]-xValues[0], xValues[2]-xValues[1],...}</dd>
 <dd><code>solnVector</code> - Values of second derivative at knots</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Coefficient matrix whose i-th row vector is {a_0,a_1,...} for i-th intervals, where a_0,a_1,... are coefficients of f(x) = a_0 + a_1 x^1 + ....</dd>
+<dd>Coefficient matrix whose i-th row vector is {a_0,a_1,...} for i-th intervals,
+  where a_0,a_1,... are coefficients of f(x) = a_0 + a_1 x^1 + ....</dd>
 </dl>
 </li>
 </ul>
@@ -503,7 +509,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                                              double[][]&nbsp;toBeInv,
                                                              double[]&nbsp;commonVector,
                                                              double[][]&nbsp;commonVecSensitivity)</pre>
-<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
+<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b
+ where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>xValues</code> - X values of data</dd>
@@ -595,7 +602,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">protected&nbsp;<a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>[]&nbsp;combinedMatrixEqnSolver&#8203;(double[][]&nbsp;doubMat1,
                                                 double[]&nbsp;doubVec,
                                                 double[][]&nbsp;doubMat2)</pre>
-<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
+<div class="block">Cubic spline and its node sensitivity are respectively obtained by solving a linear problem Ax=b
+ where A is a square matrix and x,b are vector and AN=L where N,L are matrices</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>doubMat1</code> - The matrix A</dd>

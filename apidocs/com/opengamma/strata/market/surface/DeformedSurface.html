@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -216,65 +216,73 @@ implements <a href="Surface.html" title="interface in com.opengamma.strata.marke
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the surface.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>,&#8203;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDeformationFunction()">getDeformationFunction</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the deformation function.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMetadata()">getMetadata</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface metadata.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOriginalSurface()">getOriginalSurface</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the original surface.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameter(int)">getParameter</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterCount()">getParameterCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of parameters.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="DeformedSurface.Meta.html" title="class in com.opengamma.strata.market.surface">DeformedSurface.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>DeformedSurface</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="DeformedSurface.Meta.html" title="class in com.opengamma.strata.market.surface">DeformedSurface.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="DeformedSurface.html" title="class in com.opengamma.strata.market.surface">DeformedSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.market.surface.SurfaceMetadata,com.opengamma.strata.market.surface.Surface,java.util.function.Function)">of</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata,
   <a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a>&nbsp;originalSurface,
@@ -283,26 +291,26 @@ implements <a href="Surface.html" title="interface in com.opengamma.strata.marke
 <div class="block">Obtains an instance.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="DeformedSurface.Builder.html" title="class in com.opengamma.strata.market.surface">DeformedSurface.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="DeformedSurface.html" title="class in com.opengamma.strata.market.surface">DeformedSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withMetadata(com.opengamma.strata.market.surface.SurfaceMetadata)">withMetadata</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">Returns a new surface with the specified metadata.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -310,7 +318,7 @@ implements <a href="Surface.html" title="interface in com.opengamma.strata.marke
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValue(double,double)">zValue</a></span>&#8203;(double&nbsp;x,
       double&nbsp;y)</code></th>
@@ -318,7 +326,7 @@ implements <a href="Surface.html" title="interface in com.opengamma.strata.marke
 <div class="block">Computes the z-value for the specified x-value and y-value.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../param/UnitParameterSensitivity.html" title="class in com.opengamma.strata.market.param">UnitParameterSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValueParameterSensitivity(double,double)">zValueParameterSensitivity</a></span>&#8203;(double&nbsp;x,
                           double&nbsp;y)</code></th>
@@ -515,6 +523,34 @@ implements <a href="Surface.html" title="interface in com.opengamma.strata.marke
 <dd><code>y</code> - the y-value at which the parameter sensitivity is computed</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sensitivity at the x/y/ point</dd>
+</dl>
+</li>
+</ul>
+<a id="firstPartialDerivatives(double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>firstPartialDerivatives</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;firstPartialDerivatives&#8203;(double&nbsp;x,
+                                                double&nbsp;y)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Surface.html#firstPartialDerivatives(double,double)">Surface</a></code></span></div>
+<div class="block">Computes the partial derivatives of the surface.
+ <p>
+ The first derivatives are <code>dz/dx and dz/dy</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to x
+ <li>[1] derivative with respect to y
+ </ul></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Surface.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></code>&nbsp;in interface&nbsp;<code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - the x-value at which the partial derivative is taken</dd>
+<dd><code>y</code> - the y-value at which the partial derivative is taken</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
 </dl>
 </li>
 </ul>

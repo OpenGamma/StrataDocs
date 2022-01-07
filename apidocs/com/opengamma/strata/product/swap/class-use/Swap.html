@@ -107,18 +107,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.loader.csv">com.opengamma.strata.loader.csv</a></th>
+<td class="colLast">
+<div class="block">Loader that reads market data from CSV files.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.dsf">com.opengamma.strata.product.dsf</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Deliverable Swap Futures (DSFs).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swap">com.opengamma.strata.product.swap</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a swap.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options on swaps, known as swaptions.</div>
@@ -129,6 +135,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.loader.csv">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Swap.html" title="class in com.opengamma.strata.product.swap">Swap</a> in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> with parameters of type <a href="../Swap.html" title="class in com.opengamma.strata.product.swap">Swap</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CsvWriterUtils.</span><code><span class="memberNameLink"><a href="../../../loader/csv/CsvWriterUtils.html#writeSwap(com.opengamma.strata.collect.io.CsvOutput.CsvRowOutputWithHeaders,com.opengamma.strata.product.swap.Swap)">writeSwap</a></span>&#8203;(<a href="../../../collect/io/CsvOutput.CsvRowOutputWithHeaders.html" title="class in com.opengamma.strata.collect.io">CsvOutput.CsvRowOutputWithHeaders</a>&nbsp;csv,
+         <a href="../Swap.html" title="class in com.opengamma.strata.product.swap">Swap</a>&nbsp;product)</code></th>
+<td class="colLast">
+<div class="block">Write a Swap to CSV</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="com.opengamma.strata.product.dsf">
 <!--   -->
@@ -247,6 +278,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a swap from one or more swap legs.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Swap.html" title="class in com.opengamma.strata.product.swap">Swap</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Swap.</span><code><span class="memberNameLink"><a href="../Swap.html#replaceStartDate(java.time.LocalDate)">replaceStartDate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;adjustedStartDate)</code></th>
+<td class="colLast">
+<div class="block">Returns an instance based on this swap with the start date replaced.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -312,6 +350,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../Swap.html" title="class in com.opengamma.strata.product.swap">Swap</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Swaption.</span><code><span class="memberNameLink"><a href="../../swaption/Swaption.html#exercise(java.time.LocalDate,com.opengamma.strata.basics.ReferenceData)">exercise</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;exerciseDate,
+        <a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
+<td class="colLast">
+<div class="block">Exercises the swaption into a swap at one of the optional exercise dates.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Swap.html" title="class in com.opengamma.strata.product.swap">Swap</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Swaption.</span><code><span class="memberNameLink"><a href="../../swaption/Swaption.html#getUnderlying()">getUnderlying</a></span>()</code></th>
 <td class="colLast">

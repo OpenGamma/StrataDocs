@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":18,"i5":18,"i6":18,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
+var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":18,"i5":18,"i6":18,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -218,6 +218,15 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#partialFirstDerivatives(double,double,double)">partialFirstDerivatives</a></span>&#8203;(double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the volatilities.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="SmileAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">SmileAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileAndSensitivitiesForExpiry(double,com.opengamma.strata.collect.array.DoubleArray)">smileAndSensitivitiesForExpiry</a></span>&#8203;(double&nbsp;expiry,
                               <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;volatilityAtTimeSensitivity)</code></th>
@@ -225,14 +234,14 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Calculates the smile at a given time and the sensitivities with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileForExpiry(double)">smileForExpiry</a></span>&#8203;(double&nbsp;expiry)</code></th>
 <td class="colLast">
 <div class="block">Calculates the smile at a given time.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,double,double)">volatility</a></span>&#8203;(double&nbsp;expiry,
           double&nbsp;strike,
@@ -241,7 +250,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Calculates the volatility at a given time/strike/forward from the term structure.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="VolatilityAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">VolatilityAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAndSensitivities(double,double,double)">volatilityAndSensitivities</a></span>&#8203;(double&nbsp;expiry,
                           double&nbsp;strike,
@@ -250,7 +259,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Calculates the volatility and the volatility sensitivity with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -258,7 +267,7 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../../market/param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -440,6 +449,35 @@ extends <a href="../../market/param/ParameterizedData.html" title="interface in 
 <dd><code>forward</code> - the forward</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the volatility</dd>
+</dl>
+</li>
+</ul>
+<a id="partialFirstDerivatives(double,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>partialFirstDerivatives</h4>
+<pre class="methodSignature"><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;partialFirstDerivatives&#8203;(double&nbsp;expiry,
+                                         double&nbsp;strike,
+                                         double&nbsp;forward)</pre>
+<div class="block">Computes the partial derivatives of the volatilities.
+ <p>
+ The first derivatives are <code>dVol/dExpiry and dVol/dStrike</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to expiry
+ <li>[1] derivative with respect to strike
+ </ul></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>expiry</code> - the expiry at which the partial derivative is taken</dd>
+<dd><code>strike</code> - the strike at which the partial derivative is taken</dd>
+<dd><code>forward</code> - the forward rate</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code> - if the derivative cannot be calculated</dd>
 </dl>
 </li>
 </ul>

@@ -757,6 +757,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Alignment of the data within an ASCII table.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../io/ByteSourceCodec.html" title="enum in com.opengamma.strata.collect.io">ByteSourceCodec</a></span></code></th>
+<td class="colLast">
+<div class="block">Encodes and decodes common data formats.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -942,6 +949,58 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvParserPlugin.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvParserPlugin</a></span></code></th>
 <td class="colLast">
 <div class="block">Pluggable CSV trade parser.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/TradeCsvWriterPlugin.html" title="interface in com.opengamma.strata.loader.csv">TradeCsvWriterPlugin</a>&lt;T extends <a href="../../../product/Trade.html" title="interface in com.opengamma.strata.product">Trade</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Pluggable CSV trade writer.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../loader/csv/package-summary.html">com.opengamma.strata.loader.csv</a> that implement <a href="../Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/FxNdfTradeCsvPlugin.html" title="class in com.opengamma.strata.loader.csv">FxNdfTradeCsvPlugin</a></span></code></th>
+<td class="colLast">
+<div class="block">Handles the CSV file format for FxNdf trades.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/FxSingleBarrierOptionTradeCsvPlugin.html" title="class in com.opengamma.strata.loader.csv">FxSingleBarrierOptionTradeCsvPlugin</a></span></code></th>
+<td class="colLast">
+<div class="block">Handles the CSV files format for FX Single Barrier Option trades.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/GenericSecurityTradeCsvPlugin.html" title="class in com.opengamma.strata.loader.csv">GenericSecurityTradeCsvPlugin</a></span></code></th>
+<td class="colLast">
+<div class="block">Handles the CSV file format for Generic Security trades.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/IborCapFloorTradeCsvPlugin.html" title="class in com.opengamma.strata.loader.csv">IborCapFloorTradeCsvPlugin</a></span></code></th>
+<td class="colLast">
+<div class="block">Handles the CSV file format for CapFloor trades.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../loader/csv/SecurityTradeCsvPlugin.html" title="class in com.opengamma.strata.loader.csv">SecurityTradeCsvPlugin</a></span></code></th>
+<td class="colLast">
+<div class="block">Handles the CSV file format for Security trades.</div>
 </td>
 </tr>
 </tbody>
@@ -1610,40 +1669,47 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/CapFloor.html" title="enum in com.opengamma.strata.product.common">CapFloor</a></span></code></th>
+<td class="colLast">
+<div class="block">Flag indicating whether a financial instrument is "cap" or a "floor".</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/CcpId.html" title="class in com.opengamma.strata.product.common">CcpId</a></span></code></th>
 <td class="colLast">
 <div class="block">An identifier for a Central Counterparty Clearing House (CCP).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/ExchangeId.html" title="class in com.opengamma.strata.product.common">ExchangeId</a></span></code></th>
 <td class="colLast">
 <div class="block">An identifier for an exchange based on the ISO Market Identifier Code (MIC).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/LongShort.html" title="enum in com.opengamma.strata.product.common">LongShort</a></span></code></th>
 <td class="colLast">
 <div class="block">Flag indicating whether a trade is "long" or "short".</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/PayReceive.html" title="enum in com.opengamma.strata.product.common">PayReceive</a></span></code></th>
 <td class="colLast">
 <div class="block">Flag indicating whether a financial instrument is "pay" or "receive".</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a></span></code></th>
 <td class="colLast">
 <div class="block">Flag indicating whether a trade is "put" or "call".</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/common/SettlementType.html" title="enum in com.opengamma.strata.product.common">SettlementType</a></span></code></th>
 <td class="colLast">
@@ -2197,54 +2263,61 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/FixedFloatSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedFloatSwapConvention</a></span></code></th>
+<td class="colLast">
+<div class="block">A market convention for Fixed-Float swap trades, covering Ibor and Overnight indices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/FixedIborSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedIborSwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for Fixed-Ibor swap trades.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/FixedInflationSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedInflationSwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for Inflation swap trades.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/FixedOvernightSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedOvernightSwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for Fixed-Overnight swap trades.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/IborIborSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">IborIborSwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for Ibor-Ibor swap trades.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/OvernightIborSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">OvernightIborSwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for Overnight-Ibor swap trades.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/SingleCurrencySwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">SingleCurrencySwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for swap trades.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/ThreeLegBasisSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">ThreeLegBasisSwapConvention</a></span></code></th>
 <td class="colLast">
 <div class="block">A market convention for three leg basis swap trades.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../product/swap/type/XCcyIborIborSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">XCcyIborIborSwapConvention</a></span></code></th>
 <td class="colLast">

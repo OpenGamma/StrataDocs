@@ -372,48 +372,55 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendarId.</span><code><span class="memberNameLink"><a href="../HolidayCalendarId.html#defaultByCurrencyPair(com.opengamma.strata.basics.currency.CurrencyPair)">defaultByCurrencyPair</a></span>&#8203;(<a href="../../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</code></th>
+<td class="colLast">
+<div class="block">Gets the default calendar for a pair of currencies.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BusinessDayAdjustment.</span><code><span class="memberNameLink"><a href="../BusinessDayAdjustment.html#getCalendar()">getCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the calendar that defines holidays and business days.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.html#getCalendar()">getCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the holiday calendar that defines the meaning of a day when performing the addition.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendar.</span><code><span class="memberNameLink"><a href="../HolidayCalendar.html#getId()">getId</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the identifier for the calendar.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.html#getId()">getId</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the identifier, such as 'GBLO'.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.html#getResultCalendar()">getResultCalendar</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the holiday calendar that will be applied to the result.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendarId.</span><code><span class="memberNameLink"><a href="../HolidayCalendarId.html#linkedWith(com.opengamma.strata.basics.date.HolidayCalendarId)">linkedWith</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Combines this holiday calendar identifier with another.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendarId.</span><code><span class="memberNameLink"><a href="../HolidayCalendarId.html#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</code></th>
 <td class="colLast">
@@ -445,6 +452,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendarId.</span><code><span class="memberNameLink"><a href="../HolidayCalendarId.html#findDefaultByCurrency(com.opengamma.strata.basics.currency.Currency)">findDefaultByCurrency</a></span>&#8203;(<a href="../../currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Tries to find a default calendar for a currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.Meta.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.Meta.html#id()">id</a></span>()</code></th>
 <td class="colLast">

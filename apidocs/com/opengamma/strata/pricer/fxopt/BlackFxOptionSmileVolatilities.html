@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -220,72 +220,82 @@ implements <a href="BlackFxOptionVolatilities.html" title="interface in com.open
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">firstPartialDerivatives</a></span>&#8203;(<a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                       double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the volatilities.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrencyPair()">getCurrencyPair</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency pair that the volatilities are for.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="FxOptionVolatilitiesName.html" title="class in com.opengamma.strata.pricer.fxopt">FxOptionVolatilitiesName</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the name of the volatilities.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameter(int)">getParameter</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterCount()">getParameterCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of parameters.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../market/param/ParameterMetadata.html" title="interface in com.opengamma.strata.market.param">ParameterMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterMetadata(int)">getParameterMetadata</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the metadata of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSmile()">getSmile</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the volatility model.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValuationDateTime()">getValuationDateTime</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the valuation date-time.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="BlackFxOptionSmileVolatilities.Meta.html" title="class in com.opengamma.strata.pricer.fxopt">BlackFxOptionSmileVolatilities.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>BlackFxOptionSmileVolatilities</code>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="BlackFxOptionSmileVolatilities.Meta.html" title="class in com.opengamma.strata.pricer.fxopt">BlackFxOptionSmileVolatilities.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="BlackFxOptionSmileVolatilities.html" title="class in com.opengamma.strata.pricer.fxopt">BlackFxOptionSmileVolatilities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.pricer.fxopt.FxOptionVolatilitiesName,com.opengamma.strata.basics.currency.CurrencyPair,java.time.ZonedDateTime,com.opengamma.strata.pricer.fxopt.SmileDeltaTermStructure)">of</a></span>&#8203;(<a href="FxOptionVolatilitiesName.html" title="class in com.opengamma.strata.pricer.fxopt">FxOptionVolatilitiesName</a>&nbsp;name,
   <a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
@@ -295,14 +305,14 @@ implements <a href="BlackFxOptionVolatilities.html" title="interface in com.open
 <div class="block">Obtains an instance based on a smile.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../market/param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parameterSensitivity(com.opengamma.strata.market.sensitivity.PointSensitivities)">parameterSensitivity</a></span>&#8203;(<a href="../../market/sensitivity/PointSensitivities.html" title="class in com.opengamma.strata.market.sensitivity">PointSensitivities</a>&nbsp;pointSensitivities)</code></th>
 <td class="colLast">
 <div class="block">Calculates the parameter sensitivity.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#price(double,com.opengamma.strata.product.common.PutCall,double,double,double)">price</a></span>&#8203;(double&nbsp;expiry,
      <a href="../../product/common/PutCall.html" title="enum in com.opengamma.strata.product.common">PutCall</a>&nbsp;putCall,
@@ -313,26 +323,26 @@ implements <a href="BlackFxOptionVolatilities.html" title="interface in com.open
 <div class="block">Calculates the price.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#relativeTime(java.time.ZonedDateTime)">relativeTime</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;dateTime)</code></th>
 <td class="colLast">
 <div class="block">Converts a time and date to a relative year fraction.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="BlackFxOptionSmileVolatilities.Builder.html" title="class in com.opengamma.strata.pricer.fxopt">BlackFxOptionSmileVolatilities.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">volatility</a></span>&#8203;(<a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
           double&nbsp;expiryTime,
@@ -342,7 +352,7 @@ implements <a href="BlackFxOptionVolatilities.html" title="interface in com.open
 <div class="block">Calculates the volatility at the specified expiry.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="BlackFxOptionSmileVolatilities.html" title="class in com.opengamma.strata.pricer.fxopt">BlackFxOptionSmileVolatilities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -350,7 +360,7 @@ implements <a href="BlackFxOptionVolatilities.html" title="interface in com.open
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="BlackFxOptionSmileVolatilities.html" title="class in com.opengamma.strata.pricer.fxopt">BlackFxOptionSmileVolatilities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../../market/param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -617,6 +627,38 @@ implements <a href="BlackFxOptionVolatilities.html" title="interface in com.open
 <dd><code>pointSensitivities</code> - the point sensitivities</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sensitivity to the underlying parameters</dd>
+</dl>
+</li>
+</ul>
+<a id="firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>firstPartialDerivatives</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;firstPartialDerivatives&#8203;(<a href="../../basics/currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                                                double&nbsp;expiry,
+                                                double&nbsp;strike,
+                                                double&nbsp;forward)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="FxOptionVolatilities.html#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">FxOptionVolatilities</a></code></span></div>
+<div class="block">Computes the partial derivatives of the volatilities.
+ <p>
+ The first derivatives are <code>dVol/dExpiry and dVol/dStrike</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to expiry
+ <li>[1] derivative with respect to strike
+ </ul></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="FxOptionVolatilities.html#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">firstPartialDerivatives</a></code>&nbsp;in interface&nbsp;<code><a href="FxOptionVolatilities.html" title="interface in com.opengamma.strata.pricer.fxopt">FxOptionVolatilities</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>currencyPair</code> - the currency pair</dd>
+<dd><code>expiry</code> - the expiry at which the partial derivative is taken</dd>
+<dd><code>strike</code> - the strike at which the partial derivative is taken</dd>
+<dd><code>forward</code> - the forward rate</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
 </dl>
 </li>
 </ul>

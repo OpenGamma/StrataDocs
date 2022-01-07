@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,6 +224,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forwardRate(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider)">forwardRate</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+           <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</code></th>
+<td class="colLast">
+<div class="block">Provides the forward rate.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
                  <a href="SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
@@ -231,7 +239,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Computes the implied volatility of the swaption.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValue(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValue</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -240,7 +248,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value of the swaption.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueDelta(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueDelta</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -249,7 +257,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value delta of the swaption.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueGamma(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueGamma</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -258,7 +266,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value gamma of the swaption.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption">SwaptionSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                             <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -267,7 +275,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value sensitivity to the implied volatility of the swaption.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityRatesStickyStrike(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueSensitivityRatesStickyStrike</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                         <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -276,7 +284,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value sensitivity of the swaption to the rate curves.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueTheta(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueTheta</a></span>&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                  <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -416,6 +424,26 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>swaptionVolatilities</code> - the volatilities</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the implied volatility</dd>
+</dl>
+</li>
+</ul>
+<a id="forwardRate(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forwardRate</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;forwardRate&#8203;(<a href="../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+                          <a href="../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider)</pre>
+<div class="block">Provides the forward rate.
+ <p>
+ This is the par rate for the forward starting swap that is the underlying of the swaption.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>swaption</code> - the swaption</dd>
+<dd><code>ratesProvider</code> - the rates provider</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the forward rate</dd>
 </dl>
 </li>
 </ul>

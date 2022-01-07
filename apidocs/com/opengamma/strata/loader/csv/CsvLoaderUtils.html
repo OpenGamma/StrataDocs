@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -415,6 +415,36 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">parseAdjustablePayment</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Parses an adjustable payment.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../product/option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseBarrier(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">parseBarrier</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;barrierTypeField,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;knockTypeField,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;barrierLevelField)</code></th>
+<td class="colLast">
+<div class="block">Parses a barrier from the csv row.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="../../product/option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseBarrierFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">parseBarrierFromDefaultFields</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
+<td class="colLast">
+<div class="block">Parses a barrier using the default barrier fields.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseBusinessDayAdjustment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String)">parseBusinessDayAdjustment</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
@@ -423,7 +453,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Parses a business day adjustment.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseCurrencyAmount(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String)">parseCurrencyAmount</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
@@ -432,7 +462,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Parses a currency amount.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseCurrencyAmountWithDirection(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">parseCurrencyAmountWithDirection</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
@@ -442,7 +472,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Parses a currency amount with direction.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseDaysAdjustment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">parseDaysAdjustment</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;daysField,
@@ -453,21 +483,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Parses days adjustment from CSV.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../product/etd/EtdOptionType.html" title="enum in com.opengamma.strata.product.etd">EtdOptionType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseEtdOptionType(java.lang.String)">parseEtdOptionType</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
 <td class="colLast">
 <div class="block">Parses the ETD option type from the short code or full name.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../product/etd/EtdSettlementType.html" title="enum in com.opengamma.strata.product.etd">EtdSettlementType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseEtdSettlementType(java.lang.String)">parseEtdSettlementType</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;str)</code></th>
 <td class="colLast">
 <div class="block">Parses the ETD settlement type from the short code or full name.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="../../collect/tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html?is-external=true" title="class or interface in java.time" class="externalLink">YearMonth</a>,&#8203;<a href="../../product/etd/EtdVariant.html" title="class in com.opengamma.strata.product.etd">EtdVariant</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseEtdVariant(com.opengamma.strata.collect.io.CsvRow,com.opengamma.strata.product.etd.EtdType)">parseEtdVariant</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
                <a href="../../product/etd/EtdType.html" title="enum in com.opengamma.strata.product.etd">EtdType</a>&nbsp;type)</code></th>
@@ -475,11 +505,79 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Parses the year-month and variant.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static <a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parsePremiumFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">parsePremiumFromDefaultFields</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
+<td class="colLast">
+<div class="block">Parses the premium using the default premium fields.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseQuantity(com.opengamma.strata.collect.io.CsvRow)">parseQuantity</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
 <td class="colLast">
 <div class="block">Parses the quantity.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseZonedDateTime(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">parseZonedDateTime</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;timeField,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;zoneField)</code></th>
+<td class="colLast">
+<div class="block">Parse a ZonedDateTime from the provided fields.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParseAdjustableDate(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">tryParseAdjustableDate</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing an adjustable date from the mentioned fields in the csv row.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">tryParseAdjustablePayment</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing an adjustable payment, defaulting the AdjustableDate to no BusinessDayAdjustment.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">tryParseAdjustablePayment</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing an adjustable payment using the mentioned fields.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParseCurrencyAmountWithDirection(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">tryParseCurrencyAmountWithDirection</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing a currency amount from the mentioned fields in the csv row.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryParsePremiumFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">tryParsePremiumFromDefaultFields</a></span>&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</code></th>
+<td class="colLast">
+<div class="block">Tries parsing the premium using the default premium fields.</div>
 </td>
 </tr>
 </table>
@@ -992,6 +1090,28 @@ public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java
 </dl>
 </li>
 </ul>
+<a id="parseZonedDateTime(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseZonedDateTime</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;parseZonedDateTime&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;timeField,
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;zoneField)</pre>
+<div class="block">Parse a ZonedDateTime from the provided fields.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row</dd>
+<dd><code>dateField</code> - the date field</dd>
+<dd><code>timeField</code> - the time field</dd>
+<dd><code>zoneField</code> - the zone field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the zoned date time</dd>
+</dl>
+</li>
+</ul>
 <a id="parseAdjustableDate(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">
 <!--   -->
 </a>
@@ -1041,6 +1161,88 @@ public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java
 <dd>the adjustment</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the row cannot be parsed</dd>
+</dl>
+</li>
+</ul>
+<a id="parseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseAdjustablePayment</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&nbsp;parseAdjustablePayment&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</pre>
+<div class="block">Parses an adjustable payment.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>currencyField</code> - the currency field</dd>
+<dd><code>amountField</code> - the amount field</dd>
+<dd><code>directionField</code> - the direction field</dd>
+<dd><code>dateField</code> - the date field</dd>
+<dd><code>conventionField</code> - the convention field</dd>
+<dd><code>calendarField</code> - the calendar field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the adjustable payment</dd>
+</dl>
+</li>
+</ul>
+<a id="parseBarrier(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseBarrier</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../../product/option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a>&nbsp;parseBarrier&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;barrierTypeField,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;knockTypeField,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;barrierLevelField)</pre>
+<div class="block">Parses a barrier from the csv row.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>barrierTypeField</code> - the barrier type field</dd>
+<dd><code>knockTypeField</code> - the knock type field</dd>
+<dd><code>barrierLevelField</code> - the barrier level field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the barrier</dd>
+</dl>
+</li>
+</ul>
+<a id="parseBarrierFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseBarrierFromDefaultFields</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../../product/option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a>&nbsp;parseBarrierFromDefaultFields&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</pre>
+<div class="block">Parses a barrier using the default barrier fields.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the barrier</dd>
+</dl>
+</li>
+</ul>
+<a id="parsePremiumFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parsePremiumFromDefaultFields</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&nbsp;parsePremiumFromDefaultFields&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</pre>
+<div class="block">Parses the premium using the default premium fields.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the adjustable payment</dd>
 </dl>
 </li>
 </ul>
@@ -1135,6 +1337,121 @@ public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java
 <dd>the currency amount</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the row cannot be parsed</dd>
+</dl>
+</li>
+</ul>
+<a id="tryParseAdjustableDate(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryParseAdjustableDate</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/date/AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&gt;&nbsp;tryParseAdjustableDate&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</pre>
+<div class="block">Tries parsing an adjustable date from the mentioned fields in the csv row.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>dateField</code> - the date field</dd>
+<dd><code>conventionField</code> - the convention field</dd>
+<dd><code>calendarField</code> - the calendar field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the adjustable date option</dd>
+</dl>
+</li>
+</ul>
+<a id="tryParseCurrencyAmountWithDirection(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryParseCurrencyAmountWithDirection</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&gt;&nbsp;tryParseCurrencyAmountWithDirection&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField)</pre>
+<div class="block">Tries parsing a currency amount from the mentioned fields in the csv row.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>currencyField</code> - the currency field</dd>
+<dd><code>amountField</code> - the amount field</dd>
+<dd><code>directionField</code> - the direction field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the currency amount option</dd>
+</dl>
+</li>
+</ul>
+<a id="tryParsePremiumFromDefaultFields(com.opengamma.strata.collect.io.CsvRow)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryParsePremiumFromDefaultFields</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;&nbsp;tryParsePremiumFromDefaultFields&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row)</pre>
+<div class="block">Tries parsing the premium using the default premium fields.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the premium option</dd>
+</dl>
+</li>
+</ul>
+<a id="tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryParseAdjustablePayment</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;&nbsp;tryParseAdjustablePayment&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField)</pre>
+<div class="block">Tries parsing an adjustable payment, defaulting the AdjustableDate to no BusinessDayAdjustment.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>currencyField</code> - the currency field</dd>
+<dd><code>amountField</code> - the amount field</dd>
+<dd><code>directionField</code> - the direction field</dd>
+<dd><code>dateField</code> - the date field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the adjustable payment option</dd>
+</dl>
+</li>
+</ul>
+<a id="tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryParseAdjustablePayment</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../basics/currency/AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a>&gt;&nbsp;tryParseAdjustablePayment&#8203;(<a href="../../collect/io/CsvRow.html" title="class in com.opengamma.strata.collect.io">CsvRow</a>&nbsp;row,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currencyField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;directionField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;dateField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;conventionField,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;calendarField)</pre>
+<div class="block">Tries parsing an adjustable payment using the mentioned fields.
+ <p>
+ Defaults to <a href="#tryParseAdjustablePayment(com.opengamma.strata.collect.io.CsvRow,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>tryParseAdjustablePayment(CsvRow,String,String,String,String)</code></a> if the adjustable date parsing
+ fails as it is often due to a missing calendar or convention.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>row</code> - the CSV row to parse</dd>
+<dd><code>currencyField</code> - the currency field</dd>
+<dd><code>amountField</code> - the amount field</dd>
+<dd><code>directionField</code> - the direction field</dd>
+<dd><code>dateField</code> - the date field</dd>
+<dd><code>conventionField</code> - the date convention field</dd>
+<dd><code>calendarField</code> - the date calendar field</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the adjustable payment option</dd>
 </dl>
 </li>
 </ul>

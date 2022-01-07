@@ -539,7 +539,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionCashParYieldProductPricer.</span><code><span class="memberNameLink"><a href="../VolatilitySwaptionCashParYieldProductPricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackSwaptionTradePricer.</span><code><span class="memberNameLink"><a href="../BlackSwaptionTradePricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;swaptionTrade,
                  <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
                  <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
 <td class="colLast">
@@ -548,7 +548,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionPhysicalProductPricer.</span><code><span class="memberNameLink"><a href="../VolatilitySwaptionPhysicalProductPricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalSwaptionTradePricer.</span><code><span class="memberNameLink"><a href="../NormalSwaptionTradePricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;swaptionTrade,
                  <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
                  <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
 <td class="colLast">
@@ -557,7 +557,43 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionTradePricer.</span><code><span class="memberNameLink"><a href="../SabrSwaptionTradePricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;swaptionTrade,
+                 <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                 <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the implied volatility of the swaption.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionCashParYieldProductPricer.</span><code><span class="memberNameLink"><a href="../VolatilitySwaptionCashParYieldProductPricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+                 <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                 <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the implied volatility of the swaption.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionPhysicalProductPricer.</span><code><span class="memberNameLink"><a href="../VolatilitySwaptionPhysicalProductPricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+                 <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                 <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the implied volatility of the swaption.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionProductPricer.</span><code><span class="memberNameLink"><a href="../VolatilitySwaptionProductPricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
+                 <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                 <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the implied volatility of the swaption.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionTradePricer.</span><code><span class="memberNameLink"><a href="../VolatilitySwaptionTradePricer.html#impliedVolatility(com.opengamma.strata.product.swaption.ResolvedSwaptionTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">impliedVolatility</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaptionTrade.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaptionTrade</a>&nbsp;swaptionTrade,
                  <a href="../../rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
                  <a href="../SwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SwaptionVolatilities</a>&nbsp;swaptionVolatilities)</code></th>
 <td class="colLast">

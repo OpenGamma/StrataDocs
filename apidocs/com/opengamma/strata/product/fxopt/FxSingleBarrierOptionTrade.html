@@ -133,17 +133,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a></code>, <code><a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOptionTrade</a>&gt;</code>, <code><a href="../fx/FxTrade.html" title="interface in com.opengamma.strata.product.fx">FxTrade</a></code>, <code><a href="../PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code>, <code><a href="../ProductTrade.html" title="interface in com.opengamma.strata.product">ProductTrade</a></code>, <code><a href="../ResolvableTrade.html" title="interface in com.opengamma.strata.product">ResolvableTrade</a>&lt;<a href="ResolvedFxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOptionTrade</a>&gt;</code>, <code><a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="../../basics/CalculationTarget.html" title="interface in com.opengamma.strata.basics">CalculationTarget</a></code>, <code><a href="../../basics/Resolvable.html" title="interface in com.opengamma.strata.basics">Resolvable</a>&lt;<a href="ResolvedFxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOptionTrade</a>&gt;</code>, <code><a href="../fx/FxOptionTrade.html" title="interface in com.opengamma.strata.product.fx">FxOptionTrade</a></code>, <code><a href="../fx/FxTrade.html" title="interface in com.opengamma.strata.product.fx">FxTrade</a></code>, <code><a href="../PortfolioItem.html" title="interface in com.opengamma.strata.product">PortfolioItem</a></code>, <code><a href="../ProductTrade.html" title="interface in com.opengamma.strata.product">ProductTrade</a></code>, <code><a href="../ResolvableTrade.html" title="interface in com.opengamma.strata.product">ResolvableTrade</a>&lt;<a href="ResolvedFxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOptionTrade</a>&gt;</code>, <code><a href="../Trade.html" title="interface in com.opengamma.strata.product">Trade</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">FxSingleBarrierOptionTrade</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../fx/FxTrade.html" title="interface in com.opengamma.strata.product.fx">FxTrade</a>, <a href="../ResolvableTrade.html" title="interface in com.opengamma.strata.product">ResolvableTrade</a>&lt;<a href="ResolvedFxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOptionTrade</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
+implements <a href="../fx/FxOptionTrade.html" title="interface in com.opengamma.strata.product.fx">FxOptionTrade</a>, <a href="../ResolvableTrade.html" title="interface in com.opengamma.strata.product">ResolvableTrade</a>&lt;<a href="ResolvedFxSingleBarrierOptionTrade.html" title="class in com.opengamma.strata.product.fxopt">ResolvedFxSingleBarrierOptionTrade</a>&gt;, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">A trade in an FX single barrier option.
  <p>
  An Over-The-Counter (OTC) trade in an <a href="FxSingleBarrierOption.html" title="class in com.opengamma.strata.product.fxopt"><code>FxSingleBarrierOption</code></a>.
  <p>
- An FX option is a financial instrument that provides an option to exchange two currencies at a specified future time 
+ An FX option is a financial instrument that provides an option to exchange two currencies at a specified future time
  only when barrier event occurs (knock-in option) or does not occur (knock-out option).</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -471,6 +471,8 @@ implements <a href="../fx/FxTrade.html" title="interface in com.opengamma.strata
  <p>
  The product captures the contracted financial details of the trade.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../fx/FxOptionTrade.html#getProduct()">getProduct</a></code>&nbsp;in interface&nbsp;<code><a href="../fx/FxOptionTrade.html" title="interface in com.opengamma.strata.product.fx">FxOptionTrade</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../fx/FxTrade.html#getProduct()">getProduct</a></code>&nbsp;in interface&nbsp;<code><a href="../fx/FxTrade.html" title="interface in com.opengamma.strata.product.fx">FxTrade</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

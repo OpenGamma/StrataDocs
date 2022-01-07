@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":9,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":9,"i16":9,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,72 +230,80 @@ implements <a href="NodalSurface.html" title="interface in com.opengamma.strata.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the surface.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="interpolator/SurfaceInterpolator.html" title="interface in com.opengamma.strata.market.surface.interpolator">SurfaceInterpolator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInterpolator()">getInterpolator</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the underlying interpolator.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMetadata()">getMetadata</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the surface metadata.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameter(int)">getParameter</a></span>&#8203;(int&nbsp;parameterIndex)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of the parameter at the specified index.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterCount()">getParameterCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the number of parameters.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getXValues()">getXValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the array of x-values, one for each point.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getYValues()">getYValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the array of y-values, one for each point.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getZValues()">getZValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the array of z-values, one for each point.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedNodalSurface.Meta.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>InterpolatedNodalSurface</code>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="InterpolatedNodalSurface.Meta.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="InterpolatedNodalSurface.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.market.surface.SurfaceMetadata,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.market.surface.interpolator.SurfaceInterpolator)">of</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata,
   <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;xValues,
@@ -306,7 +314,7 @@ implements <a href="NodalSurface.html" title="interface in com.opengamma.strata.
 <div class="block">Creates an interpolated surface with metadata.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="InterpolatedNodalSurface.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUnsorted(com.opengamma.strata.market.surface.SurfaceMetadata,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.collect.array.DoubleArray,com.opengamma.strata.market.surface.interpolator.SurfaceInterpolator)">ofUnsorted</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata,
           <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;xValues,
@@ -317,26 +325,26 @@ implements <a href="NodalSurface.html" title="interface in com.opengamma.strata.
 <div class="block">Creates an interpolated surface with metadata, where the values are not sorted.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="InterpolatedNodalSurface.Builder.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a builder that allows this bean to be mutated.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="InterpolatedNodalSurface.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withMetadata(com.opengamma.strata.market.surface.SurfaceMetadata)">withMetadata</a></span>&#8203;(<a href="SurfaceMetadata.html" title="interface in com.opengamma.strata.market.surface">SurfaceMetadata</a>&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">Returns a new surface with the specified metadata.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="InterpolatedNodalSurface.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -344,21 +352,21 @@ implements <a href="NodalSurface.html" title="interface in com.opengamma.strata.
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="InterpolatedNodalSurface.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
 <div class="block">Returns a perturbed copy of the data.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="InterpolatedNodalSurface.html" title="class in com.opengamma.strata.market.surface">InterpolatedNodalSurface</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withZValues(com.opengamma.strata.collect.array.DoubleArray)">withZValues</a></span>&#8203;(<a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;zValues)</code></th>
 <td class="colLast">
 <div class="block">Returns a new surface with the specified values.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValue(double,double)">zValue</a></span>&#8203;(double&nbsp;x,
       double&nbsp;y)</code></th>
@@ -366,7 +374,7 @@ implements <a href="NodalSurface.html" title="interface in com.opengamma.strata.
 <div class="block">Computes the z-value for the specified x-value and y-value.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../param/UnitParameterSensitivity.html" title="class in com.opengamma.strata.market.param">UnitParameterSensitivity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zValueParameterSensitivity(double,double)">zValueParameterSensitivity</a></span>&#8203;(double&nbsp;x,
                           double&nbsp;y)</code></th>
@@ -610,6 +618,34 @@ implements <a href="NodalSurface.html" title="interface in com.opengamma.strata.
 <dd><code>y</code> - the y-value at which the parameter sensitivity is computed</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the sensitivity at the x/y/ point</dd>
+</dl>
+</li>
+</ul>
+<a id="firstPartialDerivatives(double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>firstPartialDerivatives</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;firstPartialDerivatives&#8203;(double&nbsp;x,
+                                                double&nbsp;y)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Surface.html#firstPartialDerivatives(double,double)">Surface</a></code></span></div>
+<div class="block">Computes the partial derivatives of the surface.
+ <p>
+ The first derivatives are <code>dz/dx and dz/dy</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to x
+ <li>[1] derivative with respect to y
+ </ul></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Surface.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></code>&nbsp;in interface&nbsp;<code><a href="Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - the x-value at which the partial derivative is taken</dd>
+<dd><code>y</code> - the y-value at which the partial derivative is taken</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
 </dl>
 </li>
 </ul>

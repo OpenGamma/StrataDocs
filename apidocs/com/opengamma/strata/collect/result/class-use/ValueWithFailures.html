@@ -271,11 +271,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsList()">toCombinedValuesAsList</a></span>()</code></th>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedResultsAsList()">toCombinedResultsAsList</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
- of separate instances, combining into an immutable list.</div>
+<div class="block">Returns a collector that can be used to create a combined <code>ValueWithFailure</code>
+ from a stream of <code>Result</code> instances.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -287,11 +287,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsSet()">toCombinedValuesAsSet</a></span>()</code></th>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsList()">toCombinedValuesAsList</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
- of separate instances, combining into an immutable set.</div>
+ of separate instances, combining into an immutable list.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -303,6 +303,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;? extends T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;T&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toCombinedValuesAsSet()">toCombinedValuesAsSet</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a collector that creates a combined <code>ValueWithFailure</code> from a stream
+ of separate instances, combining into an immutable set.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;T&gt;&nbsp;operator)</code></th>
@@ -311,7 +319,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  from a stream of separate instances.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Collector</a>&lt;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;,&#8203;?,&#8203;<a href="../ValueWithFailures.html" title="class in com.opengamma.strata.collect.result">ValueWithFailures</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ValueWithFailures.</span><code><span class="memberNameLink"><a href="../ValueWithFailures.html#toValueWithFailures(T,java.util.function.BinaryOperator)">toValueWithFailures</a></span>&#8203;(T&nbsp;identityValue,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BinaryOperator</a>&lt;T&gt;&nbsp;operator)</code></th>

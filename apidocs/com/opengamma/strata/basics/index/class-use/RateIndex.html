@@ -125,9 +125,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.cms">com.opengamma.strata.product.cms</a></th>
+<td class="colLast">
+<div class="block">Entity objects describing Constant Maturity Swap (CMS) or CMS cap/floor.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.index">com.opengamma.strata.product.index</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing contracts based on rate indices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swap.type">com.opengamma.strata.product.swap.type</a></th>
+<td class="colLast">
+<div class="block">Conventions and templates to aid the construction of rate swaps.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -347,6 +359,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.cms">
+<!--   -->
+</a>
+<h3>Uses of <a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a> in <a href="../../../product/cms/package-summary.html">com.opengamma.strata.product.cms</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/cms/package-summary.html">com.opengamma.strata.product.cms</a> that return <a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">CmsLeg.</span><code><span class="memberNameLink"><a href="../../../product/cms/CmsLeg.html#getUnderlyingIndex()">getUnderlyingIndex</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the underlying Rate index that the leg is based on.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedCmsLeg.</span><code><span class="memberNameLink"><a href="../../../product/cms/ResolvedCmsLeg.html#getUnderlyingIndex()">getUnderlyingIndex</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the underlying Rate index that the leg is based on.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
 <section role="region"><a id="com.opengamma.strata.product.index">
 <!--   -->
 </a>
@@ -364,6 +407,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">RateIndexSecurity.</span><code><span class="memberNameLink"><a href="../../../product/index/RateIndexSecurity.html#getIndex()">getIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the rate index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.swap.type">
+<!--   -->
+</a>
+<h3>Uses of <a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a> in <a href="../../../product/swap/type/package-summary.html">com.opengamma.strata.product.swap.type</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/swap/type/package-summary.html">com.opengamma.strata.product.swap.type</a> that return <a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FloatRateSwapLegConvention.</span><code><span class="memberNameLink"><a href="../../../product/swap/type/FloatRateSwapLegConvention.html#getIndex()">getIndex</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the index of the convention.</div>
 </td>
 </tr>
 </tbody>

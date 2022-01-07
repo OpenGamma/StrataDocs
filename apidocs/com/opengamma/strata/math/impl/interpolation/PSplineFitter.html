@@ -274,10 +274,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>xa</code> - The lowest value of x</dd>
 <dd><code>xb</code> - The highest value of x</dd>
 <dd><code>nKnots</code> - Number of knots (note, the actual number of basis splines and thus fitted weights, equals nKnots + degree-1)</dd>
-<dd><code>degree</code> - The degree of the basis function - 0 is piecewise constant, 1 is a sawtooth function (i.e. two straight lines joined in the middle), 2 gives three 
-   quadratic sections joined together, etc. For a large value of degree, the basis function tends to a gaussian</dd>
+<dd><code>degree</code> - The degree of the basis function - 0 is piecewise constant, 1 is a sawtooth function
+  (i.e. two straight lines joined in the middle), 2 gives three 
+  quadratic sections joined together, etc. For a large value of degree, the basis function tends to a gaussian</dd>
 <dd><code>lambda</code> - The weight given to the penalty function</dd>
-<dd><code>differenceOrder</code> - applies the penalty the nth order difference in the weights, so a differenceOrder of 2 will penalise large 2nd derivatives etc</dd>
+<dd><code>differenceOrder</code> - applies the penalty the nth order difference in the weights,
+  so a differenceOrder of 2 will penalise large 2nd derivatives etc</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The results of the fit</dd>
 </dl>

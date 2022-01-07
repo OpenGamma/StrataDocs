@@ -228,6 +228,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 </li>
+<li class="blockList"><a id="com.opengamma.strata.basics.currency.BigMoney">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/basics/currency/BigMoney.html" title="class in com.opengamma.strata.basics.currency">com.opengamma.strata.basics.currency.BigMoney</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>amount</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a> amount</pre>
+<div class="block">The amount of the currency.
+ <p>
+ For example, in the value 'GBP 12.34' the amount is 12.34.</div>
+</li>
+<li class="blockListLast">
+<h4>currency</h4>
+<pre><a href="com/opengamma/strata/basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a> currency</pre>
+<div class="block">The currency.
+ <p>
+ For example, in the value 'GBP 12.34' the currency is 'GBP'.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a id="com.opengamma.strata.basics.currency.Currency">
 <!--   -->
 </a>
@@ -569,6 +599,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <p>
  This date may be a non-business day.
  The business day adjustment is used to ensure it is a valid business day.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.basics.date.AdjustableDates">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/basics/date/AdjustableDates.html" title="class in com.opengamma.strata.basics.date">com.opengamma.strata.basics.date.AdjustableDates</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>adjustment</h4>
+<pre><a href="com/opengamma/strata/basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a> adjustment</pre>
+<div class="block">The business day adjustment that is to be applied to the unadjusted dates.
+ <p>
+ This is used to adjust each date if it is not a business day.</div>
+</li>
+<li class="blockListLast">
+<h4>unadjusted</h4>
+<pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt; unadjusted</pre>
+<div class="block">The unadjusted dates, in order.
+ <p>
+ These dates may be non-business days.
+ The business day adjustment is used to ensure each date is a valid business day.</div>
 </li>
 </ul>
 </li>
@@ -1579,7 +1640,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  This is used to identify the boundary date between the initial stub and the first regular schedule period.
  <p>
  This is an unadjusted date, and as such it might not be a valid business day.
- This date must be on or after 'startDate'.
+ This date must be on or after 'startDate' and on or before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to determine the schedule.
  If not present, then the overall schedule start date will be used instead, resulting in no initial stub.</div>
@@ -1600,8 +1661,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  This is used to identify the boundary date between the last regular schedule period and the final stub.
  <p>
  This is an unadjusted date, and as such it might not be a valid business day.
- This date must be after 'startDate' and on or after 'firstRegularStartDate'.
- This date must be on or before 'endDate'.
+ This date must be one or after 'startDate', on or after 'firstRegularStartDate' and on or before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to determine the schedule.
  If not present, then the overall schedule end date will be used instead, resulting in no final stub.</div>
@@ -1620,7 +1680,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  then the override will be used when generating regular periods.
  <p>
  If set, it should be different to the start date, although this is not validated.
- Validation does check that it is before the 'firstRegularStartDate'.
+ Validation does check that it is on or before 'firstRegularStartDate' and 'lastRegularEndDate',
+ and before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to override the start date
  of the first generated schedule period.
@@ -3780,6 +3841,32 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>tenor</h4>
 <pre><a href="com/opengamma/strata/basics/date/Tenor.html" title="class in com.opengamma.strata.basics.date">Tenor</a> tenor</pre>
 <div class="block">The period between the start date and the end date.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.market.curve.HybridNodalCurve">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/market/curve/HybridNodalCurve.html" title="class in com.opengamma.strata.market.curve">com.opengamma.strata.market.curve.HybridNodalCurve</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>leftCurve</h4>
+<pre><a href="com/opengamma/strata/market/curve/NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a> leftCurve</pre>
+<div class="block">The left nodal curve.</div>
+</li>
+<li class="blockListLast">
+<h4>rightCurve</h4>
+<pre><a href="com/opengamma/strata/market/curve/NodalCurve.html" title="interface in com.opengamma.strata.market.curve">NodalCurve</a> rightCurve</pre>
+<div class="block">The right nodal curve.</div>
 </li>
 </ul>
 </li>
@@ -7904,6 +7991,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 </li>
+<li class="blockList"><a id="com.opengamma.strata.pricer.capfloor.IborCapletFloorletPeriodAmounts">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/pricer/capfloor/IborCapletFloorletPeriodAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">com.opengamma.strata.pricer.capfloor.IborCapletFloorletPeriodAmounts</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>amounts</h4>
+<pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="com/opengamma/strata/product/capfloor/IborCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt; amounts</pre>
+<div class="block">The map of Ibor caplet/floorlet periods to the double amount.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.pricer.capfloor.IborCapletFloorletPeriodCurrencyAmounts">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/pricer/capfloor/IborCapletFloorletPeriodCurrencyAmounts.html" title="class in com.opengamma.strata.pricer.capfloor">com.opengamma.strata.pricer.capfloor.IborCapletFloorletPeriodCurrencyAmounts</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>amounts</h4>
+<pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableMap</a>&lt;<a href="com/opengamma/strata/product/capfloor/IborCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod</a>,&#8203;<a href="com/opengamma/strata/basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&gt; amounts</pre>
+<div class="block">The map of Ibor caplet/floorlet periods to the currency amount.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a id="com.opengamma.strata.pricer.capfloor.IborCapletFloorletSabrSensitivity">
 <!--   -->
 </a>
@@ -9622,6 +9751,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>1L</dd>
 </dl>
 </li>
+<li class="blockList"><a id="com.opengamma.strata.pricer.impl.volatility.smile.SabrInArrearsVolatilityFunction">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/pricer/impl/volatility/smile/SabrInArrearsVolatilityFunction.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">com.opengamma.strata.pricer.impl.volatility.smile.SabrInArrearsVolatilityFunction</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>q</h4>
+<pre>double q</pre>
+<div class="block">The mean reversion related parameter.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a id="com.opengamma.strata.pricer.impl.volatility.smile.SsviFormulaData">
 <!--   -->
 </a>
@@ -10535,7 +10685,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>convention</h4>
-<pre><a href="com/opengamma/strata/product/swap/type/FixedIborSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedIborSwapConvention</a> convention</pre>
+<pre><a href="com/opengamma/strata/product/swap/type/FixedFloatSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedFloatSwapConvention</a> convention</pre>
 <div class="block">The swap convention that the volatilities are to be used for.</div>
 </li>
 <li class="blockList">
@@ -10706,7 +10856,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>convention</h4>
-<pre><a href="com/opengamma/strata/product/swap/type/FixedIborSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedIborSwapConvention</a> convention</pre>
+<pre><a href="com/opengamma/strata/product/swap/type/FixedFloatSwapConvention.html" title="interface in com.opengamma.strata.product.swap.type">FixedFloatSwapConvention</a> convention</pre>
 <div class="block">The swap convention that the volatilities are to be used for.</div>
 </li>
 <li class="blockList">
@@ -14200,6 +14350,113 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <p>
  The notional amount applicable during the period.
  The currency of the notional is specified by <code>currency</code>.</div>
+</li>
+<li class="blockList">
+<h4>paymentDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> paymentDate</pre>
+<div class="block">The date that payment occurs.
+ <p>
+ If the schedule adjusts for business days, then this is the adjusted date.</div>
+</li>
+<li class="blockList">
+<h4>startDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> startDate</pre>
+<div class="block">The start date of the payment period.
+ <p>
+ This is the first date in the period.
+ If the schedule adjusts for business days, then this is the adjusted date.</div>
+</li>
+<li class="blockList">
+<h4>unadjustedEndDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> unadjustedEndDate</pre>
+<div class="block">The unadjusted end date.
+ <p>
+ The end date before any business day adjustment is applied.
+ <p>
+ When building, this will default to the end date if not specified.</div>
+</li>
+<li class="blockList">
+<h4>unadjustedStartDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> unadjustedStartDate</pre>
+<div class="block">The unadjusted start date.
+ <p>
+ The start date before any business day adjustment is applied.
+ <p>
+ When building, this will default to the start date if not specified.</div>
+</li>
+<li class="blockListLast">
+<h4>yearFraction</h4>
+<pre>double yearFraction</pre>
+<div class="block">The year fraction that the accrual period represents.
+ <p>
+ The value is usually calculated using a <a href="com/opengamma/strata/basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date"><code>DayCount</code></a> which may be different to that of the index.
+ Typically the value will be close to 1 for one year and close to 0.5 for six months.
+ The fraction may be greater than 1, but not less than 0.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>caplet</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a> caplet</pre>
+<div class="block">The optional caplet strike.
+ <p>
+ This defines the strike value of a caplet.
+ <p>
+ If the period is not a caplet, this field will be absent.</div>
+</li>
+<li class="blockList">
+<h4>currency</h4>
+<pre><a href="com/opengamma/strata/basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a> currency</pre>
+<div class="block">The primary currency of the payment period.
+ <p>
+ The amounts of the notional are usually expressed in terms of this currency,
+ however they can be converted from amounts in a different currency.</div>
+</li>
+<li class="blockList">
+<h4>endDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> endDate</pre>
+<div class="block">The end date of the payment period.
+ <p>
+ This is the last date in the period.
+ If the schedule adjusts for business days, then this is the adjusted date.</div>
+</li>
+<li class="blockList">
+<h4>floorlet</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a> floorlet</pre>
+<div class="block">The optional floorlet strike.
+ <p>
+ This defines the strike value of a floorlet.
+ <p>
+ If the period is not a floorlet, this field will be absent.</div>
+</li>
+<li class="blockList">
+<h4>notional</h4>
+<pre>double notional</pre>
+<div class="block">The notional amount, positive if receiving, negative if paying.
+ <p>
+ The notional amount applicable during the period.
+ The currency of the notional is specified by <code>currency</code>.</div>
+</li>
+<li class="blockList">
+<h4>overnightRate</h4>
+<pre><a href="com/opengamma/strata/product/rate/OvernightCompoundedRateComputation.html" title="class in com.opengamma.strata.product.rate">OvernightCompoundedRateComputation</a> overnightRate</pre>
+<div class="block">The rate to be observed.
+ <p>
+ The value of the period is based on this overnight compounded rate.</div>
 </li>
 <li class="blockList">
 <h4>paymentDate</h4>
@@ -18344,7 +18601,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="com/opengamma/strata/product/option/Barrier.html" title="interface in com.opengamma.strata.product.option">Barrier</a> barrier</pre>
 <div class="block">The barrier description.
  <p>
- The barrier level stored in this field must be represented based on the direction of the currency pair in the 
+ The barrier level stored in this field must be represented based on the direction of the currency pair in the
  underlying FX transaction.
  <p>
  For example, if the underlying option is an option on EUR/GBP, the barrier should be a certain level of EUR/GBP rate.</div>
@@ -18352,7 +18609,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>rebate</h4>
 <pre><a href="com/opengamma/strata/basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a> rebate</pre>
-<div class="block">For a 'out' option, the amount is paid when the barrier is reached; 
+<div class="block">For a 'out' option, the amount is paid when the barrier is reached;
  for a 'in' option, the amount is paid at expiry if the barrier is not reached.
  <p>
  This is the notional amount represented in one of the currency pair.
@@ -21374,8 +21631,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockListLast">
 <h4>template</h4>
-<pre><a href="com/opengamma/strata/product/swap/type/FixedIborSwapTemplate.html" title="class in com.opengamma.strata.product.swap.type">FixedIborSwapTemplate</a> template</pre>
-<div class="block">The template for creating Fixed-Ibor swap.</div>
+<pre><a href="com/opengamma/strata/product/swap/type/FixedFloatSwapTemplate.html" title="interface in com.opengamma.strata.product.swap.type">FixedFloatSwapTemplate</a> template</pre>
+<div class="block">The template for creating a Fixed-Ibor or Fixed-Overnight swap.</div>
 </li>
 </ul>
 </li>
@@ -23706,6 +23963,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
+<h4>exerciseInfo</h4>
+<pre><a href="com/opengamma/strata/product/swaption/SwaptionExerciseDates.html" title="class in com.opengamma.strata.product.swaption">SwaptionExerciseDates</a> exerciseInfo</pre>
+<div class="block">The exercise information.
+ <p>
+ A swaption can have three different kinds of exercise - European, American and Bermudan.
+ A European swaption has one exercise date, an American can exercise on any date, and a Bermudan
+ can exercise on a fixed set of dates.
+ <p>
+ European swaptions will have matching information in this object, expiry date and swap start date.
+ If this is not set in the builder, it will be defaulted to European from the expiry date and swap start date.</div>
+</li>
+<li class="blockList">
 <h4>expiry</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a> expiry</pre>
 <div class="block">The expiry date-time of the option.
@@ -23790,11 +24059,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
+<h4>exerciseInfo</h4>
+<pre><a href="com/opengamma/strata/product/swaption/SwaptionExercise.html" title="class in com.opengamma.strata.product.swaption">SwaptionExercise</a> exerciseInfo</pre>
+<div class="block">The exercise information, optional.
+ <p>
+ A swaption can have three different kinds of exercise - European, American and Bermudan.
+ A European swaption has one exercise date, an American can exercise on any date, and a Bermudan
+ can exercise on a fixed set of dates.
+ <p>
+ If not present, the swaption is considered to be a European swaption as per the expiry date.</div>
+</li>
+<li class="blockList">
 <h4>expiryDate</h4>
 <pre><a href="com/opengamma/strata/basics/date/AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a> expiryDate</pre>
 <div class="block">The expiry date of the option.
  <p>
- The option is European, and can only be exercised on the expiry date.
+ This is the last date that the swaption can be exercised.
+ To represent Bermudan and American swaptions, or to represent a European swaption where the swap start
+ date is calculated dynamically, see the <code>exerciseOptions</code> field.
  <p>
  This date is typically set to be a valid business day.
  However, the <code>businessDayAdjustment</code> property may be set to provide a rule for adjustment.</div>
@@ -23835,6 +24117,118 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <p>
  At expiry, if the option is exercised, this swap will be entered into.
  The swap description is the swap as viewed by the party long the option.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.swaption.SwaptionExercise">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/swaption/SwaptionExercise.html" title="class in com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption.SwaptionExercise</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>dateDefinition</h4>
+<pre><a href="com/opengamma/strata/basics/date/AdjustableDates.html" title="class in com.opengamma.strata.basics.date">AdjustableDates</a> dateDefinition</pre>
+<div class="block">An explicit list of exercise dates.
+ <p>
+ A European swaption has one date in the list.
+ A Bermudan swaption has at least two dates in the list.
+ An American swaption has at exactly two dates in the list, the earliest and latest dates.</div>
+</li>
+<li class="blockList">
+<h4>frequency</h4>
+<pre><a href="com/opengamma/strata/basics/schedule/Frequency.html" title="class in com.opengamma.strata.basics.schedule">Frequency</a> frequency</pre>
+<div class="block">The frequency of exercise between the earliest and latest dates.
+ <p>
+ An American swaption must set this to one day.
+ <p>
+ A Bermudan swaption might set this to a specific frequency instead of pre-calculating the dates.
+ If it does this, there must only be two dates in the list.
+ The intermediate dates will be calculated by adding multiples of the frequency to the earliest date.</div>
+</li>
+<li class="blockListLast">
+<h4>swapStartDateOffset</h4>
+<pre><a href="com/opengamma/strata/basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a> swapStartDateOffset</pre>
+<div class="block">The offset to the swap start date.
+ <p>
+ Each adjusted exercise date has this offset applied to get the start date of the underlying swap.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.swaption.SwaptionExerciseDate">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/swaption/SwaptionExerciseDate.html" title="class in com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption.SwaptionExerciseDate</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>exerciseDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> exerciseDate</pre>
+<div class="block">The adjusted exercise date.
+ <p>
+ This date has been adjusted to be a business day.</div>
+</li>
+<li class="blockList">
+<h4>swapStartDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> swapStartDate</pre>
+<div class="block">The adjusted swap start date.
+ <p>
+ This date has been adjusted to be a business day.</div>
+</li>
+<li class="blockListLast">
+<h4>unadjustedExerciseDate</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a> unadjustedExerciseDate</pre>
+<div class="block">The unadjusted exercise date.
+ <p>
+ This date may be a non-business day.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="com.opengamma.strata.product.swaption.SwaptionExerciseDates">
+<!--   -->
+</a>
+<h3>Class <a href="com/opengamma/strata/product/swaption/SwaptionExerciseDates.html" title="class in com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption.SwaptionExerciseDates</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>allDates</h4>
+<pre>boolean allDates</pre>
+<div class="block">Whether all dates are valid dates for swaption exercise between the first and last date.
+ <p>
+ This will be true for an American swaption, and false otherwise.</div>
+</li>
+<li class="blockListLast">
+<h4>dates</h4>
+<pre><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="com/opengamma/strata/product/swaption/SwaptionExerciseDate.html" title="class in com.opengamma.strata.product.swaption">SwaptionExerciseDate</a>&gt; dates</pre>
+<div class="block">An explicit list of exercise dates.
+ <p>
+ A European swaption has one date in the list.
+ A Bermudan swaption has at least two dates in the list.
+ An American swaption has at exactly two dates in the list, the earliest and latest dates.</div>
 </li>
 </ul>
 </li>

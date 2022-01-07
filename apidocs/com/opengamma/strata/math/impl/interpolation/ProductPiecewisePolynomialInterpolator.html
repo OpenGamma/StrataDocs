@@ -140,9 +140,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">ProductPiecewisePolynomialInterpolator</span>
 extends <a href="PiecewisePolynomialInterpolator.html" title="class in com.opengamma.strata.math.impl.interpolation">PiecewisePolynomialInterpolator</a></pre>
 <div class="block">Given a data set {xValues[i], yValues[i]}, interpolate {xValues[i], xValues[i] * yValues[i]} by a piecewise polynomial function. 
- The interpolation can be clamped at {xValuesClamped[j], xValuesClamped[j] * yValuesClamped[j]}, i.e., {xValuesClamped[j], yValuesClamped[j]}, 
+ The interpolation can be clamped at {xValuesClamped[j], xValuesClamped[j] * yValuesClamped[j]},
+ i.e., {xValuesClamped[j], yValuesClamped[j]}, 
  where the extra points can be inside or outside the data range. 
- By default right extrapolation is completed with a linear function, whereas default left extrapolation uses polynomial coefficients for the leftmost interval 
+ By default right extrapolation is completed with a linear function, whereas default left extrapolation
+ uses polynomial coefficients for the leftmost interval 
  and left linear extrapolation can be straightforwardly computed from the coefficients.
  This default setting is changed by adding extra node points outside the data range.</div>
 </li>
@@ -317,7 +319,8 @@ extends <a href="PiecewisePolynomialInterpolator.html" title="class in com.openg
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValues</code> - Y values of data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><a href="PiecewisePolynomialResult.html" title="class in com.opengamma.strata.math.impl.interpolation"><code>PiecewisePolynomialResult</code></a> containing knots, coefficients of piecewise polynomials, number of intervals, degree of polynomials, dimension of spline</dd>
+<dd><a href="PiecewisePolynomialResult.html" title="class in com.opengamma.strata.math.impl.interpolation"><code>PiecewisePolynomialResult</code></a> containing knots, coefficients of piecewise polynomials,
+  number of intervals, degree of polynomials, dimension of spline</dd>
 </dl>
 </li>
 </ul>
@@ -338,7 +341,8 @@ extends <a href="PiecewisePolynomialInterpolator.html" title="class in com.openg
 <dd><code>xValues</code> - X values of data</dd>
 <dd><code>yValuesMatrix</code> - Y values of data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Coefficient matrix whose i-th row vector is {a_n, a_{n-1}, ... } of f(x) = a_n * (x-x_i)^n + a_{n-1} * (x-x_i)^{n-1} +... for the i-th interval</dd>
+<dd>Coefficient matrix whose i-th row vector is {a_n, a_{n-1}, ... } 
+  of f(x) = a_n * (x-x_i)^n + a_{n-1} * (x-x_i)^{n-1} +... for the i-th interval</dd>
 </dl>
 </li>
 </ul>

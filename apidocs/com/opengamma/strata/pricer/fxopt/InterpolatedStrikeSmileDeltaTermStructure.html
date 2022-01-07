@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":41,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":41,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -454,6 +454,15 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 </td>
 </tr>
 <tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#partialFirstDerivatives(double,double,double)">partialFirstDerivatives</a></span>&#8203;(double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the volatilities.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="SmileAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">SmileAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileAndSensitivitiesForExpiry(double,com.opengamma.strata.collect.array.DoubleArray)">smileAndSensitivitiesForExpiry</a></span>&#8203;(double&nbsp;expiry,
                               <a href="../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a>&nbsp;volatilityAtTimeSensitivity)</code></th>
@@ -461,19 +470,19 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Calculates the smile at a given time and the sensitivities with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="SmileDeltaParameters.html" title="class in com.opengamma.strata.pricer.fxopt">SmileDeltaParameters</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smileForExpiry(double)">smileForExpiry</a></span>&#8203;(double&nbsp;expiry)</code></th>
 <td class="colLast">
 <div class="block">Calculates the smile at a given time.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,double,double)">volatility</a></span>&#8203;(double&nbsp;time,
           double&nbsp;strike,
@@ -482,7 +491,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Calculates the volatility at a given time/strike/forward from the term structure.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="VolatilityAndBucketedSensitivities.html" title="class in com.opengamma.strata.pricer.fxopt">VolatilityAndBucketedSensitivities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAndSensitivities(double,double,double)">volatilityAndSensitivities</a></span>&#8203;(double&nbsp;time,
                           double&nbsp;strike,
@@ -491,7 +500,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Calculates the volatility and the volatility sensitivity with respect to the volatility data points.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -499,7 +508,7 @@ implements <a href="SmileDeltaTermStructure.html" title="interface in com.openga
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="InterpolatedStrikeSmileDeltaTermStructure.html" title="class in com.opengamma.strata.pricer.fxopt">InterpolatedStrikeSmileDeltaTermStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../../market/param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -1082,6 +1091,36 @@ public static&nbsp;<a href="InterpolatedStrikeSmileDeltaTermStructure.html" titl
 <dd><code>forward</code> - the forward</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the volatility</dd>
+</dl>
+</li>
+</ul>
+<a id="partialFirstDerivatives(double,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>partialFirstDerivatives</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;partialFirstDerivatives&#8203;(double&nbsp;expiry,
+                                                double&nbsp;strike,
+                                                double&nbsp;forward)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="SmileDeltaTermStructure.html#partialFirstDerivatives(double,double,double)">SmileDeltaTermStructure</a></code></span></div>
+<div class="block">Computes the partial derivatives of the volatilities.
+ <p>
+ The first derivatives are <code>dVol/dExpiry and dVol/dStrike</code>.
+ The derivatives are in the following order:
+ <ul>
+ <li>[0] derivative with respect to expiry
+ <li>[1] derivative with respect to strike
+ </ul></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="SmileDeltaTermStructure.html#partialFirstDerivatives(double,double,double)">partialFirstDerivatives</a></code>&nbsp;in interface&nbsp;<code><a href="SmileDeltaTermStructure.html" title="interface in com.opengamma.strata.pricer.fxopt">SmileDeltaTermStructure</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>expiry</code> - the expiry at which the partial derivative is taken</dd>
+<dd><code>strike</code> - the strike at which the partial derivative is taken</dd>
+<dd><code>forward</code> - the forward rate</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the z-value and it's partial first derivatives</dd>
 </dl>
 </li>
 </ul>

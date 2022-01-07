@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":9,"i9":9};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":9,"i10":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -270,33 +270,40 @@ implements <a href="../../collect/named/NamedEnum.html" title="interface in com.
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFinal()">isFinal</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if this convention tries to produce a final stub.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLong()">isLong</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if this convention tries to produce a long stub.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isShort()">isShort</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if this convention tries to produce a short stub.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSmart()">isSmart</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if this convention uses smart rules to create a stub.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="StubConvention.html" title="enum in com.opengamma.strata.basics.schedule">StubConvention</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified name.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="RollConvention.html" title="interface in com.opengamma.strata.basics.schedule">RollConvention</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toRollConvention(java.time.LocalDate,java.time.LocalDate,com.opengamma.strata.basics.schedule.Frequency,boolean)">toRollConvention</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;start,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;end,
@@ -306,21 +313,21 @@ implements <a href="../../collect/named/NamedEnum.html" title="interface in com.
 <div class="block">Converts this stub convention to the appropriate roll convention.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the formatted name of the type.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="StubConvention.html" title="enum in com.opengamma.strata.basics.schedule">StubConvention</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valueOf(java.lang.String)">valueOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="StubConvention.html" title="enum in com.opengamma.strata.basics.schedule">StubConvention</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
 <td class="colLast">
@@ -452,7 +459,6 @@ the order they are declared.</div>
  If there is no remaining period when calculating, then there is no stub.
  For example, a 6 month trade can be exactly divided by a 3 month frequency.
  <p>
- When creating a schedule, there must be no explicit final stub.
  If there is an explicit initial stub, then this convention is considered to be matched
  and the remaining period is calculated using the stub convention 'None'.</div>
 </li>
@@ -524,7 +530,6 @@ the order they are declared.</div>
  If there is no remaining period when calculating, then there is no stub.
  For example, a 6 month trade can be exactly divided by a 3 month frequency.
  <p>
- When creating a schedule, there must be no explicit initial stub.
  If there is an explicit final stub, then this convention is considered to be matched
  and the remaining period is calculated using the stub convention 'None'.</div>
 </li>
@@ -699,6 +704,25 @@ not permitted.)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if calculation occurs backwards from the end date to the start date</dd>
+</dl>
+</li>
+</ul>
+<a id="isFinal()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFinal</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isFinal()</pre>
+<div class="block">Checks if this convention tries to produce a final stub.
+ <p>
+ If true, then there will typically be a stub at the end of the schedule.
+ <p>
+ The 'ShortFinal', 'LongFinal' and 'SmartFinal' conventions return true.
+ Other conventions return false.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if calculation occurs forwards from the start date to the end date</dd>
 </dl>
 </li>
 </ul>

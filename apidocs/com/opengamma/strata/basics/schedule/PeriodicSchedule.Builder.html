@@ -564,7 +564,7 @@ extends org.joda.beans.impl.direct.DirectFieldsBeanBuilder&lt;<a href="PeriodicS
  This is used to identify the boundary date between the initial stub and the first regular schedule period.
  <p>
  This is an unadjusted date, and as such it might not be a valid business day.
- This date must be on or after 'startDate'.
+ This date must be on or after 'startDate' and on or before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to determine the schedule.
  If not present, then the overall schedule start date will be used instead, resulting in no initial stub.</div>
@@ -588,8 +588,7 @@ extends org.joda.beans.impl.direct.DirectFieldsBeanBuilder&lt;<a href="PeriodicS
  This is used to identify the boundary date between the last regular schedule period and the final stub.
  <p>
  This is an unadjusted date, and as such it might not be a valid business day.
- This date must be after 'startDate' and on or after 'firstRegularStartDate'.
- This date must be on or before 'endDate'.
+ This date must be one or after 'startDate', on or after 'firstRegularStartDate' and on or before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to determine the schedule.
  If not present, then the overall schedule end date will be used instead, resulting in no final stub.</div>
@@ -619,7 +618,8 @@ extends org.joda.beans.impl.direct.DirectFieldsBeanBuilder&lt;<a href="PeriodicS
  then the override will be used when generating regular periods.
  <p>
  If set, it should be different to the start date, although this is not validated.
- Validation does check that it is before the 'firstRegularStartDate'.
+ Validation does check that it is on or before 'firstRegularStartDate' and 'lastRegularEndDate',
+ and before 'endDate'.
  <p>
  During schedule generation, if this is present it will be used to override the start date
  of the first generated schedule period.

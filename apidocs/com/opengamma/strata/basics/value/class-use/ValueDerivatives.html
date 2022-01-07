@@ -119,13 +119,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.market.surface.interpolator">com.opengamma.strata.market.surface.interpolator</a></th>
+<td class="colLast">
+<div class="block">Interpolators for surfaces.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.math.impl.function">com.opengamma.strata.math.impl.function</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.capfloor">com.opengamma.strata.pricer.capfloor</a></th>
 <td class="colLast">
 <div class="block">Calculators for Ibor cap-floor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.fxopt">com.opengamma.strata.pricer.fxopt</a></th>
+<td class="colLast">
+<div class="block">Calculators for FX options.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -226,6 +238,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a> in <a href="../../../market/surface/package-summary.html">com.opengamma.strata.market.surface</a></h3>
 <table class="useSummary">
+<caption><span>Methods in <a href="../../../market/surface/package-summary.html">com.opengamma.strata.market.surface</a> that return <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ConstantSurface.</span><code><span class="memberNameLink"><a href="../../../market/surface/ConstantSurface.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DeformedSurface.</span><code><span class="memberNameLink"><a href="../../../market/surface/DeformedSurface.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">InterpolatedNodalSurface.</span><code><span class="memberNameLink"><a href="../../../market/surface/InterpolatedNodalSurface.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Surface.</span><code><span class="memberNameLink"><a href="../../../market/surface/Surface.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the surface.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Methods in <a href="../../../market/surface/package-summary.html">com.opengamma.strata.market.surface</a> that return types with arguments of type <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -271,6 +319,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../../collect/tuple/DoublesPair.html" title="class in com.opengamma.strata.collect.tuple">DoublesPair</a>,&#8203;<a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&gt;&nbsp;deformationFunction)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.market.surface.interpolator">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a> in <a href="../../../market/surface/interpolator/package-summary.html">com.opengamma.strata.market.surface.interpolator</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../market/surface/interpolator/package-summary.html">com.opengamma.strata.market.surface.interpolator</a> that return <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BoundSurfaceInterpolator.</span><code><span class="memberNameLink"><a href="../../../market/surface/interpolator/BoundSurfaceInterpolator.html#firstPartialDerivatives(double,double)">firstPartialDerivatives</a></span>&#8203;(double&nbsp;x,
+                       double&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the surface.</div>
 </td>
 </tr>
 </tbody>
@@ -330,6 +403,73 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                  double&nbsp;strike,
                  double&nbsp;forward)</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.fxopt">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a> in <a href="../../../pricer/fxopt/package-summary.html">com.opengamma.strata.pricer.fxopt</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/fxopt/package-summary.html">com.opengamma.strata.pricer.fxopt</a> that return <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackFxOptionFlatVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/BlackFxOptionFlatVolatilities.html#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">firstPartialDerivatives</a></span>&#8203;(<a href="../../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                       double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackFxOptionSmileVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/BlackFxOptionSmileVolatilities.html#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">firstPartialDerivatives</a></span>&#8203;(<a href="../../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                       double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackFxOptionSurfaceVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/BlackFxOptionSurfaceVolatilities.html#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">firstPartialDerivatives</a></span>&#8203;(<a href="../../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                       double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxOptionVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/FxOptionVolatilities.html#firstPartialDerivatives(com.opengamma.strata.basics.currency.CurrencyPair,double,double,double)">firstPartialDerivatives</a></span>&#8203;(<a href="../../currency/CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair,
+                       double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the volatilities.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">InterpolatedStrikeSmileDeltaTermStructure.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/InterpolatedStrikeSmileDeltaTermStructure.html#partialFirstDerivatives(double,double,double)">partialFirstDerivatives</a></span>&#8203;(double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SmileDeltaTermStructure.</span><code><span class="memberNameLink"><a href="../../../pricer/fxopt/SmileDeltaTermStructure.html#partialFirstDerivatives(double,double,double)">partialFirstDerivatives</a></span>&#8203;(double&nbsp;expiry,
+                       double&nbsp;strike,
+                       double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Computes the partial derivatives of the volatilities.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -653,6 +793,43 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                  <a href="../../../pricer/impl/volatility/smile/VolatilityFunctionProvider.html" title="type parameter in VolatilityFunctionProvider">T</a>&nbsp;data)</code></th>
 <td class="colLast">
 <div class="block">Calculates volatility and the adjoint (volatility sensitivity to forward, strike and model parameters).</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a> that return types with arguments of type <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrInArrearsVolatilityFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrInArrearsVolatilityFunction.html#effectiveSabrAd(com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData,double,double)">effectiveSabrAd</a></span>&#8203;(<a href="../../../pricer/impl/volatility/smile/SabrFormulaData.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">SabrFormulaData</a>&nbsp;parameters,
+               double&nbsp;tau0,
+               double&nbsp;tau1)</code></th>
+<td class="colLast">
+<div class="block">The effective SABR parameters from the raw SABR parameters and the times.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrInArrearsVolatilityFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrInArrearsVolatilityFunction.html#effectiveSabrAfterStartAd(com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData,double,double)">effectiveSabrAfterStartAd</a></span>&#8203;(<a href="../../../pricer/impl/volatility/smile/SabrFormulaData.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">SabrFormulaData</a>&nbsp;parameters,
+                         double&nbsp;tau0,
+                         double&nbsp;tau1)</code></th>
+<td class="colLast">
+<div class="block">The effective SABR parameters and their derivatives from the raw SABR parameters and the times.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrInArrearsVolatilityFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrInArrearsVolatilityFunction.html#effectiveSabrBeforeStartAd(com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData,double,double)">effectiveSabrBeforeStartAd</a></span>&#8203;(<a href="../../../pricer/impl/volatility/smile/SabrFormulaData.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">SabrFormulaData</a>&nbsp;parameters,
+                          double&nbsp;tau0,
+                          double&nbsp;tau1)</code></th>
+<td class="colLast">
+<div class="block">The effective SABR parameters and their derivatives from the raw SABR parameters and the times.</div>
 </td>
 </tr>
 </tbody>

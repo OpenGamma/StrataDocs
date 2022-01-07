@@ -202,7 +202,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  distribution with probability density function
  $$
  \begin{align*}
- f_r(x) = \frac{e^-\frac{x + \lambda}{2}x^{\frac{r}{2} - 1}}{2^{\frac{r}{2}}}\sum_{k=0}^\infty \frac{(\lambda k)^k}{2^{2k}k!\Gamma(k + \frac{r}{2})}
+ f_r(x) = \frac{e^-\frac{x + \lambda}{2}x^{\frac{r}{2} - 1}}{2^{\frac{r}{2}}}\sum_{k=0}^\infty
+  \frac{(\lambda k)^k}{2^{2k}k!\Gamma(k + \frac{r}{2})}
  \end{align*}
  $$
  where $r$ is the number of degrees of freedom, $\lambda$ is the
@@ -228,7 +229,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Student's T-distribution is a continuous probability distribution with probability density function
  $$
  \begin{align*}
- f(x) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu\pi}\Gamma(\left(\frac{\nu}{2}\right)}\left(1 + \frac{x^2}{\nu}\right)^{-\frac{1}{2}(\nu + 1)}
+ f(x) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu\pi}\Gamma(\left(\frac{\nu}{2}\right)}\
+ left(1 + \frac{x^2}{\nu}\right)^{-\frac{1}{2}(\nu + 1)}
  \end{align*}
  $$
  where $\nu$ is the number of degrees of freedom and $\Gamma$ is the Gamma function (<a href="../../function/special/GammaFunction.html" title="class in com.opengamma.strata.math.impl.function.special"><code>GammaFunction</code></a>).</div>
