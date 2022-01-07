@@ -60,36 +60,42 @@ and they generally do not have holiday calendar data available.
 An Ibor index is used to represent the rate where money is deposited for a period longer than one day.
 The deposit period is known as the tenor, and a rate is published for a number of different tenors.
 
-| Name                 | Tenors                   | Description               | Day Count    |
-|----------------------|--------------------------|---------------------------|--------------|
-| AUD-BBSW-XX          | 1M,2M,3M,4M,5M,6M        | BBSW index for AUD        | Act/365F     |
-| CAD-CDOR-XX          | 1M,2M,3M,6M,12M          | CDOR index for CAD        | Act/365F     |
-| CHF-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for CHF       | Act/360      |
-| CNY-REPO-XX *        | 1W                       | REPO index for CNY        | Act/365F     |
-| CZK-PRIBOR-XX        | 1W,2W,1M,2M,3M,6M,12M    | PRIBOR index for CZK      | Act/360      |
-| DKK-CIBOR-XX         | 1W,2W,1M,2M,3M,6M,9M,12M | CIBOR index for DKK       | Act/360      |
-| EUR-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for EUR       | Act/360      |
-| EUR-EURIBOR-XX       | 1W,2W,1M,2M,3M,6M,9M,12M | EURIBOR index for EUR     | Act/360      |
-| GBP-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for GBP       | Act/365F     |
-| HKD-HIBOR-XX *       | 1W,2W,1M,2M,3M,6M,12M    | HIBOR index for HKD       | Act/365F     |
-| HUF-BUBOR-XX         | 1W,2W,1M,2M,3M,6M,9M,12M | BUBOR index for HUF       | Act/360      |
-| ILS-TELBOR-XX *      | 1M,3M,6M,12M             | TELBOR index for ILS      | Act/365F     |
-| JPY-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for JPY       | Act/360      |
-| JPY-TIBOR-JAPAN-XX   | 1W,1M,2M,3M,6M,12M       | TIBOR index for JPY       | Act/365F     |
-| JPY-TIBOR-EUROYEN-XX | 1W,1M,2M,3M,6M,12M       | TIBOR index for JPY       | Act/360      |
-| KRW-CD-XX *          | 13W                      | CD index for KRW          | Act/365F     |
-| MXN-TIIE-XX          | 4W,13W,26W               | TIIE index for MXN        | Act/360      |
-| NOK-NIBOR-XX         | 1W,1M,2M,3M,6M           | NIBOR index for NOK       | Act/360      |
-| NZD-BKBM-XX          | 1M,2M,3M,4M,5M,6M        | BKBM index for NZD        | Act/365F     |
-| PLN-WIBOR-XX         | 1W,1M,3M,6M,12M          | WIBOR index for PLN       | Act/365F     |
-| SAR-SAIBOR-XX *      | 1W,1M,3M,6M,12M          | SAIBOR index for SAR      | Act/360      |
-| SEK-STIBOR-XX        | 1W,1M,2M,3M,6M           | STIBOR index for SEK      | Act/360      |
-| SGD-SIBOR-XX *       | 1M,3M,6M,12M             | SIBOR index for SGD       | Act/365F     |
-| SGD-SOR-XX *         | 1M,3M,6M                 | SOR index for SGD         | Act/365F     |
-| THB-THBFIX-XX *      | 1W,1M,3M,6M,12M          | THBFIX index for THB      | Act/365F     |
-| TWD-TAIBOR-XX *      | 1W,1M,2M,3M,6M,9M,12M    | TAIBOR index for TWD      | Act/365F     |
-| USD-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for USD       | Act/360      |
-| ZAR-JIBAR-XX         | 1M,3M,6M,9M,12M          | JIBAR index for ZAR       | Act/365F     |
+| Name                 | Tenors                   | Description                    | Day Count    |
+|----------------------|--------------------------|--------------------------------|--------------|
+| AUD-BBSW-XX          | 1M,2M,3M,4M,5M,6M        | BBSW index for AUD             | Act/365F     |
+| CAD-CDOR-XX          | 1M,2M,3M,6M,12M          | CDOR index for CAD             | Act/365F     |
+| CHF-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for CHF            | Act/360      |
+| CNY-REPO-XX *        | 1W                       | REPO index for CNY             | Act/365F     |
+| CZK-PRIBOR-XX        | 1W,2W,1M,2M,3M,6M,12M    | PRIBOR index for CZK           | Act/360      |
+| DKK-CIBOR-XX         | 1W,2W,1M,2M,3M,6M,9M,12M | CIBOR index for DKK            | Act/360      |
+| EUR-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for EUR            | Act/360      |
+| EUR-EURIBOR-XX       | 1W,2W,1M,2M,3M,6M,9M,12M | EURIBOR index for EUR          | Act/360      |
+| GBP-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for GBP            | Act/365F     |
+| GBP-SONIAICETERM-XX *| 1M,3M,6M,12M             | SONIA ICE term index for GBP   | Act/365F     |
+| GBP-SONIAREFINITIVTERM-XX *| 1M,3M,6M,12M       | SONIA Refinitiv term index for GBP | Act/365F |
+| HKD-HIBOR-XX *       | 1W,2W,1M,2M,3M,6M,12M    | HIBOR index for HKD            | Act/365F     |
+| HUF-BUBOR-XX         | 1W,2W,1M,2M,3M,6M,9M,12M | BUBOR index for HUF            | Act/360      |
+| ILS-TELBOR-XX *      | 1M,3M,6M,12M             | TELBOR index for ILS           | Act/365F     |
+| JPY-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for JPY            | Act/360      |
+| JPY-TIBOR-JAPAN-XX   | 1W,1M,2M,3M,6M,12M       | TIBOR index for JPY            | Act/365F     |
+| JPY-TIBOR-EUROYEN-XX | 1W,1M,2M,3M,6M,12M       | TIBOR index for JPY            | Act/360      |
+| JPY-TORF-XX          | 1M,3M,6M                 | TORF index for JPY             | Act/365F     |
+| KRW-CD-XX *          | 13W                      | CD index for KRW               | Act/365F     |
+| MXN-TIIE-XX          | 4W,13W,26W               | TIIE index for MXN             | Act/360      |
+| NOK-NIBOR-XX         | 1W,1M,2M,3M,6M           | NIBOR index for NOK            | Act/360      |
+| NZD-BKBM-XX          | 1M,2M,3M,4M,5M,6M        | BKBM index for NZD             | Act/365F     |
+| PLN-WIBOR-XX         | 1W,1M,3M,6M,12M          | WIBOR index for PLN            | Act/365F     |
+| SAR-SAIBOR-XX *      | 1W,1M,3M,6M,12M          | SAIBOR index for SAR           | Act/360      |
+| SEK-STIBOR-XX        | 1W,1M,2M,3M,6M           | STIBOR index for SEK           | Act/360      |
+| SGD-SIBOR-XX *       | 1M,3M,6M,12M             | SIBOR index for SGD            | Act/365F     |
+| SGD-SOR-XX *         | 1M,3M,6M                 | SOR index for SGD              | Act/365F     |
+| THB-THBFIX-XX *      | 1W,1M,3M,6M,12M          | THBFIX index for THB           | Act/365F     |
+| TWD-TAIBOR-XX *      | 1W,1M,2M,3M,6M,9M,12M    | TAIBOR index for TWD           | Act/365F     |
+| USD-AMERIBORTERM-XX *| 1M,3M                    | AMERIBOR term index for GBP    | Act/360      |
+| USD-BSBY-XX *        | 1M,3M,6M,12M             | BSBY index for GBP             | Act/360      |
+| USD-LIBOR-XX         | 1W,1M,2M,3M,6M,12M       | LIBOR index for USD            | Act/360      |
+| USD-SOFRCMETERM-XX * | 1M,3M,6M,12M             | SOFR CME term index for GBP    | Act/360      |
+| ZAR-JIBAR-XX         | 1M,3M,6M,9M,12M          | JIBAR index for ZAR            | Act/365F     |
 
 To get the name of the index, replace "XX" with one of the tenors.
 For example, "GBP-LIBOR-3M" is a valid index name.

@@ -7,6 +7,66 @@ Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
 
+## Strata v2.11.0
+
+* 7 January 2021
+
+This release contains over 70 [fixed issues](https://github.com/OpenGamma/Strata/milestone/30?closed=1).
+
+* Continue change to support Overnight indices as an alternative to Ibor indices (source and binary incompatible)
+ [#2398](https://github.com/OpenGamma/Strata/issues/2398),
+ [#2382](https://github.com/OpenGamma/Strata/issues/2382),
+ [#2407](https://github.com/OpenGamma/Strata/issues/2407)
+* Extend usefulness of Act/Act ICMA day count
+ [#2365](https://github.com/OpenGamma/Strata/issues/2365)
+* Fix joined holiday calendars like "GBLO~USNY"
+ [#2405](https://github.com/OpenGamma/Strata/issues/2405)
+* More indices, "GBP-SONIAICETERM", "GBP-SONIAREFINITIVTERM", "JPY-TORF", "USD-SOFRCMETERM", "USD-BSBY", "USD-AMERIBORTERM",
+ with mappings updated to cover ISDA 2021 standards
+ [#2383](https://github.com/OpenGamma/Strata/issues/2383),
+ [#2378](https://github.com/OpenGamma/Strata/issues/2378),
+ [#2366](https://github.com/OpenGamma/Strata/issues/2366)
+* Enhance swaptions, including Bermudan
+ [#2376](https://github.com/OpenGamma/Strata/issues/2376),
+ [#2364](https://github.com/OpenGamma/Strata/issues/2364),
+ [#2357](https://github.com/OpenGamma/Strata/issues/2357),
+ [#2354](https://github.com/OpenGamma/Strata/issues/2354),
+ [#2358](https://github.com/OpenGamma/Strata/issues/2358),
+ [#2343](https://github.com/OpenGamma/Strata/issues/2343)
+* Enhance Ibor Cap/Floor pricing/parsing
+ [#2361](https://github.com/OpenGamma/Strata/issues/2361),
+ [#2342](https://github.com/OpenGamma/Strata/issues/2342),
+ [#2318](https://github.com/OpenGamma/Strata/issues/2318)
+* Enhance FX option pricing/parsing
+ [#2349](https://github.com/OpenGamma/Strata/issues/2349),
+ [#2346](https://github.com/OpenGamma/Strata/issues/2346),
+ [#2323](https://github.com/OpenGamma/Strata/issues/2323),
+ [#2325](https://github.com/OpenGamma/Strata/issues/2325),
+ [#2324](https://github.com/OpenGamma/Strata/issues/2324),
+ [#2317](https://github.com/OpenGamma/Strata/issues/2317)
+* Enhance schedule building
+ [#2350](https://github.com/OpenGamma/Strata/issues/2350),
+ [#2352](https://github.com/OpenGamma/Strata/issues/2352),
+ [#2353](https://github.com/OpenGamma/Strata/issues/2353)
+* Treat gold as the base currency in conventional order
+ [#2339](https://github.com/OpenGamma/Strata/issues/2339)
+* FX conversion for `ExplainMap`
+ [#2345](https://github.com/OpenGamma/Strata/issues/2345)
+
+#### Compatibility
+
+The LIBOR transition has caused us to alter a few parameters and return types in an incompatible way.
+
+* `SwapIndex` and implementations now hold a `FixedFloatSwapTemplate` instead of `FixedIborSwapTemplate`.
+* `CmsLeg` now holds a `RateIndex` instead of `IborIndex`.
+* `SwaptionVolatilities` and implementations now hold a `FixedFloatSwapConvention` instead of `FixedIborSwapConvention`.
+* `Swaption` was changed to be based on `RateIndex` in v2.10.
+
+A spelling mistake was fixed in `FixedInflationSwapConventions` - HCIP instead of HICP.
+
+The `MapStream` class has changed the filter method from `BiFunction<K, V, Boolean>` to `BiPredicate<K, V>`.
+
+
 ## Strata v2.10.0
 
 * 22 April 2021

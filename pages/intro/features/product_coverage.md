@@ -176,7 +176,7 @@ Strata includes the following coverage:
     <td><i class="fa fa-check"></i></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
     <td>CMS<br />
@@ -195,7 +195,7 @@ Strata includes the following coverage:
     <td><i class="fa fa-check"></i></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
     <td><a href="{{site.baseurl}}/cds">CDS</a><br />
@@ -237,13 +237,6 @@ This also indicates that the command-line tool includes an example portfolio and
 CSV loader for securities refers to the security identifier, with the security details
 expected to be available in reference data.
 
-## Additional products
-
-Commercial customers of OpenGamma get access to additional products.
-Currently this includes FX binary options.
-
-Further product coverage in Strata will be based on commercial considerations.
-
 
 ## Curve calibration
 
@@ -260,4 +253,5 @@ The following asset classes can be used when defining curves:
 * Three Leg Basis Swap (Euribor)
 * Cross-currency Swap (Ibor vs Ibor)
 * Inflation Swap (Fixed vs Inflation)
+* Ibor/Overnight Future
 * FX Swap

@@ -53,9 +53,7 @@ The ideal end user is one who:
 * Buys into the vision of transparent, standardised open source analytics.
 * Is open to extending and building out new functionality within the toolkit. 
 
-Support during the getting started phase is available via public forums.
-For support beyond the initial getting started phase, such as for use in production,
-we strongly recommend [commercial support]({{site.baseurl}}/support) with service level agreements.
+[Support]({{site.baseurl}}/support) is limited and only available via public forums.
 
 ## Why is Strata open source?
 

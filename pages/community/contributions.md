@@ -46,5 +46,3 @@ The easiest way to get a patch accepted is to follow these rules:
    * Not add additional dependencies to Strata.
    * Not use proprietary classes e.g. `sun.misc.Unsafe`.
    * Be platform-independent (think file system differences etc.)
-
-

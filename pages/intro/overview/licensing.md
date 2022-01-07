@@ -17,6 +17,3 @@ Strata includes code originally developed at CERN, which is licensed as follows:
 
 Strata also relies on a few third party libraries.
 Their licenses are listed on the [dependencies page]({{site.baseurl}}/dependencies).
-
-Strata is sponsored by [OpenGamma](https://opengamma.com) who offer commercial licensing options, developer support,
-warranty, consultancy and training. See [Support]({{site.baseurl}}/support) for more information.

@@ -12,7 +12,6 @@ For more information on the services available, see the [main website](https://o
 
 
 ## Support
-Strata is a large project and support is available from OpenGamma.
 See our [support]({{site.baseurl}}/support) page for more details.
 
 ## Releases
