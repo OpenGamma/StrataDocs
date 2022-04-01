@@ -120,8 +120,8 @@ The difference between two values represents inflation.
 | CH-CPI         | CH      | Non-revised Consumer Price Index |
 | EU-AI-CPI      | EU      | Non-revised Harmonised Index of Consumer Prices All Items |
 | EU-EXT-CPI     | EU      | Non-revised Harmonised Index of Consumer Prices Excluding Tobacco |
-| JP-CPI-EXF     | EU      | Non-revised Consumer Price Index Nationwide General Excluding Fresh Food |
-| US-CPI-U       | EU      | Non-revised index of Consumer Prices for All Urban Consumers before seasonal adjustment |
+| JP-CPI-EXF     | JP      | Non-revised Consumer Price Index Nationwide General Excluding Fresh Food |
+| US-CPI-U       | US      | Non-revised index of Consumer Prices for All Urban Consumers before seasonal adjustment |
 | FR-EXT-CPI     | EU      | Non-revised Harmonised Index of Consumer Prices Excluding Tobacco |
 
 Price indices have a constant in `PriceIndices`.
