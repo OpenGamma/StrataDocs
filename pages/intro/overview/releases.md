@@ -7,6 +7,65 @@ Releases of Strata are performed when a set of functionality has stabilized.
 To access a release, see the options for [obtaining Strata]({{site.baseurl}}/obtaining_strata).
 
 
+## Strata v2.12.0
+
+* 18 May 2022
+
+This release contains over 45 [fixed issues](https://github.com/OpenGamma/Strata/milestone/31?closed=1).
+
+* Support for OTC bond options
+ [#2438](https://github.com/OpenGamma/Strata/issues/2438),
+ [#2452](https://github.com/OpenGamma/Strata/issues/2452)
+* Enhance and extend caplet/floorlet pricing
+ [#2443](https://github.com/OpenGamma/Strata/issues/2443),
+ [#2446](https://github.com/OpenGamma/Strata/issues/2446)
+ [#2410](https://github.com/OpenGamma/Strata/issues/2410),
+ [#2412](https://github.com/OpenGamma/Strata/issues/2412)
+* Enhance and extend swaption pricing
+ [#2419](https://github.com/OpenGamma/Strata/issues/2419),
+ [#2423](https://github.com/OpenGamma/Strata/issues/2423)
+ [#2434](https://github.com/OpenGamma/Strata/issues/2434),
+ [#2417](https://github.com/OpenGamma/Strata/issues/2417),
+ [#2415](https://github.com/OpenGamma/Strata/issues/2415),
+ [#2418](https://github.com/OpenGamma/Strata/issues/2418)
+* More lenient payment schedule
+ [#2453](https://github.com/OpenGamma/Strata/issues/2453),
+* Add MYR-KLIBOR, fix USD-BSBY and NZD-NZIONA, make ESTR default for EUR
+ [#2441](https://github.com/OpenGamma/Strata/issues/2441),
+ [#2431](https://github.com/OpenGamma/Strata/issues/2431),
+ [#2424](https://github.com/OpenGamma/Strata/issues/2424),
+ [#2416](https://github.com/OpenGamma/Strata/issues/2416),
+* Better failure exceptions
+ [#2448](https://github.com/OpenGamma/Strata/issues/2448),
+ [#2449](https://github.com/OpenGamma/Strata/issues/2449),
+ [#2456](https://github.com/OpenGamma/Strata/issues/2456),
+ [#2457](https://github.com/OpenGamma/Strata/issues/2457),
+ [#2466](https://github.com/OpenGamma/Strata/issues/2466)
+* New `Decimal` class
+ [#2458](https://github.com/OpenGamma/Strata/issues/2458),
+ [#2459](https://github.com/OpenGamma/Strata/issues/2459),
+ [#2460](https://github.com/OpenGamma/Strata/issues/2460),
+ [#2461](https://github.com/OpenGamma/Strata/issues/2461),
+ [#2463](https://github.com/OpenGamma/Strata/issues/2463),
+ [#2465](https://github.com/OpenGamma/Strata/issues/2465),
+ [#2467](https://github.com/OpenGamma/Strata/issues/2467),
+ [#2469](https://github.com/OpenGamma/Strata/issues/2469)
+* New `BeanCharSource` and `StringCharSource` implementation that throw unchecked exceptions
+ [#2398](https://github.com/OpenGamma/Strata/issues/2451),
+* Fix combined holiday calendars correctly in `HolidaySafeReferenceData`
+ [#2426](https://github.com/OpenGamma/Strata/issues/2426),
+
+#### Compatibility
+
+The LIBOR transition has caused us to alter a few parameters and return types in an incompatible way.
+Various classes, particularly around swaptions, have had their index widened from just Ibor to include Overnight as well.
+This will be source and binary incompatible if you use swaptions.
+
+The new classes `BeanCharSource` and `StringCharSource` are returned from some methods instead of `CharSource`.
+This has been made fully binary compatible using bridge methods.
+The new classes throw unchecked exceptions instead of checked exceptions, which may in some cases be source incompatible.
+
+
 ## Strata v2.11.0
 
 * 7 January 2022

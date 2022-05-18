@@ -3,7 +3,7 @@ title: Support
 permalink: /support/
 ---
 
-Support for Strata is primarily a self-support project.
+Strata is primarily a self-support project.
 
 ## Open source support
 Community driven support for Strata is available through the [OpenGamma community forums](http://forums.opengamma.com).

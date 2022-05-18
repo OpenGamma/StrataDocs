@@ -82,6 +82,7 @@ The deposit period is known as the tenor, and a rate is published for a number o
 | JPY-TORF-XX          | 1M,3M,6M                 | TORF index for JPY             | Act/365F     |
 | KRW-CD-XX *          | 13W                      | CD index for KRW               | Act/365F     |
 | MXN-TIIE-XX          | 4W,13W,26W               | TIIE index for MXN             | Act/360      |
+| MYR-KLIBOR-XX *      | 1M,3M,6M                 | KLIBOR index for MYR           | Act/365F     |
 | NOK-NIBOR-XX         | 1W,1M,2M,3M,6M           | NIBOR index for NOK            | Act/360      |
 | NZD-BKBM-XX          | 1M,2M,3M,4M,5M,6M        | BKBM index for NZD             | Act/365F     |
 | PLN-WIBOR-XX         | 1W,1M,3M,6M,12M          | WIBOR index for PLN            | Act/365F     |
