@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -305,6 +305,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dirtyPriceFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">dirtyPriceFromYieldAd</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                     double&nbsp;yield)</code></th>
+<td class="colLast">
+<div class="block">Calculates the dirty price of the fixed coupon bond from yield and its derivative wrt to the yield.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dirtyPriceSensitivity(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData)">dirtyPriceSensitivity</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                      <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -313,7 +322,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the dirty price sensitivity of the fixed coupon bond product.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dirtyPriceSensitivityWithZspread(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double,com.opengamma.strata.pricer.CompoundedRateType,int)">dirtyPriceSensitivityWithZspread</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                                 <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -325,7 +334,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the dirty price sensitivity of the fixed coupon bond with z-spread.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#macaulayDurationFromYield(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">macaulayDurationFromYield</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
@@ -334,7 +343,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the Macaulay duration of the fixed coupon bond product from yield.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifiedDurationFromYield(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">modifiedDurationFromYield</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
@@ -343,7 +352,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the modified duration of the fixed coupon bond product from yield.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifiedDurationFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">modifiedDurationFromYieldAd</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                           double&nbsp;yield)</code></th>
+<td class="colLast">
+<div class="block">Calculates the modified duration of the fixed coupon bond product from yield and its derivative wrt to the yield.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValue(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
             <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider)</code></th>
@@ -351,7 +369,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value of the fixed coupon bond product.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivity(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValueSensitivity</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                        <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider)</code></th>
@@ -359,7 +377,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value sensitivity of the fixed coupon bond product.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueSensitivityWithZSpread(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueSensitivityWithZSpread</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                                   <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -370,7 +388,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value sensitivity of the fixed coupon bond with z-spread.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/currency/CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                        <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -381,7 +399,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the present value of the fixed coupon bond product with z-spread.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#yieldFromDirtyPrice(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">yieldFromDirtyPrice</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
@@ -390,7 +408,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Calculates the yield of the fixed coupon bond product from dirty price.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#yieldFromDirtyPriceAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">yieldFromDirtyPriceAd</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                     double&nbsp;dirtyPrice)</code></th>
+<td class="colLast">
+<div class="block">Calculates the yield of the fixed coupon bond product from dirty price and its derivative wrt the price.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zSpreadFromCurvesAndDirtyPrice(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double,com.opengamma.strata.pricer.CompoundedRateType,int)">zSpreadFromCurvesAndDirtyPrice</a></span>&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                               <a href="LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -870,6 +897,29 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
+<a id="dirtyPriceFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dirtyPriceFromYieldAd</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;dirtyPriceFromYieldAd&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                                              double&nbsp;yield)</pre>
+<div class="block">Calculates the dirty price of the fixed coupon bond from yield and its derivative wrt to the yield.
+ <p>
+ The yield must be fractional.
+ The dirty price is computed for <a href="../../product/bond/FixedCouponBondYieldConvention.html" title="enum in com.opengamma.strata.product.bond"><code>FixedCouponBondYieldConvention</code></a>, and the result is expressed in fraction.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bond</code> - the product</dd>
+<dd><code>settlementDate</code> - the settlement date</dd>
+<dd><code>yield</code> - the yield</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the dirty price of the product and its derivative</dd>
+</dl>
+</li>
+</ul>
 <a id="yieldFromDirtyPrice(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">
 <!--   -->
 </a>
@@ -895,6 +945,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
+<a id="yieldFromDirtyPriceAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>yieldFromDirtyPriceAd</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;yieldFromDirtyPriceAd&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                                              double&nbsp;dirtyPrice)</pre>
+<div class="block">Calculates the yield of the fixed coupon bond product from dirty price and its derivative wrt the price.
+ <p>
+ The dirty price must be fractional.
+ If the analytic formula is not available, the yield is computed by solving
+ a root-finding problem with <a href="#dirtyPriceFromYield(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)"><code>dirtyPriceFromYield(ResolvedFixedCouponBond, LocalDate, double)</code></a>.  
+ The result is also expressed in fraction.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bond</code> - the product</dd>
+<dd><code>settlementDate</code> - the settlement date</dd>
+<dd><code>dirtyPrice</code> - the dirty price</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the yield of the product</dd>
+</dl>
+</li>
+</ul>
 <a id="modifiedDurationFromYield(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">
 <!--   -->
 </a>
@@ -905,6 +980,32 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
                                         double&nbsp;yield)</pre>
 <div class="block">Calculates the modified duration of the fixed coupon bond product from yield.
+ <p>
+ The modified duration is defined as the minus of the first derivative of dirty price
+ with respect to yield, divided by the dirty price.
+ <p>
+ The input yield must be fractional. The dirty price and its derivative are
+ computed for <a href="../../product/bond/FixedCouponBondYieldConvention.html" title="enum in com.opengamma.strata.product.bond"><code>FixedCouponBondYieldConvention</code></a>, and the result is expressed in fraction.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bond</code> - the product</dd>
+<dd><code>settlementDate</code> - the settlement date</dd>
+<dd><code>yield</code> - the yield</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the modified duration of the product</dd>
+</dl>
+</li>
+</ul>
+<a id="modifiedDurationFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>modifiedDurationFromYieldAd</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;modifiedDurationFromYieldAd&#8203;(<a href="../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                                                    double&nbsp;yield)</pre>
+<div class="block">Calculates the modified duration of the fixed coupon bond product from yield and its derivative wrt to the yield.
  <p>
  The modified duration is defined as the minus of the first derivative of dirty price
  with respect to yield, divided by the dirty price.

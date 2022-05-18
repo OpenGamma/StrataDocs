@@ -133,12 +133,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
+<dd><code><a href="../../collect/named/Described.html" title="interface in com.opengamma.strata.collect.named">Described</a></code>, <code><a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code>org.joda.beans.Bean</code>, <code>org.joda.beans.ImmutableBean</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">EtdContractSpec</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
+implements <a href="../Attributes.html" title="interface in com.opengamma.strata.product">Attributes</a>, <a href="../../collect/named/Described.html" title="interface in com.opengamma.strata.collect.named">Described</a>, org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></pre>
 <div class="block">The contract specification defining an Exchange Traded Derivative (ETD) product.
  <p>
  This can represent a future or an option. Instances of <a href="EtdOptionSecurity.html" title="class in com.opengamma.strata.product.etd"><code>EtdOptionSecurity</code></a> or <a href="EtdFutureSecurity.html" title="class in com.opengamma.strata.product.etd"><code>EtdFutureSecurity</code></a>
@@ -664,6 +664,8 @@ implements <a href="../Attributes.html" title="interface in com.opengamma.strata
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDescription()</pre>
 <div class="block">Gets the human readable description of the product.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../collect/named/Described.html#getDescription()">getDescription</a></code>&nbsp;in interface&nbsp;<code><a href="../../collect/named/Described.html" title="interface in com.opengamma.strata.collect.named">Described</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of the property, not empty</dd>
 </dl>

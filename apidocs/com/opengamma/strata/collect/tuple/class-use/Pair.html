@@ -181,42 +181,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.capfloor">com.opengamma.strata.pricer.capfloor</a></th>
+<td class="colLast">
+<div class="block">Calculators for Ibor cap-floor.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.common">com.opengamma.strata.pricer.common</a></th>
 <td class="colLast">
 <div class="block">Common code for pricing.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.credit">com.opengamma.strata.pricer.credit</a></th>
 <td class="colLast">
 <div class="block">Calculators for credit instruments, such as Credit Default Swap (CDS).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.fxopt">com.opengamma.strata.pricer.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX options.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.option">com.opengamma.strata.pricer.impl.option</a></th>
 <td class="colLast">
 <div class="block">Internal implementations of option pricing.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate.model">com.opengamma.strata.pricer.impl.rate.model</a></th>
 <td class="colLast">
 <div class="block">Internal implementations of analytic models.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.option">com.opengamma.strata.pricer.option</a></th>
 <td class="colLast">
 <div class="block">Pricer support classes for options.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swaption">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
@@ -318,7 +324,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">Messages.</span><code><span class="memberNameLink"><a href="../../Messages.html#formatWithAttributes(java.lang.String,java.lang.Object...)">formatWithAttributes</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;messageTemplate,
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;args)</code></th>
 <td class="colLast">
-<div class="block">Formats a templated message inserting named arguments.</div>
+<div class="block">Formats a templated message inserting named arguments, returning the implied attribute map.</div>
 </td>
 </tr>
 </tbody>
@@ -893,6 +899,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.Builder.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.Builder.html#repoCurves(java.util.Map)">repoCurves</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../market/curve/RepoGroup.html" title="class in com.opengamma.strata.market.curve">RepoGroup</a>,&#8203;<a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;,&#8203;<a href="../../../pricer/DiscountFactors.html" title="interface in com.opengamma.strata.pricer">DiscountFactors</a>&gt;&nbsp;repoCurves)</code></th>
 <td class="colLast">
 <div class="block">Sets the repo curves, keyed by group and currency.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.capfloor">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a> in <a href="../../../pricer/capfloor/package-summary.html">com.opengamma.strata.pricer.capfloor</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/capfloor/package-summary.html">com.opengamma.strata.pricer.capfloor</a> that return <a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>,&#8203;<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.html#vanillaOptionVerticalSpreadPair(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletBinaryPeriod)">vanillaOptionVerticalSpreadPair</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletBinaryPeriod</a>&nbsp;binary)</code></th>
+<td class="colLast">
+<div class="block">Creates pair of vanilla caplet for binary caplet/floorlet pricing by call spread.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="../../../product/capfloor/IborCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod</a>,&#8203;<a href="../../../product/capfloor/IborCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.html#vanillaOptionVerticalSpreadPair(com.opengamma.strata.product.capfloor.IborCapletFloorletBinaryPeriod)">vanillaOptionVerticalSpreadPair</a></span>&#8203;(<a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletBinaryPeriod</a>&nbsp;binary)</code></th>
+<td class="colLast">
+<div class="block">Creates pair of vanilla caplet for binary caplet/floorlet pricing by call spread.</div>
 </td>
 </tr>
 </tbody>

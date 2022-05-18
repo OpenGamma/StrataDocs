@@ -129,52 +129,58 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.bond">com.opengamma.strata.pricer.bond</a></th>
+<td class="colLast">
+<div class="block">Calculators for bonds.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.capfloor">com.opengamma.strata.pricer.capfloor</a></th>
 <td class="colLast">
 <div class="block">Calculators for Ibor cap-floor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.fxopt">com.opengamma.strata.pricer.fxopt</a></th>
 <td class="colLast">
 <div class="block">Calculators for FX options.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.option">com.opengamma.strata.pricer.impl.option</a></th>
 <td class="colLast">
 <div class="block">Internal implementations of option pricing.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.rate.model">com.opengamma.strata.pricer.impl.rate.model</a></th>
 <td class="colLast">
 <div class="block">Internal implementations of analytic models.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.tree">com.opengamma.strata.pricer.impl.tree</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.volatility.smile">com.opengamma.strata.pricer.impl.volatility.smile</a></th>
 <td class="colLast">
 <div class="block">Internal implementations of volatility smile.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.model">com.opengamma.strata.pricer.model</a></th>
 <td class="colLast">
 <div class="block">Common code for model pricing.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swap">com.opengamma.strata.pricer.swap</a></th>
 <td class="colLast">
 <div class="block">Calculators for interest rate swaps.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.swaption">com.opengamma.strata.pricer.swaption</a></th>
 <td class="colLast">
 <div class="block">Calculators for swaptions.</div>
@@ -376,6 +382,78 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.bond">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a> in <a href="../../../pricer/bond/package-summary.html">com.opengamma.strata.pricer.bond</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../pricer/bond/package-summary.html">com.opengamma.strata.pricer.bond</a> that return <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#dirtyPriceFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">dirtyPriceFromYieldAd</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                     double&nbsp;yield)</code></th>
+<td class="colLast">
+<div class="block">Calculates the dirty price of the fixed coupon bond from yield and its derivative wrt to the yield.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#modifiedDurationFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">modifiedDurationFromYieldAd</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                           double&nbsp;yield)</code></th>
+<td class="colLast">
+<div class="block">Calculates the modified duration of the fixed coupon bond product from yield and its derivative wrt to the yield.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldVolatilities.html#priceVolatilityEquivalentAd(double,double)">priceVolatilityEquivalentAd</a></span>&#8203;(double&nbsp;duration,
+                           double&nbsp;yieldVolatility)</code></th>
+<td class="colLast">
+<div class="block">Calculates the price volatility equivalent to the yield volatility and its derivatives.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldVolatilities.html#priceVolatilityEquivalentAd(double,double,double,double)">priceVolatilityEquivalentAd</a></span>&#8203;(double&nbsp;expiry,
+                           double&nbsp;duration,
+                           double&nbsp;strike,
+                           double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Calculates the price volatility equivalent to the yield volatility and its derivatives.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldVolatilities.html#priceVolatilityEquivalentAd(java.time.ZonedDateTime,double,double,double)">priceVolatilityEquivalentAd</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;expiryDateTime,
+                           double&nbsp;duration,
+                           double&nbsp;strike,
+                           double&nbsp;forward)</code></th>
+<td class="colLast">
+<div class="block">Calculates the price volatility equivalent to the yield volatility and its derivatives.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#yieldFromDirtyPriceAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">yieldFromDirtyPriceAd</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                     double&nbsp;dirtyPrice)</code></th>
+<td class="colLast">
+<div class="block">Calculates the yield of the fixed coupon bond product from dirty price and its derivative wrt the price.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
 <section role="region"><a id="com.opengamma.strata.pricer.capfloor">
 <!--   -->
 </a>
@@ -390,6 +468,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalSabrParametersIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/NormalSabrParametersIborCapletFloorletVolatilities.html#volatilityAdjoint(double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;expiry,
+                 double&nbsp;strike,
+                 double&nbsp;forward)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/SabrIborCapletFloorletVolatilities.html#volatilityAdjoint(double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;expiry,
                  double&nbsp;strike,
                  double&nbsp;forward)</code></th>
@@ -397,7 +482,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the volatility and associated sensitivities.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrParametersIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html#volatilityAdjoint(double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;expiry,
                  double&nbsp;strike,
@@ -754,6 +839,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganNormalVolatilityFormula.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrHaganNormalVolatilityFormula.html#volatilityAdjoint(double,double,double,double,double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
+                 double&nbsp;strike,
+                 double&nbsp;timeToExpiry,
+                 double&nbsp;alpha,
+                 double&nbsp;beta,
+                 double&nbsp;rho,
+                 double&nbsp;nu)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganVolatilityFunctionProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrHaganVolatilityFunctionProvider.html#volatilityAdjoint(double,double,double,double,double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
                  double&nbsp;strike,
                  double&nbsp;timeToExpiry,
@@ -765,7 +861,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Computes the implied volatility in the SABR model and its derivatives.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganVolatilityFunctionProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrHaganVolatilityFunctionProvider.html#volatilityAdjoint(double,double,double,com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
                  double&nbsp;strike,
@@ -775,7 +871,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Computes the implied volatility in the SABR model and its derivatives.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SsviVolatilityFunction.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SsviVolatilityFunction.html#volatilityAdjoint(double,double,double,com.opengamma.strata.pricer.impl.volatility.smile.SsviFormulaData)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
                  double&nbsp;strike,
@@ -785,7 +881,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Computes the implied volatility in the SSVI formula and its derivatives.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityFunctionProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/VolatilityFunctionProvider.html#volatilityAdjoint(double,double,double,T)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
                  double&nbsp;strike,
@@ -793,6 +889,39 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                  <a href="../../../pricer/impl/volatility/smile/VolatilityFunctionProvider.html" title="type parameter in VolatilityFunctionProvider">T</a>&nbsp;data)</code></th>
 <td class="colLast">
 <div class="block">Calculates volatility and the adjoint (volatility sensitivity to forward, strike and model parameters).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganNormalVolatilityFormula.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrHaganNormalVolatilityFormula.html#volatilityBeta0Adjoint(double,double,double,double,double,double)">volatilityBeta0Adjoint</a></span>&#8203;(double&nbsp;forward,
+                      double&nbsp;strike,
+                      double&nbsp;timeToExpiry,
+                      double&nbsp;alpha,
+                      double&nbsp;rho,
+                      double&nbsp;nu)</code></th>
+<td class="colLast">
+<div class="block">Calculates the normal implied volatility and its derivatives (w.r.t.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganNormalVolatilityFormula.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrHaganNormalVolatilityFormula.html#volatilityBetaNonZeroAdjoint(double,double,double,double,double,double,double)">volatilityBetaNonZeroAdjoint</a></span>&#8203;(double&nbsp;forward,
+                            double&nbsp;strike,
+                            double&nbsp;timeToExpiry,
+                            double&nbsp;alpha,
+                            double&nbsp;beta,
+                            double&nbsp;rho,
+                            double&nbsp;nu)</code></th>
+<td class="colLast">
+<div class="block">Returns the volatility using the generic formula with barrier at 0 at its derivatives.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganNormalVolatilityFormula.</span><code><span class="memberNameLink"><a href="../../../pricer/impl/volatility/smile/SabrHaganNormalVolatilityFormula.html#zetaOverXhatAdjoint(double,double)">zetaOverXhatAdjoint</a></span>&#8203;(double&nbsp;zeta,
+                   double&nbsp;rho)</code></th>
+<td class="colLast">
+<div class="block">Computes the ratio zeta over xHat and its derivatives.</div>
 </td>
 </tr>
 </tbody>

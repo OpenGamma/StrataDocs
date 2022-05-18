@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,102 +197,107 @@ implements org.joda.beans.ImmutableBean</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
+<td class="colFirst"><code><a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCharSource(java.nio.charset.Charset)">asCharSource</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCharSourceUtf8()">asCharSourceUtf8</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a <code>CharSource</code> for the same bytes, converted to UTF-8.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCharSourceUtf8UsingBom()">asCharSourceUtf8UsingBom</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a <code>CharSource</code> for the File, converted to UTF-8 using a Byte-Order Mark if available.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileName()">getFileName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the file name of the source.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileNameOrThrow()">getFileNameOrThrow</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the file name of the source.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashCode.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashCode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hash(com.google.common.hash.HashFunction)">hash</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty()">isEmpty</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the byte source is empty, throwing an unchecked exception.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#load()">load</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Loads the content of the byte source into memory.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read()">read</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source as a byte array, throwing an unchecked exception.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUtf8()">readUtf8</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source, converting to UTF-8.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUtf8UsingBom()">readUtf8UsingBom</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the source, converting to UTF-8 using a Byte-Order Mark if available.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size()">size</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the size of the byte source, throwing an unchecked exception.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBase64()">toBase64</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Encodes the byte source using base-64.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBase64String()">toBase64String</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Encodes the byte source using base-64, returning a string.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toHash(com.google.common.hash.HashFunction)">toHash</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</code></th>
 <td class="colLast">
 <div class="block">Returns a new byte source containing the hash of the content of this byte source.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toHashString(com.google.common.hash.HashFunction)">toHashString</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/hash/HashFunction.html?is-external=true" title="class or interface in com.google.common.hash" class="externalLink">HashFunction</a>&nbsp;hashFunction)</code></th>
 <td class="colLast">
@@ -305,7 +310,7 @@ implements org.joda.beans.ImmutableBean</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.google.common.io.<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></h3>
-<code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#asCharSource(java.nio.charset.Charset)" title="class or interface in com.google.common.io" class="externalLink">asCharSource</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(com.google.common.io.ByteSource...)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(java.lang.Iterable)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(java.util.Iterator)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#contentEquals(com.google.common.io.ByteSource)" title="class or interface in com.google.common.io" class="externalLink">contentEquals</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#copyTo(com.google.common.io.ByteSink)" title="class or interface in com.google.common.io" class="externalLink">copyTo</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#copyTo(java.io.OutputStream)" title="class or interface in com.google.common.io" class="externalLink">copyTo</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#empty()" title="class or interface in com.google.common.io" class="externalLink">empty</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#openBufferedStream()" title="class or interface in com.google.common.io" class="externalLink">openBufferedStream</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#openStream()" title="class or interface in com.google.common.io" class="externalLink">openStream</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#read(com.google.common.io.ByteProcessor)" title="class or interface in com.google.common.io" class="externalLink">read</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#sizeIfKnown()" title="class or interface in com.google.common.io" class="externalLink">sizeIfKnown</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#slice(long,long)" title="class or interface in com.google.common.io" class="externalLink">slice</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#wrap(byte%5B%5D)" title="class or interface in com.google.common.io" class="externalLink">wrap</a></code></li>
+<code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(com.google.common.io.ByteSource...)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(java.lang.Iterable)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#concat(java.util.Iterator)" title="class or interface in com.google.common.io" class="externalLink">concat</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#contentEquals(com.google.common.io.ByteSource)" title="class or interface in com.google.common.io" class="externalLink">contentEquals</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#copyTo(com.google.common.io.ByteSink)" title="class or interface in com.google.common.io" class="externalLink">copyTo</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#copyTo(java.io.OutputStream)" title="class or interface in com.google.common.io" class="externalLink">copyTo</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#empty()" title="class or interface in com.google.common.io" class="externalLink">empty</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#openBufferedStream()" title="class or interface in com.google.common.io" class="externalLink">openBufferedStream</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#openStream()" title="class or interface in com.google.common.io" class="externalLink">openStream</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#read(com.google.common.io.ByteProcessor)" title="class or interface in com.google.common.io" class="externalLink">read</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#sizeIfKnown()" title="class or interface in com.google.common.io" class="externalLink">sizeIfKnown</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#slice(long,long)" title="class or interface in com.google.common.io" class="externalLink">slice</a>, <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#wrap(byte%5B%5D)" title="class or interface in com.google.common.io" class="externalLink">wrap</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -481,16 +486,27 @@ implements org.joda.beans.ImmutableBean</pre>
 </dl>
 </li>
 </ul>
+<a id="asCharSource(java.nio.charset.Charset)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asCharSource</h4>
+<pre class="methodSignature">public&nbsp;<a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a>&nbsp;asCharSource&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true#asCharSource(java.nio.charset.Charset)" title="class or interface in com.google.common.io" class="externalLink">asCharSource</a></code>&nbsp;in class&nbsp;<code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="asCharSourceUtf8()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>asCharSourceUtf8</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;asCharSourceUtf8()</pre>
-<div class="block">Returns a <code>CharSource</code> for the same bytes, converted to UTF-8.
- <p>
- This does not read the underlying source.</div>
+<pre class="methodSignature">public&nbsp;<a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a>&nbsp;asCharSourceUtf8()</pre>
+<div class="block">Returns a <code>CharSource</code> for the same bytes, converted to UTF-8.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the equivalent <code>CharSource</code></dd>
@@ -503,7 +519,7 @@ implements org.joda.beans.ImmutableBean</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>asCharSourceUtf8UsingBom</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;asCharSourceUtf8UsingBom()</pre>
+<pre class="methodSignature">public&nbsp;<a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a>&nbsp;asCharSourceUtf8UsingBom()</pre>
 <div class="block">Returns a <code>CharSource</code> for the File, converted to UTF-8 using a Byte-Order Mark if available.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

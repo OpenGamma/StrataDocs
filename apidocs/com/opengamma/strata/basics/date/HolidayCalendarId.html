@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10};
+var data = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -226,20 +226,27 @@ implements <a href="../ReferenceDataId.html" title="interface in com.opengamma.s
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCompositeCalendar(com.opengamma.strata.basics.date.HolidayCalendarId)">isCompositeCalendar</a></span>&#8203;(<a href="HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id)</code></th>
+<td class="colLast">
+<div class="block">Checks if the holiday calendar is a combined or linked calendar.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#linkedWith(com.opengamma.strata.basics.date.HolidayCalendarId)">linkedWith</a></span>&#8203;(<a href="HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Combines this holiday calendar identifier with another.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;uniqueName)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the specified unique name.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="HolidayCalendar.html" title="interface in com.opengamma.strata.basics.date">HolidayCalendar</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#queryValueOrNull(com.opengamma.strata.basics.ReferenceData)">queryValueOrNull</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
@@ -247,14 +254,14 @@ implements <a href="../ReferenceDataId.html" title="interface in com.opengamma.s
  returning null if not found.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="HolidayCalendar.html" title="interface in com.opengamma.strata.basics.date">HolidayCalendar</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(com.opengamma.strata.basics.ReferenceData)">resolve</a></span>&#8203;(<a href="../ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">
 <div class="block">Resolves this identifier to a holiday calendar using the specified reference data.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -363,6 +370,22 @@ implements <a href="../ReferenceDataId.html" title="interface in com.opengamma.s
 <dd><code>currencyPair</code> - the currency pair to find the defaults for</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the holiday calendar</dd>
+</dl>
+</li>
+</ul>
+<a id="isCompositeCalendar(com.opengamma.strata.basics.date.HolidayCalendarId)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCompositeCalendar</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;isCompositeCalendar&#8203;(<a href="HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id)</pre>
+<div class="block">Checks if the holiday calendar is a combined or linked calendar.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the holiday calendar id</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>if the holiday calendar is a combined or linked calendar</dd>
 </dl>
 </li>
 </ul>

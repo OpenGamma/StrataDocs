@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":10,"i10":10,"i11":10};
+var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -651,13 +651,20 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#roundMinorUnits(com.opengamma.strata.collect.Decimal)">roundMinorUnits</a></span>&#8203;(<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount)</code></th>
+<td class="colLast">
+<div class="block">Rounds the specified amount according to the minor units.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#roundMinorUnits(java.math.BigDecimal)">roundMinorUnits</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Rounds the specified amount according to the minor units.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -1390,6 +1397,24 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <li class="blockList">
 <h4>roundMinorUnits</h4>
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;roundMinorUnits&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</pre>
+<div class="block">Rounds the specified amount according to the minor units.
+ <p>
+ For example, 'USD' has 2 minor digits, so 63.347 will be rounded to 63.35.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>amount</code> - the amount to round</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the rounded amount</dd>
+</dl>
+</li>
+</ul>
+<a id="roundMinorUnits(com.opengamma.strata.collect.Decimal)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>roundMinorUnits</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;roundMinorUnits&#8203;(<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount)</pre>
 <div class="block">Rounds the specified amount according to the minor units.
  <p>
  For example, 'USD' has 2 minor digits, so 63.347 will be rounded to 63.35.</div>

@@ -137,42 +137,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.bond">com.opengamma.strata.product.bond</a></th>
+<td class="colLast">
+<div class="block">Entity objects describing bonds.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.capfloor">com.opengamma.strata.product.capfloor</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Ibor cap/floor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.cms">com.opengamma.strata.product.cms</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing Constant Maturity Swap (CMS) or CMS cap/floor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.fra">com.opengamma.strata.product.fra</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a forward rate agreement (FRA).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.payment">com.opengamma.strata.product.payment</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing simple payment financial instruments.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swap">com.opengamma.strata.product.swap</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a swap.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swaption">com.opengamma.strata.product.swaption</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options on swaps, known as swaptions.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.report.framework.format">com.opengamma.strata.report.framework.format</a></th>
 <td class="colLast">
 <div class="block">Provide the ability to format calculated values.</div>
@@ -482,6 +488,85 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">FpmlDocument.</span><code><span class="memberNameLink"><a href="../../../loader/fpml/FpmlDocument.html#parseAdjustedRelativeDateOffset(com.opengamma.strata.collect.io.XmlElement)">parseAdjustedRelativeDateOffset</a></span>&#8203;(<a href="../../../collect/io/XmlElement.html" title="class in com.opengamma.strata.collect.io">XmlElement</a>&nbsp;baseEl)</code></th>
 <td class="colLast">
 <div class="block">Converts an FpML 'AdjustedRelativeDateOffset' to a resolved <code>LocalDate</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.bond">
+<!--   -->
+</a>
+<h3>Uses of <a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a> in <a href="../../../product/bond/package-summary.html">com.opengamma.strata.product.bond</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/bond/package-summary.html">com.opengamma.strata.product.bond</a> that return <a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.html#getExpiryDate()">getExpiryDate</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the expiry date of the option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.html#getSettlementDate()">getSettlementDate</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the settlement date when the option is exercised.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/bond/package-summary.html">com.opengamma.strata.product.bond</a> that return types with arguments of type <a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.Meta.html#expiryDate()">expiryDate</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>expiryDate</code> property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.Meta.html#settlementDate()">settlementDate</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>settlementDate</code> property.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/bond/package-summary.html">com.opengamma.strata.product.bond</a> with parameters of type <a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../product/bond/FixedCouponBondOption.Builder.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondOption.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.Builder.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.Builder.html#expiryDate(com.opengamma.strata.basics.date.AdjustableDate)">expiryDate</a></span>&#8203;(<a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&nbsp;expiryDate)</code></th>
+<td class="colLast">
+<div class="block">Sets the expiry date of the option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../product/bond/FixedCouponBondOption.Builder.html" title="class in com.opengamma.strata.product.bond">FixedCouponBondOption.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.Builder.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.Builder.html#settlementDate(com.opengamma.strata.basics.date.AdjustableDate)">settlementDate</a></span>&#8203;(<a href="../AdjustableDate.html" title="class in com.opengamma.strata.basics.date">AdjustableDate</a>&nbsp;settlementDate)</code></th>
+<td class="colLast">
+<div class="block">Sets the settlement date when the option is exercised.</div>
 </td>
 </tr>
 </tbody>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,41 +156,48 @@ extends <a href="SwapLegConvention.html" title="interface in com.opengamma.strat
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAccrualBusinessDayAdjustment()">getAccrualBusinessDayAdjustment</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the business day adjustment to apply to accrual schedule dates.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/currency/Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency of the convention.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../basics/date/DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDayCount()">getDayCount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the day count of the convention.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEndDateBusinessDayAdjustment()">getEndDateBusinessDayAdjustment</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the business day adjustment to apply to the end date.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../basics/index/RateIndex.html" title="interface in com.opengamma.strata.basics.index">RateIndex</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndex()">getIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the index of the convention.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../basics/date/DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPaymentDateOffset()">getPaymentDateOffset</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the offset of the payment date from the base date.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStartDateBusinessDayAdjustment()">getStartDateBusinessDayAdjustment</a></span>()</code></th>
 <td class="colLast">
@@ -287,7 +294,7 @@ extends <a href="SwapLegConvention.html" title="interface in com.opengamma.strat
 <a id="getEndDateBusinessDayAdjustment()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getEndDateBusinessDayAdjustment</h4>
 <pre class="methodSignature"><a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;getEndDateBusinessDayAdjustment()</pre>
@@ -295,6 +302,20 @@ extends <a href="SwapLegConvention.html" title="interface in com.opengamma.strat
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the end date business day adjustment, not null</dd>
+</dl>
+</li>
+</ul>
+<a id="getAccrualBusinessDayAdjustment()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getAccrualBusinessDayAdjustment</h4>
+<pre class="methodSignature"><a href="../../../basics/date/BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a>&nbsp;getAccrualBusinessDayAdjustment()</pre>
+<div class="block">Gets the business day adjustment to apply to accrual schedule dates.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the accrual schedule dates business day adjustment, not null</dd>
 </dl>
 </li>
 </ul>

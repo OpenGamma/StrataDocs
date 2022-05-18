@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":18,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var data = {"i0":6,"i1":6,"i2":18,"i3":18,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,13 +176,21 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#convertSwaptionSensitivity(com.opengamma.strata.pricer.swaption.SwaptionSensitivity)">convertSwaptionSensitivity</a></span>&#8203;(<a href="SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption">SwaptionSensitivity</a>&nbsp;swptSensi)</code></th>
+<td class="colLast">
+<div class="block">Convert a <a href="SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption"><code>SwaptionSensitivity</code></a> for a expiry, tenor and strike in the associated SABR parameter
+ sensitivities.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="../../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVolatilityType()">getVolatilityType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type of volatility returned by the <a href="SwaptionVolatilities.html#volatility(java.time.ZonedDateTime,double,double,double)"><code>SwaptionVolatilities.volatility(java.time.ZonedDateTime, double, double, double)</code></a> method.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nu(double,double)">nu</a></span>&#8203;(double&nbsp;expiry,
   double&nbsp;tenor)</code></th>
@@ -190,7 +198,7 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <div class="block">Calculates the nu parameter for a pair of time to expiry and instrument tenor.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rho(double,double)">rho</a></span>&#8203;(double&nbsp;expiry,
    double&nbsp;tenor)</code></th>
@@ -198,7 +206,7 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <div class="block">Calculates the rho parameter for a pair of time to expiry and instrument tenor.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shift(double,double)">shift</a></span>&#8203;(double&nbsp;expiry,
      double&nbsp;tenor)</code></th>
@@ -206,7 +214,7 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <div class="block">Calculates the shift parameter for the specified time to expiry and instrument tenor.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAdjoint(double,double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;expiry,
                  double&nbsp;tenor,
@@ -216,7 +224,7 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <div class="block">Calculates the volatility and associated sensitivities.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="SabrSwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SabrSwaptionVolatilities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withParameter(int,double)">withParameter</a></span>&#8203;(int&nbsp;parameterIndex,
              double&nbsp;newValue)</code></th>
@@ -224,7 +232,7 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <div class="block">Returns a copy of the data with the value at the specified index altered.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="SabrSwaptionVolatilities.html" title="interface in com.opengamma.strata.pricer.swaption">SabrSwaptionVolatilities</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerturbation(com.opengamma.strata.market.param.ParameterPerturbation)">withPerturbation</a></span>&#8203;(<a href="../../market/param/ParameterPerturbation.html" title="interface in com.opengamma.strata.market.param">ParameterPerturbation</a>&nbsp;perturbation)</code></th>
 <td class="colLast">
@@ -431,7 +439,7 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <a id="volatilityAdjoint(double,double,double,double)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>volatilityAdjoint</h4>
 <pre class="methodSignature"><a href="../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a>&nbsp;volatilityAdjoint&#8203;(double&nbsp;expiry,
@@ -457,6 +465,23 @@ extends <a href="SwaptionVolatilities.html" title="interface in com.opengamma.st
 <dd><code>forward</code> - the forward</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the volatility and associated sensitivities</dd>
+</dl>
+</li>
+</ul>
+<a id="convertSwaptionSensitivity(com.opengamma.strata.pricer.swaption.SwaptionSensitivity)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>convertSwaptionSensitivity</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a>&nbsp;convertSwaptionSensitivity&#8203;(<a href="SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption">SwaptionSensitivity</a>&nbsp;swptSensi)</pre>
+<div class="block">Convert a <a href="SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption"><code>SwaptionSensitivity</code></a> for a expiry, tenor and strike in the associated SABR parameter
+ sensitivities.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>swptSensi</code> - the swaption volatility sensitivity at a given strike</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the swaption SABR parameter sensitivities</dd>
 </dl>
 </li>
 </ul>

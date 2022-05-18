@@ -247,6 +247,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Volatilities for pricing bond futures and their options.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/bond/BondYieldVolatilities.html" title="interface in com.opengamma.strata.pricer.bond">BondYieldVolatilities</a></span></code></th>
+<td class="colLast">
+<div class="block">Volatilities for bond options.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -262,6 +269,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/bond/BlackBondFutureExpiryLogMoneynessVolatilities.html" title="class in com.opengamma.strata.pricer.bond">BlackBondFutureExpiryLogMoneynessVolatilities</a></span></code></th>
 <td class="colLast">
 <div class="block">Data provider of volatility for bond future options in the log-normal or Black model.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/bond/NormalBondYieldExpiryDurationVolatilities.html" title="class in com.opengamma.strata.pricer.bond">NormalBondYieldExpiryDurationVolatilities</a></span></code></th>
+<td class="colLast">
+<div class="block">Volatility for swaptions in the normal or Bachelier model based on a surface.</div>
 </td>
 </tr>
 </tbody>
@@ -290,16 +304,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/BlackSabrIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">BlackSabrIborCapletFloorletVolatilities</a></span></code></th>
+<td class="colLast">
+<div class="block">Volatility for Ibor caplet/floorlet in SABR model.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a></span></code></th>
 <td class="colLast">
 <div class="block">Volatilities for pricing Ibor caplet/floorlet.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/NormalIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">NormalIborCapletFloorletVolatilities</a></span></code></th>
 <td class="colLast">
 <div class="block">Volatility for Ibor caplet/floorlet in the normal or Bachelier model.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/NormalSabrIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">NormalSabrIborCapletFloorletVolatilities</a></span></code></th>
+<td class="colLast">
+<div class="block">Volatility for Ibor/Overnight caplet/floorlet in SABR model.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -349,12 +377,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/NormalSabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">NormalSabrParametersIborCapletFloorletVolatilities</a></span></code></th>
+<td class="colLast">
+<div class="block">Volatility environment for caplet/floorlet in the SABR model.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a></span></code></th>
 <td class="colLast">
 <div class="block">Volatility environment for Ibor caplet/floorlet in the SABR model.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../pricer/capfloor/ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities</a></span></code></th>
 <td class="colLast">

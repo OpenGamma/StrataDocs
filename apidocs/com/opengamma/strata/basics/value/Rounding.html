@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":18,"i5":6};
+var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":18,"i5":18,"i6":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -127,7 +127,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public interface <span class="typeNameLabel">Rounding</span></pre>
 <div class="block">A convention defining how to round a number.
  <p>
- This defines a standard mechanism for rounding a <code>double</code> or <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a>.
+ This defines a standard mechanism for rounding a <code>double</code>, <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> or  <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect"><code>Decimal</code></a>.
  Since financial instruments have different and complex conventions, rounding is extensible.
  <p>
  Note that rounding a <code>double</code> is not straightforward as floating point
@@ -195,6 +195,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>default <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#round(com.opengamma.strata.collect.Decimal)">round</a></span>&#8203;(<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;value)</code></th>
+<td class="colLast">
+<div class="block">Rounds the specified value according to the rules of the convention.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#round(java.math.BigDecimal)">round</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;value)</code></th>
 <td class="colLast">
@@ -317,10 +324,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="round(java.math.BigDecimal)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>round</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;round&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;value)</pre>
+<div class="block">Rounds the specified value according to the rules of the convention.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the value to be rounded</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the rounded value</dd>
+</dl>
+</li>
+</ul>
+<a id="round(com.opengamma.strata.collect.Decimal)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>round</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;round&#8203;(<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;value)</pre>
 <div class="block">Rounds the specified value according to the rules of the convention.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

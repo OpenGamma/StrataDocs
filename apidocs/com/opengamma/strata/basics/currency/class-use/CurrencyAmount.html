@@ -309,42 +309,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.capfloor">com.opengamma.strata.product.capfloor</a></th>
+<td class="colLast">
+<div class="block">Entity objects describing Ibor cap/floor.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.common">com.opengamma.strata.product.common</a></th>
 <td class="colLast">
 <div class="block">Entity objects shared between other packages.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.fx">com.opengamma.strata.product.fx</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing financial instruments in the foreign exchange market.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.fxopt">com.opengamma.strata.product.fxopt</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing options in the foreign exchange market.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.payment">com.opengamma.strata.product.payment</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing simple payment financial instruments.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.product.swap">com.opengamma.strata.product.swap</a></th>
 <td class="colLast">
 <div class="block">Entity objects describing a swap.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.report.framework.expression">com.opengamma.strata.report.framework.expression</a></th>
 <td class="colLast">
 <div class="block">Provide the ability to extract data using textual expressions.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.report.framework.format">com.opengamma.strata.report.framework.format</a></th>
 <td class="colLast">
 <div class="block">Provide the ability to format calculated values.</div>
@@ -1763,13 +1769,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackFixedCouponBondOptionPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BlackFixedCouponBondOptionPricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedFixedCouponBondOption,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.pricer.bond.BondYieldVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBondOption.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBondOption</a>&nbsp;bondOption,
+            <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;legalEntityProvider,
+            <a href="../../../pricer/bond/BondYieldVolatilities.html" title="interface in com.opengamma.strata.pricer.bond">BondYieldVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value of the bond option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingBillProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingBillProductPricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedBill,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedBill.html" title="class in com.opengamma.strata.product.bond">ResolvedBill</a>&nbsp;bill,
             <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider)</code></th>
 <td class="colLast">
 <div class="block">Calculates the present value of the bill product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingBillTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingBillTradePricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedBillTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedBillTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedBillTrade</a>&nbsp;trade,
             <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider)</code></th>
@@ -1777,7 +1792,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of a bill trade.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingBondFutureTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingBondFutureTradePricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedBondFutureTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedBondFutureTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedBondFutureTrade</a>&nbsp;trade,
             <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;discountingProvider,
@@ -1786,7 +1801,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond future trade.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingCapitalIndexedBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingCapitalIndexedBondProductPricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedCapitalIndexedBond,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedCapitalIndexedBond.html" title="class in com.opengamma.strata.product.bond">ResolvedCapitalIndexedBond</a>&nbsp;bond,
             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1795,7 +1810,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingCapitalIndexedBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingCapitalIndexedBondTradePricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedCapitalIndexedBondTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedCapitalIndexedBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedCapitalIndexedBondTrade</a>&nbsp;trade,
             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1804,7 +1819,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond trade.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
             <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider)</code></th>
@@ -1812,7 +1827,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the fixed coupon bond product.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondTradePricer.html#presentValue(com.opengamma.strata.product.bond.ResolvedFixedCouponBondTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider)">presentValue</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBondTrade</a>&nbsp;trade,
             <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider)</code></th>
@@ -1820,7 +1835,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the fixed coupon bond trade.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingCapitalIndexedBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingCapitalIndexedBondTradePricer.html#presentValueFromCleanPrice(com.opengamma.strata.product.bond.ResolvedCapitalIndexedBondTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double)">presentValueFromCleanPrice</a></span>&#8203;(<a href="../../../product/bond/ResolvedCapitalIndexedBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedCapitalIndexedBondTrade</a>&nbsp;trade,
                           <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1831,7 +1846,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond trade from the clean price.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondTradePricer.html#presentValueFromCleanPrice(com.opengamma.strata.product.bond.ResolvedFixedCouponBondTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double)">presentValueFromCleanPrice</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBondTrade</a>&nbsp;trade,
                           <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -1841,7 +1856,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the fixed coupon bond trade from the clean price of the underlying product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingCapitalIndexedBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingCapitalIndexedBondTradePricer.html#presentValueFromCleanPriceWithZSpread(com.opengamma.strata.product.bond.ResolvedCapitalIndexedBondTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueFromCleanPriceWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedCapitalIndexedBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedCapitalIndexedBondTrade</a>&nbsp;trade,
                                      <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1855,7 +1870,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the settlement of the bond trade from the clean price with z-spread.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondTradePricer.html#presentValueFromCleanPriceWithZSpread(com.opengamma.strata.product.bond.ResolvedFixedCouponBondTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueFromCleanPriceWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBondTrade</a>&nbsp;trade,
                                      <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -1869,7 +1884,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  clean price of the underlying product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingBillProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingBillProductPricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedBill,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedBill.html" title="class in com.opengamma.strata.product.bond">ResolvedBill</a>&nbsp;bill,
                        <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -1880,7 +1895,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of a bill product with z-spread.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingBillTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingBillTradePricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedBillTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedBillTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedBillTrade</a>&nbsp;trade,
                        <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -1891,7 +1906,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of a bill trade with z-spread.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingBondFutureTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingBondFutureTradePricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedBondFutureTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedBondFutureTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedBondFutureTrade</a>&nbsp;trade,
                        <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;discountingProvider,
@@ -1903,7 +1918,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond future trade with z-spread.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingCapitalIndexedBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingCapitalIndexedBondProductPricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedCapitalIndexedBond,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedCapitalIndexedBond.html" title="class in com.opengamma.strata.product.bond">ResolvedCapitalIndexedBond</a>&nbsp;bond,
                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1915,7 +1930,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond product with z-spread.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingCapitalIndexedBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingCapitalIndexedBondTradePricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedCapitalIndexedBondTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedCapitalIndexedBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedCapitalIndexedBondTrade</a>&nbsp;trade,
                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1927,7 +1942,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the bond trade with z-spread.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                        <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -1938,7 +1953,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the fixed coupon bond product with z-spread.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondTradePricer.html#presentValueWithZSpread(com.opengamma.strata.product.bond.ResolvedFixedCouponBondTrade,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,double,com.opengamma.strata.pricer.CompoundedRateType,int)">presentValueWithZSpread</a></span>&#8203;(<a href="../../../product/bond/ResolvedFixedCouponBondTrade.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBondTrade</a>&nbsp;trade,
                        <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -2007,6 +2022,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrOvernightInArrearsCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/SabrOvernightInArrearsCapletFloorletPeriodPricer.html#presentValue(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.SabrParametersIborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&nbsp;period,
+            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+            <a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a>&nbsp;sabrVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the present value in the SABR model with effective parameters.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.html#presentValue(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletBinaryPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.SabrParametersIborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletBinaryPeriod</a>&nbsp;period,
+            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+            <a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a>&nbsp;sabrVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value of the binary caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.html#presentValue(com.opengamma.strata.product.capfloor.IborCapletFloorletBinaryPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletBinaryPeriod</a>&nbsp;period,
+            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+            <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value of the binary caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityIborCapFloorLegPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityIborCapFloorLegPricer.html#presentValue(com.opengamma.strata.product.capfloor.ResolvedIborCapFloorLeg,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/capfloor/ResolvedIborCapFloorLeg.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloorLeg</a>&nbsp;capFloorLeg,
             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
             <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
@@ -2014,13 +2056,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value of the Ibor cap/floor leg.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityIborCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityIborCapletFloorletPeriodPricer.html#presentValue(com.opengamma.strata.product.capfloor.IborCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/capfloor/IborCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod</a>&nbsp;period,
             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
             <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
 <td class="colLast">
 <div class="block">Calculates the present value of the Ibor caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityOvernightInArrearsCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityOvernightInArrearsCapletFloorletPeriodPricer.html#presentValue(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValue</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&nbsp;period,
+            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+            <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value of the overnight in-arrears caplet/floorlet period.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -3356,6 +3407,44 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   double&nbsp;contractSize)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance from the tick size, tick value and contract size.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.product.capfloor">
+<!--   -->
+</a>
+<h3>Uses of <a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a> in <a href="../../../product/capfloor/package-summary.html">com.opengamma.strata.product.capfloor</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../product/capfloor/package-summary.html">com.opengamma.strata.product.capfloor</a> that return <a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletBinaryPeriod.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.html#payoff(double)">payoff</a></span>&#8203;(double&nbsp;fixing)</code></th>
+<td class="colLast">
+<div class="block">The payoff for a given fixing rate.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightInArrearsCapletFloorletBinaryPeriod.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.html#payoff(double)">payoff</a></span>&#8203;(double&nbsp;fixing)</code></th>
+<td class="colLast">
+<div class="block">Returns the binary caplet/floorlet payoff for a given compounded rate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightInArrearsCapletFloorletPeriod.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html#payoff(double)">payoff</a></span>&#8203;(double&nbsp;rate)</code></th>
+<td class="colLast">
+<div class="block">Returns the caplet/floorlet payoff for a given compounded rate.</div>
 </td>
 </tr>
 </tbody>

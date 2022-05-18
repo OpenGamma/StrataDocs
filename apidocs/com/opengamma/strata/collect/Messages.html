@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,7 +176,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#formatWithAttributes(java.lang.String,java.lang.Object...)">formatWithAttributes</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;messageTemplate,
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;args)</code></th>
 <td class="colLast">
-<div class="block">Formats a templated message inserting named arguments.</div>
+<div class="block">Formats a templated message inserting named arguments, returning the implied attribute map.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mergeTemplateLocations(java.lang.String,java.lang.String,int)">mergeTemplateLocations</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;location1,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;location2,
+                      int&nbsp;message1Length)</code></th>
+<td class="colLast">
+<div class="block">Merges two template locations.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#recreateTemplate(java.lang.String,java.lang.String)">recreateTemplate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;templateLocation)</code></th>
+<td class="colLast">
+<div class="block">Recreates the template from the message and templateLocation code.</div>
 </td>
 </tr>
 </table>
@@ -268,12 +285,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a id="formatWithAttributes(java.lang.String,java.lang.Object...)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>formatWithAttributes</h4>
 <pre class="methodSignature">public static&nbsp;<a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;formatWithAttributes&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;messageTemplate,
                                                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;args)</pre>
-<div class="block">Formats a templated message inserting named arguments.
+<div class="block">Formats a templated message inserting named arguments, returning the implied attribute map.
  <p>
  A typical template would look like:
  <pre>
@@ -281,7 +298,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  </pre>
  This will return a <a href="tuple/Pair.html" title="class in com.opengamma.strata.collect.tuple"><code>Pair</code></a> with a String and a Map.
  The String will be the formatted message: <code>"Foo=abc, Bar=123"</code>.
- The Map will look like: <code>{"foo": "123"}</code>.
+ The Map will look like: <code>{"foo": "abc"}</code>.
  <p>
  This method combines a template message with a list of specific arguments.
  It can be useful to delay string concatenation, which is sometimes a performance issue.
@@ -294,13 +311,59 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  No attempt is made to format the arguments.
  <p>
  This method is null tolerant to ensure that use in exception construction will
- not throw another exception, which might hide the intended exception.</div>
+ not throw another exception, which might hide the intended exception.
+ <p>
+ If the template contains a named placeholder, then the output will contain a populated attribute map
+ for all placeholders including those without names. The output will include a 'templateLocation'
+ attribute identifying the location of the named placeholders.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>messageTemplate</code> - the message template with "{}" placeholders, null returns empty string</dd>
+<dd><code>messageTemplate</code> - the message template with "{}" and "{name}" placeholders, null returns empty string</dd>
 <dd><code>args</code> - the message arguments, null treated as empty array</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted message</dd>
+</dl>
+</li>
+</ul>
+<a id="recreateTemplate(java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>recreateTemplate</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;recreateTemplate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;templateLocation)</pre>
+<div class="block">Recreates the template from the message and templateLocation code.
+ <p>
+ This method returns the input message if the input is not valid.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the message, null tolerant</dd>
+<dd><code>templateLocation</code> - the template location, null tolerant</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the message</dd>
+</dl>
+</li>
+</ul>
+<a id="mergeTemplateLocations(java.lang.String,java.lang.String,int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>mergeTemplateLocations</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;mergeTemplateLocations&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;location1,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;location2,
+                                            int&nbsp;message1Length)</pre>
+<div class="block">Merges two template locations.
+ <p>
+ This takes two template locations and the length of the first message and returns the combined template.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>location1</code> - the first location, null tolerant</dd>
+<dd><code>location2</code> - the second location, null tolerant</dd>
+<dd><code>message1Length</code> - the length of the formatted message associated with location1</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the merged location, empty if unable to merge</dd>
 </dl>
 </li>
 </ul>

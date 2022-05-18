@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":42,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -164,7 +164,7 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -187,111 +187,137 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">convertedTo</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
+           <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;fxRate)</code></th>
+<td class="colLast">
+<div class="block">Converts this amount to an equivalent amount the specified currency.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#convertedTo(com.opengamma.strata.basics.currency.Currency,java.math.BigDecimal)">convertedTo</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;fxRate)</code></th>
 <td class="colLast">
 <div class="block">Converts this amount to an equivalent amount the specified currency.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Checks if this money equals another.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAmount()">getAmount</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the amount of the currency.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#getValue()"><code>getValue()</code></a></div>
+</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../collect/FixedScaleDecimal.html" title="class in com.opengamma.strata.collect">FixedScaleDecimal</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue()">getValue</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the numeric amount of the money.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a suitable hash code for the currency.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNegative()">isNegative</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the amount is negative.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPositive()">isPositive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the amount is positive.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isZero()">isZero</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the amount is zero.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapAmount(java.util.function.UnaryOperator)">mapAmount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">UnaryOperator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;mapper)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#map(java.util.function.UnaryOperator)">map</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">UnaryOperator</a>&lt;<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&gt;&nbsp;mapper)</code></th>
 <td class="colLast">
 <div class="block">Applies an operation to the amount.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapAmount(java.util.function.UnaryOperator)">mapAmount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">UnaryOperator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;mapper)</code></th>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#map(java.util.function.UnaryOperator)"><code>map(UnaryOperator)</code></a>, potentially using a lambda <code>decimal -&gt; decimal.mapAsBigDecimal(mapper)</code></div>
+</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minus(com.opengamma.strata.basics.currency.Money)">minus</a></span>&#8203;(<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;amountToSubtract)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>Money</code> with the specified amount subtracted.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#multipliedBy(long)">multipliedBy</a></span>&#8203;(long&nbsp;valueToMultiplyBy)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>Money</code> with the amount multiplied.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#negated()">negated</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>Money</code> with the amount negated.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#negative()">negative</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>Money</code> with a negative amount.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.BigMoney)">of</a></span>&#8203;(<a href="BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a>&nbsp;money)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <code>Money</code> for the specified <a href="BigMoney.html" title="class in com.opengamma.strata.basics.currency"><code>BigMoney</code></a>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.CurrencyAmount)">of</a></span>&#8203;(<a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a>&nbsp;currencyAmount)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <code>Money</code> for the specified <a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency"><code>CurrencyAmount</code></a>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount)</code></th>
@@ -299,7 +325,15 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">of</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
+  <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.basics.currency.Currency,java.math.BigDecimal)">of</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
@@ -307,49 +341,49 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;amountStr)</code></th>
 <td class="colLast">
 <div class="block">Parses the string to produce a <a href="Money.html" title="class in com.opengamma.strata.basics.currency"><code>Money</code></a>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plus(com.opengamma.strata.basics.currency.Money)">plus</a></span>&#8203;(<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;amountToAdd)</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>Money</code> with the specified amount added.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#positive()">positive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a copy of this <code>Money</code> with a positive amount.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBigMoney()">toBigMoney</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this monetary amount to the equivalent <code>BigMoney</code>.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCurrencyAmount()">toCurrencyAmount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Converts this monetary amount to the equivalent <code>CurrencyAmount</code>.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the amount as a string.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#zero(com.opengamma.strata.basics.currency.Currency)">zero</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
@@ -464,6 +498,24 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 </dl>
 </li>
 </ul>
+<a id="of(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;of&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
+                       <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount)</pre>
+<div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>currency</code> - the currency the amount is in</dd>
+<dd><code>amount</code> - the amount of the currency to represent, as an instance of <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect"><code>Decimal</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the currency amount</dd>
+</dl>
+</li>
+</ul>
 <a id="parse(java.lang.String)">
 <!--   -->
 </a>
@@ -506,15 +558,35 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <ul class="blockList">
 <li class="blockList">
 <h4>getAmount</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;getAmount()</pre>
-<div class="block">Gets the amount of the currency.
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;getAmount()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#getValue()"><code>getValue()</code></a></div>
+</div>
+<div class="block">Gets the numeric amount of the money, as a <code>BigDecimal</code>.
  <p>
- The amount will be rounded to the currency specifications.
- <p>
- For example, in the value 'GBP 12.34' the amount is 12.34.</div>
+ For example, in the amount 'GBP 12.34' the decimal value returned is 12.34,
+ and for 'GBP 13.40' the amount returned is '13.40'.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the amount</dd>
+<dd>the amount, with a scale equal to the currency minor digits</dd>
+</dl>
+</li>
+</ul>
+<a id="getValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValue</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../collect/FixedScaleDecimal.html" title="class in com.opengamma.strata.collect">FixedScaleDecimal</a>&nbsp;getValue()</pre>
+<div class="block">Gets the numeric amount of the money.
+ <p>
+ For example, in the amount 'GBP 12.34' the decimal value returned is '12.34',
+ whereas for 'GBP 13.40' the amount returned is '13.40'.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the amount, with a scale equal to the currency minor digits</dd>
 </dl>
 </li>
 </ul>
@@ -582,13 +654,39 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 </dl>
 </li>
 </ul>
+<a id="map(java.util.function.UnaryOperator)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>map</h4>
+<pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;map&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">UnaryOperator</a>&lt;<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&gt;&nbsp;mapper)</pre>
+<div class="block">Applies an operation to the amount.
+ <p>
+ This is generally used to apply a mathematical operation to the amount.
+ For example, the operator could multiply the amount by a constant, or take the inverse.
+ <pre>
+   abs = base.mapAmount(value -> value.abs());
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapper</code> - the operator to be applied to the amount</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a copy of this amount with the mapping applied to the original amount</dd>
+</dl>
+</li>
+</ul>
 <a id="mapAmount(java.util.function.UnaryOperator)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>mapAmount</h4>
-<pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;mapAmount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">UnaryOperator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;mapper)</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;mapAmount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">UnaryOperator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;mapper)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#map(java.util.function.UnaryOperator)"><code>map(UnaryOperator)</code></a>, potentially using a lambda <code>decimal -&gt; decimal.mapAsBigDecimal(mapper)</code></div>
+</div>
 <div class="block">Applies an operation to the amount.
  <p>
  This is generally used to apply a mathematical operation to the amount.
@@ -740,6 +838,32 @@ implements <a href="FxConvertible.html" title="interface in com.opengamma.strata
 <h4>convertedTo</h4>
 <pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;convertedTo&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;fxRate)</pre>
+<div class="block">Converts this amount to an equivalent amount the specified currency.
+ <p>
+ The result will be expressed in terms of the given currency, converting
+ using the specified FX rate.
+ <p>
+ For example, if this represents 'GBP 100' and this method is called with
+ arguments <code>(USD, 1.6)</code> then the result will be 'USD 160'.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>resultCurrency</code> - the currency of the result</dd>
+<dd><code>fxRate</code> - the FX rate from this currency to the result currency</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the converted instance, which should be expressed in the specified currency</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the FX is not 1 when no conversion is required</dd>
+</dl>
+</li>
+</ul>
+<a id="convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertedTo</h4>
+<pre class="methodSignature">public&nbsp;<a href="Money.html" title="class in com.opengamma.strata.basics.currency">Money</a>&nbsp;convertedTo&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
+                         <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;fxRate)</pre>
 <div class="block">Converts this amount to an equivalent amount the specified currency.
  <p>
  The result will be expressed in terms of the given currency, converting

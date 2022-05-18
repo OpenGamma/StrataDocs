@@ -231,6 +231,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#dirtyPriceFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">dirtyPriceFromYieldAd</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                     double&nbsp;yield)</code></th>
+<td class="colLast">
+<div class="block">Calculates the dirty price of the fixed coupon bond from yield and its derivative wrt to the yield.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#dirtyPriceSensitivity(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData)">dirtyPriceSensitivity</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                      <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -239,7 +248,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the dirty price sensitivity of the fixed coupon bond product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../market/sensitivity/PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#dirtyPriceSensitivityWithZspread(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double,com.opengamma.strata.pricer.CompoundedRateType,int)">dirtyPriceSensitivityWithZspread</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                                 <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -251,7 +260,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the dirty price sensitivity of the fixed coupon bond with z-spread.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#macaulayDurationFromYield(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">macaulayDurationFromYield</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
@@ -260,13 +269,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the Macaulay duration of the fixed coupon bond product from yield.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#modifiedDurationFromYield(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">modifiedDurationFromYield</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
                          double&nbsp;yield)</code></th>
 <td class="colLast">
 <div class="block">Calculates the modified duration of the fixed coupon bond product from yield.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#modifiedDurationFromYieldAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">modifiedDurationFromYieldAd</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                           double&nbsp;yield)</code></th>
+<td class="colLast">
+<div class="block">Calculates the modified duration of the fixed coupon bond product from yield and its derivative wrt to the yield.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -317,6 +335,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#yieldFromDirtyPriceAd(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,java.time.LocalDate,double)">yieldFromDirtyPriceAd</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;settlementDate,
+                     double&nbsp;dirtyPrice)</code></th>
+<td class="colLast">
+<div class="block">Calculates the yield of the fixed coupon bond product from dirty price and its derivative wrt the price.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DiscountingFixedCouponBondProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/DiscountingFixedCouponBondProductPricer.html#zSpreadFromCurvesAndDirtyPrice(com.opengamma.strata.product.bond.ResolvedFixedCouponBond,com.opengamma.strata.pricer.bond.LegalEntityDiscountingProvider,com.opengamma.strata.basics.ReferenceData,double,com.opengamma.strata.pricer.CompoundedRateType,int)">zSpreadFromCurvesAndDirtyPrice</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;bond,
                               <a href="../../../pricer/bond/LegalEntityDiscountingProvider.html" title="interface in com.opengamma.strata.pricer.bond">LegalEntityDiscountingProvider</a>&nbsp;provider,
@@ -359,6 +386,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFixedCouponBondOption.</span><code><span class="memberNameLink"><a href="../ResolvedFixedCouponBondOption.html#getUnderlying()">getUnderlying</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the bond underlying the option.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBond.</span><code><span class="memberNameLink"><a href="../FixedCouponBond.html#resolve(com.opengamma.strata.basics.ReferenceData)">resolve</a></span>&#8203;(<a href="../../../basics/ReferenceData.html" title="interface in com.opengamma.strata.basics">ReferenceData</a>&nbsp;refData)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -398,6 +432,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The meta-property for the <code>product</code> property.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFixedCouponBondOption.Meta.</span><code><span class="memberNameLink"><a href="../ResolvedFixedCouponBondOption.Meta.html#underlying()">underlying</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>underlying</code> property.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -421,6 +462,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFixedCouponBondTrade.Builder.</span><code><span class="memberNameLink"><a href="../ResolvedFixedCouponBondTrade.Builder.html#product(com.opengamma.strata.product.bond.ResolvedFixedCouponBond)">product</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;product)</code></th>
 <td class="colLast">
 <div class="block">Sets the resolved fixed coupon bond product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ResolvedFixedCouponBondOption.Builder.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBondOption.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFixedCouponBondOption.Builder.</span><code><span class="memberNameLink"><a href="../ResolvedFixedCouponBondOption.Builder.html#underlying(com.opengamma.strata.product.bond.ResolvedFixedCouponBond)">underlying</a></span>&#8203;(<a href="../ResolvedFixedCouponBond.html" title="class in com.opengamma.strata.product.bond">ResolvedFixedCouponBond</a>&nbsp;underlying)</code></th>
+<td class="colLast">
+<div class="block">Sets the bond underlying the option.</div>
 </td>
 </tr>
 </tbody>

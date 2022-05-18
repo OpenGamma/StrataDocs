@@ -666,7 +666,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
  supplier.
  <p>
  Note that if the supplier throws an exception, this will be caught
- and converted to a failure <code>Result</code>.</div>
+ and converted to a failure <code>Result</code>.
+ This recognizes and handles <a href="FailureException.html" title="class in com.opengamma.strata.collect.result"><code>FailureException</code></a> and <a href="FailureItemProvider.html" title="interface in com.opengamma.strata.collect.result"><code>FailureItemProvider</code></a> exceptions.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of the value</dd>
@@ -687,7 +688,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Creates a <code>Result</code> wrapping the result produced by the supplier.
  <p>
  Note that if the supplier throws an exception, this will be caught
- and converted to a failure <code>Result</code>.</div>
+ and converted to a failure <code>Result</code>.
+ This recognizes and handles <a href="FailureException.html" title="class in com.opengamma.strata.collect.result"><code>FailureException</code></a> and <a href="FailureItemProvider.html" title="interface in com.opengamma.strata.collect.result"><code>FailureItemProvider</code></a> exceptions.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of the result value</dd>
@@ -707,7 +709,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <pre class="methodSignature">public static&nbsp;&lt;R&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;&nbsp;failure&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</pre>
 <div class="block">Creates a failed result caused by a throwable.
  <p>
- The failure will have a reason of <code>ERROR</code>.</div>
+ This recognizes and handles <a href="FailureException.html" title="class in com.opengamma.strata.collect.result"><code>FailureException</code></a> and <a href="FailureItemProvider.html" title="interface in com.opengamma.strata.collect.result"><code>FailureItemProvider</code></a> exceptions.
+ If the exception type is not recognized, the failure will have a reason of <code>ERROR</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>R</code> - the expected type of the result</dd>
@@ -727,7 +730,8 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <pre class="methodSignature">public static&nbsp;&lt;R&gt;&nbsp;<a href="Result.html" title="class in com.opengamma.strata.collect.result">Result</a>&lt;R&gt;&nbsp;failure&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause)</pre>
 <div class="block">Creates a failed result caused by an exception.
  <p>
- The failure will have a reason of <code>ERROR</code>.</div>
+ This recognizes and handles <a href="FailureException.html" title="class in com.opengamma.strata.collect.result"><code>FailureException</code></a> and <a href="FailureItemProvider.html" title="interface in com.opengamma.strata.collect.result"><code>FailureItemProvider</code></a> exceptions.
+ If the exception type is not recognized, the failure will have a reason of <code>ERROR</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>R</code> - the expected type of the result</dd>

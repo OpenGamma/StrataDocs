@@ -162,6 +162,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanCharSource.</span><code><span class="memberNameLink"><a href="../BeanCharSource.html#asByteSource(java.nio.charset.Charset)">asByteSource</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanCharSource.</span><code><span class="memberNameLink"><a href="../BeanCharSource.html#asByteSourceUtf8()">asByteSourceUtf8</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Converts this char source to a byte source in UTF-8.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#decryptZip(com.opengamma.strata.collect.io.BeanByteSource,java.lang.String)">decryptZip</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password)</code></th>
@@ -195,13 +207,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="../BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UnicodeBom.</span><code><span class="memberNameLink"><a href="../UnicodeBom.html#toCharSource(com.opengamma.strata.collect.io.BeanByteSource)">toCharSource</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;byteSource)</code></th>
+<td class="colLast">
+<div class="block">Converts a <code>BeanByteSource</code> to a <code>BeanCharSource</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unpackInMemory(com.opengamma.strata.collect.io.BeanByteSource)">unpackInMemory</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Unpacks the source into memory, returning a map.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unpackInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.util.function.BiConsumer)">unpackInMemory</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiConsumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;&nbsp;consumer)</code></th>
@@ -209,7 +228,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Unpacks the source into memory, invoking the consumer for each entry.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unzip(com.opengamma.strata.collect.io.BeanByteSource,java.nio.file.Path)">unzip</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a>&nbsp;path)</code></th>
@@ -217,14 +236,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Unzips the source to a file path.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unzipInMemory(com.opengamma.strata.collect.io.BeanByteSource)">unzipInMemory</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Unzips the source into memory, returning a map.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unzipInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.util.function.BiConsumer)">unzipInMemory</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiConsumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;&nbsp;consumer)</code></th>
@@ -232,7 +251,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Unzips the source into memory, invoking the consumer for each entry.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ArrayByteSource.html" title="class in com.opengamma.strata.collect.io">ArrayByteSource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unzipPathNameInMemory(com.opengamma.strata.collect.io.BeanByteSource,java.lang.String)">unzipPathNameInMemory</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;relativePathName)</code></th>
@@ -240,7 +259,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Unzips a single file from the source in memory.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ZipUtils.</span><code><span class="memberNameLink"><a href="../ZipUtils.html#unzipPathNames(com.opengamma.strata.collect.io.BeanByteSource)">unzipPathNames</a></span>&#8203;(<a href="../BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;source)</code></th>
 <td class="colLast">

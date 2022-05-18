@@ -401,12 +401,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondYieldSensitivity</a></span></code></th>
+<td class="colLast">
+<div class="block">Point sensitivity to a bond yield implied parameter point.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">IssuerCurveZeroRateSensitivity</a></span></code></th>
 <td class="colLast">
 <div class="block">Point sensitivity to the issuer curve.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveZeroRateSensitivity</a></span></code></th>
 <td class="colLast">
@@ -430,17 +437,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">IssuerCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html#compareKey(com.opengamma.strata.market.sensitivity.PointSensitivity)">compareKey</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html#compareKey(com.opengamma.strata.market.sensitivity.PointSensitivity)">compareKey</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#compareKey(com.opengamma.strata.market.sensitivity.PointSensitivity)">compareKey</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IssuerCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html#compareKey(com.opengamma.strata.market.sensitivity.PointSensitivity)">compareKey</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#compareKey(com.opengamma.strata.market.sensitivity.PointSensitivity)">compareKey</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>&nbsp;other)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondFutureVolatilities.html#parameterSensitivity(com.opengamma.strata.market.sensitivity.PointSensitivity...)">parameterSensitivity</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>...&nbsp;pointSensitivities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the parameter sensitivity.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../../param/CurrencyParameterSensitivities.html" title="class in com.opengamma.strata.market.param">CurrencyParameterSensitivities</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldVolatilities.html#parameterSensitivity(com.opengamma.strata.market.sensitivity.PointSensitivity...)">parameterSensitivity</a></span>&#8203;(<a href="../PointSensitivity.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivity</a>...&nbsp;pointSensitivities)</code></th>
 <td class="colLast">
 <div class="block">Calculates the parameter sensitivity.</div>
 </td>

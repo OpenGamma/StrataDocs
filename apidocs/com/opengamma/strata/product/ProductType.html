@@ -138,11 +138,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="ProductType.html" title="class in com.opengamma.strata.product">ProductType</a>&gt;</code></dd>
+<dd><code><a href="../collect/named/Described.html" title="interface in com.opengamma.strata.collect.named">Described</a></code>, <code><a href="../collect/named/Named.html" title="interface in com.opengamma.strata.collect.named">Named</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="ProductType.html" title="class in com.opengamma.strata.product">ProductType</a>&gt;</code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">ProductType</span>
-extends <a href="../collect/TypedString.html" title="class in com.opengamma.strata.collect">TypedString</a>&lt;<a href="ProductType.html" title="class in com.opengamma.strata.product">ProductType</a>&gt;</pre>
+extends <a href="../collect/TypedString.html" title="class in com.opengamma.strata.collect">TypedString</a>&lt;<a href="ProductType.html" title="class in com.opengamma.strata.product">ProductType</a>&gt;
+implements <a href="../collect/named/Described.html" title="interface in com.opengamma.strata.collect.named">Described</a></pre>
 <div class="block">The type of a portfolio item.
  <p>
  This provides a classification of the trade or position.</div>
@@ -746,6 +747,8 @@ extends <a href="../collect/TypedString.html" title="class in com.opengamma.stra
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDescription()</pre>
 <div class="block">Gets the human-readable description of the type.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../collect/named/Described.html#getDescription()">getDescription</a></code>&nbsp;in interface&nbsp;<code><a href="../collect/named/Described.html" title="interface in com.opengamma.strata.collect.named">Described</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the description</dd>
 </dl>

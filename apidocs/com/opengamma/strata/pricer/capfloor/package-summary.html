@@ -118,21 +118,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="BlackSabrIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">BlackSabrIborCapletFloorletVolatilities</a></th>
+<td class="colLast">
+<div class="block">Volatility for Ibor caplet/floorlet in SABR model.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a></th>
 <td class="colLast">
 <div class="block">Volatilities for pricing Ibor caplet/floorlet.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="IborCapletFloorletVolatilityDefinition.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilityDefinition</a></th>
 <td class="colLast">
 <div class="block">Definition of caplet volatilities calibration.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="NormalIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">NormalIborCapletFloorletVolatilities</a></th>
 <td class="colLast">
 <div class="block">Volatility for Ibor caplet/floorlet in the normal or Bachelier model.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="NormalSabrIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">NormalSabrIborCapletFloorletVolatilities</a></th>
+<td class="colLast">
+<div class="block">Volatility for Ibor/Overnight caplet/floorlet in SABR model.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -381,6 +393,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="NormalSabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">NormalSabrParametersIborCapletFloorletVolatilities</a></th>
+<td class="colLast">
+<div class="block">Volatility environment for caplet/floorlet in the SABR model.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="NormalSabrParametersIborCapletFloorletVolatilities.Meta.html" title="class in com.opengamma.strata.pricer.capfloor">NormalSabrParametersIborCapletFloorletVolatilities.Meta</a></th>
+<td class="colLast">
+<div class="block">The meta-bean for <code>NormalSabrParametersIborCapletFloorletVolatilities</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SabrIborCapFloorLegPricer.html" title="class in com.opengamma.strata.pricer.capfloor">SabrIborCapFloorLegPricer</a></th>
 <td class="colLast">
 <div class="block">Pricer for cap/floor legs in SABR model.</div>
@@ -453,75 +477,99 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="SabrOvernightInArrearsCapletFloorletPeriodPricer.html" title="class in com.opengamma.strata.pricer.capfloor">SabrOvernightInArrearsCapletFloorletPeriodPricer</a></th>
+<td class="colLast">
+<div class="block">Pricer for in-arrears caplets and floorlets (Asian style options) in the SABR with effective parameters approach.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a></th>
 <td class="colLast">
 <div class="block">Volatility environment for Ibor caplet/floorlet in the SABR model.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SabrParametersIborCapletFloorletVolatilities.Builder.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities.Builder</a></th>
 <td class="colLast">
 <div class="block">The bean-builder for <code>SabrParametersIborCapletFloorletVolatilities</code>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="SabrParametersIborCapletFloorletVolatilities.Meta.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities.Meta</a></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>SabrParametersIborCapletFloorletVolatilities</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities</a></th>
 <td class="colLast">
 <div class="block">Volatility for Ibor caplet/floorlet in the shifted log-normal or shifted Black model based on a surface.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities.Meta.html" title="class in com.opengamma.strata.pricer.capfloor">ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities.Meta</a></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>ShiftedBlackIborCapletFloorletExpiryStrikeVolatilities</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SurfaceIborCapletFloorletVolatilityBootstrapDefinition.html" title="class in com.opengamma.strata.pricer.capfloor">SurfaceIborCapletFloorletVolatilityBootstrapDefinition</a></th>
 <td class="colLast">
 <div class="block">Definition of caplet volatilities calibration.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="SurfaceIborCapletFloorletVolatilityBootstrapDefinition.Meta.html" title="class in com.opengamma.strata.pricer.capfloor">SurfaceIborCapletFloorletVolatilityBootstrapDefinition.Meta</a></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>SurfaceIborCapletFloorletVolatilityBootstrapDefinition</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="SurfaceIborCapletFloorletVolatilityBootstrapper.html" title="class in com.opengamma.strata.pricer.capfloor">SurfaceIborCapletFloorletVolatilityBootstrapper</a></th>
 <td class="colLast">
 <div class="block">Caplet volatilities calibration to cap volatilities based on interpolated surface.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.html" title="class in com.opengamma.strata.pricer.capfloor">VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer</a></th>
+<td class="colLast">
+<div class="block">Pricer for binary caplet/floorlet based on volatilities.</div>
+</td>
+</tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.html" title="class in com.opengamma.strata.pricer.capfloor">VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer</a></th>
+<td class="colLast">
+<div class="block">Pricer for binary caplet/floorlet based on volatilities.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="VolatilityIborCapFloorLegPricer.html" title="class in com.opengamma.strata.pricer.capfloor">VolatilityIborCapFloorLegPricer</a></th>
 <td class="colLast">
 <div class="block">Pricer for cap/floor legs based on volatilities.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="VolatilityIborCapFloorProductPricer.html" title="class in com.opengamma.strata.pricer.capfloor">VolatilityIborCapFloorProductPricer</a></th>
 <td class="colLast">
 <div class="block">Pricer for cap/floor products based on volatilities.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="VolatilityIborCapFloorTradePricer.html" title="class in com.opengamma.strata.pricer.capfloor">VolatilityIborCapFloorTradePricer</a></th>
 <td class="colLast">
 <div class="block">Pricer for cap/floor trades based on volatilities.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="VolatilityIborCapletFloorletPeriodPricer.html" title="class in com.opengamma.strata.pricer.capfloor">VolatilityIborCapletFloorletPeriodPricer</a></th>
 <td class="colLast">
 <div class="block">Pricer for caplet/floorlet based on volatilities.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="VolatilityOvernightInArrearsCapletFloorletPeriodPricer.html" title="class in com.opengamma.strata.pricer.capfloor">VolatilityOvernightInArrearsCapletFloorletPeriodPricer</a></th>
+<td class="colLast">
+<div class="block">Pricer for overnight in-arrears caplet/floorlet based on volatilities.</div>
 </td>
 </tr>
 </tbody>

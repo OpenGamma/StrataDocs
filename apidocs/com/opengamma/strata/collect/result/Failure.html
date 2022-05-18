@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":10};
+var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -202,65 +202,72 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#from(java.lang.Throwable)">from</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;th)</code></th>
+<td class="colLast">
+<div class="block">Creates a failure from the throwable.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirstItem()">getFirstItem</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the first failure item.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItems()">getItems</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the set of failure items.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMessage()">getMessage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the error message associated with the failure.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReason()">getReason</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the reason associated with the failure.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapItems(java.util.function.Function)">mapItems</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>,&#8203;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Processes the failure by applying a function that alters the items.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="Failure.Meta.html" title="class in com.opengamma.strata.collect.result">Failure.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>Failure</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="Failure.Meta.html" title="class in com.opengamma.strata.collect.result">Failure.Meta</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureItem)">of</a></span>&#8203;(<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&nbsp;item)</code></th>
 <td class="colLast">
 <div class="block">Obtains a failure for a single failure item.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureItem,com.opengamma.strata.collect.result.FailureItem...)">of</a></span>&#8203;(<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&nbsp;item,
   <a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>...&nbsp;additionalItems)</code></th>
@@ -268,7 +275,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains a failure for multiple failure items.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureReason,java.lang.Exception)">of</a></span>&#8203;(<a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause)</code></th>
@@ -276,7 +283,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains a failure from a reason and exception.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureReason,java.lang.Exception,java.lang.String,java.lang.Object...)">of</a></span>&#8203;(<a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;cause,
@@ -286,7 +293,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains a failure from a reason, message and exception.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureReason,java.lang.String,java.lang.Object...)">of</a></span>&#8203;(<a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
@@ -295,7 +302,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains a failure from a reason and message.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureReason,java.lang.Throwable)">of</a></span>&#8203;(<a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
@@ -303,7 +310,7 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains a failure from a reason and throwable.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(com.opengamma.strata.collect.result.FailureReason,java.lang.Throwable,java.lang.String,java.lang.Object...)">of</a></span>&#8203;(<a href="FailureReason.html" title="enum in com.opengamma.strata.collect.result">FailureReason</a>&nbsp;reason,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause,
@@ -313,14 +320,14 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Obtains a failure from a reason, message and throwable.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.Collection)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="FailureItem.html" title="class in com.opengamma.strata.collect.result">FailureItem</a>&gt;&nbsp;items)</code></th>
 <td class="colLast">
 <div class="block">Obtains a failure for a non-empty collection of failure items.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -525,6 +532,24 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>items</code> - the failures, not empty</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the failure</dd>
+</dl>
+</li>
+</ul>
+<a id="from(java.lang.Throwable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>from</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Failure.html" title="class in com.opengamma.strata.collect.result">Failure</a>&nbsp;from&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;th)</pre>
+<div class="block">Creates a failure from the throwable.
+ <p>
+ This recognizes <a href="FailureException.html" title="class in com.opengamma.strata.collect.result"><code>FailureException</code></a> and <a href="FailureItemProvider.html" title="interface in com.opengamma.strata.collect.result"><code>FailureItemProvider</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>th</code> - the throwable to be processed</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the failure</dd>
 </dl>

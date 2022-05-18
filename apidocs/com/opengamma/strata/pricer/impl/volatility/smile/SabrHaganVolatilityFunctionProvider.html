@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -207,28 +207,35 @@ implements <a href="../../../model/SabrVolatilityFormula.html" title="interface 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the type of volatility returned by the <a href="../../../model/SabrVolatilityFormula.html#volatility(double,double,double,double,double,double,double)"><code>SabrVolatilityFormula.volatility(double, double, double, double, double, double, double)</code></a> method.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static org.joda.beans.TypedMetaBean&lt;<a href="SabrHaganVolatilityFunctionProvider.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">SabrHaganVolatilityFunctionProvider</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#meta()">meta</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-bean for <code>SabrHaganVolatilityFunctionProvider</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>org.joda.beans.TypedMetaBean&lt;<a href="SabrHaganVolatilityFunctionProvider.html" title="class in com.opengamma.strata.pricer.impl.volatility.smile">SabrHaganVolatilityFunctionProvider</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metaBean()">metaBean</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,double,double,double,double,double,double)">volatility</a></span>&#8203;(double&nbsp;forward,
           double&nbsp;strike,
@@ -241,7 +248,7 @@ implements <a href="../../../model/SabrVolatilityFormula.html" title="interface 
 <div class="block">Calculates the volatility.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatility(double,double,double,com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData)">volatility</a></span>&#8203;(double&nbsp;forward,
           double&nbsp;strike,
@@ -251,7 +258,7 @@ implements <a href="../../../model/SabrVolatilityFormula.html" title="interface 
 <div class="block">Calculates the volatility.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAdjoint(double,double,double,double,double,double,double)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
                  double&nbsp;strike,
@@ -264,7 +271,7 @@ implements <a href="../../../model/SabrVolatilityFormula.html" title="interface 
 <div class="block">Computes the implied volatility in the SABR model and its derivatives.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../basics/value/ValueDerivatives.html" title="class in com.opengamma.strata.basics.value">ValueDerivatives</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAdjoint(double,double,double,com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData)">volatilityAdjoint</a></span>&#8203;(double&nbsp;forward,
                  double&nbsp;strike,
@@ -274,7 +281,7 @@ implements <a href="../../../model/SabrVolatilityFormula.html" title="interface 
 <div class="block">Computes the implied volatility in the SABR model and its derivatives.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#volatilityAdjoint2(double,double,double,com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData,double%5B%5D,double%5B%5D%5B%5D)">volatilityAdjoint2</a></span>&#8203;(double&nbsp;forward,
                   double&nbsp;strike,
@@ -337,6 +344,23 @@ implements <a href="../../../model/SabrVolatilityFormula.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="getVolatilityType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVolatilityType</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../market/ValueType.html" title="class in com.opengamma.strata.market">ValueType</a>&nbsp;getVolatilityType()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../model/SabrVolatilityFormula.html#getVolatilityType()">SabrVolatilityFormula</a></code></span></div>
+<div class="block">Gets the type of volatility returned by the <a href="../../../model/SabrVolatilityFormula.html#volatility(double,double,double,double,double,double,double)"><code>SabrVolatilityFormula.volatility(double, double, double, double, double, double, double)</code></a> method.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../model/SabrVolatilityFormula.html#getVolatilityType()">getVolatilityType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../model/SabrVolatilityFormula.html" title="interface in com.opengamma.strata.pricer.model">SabrVolatilityFormula</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the type</dd>
+</dl>
+</li>
+</ul>
 <a id="volatility(double,double,double,com.opengamma.strata.pricer.impl.volatility.smile.SabrFormulaData)">
 <!--   -->
 </a>

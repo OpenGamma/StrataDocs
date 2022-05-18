@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -170,13 +170,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toCharSource(com.opengamma.strata.collect.io.BeanByteSource)">toCharSource</a></span>&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;byteSource)</code></th>
+<td class="colLast">
+<div class="block">Converts a <code>BeanByteSource</code> to a <code>BeanCharSource</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink">Reader</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toReader(java.io.InputStream)">toReader</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">InputStream</a>&nbsp;inputStream)</code></th>
 <td class="colLast">
 <div class="block">Converts an <code>InputStream</code> to a <code>Reader</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString(byte%5B%5D)">toString</a></span>&#8203;(byte[]&nbsp;input)</code></th>
 <td class="colLast">
@@ -234,6 +241,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>toCharSource</h4>
 <pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;toCharSource&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/ByteSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">ByteSource</a>&nbsp;byteSource)</pre>
 <div class="block">Converts a <code>ByteSource</code> to a <code>CharSource</code>.
+ <p>
+ This ensures that any Unicode byte order marker is used correctly.
+ The default encoding is UTF-8 if no BOM is found.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>byteSource</code> - the byte source</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the char source, that uses the BOM to determine the encoding</dd>
+</dl>
+</li>
+</ul>
+<a id="toCharSource(com.opengamma.strata.collect.io.BeanByteSource)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toCharSource</h4>
+<pre class="methodSignature">public static&nbsp;<a href="BeanCharSource.html" title="class in com.opengamma.strata.collect.io">BeanCharSource</a>&nbsp;toCharSource&#8203;(<a href="BeanByteSource.html" title="class in com.opengamma.strata.collect.io">BeanByteSource</a>&nbsp;byteSource)</pre>
+<div class="block">Converts a <code>BeanByteSource</code> to a <code>BeanCharSource</code>.
  <p>
  This ensures that any Unicode byte order marker is used correctly.
  The default encoding is UTF-8 if no BOM is found.</div>

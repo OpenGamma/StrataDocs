@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":6,"i3":1,"i4":1,"i5":1};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":1,"i5":1,"i6":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,13 +171,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>default <a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#convert(com.opengamma.strata.collect.Decimal,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">convert</a></span>&#8203;(<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount,
+       <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;fromCurrency,
+       <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;toCurrency)</code></th>
+<td class="colLast">
+<div class="block">Converts an amount in a currency to an amount in a different currency using this rate.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>default double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fxRate(com.opengamma.strata.basics.currency.CurrencyPair)">fxRate</a></span>&#8203;(<a href="CurrencyPair.html" title="class in com.opengamma.strata.basics.currency">CurrencyPair</a>&nbsp;currencyPair)</code></th>
 <td class="colLast">
 <div class="block">Gets the FX rate for the specified currency pair.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fxRate(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">fxRate</a></span>&#8203;(<a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
       <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;counterCurrency)</code></th>
@@ -185,7 +194,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the FX rate for the specified currency pair.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lazy(java.util.function.Supplier)">lazy</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&gt;&nbsp;target)</code></th>
 <td class="colLast">
@@ -193,14 +202,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  until actually necessary.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minimal()">minimal</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a provider that provides minimal behavior.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noConversion()">noConversion</a></span>()</code></th>
 <td class="colLast">
@@ -286,6 +295,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">default&nbsp;double&nbsp;convert&#8203;(double&nbsp;amount,
                        <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;fromCurrency,
                        <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;toCurrency)</pre>
+<div class="block">Converts an amount in a currency to an amount in a different currency using this rate.
+ <p>
+ The currencies must both be included in the currency pair of this rate.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>amount</code> - an amount in <code>fromCurrency</code></dd>
+<dd><code>fromCurrency</code> - the currency of the amount</dd>
+<dd><code>toCurrency</code> - the currency into which the amount should be converted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the amount converted into <code>toCurrency</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if either of the currencies aren't included in the currency pair of this rate</dd>
+</dl>
+</li>
+</ul>
+<a id="convert(com.opengamma.strata.collect.Decimal,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convert</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;convert&#8203;(<a href="../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount,
+                        <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;fromCurrency,
+                        <a href="Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;toCurrency)</pre>
 <div class="block">Converts an amount in a currency to an amount in a different currency using this rate.
  <p>
  The currencies must both be included in the currency pair of this rate.</div>

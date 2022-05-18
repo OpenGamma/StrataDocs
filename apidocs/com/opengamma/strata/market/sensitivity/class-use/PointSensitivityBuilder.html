@@ -405,12 +405,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondYieldSensitivity</a></span></code></th>
+<td class="colLast">
+<div class="block">Point sensitivity to a bond yield implied parameter point.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">IssuerCurveZeroRateSensitivity</a></span></code></th>
 <td class="colLast">
 <div class="block">Point sensitivity to the issuer curve.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveZeroRateSensitivity</a></span></code></th>
 <td class="colLast">
@@ -646,6 +653,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrOvernightInArrearsCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/SabrOvernightInArrearsCapletFloorletPeriodPricer.html#presentValueSensitivityModelParamsSabr(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.SabrParametersIborCapletFloorletVolatilities)">presentValueSensitivityModelParamsSabr</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&nbsp;period,
+                                      <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                      <a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a>&nbsp;sabrVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the present value sensitivity to the SABR model parameters.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.html#presentValueSensitivityModelParamsSabr(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletBinaryPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.SabrParametersIborCapletFloorletVolatilities)">presentValueSensitivityModelParamsSabr</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletBinaryPeriod</a>&nbsp;period,
+                                      <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                      <a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a>&nbsp;sabrVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value sensitivity to model parameters of the binary caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.html#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.IborCapletFloorletBinaryPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletBinaryPeriod</a>&nbsp;period,
+                                            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                            <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value sensitivity to model parameters of the binary caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityIborCapFloorLegPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityIborCapFloorLegPricer.html#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.ResolvedIborCapFloorLeg,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../../product/capfloor/ResolvedIborCapFloorLeg.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloorLeg</a>&nbsp;capFloorLeg,
                                             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
                                             <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
@@ -653,7 +687,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value volatility sensitivity of the Ibor cap/floor leg.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityIborCapFloorProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityIborCapFloorProductPricer.html#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.ResolvedIborCapFloor,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../../product/capfloor/ResolvedIborCapFloor.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloor</a>&nbsp;capFloor,
                                             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -662,7 +696,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value volatility sensitivity of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityIborCapFloorTradePricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityIborCapFloorTradePricer.html#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.ResolvedIborCapFloorTrade,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../../product/capfloor/ResolvedIborCapFloorTrade.html" title="class in com.opengamma.strata.product.capfloor">ResolvedIborCapFloorTrade</a>&nbsp;trade,
                                             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -671,13 +705,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value volatility sensitivity of the Ibor cap/floor product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityIborCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityIborCapletFloorletPeriodPricer.html#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.IborCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../../product/capfloor/IborCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod</a>&nbsp;period,
                                             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
                                             <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
 <td class="colLast">
 <div class="block">Calculates the present value volatility sensitivity of the Ibor caplet/floorlet.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityOvernightInArrearsCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityOvernightInArrearsCapletFloorletPeriodPricer.html#presentValueSensitivityModelParamsVolatility(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityModelParamsVolatility</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&nbsp;period,
+                                            <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                            <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the present value sensitivity to the volatilities.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -732,6 +775,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                                        <a href="../../../pricer/capfloor/SabrIborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">SabrIborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
 <td class="colLast">
 <div class="block">Calculates the present value sensitivity of the Ibor caplet/floorlet to the rate curves.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrOvernightInArrearsCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/SabrOvernightInArrearsCapletFloorletPeriodPricer.html#presentValueSensitivityRatesStickyModel(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.SabrParametersIborCapletFloorletVolatilities)">presentValueSensitivityRatesStickyModel</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&nbsp;period,
+                                       <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                       <a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a>&nbsp;sabrVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the present value sensitivity to the rate with "sticky SABR model parameters".</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadSabrOvernightInArrearsCapletFloorletBinaryPeriodPricer.html#presentValueSensitivityRatesStickyModel(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletBinaryPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.SabrParametersIborCapletFloorletVolatilities)">presentValueSensitivityRatesStickyModel</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletBinaryPeriod</a>&nbsp;period,
+                                       <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                       <a href="../../../pricer/capfloor/SabrParametersIborCapletFloorletVolatilities.html" title="class in com.opengamma.strata.pricer.capfloor">SabrParametersIborCapletFloorletVolatilities</a>&nbsp;sabrVolatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value rates sensitivity of the binary caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VerticalSpreadVolatilityIborCapletFloorletBinaryPeriodPricer.html#presentValueSensitivityRatesStickyStrike(com.opengamma.strata.product.capfloor.IborCapletFloorletBinaryPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityRatesStickyStrike</a></span>&#8203;(<a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletBinaryPeriod</a>&nbsp;period,
+                                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                        <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Calculates the present value rates sensitivity of the binary caplet/floorlet period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VolatilityOvernightInArrearsCapletFloorletPeriodPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/capfloor/VolatilityOvernightInArrearsCapletFloorletPeriodPricer.html#presentValueSensitivityRatesStickyStrike(com.opengamma.strata.product.capfloor.OvernightInArrearsCapletFloorletPeriod,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.capfloor.IborCapletFloorletVolatilities)">presentValueSensitivityRatesStickyStrike</a></span>&#8203;(<a href="../../../product/capfloor/OvernightInArrearsCapletFloorletPeriod.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletPeriod</a>&nbsp;period,
+                                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
+                                        <a href="../../../pricer/capfloor/IborCapletFloorletVolatilities.html" title="interface in com.opengamma.strata.pricer.capfloor">IborCapletFloorletVolatilities</a>&nbsp;volatilities)</code></th>
+<td class="colLast">
+<div class="block">Computes the present value sensitivity to the rate with a volatility "sticky strike".</div>
 </td>
 </tr>
 </tbody>
@@ -1790,6 +1869,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>default <a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionVolatilities.html#convertSwaptionSensitivity(com.opengamma.strata.pricer.swaption.SwaptionSensitivity)">convertSwaptionSensitivity</a></span>&#8203;(<a href="../../../pricer/swaption/SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption">SwaptionSensitivity</a>&nbsp;swptSensi)</code></th>
+<td class="colLast">
+<div class="block">Convert a <a href="../../../pricer/swaption/SwaptionSensitivity.html" title="class in com.opengamma.strata.pricer.swaption"><code>SwaptionSensitivity</code></a> for a expiry, tenor and strike in the associated SABR parameter
+ sensitivities.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCashParYieldProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCashParYieldProductPricer.html#presentValueSensitivityModelParamsSabr(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityModelParamsSabr</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                       <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1798,7 +1885,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity to the SABR model parameters of the swaption product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionPhysicalProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionPhysicalProductPricer.html#presentValueSensitivityModelParamsSabr(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityModelParamsSabr</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                       <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1807,7 +1894,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity to the SABR model parameters of the swaption product.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HullWhiteSwaptionPhysicalProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/HullWhiteSwaptionPhysicalProductPricer.html#presentValueSensitivityRates(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.model.HullWhiteOneFactorPiecewiseConstantParametersProvider)">presentValueSensitivityRates</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                             <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1816,7 +1903,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity of the swaption product.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionCashParYieldProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionCashParYieldProductPricer.html#presentValueSensitivityRatesStickyModel(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityRatesStickyModel</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1825,7 +1912,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity of the swaption product to the rate curves.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SabrSwaptionPhysicalProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/SabrSwaptionPhysicalProductPricer.html#presentValueSensitivityRatesStickyModel(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SabrSwaptionVolatilities)">presentValueSensitivityRatesStickyModel</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                        <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1834,7 +1921,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity of the swaption product to the rate curves.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionCashParYieldProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/VolatilitySwaptionCashParYieldProductPricer.html#presentValueSensitivityRatesStickyStrike(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueSensitivityRatesStickyStrike</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                         <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1843,7 +1930,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity of the swaption to the rate curves.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionPhysicalProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/VolatilitySwaptionPhysicalProductPricer.html#presentValueSensitivityRatesStickyStrike(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueSensitivityRatesStickyStrike</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                         <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,
@@ -1852,7 +1939,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Calculates the present value sensitivity of the swaption to the rate curves.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../PointSensitivityBuilder.html" title="interface in com.opengamma.strata.market.sensitivity">PointSensitivityBuilder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">VolatilitySwaptionProductPricer.</span><code><span class="memberNameLink"><a href="../../../pricer/swaption/VolatilitySwaptionProductPricer.html#presentValueSensitivityRatesStickyStrike(com.opengamma.strata.product.swaption.ResolvedSwaption,com.opengamma.strata.pricer.rate.RatesProvider,com.opengamma.strata.pricer.swaption.SwaptionVolatilities)">presentValueSensitivityRatesStickyStrike</a></span>&#8203;(<a href="../../../product/swaption/ResolvedSwaption.html" title="class in com.opengamma.strata.product.swaption">ResolvedSwaption</a>&nbsp;swaption,
                                         <a href="../../../pricer/rate/RatesProvider.html" title="interface in com.opengamma.strata.pricer.rate">RatesProvider</a>&nbsp;ratesProvider,

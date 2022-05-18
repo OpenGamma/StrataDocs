@@ -517,7 +517,10 @@ implements org.joda.beans.ImmutableBean, <a href="https://docs.oracle.com/javase
 <div class="block">Creates an instance using a supplier.
  <p>
  If the supplier succeeds normally, the supplied value will be returned.
- If the supplier fails, the empty value will be returned along with a failure.</div>
+ If the supplier fails, the empty value will be returned along with a failure.
+ <p>
+ This recognizes and handles <a href="FailureItemProvider.html" title="interface in com.opengamma.strata.collect.result"><code>FailureItemProvider</code></a> exceptions.
+ If the exception type is not recognized, the failure item will have a reason of <code>ERROR</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of the value</dd>

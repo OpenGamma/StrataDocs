@@ -1141,11 +1141,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>default <a href="../../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxRateProvider.</span><code><span class="memberNameLink"><a href="../FxRateProvider.html#convert(com.opengamma.strata.collect.Decimal,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">convert</a></span>&#8203;(<a href="../../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount,
+       <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;fromCurrency,
+       <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;toCurrency)</code></th>
+<td class="colLast">
+<div class="block">Converts an amount in a currency to an amount in a different currency using this rate.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BigMoney.</span><code><span class="memberNameLink"><a href="../BigMoney.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
 <td class="colLast">
 <div class="block">Converts this amount to an equivalent amount in the specified currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BigMoney.</span><code><span class="memberNameLink"><a href="../BigMoney.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
+           <a href="../../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;fxRate)</code></th>
+<td class="colLast">
+<div class="block">Converts this amount to an equivalent amount the specified currency.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1196,13 +1213,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Money.</span><code><span class="memberNameLink"><a href="../Money.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
+           <a href="../../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;fxRate)</code></th>
+<td class="colLast">
+<div class="block">Converts this amount to an equivalent amount the specified currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Money.</span><code><span class="memberNameLink"><a href="../Money.html#convertedTo(com.opengamma.strata.basics.currency.Currency,java.math.BigDecimal)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;fxRate)</code></th>
 <td class="colLast">
 <div class="block">Converts this amount to an equivalent amount the specified currency.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmount.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmount.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
@@ -1210,13 +1235,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Converts this amount to an equivalent amount the specified currency.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmountArray.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmountArray</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmountArray.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmountArray.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;fxRateProvider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Payment.</span><code><span class="memberNameLink"><a href="../Payment.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
@@ -1224,7 +1249,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Converts this payment to an equivalent payment in the specified currency.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxMatrix.</span><code><span class="memberNameLink"><a href="../FxMatrix.html#fxRate(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">fxRate</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
       <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;counterCurrency)</code></th>
@@ -1232,7 +1257,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the FX rate for the specified currency pair.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxRate.</span><code><span class="memberNameLink"><a href="../FxRate.html#fxRate(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">fxRate</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
       <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;counterCurrency)</code></th>
@@ -1240,7 +1265,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the FX rate for the specified currency pair.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxRateProvider.</span><code><span class="memberNameLink"><a href="../FxRateProvider.html#fxRate(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.Currency)">fxRate</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;baseCurrency,
       <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;counterCurrency)</code></th>
@@ -1248,28 +1273,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the FX rate for the specified currency pair.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmount.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmount.html#getAmount(com.opengamma.strata.basics.currency.Currency)">getAmount</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Gets the <code>CurrencyAmount</code> for the specified currency, throwing an exception if not found.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmount.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmount.html#getAmountOrZero(com.opengamma.strata.basics.currency.Currency)">getAmountOrZero</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Gets the <code>CurrencyAmount</code> for the specified currency, returning zero if not found.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../collect/array/DoubleArray.html" title="class in com.opengamma.strata.collect.array">DoubleArray</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmountArray.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmountArray.html#getValues(com.opengamma.strata.basics.currency.Currency)">getValues</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Gets the values for the specified currency, throws an exception if there are no values for the currency.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmount.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmount.html#minus(com.opengamma.strata.basics.currency.Currency,double)">minus</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
      double&nbsp;amountToAdd)</code></th>
@@ -1277,7 +1302,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns a copy of this <code>MultiCurrencyAmount</code> with the specified amount subtracted.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AdjustablePayment.</span><code><span class="memberNameLink"><a href="../AdjustablePayment.html#of(com.opengamma.strata.basics.currency.Currency,double,com.opengamma.strata.basics.date.AdjustableDate)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount,
@@ -1286,7 +1311,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance representing an amount where the date is adjustable.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../AdjustablePayment.html" title="class in com.opengamma.strata.basics.currency">AdjustablePayment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AdjustablePayment.</span><code><span class="memberNameLink"><a href="../AdjustablePayment.html#of(com.opengamma.strata.basics.currency.Currency,double,java.time.LocalDate)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount,
@@ -1295,10 +1320,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance representing an amount where the date is fixed.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BigMoney.</span><code><span class="memberNameLink"><a href="../BigMoney.html#of(com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance of <code>BigMoney</code> for the specified currency and amount.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BigMoney.</span><code><span class="memberNameLink"><a href="../BigMoney.html#of(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
+  <a href="../../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <code>BigMoney</code> for the specified currency and amount.</div>
 </td>
@@ -1363,13 +1396,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Money.</span><code><span class="memberNameLink"><a href="../Money.html#of(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.collect.Decimal)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
+  <a href="../../../collect/Decimal.html" title="class in com.opengamma.strata.collect">Decimal</a>&nbsp;amount)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Money.</span><code><span class="memberNameLink"><a href="../Money.html#of(com.opengamma.strata.basics.currency.Currency,java.math.BigDecimal)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <code>Money</code> for the specified currency and amount.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmount.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmount.html#of(com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount)</code></th>
@@ -1377,7 +1418,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from a currency and amount.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../Payment.html" title="class in com.opengamma.strata.basics.currency">Payment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Payment.</span><code><span class="memberNameLink"><a href="../Payment.html#of(com.opengamma.strata.basics.currency.Currency,double,java.time.LocalDate)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;amount,
@@ -1386,14 +1427,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance representing an amount.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CurrencyPair.</span><code><span class="memberNameLink"><a href="../CurrencyPair.html#other(com.opengamma.strata.basics.currency.Currency)">other</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Finds the other currency in the pair.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../MultiCurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">MultiCurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">MultiCurrencyAmount.</span><code><span class="memberNameLink"><a href="../MultiCurrencyAmount.html#plus(com.opengamma.strata.basics.currency.Currency,double)">plus</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
     double&nbsp;amountToAdd)</code></th>
@@ -1401,21 +1442,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns a copy of this <code>MultiCurrencyAmount</code> with the specified amount added.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../BigMoney.html" title="class in com.opengamma.strata.basics.currency">BigMoney</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BigMoney.</span><code><span class="memberNameLink"><a href="../BigMoney.html#zero(com.opengamma.strata.basics.currency.Currency)">zero</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Obtains a zero amount instance of <code>BigMoney</code> for the specified currency.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../CurrencyAmount.html" title="class in com.opengamma.strata.basics.currency">CurrencyAmount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CurrencyAmount.</span><code><span class="memberNameLink"><a href="../CurrencyAmount.html#zero(com.opengamma.strata.basics.currency.Currency)">zero</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Obtains a zero amount instance of <code>CurrencyAmount</code> for the specified currency.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../Money.html" title="class in com.opengamma.strata.basics.currency">Money</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Money.</span><code><span class="memberNameLink"><a href="../Money.html#zero(com.opengamma.strata.basics.currency.Currency)">zero</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
@@ -4008,6 +4049,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the currency of the sensitivity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldVolatilities.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the currency for which the data is valid.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IssuerCurveDiscountFactors.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveDiscountFactors.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency.</div>
@@ -4022,26 +4077,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveDiscountFactors.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveDiscountFactors.html#getCurrency()">getCurrency</a></span>()</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalBondYieldExpiryDurationVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/NormalBondYieldExpiryDurationVolatilities.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveDiscountFactors.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveDiscountFactors.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the currency.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency of the sensitivity.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IssuerCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html#getCurveCurrency()">getCurveCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency of the curve for which the sensitivity is computed.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#getCurveCurrency()">getCurveCurrency</a></span>()</code></th>
 <td class="colLast">
@@ -4067,7 +4129,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldSensitivity.Meta.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.Meta.html#currency()">currency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>currency</code> property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IssuerCurveZeroRateSensitivity.Meta.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.Meta.html#currency()">currency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>currency</code> property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalBondYieldExpiryDurationVolatilities.Meta.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/NormalBondYieldExpiryDurationVolatilities.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
@@ -4138,24 +4214,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../pricer/bond/BondYieldSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondYieldSensitivity</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
+           <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">IssuerCurveZeroRateSensitivity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IssuerCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/IssuerCurveZeroRateSensitivity.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveZeroRateSensitivity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#convertedTo(com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.basics.currency.FxRateProvider)">convertedTo</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;resultCurrency,
            <a href="../FxRateProvider.html" title="interface in com.opengamma.strata.basics.currency">FxRateProvider</a>&nbsp;rateProvider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/IssuerCurveDiscountFactors.html" title="class in com.opengamma.strata.pricer.bond">IssuerCurveDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.html#issuerCurveDiscountFactors(com.opengamma.strata.product.LegalEntityId,com.opengamma.strata.basics.currency.Currency)">issuerCurveDiscountFactors</a></span>&#8203;(<a href="../../../product/LegalEntityId.html" title="class in com.opengamma.strata.product">LegalEntityId</a>&nbsp;issuerId,
                           <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/IssuerCurveDiscountFactors.html" title="class in com.opengamma.strata.pricer.bond">IssuerCurveDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityDiscountingProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/LegalEntityDiscountingProvider.html#issuerCurveDiscountFactors(com.opengamma.strata.product.LegalEntityId,com.opengamma.strata.basics.currency.Currency)">issuerCurveDiscountFactors</a></span>&#8203;(<a href="../../../product/LegalEntityId.html" title="class in com.opengamma.strata.product">LegalEntityId</a>&nbsp;issuerId,
                           <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
@@ -4163,7 +4245,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the discount factors from an issuer based on the issuer ID and currency.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../pricer/bond/BondFutureOptionSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondFutureOptionSensitivity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureOptionSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondFutureOptionSensitivity.html#of(com.opengamma.strata.pricer.bond.BondFutureVolatilitiesName,double,java.time.LocalDate,double,double,com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="../../../pricer/bond/BondFutureVolatilitiesName.html" title="class in com.opengamma.strata.pricer.bond">BondFutureVolatilitiesName</a>&nbsp;volatilitiesName,
   double&nbsp;expiry,
@@ -4174,6 +4256,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   double&nbsp;sensitivity)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance based on the security ID.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../pricer/bond/BondYieldSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondYieldSensitivity</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html#of(com.opengamma.strata.pricer.bond.BondVolatilitiesName,double,double,double,double,com.opengamma.strata.basics.currency.Currency,double)">of</a></span>&#8203;(<a href="../../../pricer/bond/BondVolatilitiesName.html" title="class in com.opengamma.strata.pricer.bond">BondVolatilitiesName</a>&nbsp;volatilitiesName,
+  double&nbsp;expiry,
+  double&nbsp;duration,
+  double&nbsp;strike,
+  double&nbsp;forward,
+  <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;sensitivityCurrency,
+  double&nbsp;sensitivity)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from the specified elements.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -4199,6 +4294,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../pricer/bond/NormalBondYieldExpiryDurationVolatilities.html" title="class in com.opengamma.strata.pricer.bond">NormalBondYieldExpiryDurationVolatilities</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalBondYieldExpiryDurationVolatilities.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/NormalBondYieldExpiryDurationVolatilities.html#of(com.opengamma.strata.basics.currency.Currency,java.time.ZonedDateTime,com.opengamma.strata.market.surface.Surface)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;valuationDateTime,
+  <a href="../../../market/surface/Surface.html" title="interface in com.opengamma.strata.market.surface">Surface</a>&nbsp;surface)</code></th>
+<td class="colLast">
+<div class="block">Obtains an instance from the implied volatility surface and the date-time for which it is valid.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveZeroRateSensitivity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#of(com.opengamma.strata.basics.currency.Currency,double,com.opengamma.strata.basics.currency.Currency,com.opengamma.strata.market.curve.RepoGroup,double)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;curveCurrency,
   double&nbsp;yearFraction,
@@ -4210,7 +4314,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  group and value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveZeroRateSensitivity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RepoCurveZeroRateSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/RepoCurveZeroRateSensitivity.html#of(com.opengamma.strata.basics.currency.Currency,double,com.opengamma.strata.market.curve.RepoGroup,double)">of</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency,
   double&nbsp;yearFraction,
@@ -4220,20 +4324,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from the curve currency, date, group and value.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/RepoCurveDiscountFactors.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.html#repoCurveDiscountFactors(com.opengamma.strata.product.LegalEntityId,com.opengamma.strata.basics.currency.Currency)">repoCurveDiscountFactors</a></span>&#8203;(<a href="../../../product/LegalEntityId.html" title="class in com.opengamma.strata.product">LegalEntityId</a>&nbsp;issuerId,
                         <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/RepoCurveDiscountFactors.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableLegalEntityDiscountingProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/ImmutableLegalEntityDiscountingProvider.html#repoCurveDiscountFactors(com.opengamma.strata.product.SecurityId,com.opengamma.strata.product.LegalEntityId,com.opengamma.strata.basics.currency.Currency)">repoCurveDiscountFactors</a></span>&#8203;(<a href="../../../product/SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
                         <a href="../../../product/LegalEntityId.html" title="class in com.opengamma.strata.product">LegalEntityId</a>&nbsp;issuerId,
                         <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/RepoCurveDiscountFactors.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityDiscountingProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/LegalEntityDiscountingProvider.html#repoCurveDiscountFactors(com.opengamma.strata.product.LegalEntityId,com.opengamma.strata.basics.currency.Currency)">repoCurveDiscountFactors</a></span>&#8203;(<a href="../../../product/LegalEntityId.html" title="class in com.opengamma.strata.product">LegalEntityId</a>&nbsp;issuerId,
                         <a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
@@ -4241,7 +4345,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the discount factors from a repo curve based on the issuer ID and currency.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/RepoCurveDiscountFactors.html" title="class in com.opengamma.strata.pricer.bond">RepoCurveDiscountFactors</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">LegalEntityDiscountingProvider.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/LegalEntityDiscountingProvider.html#repoCurveDiscountFactors(com.opengamma.strata.product.SecurityId,com.opengamma.strata.product.LegalEntityId,com.opengamma.strata.basics.currency.Currency)">repoCurveDiscountFactors</a></span>&#8203;(<a href="../../../product/SecurityId.html" title="class in com.opengamma.strata.product">SecurityId</a>&nbsp;securityId,
                         <a href="../../../product/LegalEntityId.html" title="class in com.opengamma.strata.product">LegalEntityId</a>&nbsp;issuerId,
@@ -4250,9 +4354,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the discount factors from a repo curve based on the security ID, issuer ID and currency.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../pricer/bond/BondFutureOptionSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondFutureOptionSensitivity</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureOptionSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondFutureOptionSensitivity.html#withCurrency(com.opengamma.strata.basics.currency.Currency)">withCurrency</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../pricer/bond/BondYieldSensitivity.html" title="class in com.opengamma.strata.pricer.bond">BondYieldSensitivity</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldSensitivity.</span><code><span class="memberNameLink"><a href="../../../pricer/bond/BondYieldSensitivity.html#withCurrency(com.opengamma.strata.basics.currency.Currency)">withCurrency</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -5853,54 +5962,68 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The currency of the underlying bond.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondPaymentPeriod.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondPaymentPeriod.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the primary currency of the payment period.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondPosition.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondPosition.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondSecurity.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondSecurity.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency that the bond is traded in.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">KnownAmountBondPaymentPeriod.</span><code><span class="memberNameLink"><a href="../../../product/bond/KnownAmountBondPaymentPeriod.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedBill.</span><code><span class="memberNameLink"><a href="../../../product/bond/ResolvedBill.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the currency of the bill.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedBondFuture.</span><code><span class="memberNameLink"><a href="../../../product/bond/ResolvedBondFuture.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Obtains the currency of the underlying fixed coupon bonds.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedCapitalIndexedBond.</span><code><span class="memberNameLink"><a href="../../../product/bond/ResolvedCapitalIndexedBond.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency of the product.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFixedCouponBond.</span><code><span class="memberNameLink"><a href="../../../product/bond/ResolvedFixedCouponBond.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the currency of the product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ResolvedFixedCouponBondOption.</span><code><span class="memberNameLink"><a href="../../../product/bond/ResolvedFixedCouponBondOption.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the bond option currency.</div>
 </td>
 </tr>
 </tbody>
@@ -5914,55 +6037,60 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/collect/ImmutableSet.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableSet</a>&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondOption.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondOption.html#allCurrencies()">allCurrencies</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureOptionSecurity.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/BondFutureOptionSecurity.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BondFutureSecurity.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/BondFutureSecurity.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CapitalIndexedBond.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/CapitalIndexedBond.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CapitalIndexedBondPaymentPeriod.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/CapitalIndexedBondPaymentPeriod.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CapitalIndexedBondSecurity.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/CapitalIndexedBondSecurity.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBond.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBond.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondPaymentPeriod.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondPaymentPeriod.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FixedCouponBondSecurity.Meta.</span><code><span class="memberNameLink"><a href="../../../product/bond/FixedCouponBondSecurity.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
@@ -6061,7 +6189,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletBinaryPeriod.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the primary currency of the payment period.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletPeriod.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletPeriod.html#getCurrency()">getCurrency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the primary currency of the payment period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightInArrearsCapletFloorletBinaryPeriod.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.html#getCurrency()">getCurrency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the primary currency of the payment period.</div>
 </td>
@@ -6116,7 +6258,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletBinaryPeriod.Meta.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.Meta.html#currency()">currency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>currency</code> property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletPeriod.Meta.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletPeriod.Meta.html#currency()">currency</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The meta-property for the <code>currency</code> property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.joda.beans.MetaProperty&lt;<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightInArrearsCapletFloorletBinaryPeriod.Meta.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.Meta.html#currency()">currency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The meta-property for the <code>currency</code> property.</div>
 </td>
@@ -6146,8 +6302,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.Builder.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletBinaryPeriod.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletBinaryPeriod.Builder.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletBinaryPeriod.Builder.html#currency(com.opengamma.strata.basics.currency.Currency)">currency</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Sets the primary currency of the payment period.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../product/capfloor/IborCapletFloorletPeriod.Builder.html" title="class in com.opengamma.strata.product.capfloor">IborCapletFloorletPeriod.Builder</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletPeriod.Builder.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/IborCapletFloorletPeriod.Builder.html#currency(com.opengamma.strata.basics.currency.Currency)">currency</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
+<td class="colLast">
+<div class="block">Sets the primary currency of the payment period.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.Builder.html" title="class in com.opengamma.strata.product.capfloor">OvernightInArrearsCapletFloorletBinaryPeriod.Builder</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">OvernightInArrearsCapletFloorletBinaryPeriod.Builder.</span><code><span class="memberNameLink"><a href="../../../product/capfloor/OvernightInArrearsCapletFloorletBinaryPeriod.Builder.html#currency(com.opengamma.strata.basics.currency.Currency)">currency</a></span>&#8203;(<a href="../Currency.html" title="class in com.opengamma.strata.basics.currency">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Sets the primary currency of the payment period.</div>
 </td>

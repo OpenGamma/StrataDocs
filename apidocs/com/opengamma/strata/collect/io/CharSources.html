@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,35 +156,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractFileName(com.google.common.io.CharSource)">extractFileName</a></span>&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source)</code></th>
+<td class="colLast">
+<div class="block">Extracts the file name from a source.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="StringCharSource.html" title="class in com.opengamma.strata.collect.io">StringCharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofContent(byte%5B%5D)">ofContent</a></span>&#8203;(byte[]&nbsp;content)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a text variable, specified as a byte array.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="StringCharSource.html" title="class in com.opengamma.strata.collect.io">StringCharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofContent(byte%5B%5D,java.nio.charset.Charset)">ofContent</a></span>&#8203;(byte[]&nbsp;content,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a text variable, specified as a byte array.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="StringCharSource.html" title="class in com.opengamma.strata.collect.io">StringCharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofContent(java.lang.String)">ofContent</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;content)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a text variable, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> object.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofFile(java.io.File)">ofFile</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a file object, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>File</code></a>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofFile(java.io.File,java.nio.charset.Charset)">ofFile</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
@@ -192,14 +199,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a file object, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>File</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofFileName(java.lang.String)">ofFileName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileName)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a file name, specified as a String.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofFileName(java.lang.String,java.nio.charset.Charset)">ofFileName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileName,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
@@ -207,14 +214,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a file name, specified as a String.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofPath(java.nio.file.Path)">ofPath</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a>&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a file path, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink"><code>Path</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofPath(java.nio.file.Path,java.nio.charset.Charset)">ofPath</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a>&nbsp;path,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
@@ -222,14 +229,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a file path, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink"><code>Path</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUrl(java.net.URL)">ofUrl</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net" class="externalLink">URL</a>&nbsp;url)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a URL, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net" class="externalLink"><code>URL</code></a> object.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofUrl(java.net.URL,java.nio.charset.Charset)">ofUrl</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net" class="externalLink">URL</a>&nbsp;url,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</code></th>
@@ -407,13 +414,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>ofContent</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;ofContent&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;content)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="StringCharSource.html" title="class in com.opengamma.strata.collect.io">StringCharSource</a>&nbsp;ofContent&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;content)</pre>
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a text variable, specified as a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>content</code> - the text to create a <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> for</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> with UTF-8 for charset</dd>
+<dd>a new instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -423,7 +430,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>ofContent</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;ofContent&#8203;(byte[]&nbsp;content)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="StringCharSource.html" title="class in com.opengamma.strata.collect.io">StringCharSource</a>&nbsp;ofContent&#8203;(byte[]&nbsp;content)</pre>
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a text variable, specified as a byte array.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -436,11 +443,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a id="ofContent(byte[],java.nio.charset.Charset)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ofContent</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;ofContent&#8203;(byte[]&nbsp;content,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="StringCharSource.html" title="class in com.opengamma.strata.collect.io">StringCharSource</a>&nbsp;ofContent&#8203;(byte[]&nbsp;content,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink">Charset</a>&nbsp;charset)</pre>
 <div class="block">Obtains an instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a> from a text variable, specified as a byte array.
  This also takes in a specific character set, as a <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset" class="externalLink"><code>Charset</code></a>.</div>
 <dl>
@@ -449,6 +456,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>charset</code> - the charset to build the new CharSource based on</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance of <a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink"><code>CharSource</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="extractFileName(com.google.common.io.CharSource)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>extractFileName</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;extractFileName&#8203;(<a href="https://guava.dev/releases/26.0-jre/api/docs/com/google/common/io/CharSource.html?is-external=true" title="class or interface in com.google.common.io" class="externalLink">CharSource</a>&nbsp;source)</pre>
+<div class="block">Extracts the file name from a source.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - the source to extract the file name from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the file name</dd>
 </dl>
 </li>
 </ul>

@@ -155,9 +155,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.impl.volatility.smile">com.opengamma.strata.pricer.impl.volatility.smile</a></th>
+<td class="colLast">
+<div class="block">Internal implementations of volatility smile.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.index">com.opengamma.strata.pricer.index</a></th>
 <td class="colLast">
 <div class="block">Calculators for products based on rate indices, such as Short Term Interest Rate futures (STIRs).</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.opengamma.strata.pricer.model">com.opengamma.strata.pricer.model</a></th>
+<td class="colLast">
+<div class="block">Common code for model pricing.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -1007,6 +1019,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the type of volatility returned by the <a href="../../pricer/bond/BondFutureVolatilities.html#volatility(java.time.ZonedDateTime,java.time.LocalDate,double,double)"><code>BondFutureVolatilities.volatility(java.time.ZonedDateTime, java.time.LocalDate, double, double)</code></a> method.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BondYieldVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/bond/BondYieldVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the type of volatility returned by the <a href="../../pricer/bond/BondYieldVolatilities.html#volatility(double,double,double,double)"><code>BondYieldVolatilities.volatility(double, double, double, double)</code></a> method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalBondYieldExpiryDurationVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/bond/NormalBondYieldExpiryDurationVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -1030,20 +1054,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>default <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BlackSabrIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/capfloor/BlackSabrIborCapletFloorletVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">IborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/capfloor/IborCapletFloorletVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type of volatility returned by the <a href="../../pricer/capfloor/IborCapletFloorletVolatilities.html#volatility(java.time.ZonedDateTime,double,double)"><code>IborCapletFloorletVolatilities.volatility(java.time.ZonedDateTime, double, double)</code></a> method.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/capfloor/NormalIborCapletFloorletVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">SabrIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/capfloor/SabrIborCapletFloorletVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">NormalSabrIborCapletFloorletVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/capfloor/NormalSabrIborCapletFloorletVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -1080,6 +1109,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.impl.volatility.smile">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a> in <a href="../../pricer/impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../pricer/impl/volatility/smile/package-summary.html">com.opengamma.strata.pricer.impl.volatility.smile</a> that return <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganNormalVolatilityFormula.</span><code><span class="memberNameLink"><a href="../../pricer/impl/volatility/smile/SabrHaganNormalVolatilityFormula.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrHaganVolatilityFunctionProvider.</span><code><span class="memberNameLink"><a href="../../pricer/impl/volatility/smile/SabrHaganVolatilityFunctionProvider.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
 <section role="region"><a id="com.opengamma.strata.pricer.index">
 <!--   -->
 </a>
@@ -1103,6 +1159,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>default <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">NormalIborFutureOptionVolatilities.</span><code><span class="memberNameLink"><a href="../../pricer/index/NormalIborFutureOptionVolatilities.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.opengamma.strata.pricer.model">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a> in <a href="../../pricer/model/package-summary.html">com.opengamma.strata.pricer.model</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../pricer/model/package-summary.html">com.opengamma.strata.pricer.model</a> that return <a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ValueType.html" title="class in com.opengamma.strata.market">ValueType</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">SabrVolatilityFormula.</span><code><span class="memberNameLink"><a href="../../pricer/model/SabrVolatilityFormula.html#getVolatilityType()">getVolatilityType</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the type of volatility returned by the <a href="../../pricer/model/SabrVolatilityFormula.html#volatility(double,double,double,double,double,double,double)"><code>SabrVolatilityFormula.volatility(double, double, double, double, double, double, double)</code></a> method.</div>
+</td>
 </tr>
 </tbody>
 </table>

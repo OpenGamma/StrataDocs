@@ -497,13 +497,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendarId.</span><code><span class="memberNameLink"><a href="../HolidayCalendarId.html#isCompositeCalendar(com.opengamma.strata.basics.date.HolidayCalendarId)">isCompositeCalendar</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id)</code></th>
+<td class="colLast">
+<div class="block">Checks if the holiday calendar is a combined or linked calendar.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">HolidayCalendarId.</span><code><span class="memberNameLink"><a href="../HolidayCalendarId.html#linkedWith(com.opengamma.strata.basics.date.HolidayCalendarId)">linkedWith</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Combines this holiday calendar identifier with another.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../BusinessDayAdjustment.html" title="class in com.opengamma.strata.basics.date">BusinessDayAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BusinessDayAdjustment.</span><code><span class="memberNameLink"><a href="../BusinessDayAdjustment.html#of(com.opengamma.strata.basics.date.BusinessDayConvention,com.opengamma.strata.basics.date.HolidayCalendarId)">of</a></span>&#8203;(<a href="../BusinessDayConvention.html" title="interface in com.opengamma.strata.basics.date">BusinessDayConvention</a>&nbsp;convention,
   <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;calendar)</code></th>
@@ -511,7 +518,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance using the specified convention and calendar.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../ImmutableHolidayCalendar.html" title="class in com.opengamma.strata.basics.date">ImmutableHolidayCalendar</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.html#of(com.opengamma.strata.basics.date.HolidayCalendarId,java.lang.Iterable,java.lang.Iterable)">of</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;holidays,
@@ -520,7 +527,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from a set of holiday dates and weekend days.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../ImmutableHolidayCalendar.html" title="class in com.opengamma.strata.basics.date">ImmutableHolidayCalendar</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.html#of(com.opengamma.strata.basics.date.HolidayCalendarId,java.lang.Iterable,java.lang.Iterable,java.lang.Iterable)">of</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;holidays,
@@ -530,7 +537,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from a set of holiday dates and weekend days.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../ImmutableHolidayCalendar.html" title="class in com.opengamma.strata.basics.date">ImmutableHolidayCalendar</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ImmutableHolidayCalendar.</span><code><span class="memberNameLink"><a href="../ImmutableHolidayCalendar.html#of(com.opengamma.strata.basics.date.HolidayCalendarId,java.lang.Iterable,java.time.DayOfWeek,java.time.DayOfWeek)">of</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;id,
   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&gt;&nbsp;holidays,
@@ -540,14 +547,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance from a set of holiday dates and weekend days.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../DayCount.html" title="interface in com.opengamma.strata.basics.date">DayCount</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DayCount.</span><code><span class="memberNameLink"><a href="../DayCount.html#ofBus252(com.opengamma.strata.basics.date.HolidayCalendarId)">ofBus252</a></span>&#8203;(<a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;calendar)</code></th>
 <td class="colLast">
 <div class="block">Obtains an instance of the 'Bus/252' day count based on a specific calendar.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.html#ofBusinessDays(int,com.opengamma.strata.basics.date.HolidayCalendarId)">ofBusinessDays</a></span>&#8203;(int&nbsp;numberOfDays,
               <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;holidayCalendar)</code></th>
@@ -555,7 +562,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Obtains an instance that can adjust a date by a specific number of business days.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../DaysAdjustment.html" title="class in com.opengamma.strata.basics.date">DaysAdjustment</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">DaysAdjustment.</span><code><span class="memberNameLink"><a href="../DaysAdjustment.html#ofBusinessDays(int,com.opengamma.strata.basics.date.HolidayCalendarId,com.opengamma.strata.basics.date.BusinessDayAdjustment)">ofBusinessDays</a></span>&#8203;(int&nbsp;numberOfDays,
               <a href="../HolidayCalendarId.html" title="class in com.opengamma.strata.basics.date">HolidayCalendarId</a>&nbsp;holidayCalendar,
