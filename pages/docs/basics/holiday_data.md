@@ -46,6 +46,7 @@ The default column indicates if that calendar is the default for the currency.
 | NZBD | New Zealand holidays                             |         | Saturday/Sunday   |                     |
 | PLWA | Warsaw (Poland) holidays                         | PLN     | Saturday/Sunday   |                     |
 | SEST | Stockholm (Sweden) holidays                      | SEK     | Saturday/Sunday   |                     |
+| THBA | Bangkok (Thailand) holidays                      | THB     | Saturday/Sunday   |                     |
 | USGS | United States Government Securities              |         | Saturday/Sunday   | section 1.11 (2006) |
 | USNY | New York (USA) holidays                          | USD     | Saturday/Sunday   |                     |
 | ZAJO | Johannesburg (South Africa) holidays             | ZAR     | Saturday/Sunday   |                     |
@@ -78,6 +79,5 @@ These are listed below for completeness.
 | RUMO | Moscow (Russia) holidays                         | RUB     |
 | SARI | Riyadh (Saudi Arabia) holidays                   | SAR     |
 | SGSI | Singapore holidays                               | SGD     |
-| THBA | Bangkok (Thailand) holidays                      | THB     |
 | TRIS | Istanbul (Turkey) holidays                       | TRY     |
 | TWTA | Taipei (Taiwan) holidays                         | TWD     |
