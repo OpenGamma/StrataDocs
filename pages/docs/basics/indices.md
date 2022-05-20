@@ -15,38 +15,39 @@ such as exchange rates or interest rates". Most common indices are published eac
 An Overnight index is used to represent the rate where money is deposited for one night.
 Usually this is from today to tomorrow, but it can be from tomorrow to the day after, known as "tom/next".
 
-| Name           | Description              | Day Count    |
-|----------------|--------------------------|--------------|
-| AUD-AONIA      | AONIA index for AUD      | Act/365F     |
-| BRL-CDI        | CDI index for BRL        | Bus/252 BRBD |
-| CAD-CORRA      | CORRA index for CAD      | Act/365F     |
-| CHF-SARON      | SARON index for CHF      | Act/360      |
-| CLP-TNA *      | TNA index for CLP        | Act/360      |
-| COP-OIBR *     | IBR index for COP        | Act/360      |
-| CZK-CZEONIA *  | CZEONIA index for CZK    | Act/360      |
-| DKK-TNR        | TNR index for DKK        | Act/360      |
-| EUR-EONIA      | EONIA index for EUR      | Act/360      |
-| EUR-ESTR       | ESTR index for EUR       | Act/360      |
-| GBP-SONIA      | SONIA index for GBP      | Act/365F     |
-| HKD-HONIA *    | HONIA index for HKD      | Act/365F     |
-| HUF-HUFONIA *  | HUFONIA index for HUF    | Act/365F     |
-| IDR-INDONIA *  | INDONIA index for IDR    | Act/365F     |
-| ILS-OTELBOR *  | OTELBOR index for ILS    | Act/365F     |
-| INR-OMIBOR *   | OMIBOR index for INR     | Act/365F     |
-| JPY-TONAR      | TONAR index for JPY      | Act/365F     |
-| NOK-NOWA       | NOWA index for NOK       | Act/Act Year |
-| NZD-NZIONA     | NZIONA index for AUD     | Act/365F     |
-| PLN-POLONIA    | POLONIA index for PLN    | Act/365F     |
-| RUB-RUONIA *   | RUONIA index for RUB     | Act/365F     |
-| SAR-OSAIBOR *  | OSAIBOR index for SAR    | Act/365F     |
-| SEK-SIOR       | SIOR index for SEK       | Act/360      |
-| SGD-SONAR *    | SONAR index for SGD      | Act/365F     |
-| SGD-SORA *     | SORA index for SGD       | Act/365F     |
-| TRY-TLREF *    | TLREF index for TRY      | Act/365F     |
-| USD-AMERIBOR   | AMERIBOR index for USD   | Act/360      |
-| USD-FED-FUND   | Fed-Fund index for USD   | Act/360      |
-| USD-SOFR       | SOFR index for USD       | Act/360      |
-| ZAR-SABOR      | SABOR index for ZAR      | Act/360      |
+| Name          | Description            | Day Count    |
+|---------------|------------------------|--------------|
+| AUD-AONIA     | AONIA index for AUD    | Act/365F     |
+| BRL-CDI       | CDI index for BRL      | Bus/252 BRBD |
+| CAD-CORRA     | CORRA index for CAD    | Act/365F     |
+| CHF-SARON     | SARON index for CHF    | Act/360      |
+| CLP-TNA *     | TNA index for CLP      | Act/360      |
+| COP-OIBR *    | IBR index for COP      | Act/360      |
+| CZK-CZEONIA * | CZEONIA index for CZK  | Act/360      |
+| DKK-TNR       | TNR index for DKK      | Act/360      |
+| EUR-EONIA     | EONIA index for EUR    | Act/360      |
+| EUR-ESTR      | ESTR index for EUR     | Act/360      |
+| GBP-SONIA     | SONIA index for GBP    | Act/365F     |
+| HKD-HONIA *   | HONIA index for HKD    | Act/365F     |
+| HUF-HUFONIA * | HUFONIA index for HUF  | Act/365F     |
+| IDR-INDONIA * | INDONIA index for IDR  | Act/365F     |
+| ILS-OTELBOR * | OTELBOR index for ILS  | Act/365F     |
+| INR-OMIBOR *  | OMIBOR index for INR   | Act/365F     |
+| JPY-TONAR     | TONAR index for JPY    | Act/365F     |
+| NOK-NOWA      | NOWA index for NOK     | Act/Act Year |
+| NZD-NZIONA    | NZIONA index for AUD   | Act/365F     |
+| PLN-POLONIA   | POLONIA index for PLN  | Act/365F     |
+| RUB-RUONIA *  | RUONIA index for RUB   | Act/365F     |
+| SAR-OSAIBOR * | OSAIBOR index for SAR  | Act/365F     |
+| SEK-SIOR      | SIOR index for SEK     | Act/360      |
+| SGD-SONAR *   | SONAR index for SGD    | Act/365F     |
+| SGD-SORA *    | SORA index for SGD     | Act/365F     |
+| THB-THOR *    | THOR index for THB     | Act/365F     |
+| TRY-TLREF *   | TLREF index for TRY    | Act/365F     |
+| USD-AMERIBOR  | AMERIBOR index for USD | Act/360      |
+| USD-FED-FUND  | Fed-Fund index for USD | Act/360      |
+| USD-SOFR      | SOFR index for USD     | Act/360      |
+| ZAR-SABOR     | SABOR index for ZAR    | Act/360      |
 
 Overnight indices have a constant in `OvernightIndices`.
 The identifier can also be obtained dynamically using `OvernightIndex.of(name)`.
